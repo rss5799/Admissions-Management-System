@@ -22,6 +22,11 @@
         border: 1px solid #eee;
         margin-bottom: 5px;
     }
+    .flex-box {
+        padding: 10px;
+        display:flex;
+        justify-content:space-between;
+    }
     </style>
 </head>
 <body>
@@ -30,11 +35,21 @@
     <div class="swimlane">
         <div class="swimlane-header">{{ status }}</div>
         {% for item in items %}
-        <div class="item">
-            <p><strong>Count:</strong> {{ item.count }} <button type="button">Select All</button></p>
-            <strong>Unresponsive Alerts:</strong> Placeholder <button type="button">Select All</button></p>
-            <button type="button">Send Email</button>
+        <div class="flex-box">
+            <p><strong>Count:</strong> {{ item.count }} </p>
+                <button >Select All</button>
+            </div>
+<br>
+        <div class="flex-box">
+            <p> <strong>Unresponsive Alerts:</strong> Placeholder</p>
+                <button >Select All</button>
         </div>
+
+        <br>
+<div>
+    <button type="button">Send Email</button>
+</div>
+
         {% endfor %}
     </div>
     {% endfor %}
