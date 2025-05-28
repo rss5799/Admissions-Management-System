@@ -1,0 +1,22 @@
+.swimlanes {
+    display: flex;
+    gap: 20px; /* Space between swimlanes */
+}
+
+.swimlane {
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex: 1; /* Makes each lane take equal space */
+}
+
+.steps {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.steps li {
+    border: 1px solid #eee;
+    padding: 5px;
+    margin-bottom: 5px;
+}
