@@ -7,13 +7,10 @@ blinker==1.9.0
 certifi==2025.4.26
 charset-normalizer==3.4.2
 click==8.2.1
-<<<<<<< HEAD
 colorama==0.4.6
 coverage==7.8.2
 cryptography==45.0.3
 firebase-admin==6.8.0
-=======
->>>>>>> b36f034 (freeze requirements w/ correct dependencies)
 Flask==3.1.1
 frozenlist==1.6.0
 idna==3.10
@@ -23,12 +20,9 @@ MarkupSafe==3.0.2
 multidict==6.4.4
 propcache==0.3.1
 PyJWT==2.10.1
-<<<<<<< HEAD
 pyparsing==3.2.3
 pytest==8.3.5
 pytest-cov==6.1.1
-=======
->>>>>>> b36f034 (freeze requirements w/ correct dependencies)
 requests==2.32.3
 twilio==9.6.1
 urllib3==2.4.0
