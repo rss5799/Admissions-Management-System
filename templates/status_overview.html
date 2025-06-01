@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Status Dashboard</title>
+    <style>
+    .swimlane {
+        float: left;
+        width: 30%;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+    }
+    .swimlane-header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    .item {
+        padding: 10px;
+        border: 1px solid #eee;
+        margin-bottom: 5px;
+    }
+    .flex-box {
+        padding: 10px;
+        display:flex;
+        justify-content:space-between;
+    }
+    </style>
+</head>
+<body>
+    <h1>Student Status Dashboard</h1>
+    {% for status, items in grouped_data.items() %}
+    <div class="swimlane">
+        <div class="swimlane-header">{{ status }}</div>
+        {% for item in items %}
+        <div class="flex-box">
+            <p><strong>Count:</strong> {{ item.count }} </p>
+                <button >Select All</button>
+            </div>
+<br>
+        <div class="flex-box">
+            <p> <strong>Unresponsive Alerts:</strong> Placeholder</p>
+                <button >Select All</button>
+        </div>
+
+        <br>
+<div>
+    <button type="button">Send Email</button>
+</div>
+
+        {% endfor %}
+    </div>
+    {% endfor %}
+</body>
+</html>
