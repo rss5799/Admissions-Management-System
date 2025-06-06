@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flask App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
 </head>
 <body>
-    <h2>Welcome to the Admissions Management System!</h2>
-    <a href="/exports">Exports</a>
-    <a href="/status_overview">Student Status</a>
+
+<h1>Vertical Menu</h1>
+
+<div class="vertical-menu">
+  <a href="/point_inputs">Enter Matrix Points</a>
+  <a href="/exports">Exports</a>
+  <a href="/upcoming_tests">Upcoming Tests Info</a>
+  <a href="/unresponsive_students">Unresponsive Students</a>
+</div>
+
 </body>
 </html>
