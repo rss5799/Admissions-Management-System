@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
-    
+
 jobs:
   build:
 
@@ -28,10 +28,10 @@ jobs:
         pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Add Firebase credentials file
+    - name: Decode and save Firebase credentials
       run: |
         mkdir -p credentials
-        echo "${{ secrets.FIREBASE_CREDENTIALS }}" > credentials/firebase_key.json
+        echo "${{ secrets.FIREBASE_CREDENTIALS_B64 }}" | base64 -d > credentials/firebase_key.json
 
     - name: Run tests with pytest
       run: |
