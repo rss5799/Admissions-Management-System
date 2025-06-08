@@ -27,6 +27,11 @@ jobs:
         pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Add Firebase credentials file
+      run: |
+        mkdir -p credentials
+        echo "${{ secrets.FIREBASE_CREDENTIALS }}" > credentials/firebase_key.json
+
     - name: Run tests with pytest
       run: |
         source venv/bin/activate
