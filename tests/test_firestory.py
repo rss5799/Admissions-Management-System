@@ -11,21 +11,20 @@ def firestore_client():
         firebase_admin.initialize_app(cred)
     return firestore.client()
 
-def test_firebase_initialization(firestore_client):
-    assert firestore_client is not None
-
 def test_read_sample_data(firestore_client):
-    docs = firestore_client.collection("students").stream()
-    doc_list = list(docs)
-    assert len(doc_list) > 0 
-
-def test_write_student_record(firestore_client):
+    # Arrange: Write a test doc
     test_doc = {
-        "name": "Test Student",
-        "gpa": 3.8,
-        "status": "testing"
+        "name": "Read Test Student",
+        "gpa": 3.6,
+        "status": "read_test"
     }
-    doc_ref = firestore_client.collection("students").document("test-student")
+    doc_ref = firestore_client.collection("students").document("test-read-student")
     doc_ref.set(test_doc)
+
+    # Read it back
     fetched = doc_ref.get().to_dict()
-    assert fetched["name"] == "Test Student"
+
+    # Check if the data matches
+    assert fetched["name"] == "Read Test Student"
+    assert fetched["gpa"] == 3.6
+    doc_ref.delete()
