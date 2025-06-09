@@ -30,9 +30,4 @@ jobs:
     - name: Run tests with pytest
       run: |
         source venv/bin/activate
-        pytest
-    
-    - name: Run tests with coverage
-      run: |
-        source venv/bin/activate
         pytest --cov=tests --cov-report=term-missing --cov-fail-under=80
