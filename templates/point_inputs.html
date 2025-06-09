@@ -4,11 +4,14 @@
     <title>Flask App</title>
 </head>
 <body>
-    <h2>Search Students</h2>
-    
+    <h2>Search Students</h2>    
     <label for="site-search">Search for Student by ID:</label>
-<input type="search" id="site-search" name="q" />
 
-<button>Search</button>
+    <form action="/student_details", method = "GET">
+    <input type="search" id="site-search" name="id_query", placeholder = "Enter Student ID" />
+    <button>Search</button>
+    <p>{{ results }}</p>
+    </form>
+
 </body>
 </html>

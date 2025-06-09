@@ -1,0 +1,25 @@
+id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_points,matrix_languauge,matrix_math,matrix_reading,status,matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest
+7,,,,,,,,,In Processing,,,,
+2,30,99,99,97,119,30,29,30,Eligible,,,,
+1,,55,50,31,15,8,1,6,In Processing,3,6,13,22
+15,30,83,98,72,99,22,17,30,In Processing,,,,
+12,30,83,98,72,99,22,17,30,Eligible,,,,
+17,30,85,99,99,113,23,30,30,Eligible,,,,
+10,30,79,99,99,110,20,30,30,Eligible,,,,
+5,,47,86,44,31,4,3,24,In Processing,5,1,16,22
+14,,67,95,60,53,14,11,28,In Processing,,,,
+16,,68,62,50,33,15,6,12,In Processing,,,,
+8,,33,54,69,24,1,15,8,In Processing,9,20,6,35
+13,30,79,99,97,109,20,29,30,Eligible,,,,
+23,30,76,85,97,101,19,29,23,Eligible,,,,
+24,30,95,90,99,114,28,30,26,,,,,
+22,30,93,99,99,117,27,30,30,Eligible,,,,
+20,30,99,99,99,120,30,30,30,Eligible,,,,
+11,17,96,82,96,97,29,29,22,Eligible,,,,
+4,,70,61,76,46,16,19,11,In Processing,12,19,3,34
+9,30,82,99,76,101,22,19,30,Eligible,,,,
+19,,64,67,38,28,13,1,14,In Processing,,,,
+18,27,78,92,92,101,20,27,27,Eligible,,,,
+21,,,,,,,,,In Processing,,,,
+3,30,76,83,83,93,19,22,22,Eligible,,,,
+6,30,82,80,96,102,22,29,21,Eligible,,,,
