@@ -5,6 +5,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -27,7 +28,12 @@ jobs:
         pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Decode and save Firebase credentials
+      run: |
+        mkdir -p credentials
+        echo "${{ secrets.FIREBASE_CREDENTIALS_B64 }}" | base64 -d > credentials/firebase_key.json
+
     - name: Run tests with pytest
       run: |
         source venv/bin/activate
-        pytest
+        pytest -v --durations=10
