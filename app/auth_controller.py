@@ -1,13 +1,12 @@
 import requests
 import os
 
-FIREBASE_API_KEY = os.getenv("FIREBASE_API_KEY", "your-api-key-here")  # replace or load via env
+FIREBASE_API_KEY = os.getenv("FIREBASE_API_KEY", "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg")  
 
 FIREBASE_SIGN_IN_URL = (
     f"https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key={FIREBASE_API_KEY}"
 )
 
-# Optional: simulate user session persistence
 _session = {}
 
 def login_user(email, password):
@@ -21,6 +20,7 @@ def login_user(email, password):
     )
 
     data = response.json()
+    print("FIREBASE RESPONSE:", data) 
 
     if "idToken" in data:
         _session["user"] = {
