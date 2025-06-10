@@ -5,12 +5,12 @@
 </head>
 <body>
     <h2>Enter Report Card Info</h2>
-    <h3>Student ID {{ current_student_id }}</h3>
-    <h3>Grade {{ current_student_grade }}</h3>
+    <h3>Student ID: {{ current_student_id }}</h3>
+    <h3>Applying for Grade: {{ current_student_grade }}</h3>
     <p>Choose the Report Card Type</p>
 
-
     <select id="myDropdown">
+    <option value="" disabled selected>Select one</option>
     <option value="semester">Semester</option>
     <option value="trimester">Trimester</option>
     <option value="quarters">Quarters</option>
@@ -19,5 +19,24 @@
 <div id="Report_card_dynamic_content">
   <!-- Content will be loaded here -->
 </div>
+
+<script>
+  const dropdown = document.getElementById('myDropdown');
+  const contentArea = document.getElementById('Report_card_dynamic_content');
+
+
+  dropdown.addEventListener('change', function() {
+    const selectedValue = this.value;
+
+
+
+
+    if (selectedValue === 'semester' || selectedValue === 'trimester') {
+      contentArea.innerHTML = '<h2>Semester/Trimester for 8th grade applicants</h2>';
+    } else if (selectedValue === 'quarters') {
+      contentArea.innerHTML = '<h2>Quarters for 8th grade applicants</h2>';
+    }
+  });
+</script>
 </body>
 </html>
