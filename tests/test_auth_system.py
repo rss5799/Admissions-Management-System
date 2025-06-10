@@ -1,7 +1,7 @@
 import pytest
 from app.auth_controller import login_user, get_current_user, logout_user
 
-VALID_EMAIL = "jr_scott25@yahoo.com"         
+VALID_EMAIL = "rss5799@psu.edu"         
 VALID_PASSWORD = "chaP1stick!"           
 INVALID_EMAIL = "doesnotexist@example.com"
 INVALID_PASSWORD = "wrongpassword"
