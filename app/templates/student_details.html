@@ -4,12 +4,40 @@
     <title>Flask App</title>
 </head>
 <body>
-    <h2>Student Details</h2>
-    <p>Student ID: {{ results.id }}</p>
-    <p>Matrix GPA: {{ results.matrix_gpa }}</p>
-    <p>Admissions Test Total: {{ results.admission_test_score_total }}</p>
-    <p>Admissions Language: {{ results.matrix_language }}</p>
-    <p>Admissions Math: {{ results.matrix_math }}</p>
-    <p>Admissions Reading: {{ results.matrix_reading }}</p>
+    <h1>Student Details</h1>
+    <h2>Student ID: {{ results.id }}</h2>
+    <h2>Grade: {{ results.grade }}</h2>
+    <table style="width:100%">
+   
+    <tr>
+    <td>Matrix GPA Points</td>
+    <td>{{ results.matrix_gpa }}</td>
+    <td> <a href="/enter_report_card">Edit</a> </td>
+    </tr>
+
+    <tr>
+    <td>Admissions Test Total:</td>
+    <td>{{ results.admission_test_score_total }}</td>
+    <td> Edit </td>
+    </tr>
+
+        <tr>
+    <td>Admissions Language</td>
+    <td>{{ results.matrix_language }}</td>
+    <td> Edit </td>
+    </tr>
+
+        <tr>
+    <td>Admissions Math:</td>
+    <td>{{ results.matrix_math }}</td>
+    <td> Edit </td>
+    </tr>
+
+        <tr>
+    <td>Admissions Reading</td>
+    <td>{{ results.matrix_reading }}</td>
+    <td> Edit </td>
+    </tr>
+</table>
 </body>
 </html>
