@@ -74,7 +74,6 @@ def student_details():
 def enter_report_card():
     current_student_id = session.get('current_student_id')
     current_student_grade = session.get('current_student_grade')
-    current_student_grade = str(current_student_grade)
     #add logic for drowpdown listener
     return render_template("/enter_report_card.html", current_student_id = current_student_id, current_student_grade = current_student_grade)
 

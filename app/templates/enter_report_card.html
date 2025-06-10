@@ -24,17 +24,23 @@
   const dropdown = document.getElementById('myDropdown');
   const contentArea = document.getElementById('Report_card_dynamic_content');
 
+  const studentGrade = {{ current_student_grade }};
+  console.log(studentGrade)
+  console.log(typeof studentGrade)
 
   dropdown.addEventListener('change', function() {
     const selectedValue = this.value;
-
-
-
-
-    if (selectedValue === 'semester' || selectedValue === 'trimester') {
-      contentArea.innerHTML = '<h2>Semester/Trimester for 8th grade applicants</h2>';
-    } else if (selectedValue === 'quarters') {
-      contentArea.innerHTML = '<h2>Quarters for 8th grade applicants</h2>';
+    if (studentGrade == 9 && selectedValue != 'quarters') {
+      contentArea.innerHTML = '<h2>Semester/Trimester APPLYING FOR 9TH applicants</h2>';
+    } 
+    else if (studentGrade == 9 && selectedValue === 'quarters' ) {
+      contentArea.innerHTML = '<h2>Quarters APPLYING FOR 9TH applicants</h2>';
+    }
+    else if (studentGrade != 9 && selectedValue != 'quarters' ) {
+      contentArea.innerHTML = '<h2>Semester/Trimester APPLYING FOR 10TH/11TH applicants</h2>';
+    }
+    else if (studentGrade != 9 && selectedValue === 'quarters' ) {
+      contentArea.innerHTML = '<h2>Quarters APPLYING FOR 10TH/11TH applicants</h2>';
     }
   });
 </script>
