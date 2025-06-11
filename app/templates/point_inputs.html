@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+</head>
+<body>
+    <h2>Search Students</h2>    
+    <label for="site-search">Search for Student by ID:</label>
+
+    <form action="/student_details", method = "GET">
+    <input type="search" id="site-search" name="id_query", placeholder = "Enter Student ID" />
+    <button>Search</button>
+    <p>{{ results }}</p>
+    </form>
+
+</body>
+</html>

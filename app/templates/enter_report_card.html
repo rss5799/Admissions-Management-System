@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+</head>
+<body>
+    <h2>Enter Report Card Info</h2>
+    <h3>Student ID: {{ current_student_id }}</h3>
+    <h3>Applying for Grade: {{ current_student_grade }}</h3>
+    <p>Choose the Report Card Type</p>
+
+    <select id="myDropdown">
+    <option value="" disabled selected>Select one</option>
+    <option value="semester">Semester</option>
+    <option value="trimester">Trimester</option>
+    <option value="quarters">Quarters</option>
+    </select>
+
+<div id="Report_card_dynamic_content">
+  <!-- Content will be loaded here -->
+</div>
+
+<script>
+  const dropdown = document.getElementById('myDropdown');
+  const contentArea = document.getElementById('Report_card_dynamic_content');
+
+  const studentGrade = {{ current_student_grade }};
+  console.log(studentGrade)
+  console.log(typeof studentGrade)
+
+  dropdown.addEventListener('change', function() {
+    const selectedValue = this.value;
+    if (studentGrade == 9 && selectedValue != 'quarters') {
+      contentArea.innerHTML = '<h2>Semester/Trimester APPLYING FOR 9TH applicants</h2>';
+    } 
+    else if (studentGrade == 9 && selectedValue === 'quarters' ) {
+      contentArea.innerHTML = '<h2>Quarters APPLYING FOR 9TH applicants</h2>';
+    }
+    else if (studentGrade != 9 && selectedValue != 'quarters' ) {
+      contentArea.innerHTML = '<h2>Semester/Trimester APPLYING FOR 10TH/11TH applicants</h2>';
+    }
+    else if (studentGrade != 9 && selectedValue === 'quarters' ) {
+      contentArea.innerHTML = '<h2>Quarters APPLYING FOR 10TH/11TH applicants</h2>';
+    }
+  });
+</script>
+</body>
+</html>
