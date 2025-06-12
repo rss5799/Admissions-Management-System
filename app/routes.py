@@ -1,8 +1,9 @@
 from flask import Blueprint, render_template, request, session
 import pandas as pd
+from pathlib import Path
 
-student_df = pd.read_csv('/Users/taracan/Documents/SWENG894/Admissions-Management-System/DummyDataComplete.csv')
-
+current_dir = Path(__file__).parent
+student_df  = current_dir / 'DummyDataComplete.csv'
 
 class Student:
     def __init__(self, id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_points,matrix_languauge,matrix_math,matrix_reading, admission_test_score_total,status,matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest, updated_at,guardian1_email,guardian2_email,grade,deliver_test_accomodation_approved,test_date_sign_up):
