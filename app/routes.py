@@ -2,7 +2,13 @@ from flask import Blueprint, render_template, request, session
 import pandas as pd
 from pathlib import Path
 
+# This is getting the path to the file we're currently in, 
+# and then getting the 'parent'. This works regardless of who runs the code. 
+# In short, it will always be the name of the folder this file is in. 
 current_dir = Path(__file__).parent
+
+# This is telling python to look in the folder we just grabbed from the above code
+# for the file 'DummyDataComplete.csv'
 student_df  = current_dir / 'DummyDataComplete.csv'
 
 class Student:
