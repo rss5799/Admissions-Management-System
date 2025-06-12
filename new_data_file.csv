@@ -1,0 +1,1078 @@
+id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_points,matrix_languauge,matrix_math,matrix_reading,status,matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest,updated_at,guardian1_email,guardian2_email,grade,deliver_test_accomodation_approved,test_date_sign_up
+1,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-10 09:36:05,nan,nan,9,nan,January 18 2025
+2,30.0,99.0,99.0,97.0,119.0,30.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 09:34:02,nan,nan,9,nan,December 14 2024
+3,nan,55.0,50.0,31.0,15.0,8.0,1.0,6.0,In Processing,3.0,6.0,13.0,22.0,2024-10-01 10:14:34,nan,nan,9,nan,LiUd
+4,30.0,83.0,98.0,72.0,99.0,22.0,17.0,30.0,In Processing,nan,nan,nan,nan,2024-10-05 08:55:30,nan,nan,9,nan,December 14 2024
+5,30.0,83.0,98.0,72.0,99.0,22.0,17.0,30.0,Eligible,nan,nan,nan,nan,2024-10-05 08:55:30,nan,nan,9,nan,December 14 2024
+6,30.0,85.0,99.0,99.0,113.0,23.0,30.0,30.0,KaJg,nan,nan,nan,nan,2024-10-01 08:22:29,nan,nan,9,nan,November 16 2024
+7,30.0,79.0,99.0,99.0,110.0,20.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-29 09:31:09,nan,bbnB,9,nan,December 14 2024
+8,nan,47.0,86.0,44.0,31.0,4.0,3.0,24.0,In Processing,5.0,1.0,16.0,22.0,2024-10-01 11:28:56,nan,nan,9,nan,March 22 2025 (No-rest option)
+9,nan,67.0,95.0,60.0,53.0,14.0,11.0,28.0,In Processing,nan,nan,nan,nan,2024-10-12 21:11:31,nan,nan,9,nan,April 26 2025 (No-rest option)
+10,nan,68.0,62.0,50.0,33.0,15.0,6.0,12.0,In Processing,nan,nan,nan,nan,2024-10-17 18:31:11,nan,nan,9,nan,December 14 2024
+11,nan,33.0,54.0,69.0,24.0,1.0,15.0,8.0,bstb,9.0,20.0,6.0,35.0,2024-10-01 07:35:59,nan,nan,9,nan,February 15 2025 (No-rest option)
+12,30.0,79.0,99.0,97.0,109.0,20.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 07:28:18,nan,nan,9,nan,November 16 2024
+13,30.0,76.0,85.0,97.0,101.0,19.0,29.0,23.0,Eligible,nan,nan,nan,nan,2024-10-02 17:09:05,nan,nan,9,nan,November 16 2024
+fTYO,30.0,95.0,90.0,99.0,114.0,28.0,30.0,26.0,nan,nan,nan,nan,nan,2024-09-23 20:16:35,nan,nan,8,nan,January 18 2025
+15,30.0,93.0,99.0,99.0,117.0,27.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 09:33:21,nan,nan,9,nan,November 16 2024
+16,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-24 20:25:53,nan,nan,9,nan,December 14 2024
+17,17.0,96.0,82.0,96.0,97.0,29.0,29.0,22.0,Eligible,nan,nan,nan,nan,2024-11-07 21:31:12,nan,nan,9,nan,January 18 2025
+18,nan,70.0,61.0,76.0,46.0,16.0,19.0,11.0,In Processing,12.0,19.0,3.0,34.0,2024-10-01 10:16:26,nan,nan,9,nan,March 22 2025 (No-rest option)
+19,30.0,82.0,99.0,76.0,101.0,22.0,19.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 02:32:31,nan,nan,9,nan,December 14 2024
+20,nan,64.0,67.0,38.0,28.0,13.0,1.0,14.0,In Processing,nan,nan,nan,nan,2024-10-07 12:38:55,nan,nan,9,nan,December 14 2024
+21,27.0,78.0,92.0,92.0,101.0,20.0,27.0,27.0,Eligible,nan,nan,nan,nan,2024-10-01 12:37:14,nan,nan,9,nan,November 16 2024
+22,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-14 18:03:38,nan,nan,9,nan,nan
+23,30.0,76.0,83.0,83.0,93.0,19.0,22.0,22.0,Eligible,nan,nan,nan,nan,2024-10-11 19:46:50,nan,nan,9,nan,November 16 2024
+24,30.0,82.0,80.0,96.0,102.0,22.0,29.0,21.0,Eligible,nan,nan,nan,nan,2024-10-11 09:03:00,nan,nan,9,nan,December 14 2024
+25,nan,61.0,79.0,46.0,35.0,11.0,4.0,20.0,In Processing,1.0,2.0,7.0,10.0,2024-10-02 13:35:30,nan,nan,10,nan,February 15 2025 (No-rest option)
+26,30.0,88.0,86.0,71.0,95.0,25.0,16.0,24.0,Eligible,nan,nan,nan,nan,2024-10-02 13:48:43,nan,nan,9,nan,November 16 2024
+27,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-01 19:04:33,nan,nan,10,nan,January 18 2025
+28,30.0,79.0,77.0,65.0,82.0,20.0,13.0,19.0,Eligible,19.0,18.0,21.0,88.0,2024-10-01 08:35:41,nan,nan,9,nan,March 22 2025 (No-rest option)
+29,30.0,86.0,99.0,96.0,113.0,24.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 08:28:25,nan,nan,9,nan,November 16 2024
+30,30.0,83.0,98.0,96.0,111.0,22.0,29.0,30.0,Eligible,nan,nan,nan,nan,2025-04-09 20:06:47,nan,nan,9,nan,November 16 2024
+31,30.0,88.0,94.0,85.0,106.0,25.0,23.0,28.0,Eligible,nan,nan,nan,nan,2024-11-05 14:44:47,nan,nan,9,nan,January 18 2025
+32,30.0,76.0,99.0,99.0,109.0,19.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-06 13:38:01,nan,nan,9,nan,January 18 2025
+33,NwIL,54.0,43.0,45.0,13.0,8.0,3.0,2.0,In Processing,nan,nan,nan,nan,2024-10-28 09:35:56,nan,nan,9,nan,December 14 2024
+34,nan,52.0,13.0,30.0,9.0,7.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-28 09:38:12,nan,nan,9,Test Accommodations Approved,December 14 2024
+35,30.0,52.0,98.0,91.0,93.0,7.0,26.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 09:18:45,nan,nan,9,nan,December 14 2024
+36,nan,48.0,56.0,46.0,18.0,5.0,4.0,9.0,In Processing,nan,nan,nan,nan,2024-10-01 07:52:27,nan,nan,9,nan,November 16 2024
+37,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-01 13:49:18,nan,nan,9,nan,nan
+38,nan,79.0,98.0,70.0,66.0,20.0,16.0,30.0,In Processing,nan,nan,nan,nan,2024-10-03 10:17:18,nan,nan,10,nan,April 26 2025 (No-rest option)
+39,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 08:17:33,nan,nan,9,nan,November 16 2024
+40,30.0,83.0,99.0,98.0,112.0,22.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 08:08:49,nan,nan,9,nan,November 16 2024
+41,30.0,88.0,71.0,90.0,97.0,25.0,26.0,16.0,Eligible,nan,nan,nan,nan,2024-10-01 12:59:55,nan,nan,9,nan,January 18 2025
+42,29.0,96.0,74.0,66.0,90.0,29.0,14.0,18.0,Eligible,nan,nan,nan,nan,2025-04-09 20:18:24,nan,nan,9,nan,April 26 2025 (No-rest option)
+43,23.0,76.0,99.0,98.0,102.0,19.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 06:54:29,nan,nan,9,nan,November 16 2024
+44,30.0,80.0,96.0,99.0,110.0,21.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 06:20:58,nan,nan,9,nan,December 14 2024
+45,nan,35.0,81.0,54.0,30.0,1.0,8.0,21.0,In Processing,nan,nan,nan,nan,2024-10-23 14:55:48,nan,nan,9,nan,December 14 2024
+46,30.0,75.0,99.0,83.0,100.0,18.0,22.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 09:22:39,nan,nan,9,nan,November 16 2024
+47,30.0,92.0,96.0,89.0,111.0,27.0,25.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 00:20:26,nan,nan,9,nan,November 16 2024
+48,nan,40.0,46.0,63.0,17.0,1.0,12.0,4.0,In Processing,nan,nan,nan,nan,2024-10-01 04:21:57,nan,nan,9,nan,November 16 2024
+49,30.0,84.0,85.0,99.0,106.0,23.0,30.0,23.0,Eligible,nan,nan,nan,nan,2024-10-01 05:42:02,nan,nan,9,nan,November 16 2024
+50,30.0,82.0,99.0,98.0,112.0,22.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 06:01:25,nan,nan,9,nan,November 16 2024
+51,30.0,85.0,99.0,99.0,113.0,23.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 06:14:59,nan,nan,9,nan,November 16 2024
+52,nan,90.0,62.0,52.0,45.0,26.0,7.0,12.0,In Processing,nan,nan,nan,nan,2024-10-01 06:25:58,nan,nan,10,nan,December 14 2024
+53,30.0,87.0,99.0,96.0,113.0,24.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 06:29:16,nan,nan,9,nan,December 14 2024
+54,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-01 06:32:02,nan,nan,10,nan,April 26 2025 (No-rest option)
+55,nan,54.0,69.0,71.0,39.0,8.0,16.0,15.0,In Processing,15.0,15.0,12.0,42.0,2024-10-01 06:41:01,nan,nan,9,nan,March 22 2025 (No-rest option)
+56,25.0,69.0,81.0,92.0,88.0,15.0,27.0,21.0,Eligible,nan,nan,nan,nan,2024-10-01 06:35:48,nan,nan,9,nan,November 16 2024
+57,30.0,78.0,99.0,98.0,110.0,20.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 06:43:20,nan,nan,9,nan,November 16 2024
+58,30.0,94.0,94.0,93.0,113.0,28.0,27.0,28.0,Eligible,nan,nan,nan,nan,2024-10-01 07:19:51,nan,nan,9,nan,November 16 2024
+59,nan,44.0,56.0,44.0,15.0,3.0,3.0,9.0,In Processing,2.0,6.0,10.0,18.0,2024-10-01 07:20:50,nan,nan,9,nan,February 15 2025 (No-rest option)
+60,22.0,94.0,95.0,68.0,93.0,28.0,15.0,28.0,Eligible,nan,nan,nan,nan,2024-10-01 08:10:54,nan,nan,9,nan,December 14 2024
+61,30.0,82.0,87.0,69.0,91.0,22.0,15.0,24.0,Eligible,nan,nan,nan,nan,2024-10-01 08:25:16,nan,nan,9,Test Accommodations Approved,November 16 2024
+62,30.0,88.0,99.0,93.0,112.0,25.0,27.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 08:26:15,nan,nan,9,nan,November 16 2024
+63,30.0,94.0,99.0,97.0,117.0,28.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 08:33:37,nan,nan,9,nan,November 16 2024
+64,30.0,96.0,89.0,86.0,108.0,29.0,24.0,25.0,Eligible,nan,nan,nan,nan,2024-10-01 08:36:59,nan,T5e7,9,nan,November 16 2024
+65,30.0,88.0,97.0,96.0,113.0,25.0,29.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 08:39:22,nan,nan,9,nan,November 16 2024
+66,30.0,94.0,95.0,99.0,116.0,28.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-01 08:38:11,nan,nan,9,nan,November 16 2024
+67,30.0,87.0,94.0,74.0,100.0,24.0,18.0,28.0,Eligible,nan,nan,nan,nan,2024-10-01 08:54:21,nan,nan,9,nan,December 14 2024
+CEHt,nan,63.0,63.0,57.0,33.0,12.0,9.0,12.0,In Processing,nan,nan,LGet,nan,2024-10-01 08:59:43,nan,nan,9,nan,March 22 2025 (No-rest option)
+69,30.0,90.0,98.0,77.0,105.0,26.0,19.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 13:57:58,nan,nan,9,nan,November 16 2024
+70,30.0,97.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 09:19:24,nan,nan,9,nan,December 14 2024
+71,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 09:22:53,nan,nan,9,nan,December 14 2024
+72,nan,58.0,77.0,48.0,34.0,10.0,5.0,19.0,In Processing,nan,nan,nan,nan,2024-10-01 09:31:21,nan,nan,9,nan,April 26 2025 (No-rest option)
+73,nan,42.0,49.0,51.0,13.0,2.0,6.0,5.0,In Processing,nan,nan,nan,nan,2024-10-01 09:37:03,nan,nan,9,nan,December 14 2024
+74,nan,61.0,92.0,77.0,57.0,11.0,19.0,27.0,In Processing,8.0,15.0,26.0,49.0,2024-10-01 09:44:07,nan,nan,9,nan,February 15 2025 (No-rest option)
+75,nan,79.0,78.0,82.0,62.0,20.0,22.0,20.0,In Processing,nan,nan,nan,nan,2024-10-01 09:49:47,nan,nan,11,nan,March 22 2025 (No-rest option)
+76,30.0,88.0,85.0,69.0,93.0,25.0,15.0,23.0,Eligible,nan,nan,nan,nan,2024-10-01 10:01:21,nan,nan,9,nan,November 16 2024
+77,nan,98.0,94.0,76.0,77.0,30.0,19.0,28.0,In Processing,nan,nan,nan,nan,2024-10-01 09:59:18,nan,nan,10,nan,April 26 2025 (No-rest option)
+78,nan,54.0,83.0,71.0,46.0,8.0,16.0,22.0,In Processing,14.0,21.0,17.0,52.0,2024-10-01 10:22:35,nan,nan,9,nan,March 22 2025 (No-rest option)
+79,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 10:29:55,nan,nan,9,nan,November 16 2024
+80,30.0,61.0,99.0,78.0,91.0,11.0,20.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 10:40:04,nan,nan,9,nan,December 14 2024
+81,30.0,99.0,99.0,83.0,112.0,30.0,22.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 10:53:02,nan,nan,9,nan,November 16 2024
+82,30.0,95.0,96.0,95.0,115.0,28.0,28.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 11:11:01,nan,nan,9,nan,November 16 2024
+83,27.0,89.0,79.0,85.0,95.0,25.0,23.0,20.0,Eligible,nan,nan,nan,nan,2024-10-01 11:12:09,nan,nan,9,nan,December 14 2024
+84,30.0,94.0,97.0,94.0,115.0,28.0,28.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 11:19:22,nan,nan,11,nan,November 16 2024
+85,nan,37.0,56.0,38.0,11.0,1.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-10-01 11:39:29,nan,nan,9,nan,April 26 2025 (No-rest option)
+86,21.0,81.0,99.0,99.0,102.0,21.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 11:45:04,nan,nan,9,nan,November 16 2024
+87,28.0,85.0,99.0,97.0,110.0,23.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 21:02:12,nan,nan,9,nan,December 14 2024
+88,30.0,75.0,92.0,86.0,99.0,18.0,24.0,27.0,Eligible,nan,nan,nan,nan,2024-10-01 12:19:43,nan,nan,9,nan,November 16 2024
+89,nan,65.0,56.0,81.0,43.0,13.0,21.0,9.0,In Processing,6.0,18.0,1.0,25.0,2024-10-01 12:32:40,nan,nan,9,nan,March 22 2025 (No-rest option)
+90,nan,61.0,93.0,82.0,60.0,11.0,22.0,27.0,In Processing,19.0,17.0,23.0,59.0,2024-10-01 12:44:29,nan,nan,10,nan,March 22 2025 (No-rest option)
+91,30.0,96.0,95.0,76.0,106.0,29.0,19.0,28.0,Eligible,nan,nan,nan,nan,2025-03-27 09:58:00,nan,nan,10,nan,November 16 2024
+92,30.0,93.0,99.0,99.0,117.0,27.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 13:13:10,nan,nan,9,nan,November 16 2024
+93,nan,45.0,92.0,93.0,57.0,3.0,27.0,27.0,In Processing,nan,nan,nan,nan,2024-10-01 13:37:13,nan,nan,9,nan,April 26 2025 (No-rest option)
+94,30.0,82.0,92.0,89.0,104.0,22.0,25.0,27.0,Eligible,nan,nan,nan,nan,2024-10-01 13:43:49,nan,nan,9,nan,November 16 2024
+95,30.0,68.0,63.0,90.0,83.0,15.0,26.0,12.0,Eligible,28.0,30.0,26.0,114.0,2024-10-01 14:01:12,nan,nan,9,nan,February 15 2025 (No-rest option)
+96,30.0,82.0,98.0,90.0,108.0,22.0,KQL7,30.0,Eligible,nan,nan,nan,nan,2024-10-01 14:45:25,nan,nan,9,nan,November 16 2024
+97,nan,69.0,92.0,65.0,55.0,15.0,13.0,27.0,In Processing,9.0,22.0,25.0,56.0,2024-10-01 15:12:33,nan,nan,9,nan,March 22 2025 (No-rest option)
+98,nan,74.0,87.0,65.0,55.0,18.0,13.0,24.0,In Processing,13.0,9.0,23.0,45.0,2024-10-01 16:04:25,nan,nan,10,nan,March 22 2025 (No-rest option)
+99,26.0,68.0,89.0,95.0,94.0,15.0,28.0,25.0,Eligible,nan,nan,nan,nan,2024-10-01 15:57:17,nan,nan,9,nan,November 16 2024
+100,30.0,76.0,96.0,99.0,108.0,19.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 15:59:33,nan,nan,9,nan,November 16 2024
+101,nan,56.0,84.0,60.0,43.0,9.0,11.0,23.0,In Processing,7.0,6.0,22.0,35.0,2024-10-01 16:04:51,nan,nan,9,nan,March 22 2025 (No-rest option)
+102,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-01 16:41:13,nan,nan,9,nan,nan
+103,nan,37.0,71.0,57.0,26.0,1.0,9.0,16.0,In Processing,nan,nan,nan,nan,2024-10-01 16:43:06,nan,nan,9,nan,March 22 2025 (No-rest option)
+104,30.0,99.0,99.0,93.0,117.0,30.0,27.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 16:54:12,nan,nan,11,nan,November 16 2024
+105,30.0,89.0,99.0,99.0,115.0,25.0,30.0,30.0,Eligible,nan,fqVL,nan,nan,2024-10-01 17:13:34,nan,nan,9,nan,November 16 2024
+106,nan,76.0,67.0,48.0,38.0,19.0,5.0,14.0,In Processing,nan,nan,nan,nan,2024-10-01 17:24:06,nan,nan,10,nan,December 14 2024
+107,nan,76.0,67.0,48.0,38.0,19.0,5.0,14.0,In Processing,nan,nan,nan,nan,2024-10-01 17:24:06,nan,nan,10,nan,December 14 2024
+108,30.0,87.0,99.0,97.0,113.0,24.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 18:01:53,nan,nan,9,nan,December 14 2024
+109,30.0,85.0,94.0,83.0,103.0,23.0,22.0,28.0,Eligible,nan,nan,nan,nan,2024-10-01 21:01:54,nan,nan,9,nan,November 16 2024
+110,nan,85.0,90.0,98.0,79.0,23.0,30.0,26.0,In Processing,nan,nan,nan,nan,2024-10-01 18:13:28,nan,nan,10,nan,November 16 2024
+111,28.0,70.0,73.0,93.0,88.0,16.0,27.0,17.0,Eligible,nan,nan,nan,nan,2024-10-01 18:27:32,nan,nan,9,nan,December 14 2024
+112,nan,93.0,97.0,48.0,61.0,27.0,5.0,29.0,In Processing,nan,nan,nan,nan,2024-10-01 19:08:52,nan,nan,10,nan,April 26 2025 (No-rest option)
+113,nan,44.0,57.0,10.0,13.0,3.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-10-01 19:23:56,nan,nan,9,nan,April 26 2025 (No-rest option)
+114,30.0,98.0,96.0,86.0,113.0,30.0,24.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 20:19:29,nan,nan,9,nan,November 16 2024
+115,30.0,89.0,99.0,97.0,114.0,25.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 20:30:40,nan,nan,9,nan,November 16 2024
+116,nan,54.0,77.0,99.0,57.0,8.0,30.0,19.0,In Processing,3.0,27.0,15.0,45.0,2024-10-01 20:36:24,nan,nan,9,nan,March 22 2025 (No-rest option)
+117,30.0,96.0,92.0,99.0,116.0,29.0,30.0,27.0,Eligible,nan,nan,nan,nan,2024-10-01 20:56:45,nan,nan,9,nan,November 16 2024
+118,nan,77.0,71.0,97.0,64.0,19.0,29.0,16.0,In Processing,nan,nan,nan,nan,2024-10-01 21:00:28,nan,nan,9,nan,December 14 2024
+119,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-01 21:12:57,nan,nan,11,nan,nan
+120,27.0,61.0,86.0,96.0,91.0,11.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-01 21:18:47,nan,nan,9,nan,November 16 2024
+121,30.0,80.0,80.0,98.0,102.0,21.0,30.0,21.0,Eligible,nan,nan,nan,nan,2024-10-01 21:21:29,nan,nan,9,nan,November 16 2024
+122,nan,27.0,44.0,88.0,29.0,1.0,25.0,3.0,In Processing,1.0,21.0,1.0,23.0,2024-10-03 22:06:30,nan,nan,9,nan,March 22 2025 (No-rest option)
+123,30.0,93.0,97.0,85.0,109.0,27.0,23.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 21:40:46,nan,nan,9,nan,December 14 2024
+124,nan,17.0,10.0,24.0,3.0,1.0,1.0,1.0,In Processing,1.0,1.0,1.0,3.0,2024-10-01 22:08:28,nan,nan,9,nan,March 22 2025 (No-rest option)
+125,30.0,94.0,92.0,99.0,115.0,28.0,30.0,27.0,Eligible,nan,nan,nan,nan,2024-10-01 23:39:50,nan,nan,9,nan,November 16 2024
+126,nan,8.0,16.0,44.0,4.0,1.0,2.0,1.0,In Processing,nan,nan,nan,nan,2024-10-01 23:46:55,nan,nan,9,nan,November 16 2024
+127,30.0,80.0,98.0,83.0,103.0,21.0,22.0,30.0,Eligible,nan,nan,nan,nan,2024-10-02 00:54:42,nan,nan,9,nan,November 16 2024
+128,23.0,68.0,95.0,60.0,77.0,15.0,11.0,28.0,In Processing,17.0,20.0,22.0,82.0,2024-10-02 03:03:14,nan,nan,9,nan,February 15 2025 (No-rest option)
+129,nan,77.0,90.0,96.0,74.0,19.0,29.0,26.0,In Processing,nan,nan,nan,nan,2024-10-02 04:41:12,nan,nan,9,nan,November 16 2024
+130,nan,89.0,87.0,95.0,77.0,25.0,28.0,24.0,In Processing,nan,nan,nan,nan,2024-10-02 06:57:03,nan,nan,11,nan,November 16 2024
+131,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-02 07:00:08,nan,nan,9,nan,November 16 2024
+132,30.0,89.0,99.0,99.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-02 07:08:53,nan,nan,9,nan,November 16 2024
+133,30.0,80.0,99.0,86.0,105.0,21.0,24.0,30.0,Eligible,nan,nan,nan,nan,2024-10-02 07:52:44,nan,nan,9,nan,November 16 2024
+134,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-18 13:09:06,nan,nan,9,nan,November 16 2024
+135,nan,61.0,88.0,73.0,53.0,11.0,17.0,25.0,In Processing,6.0,20.0,25.0,51.0,2024-10-02 09:57:13,nan,nan,9,nan,February 15 2025 (No-rest option)
+136,28.0,80.0,81.0,30.0,100.0,21.0,30.0,21.0,Eligible,nan,nan,nan,nan,2024-10-02 09:59:11,nan,nan,9,nan,November 16 2024
+137,nan,65.0,88.0,38.0,39.0,13.0,1.0,25.0,In Processing,1.0,1.0,1.0,3.0,1A0a,nan,nan,9,nan,March 22 2025 (No-rest option)
+138,30.0,80.0,80.0,99.0,102.0,21.0,30.0,21.0,Eligible,nan,nan,nan,nan,2024-10-02 11:04:34,nan,nan,9,nan,November 16 2024
+139,nan,52.0,57.0,78.0,36.0,7.0,20.0,9.0,In Processing,nan,nan,nan,nan,2024-10-02 11:09:37,nan,nan,9,Test Accommodations Approved,December 14 2024
+140,30.0,92.0,94.0,86.0,109.0,o3U0,24.0,28.0,Eligible,nan,nan,nan,nan,2024-10-02 11:28:19,nan,nan,9,nan,December 14 2024
+141,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-02 12:00:38,nan,nan,9,nan,nan
+142,30.0,61.0,89.0,86.0,90.0,11.0,24.0,25.0,Eligible,nan,nan,nan,nan,2024-10-02 13:11:47,nan,nan,9,nan,December 14 2024
+143,30.0,74.0,86.0,83.0,94.0,18.0,22.0,24.0,Eligible,nan,nan,nan,nan,2024-10-02 12:37:34,nan,nan,9,nan,November 16 2024
+144,nan,44.0,56.0,16.0,13.0,3.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-10-02 14:50:42,nan,nan,9,nan,April 26 2025 (No-rest option)
+145,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-02 14:54:52,nan,nan,11,nan,January 18 2025
+146,30.0,89.0,99.0,99.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-02 14:59:18,nan,nan,9,nan,December 14 2024
+147,nan,29.0,73.0,62.0,30.0,1.0,12.0,17.0,In Processing,nan,nan,nan,nan,2024-10-02 15:17:55,nan,nan,9,nan,December 14 2024
+148,nan,53.0,69.0,64.0,35.0,7.0,13.0,15.0,MAxG,nan,nan,nan,nan,2024-10-02 15:48:22,nan,nan,9,nan,April 26 2025 (No-rest option)
+149,22.0,81.0,92.0,97.0,99.0,21.0,29.0,27.0,Eligible,nan,nan,nan,nan,2024-10-02 17:39:37,nan,nan,9,nan,November 16 2024
+150,30.0,92.0,88.0,70.0,98.0,27.0,16.0,25.0,Eligible,nan,nan,nan,nan,2024-10-02 17:56:52,nan,nan,10,nan,January 18 2025
+151,30.0,89.0,nL1v,98.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-02 18:01:27,nan,nan,9,nan,November 16 2024
+152,18.0,98.0,98.0,97.0,107.0,30.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-02 18:05:53,nan,nan,9,Test Accommodations Approved,December 14 2024
+153,nan,53.0,92.0,45.0,37.0,7.0,3.0,27.0,In Processing,21.0,12.0,16.0,49.0,2024-10-02 19:53:32,nan,nan,9,nan,March 22 2025 (No-rest option)
+154,30.0,99.0,92.0,99.0,117.0,30.0,30.0,27.0,Eligible,nan,nan,nan,nan,2024-10-02 20:20:43,nan,nan,9,nan,November 16 2024
+155,30.0,76.0,96.0,83.0,100.0,19.0,22.0,29.0,Eligible,nan,nan,nan,nan,2024-10-02 23:27:33,nan,nan,9,nan,November 16 2024
+156,nan,70.0,92.0,63.0,55.0,16.0,12.0,27.0,In Processing,18.0,7.0,29.0,54.0,2024-10-03 07:05:38,nan,nan,9,nan,February 15 2025 (No-rest option)
+157,30.0,95.0,99.0,99.0,118.0,28.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 08:53:00,nan,nan,9,nan,November 16 2024
+158,nan,32.0,69.0,53.0,23.0,1.0,7.0,15.0,In Processing,nan,nan,nan,nan,2024-10-03 09:04:16,nan,nan,9,nan,March 22 2025 (No-rest option)
+159,nan,37.0,55.0,57.0,18.0,1.0,9.0,8.0,In Processing,14.0,4.0,15.0,33.0,2024-10-03 09:41:23,nan,nan,9,nan,March 22 2025 (No-rest option)
+160,27.0,79.0,82.0,78.0,89.0,20.0,20.0,22.0,Eligible,nan,nan,nan,nan,2024-10-03 10:33:17,nan,nan,9,nan,November 16 2024
+blWQ,nan,50.0,67.0,53.0,27.0,6.0,7.0,14.0,In Processing,nan,nan,nan,nan,2024-10-03 12:26:35,nan,nan,9,nan,April 26 2025 (No-rest option)
+162,nan,11.0,26.0,48.0,7.0,1.0,5.0,1.0,In Processing,nan,nan,nan,nan,2024-10-03 12:59:55,nan,nan,9,nan,December 14 2024
+163,30.0,93.0,99.0,99.0,117.0,27.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 13:03:58,nan,nan,9,nan,November 16 2024
+164,nan,29.0,28.0,30.0,3.0,1.0,1.0,1.0,In Processing,1.0,2.0,1.0,4.0,2024-10-03 14:35:42,nan,nan,9,nan,March 22 2025 (No-rest option)
+FvIf,nan,60.0,56.0,90.0,46.0,11.0,26.0,9.0,In Processing,10.0,30.0,15.0,55.0,2024-10-03 15:01:30,nan,nan,9,nan,March 22 2025 (No-rest option)
+166,30.0,79.0,99.0,94.0,108.0,20.0,28.0,30.0,Eligible,nan,nan,nan,nan,2024-11-21 15:20:47,nan,nan,9,nan,December 14 2024
+167,30.0,93.0,98.0,91.0,113.0,27.0,26.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 17:20:49,nan,nan,9,nan,December 14 2024
+168,nan,64.0,89.0,75.0,56.0,13.0,18.0,25.0,In Processing,nan,nan,nan,nan,2024-10-03 18:07:04,nan,nan,9,nan,November 16 2024
+169,30.0,98.0,88.0,99.0,115.0,30.0,30.0,25.0,Eligible,nan,nan,nan,nan,2024-10-03 18:10:29,nan,nan,9,nan,November 16 2024
+170,30.0,86.0,99.0,99.0,114.0,24.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 18:32:16,nan,nan,9,nan,November 16 2024
+171,nan,55.0,73.0,97.0,54.0,8.0,29.0,17.0,In Processing,nan,nan,nan,nan,2024-10-03 18:20:31,nan,nan,9,nan,April 26 2025 (No-rest option)
+172,nan,70.0,74.0,71.0,50.0,16.0,16.0,18.0,In Processing,19.0,7.0,15.0,41.0,2024-10-03 19:18:55,nan,nan,9,nan,February 15 2025 (No-rest option)
+173,30.0,88.0,95.0,90.0,109.0,25.0,26.0,28.0,Eligible,nan,nan,nan,nan,2024-10-03 19:41:11,nan,nan,9,nan,December 14 2024
+174,nan,32.0,38.0,70.0,18.0,1.0,16.0,1.0,In Processing,nan,nan,nan,nan,2024-10-03 20:42:41,nan,nan,10,nan,April 26 2025 (No-rest option)
+175,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 21:11:19,nan,nan,9,nan,November 16 2024
+176,nan,22.0,84.0,75.0,46.0,1.0,22.0,23.0,In Processing,15.0,21.0,15.0,51.0,2024-10-04 14:27:16,nan,nan,9,nan,March 22 2025 (No-rest option)
+177,30.0,77.0,88.0,86.0,98.0,19.0,24.0,25.0,Eligible,nan,nan,nan,nan,2024-10-03 21:49:48,nan,nan,9,nan,December 14 2024
+178,30.0,99.0,98.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-07 18:27:18,nan,nan,9,nan,November 16 2024
+179,nan,97.0,90.0,43.0,57.0,29.0,2.0,26.0,In Processing,nan,nan,nan,nan,2024-10-03 22:05:39,nan,nan,10,nan,April 26 2025 (No-rest option)
+180,30.0,92.0,96.0,76.0,105.0,27.0,19.0,29.0,Eligible,nan,nan,nan,nan,2024-10-04 02:52:13,nan,nan,9,nan,December 14 2024
+181,nan,79.0,79.0,72.0,57.0,20.0,17.0,20.0,In Processing,nan,nan,nan,nan,2024-10-04 09:25:17,nan,nan,9,nan,January 18 2025
+182,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-04 10:48:45,nan,nan,11,nan,nan
+183,30.0,89.0,99.0,93.0,112.0,25.0,27.0,30.0,Eligible,nan,nan,nan,nan,2024-10-04 12:27:20,nan,nan,9,nan,December 14 2024
+184,27.0,86.0,97.0,82.0,102.0,24.0,22.0,29.0,Eligible,nan,nan,nan,nan,2024-10-04 17:14:24,nan,nan,9,nan,January 18 2025
+185,25.0,74.0,98.0,85.0,96.0,18.0,23.0,30.0,Eligible,nan,nan,nan,nan,2024-10-08 20:45:35,nan,nan,9,nan,December 14 2024
+186,30.0,97.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-04 19:25:21,nan,nan,9,nan,November 16 2024
+187,30.0,96.0,85.0,82.0,104.0,29.0,22.0,23.0,Eligible,nan,nan,nan,nan,2024-10-04 20:46:05,nan,nan,10,nan,November 16 2024
+188,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-04 22:02:32,nan,nan,9,nan,November 16 2024
+189,18.0,84.0,83.0,78.0,83.0,23.0,20.0,22.0,In Processing,26.0,19.0,16.0,79.0,2024-10-05 03:17:14,Qagm,nan,9,nan,March 22 2025 (No-rest option)
+190,30.0,94.0,99.0,88.0,113.0,28.0,25.0,30.0,Eligible,nan,nan,nan,nan,2024-10-06 19:51:52,nan,nan,9,nan,November 16 2024
+191,27.0,63.0,99.0,69.0,84.0,12.0,15.0,30.0,Eligible,aMEM,17.0,27.0,89.0,2024-10-05 08:45:44,nan,nan,9,nan,March 22 2025 (No-rest option)
+192,30.0,82.0,95.0,90.0,106.0,22.0,26.0,28.0,Eligible,nan,nan,nan,nan,2024-10-05 10:05:31,nan,nan,9,nan,January 18 2025
+193,30.0,53.0,75.0,97.0,84.0,7.0,29.0,18.0,Eligible,20.0,24.0,14.0,88.0,2025-04-02 07:49:30,nan,nan,9,nan,March 22 2025 (No-rest option)
+194,30.0,95.0,95.0,86.0,110.0,28.0,24.0,28.0,Eligible,nan,nan,nan,nan,2024-10-11 11:39:21,nan,nan,9,nan,November 16 2024
+195,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-05 11:53:51,nan,nan,9,nan,December 14 2024
+196,30.0,75.0,95.0,99.0,106.0,18.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-05 12:10:33,nan,nan,9,nan,January 18 2025
+197,30.0,98.0,96.0,93.0,116.0,30.0,27.0,29.0,Eligible,nan,nan,nan,nan,2024-10-05 12:37:26,nan,nan,11,nan,January 18 2025
+198,30.0,82.0,98.0,81.0,103.0,22.0,21.0,30.0,Eligible,nan,nan,nan,nan,2024-10-05 14:50:42,nan,nan,9,nan,November 16 2024
+199,30.0,68.0,98.0,99.0,105.0,15.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-05 13:28:13,nan,nan,9,nan,November 16 2024
+200,30.0,89.0,88.0,93.0,107.0,25.0,27.0,25.0,Eligible,nan,nan,nan,nan,2024-10-05 17:12:32,nan,nan,9,nan,November 16 2024
+201,30.0,88.0,90.0,97.0,110.0,25.0,29.0,26.0,In Processing,nan,nan,nan,nan,2024-10-14 13:10:00,nan,nan,9,nan,November 16 2024
+202,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-05 20:41:20,nan,nan,RCw9,nan,April 26 2025 (No-rest option)
+203,30.0,89.0,99.0,99.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-06 09:02:20,nan,nan,9,nan,November 16 2024
+204,27.0,84.0,92.0,90.0,103.0,23.0,26.0,27.0,Eligible,nan,nan,nan,nan,2024-10-06 12:09:57,nan,nan,9,nan,January 18 2025
+205,nan,31.0,77.0,88.0,45.0,1.0,25.0,19.0,In Processing,nan,nan,nan,nan,2024-10-06 12:42:06,nan,nan,9,nan,April 26 2025 (No-rest option)
+206,25.0,nan,nan,nan,25.0,nan,nan,nan,In Processing,17.0,15.0,27.0,84.0,2024-10-06 12:58:28,nan,nan,9,nan,nan
+207,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,In Processing,nan,nan,nan,nan,2024-10-06 14:30:45,nan,nan,9,nan,January 18 2025
+208,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-06 14:30:45,nan,nan,9,nan,January 18 2025
+209,30.0,92.0,97.0,98.0,116.0,27.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-06 16:28:11,nan,nan,9,nan,3gy7
+210,30.0,91.0,99.0,93.0,113.0,26.0,27.0,30.0,Eligible,nan,nan,nan,nan,2024-10-06 17:00:45,nan,nan,9,nan,November 16 2024
+211,nan,86.0,69.0,28.0,40.0,24.0,1.0,15.0,In Processing,25.0,9.0,7.0,41.0,2024-10-06 17:45:12,nan,nan,9,nan,February 15 2025 (No-rest option)
+212,30.0,78.0,94.0,79.0,98.0,20.0,20.0,28.0,Eligible,nan,nan,nan,nan,2024-10-06 19:16:27,nan,nan,9,nan,November 16 2024
+213,30.0,72.0,84.0,99.0,100.0,17.0,30.0,23.0,Eligible,nan,nan,nan,nan,2024-10-06 20:14:51,nan,nan,9,nan,November 16 2024
+214,nan,43.0,86.0,51.0,32.0,2.0,6.0,24.0,In Processing,4.0,15.0,22.0,41.0,2024-10-06 20:27:30,nan,nan,9,nan,February 15 2025 (No-rest option)
+215,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-06 20:50:44,nan,nan,9,nan,January 18 2025
+216,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-06 21:34:26,nan,nan,9,nan,January 18 2025
+217,30.0,79.0,85.0,99.0,103.0,20.0,30.0,23.0,Eligible,nan,nan,nan,nan,2024-10-06 21:39:45,nan,nan,9,nan,November 16 2024
+218,30.0,90.0,96.0,76.0,104.0,26.0,19.0,29.0,Eligible,nan,nan,nan,nan,2024-10-06 21:54:24,nan,nan,9,nan,December 14 2024
+219,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,z0FW,nan,nan,9,Test Accommodations Approved,January 18 2025
+220,nan,52.0,56.0,51.0,22.0,7.0,6.0,9.0,In Processing,nan,nan,nan,nan,2024-10-07 04:14:00,nan,nan,9,nan,April 26 2025 (No-rest option)
+221,30.0,97.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-07 07:47:08,nan,nan,10,nan,December 14 2024
+222,28.0,91.0,99.0,99.0,114.0,26.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-07 08:24:14,nan,nan,9,nan,November 16 2024
+223,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-07 08:58:36,nan,nan,9,nan,March 22 2025 (No-rest option)
+224,30.0,67.0,88.0,91.0,95.0,14.0,26.0,25.0,Eligible,nan,nan,nan,nan,2024-10-07 09:53:53,nan,nan,9,nan,December 14 2024
+225,28.0,99.0,96.0,88.0,112.0,30.0,25.0,29.0,Eligible,nan,nan,nan,nan,2024-10-07 09:51:25,nan,nan,9,nan,December 14 2024
+226,nan,64.0,48.0,64.0,31.0,13.0,13.0,5.0,In Processing,nan,nan,nan,nan,2024-10-07 10:45:57,nan,nan,9,nan,April 26 2025 (No-rest option)
+227,30.0,94.0,99.0,88.0,113.0,28.0,25.0,30.0,Eligible,nan,nan,nan,nan,2024-10-07 12:13:45,nan,nan,9,nan,December 14 2024
+228,30.0,89.0,99.0,99.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-07 12:41:13,nan,nan,9,nan,November 16 2024
+229,30.0,93.0,99.0,63.0,99.0,27.0,12.0,30.0,Eligible,nan,nan,UWfx,nan,2024-10-07 13:26:29,nan,nan,9,nan,November 16 2024
+230,nan,61.0,84.0,57.0,43.0,11.0,9.0,23.0,In Processing,nan,nan,nan,nan,2024-10-07 15:06:06,nan,nan,9,nan,April 26 2025 (No-rest option)
+231,30.0,89.0,99.0,98.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-07 15:15:32,nan,nan,9,nan,November 16 2024
+232,27.0,99.0,95.0,99.0,115.0,30.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-07 17:32:44,nan,nan,9,nan,November 16 2024
+233,30.0,87.0,La9N,99.0,114.0,24.0,30.0,30.0,75m3,nan,nan,nan,nan,2024-10-07 17:42:32,nan,nan,9,nan,December 14 2024
+234,nan,nan,nan,nan,nan,nan,nan,2BI0,In Processing,nan,nan,nan,nan,2024-10-07 18:00:48,nan,nan,9,nan,nan
+235,nan,52.0,60.0,88.0,43.0,7.0,25.0,11.0,In Processing,6.0,24.0,10.0,40.0,2024-10-08 19:49:54,nan,nan,9,nan,March 22 2025 (No-rest option)
+236,nan,52.0,60.0,88.0,43.0,7.0,25.0,11.0,In Processing,6.0,24.0,10.0,40.0,2024-10-08 19:49:54,nan,nan,9,nan,March 22 2025 (No-rest option)
+237,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-07 21:24:28,nan,nan,9,nan,January 18 2025
+238,30.0,96.0,98.0,88.0,114.0,29.0,25.0,30.0,Eligible,nan,nan,nan,nan,2024-11-05 13:49:24,nan,nan,9,nan,November 16 2024
+239,27.0,97.0,94.0,90.0,110.0,29.0,26.0,28.0,Eligible,nan,nan,nan,nan,2024-10-07 22:07:07,nan,nan,9,nan,November 16 2024
+240,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-08 07:56:20,nan,nan,9,nan,November 16 2024
+241,nan,82.0,71.0,93.0,65.0,22.0,27.0,16.0,In Processing,nan,nan,nan,nan,2024-10-11 18:44:34,nan,nan,9,nan,November 16 2024
+242,nan,47.0,73.0,73.0,VMPI,4.0,17.0,17.0,In Processing,nan,nan,nan,nan,2024-10-08 09:30:42,nan,nan,9,nan,April 26 2025 (No-rest option)
+243,30.0,82.0,98.0,99.0,112.0,22.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-08 10:17:37,nan,nan,9,nan,November 16 2024
+244,nan,53.0,65.0,95.0,48.0,7.0,28.0,13.0,In Processing,nan,nan,nan,nan,2024-10-08 10:27:45,nan,nan,9,nan,November 16 2024
+245,nan,82.0,99.0,45.0,55.0,22.0,3.0,30.0,In Processing,nan,nan,nan,nan,2024-10-08 11:58:11,nan,nan,9,nan,April 26 2025 (No-rest option)
+246,nan,54.0,69.0,63.0,35.0,8.0,12.0,15.0,In Processing,nan,nan,nan,nan,2024-10-08 13:05:47,nan,nan,9,nan,April 26 2025 (No-rest option)
+247,nan,65.0,73.0,70.0,46.0,13.0,16.0,17.0,In Processing,nan,nan,nan,nan,2024-10-08 13:37:54,nan,nan,9,nan,April 26 2025 (No-rest option)
+248,nan,64.0,hZfM,65.0,45.0,13.0,13.0,19.0,In Processing,13.0,10.0,8.0,31.0,2024-10-08 16:59:29,nan,nan,9,nan,March 22 2025 (No-rest option)
+249,nan,9.0,67.0,13.0,16.0,1.0,1.0,14.0,In Processing,nan,nan,nan,nan,2024-10-08 17:39:08,nan,nan,9,nan,December 14 2024
+250,30.0,97.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-08 19:57:09,nan,nan,9,nan,November 16 2024
+251,nan,95.0,88.0,59.0,63.0,28.0,10.0,25.0,In Processing,nan,nan,nan,nan,2024-10-08 17:57:58,nan,nan,10,nan,April 26 2025 (No-rest option)
+252,nan,63.0,43.0,60.0,25.0,12.0,11.0,2.0,In Processing,nan,nan,nan,nan,2024-10-08 18:13:30,nan,nan,9,nan,April 26 2025 (No-rest option)
+253,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-08 18:31:34,nan,nan,9,nan,nan
+254,30.0,96.0,97.0,99.0,118.0,29.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-08 19:01:58,nan,nan,9,nan,November 16 2024
+255,30.0,69.0,89.0,86.0,94.0,15.0,24.0,25.0,Eligible,nan,nan,nan,nan,2024-10-08 20:17:32,nan,nan,9,nan,November 16 2024
+256,nan,56.0,70.0,71.0,41.0,9.0,16.0,16.0,In Processing,12.0,7.0,10.0,29.0,2024-10-09 20:55:56,nan,nan,9,nan,March 22 2025 (No-rest option)
+257,nan,51.0,65.0,43.0,21.0,6.0,2.0,13.0,In Processing,nan,nan,nan,nan,2024-10-09 09:45:04,nan,nan,9,nan,April 26 2025 (No-rest option)
+258,30.0,75.0,98.0,71.0,94.0,18.0,16.0,30.0,Eligible,nan,nan,nan,nan,2024-10-09 15:25:13,nan,nan,9,nan,November 16 2024
+259,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-09 17:12:54,nan,nan,9,nan,April 26 2025 (No-rest option)
+260,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-09 20:09:34,nan,nan,9,nan,November 16 2024
+261,nan,78.0,67.0,65.0,47.0,20.0,13.0,14.0,In Processing,16.0,20.0,9.0,EZKf,2024-10-09 20:31:46,nan,nan,9,nan,March 22 2025 (No-rest option)
+262,nan,55.0,80.0,75.0,47.0,8.0,18.0,21.0,In Processing,20.0,10.0,25.0,55.0,2024-10-09 21:56:16,nan,nan,9,nan,February 15 2025 (No-rest option)
+263,30.0,90.0,99.0,90.0,112.0,26.0,26.0,30.0,Eligible,nan,nan,nan,nan,2024-10-09 22:17:00,nan,nan,9,nan,November 16 2024
+264,30.0,91.0,99.0,99.0,116.0,26.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-09 23:40:35,nan,nan,9,nan,December 14 2024
+265,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-10 02:07:52,nan,nan,9,nan,nan
+266,nan,28.0,48.0,28.0,7.0,1.0,1.0,5.0,In Processing,nan,nan,nan,nan,2024-10-10 06:01:33,nan,nan,9,nan,November 16 2024
+267,nan,58.0,56.0,65.0,32.0,10.0,13.0,9.0,In Processing,nan,nan,nan,nan,2024-10-10 07:44:19,nan,nan,9,nan,April 26 2025 (No-rest option)
+268,nan,83.0,92.0,69.0,64.0,22.0,15.0,27.0,In Processing,nan,nan,nan,nan,2024-10-10 09:13:35,nan,nan,10,nan,November 16 2024
+269,30.0,88.0,99.0,93.0,112.0,25.0,27.0,30.0,In Processing,nan,nan,nan,nan,2024-10-10 09:16:47,nan,nan,11,nan,November 16 2024
+270,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-10 09:37:11,nan,nan,10,nan,January 18 2025
+271,30.0,95.0,98.0,79.0,108.0,28.0,20.0,30.0,Eligible,nan,nan,nan,nan,2025-03-27 08:16:30,jEiH,nan,9,nan,November 16 2024
+272,30.0,95.0,97.0,99.0,117.0,28.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-10 11:00:08,nan,nan,9,nan,December 14 2024
+273,30.0,98.0,99.0,98.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2025-01-30 14:39:29,nan,nan,9,nan,December 14 2024
+274,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-10 11:41:01,nan,nan,9,nan,November 16 2024
+275,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-10 17:26:54,nan,nan,9,nan,nan
+276,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-10 18:00:47,nan,nan,9,nan,nan
+277,nan,87.0,67.0,88.0,63.0,24.0,25.0,14.0,In Processing,nan,nan,nan,0.0,2024-10-10 18:07:32,nan,nan,9,nan,April 26 2025 (No-rest option)
+278,nan,26.0,32.0,19.0,3.0,1.0,1.0,1.0,In Processing,1.0,4.0,1.0,6.0,2024-10-10 18:22:21,nan,nan,9,nan,March 22 2025 (No-rest option)
+279,nan,27.0,86.0,63.0,37.0,1.0,12.0,24.0,In Processing,9.0,6.0,18.0,33.0,2024-10-10 19:07:15,nan,nan,9,nan,February 15 2025 (No-rest option)
+280,nan,60.0,90.0,48.0,42.0,11.0,5.0,26.0,In Processing,nan,nan,nan,nan,2024-10-10 20:11:58,nan,nan,9,nan,April 26 2025 (No-rest option)
+281,nan,46.0,87.0,79.0,48.0,4.0,20.0,24.0,In Processing,8.0,26.0,23.0,57.0,2024-10-10 20:16:46,nan,nan,9,nan,February 15 2025 (No-rest option)
+282,nan,22.0,45.0,30.0,5.0,1.0,1.0,3.0,In Processing,nan,nan,nan,nan,2024-12-06 10:12:54,nan,nan,9,nan,November 16 2024
+283,30.0,68.0,91.0,88.0,96.0,15.0,25.0,26.0,Eligible,nan,nan,nan,nan,2024-10-10 20:48:18,nan,nan,9,nan,November 16 2024
+284,30.0,80.0,96.0,99.0,110.0,21.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-10 20:39:06,nan,nan,9,nan,December 14 2024
+285,30.0,66.0,95.0,90.0,98.0,14.0,26.0,28.0,Eligible,nan,nan,nan,nan,2024-10-10 20:54:15,nan,nan,9,nan,November 16 2024
+286,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-10 21:10:03,nan,nan,9,nan,nan
+287,trw7,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-10 21:48:04,nan,nan,9,nan,November 16 2024
+288,nan,35.0,40.0,71.0,18.0,1.0,16.0,1.0,In Processing,nan,nan,nan,nan,2024-10-10 23:23:53,nan,nan,9,nan,November 16 2024
+289,nan,82.0,98.0,93.0,79.0,22.0,27.0,30.0,In Processing,nan,nan,nan,nan,2024-10-11 04:13:52,nan,nan,9,nan,November 16 2024
+290,nan,22.0,54.0,55.0,17.0,1.0,8.0,8.0,In Processing,nan,nan,nan,nan,2024-10-11 06:57:54,nan,nan,9,nan,March 22 2025 (No-rest option)
+291,30.0,84.0,70.0,64.0,82.0,23.0,13.0,16.0,Eligible,25.0,21.0,18.0,94.0,2024-10-11 09:56:47,nan,nan,9,nan,March 22 2025 (No-rest option)
+292,30.0,77.0,89.0,68.0,89.0,19.0,15.0,25.0,Eligible,nan,nan,nan,nan,2024-10-11 13:10:40,nan,nan,9,nan,November 16 2024
+QNVC,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-11 13:39:48,nan,nan,9,nan,December 14 2024
+294,nan,90.0,83.0,74.0,66.0,26.0,18.0,22.0,In Processing,nan,nan,nan,nan,2024-10-11 13:58:33,nan,nan,11,nan,November 16 2024
+295,nan,21.0,57.0,29.0,11.0,1.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-10-11 15:22:30,nan,nan,9,nan,December 14 2024
+296,nan,71.0,89.0,53.0,48.0,16.0,7.0,25.0,In Processing,18.0,6.0,25.0,49.0,2024-10-11 15:38:46,nan,nan,9,nan,March 22 2025 (No-rest option)
+297,30.0,62.0,99.0,95.0,100.0,12.0,28.0,30.0,Eligible,nan,nan,nan,nan,2024-10-11 16:39:16,nan,nan,9,nan,November 16 2024
+298,nan,36.0,69.0,22.0,17.0,1.0,1.0,bV8s,In Processing,nan,nan,nan,nan,2024-10-11 17:13:28,nan,nan,9,nan,April 26 2025 (No-rest option)
+299,30.0,72.0,86.0,69.0,86.0,17.0,15.0,24.0,Eligible,26.0,19.0,24.0,99.0,2024-10-11 17:25:13,nan,nan,9,nan,March 22 2025 (No-rest option)
+300,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-11 19:26:24,nan,nan,10,nan,January 18 2025
+301,nan,48.0,65.0,51.0,24.0,5.0,6.0,13.0,In Processing,nan,nan,nan,nan,2024-10-11 19:31:54,nan,nan,9,nan,April 26 2025 (No-rest option)
+302,nan,49.0,73.0,41.0,23.0,5.0,1.0,17.0,In Processing,10.0,20.0,8.0,38.0,2024-10-11 19:38:29,nan,nan,9,nan,March 22 2025 (No-rest option)
+303,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-11 23:16:46,nan,nan,9,nan,November 16 2024
+304,30.0,89.0,99.0,99.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-12 09:39:27,nan,nan,9,nan,November 16 2024
+305,30.0,99.0,94.0,99.0,118.0,30.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-12 14:53:05,nan,nan,9,nan,December 14 2024
+306,20.0,57.0,89.0,88.0,79.0,9.0,25.0,25.0,In Processing,69nI,nan,nan,nan,2024-10-12 15:28:11,nan,nan,9,Test Accommodations Approved,April 26 2025 (No-rest option)
+307,nan,93.0,92.0,46.0,58.0,27.0,4.0,27.0,In Processing,nan,nan,nan,nan,2024-10-12 16:47:23,nan,nan,10,nan,February 15 2025 (No-rest option)
+308,nan,40.0,84.0,88.0,49.0,1.0,25.0,23.0,In Processing,6.0,12.0,16.0,34.0,2024-10-12 17:22:45,nan,nan,9,nan,February 15 2025 (No-rest option)
+309,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-12 19:02:59,nan,nan,9,nan,April 26 2025 (No-rest option)
+310,30.0,87.0,94.0,99.0,112.0,24.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-13 10:31:16,nan,nan,10,nan,January 18 2025
+311,28.0,78.0,92.0,53.0,82.0,20.0,7.0,27.0,Eligible,21.0,20.0,26.0,95.0,2024-10-13 10:56:19,nan,nan,9,nan,March 22 2025 (No-rest option)
+312,23.0,96.0,85.0,53.0,82.0,29.0,7.0,23.0,In Processing,nan,nan,nan,nan,2024-10-13 11:28:00,nan,nan,9,nan,April 26 2025 (No-rest option)
+313,nan,50.0,63.0,14.0,19.0,6.0,1.0,12.0,In Processing,15.0,2.0,10.0,27.0,2024-10-13 11:51:16,nan,nan,9,nan,February 15 2025 (No-rest option)
+314,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-15 13:09:13,nan,nan,9,nan,March 22 2025 (No-rest option)
+315,30.0,84.0,98.0,99.0,113.0,23.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-13 15:00:55,nan,nan,9,nan,November 16 2024
+316,30.0,97.0,97.0,99.0,eDLo,29.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-13 17:56:48,nan,nan,9,nan,December 14 2024
+317,nan,52.0,63.0,46.0,23.0,7.0,4.0,12.0,In Processing,nan,nan,nan,nan,2024-10-13 18:08:45,nan,nan,9,nan,November 16 2024
+318,30.0,75.0,96.0,99.0,107.0,18.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-13 20:10:54,nan,nan,9,nan,December 14 2024
+319,30.0,87.0,99.0,88.0,109.0,24.0,25.0,30.0,Eligible,nan,nan,nan,nan,2024-10-13 21:07:01,nan,nan,9,nan,December 14 2024
+320,nan,86.0,79.0,43.0,46.0,24.0,2.0,20.0,In Processing,nan,nan,nan,nan,2024-10-13 21:15:09,nan,nan,10,nan,April 26 2025 (No-rest option)
+321,30.0,94.0,99.0,99.0,118.0,28.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-13 22:34:20,nan,nan,9,nan,January 18 2025
+322,22.0,90.0,97.0,60.0,88.0,26.0,11.0,29.0,Eligible,nan,nan,nan,nan,2024-10-14 09:31:22,nan,nan,9,nan,November 16 2024
+323,nan,38.0,61.0,54.0,20.0,1.0,8.0,11.0,In Processing,nan,nan,nan,nan,2024-10-14 10:03:48,nan,nan,9,nan,December 14 2024
+324,nan,73.0,77.0,69.0,51.0,17.0,15.0,19.0,In Processing,nan,nan,nan,nan,2024-10-14 11:17:28,nan,nan,9,nan,April 26 2025 (No-rest option)
+325,30.0,72.0,84.0,82.0,92.0,17.0,22.0,23.0,Eligible,nan,nan,nan,nan,2024-11-08 13:27:47,nan,nan,9,nan,December 14 2024
+326,nan,13.0,44.0,32.0,5.0,1.0,1.0,3.0,In Processing,1.0,9.0,5.0,15.0,2024-10-14 12:50:14,nan,nan,9,nan,February 15 2025 (No-rest option)
+327,30.0,77.0,97.0,90.0,104.0,19.0,26.0,29.0,Eligible,nan,nan,nan,nan,2024-10-14 13:57:39,nan,nan,9,nan,January 18 2025
+328,28.0,73.0,96.0,86.0,98.0,17.0,24.0,29.0,Eligible,nan,nan,nan,nan,2024-10-14 14:20:04,nan,nan,9,nan,November 16 2024
+329,nan,15.0,45.0,16.0,5.0,1.0,1.0,3.0,In Processing,nan,nan,nan,nan,2024-12-05 13:31:23,nan,nan,9,nan,December 14 2024
+330,30.0,64.0,99.0,93.0,100.0,13.0,27.0,30.0,Eligible,nan,nan,nan,nan,2024-10-14 16:42:01,nan,nan,9,nan,December 14 2024
+331,nan,91.0,94.0,65.0,67.0,26.0,13.0,28.0,In Processing,25.0,20.0,29.0,74.0,2024-10-14 18:58:52,nan,nan,10,nan,March 22 2025 (No-rest option)
+332,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-14 19:33:18,nan,nan,9,nan,November 16 2024
+333,nan,33.0,75.0,76.0,38.0,1.0,19.0,18.0,In Processing,nan,nan,nan,nan,2024-10-14 20:29:21,nan,nan,9,nan,April 26 2025 (No-rest option)
+334,nan,27.0,43.0,60.0,14.0,1.0,11.0,2.0,In Processing,nan,nan,nan,nan,2024-12-12 10:03:13,nan,nan,9,nan,April 26 2025 (No-rest option)
+335,30.0,78.0,98.0,96.0,109.0,20.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-14 21:58:02,nan,nan,9,nan,January 18 2025
+336,nan,71.0,85.0,1.0,40.0,16.0,1.0,23.0,In Processing,13.0,7.0,22.0,42.0,2024-10-14 22:26:32,nan,nan,10,nan,March 22 2025 (No-rest option)
+337,30.0,85.0,97.0,99.0,112.0,23.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-15 07:42:34,nan,nan,9,nan,December 14 2024
+338,30.0,86.0,75.0,93.0,99.0,24.0,27.0,18.0,Eligible,nan,nan,nan,nan,2024-10-15 14:35:55,nan,nan,9,nan,January 18 2025
+339,30.0,89.0,95.0,99.0,113.0,25.0,30.0,28.0,Eligible,nan,nan,nan,nan,2025-03-13 10:20:42,nan,nan,9,nan,November 16 2024
+340,30.0,90.0,91.0,82.0,104.0,Grj9,22.0,26.0,Eligible,nan,nan,nan,nan,2024-10-15 16:44:32,nan,nan,10,nan,December 14 2024
+341,30.0,62.0,92.0,88.0,94.0,12.0,25.0,27.0,Eligible,nan,nan,nan,nan,2024-10-15 16:55:53,nan,nan,9,nan,January 18 2025
+342,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-15 19:44:33,nan,nan,9,nan,November 16 2024
+343,30.0,86.0,95.0,99.0,112.0,24.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-15 20:59:52,nan,nan,9,nan,November 16 2024
+344,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-16 07:52:02,nan,nan,9,nan,April 26 2025 (No-rest option)
+345,27.0,86.0,79.0,66.0,85.0,24.0,14.0,20.0,Eligible,23.0,19.0,25.0,94.0,2024-10-16 10:53:25,nan,nan,9,nan,March 22 2025 (No-rest option)
+346,nan,38.0,80.0,83.0,44.0,1.0,22.0,21.0,In Processing,nan,nan,nan,nan,2024-10-16 11:43:02,nan,nan,9,nan,April 26 2025 (No-rest option)
+347,30.0,69.0,98.0,98.0,105.0,15.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-16 12:22:01,nan,nan,9,nan,November 16 2024
+348,27.0,82.0,99.0,77.0,98.0,22.0,19.0,30.0,Eligible,nan,nan,nan,nan,2024-10-16 12:52:44,nan,nan,9,nan,November 16 2024
+349,nan,74.0,68.0,52.0,40.0,18.0,7.0,15.0,In Processing,nan,nan,nan,nan,2024-10-16 15:57:35,nan,nan,10,nan,December 14 2024
+350,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-16 16:07:26,nan,nan,9,nan,November 16 2024
+351,nan,28.0,45.0,46.0,8.0,1.0,4.0,3.0,In Processing,1.0,2.0,6.0,9.0,2024-12-03 11:47:32,nan,nan,9,nan,March 22 2025 (No-rest option)
+352,30.0,58.0,90.0,89.0,91.0,10.0,25.0,26.0,Eligible,nan,nan,nan,nan,2024-10-17 10:47:25,nan,nan,9,nan,November 16 2024
+353,30.0,74.0,99.0,98.0,108.0,18.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-17 13:50:28,nan,nan,9,nan,November 16 2024
+354,nan,31.0,33.0,14.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-17 15:30:03,nan,nan,9,nan,April 26 2025 (No-rest option)
+355,nan,16.0,94.0,35.0,30.0,1.0,1.0,28.0,In Processing,nan,nan,nan,nan,2024-10-17 17:39:39,nan,nan,9,nan,April 26 2025 (No-rest option)
+356,30.0,66.0,84.0,64.0,80.0,14.0,13.0,23.0,Eligible,23.0,GioS,27.0,98.0,2024-11-05 11:08:44,nan,nan,9,nan,March 22 2025 (No-rest option)
+357,30.0,80.0,94.0,79.0,99.0,21.0,20.0,28.0,In Processing,nan,nan,nan,nan,2024-11-07 12:42:01,nan,nan,9,nan,November 16 2024
+358,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-18 10:04:44,nan,nan,9,nan,March 22 2025 (No-rest option)
+359,30.0,86.0,99.0,88.0,109.0,24.0,25.0,30.0,Eligible,nan,nan,nan,nan,2024-10-18 17:44:33,nan,nan,9,nan,November 16 2024
+360,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-19 11:18:17,nan,nan,9,nan,December 14 2024
+361,nan,23.0,32.0,8.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-19 12:29:15,nan,nan,9,nan,November 16 2024
+362,nan,94.0,63.0,48.0,45.0,28.0,5.0,12.0,In Processing,nan,nan,nan,nan,2024-10-19 16:14:38,nan,nan,9,nan,April 26 2025 (No-rest option)
+363,22.0,93.0,97.0,97.0,107.0,27.0,29.0,29.0,Eligible,nan,nan,nan,nan,2024-10-19 17:59:08,nan,nan,9,nan,January 18 2025
+364,nan,79.0,77.0,46.0,43.0,20.0,4.0,19.0,In Processing,16.0,23.0,18.0,57.0,2024-10-19 19:49:25,nan,nan,9,nan,February 15 2025 (No-rest option)
+365,27.0,96.0,84.0,63.0,91.0,29.0,12.0,23.0,Eligible,nan,nan,nan,nan,2024-10-19 20:46:10,nan,nan,9,nan,November 16 2024
+366,30.0,99.0,99.0,63.0,102.0,30.0,12.0,30.0,Eligible,nan,nan,nan,nan,2024-10-20 08:22:11,nan,nan,9,nan,November 16 2024
+367,30.0,91.0,97.0,86.0,109.0,26.0,24.0,29.0,In Processing,nan,nan,nan,nan,2024-10-20 12:41:38,nan,nan,9,nan,December 14 2024
+368,30.0,88.0,99.0,99.0,115.0,25.0,30.0,30.0,In Processing,nan,nan,nan,nan,2024-10-20 13:23:19,nan,nan,9,nan,December 14 2024
+369,25.0,81.0,95.0,97.0,103.0,21.0,29.0,28.0,Eligible,nan,nan,nan,nan,2024-10-20 15:48:48,nan,nan,9,nan,November 16 2024
+370,30.0,81.0,73.0,91.0,94.0,21.0,26.0,17.0,In Processing,nan,nan,nan,nan,2024-10-20 16:46:08,nan,nan,9,nan,December 14 2024
+371,30.0,81.0,73.0,91.0,94.0,21.0,26.0,17.0,Eligible,nan,nan,nan,nan,2024-10-20 16:46:08,nan,nan,9,nan,December 14 2024
+372,22.0,77.0,90.0,90.0,93.0,19.0,26.0,26.0,Eligible,nan,nan,nan,nan,2024-10-20 19:45:10,nan,nan,9,Test Accommodations Approved,December 14 2024
+373,30.0,86.0,99.0,51.0,90.0,24.0,6.0,30.0,In Processing,nan,nan,nan,nan,2024-10-20 19:58:11,nan,nan,9,nan,January 18 2025
+374,30.0,71.0,99.0,99.0,106.0,16.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-20 21:08:13,nan,nan,9,nan,November 16 2024
+375,nan,58.0,55.0,54.0,26.0,10.0,8.0,8.0,In Processing,nan,nan,nan,nan,2024-10-21 10:05:29,nan,nan,9,nan,April 26 2025 (No-rest option)
+376,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-21 12:12:53,nan,nan,11,nan,January 18 2025
+377,nan,26.0,82.0,51.0,54.0,26.0,6.0,22.0,In Processing,1.0,11.0,12.0,24.0,2024-10-21 13:39:15,nan,nan,9,nan,March 22 2025 (No-rest option)
+378,nan,57.0,71.0,22.0,26.0,9.0,1.0,16.0,In Processing,nan,nan,nan,nan,2024-10-22 13:54:18,nan,nan,9,nan,January 18 2025
+379,nan,59.0,80.0,72.0,48.0,10.0,17.0,21.0,In Processing,nan,nan,nan,nan,2024-10-21 16:15:36,nan,nan,9,nan,April 26 2025 (No-rest option)
+380,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-23 12:59:11,nan,nan,5Q78,nan,January 18 2025
+381,nan,60.0,73.0,96.0,57.0,11.0,29.0,17.0,In Processing,nan,nan,nan,nan,2024-10-21 21:56:56,nan,nan,9,nan,April 26 2025 (No-rest option)
+382,30.0,92.0,99.0,99.0,117.0,27.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-22 06:42:56,nan,nan,9,nan,December 14 2024
+383,nan,73.0,69.0,86.0,56.0,17.0,24.0,15.0,In Processing,13.0,16.0,16.0,45.0,2024-10-22 09:19:25,nan,nan,9,nan,March 22 2025 (No-rest option)
+384,30.0,84.0,99.0,99.0,113.0,23.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-22 12:10:56,nan,nan,9,nan,December 14 2024
+385,22.0,87.0,95.0,85.0,97.0,24.0,23.0,28.0,Eligible,nan,nan,nan,nan,2024-10-22 12:26:32,nan,nan,9,nan,December 14 2024
+386,nan,40.0,24.0,16.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-22 19:54:23,nan,nan,9,nan,December 14 2024
+387,nan,88.0,94.0,52.0,60.0,25.0,7.0,28.0,In Processing,26.0,20.0,20.0,66.0,2024-10-22 16:36:39,nan,nan,10,nan,March 22 2025 (No-rest option)
+388,30.0,72.0,95.0,51.0,81.0,17.0,6.0,28.0,Eligible,18.0,13.0,27.0,88.0,2024-10-22 18:47:41,nan,nan,9,nan,March 22 2025 (No-rest option)
+389,nan,55.0,60.0,41.0,20.0,8.0,1.0,11.0,In Processing,1.0,18.0,1.0,20.0,2024-10-22 19:21:55,nan,nan,9,nan,March 22 2025 (No-rest option)
+390,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-24 22:20:22,nan,nan,10,nan,April 26 2025 (No-rest option)
+391,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-24 22:20:22,nan,nan,10,nan,April 26 2025 (No-rest option)
+392,30.0,92.0,95.0,99.0,115.0,27.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-22 23:01:07,nan,nan,9,nan,December 14 2024
+393,30.0,80.0,99.0,99.0,111.0,21.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-23 10:08:03,nan,nan,9,nan,December 14 2024
+394,nan,58.0,41.0,16.0,12.0,10.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-23 11:08:33,nan,nan,9,nan,April 26 2025 (No-rest option)
+395,nan,42.0,84.0,62.0,37.0,2.0,12.0,23.0,In Processing,nan,nan,nan,nan,2024-10-23 11:53:52,nan,nan,9,nan,December 14 2024
+396,nan,28.0,39.0,20.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-23 12:50:32,nan,nan,9,nan,April 26 2025 (No-rest option)
+397,nan,57.0,63.0,cDh6,47.0,9.0,26.0,12.0,In Processing,nan,nan,nan,nan,2024-10-23 14:14:53,nan,nan,9,nan,April 26 2025 (No-rest option)
+398,nan,52.0,50.0,88.0,38.0,7.0,25.0,6.0,In Processing,nan,nan,nan,nan,2024-10-23 14:12:12,nan,nan,9,nan,April 26 2025 (No-rest option)
+399,nan,54.0,99.0,60.0,49.0,8.0,11.0,30.0,In Processing,nan,nan,nan,nan,2024-10-23 17:33:36,nan,nan,9,nan,April 26 2025 (No-rest option)
+400,30.0,97.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-23 18:00:40,nan,nan,9,nan,December 14 2024
+401,27.0,96.0,97.0,96.0,114.0,29.0,29.0,29.0,In Processing,nan,nan,nan,nan,2024-10-23 19:54:30,nan,nan,9,nan,January 18 2025
+402,27.0,96.0,97.0,96.0,114.0,29.0,29.0,29.0,In Processing,nan,nan,nan,nan,2024-10-23 19:54:30,nan,nan,9,nan,January 18 2025
+403,27.0,96.0,97.0,96.0,114.0,29.0,29.0,29.0,Eligible,nan,nan,nan,nan,2024-10-23 19:54:30,nan,nan,9,nan,January 18 2025
+404,nan,64.0,89.0,50.0,44.0,13.0,6.0,25.0,In Processing,nan,nan,nan,nan,2025-01-28 18:15:36,nan,nan,9,nan,March 22 2025 (No-rest option)
+405,30.0,99.0,99.0,73.0,107.0,30.0,17.0,30.0,Eligible,nan,nan,nan,nan,2024-10-24 14:54:20,nan,nan,10,nan,January 18 2025
+406,30.0,49.0,92.0,86.0,86.0,5.0,24.0,27.0,Eligible,17.0,23.0,26.0,96.0,2024-10-24 17:22:45,nan,nan,9,nan,March 22 2025 (No-rest option)
+407,nan,78.0,80.0,41.0,42.0,20.0,1.0,21.0,In Processing,nan,nan,nan,nan,2024-10-24 19:39:37,nan,nan,9,nan,April 26 2025 (No-rest option)
+408,nan,95.0,72.0,82.0,67.0,28.0,22.0,17.0,In Processing,24.0,20.0,16.0,60.0,2024-10-24 20:43:06,nan,nan,11,nan,March 22 2025 (No-rest option)
+409,nan,13.0,48.0,41.0,7.0,1.0,1.0,5.0,In Processing,nan,nan,nan,nan,2024-10-25 06:24:52,nan,nan,9,nan,December 14 2024
+410,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-25 11:46:12,nan,nan,9,Test Accommodations Approved,December 14 2024
+411,nan,16.0,22.0,37.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-25 11:55:36,nan,nan,9,nan,March 22 2025 (No-rest option)
+412,nan,62.0,82.0,60.0,45.0,12.0,11.0,22.0,In Processing,6.0,18.0,21.0,45.0,2024-10-25 11:53:19,nan,nan,9,nan,March 22 2025 (No-rest option)
+413,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-25 15:34:11,nan,nan,BQZi,nan,nan
+414,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-25 16:38:22,nan,nan,9,nan,nan
+415,30.0,91.0,82.0,99.0,108.0,26.0,30.0,22.0,Eligible,nan,nan,nan,nan,2024-10-25 19:21:25,nan,nan,9,nan,December 14 2024
+416,30.0,74.0,91.0,41.0,75.0,18.0,1.0,26.0,Eligible,27.0,9.0,25.0,91.0,2024-10-26 11:45:51,nan,nan,9,nan,March 22 2025 (No-rest option)
+417,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-27 15:34:28,nan,nan,10,nan,January 18 2025
+418,30.0,72.0,98.0,91.0,103.0,17.0,26.0,30.0,Eligible,nan,nan,nan,nan,2024-10-27 17:49:20,nan,nan,9,nan,December 14 2024
+419,30.0,97.0,99.0,88.0,114.0,29.0,25.0,30.0,Eligible,nan,nan,nan,nan,2024-12-02 19:17:01,nan,nan,9,nan,January 18 2025
+420,nan,24.0,67.0,51.0,21.0,1.0,6.0,14.0,In Processing,nan,nan,nan,nan,2024-10-27 20:18:56,nan,nan,9,nan,January 18 2025
+421,nan,24.0,67.0,51.0,21.0,1.0,6.0,14.0,In Processing,nan,nan,nan,nan,2024-10-27 20:18:56,nan,nan,9,nan,January 18 2025
+422,nan,84.0,55.0,50.0,37.0,23.0,6.0,8.0,In Processing,nan,nan,nan,nan,2024-10-27 21:55:57,nan,nan,9,nan,December 14 2024
+423,nan,72.0,67.0,76.0,50.0,17.0,19.0,14.0,In Processing,nan,nan,nan,nan,2024-10-28 07:03:15,nan,nan,9,nan,April 26 2025 (No-rest option)
+424,nan,55.0,57.0,76.0,36.0,8.0,19.0,9.0,In Processing,8.0,20.0,15.0,43.0,2024-10-28 08:05:09,nan,nan,9,nan,March 22 2025 (No-rest option)
+425,30.0,75.0,99.0,91.0,104.0,18.0,26.0,30.0,Eligible,nan,nan,nan,nan,2024-10-28 10:12:42,nan,nan,9,nan,December 14 2024
+426,nan,75.0,79.0,82.0,60.0,18.0,22.0,20.0,In Processing,21.0,18.0,15.0,54.0,2024-10-28 10:08:39,nan,nan,9,nan,March 22 2025 (No-rest option)
+427,nan,57.0,84.0,37.0,33.0,9.0,1.0,23.0,In Processing,nan,nan,nan,nan,2024-10-28 10:35:20,nan,nan,9,nan,December 14 2024
+428,22.0,64.0,89.0,96.0,89.0,13.0,29.0,25.0,Eligible,nan,nan,nan,nan,2024-10-28 10:50:47,nan,nan,9,nan,December 14 2024
+429,30.0,55.0,99.0,82.0,90.0,8.0,22.0,30.0,Eligible,nan,nan,nan,nan,2024-10-28 11:20:45,nan,nan,9,nan,December 14 2024
+430,nan,88.0,64.0,33.0,39.0,25.0,1.0,13.0,In Processing,29.0,9.0,20.0,58.0,2024-10-28 12:02:47,nan,nan,10,nan,March 22 2025 (No-rest option)
+431,30.0,76.0,93.0,87.0,100.0,19.0,24.0,27.0,Eligible,nan,nan,nan,nan,2024-10-28 13:13:38,nan,nan,10,nan,December 14 2024
+432,nan,87.0,79.0,57.0,53.0,24.0,9.0,20.0,In Processing,nan,nan,nan,nan,2024-10-28 16:58:35,nan,nan,9,nan,December 14 2024
+433,28.0,72.0,99.0,96.0,104.0,17.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-28 17:06:18,nan,nan,9,19u4,December 14 2024
+434,nan,39.0,82.0,85.0,46.0,1.0,23.0,22.0,In Processing,nan,nan,nan,nan,2024-10-28 21:53:03,nan,nan,9,nan,April 26 2025 (No-rest option)
+435,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,18.0,19.0,16.0,53.0,2025-01-12 21:00:46,nan,nan,10,nan,February 15 2025 (No-rest option)
+436,28.0,99.0,99.0,99.0,118.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2025-03-18 21:14:13,nan,nan,9,nan,December 14 2024
+437,nan,92.0,vJ24,88.0,81.0,27.0,25.0,29.0,In Processing,nan,nan,nan,nan,2024-11-05 09:25:15,nan,nan,11,nan,December 14 2024
+438,30.0,60.0,97.0,91.0,96.0,11.0,26.0,29.0,Eligible,nan,nan,nan,nan,2024-10-29 12:34:03,nan,nan,9,nan,December 14 2024
+439,nan,59.0,94.0,66.0,52.0,10.0,14.0,28.0,In Processing,nan,nan,nan,nan,2024-11-08 14:47:56,nan,nan,10,nan,January 18 2025
+440,nan,54.0,39.0,51.0,15.0,8.0,6.0,1.0,In Processing,nan,nan,nan,nan,2024-10-29 15:40:38,nan,nan,9,nan,December 14 2024
+441,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-29 19:04:38,nan,nan,10,nan,nan
+442,30.0,99.0,98.0,97.0,119.0,30.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-29 19:05:49,nan,nan,9,nan,December 14 2024
+443,30.0,74.0,97.0,72.0,94.0,18.0,17.0,29.0,Eligible,nan,nan,nan,nan,2024-10-29 22:07:09,nan,nan,9,nan,December 14 2024
+444,nan,88.0,85.0,wKkg,62.0,25.0,14.0,23.0,In Processing,24.0,12.0,22.0,58.0,2024-10-29 22:32:14,nan,nan,10,nan,March 22 2025 (No-rest option)
+445,nan,37.0,36.0,28.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-30 09:04:22,nan,nan,9,nan,December 14 2024
+446,nan,85.0,90.0,98.0,79.0,23.0,30.0,26.0,In Processing,nan,nan,nan,nan,2024-10-30 10:05:13,nan,nan,9,nan,January 18 2025
+447,nan,96.0,88.0,70.0,70.0,29.0,16.0,25.0,In Processing,nan,nan,nan,nan,2024-11-08 12:44:44,nan,nan,10,nan,January 18 2025
+448,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-30 10:44:32,nan,nan,10,nan,nan
+449,nan,68.0,81.0,48.0,41.0,15.0,5.0,21.0,In Processing,nan,nan,nan,nan,2024-10-30 11:26:10,nan,nan,9,nan,April 26 2025 (No-rest option)
+450,nan,58.0,46.0,31.0,15.0,10.0,1.0,4.0,In Processing,nan,nan,nan,nan,2024-10-30 20:36:48,nan,nan,9,nan,December 14 2024
+451,27.0,97.0,99.0,99.0,116.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-31 09:04:19,nan,nan,9,nan,January 18 2025
+452,nan,48.0,66.0,80.0,40.0,5.0,21.0,14.0,In Processing,nan,nan,nan,nan,2024-10-31 12:15:28,nan,nan,9,nan,March 22 2025 (No-rest option)
+453,30.0,65.0,99.0,99.0,103.0,13.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-31 15:05:48,nan,nan,9,nan,January 18 2025
+454,26.0,84.0,97.0,51.0,84.0,23.0,6.0,29.0,In Processing,nan,nan,nan,nan,2024-10-31 16:32:50,nan,nan,9,nan,April 26 2025 (No-rest option)
+455,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-31 19:13:09,nan,nan,9,nan,nan
+456,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-22 12:42:42,nan,nan,9,nan,April 26 2025 (No-rest option)
+457,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-22 12:42:42,nan,nan,9,nan,April 26 2025 (No-rest option)
+458,3dko,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-22 12:42:42,nan,nan,9,nan,April 26 2025 (No-rest option)
+459,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-22 12:42:42,nan,nan,9,nan,April 26 2025 (No-rest option)
+460,nan,nan,nan,nan,0.0,nan,nan,vhu4,In Processing,nan,nan,nan,nan,2025-03-22 12:42:42,nan,nan,9,nan,April 26 2025 (No-rest option)
+461,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-31 19:55:56,nan,nan,9,nan,nan
+462,nan,64.0,53.0,38.0,21.0,13.0,1.0,7.0,In Processing,nan,nan,nan,nan,2024-11-01 06:20:08,nan,nan,9,nan,April 26 2025 (No-rest option)
+463,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-01 09:33:02,nan,nan,9,nan,January 18 2025
+464,30.0,94.0,92.0,98.0,115.0,28.0,30.0,27.0,Eligible,nan,nan,nan,nan,2024-11-01 10:24:38,nan,nan,9,nan,January 18 2025
+465,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-01 12:19:44,nan,nan,9,nan,January 18 2025
+466,30.0,95.0,99.0,99.0,118.0,28.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-01 14:41:32,nan,nan,9,nan,December 14 2024
+467,nan,63.0,75.0,87.0,54.0,12.0,24.0,18.0,In Processing,nan,kBnC,nan,nan,2024-11-01 17:47:29,nan,nan,10,nan,December 14 2024
+468,nan,66.0,77.0,48.0,38.0,14.0,5.0,19.0,In Processing,nan,nan,nan,nan,2024-11-02 08:23:22,nan,nan,9,nan,January 18 2025
+469,nan,25.0,53.0,3.0,9.0,1.0,1.0,7.0,In Processing,nan,nan,nan,nan,2024-11-02 14:20:58,nan,nan,9,nan,December 14 2024
+470,nan,31.0,39.0,31.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-02 14:45:02,nan,nan,9,nan,December 14 2024
+471,30.0,69.0,85.0,99.0,98.0,15.0,30.0,23.0,Eligible,nan,nan,nan,nan,2025-03-26 12:26:37,nan,nan,9,nan,nan
+472,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-02 16:33:17,nan,nan,9,nan,nan
+473,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-02 20:17:14,nan,nan,9,nan,nan
+474,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-03 06:05:47,nan,nan,9,nan,January 18 2025
+475,25.0,89.0,97.0,99.0,109.0,25.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-11-03 10:57:29,nan,nan,9,nan,December 14 2024
+476,30.0,90.0,89.0,88.0,106.0,26.0,25.0,25.0,Eligible,nan,nan,nan,nan,2024-11-03 15:04:57,nan,nan,9,nan,January 18 2025
+477,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-03 17:21:02,nan,nan,9,nan,January 18 2025
+478,nan,72.0,85.0,38.0,41.0,17.0,1.0,23.0,In Processing,nan,nan,nan,nan,2024-11-03 18:30:32,nan,nan,9,nan,April 26 2025 (No-rest option)
+479,nan,46.0,55.0,10.0,22.0,4.0,10.0,8.0,In Processing,5.0,12.0,6.0,23.0,2024-11-03 18:37:02,nan,nan,9,nan,March 22 2025 (No-rest option)
+480,nan,37.0,95.0,35.0,30.0,1.0,1.0,28.0,In Processing,nan,nan,nan,nan,2025-01-08 16:05:08,nan,nan,9,nan,April 26 2025 (No-rest option)
+481,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-03 21:07:39,nan,nan,9,nan,December 14 2024
+482,27.0,82.0,97.0,57.0,87.0,22.0,9.0,29.0,In Processing,nan,nan,nan,nan,2024-11-03 23:35:57,nan,nan,9,nan,April 26 2025 (No-rest option)
+483,nan,27.0,54.0,33.0,10.0,1.0,1.0,8.0,In Processing,nan,nan,nan,nan,2024-11-04 06:59:43,nan,nan,9,nan,December 14 2024
+76jo,30.0,82.0,97.0,99.0,111.0,22.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-11-04 08:08:42,nan,nan,9,nan,December 14 2024
+485,nan,76.0,73.0,87.0,60.0,19.0,24.0,17.0,In Processing,10.0,27.0,12.0,49.0,2024-11-04 10:48:23,nan,nan,10,nan,March 22 2025 (No-rest option)
+486,nan,39.0,39.0,33.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-07 21:44:38,nan,nan,9,nan,December 14 2024
+487,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-13 12:12:20,nan,nan,9,nan,January 18 2025
+488,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 12:41:19,nan,nan,9,nan,nan
+489,nan,40.0,83.0,66.0,37.0,1.0,14.0,22.0,In Processing,nan,nan,nan,nan,2024-11-04 12:45:37,nan,nan,9,nan,April 26 2025 (No-rest option)
+490,nan,92.0,98.0,85.0,80.0,27.0,23.0,30.0,In Processing,nan,nan,nan,nan,2024-11-04 12:51:54,nan,nan,9,nan,December 14 2024
+491,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 13:04:26,nan,nan,9,nan,nan
+492,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 13:28:24,nan,nan,9,nan,nan
+493,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 13:40:22,nan,nan,9,nan,January 18 2025
+494,nan,65.0,69.0,41.0,29.0,13.0,1.0,15.0,In Processing,nan,nan,DBBH,nan,2024-11-04 14:08:19,nan,nan,9,nan,January 18 2025
+495,nan,43.0,39.0,48.0,8.0,2.0,5.0,1.0,In Processing,4.0,1.0,1.0,6.0,2024-11-04 14:13:21,nan,nan,10,nan,March 22 2025 (No-rest option)
+496,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 14:29:47,nan,lyBB,11,nan,nan
+497,nan,75.0,87.0,51.0,48.0,18.0,6.0,24.0,In Processing,nan,nan,nan,nan,2025-01-09 18:30:48,nan,nan,9,nan,January 18 2025
+498,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 15:16:42,nan,nan,9,nan,nan
+499,nan,28.0,53.0,29.0,9.0,1.0,1.0,7.0,In Processing,nan,nan,nan,nan,2024-11-04 15:34:13,nan,nan,9,nan,December 14 2024
+500,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,9.0,22.0,11.0,42.0,2024-11-04 15:36:28,nan,nan,9,nan,February 15 2025 (No-rest option)
+501,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 15:54:09,nan,nan,10,nan,January 18 2025
+502,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 17:34:48,nan,nan,9,nan,nan
+503,nan,44.0,65.0,41.0,17.0,3.0,1.0,13.0,In Processing,nan,nan,nan,nan,2024-11-04 17:50:56,nan,nan,9,nan,December 14 2024
+504,nan,27.0,46.0,66.0,19.0,1.0,14.0,4.0,In Processing,nan,nan,nan,nan,2024-11-04 18:48:45,nan,nan,9,nan,January 18 2025
+505,nan,37.0,66.0,38.0,16.0,1.0,1.0,14.0,In Processing,nan,nan,nan,nan,2024-11-04 20:02:26,nan,nan,9,nan,December 14 2024
+506,nan,39.0,39.0,37.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-04 20:23:26,nan,nan,9,nan,April 26 2025 (No-rest option)
+507,nan,39.0,37.0,9.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-04 23:17:16,nan,nan,9,nan,January 18 2025
+508,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2024-11-05 06:45:38,nan,nan,9,nan,March 22 2025 (No-rest option)
+509,30.0,82.0,95.0,93.0,107.0,22.0,27.0,28.0,Eligible,nan,nan,nan,nan,2024-11-05 12:51:47,nan,nan,9,nan,January 18 2025
+510,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-05 14:00:53,nan,nan,9,nan,nan
+511,nan,71.0,83.0,80.0,59.0,16.0,21.0,22.0,In Processing,nan,nan,nan,nan,2024-11-05 14:22:17,nan,nan,11,nan,January 18 2025
+512,nan,36.0,55.0,51.0,15.0,1.0,6.0,8.0,In Processing,nan,nan,nan,nan,2024-11-05 14:33:26,nan,nan,9,nan,December 14 2024
+513,nan,56.0,33.0,24.0,11.0,9.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-05 14:33:44,nan,nan,9,nan,December 14 2024
+514,nan,36.0,34.0,70.0,18.0,1.0,16.0,1.0,In Processing,nan,nan,nan,nan,2024-11-05 15:22:45,nan,nan,9,nan,January 18 2025
+515,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-05 15:29:30,nan,nan,9,nan,nan
+516,30.0,86.0,90.0,91.0,106.0,24.0,26.0,26.0,Eligible,nan,nan,nan,nan,2024-11-05 19:24:13,nan,nan,9,nan,December 14 2024
+517,25.0,92.0,88.0,96.0,106.0,27.0,29.0,25.0,Eligible,nan,nan,nan,nan,2024-11-05 20:05:50,nan,nan,9,nan,January 18 2025
+518,nan,19.0,37.0,16.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-05 20:40:52,nan,nan,9,nan,December 14 2024
+519,nan,58.0,36.0,23.0,12.0,10.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-05 21:34:53,nan,nan,11,nan,March 22 2025 (No-rest option)
+520,30.0,97.0,97.0,99.0,118.0,29.0,4Sl1,29.0,Eligible,nan,nan,nan,nan,2024-11-06 08:40:58,nan,nan,9,nan,December 14 2024
+521,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-06 09:01:34,nan,nan,9,nan,nan
+522,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-06 09:07:18,nan,nan,10,nan,April 26 2025 (No-rest option)
+523,30.0,96.0,97.0,90.0,114.0,29.0,26.0,29.0,Eligible,nan,nan,nan,nan,2024-11-06 09:58:40,nan,nan,9,nan,December 14 2024
+524,nan,38.0,35.0,86.0,26.0,1.0,24.0,1.0,In Processing,nan,nan,nan,nan,2024-11-14 13:29:44,nan,nan,9,nan,March 22 2025 (No-rest option)
+525,nan,6.0,33.0,1.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-06 11:20:42,nan,nan,9,nan,April 26 2025 (No-rest option)
+526,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,7.0,12.0,14.0,33.0,2024-11-06 11:41:19,nan,nan,9,nan,February 15 2025 (No-rest option)
+527,nan,74.0,70.0,54.0,42.0,18.0,8.0,16.0,In Processing,nan,nan,nan,nan,2024-11-06 13:27:15,nan,nan,9,nan,April 26 2025 (No-rest option)
+528,nan,51.0,54.0,41.0,15.0,6.0,1.0,8.0,In Processing,7.0,1.0,6.0,14.0,2024-11-06 16:17:25,nan,nan,9,nan,March 22 2025 (No-rest option)
+529,nan,46.0,54.0,51.0,18.0,4.0,6.0,8.0,In Processing,nan,nan,nan,nan,2024-11-06 17:30:44,nan,nan,9,nan,January 18 2025
+530,30.0,98.0,98.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-06 18:44:29,nan,nan,9,nan,January 18 2025
+531,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,4.0,12.0,8.0,24.0,2025-02-09 13:20:44,nan,nan,9,nan,January 18 2025
+532,nan,46.0,35.0,22.0,6.0,4.0,1.0,1.0,In Processing,4.0,2.0,8.0,14.0,2024-11-06 19:29:02,nan,nan,9,nan,March 22 2025 (No-rest option)
+533,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-06 21:28:07,nan,nan,9,nan,April 26 2025 (No-rest option)
+534,27.0,90.0,87.0,76.0,96.0,26.0,19.0,24.0,Eligible,nan,nan,nan,nan,2024-11-07 10:51:33,nan,nan,10,nan,December 14 2024
+535,nan,74.0,84.0,64.0,54.0,18.0,13.0,23.0,In Processing,nan,nan,nan,nan,2024-11-07 11:27:06,nan,nan,9,nan,April 26 2025 (No-rest option)
+536,nan,79.0,66.0,74.0,52.0,20.0,18.0,14.0,In Processing,nan,nan,nan,nan,2024-11-07 11:53:16,nan,nan,11,nan,December 14 2024
+537,30.0,94.0,97.0,99.0,117.0,28.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-11-07 12:32:38,nan,nan,9,nan,January 18 2025
+538,nan,nan,nan,nan,kexs,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-07 13:45:15,nan,nan,9,nan,January 18 2025
+539,nan,25.0,57.0,16.0,11.0,1.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-11-10 21:17:56,nan,nan,9,nan,December 14 2024
+540,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-07 18:28:15,nan,nan,9,nan,December 14 2024
+541,nan,40.0,63.0,85.0,36.0,1.0,23.0,12.0,In Processing,nan,nan,nan,nan,2024-11-07 19:53:07,nan,nan,9,nan,December 14 2024
+542,27.0,84.0,97.0,66.0,93.0,23.0,14.0,29.0,Eligible,nan,nan,nan,nan,2024-11-07 20:33:05,nan,nan,9,nan,December 14 2024
+543,nan,66.0,88.0,74.0,57.0,14.0,18.0,25.0,In Processing,nan,nan,nan,nan,2024-11-07 21:03:28,nan,nan,9,nan,January 18 2025
+544,nan,77.0,85.0,54.0,50.0,19.0,8.0,23.0,In Processing,nan,nan,nan,nan,2024-11-08 00:13:08,nan,nan,9,nan,December 14 2024
+545,30.0,87.0,96.0,94.0,112.0,24.0,29.0,29.0,Eligible,nan,nan,nan,nan,2024-11-08 06:08:55,nan,nan,9,nan,December 14 2024
+546,nan,46.0,63.0,80.0,37.0,4.0,21.0,12.0,In Processing,nan,nan,nan,nan,2024-11-08 09:37:44,nan,nan,9,nan,December 14 2024
+547,nan,81.0,82.0,95.0,71.0,21.0,28.0,22.0,In Processing,nan,nan,nan,nan,2024-11-08 16:33:05,nan,nan,11,nan,April 26 2025 (No-rest option)
+548,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-08 10:08:30,nan,nan,9,nan,nan
+549,nan,79.0,46.0,87.0,48.0,20.0,24.0,4.0,In Processing,nan,nan,nan,nan,2024-11-08 10:42:11,nan,nan,9,Test Accommodations Approved,December 14 2024
+550,nan,36.0,57.0,51.0,16.0,1.0,6.0,9.0,In Processing,nan,nan,nan,nan,2024-11-08 10:58:29,nan,nan,9,nan,April 26 2025 (No-rest option)
+551,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-08 10:58:46,nan,nan,9,nan,nan
+552,nan,22.0,28.0,12.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-08 21:55:52,nan,nan,9,nan,December 14 2024
+553,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-08 22:44:23,nan,nan,11,nan,January 18 2025
+554,nan,61.0,80.0,72.0,49.0,11.0,17.0,21.0,In Processing,nan,nan,nan,nan,2024-11-09 08:53:51,nan,nan,9,nan,April 26 2025 (No-rest option)
+555,nan,52.0,81.0,62.0,40.0,7.0,12.0,21.0,In Processing,nan,nan,nan,nan,2024-11-09 10:19:31,nan,nan,9,nan,nan
+556,nan,68.0,76.0,77.0,53.0,15.0,19.0,19.0,In Processing,nan,nan,nan,nan,2024-11-09 14:39:01,nan,nan,11,nan,January 18 2025
+557,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-09 18:39:25,nan,nan,9,nan,nan
+558,30.0,84.0,96.0,99.0,112.0,23.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-11-10 10:45:42,nan,nan,9,nan,December 14 2024
+559,nan,57.0,55.0,48.0,22.0,9.0,5.0,8.0,In Processing,nan,nan,nan,nan,2024-11-10 14:37:55,nan,nan,9,nan,January 18 2025
+560,nan,42.0,65.0,48.0,20.0,2.0,5.0,13.0,In Processing,nan,nan,nan,nan,2024-11-10 19:27:34,nan,nan,9,nan,April 26 2025 (No-rest option)
+561,nan,81.0,74.0,61.0,50.0,21.0,11.0,18.0,In Processing,nan,nan,nan,nan,2025-01-30 13:28:35,nan,nan,11,nan,March 22 2025 (No-rest option)
+562,rmA3,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-11 08:52:36,nan,nan,10,nan,April 26 2025 (No-rest option)
+563,nan,46.0,70.0,64.0,33.0,4.0,13.0,16.0,In Processing,10.0,20.0,16.0,46.0,2024-11-11 11:32:02,nan,WlyS,9,nan,March 22 2025 (No-rest option)
+564,nan,18.0,49.0,29.0,7.0,1.0,1.0,5.0,In Processing,nan,nan,nan,nan,2024-11-11 11:56:02,nan,nan,9,nan,January 18 2025
+565,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,15.0,24.0,19.0,88.0,2024-11-11 13:47:47,nan,nan,9,nan,February 15 2025 (No-rest option)
+566,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,15.0,11.0,27.0,2024-11-11 13:51:42,nan,nan,9,nan,February 15 2025 (No-rest option)
+567,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-11 17:29:21,nan,nan,9,nan,April 26 2025 (No-rest option)
+568,30.0,94.0,99.0,41.0,89.0,28.0,1.0,30.0,Eligible,nan,nan,nan,nan,2024-11-11 19:59:33,nan,nan,9,nan,December 14 2024
+569,30.0,72.0,95.0,90.0,101.0,17.0,26.0,28.0,Eligible,nan,nan,nan,nan,2024-11-11 20:22:03,nan,nan,9,nan,December 14 2024
+570,nan,50.0,69.0,57.0,30.0,6.0,9.0,15.0,In Processing,nan,nan,nan,nan,2024-11-11 20:52:04,nan,nan,9,nan,January 18 2025
+571,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-11 21:38:48,nan,nan,9,nan,nan
+572,nan,40.0,59.0,48.0,16.0,1.0,5.0,10.0,In Processing,nan,nan,nan,nan,2024-11-12 06:23:57,nan,nan,9,nan,April 26 2025 (No-rest option)
+573,nan,60.0,61.0,60.0,33.0,11.0,11.0,11.0,In Processing,nan,nan,nan,nan,2024-11-12 12:12:23,nan,nan,9,nan,April 26 2025 (No-rest option)
+574,nan,50.0,85.0,41.0,35.0,6.0,6.0,23.0,In Processing,nan,nan,nan,nan,2024-11-12 11:02:59,nan,nan,9,nan,December 14 2024
+575,nan,31.0,55.0,37.0,10.0,1.0,1.0,8.0,In Processing,7.0,1.0,11.0,19.0,2024-11-12 11:45:31,nan,nan,9,nan,March 22 2025 (No-rest option)
+576,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-12 11:57:14,nan,nan,9,nan,nan
+577,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-12 12:45:54,nan,nan,9,nan,December 14 2024
+578,30.0,85.0,99.0,98.0,113.0,23.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-12 13:27:05,nan,nan,9,nan,December 14 2024
+579,28.0,85.0,77.0,95.0,98.0,23.0,28.0,19.0,Eligible,23.0,28.0,19.0,70.0,2024-11-12 14:47:48,nan,nan,9,nan,February 15 2025 (No-rest option)
+580,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-12 14:58:36,nan,nan,11,nan,nan
+581,nan,44.0,70.0,72.0,36.0,3.0,17.0,16.0,In Processing,nan,nan,nan,nan,2024-11-18 17:45:31,nan,nan,9,nan,March 22 2025 (No-rest option)
+582,nan,40.0,43.0,57.0,12.0,1.0,9.0,2.0,In Processing,nan,nan,nan,nan,2024-11-12 18:07:43,nan,nan,9,nan,December 14 2024
+583,nan,69.0,88.0,72.0,57.0,15.0,17.0,25.0,In Processing,nan,nan,nan,nan,2024-11-12 19:01:37,nan,nan,9,nan,December 14 2024
+584,30.0,50.0,77.0,76.0,74.0,6.0,19.0,19.0,Eligible,19.0,23.0,17.0,89.0,2024-11-12 21:36:57,nan,nan,9,nan,March 22 2025 (No-rest option)
+585,nan,58.0,95.0,78.0,58.0,10.0,20.0,28.0,In Processing,nan,nan,nan,nan,2024-11-13 07:34:04,nan,nan,9,nan,January 18 2025
+586,30.0,87.0,99.0,99.0,114.0,24.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-13 08:22:28,nan,nan,9,nan,December 14 2024
+587,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-13 09:52:03,nan,nan,9,nan,nan
+588,30.0,81.0,96.0,93.0,107.0,21.0,27.0,29.0,Eligible,nan,nan,nan,nan,2024-11-13 09:40:57,nan,nan,9,nan,December 14 2024
+589,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-13 11:41:04,nan,nan,10,nan,February 15 2025 (No-rest option)
+590,nan,80.0,85.0,10.0,54.0,21.0,10.0,23.0,In Processing,nan,nan,nan,nan,2024-11-19 09:44:27,nan,nan,9,nan,December 14 2024
+591,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-13 11:48:20,nan,nan,9,nan,April 26 2025 (No-rest option)
+592,25.0,58.0,96.0,96.0,93.0,10.0,29.0,29.0,Eligible,nan,nan,nan,nan,2024-11-13 14:11:30,nan,nan,9,Test Accommodations Approved,January 18 2025
+593,30.0,80.0,99.0,85.0,104.0,21.0,23.0,30.0,Eligible,nan,nan,nan,nan,2024-11-13 14:45:05,nan,nan,9,nan,December 14 2024
+594,nan,27.0,73.0,37.0,19.0,1.0,1.0,17.0,cMth,1.0,9.0,23.0,33.0,2024-11-13 17:38:43,nan,nan,9,nan,March 22 2025 (No-rest option)
+595,nan,28.0,33.0,14.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-13 18:27:42,nan,nan,9,nan,January 18 2025
+596,nan,30.0,69.0,70.0,32.0,1.0,16.0,15.0,In Processing,nan,nan,nan,nan,2024-11-13 21:19:11,nan,nan,9,nan,April 26 2025 (No-rest option)
+597,nan,30.0,69.0,70.0,32.0,1.0,16.0,15.0,In Processing,nan,nan,nan,nan,2024-11-13 21:19:11,nan,nan,9,nan,April 26 2025 (No-rest option)
+598,nan,30.0,69.0,70.0,32.0,1.0,16.0,15.0,In Processing,nan,nan,nan,nan,2024-11-13 21:19:11,nan,nan,9,nan,April 26 2025 (No-rest option)
+599,nan,55.0,65.0,57.0,30.0,8.0,9.0,13.0,In Processing,nan,nan,nan,nan,2024-11-13 21:48:44,nan,nan,9,nan,March 22 2025 (No-rest option)
+600,30.0,98.0,99.0,98.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-13 21:41:13,nan,nan,9,nan,December 14 2024
+601,nan,hISs,74.0,39.0,34.0,15.0,1.0,18.0,In Processing,nan,nan,nan,nan,2024-11-14 07:35:34,nan,nan,11,nan,January 18 2025
+602,nan,56.0,36.0,33.0,11.0,9.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-19 11:35:50,nan,nan,9,nan,April 26 2025 (No-rest option)
+603,30.0,98.0,90.0,91.0,112.0,30.0,26.0,26.0,Eligible,nan,nan,nan,nan,2024-11-14 15:29:23,nan,nan,9,nan,January 18 2025
+604,30.0,90.0,87.0,88.0,105.0,26.0,25.0,24.0,Eligible,nan,nan,nan,nan,2024-11-14 15:43:59,nan,nan,9,nan,December 14 2024
+605,nan,36.0,59.0,29.0,12.0,1.0,1.0,10.0,In Processing,nan,nan,nan,nan,2024-11-14 17:31:01,nan,nan,9,nan,April 26 2025 (No-rest option)
+606,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-14 17:54:35,nan,nan,9,nan,nan
+607,nan,77.0,92.0,74.0,64.0,19.0,18.0,27.0,In Processing,nan,nan,nan,nan,2024-11-14 18:31:33,nan,nan,9,nan,December 14 2024
+608,nan,88.0,83.0,73.0,64.0,25.0,17.0,22.0,In Processing,nan,nan,nan,nan,2024-11-14 20:01:43,nan,nan,10,nan,December 14 2024
+XR6f,nan,27.0,56.0,35.0,37.0,27.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-11-14 20:36:33,nan,nan,9,nan,April 26 2025 (No-rest option)
+610,nan,40.0,64.0,33.0,15.0,1.0,1.0,13.0,In Processing,nan,nan,nan,nan,2024-12-02 22:18:01,nan,nan,10,nan,January 18 2025
+611,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-15 02:43:46,nan,nan,9,nan,nan
+612,nan,88.0,80.0,55.0,54.0,25.0,8.0,21.0,In Processing,nan,nan,nan,nan,2024-11-15 09:14:05,nan,nan,10,nan,March 22 2025 (No-rest option)
+613,nan,65.0,92.0,98.0,70.0,13.0,30.0,27.0,In Processing,nan,nan,nan,nan,2024-11-15 21:04:17,nan,nan,9,nan,December 14 2024
+614,nan,41.0,37.0,57.0,11.0,1.0,9.0,1.0,In Processing,nan,nan,nan,nan,2024-11-18 17:11:40,nan,nan,9,nan,April 26 2025 (No-rest option)
+615,nan,53.0,31.0,51.0,14.0,7.0,6.0,1.0,In Processing,12.0,12.0,1.0,25.0,2024-11-16 10:05:54,nan,nan,9,nan,March 22 2025 (No-rest option)
+616,nan,59.0,89.0,80.0,56.0,10.0,21.0,25.0,In Processing,nan,nan,nan,nan,2024-11-16 15:44:13,nan,nan,9,nan,December 14 2024
+617,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-16 20:20:16,nan,nan,9,nan,nan
+618,30.0,97.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-17 04:08:51,nan,nan,9,nan,January 18 2025
+619,nan,38.0,77.0,38.0,21.0,1.0,1.0,19.0,In Processing,nan,nan,nan,nan,2024-11-17 17:09:17,nan,nan,9,nan,December 14 2024
+620,nan,9.0,33.0,31.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-17 21:15:47,nan,nan,9,nan,December 14 2024
+621,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,9.0,10.0,20.0,39.0,2024-11-17 21:20:56,nan,nan,9,nan,February 15 2025 (No-rest option)
+622,nan,53.0,48.0,24.0,13.0,7.0,1.0,5.0,In Processing,nan,nan,nan,nan,2024-11-17 22:12:26,nan,nan,10,nan,January 18 2025
+623,nan,62.0,58.0,62.0,34.0,12.0,12.0,10.0,In Processing,nan,nan,nan,nan,2024-11-17 23:41:46,nan,nan,9,nan,December 14 2024
+624,nan,62.0,58.0,62.0,34.0,12.0,12.0,10.0,In Processing,nan,nan,nan,nan,2024-11-17 23:41:46,nan,nan,9,nan,December 14 2024
+625,nan,39.0,49.0,28.0,7.0,1.0,1.0,5.0,In Processing,nan,nan,nan,nan,2024-11-18 04:30:37,nan,nan,9,nan,April 26 2025 (No-rest option)
+626,30.0,92.0,93.0,76.0,103.0,27.0,19.0,27.0,Eligible,nan,nan,nan,nan,2024-11-18 09:33:26,nan,nan,10,Test Accommodations Approved,December 14 2024
+627,nan,48.0,84.0,76.0,47.0,5.0,19.0,23.0,In Processing,nan,nan,nan,nan,2024-11-18 12:23:44,nan,nan,9,nan,January 18 2025
+628,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-21 09:56:31,nan,nan,10,nan,January 18 2025
+629,30.0,63.0,92.0,90.0,95.0,12.0,26.0,27.0,Eligible,nan,nan,nan,nan,2024-11-18 13:38:11,nan,nan,9,nan,December 14 2024
+630,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 13:51:57,nan,nan,9,nan,nan
+631,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-11 21:37:58,nan,nan,9,nan,April 26 2025 (No-rest option)
+632,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 14:11:44,nan,nan,9,nan,nan
+633,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 14:15:00,nan,nan,10,nan,January 18 2025
+634,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 14:23:08,nan,nan,9,nan,April 26 2025 (No-rest option)
+635,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 15:08:20,nan,nan,9,nan,nan
+636,nan,46.0,55.0,48.0,17.0,4.0,5.0,8.0,In Processing,nan,nan,nan,nan,2024-11-18 18:49:11,nan,nan,9,nan,December 14 2024
+637,nan,yhoe,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 15:53:12,nan,nan,11,nan,January 18 2025
+638,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 15:55:41,nan,nan,9,nan,December 14 2024
+639,nan,51.0,68.0,50.0,27.0,6.0,6.0,15.0,In Processing,10.0,6.0,11.0,27.0,2024-11-18 16:03:54,nan,nan,9,nan,March 22 2025 (No-rest option)
+640,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 16:54:02,nan,nan,9,nan,nan
+641,30.0,81.0,97.0,99.0,110.0,21.0,30.0,29.0,In Processing,nan,nan,nan,nan,2024-11-18 19:07:45,nan,nan,10,nan,December 14 2024
+642,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 20:05:29,nan,nan,9,nan,nan
+643,nan,21.0,43.0,26.0,4.0,1.0,1.0,2.0,In Processing,nan,nan,nan,nan,2024-12-13 12:09:58,nan,nan,9,Test Accommodations Approved,April 26 2025 (No-rest option)
+644,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-19 08:55:45,nan,nan,9,nan,January 18 2025
+645,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-19 10:13:07,nan,nan,9,nan,nan
+646,nan,69.0,61.0,62.0,38.0,15.0,12.0,11.0,In Processing,nan,nan,nan,nan,2024-11-19 10:18:31,nan,nan,9,nan,April 26 2025 (No-rest option)
+647,nan,86.0,95.0,55.0,60.0,24.0,8.0,28.0,In Processing,24.0,12.0,20.0,56.0,2024-11-19 10:26:07,nan,nan,10,nan,March 22 2025 (No-rest option)
+648,nan,97.0,97.0,98.0,88.0,29.0,30.0,29.0,In Processing,nan,nan,nan,nan,2024-11-19 10:58:29,nan,nan,9,nan,January 18 2025
+649,30.0,91.0,98.0,43.0,88.0,26.0,2.0,30.0,Eligible,nan,nan,nan,nan,2024-11-19 13:04:46,nan,nan,9,nan,December 14 2024
+650,30.0,90.0,86.0,97.0,109.0,26.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-11-19 13:11:58,nan,nan,10,nan,December 14 2024
+651,30.0,80.0,94.0,80.0,100.0,21.0,cN8c,28.0,Eligible,nan,nan,nan,nan,2024-12-02 19:54:39,nan,nan,9,nan,January 18 2025
+652,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-19 16:07:55,nan,nan,9,nan,nan
+653,nan,41.0,59.0,38.0,12.0,1.0,1.0,10.0,In Processing,nan,nan,nan,nan,2024-12-27 14:34:20,nan,nan,9,nan,January 18 2025
+654,30.0,99.0,98.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-21 10:46:34,nan,nan,9,nan,December 14 2024
+655,nan,80.0,0.0,90.0,48.0,21.0,26.0,1.0,In Processing,nan,nan,nan,nan,2024-11-19 19:45:59,nan,nan,9,Test Accommodations Approved,December 14 2024
+656,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,3.0,3.0,7.0,2024-11-19 21:08:11,nan,nan,9,nan,February 15 2025 (No-rest option)
+657,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-19 21:33:26,nan,nan,11,nan,April 26 2025 (No-rest option)
+658,nan,60.0,38.0,57.0,21.0,11.0,9.0,1.0,In Processing,nan,nan,nan,nan,2024-11-19 23:28:11,nan,nan,9,nan,January 18 2025
+659,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-20 06:20:45,nan,nan,9,nan,February 15 2025 (No-rest option)
+660,22.0,73.0,99.0,78.0,89.0,17.0,20.0,30.0,Eligible,nan,nan,nan,nan,2024-11-20 08:14:42,nan,nan,9,nan,December 14 2024
+661,28.0,57.0,81.0,90.0,84.0,9.0,26.0,21.0,Eligible,16.0,29.0,29.0,102.0,2024-11-20 10:07:27,nan,nan,9,nan,March 22 2025 (No-rest option)
+662,nan,58.0,81.0,91.0,57.0,10.0,26.0,21.0,In Processing,nan,nan,nan,nan,2024-11-20 12:57:49,nan,nan,9,nan,April 26 2025 (No-rest option)
+663,30.0,98.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-20 13:24:53,nan,nan,9,nan,December 14 2024
+664,nan,52.0,76.0,54.0,34.0,7.0,8.0,19.0,In Processing,nan,nan,nan,nan,2025-01-07 15:57:58,nan,nan,9,nan,January 18 2025
+665,nan,31.0,41.0,28.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-20 18:48:27,nan,nan,9,nan,January 18 2025
+666,30.0,96.0,91.0,84.0,108.0,29.0,23.0,26.0,Eligible,nan,nan,nan,nan,2024-11-20 19:43:02,nan,nan,10,nan,December 14 2024
+667,nan,12.0,35.0,35.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2025-01-06 15:57:56,nan,nan,9,nan,January 18 2025
+668,nan,12.0,35.0,35.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2025-01-06 15:57:56,nan,nan,9,nan,January 18 2025
+669,nan,79.0,88.0,39.0,46.0,20.0,1.0,25.0,In Processing,nan,nan,nan,nan,2024-12-19 07:20:19,nan,nan,10,nan,January 18 2025
+670,nan,26.0,61.0,41.0,13.0,1.0,fOt6,11.0,In Processing,nan,nan,nan,nan,2024-12-04 14:43:48,nan,nan,9,nan,December 14 2024
+671,nan,90.0,97.0,29.0,56.0,26.0,1.0,29.0,ZzE2,nan,nan,nan,nan,2024-11-21 10:01:17,nan,nan,9,nan,April 26 2025 (No-rest option)
+672,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,lymn,nan,2024-11-21 14:19:54,nan,nan,11,nan,December 14 2024
+673,nan,64.0,84.0,74.0,54.0,13.0,18.0,23.0,In Processing,nan,nan,nan,nan,2024-11-21 14:38:45,nan,nan,9,nan,January 18 2025
+674,30.0,76.0,99.0,93.0,106.0,19.0,27.0,30.0,Eligible,nan,nan,nan,nan,2024-11-21 15:06:58,nan,nan,9,Test Accommodations Approved,December 14 2024
+675,30.0,72.0,87.0,72.0,88.0,17.0,17.0,24.0,Eligible,nan,nan,nan,nan,2024-11-21 17:21:04,nan,nan,9,nan,December 14 2024
+676,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-21 18:02:47,nan,nan,9,nan,nan
+677,18.0,79.0,82.0,80.0,81.0,20.0,21.0,22.0,In Processing,1.0,1.0,4.0,24.0,2024-12-04 14:13:16,nan,nan,9,nan,March 22 2025 (No-rest option)
+678,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-22 11:55:10,nan,nan,9,nan,March 22 2025 (No-rest option)
+679,nan,54.0,48.0,43.0,15.0,8.0,2.0,5.0,In Processing,nan,nan,nan,nan,2024-11-22 13:35:31,nan,nan,9,GxGu,December 14 2024
+680,nan,22.0,33.0,37.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-22 14:31:30,nan,nan,9,nan,April 26 2025 (No-rest option)
+681,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-22 17:41:02,nan,nan,9,nan,nan
+682,nan,76.0,71.0,9.0,36.0,19.0,1.0,16.0,In Processing,nan,nan,nan,nan,2024-11-23 11:08:35,nan,nan,10,nan,December 14 2024
+683,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-23 12:11:56,nan,nan,9,nan,December 14 2024
+684,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-23 12:55:29,nan,nan,9,nan,December 14 2024
+685,27.0,80.0,82.0,41.0,71.0,21.0,1.0,22.0,Eligible,29.0,18.0,24.0,98.0,2024-11-23 15:46:09,nan,nan,9,nan,March 22 2025 (No-rest option)
+686,nan,37.0,36.0,72.0,19.0,1.0,17.0,1.0,In Processing,nan,nan,nan,nan,2024-11-23 17:01:45,nan,nan,9,nan,January 18 2025
+687,nan,nan,YRFH,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-23 20:10:47,nan,nan,10,nan,December 14 2024
+688,nan,84.0,94.0,48.0,56.0,23.0,5.0,28.0,In Processing,nan,nan,nan,nan,2024-11-24 19:59:57,nan,nan,9,nan,January 18 2025
+689,nan,12.0,21.0,20.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-24 21:20:09,nan,nan,9,nan,December 14 2024
+690,nan,90.0,93.0,89.0,78.0,26.0,25.0,27.0,In Processing,nan,nan,nan,nan,2024-12-17 22:32:27,nan,nan,10,nan,January 18 2025
+691,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-26 10:10:12,nan,nan,9,nan,April 26 2025 (No-rest option)
+692,nan,16.0,39.0,61.0,13.0,1.0,11.0,1.0,In Processing,nan,nan,nan,nan,2024-11-26 10:13:28,nan,nan,9,nan,January 18 2025
+693,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,hcM5,2024-11-27 17:03:18,nan,nan,9,nan,nan
+694,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,30.0,30.0,30.0,120.0,2024-11-28 09:09:10,nan,nan,9,nan,February 15 2025 (No-rest option)
+695,nan,35.0,35.0,28.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-28 16:06:42,nan,nan,9,nan,April 26 2025 (No-rest option)
+696,nan,46.0,40.0,38.0,6.0,4.0,1.0,1.0,In Processing,nan,nan,nan,nan,2025-01-08 13:40:41,nan,nan,9,nan,April 26 2025 (No-rest option)
+697,nan,52.0,92.0,33.0,35.0,7.0,1.0,27.0,In Processing,nan,nan,nan,nan,2024-11-29 09:16:57,nan,nan,9,nan,April 26 2025 (No-rest option)
+698,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-29 11:57:40,nan,nan,9,nan,December 14 2024
+699,27.0,87.0,97.0,66.0,94.0,24.0,14.0,29.0,Eligible,nan,nan,nan,nan,2024-11-29 22:19:16,nan,nan,9,nan,January 18 2025
+700,nan,21.0,57.0,29.0,11.0,1.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-11-30 17:31:56,nan,nan,9,nan,December 14 2024
+701,nan,56.0,65.0,20.0,23.0,9.0,1.0,13.0,In Processing,nan,nan,nan,nan,2024-11-30 10:43:27,nan,nan,9,nan,December 14 2024
+702,30.0,76.0,99.0,94.0,107.0,19.0,28.0,30.0,Eligible,nan,nan,nan,nan,2024-12-01 10:04:29,nan,nan,9,nan,January 18 2025
+703,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-01 15:00:01,nan,nan,10,yUeI,nan
+704,nan,42.0,63.0,41.0,15.0,2.0,1.0,12.0,In Processing,nan,nan,nan,nan,2024-12-02 14:40:06,nan,nan,9,nan,April 26 2025 (No-rest option)
+705,nan,34.0,57.0,38.0,11.0,1.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-12-02 14:42:03,nan,nan,9,nan,April 26 2025 (No-rest option)
+706,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,3.0,26.0,27.0,56.0,2024-12-02 14:47:31,nan,nan,9,nan,February 15 2025 (No-rest option)
+707,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-02 15:45:40,nan,nan,9,nan,nan
+708,nan,35.0,61.0,86.0,36.0,1.0,24.0,11.0,In Processing,nan,nan,nan,nan,2024-12-02 17:27:52,nan,nan,9,nan,January 18 2025
+709,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-02 17:47:53,nan,nan,9,nan,nan
+710,nan,38.0,61.0,41.0,13.0,1.0,1.0,11.0,In Processing,nan,nan,nan,nan,2024-12-02 20:05:19,nan,nan,9,nan,April 26 2025 (No-rest option)
+711,25.0,81.0,82.0,74.0,86.0,21.0,18.0,22.0,In Processing,nan,nan,nan,nan,2024-12-02 20:36:56,nan,nan,9,Test Accommodations Approved,April 26 2025 (No-rest option)
+712,nan,nan,ahiF,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-02 21:42:48,nan,nan,9,nan,January 18 2025
+713,nan,81.0,71.0,55.0,45.0,21.0,8.0,16.0,In Processing,nan,nan,nan,nan,2024-12-02 22:48:22,nan,nan,10,nan,January 18 2025
+714,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 05:20:32,nan,nan,9,nan,nan
+715,nan,72.0,70.0,37.0,34.0,17.0,1.0,16.0,In Processing,nan,nan,nan,nan,2024-12-03 06:45:30,nan,nan,9,nan,April 26 2025 (No-rest option)
+716,30.0,99.0,96.0,99.0,119.0,30.0,30.0,29.0,In Processing,nan,nan,nan,nan,2024-12-03 06:53:18,nan,nan,10,nan,January 18 2025
+717,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 07:50:16,nan,nan,9,nan,February 15 2025 (No-rest option)
+718,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 09:19:53,nan,nan,9,nan,nan
+719,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 11:48:12,nan,nan,10,nan,nan
+720,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 11:41:18,nan,nan,9,nan,January 18 2025
+721,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 12:27:55,nan,nan,9,nan,nan
+722,nan,66.0,78.0,24.0,35.0,14.0,1.0,20.0,In Processing,nan,nan,nan,nan,2025-01-07 09:08:17,nan,nan,10,nan,April 26 2025 (No-rest option)
+723,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,11.0,19.0,11.0,41.0,2024-12-03 14:12:25,nan,nan,9,nan,March 22 2025 (No-rest option)
+724,nan,37.0,50.0,28.0,8.0,1.0,1.0,6.0,In Processing,nan,nan,nan,nan,2024-12-03 14:50:04,nan,nan,9,nan,January 18 2025
+725,nan,76.0,85.0,70.0,58.0,19.0,16.0,23.0,opfd,nan,nan,nan,nan,2024-12-03 15:39:20,nan,nan,10,nan,April 26 2025 (No-rest option)
+726,nan,93.0,85.0,24.0,51.0,27.0,1.0,23.0,In Processing,nan,nan,nan,nan,2024-12-07 20:28:06,nan,nan,10,nan,April 26 2025 (No-rest option)
+727,nan,77.0,4mzP,64.0,33.0,19.0,13.0,1.0,In Processing,nan,nan,nan,nan,2024-12-03 19:27:42,nan,nan,11,nan,January 18 2025
+728,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 19:23:37,nan,nan,9,nan,nan
+729,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 19:29:08,nan,nan,9,nan,nan
+730,nan,43.0,59.0,86.0,36.0,2.0,24.0,10.0,In Processing,9.0,25.0,12.0,46.0,2024-12-03 19:55:13,nan,nan,9,nan,March 22 2025 (No-rest option)
+731,nan,43.0,59.0,86.0,36.0,2.0,24.0,10.0,In Processing,9.0,25.0,12.0,46.0,Zd6r,nan,nan,9,nan,March 22 2025 (No-rest option)
+732,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-04 11:25:35,nan,nan,9,nan,April 26 2025 (No-rest option)
+733,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-04 11:32:53,nan,nan,11,nan,January 18 2025
+734,30.0,65.0,97.0,94.0,100.0,13.0,28.0,29.0,Eligible,nan,nan,nan,nan,2024-12-05 10:16:18,nan,nan,9,nan,January 18 2025
+735,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-04 13:57:51,nan,nan,9,nan,April 26 2025 (No-rest option)
+736,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-04 14:38:48,nan,nan,9,nan,January 18 2025
+737,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-04 16:50:15,nan,nan,9,nan,nan
+738,nan,80.0,76.0,35.0,41.0,21.0,1.0,19.0,In Processing,nan,nan,nan,nan,2024-12-04 16:55:59,nan,nan,9,nan,January 18 2025
+739,nan,79.0,87.0,70.0,60.0,20.0,16.0,24.0,In Processing,nan,nan,nan,nan,2024-12-04 17:04:21,nan,nan,10,nan,April 26 2025 (No-rest option)
+740,30.0,81.0,85.0,88.0,99.0,21.0,25.0,23.0,Eligible,nan,nan,nan,nan,2024-12-04 17:09:39,nan,nan,9,nan,January 18 2025
+741,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-04 18:37:55,nan,nan,9,nan,January 18 2025
+742,nan,68.0,69.0,7.0,31.0,15.0,1.0,15.0,In Processing,nan,nan,nan,nan,2024-12-05 23:18:27,nan,nan,10,nan,April 26 2025 (No-rest option)
+743,nan,97.0,99.0,99.0,89.0,29.0,30.0,30.0,In Processing,nan,nan,nan,nan,2024-12-05 08:36:13,nan,nan,9,nan,January 18 2025
+744,22.0,73.0,80.0,78.0,80.0,17.0,20.0,21.0,In Processing,nan,nan,nan,nan,2025-02-06 14:51:27,nan,nan,9,nan,April 26 2025 (No-rest option)
+745,nan,44.0,53.0,43.0,12.0,3.0,2.0,7.0,In Processing,nan,nan,nan,nan,2024-12-05 10:33:15,nan,nan,9,nan,January 18 2025
+746,nan,75.0,61.0,78.0,49.0,18.0,20.0,11.0,In Processing,nan,nan,nan,nan,2024-12-05 11:20:42,nan,nan,9,nan,January 18 2025
+747,nan,43.0,84.0,20.0,26.0,2.0,1.0,23.0,In Processing,nan,nan,nan,nan,2024-12-05 12:44:01,nan,nan,9,nan,XtN9
+748,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,24.0,1.0,18.0,43.0,2024-12-16 19:16:35,nan,nan,9,nan,February 15 2025 (No-rest option)
+749,nan,nan,nan,nan,0.0,nan,BbEL,nan,In Processing,nan,nan,nan,nan,2024-12-05 22:34:09,nan,nan,9,VrbK,March 22 2025 (No-rest option)
+750,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-06 10:31:27,nan,nan,10,nan,nan
+751,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-06 11:09:41,nan,nan,11,nan,January 18 2025
+752,nan,36.0,37.0,45.0,5.0,1.0,3.0,1.0,In Processing,nan,nan,nan,nan,2024-12-20 19:58:46,nan,nan,9,nan,April 26 2025 (No-rest option)
+753,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,20.0,1.0,13.0,34.0,2025-01-20 09:53:00,nan,nan,11,nan,February 15 2025 (No-rest option)
+754,30.0,72.0,7LOi,96.0,100.0,17.0,29.0,24.0,Eligible,nan,nan,nan,nan,2025-01-07 15:19:54,nan,nan,9,nan,January 18 2025
+755,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-06 18:48:34,nan,nan,11,nan,nan
+756,nan,88.0,97.0,43.0,56.0,25.0,2.0,29.0,In Processing,nan,nan,nan,nan,2024-12-06 22:22:57,nan,nan,11,nan,April 26 2025 (No-rest option)
+757,30.0,87.0,95.0,90.0,108.0,24.0,26.0,28.0,Eligible,nan,nan,nan,nan,2024-12-07 15:23:43,nan,nan,9,nan,January 18 2025
+758,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-07 17:30:59,nan,nan,11,nan,January 18 2025
+759,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-07 18:16:33,nan,nan,9,nan,nan
+760,nan,95.0,91.0,88.0,79.0,28.0,25.0,26.0,In Processing,nan,nan,nan,nan,2024-12-08 18:00:49,nan,nan,11,nan,January 18 2025
+761,GRAK,97.0,88.0,77.0,73.0,29.0,19.0,25.0,In Processing,nan,nan,nan,nan,2024-12-08 21:10:12,nan,nan,11,nan,April 26 2025 (No-rest option)
+762,nan,23.0,60.0,45.0,15.0,1.0,3.0,11.0,In Processing,nan,nan,nan,nan,2024-12-09 09:13:56,nan,nan,9,nan,January 18 2025
+763,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-09 09:43:53,nan,nan,9,nan,January 18 2025
+764,23.0,89.0,84.0,92.0,98.0,25.0,27.0,23.0,Eligible,nan,nan,nan,nan,2024-12-09 10:10:08,nan,nan,10,nan,January 18 2025
+765,nan,43.0,28.0,14.0,4.0,2.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-12-09 11:39:39,nan,nan,10,nan,May 24 2025 (Final Test Date)
+766,nan,18.0,29.0,22.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-12-09 11:11:07,nan,nan,9,nan,January 18 2025
+767,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2024-12-09 11:15:12,nan,nan,9,nan,nan
+768,nan,62.0,89.0,50.0,43.0,12.0,6.0,25.0,In Processing,nan,nan,nan,nan,2024-12-09 11:35:07,nan,nan,9,nan,April 26 2025 (No-rest option)
+769,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-09 11:38:34,nan,nan,9,nan,nan
+770,nan,17.0,53.0,39.0,9.0,1.0,1.0,7.0,In Processing,nan,nan,nan,nan,2024-12-09 12:43:57,nan,nan,9,nan,April 26 2025 (No-rest option)
+771,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-09 14:58:01,nan,nan,11,nan,nan
+772,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,18.0,1.0,20.0,2024-12-09 16:38:40,nan,nan,9,nan,February 15 2025 (No-rest option)
+773,nan,60.0,59.0,62.0,33.0,11.0,12.0,10.0,In Processing,nan,nan,nan,nan,2024-12-09 16:57:59,nan,nan,9,nan,April 26 2025 (No-rest option)
+774,nan,99.0,74.0,64.0,61.0,30.0,13.0,18.0,In Processing,nan,nan,nan,nan,2024-12-09 17:27:20,nan,nan,11,nan,April 26 2025 (No-rest option)
+775,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-06 23:32:37,nan,nan,10,nan,April 26 2025 (No-rest option)
+776,30.0,64.0,97.0,72.0,89.0,13.0,17.0,29.0,Eligible,nan,nan,nan,nan,2024-12-09 20:49:59,nan,nan,9,nan,January 18 2025
+777,nan,75.0,73.0,18.0,36.0,18.0,1.0,17.0,In Processing,nan,nan,nan,nan,2024-12-10 11:44:47,nan,nan,9,nan,April 26 2025 (No-rest option)
+778,nan,93.0,93.0,62.0,66.0,27.0,12.0,27.0,In Processing,nan,nan,nan,nan,2025-01-07 20:50:23,nan,nan,10,nan,April 26 2025 (No-rest option)
+779,nan,79.0,83.0,66.0,56.0,20.0,14.0,22.0,In Processing,nan,nan,nan,nan,2024-12-10 17:58:30,nan,nan,10,nan,April 26 2025 (No-rest option)
+780,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-10 21:39:45,nan,nan,9,nan,nan
+781,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-11 07:21:13,nan,nan,10,nan,January 18 2025
+782,nan,71.0,92.0,43.0,45.0,16.0,2.0,27.0,In Processing,nan,nan,nan,nan,2024-12-11 09:20:57,nan,nan,9,nan,January 18 2025
+783,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,23.0,30.0,30.0,113.0,2024-12-11 13:05:06,nan,nan,9,nan,February 15 2025 (No-rest option)
+784,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-12 04:06:10,nan,nan,9,nan,nan
+785,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-13 00:00:02,nan,nan,9,nan,February 15 2025 (No-rest option)
+786,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-13 09:10:06,nan,nan,9,nan,January 18 2025
+787,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-13 12:42:06,nan,nan,9,nan,nan
+788,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,4.0,13.0,18.0,2024-12-13 14:29:04,nan,nan,9,nan,February 15 2025 (No-rest option)
+789,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,12.0,12.0,16.0,40.0,2024-12-14 11:00:26,nan,nan,10,nan,nan
+790,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-14 14:32:43,nan,nan,9,nan,nan
+791,30.0,82.0,85.0,97.0,104.0,22.0,29.0,23.0,Eligible,nan,nan,nan,nan,2024-12-14 14:36:10,nan,nan,9,nan,January 18 2025
+792,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,19.0,17.0,37.0,2024-12-14 16:39:42,nan,nan,9,nan,March 22 2025 (No-rest option)
+793,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,19.0,17.0,37.0,2024-12-14 16:39:42,nan,nan,9,nan,March 22 2025 (No-rest option)
+794,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,7.0,5.0,13.0,2025-03-15 18:47:26,nan,nan,9,nan,March 22 2025 (No-rest option)
+795,30.0,89.0,98.0,99.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-12-15 10:15:52,nan,nan,9,nan,January 18 2025
+796,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-15 12:28:15,nan,nan,10,nan,nan
+797,nan,26.0,59.0,43.0,13.0,1.0,2.0,10.0,In Processing,nan,nan,nan,nan,2024-12-15 12:41:55,nan,nan,9,nan,January 18 2025
+798,26.0,85.0,99.0,99.0,109.0,23.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-12-16 10:27:02,nan,nan,9,nan,January 18 2025
+799,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-16 17:18:09,nan,nan,9,nan,nan
+800,nan,34.0,21.0,16.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-12-16 18:07:20,jAqv,nan,9,nan,April 26 2025 (No-rest option)
+801,nan,39.0,67.0,51.0,21.0,1.0,6.0,14.0,In Processing,nan,nan,nan,nan,2024-12-20 09:29:08,nan,nan,9,nan,January 18 2025
+802,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-17 09:25:15,nan,nan,10,nan,February 15 2025 (No-rest option)
+803,nan,33.0,51.0,12.0,8.0,1.0,1.0,6.0,In Processing,nan,7Gin,nan,nan,2024-12-17 09:50:50,nan,nan,9,nan,April 26 2025 (No-rest option)
+804,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-17 13:09:39,nan,nan,9,nan,January 18 2025
+805,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,pLHR,7.0,2025-01-12 20:26:37,nan,nan,9,nan,March 22 2025 (No-rest option)
+806,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-17 13:40:48,nan,nan,9,nan,January 18 2025
+807,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-18 18:05:11,nan,nan,11,nan,January 18 2025
+808,nan,82.0,61.0,74.0,51.0,22.0,18.0,11.0,In Processing,nan,nan,nan,nan,2024-12-17 15:50:49,nan,nan,9,nan,April 26 2025 (No-rest option)
+809,30.0,41.0,97.0,97.0,89.0,1.0,29.0,29.0,Eligible,nan,nan,nan,nan,2024-12-17 23:51:35,nan,nan,9,nan,April 26 2025 (No-rest option)
+810,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-27 13:13:04,nan,nan,11,nan,nan
+811,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,k9sp,nan,2024-12-18 10:21:01,nan,nan,10,nan,April 26 2025 (No-rest option)
+812,30.0,75.0,95.0,99.0,106.0,18.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-12-19 08:02:52,nan,nan,9,nan,January 18 2025
+813,nan,79.0,68.0,24.0,36.0,20.0,1.0,15.0,In Processing,nan,nan,nan,nan,2024-12-19 10:01:47,nan,nan,10,nan,January 18 2025
+814,nan,84.0,90.0,68.0,64.0,23.0,15.0,26.0,In Processing,nan,nan,nan,nan,2024-12-19 12:47:49,nan,nan,11,nan,April 26 2025 (No-rest option)
+815,21.0,69.0,94.0,86.0,88.0,15.0,24.0,28.0,Eligible,nan,nan,nan,nan,2024-12-19 13:42:44,nan,nan,9,nan,January 18 2025
+816,nan,52.0,73.0,80.0,45.0,7.0,21.0,17.0,In Processing,nan,nan,nan,nan,2024-12-19 17:21:22,nan,nan,9,nan,January 18 2025
+817,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-08 11:17:17,nan,nan,10,nan,January 18 2025
+818,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-19 18:09:10,nan,nan,9,nan,nan
+819,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-20 14:46:24,nan,nan,9,nan,nan
+820,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-20 17:13:30,nan,nan,10,nan,March 22 2025 (No-rest option)
+821,nan,88.0,86.0,70.0,65.0,25.0,16.0,24.0,In Processing,nan,nan,nan,nan,2024-12-22 09:35:21,nan,nan,10,nan,April 26 2025 (No-rest option)
+822,nan,55.0,90.0,78.0,54.0,8.0,20.0,26.0,In Processing,nan,nan,nan,nan,2024-12-22 14:49:22,nan,nan,9,nan,April 26 2025 (No-rest option)
+823,nan,9.0,47.0,20.0,6.0,1.0,1.0,4.0,In Processing,nan,nan,nan,nan,2024-12-22 20:51:16,nan,nan,9,nan,April 26 2025 (No-rest option)
+824,nan,79.0,66.0,54.0,42.0,20.0,8.0,14.0,In Processing,nan,nan,nan,nan,2024-12-25 12:07:07,nan,nan,9,nan,April 26 2025 (No-rest option)
+825,nan,30.0,65.0,94.0,42.0,1.0,28.0,13.0,In Processing,nan,nan,nan,nan,2024-12-26 20:38:54,nan,nan,9,nan,April 26 2025 (No-rest option)
+826,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-26 22:18:50,nan,nan,9,nan,April 26 2025 (No-rest option)
+827,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-26 23:17:07,nan,nan,11,nan,April 26 2025 (No-rest option)
+828,nan,29.0,73.0,31.0,19.0,1.0,1.0,17.0,In Processing,nan,nan,nan,nan,2024-12-28 23:57:29,nan,nan,9,nan,April 26 2025 (No-rest option)
+829,nan,29.0,73.0,31.0,19.0,1.0,1.0,17.0,In Processing,nan,nan,nan,nan,2024-12-28 23:57:29,nan,nan,9,nan,April 26 2025 (No-rest option)
+830,nan,96.0,90.0,43.0,57.0,29.0,2.0,26.0,In Processing,nan,nan,nan,nan,2024-12-29 12:25:24,nan,nan,9,nan,April 26 2025 (No-rest option)
+831,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-30 09:48:26,nan,nan,10,nan,January 18 2025
+832,nan,59.0,87.0,62.0,46.0,10.0,12.0,24.0,In Processing,nan,nan,nan,nan,2024-12-30 13:24:27,nan,nan,9,tZZk,April 26 2025 (No-rest option)
+833,nan,77.0,84.0,24.0,43.0,19.0,1.0,23.0,In Processing,nan,nan,nan,nan,2024-12-30 13:32:55,nan,nan,9,nan,January 18 2025
+834,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-30 14:22:33,nan,nan,9,nan,January 18 2025
+835,nan,77.0,97.0,64.0,61.0,19.0,13.0,29.0,In Processing,nan,nan,nan,nan,2024-12-30 17:48:24,nan,nan,9,Test Accommodations Approved,January 18 2025
+836,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-31 00:12:32,nan,nan,9,nan,January 18 2025
+837,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-31 19:33:38,nan,nan,9,nan,nan
+838,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-01 11:19:04,nan,nan,11,nan,March 22 2025 (No-rest option)
+839,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-01 11:19:04,nan,nan,11,nan,March 22 2025 (No-rest option)
+840,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-01 11:21:10,nan,nan,10,nan,March 22 2025 (No-rest option)
+841,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-01 13:50:27,nan,nan,9,nan,January 18 2025
+842,nan,90.0,76.0,77.0,64.0,26.0,19.0,19.0,In Processing,nan,nan,nan,nan,2025-01-01 20:11:12,nan,nan,11,nan,April 26 2025 (No-rest option)
+843,30.0,93.0,93.0,97.0,113.0,27.0,29.0,27.0,Eligible,nan,nan,nan,nan,2025-01-02 19:09:47,nan,nan,10,nan,January 18 2025
+844,30.0,nan,nan,nan,30.0,nan,nan,nan,In Processing,26.0,30.0,30.0,116.0,2025-01-03 16:08:14,nan,nan,9,nan,March 22 2025 (No-rest option)
+845,nan,32.0,67.0,60.0,26.0,1.0,11.0,14.0,In Processing,nan,nan,nan,nan,2025-01-04 13:01:37,nan,nan,9,nan,April 26 2025 (No-rest option)
+846,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-04 18:33:53,nan,nan,g6RP,nan,January 18 2025
+847,nan,92.0,96.0,55.0,64.0,27.0,8.0,29.0,In Processing,nan,nan,nan,nan,2025-01-05 17:46:23,nan,nan,10,nan,April 26 2025 (No-rest option)
+848,nan,92.0,91.0,57.0,62.0,27.0,9.0,26.0,In Processing,nan,nan,nan,nan,2025-01-06 10:18:58,nan,nan,11,nan,January 18 2025
+849,nan,67.0,66.0,45.0,31.0,14.0,3.0,14.0,In Processing,nan,nan,nan,nan,2025-01-06 10:53:45,nan,nan,9,nan,January 18 2025
+850,25.0,nan,nan,nan,25.0,nan,nan,nan,Eligible,24.0,30.0,28.0,107.0,2025-01-06 10:55:59,nan,nan,9,nan,February 15 2025 (No-rest option)
+851,30.0,93.0,80.0,82.0,100.0,27.0,22.0,21.0,Eligible,nan,nan,nan,nan,2025-01-06 12:12:23,nan,nan,10,nan,January 18 2025
+852,nan,37.0,67.0,14.0,16.0,1.0,1.0,14.0,k5tj,nan,nan,nan,nan,2025-01-06 12:34:09,nan,nan,9,nan,April 26 2025 (No-rest option)
+853,nan,59.0,69.0,62.0,37.0,10.0,12.0,15.0,In Processing,nan,nan,nan,nan,2025-01-06 18:11:17,nan,nan,10,nan,January 18 2025
+854,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,23.0,8.0,28.0,59.0,2025-01-06 18:36:22,nan,nan,10,nan,January 18 2025
+855,nan,94.0,99.0,99.0,88.0,28.0,30.0,30.0,Eligible,nan,nan,nan,nan,2025-04-04 14:18:52,nan,nan,9,nan,January 18 2025
+856,nan,47.0,55.0,57.0,21.0,4.0,9.0,8.0,In Processing,nan,nan,nan,nan,2025-01-06 23:21:40,nan,nan,11,nan,January 18 2025
+857,nan,74.0,79.0,55.0,46.0,18.0,8.0,20.0,In Processing,nan,nan,nan,nan,2025-01-07 08:39:02,nan,nan,10,nan,April 26 2025 (No-rest option)
+858,22.0,nan,nan,nan,22.0,nan,nan,nan,In Processing,12.0,27.0,25.0,86.0,2025-01-07 12:32:48,nan,nan,9,nan,March 22 2025 (No-rest option)
+859,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-07 13:40:09,nan,nan,9,nan,nan
+860,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2025-01-07 14:01:04,nan,nan,9,nan,February 15 2025 (No-rest option)
+861,30.0,81.0,97.0,76.0,99.0,21.0,19.0,29.0,Eligible,nan,nan,nan,nan,2025-01-07 14:58:55,nan,nan,10,nan,January 18 2025
+862,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-07 15:17:28,nan,nan,9,nan,nan
+863,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-07 15:56:32,nan,nan,11,nan,nan
+864,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2025-01-07 18:14:59,nan,nan,9,nan,March 22 2025 (No-rest option)
+865,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-07 19:33:29,nan,nan,9,nan,nan
+866,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-07 20:06:11,nan,nan,9,nan,nan
+867,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-07 21:47:21,nan,nan,11,nan,April 26 2025 (No-rest option)
+868,nan,77.0,85.0,99.0,72.0,19.0,30.0,23.0,In Processing,nan,nan,nan,nan,2025-01-08 10:56:45,nan,nan,9,nan,January 18 2025
+869,23.0,86.0,99.0,91.0,103.0,24.0,26.0,30.0,Eligible,nan,nan,nan,nan,2025-01-08 10:38:16,nan,nan,9,nan,January 18 2025
+870,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-08 11:29:43,nan,nan,10,nan,March 22 2025 (No-rest option)
+871,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-08 11:33:10,nan,nan,9,nan,nan
+872,nan,TFCy,78.0,37.0,32.0,11.0,1.0,20.0,In Processing,nan,nan,nan,nan,2025-01-08 11:43:01,nan,nan,9,nan,January 18 2025
+873,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-08 22:21:05,nan,nan,9,nan,nan
+874,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-08 22:23:32,nan,nan,9,nan,January 18 2025
+875,nan,86.0,81.0,73.0,62.0,24.0,17.0,21.0,In Processing,nan,nan,nan,nan,2025-01-08 23:39:57,nan,nan,10,nan,January 18 2025
+876,nan,66.0,73.0,90.0,57.0,14.0,26.0,17.0,In Processing,nan,nan,nan,nan,2025-01-09 06:48:10,nan,nan,9,nan,April 26 2025 (No-rest option)
+877,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-09 10:07:13,nan,nan,11,nan,April 26 2025 (No-rest option)
+878,nan,37.0,57.0,29.0,11.0,1.0,1.0,9.0,In Processing,nan,nan,nan,nan,2025-01-09 12:10:07,nan,nan,9,nan,January 18 2025
+879,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,22.0,30.0,28.0,110.0,2025-01-09 13:06:22,nan,nan,10,Test Accommodations Approved,March 22 2025 (No-rest option)
+880,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-09 13:55:01,nan,nan,9,nan,nan
+881,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,10.0,18.0,24.0,52.0,2025-01-09 14:12:21,nan,nan,11,nan,February 15 2025 (No-rest option)
+882,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-09 14:28:08,nan,nan,9,nan,nan
+883,nan,88.0,78.0,66.0,59.0,25.0,14.0,20.0,In Processing,nan,nan,nan,607x,2025-01-14 17:43:54,nan,nan,10,fh2E,April 26 2025 (No-rest option)
+884,nan,60.0,76.0,37.0,31.0,11.0,1.0,19.0,In Processing,nan,nan,nan,nan,2025-01-09 16:25:45,nan,nan,9,nan,January 18 2025
+885,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-09 16:21:37,nan,nan,9,nan,nan
+886,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,2.0,4.0,2025-01-09 20:59:51,nan,nan,9,nan,March 22 2025 (No-rest option)
+887,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,13.0,9.0,22.0,44.0,2025-01-09 17:58:10,nan,nan,9,nan,February 15 2025 (No-rest option)
+888,nan,23.0,39.0,33.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2025-01-09 21:25:47,nan,nan,9,nan,April 26 2025 (No-rest option)
+889,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2025-01-10 08:26:15,nan,nan,11,nan,February 15 2025 (No-rest option)
+890,27.0,nan,nan,nan,27.0,nan,nan,nan,Eligible,22.0,27.0,30.0,106.0,2025-01-10 08:33:49,nan,nan,9,nan,February 15 2025 (No-rest option)
+891,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-10 09:24:32,nan,nan,10,nan,nan
+892,nan,nan,nan,nan,0.0,nan,nan,nan,Eligible,nan,nan,nan,nan,2025-01-10 09:37:49,nan,nan,10,nan,nan
+893,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,14.0,10.0,27.0,51.0,2025-01-10 12:08:59,nan,nan,9,nan,February 15 2025 (No-rest option)
+894,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-10 12:04:47,nan,nan,10,nan,April 26 2025 (No-rest option)
+895,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,12.0,9.0,26.0,47.0,2025-01-10 15:47:21,nan,nan,9,nan,February 15 2025 (No-rest option)
+896,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,11.0,2.0,21.0,34.0,2025-01-10 16:23:11,nan,nan,10,nan,February 15 2025 (No-rest option)
+897,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,10.0,17.0,10.0,37.0,2025-01-10 19:04:51,nan,nan,9,nan,February 15 2025 (No-rest option)
+898,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2025-01-10 20:40:38,nan,nan,10,nan,March 22 2025 (No-rest option)
+899,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,8.0,26.0,25.0,89.0,2025-01-10 21:32:07,nan,nan,9,nan,February 15 2025 (No-rest option)
+900,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-10 22:51:59,nan,nan,11,nan,April 26 2025 (No-rest option)
+901,30.0,nan,nan,nan,30.0,nan,nan,nan,In Processing,25.0,19.0,29.0,103.0,2025-01-11 07:26:06,nan,nan,9,nan,March 22 2025 (No-rest option)
+902,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,7.0,1.0,21.0,29.0,2025-01-11 20:44:49,nan,nan,9,nan,February 15 2025 (No-rest option)
+903,22.0,nan,nan,nan,22.0,nan,nan,nan,Eligible,26.0,29.0,29.0,106.0,2025-01-11 22:31:14,nan,nan,9,nan,February 15 2025 (No-rest option)
+904,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,6.0,8.0,2025-01-11 22:55:52,nan,nan,9,nan,February 15 2025 (No-rest option)
+905,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-12 20:57:33,nan,nan,10,nan,nan
+906,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,2.0,1.0,4.0,2025-01-13 08:05:22,nan,nan,9,nan,March 22 2025 (No-rest option)
+907,nan,nan,R7UG,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-16 15:14:11,nan,nan,11,nan,February 15 2025 (No-rest option)
+908,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,9.0,4.0,20.0,33.0,2025-01-13 14:35:25,nan,nan,9,nan,March 22 2025 (No-rest option)
+909,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,12.0,1.0,2.0,15.0,2025-01-13 18:40:54,nan,nan,9,nan,February 15 2025 (No-rest option)
+910,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-13 22:41:07,nan,nan,9,nan,nan
+911,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-13 23:03:54,nan,nan,9,nan,nan
+912,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-14 09:43:02,nan,nan,9,nan,April 26 2025 (No-rest option)
+913,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-14 17:04:17,nan,nan,10,nan,nan
+914,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-14 21:50:58,nan,nan,9,nan,nan
+915,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,24.0,17.0,27.0,98.0,2025-01-14 22:31:51,nan,nan,9,nan,February 15 2025 (No-rest option)
+916,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,27.0,23.0,30.0,110.0,2025-01-15 11:37:54,nan,nan,10,nan,March 22 2025 (No-rest option)
+917,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,17.0,22.0,16.0,55.0,2025-02-25 11:10:51,nan,nan,9,nan,March 22 2025 (No-rest option)
+918,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-15 16:18:09,nan,nan,9,nan,nan
+919,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,14.0,27.0,18.0,89.0,2025-01-17 23:21:12,nan,nan,9,nan,March 22 2025 (No-rest option)
+920,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-15 21:44:58,nan,nan,9,nan,nan
+921,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-16 08:42:35,nan,nan,9,nan,February 15 2025 (No-rest option)
+922,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-16 13:38:49,nan,nan,9,nan,nan
+923,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-16 17:52:51,nan,nan,9,nan,nan
+924,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-17 10:33:28,nan,nan,9,nan,February 15 2025 (No-rest option)
+925,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-17 14:45:41,nan,nan,11,nan,April 26 2025 (No-rest option)
+926,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-17 16:51:10,nan,nan,10,nan,April 26 2025 (No-rest option)
+927,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,26.0,21.0,19.0,96.0,2025-01-17 18:17:11,nan,nan,9,nan,February 15 2025 (No-rest option)
+928,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,13.0,15.0,2025-01-17 18:51:57,nan,nan,9,nan,February 15 2025 (No-rest option)
+929,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,4.0,19.0,24.0,2025-01-18 13:40:19,nan,nan,9,nan,March 22 2025 (No-rest option)
+930,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,8.0,17.0,17.0,42.0,2025-01-18 19:37:26,nan,nan,9,nan,February 15 2025 (No-rest option)
+931,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,27.0,30.0,26.0,113.0,2025-01-19 21:37:18,nan,nan,10,nan,February 15 2025 (No-rest option)
+932,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2025-01-22 11:07:40,nan,nan,11,nan,February 15 2025 (No-rest option)
+933,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,ZZ9e,6.0,18.0,33.0,2025-01-22 11:09:54,nan,nan,9,nan,February 15 2025 (No-rest option)
+934,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,20.0,9.0,22.0,51.0,2025-01-22 12:53:20,nan,nan,9,nan,March 22 2025 (No-rest option)
+935,yjlG,nan,nan,nan,0.0,nan,nan,nan,In Processing,10.0,7.0,22.0,39.0,2025-01-22 17:55:52,nan,nan,10,nan,February 15 2025 (No-rest option)
+936,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-22 16:45:47,nan,nan,10,nan,February 15 2025 (No-rest option)
+937,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,20.0,12.0,15.0,47.0,2025-01-22 17:20:46,nan,nan,10,nan,February 15 2025 (No-rest option)
+938,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,15.0,15.0,16.0,46.0,2025-01-23 15:02:46,nan,nan,9,nan,February 15 2025 (No-rest option)
+939,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,20.0,28.0,24.0,102.0,2025-01-23 16:38:41,nan,nan,9,nan,February 15 2025 (No-rest option)
+940,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-23 22:29:35,nan,nan,9,nan,March 22 2025 (No-rest option)
+941,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-30 10:39:04,nan,nan,9,nan,April 26 2025 (No-rest option)
+942,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-24 12:56:24,nan,nan,9,nan,nan
+943,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-30 10:39:33,nan,nan,9,nan,April 26 2025 (No-rest option)
+944,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-25 08:05:04,nan,nan,10,nan,April 26 2025 (No-rest option)
+945,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-25 13:21:40,nan,nan,9,nan,March 22 2025 (No-rest option)
+946,nan,nan,nan,nan,0.0,nan,nan,nan,S7ig,18.0,5.0,11.0,34.0,2025-01-26 09:32:19,nan,nan,11,nan,February 15 2025 (No-rest option)
+947,nan,nan,nan,nan,0.0,nan,CKaY,nan,In Processing,3.0,1.0,2.0,6.0,2025-01-26 20:37:51,nan,nan,9,nan,February 15 2025 (No-rest option)
+948,nan,nan,nan,nan,0.0,nan,z64c,nan,In Processing,nan,nan,nan,nan,2025-01-27 10:43:41,nan,nan,10,nan,March 22 2025 (No-rest option)
+949,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-27 12:44:08,nan,nan,11,nan,nan
+950,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-27 20:51:06,nan,nan,9,nan,nan
+951,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-28 14:42:25,nan,nan,9,nan,nan
+952,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-28 17:41:08,nan,nan,9,nan,March 22 2025 (No-rest option)
+953,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-10 18:03:54,nan,nan,9,nan,April 26 2025 (No-rest option)
+954,25.0,nan,nan,nan,25.0,nan,nan,nan,In Processing,25.0,25.0,30.0,105.0,2025-01-28 19:36:47,nan,nan,10,nan,February 15 2025 (No-rest option)
+955,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,3.0,1.0,28.0,32.0,2025-01-28 20:03:34,nan,nan,11,nan,March 22 2025 (No-rest option)
+956,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2025-01-29 09:24:00,nan,nan,9,nan,March 22 2025 (No-rest option)
+957,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-29 10:00:02,nan,nan,9,nan,nan
+958,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-29 11:40:32,nan,nan,9,nan,nan
+959,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,24.0,16.0,23.0,63.0,2025-01-29 16:01:43,nan,nan,10,nan,March 22 2025 (No-rest option)
+960,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-29 17:22:29,nan,nan,9,nan,nan
+961,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-29 20:30:14,nan,nan,10,nan,nan
+962,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-29 20:26:01,nan,nan,9,nan,February 15 2025 (No-rest option)
+963,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-30 11:12:36,nan,nan,9,nan,nan
+964,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-30 14:39:20,nan,nan,9,nan,March 22 2025 (No-rest option)
+965,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-30 15:20:53,nan,nan,9,nan,nan
+966,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-30 16:15:45,nan,nan,10,nan,nan
+967,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2025-01-30 20:32:24,nan,nan,9,nan,February 15 2025 (No-rest option)
+968,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-30 17:46:19,nan,nan,9,nan,nan
+969,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,6.0,1.0,8.0,2025-01-30 18:46:37,nan,nan,9,nan,February 15 2025 (No-rest option)
+970,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2025-01-30 18:41:30,nan,nan,9,nan,February 15 2025 (No-rest option)
+971,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-31 16:46:16,nan,nan,9,nan,nan
+972,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,15.0,1.0,11.0,27.0,2025-02-01 16:33:41,nan,nan,11,nan,March 22 2025 (No-rest option)
+973,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-01 19:23:29,nan,nan,9,nan,April 26 2025 (No-rest option)
+974,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,11.0,3.0,16.0,30.0,2025-02-01 19:44:54,nan,nan,9,nan,February 15 2025 (No-rest option)
+975,25.0,nan,nan,nan,25.0,nan,nan,nan,Eligible,29.0,30.0,25.0,109.0,2025-02-02 16:26:00,nan,nan,9,nan,February 15 2025 (No-rest option)
+976,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-02 22:24:57,nan,nan,9,nan,nan
+977,nan,17.0,71.0,49.0,22.0,1.0,5.0,16.0,In Processing,nan,nan,nan,nan,2025-02-04 16:37:36,nan,nan,9,nan,nan
+978,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-18 11:05:14,nan,nan,9,nan,April 26 2025 (No-rest option)
+979,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-03 15:32:23,nan,nan,9,nan,nan
+980,28.0,nan,nan,nan,28.0,nan,nan,nan,Eligible,26.0,30.0,20.0,104.0,2025-02-06 10:40:19,nan,nan,10,nan,February 15 2025 (No-rest option)
+981,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,4.0,18.0,12.0,34.0,2025-02-04 15:15:55,nan,nan,9,nan,March 22 2025 (No-rest option)
+982,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,5.0,1.0,9.0,15.0,2025-02-04 17:42:18,nan,nan,9,nan,March 22 2025 (No-rest option)
+983,nan,nan,nan,nan,0.0,nan,nan,nan,Eligible,24.0,30.0,26.0,80.0,2025-02-04 20:49:03,nan,nan,9,nan,February 15 2025 (No-rest option)
+984,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-05 20:48:55,nan,nan,10,nan,March 22 2025 (No-rest option)
+985,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,6.0,8.0,2025-02-05 00:36:31,nan,nan,9,nan,March 22 2025 (No-rest option)
+986,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-06 10:11:36,nan,nan,10,nan,nan
+987,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-06 17:05:27,nan,nan,10,nan,April 26 2025 (No-rest option)
+988,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-08 12:51:12,nan,nan,yWfg,nan,nan
+989,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-10 17:28:38,nan,nan,9,nan,nan
+990,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-10 20:50:44,nan,nan,9,nan,March 22 2025 (No-rest option)
+991,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-11 03:24:18,nan,nan,10,nan,April 26 2025 (No-rest option)
+992,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,25.0,23.0,49.0,2025-02-11 08:24:13,nan,nan,9,nan,March 22 2025 (No-rest option)
+993,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,7.0,1.0,14.0,22.0,2025-02-11 12:08:49,nan,nan,9,nan,March 22 2025 (No-rest option)
+994,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-13 10:37:15,nan,nan,11,nan,April 26 2025 (No-rest option)
+995,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,3.0,5.0,2025-02-13 16:21:16,nan,nan,IEqW,nan,bpRC
+996,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-14 06:39:59,nan,nan,11,nan,nan
+997,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-14 10:58:51,nan,nan,10,nan,April 26 2025 (No-rest option)
+998,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,25.0,26.0,23.0,104.0,2025-02-15 11:02:56,nan,nan,9,nan,March 22 2025 (No-rest option)
+999,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-17 12:10:20,nan,nan,10,nan,April 26 2025 (No-rest option)
+1000,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-25 18:23:07,nan,nan,10,nan,April 26 2025 (No-rest option)
+1001,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,3.0,5.0,2025-02-18 11:20:05,nan,nan,9,nan,March 22 2025 (No-rest option)
+1002,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-18 14:11:15,nan,nan,9,nan,nan
+1003,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-18 22:08:11,nan,nan,10,nan,April 26 2025 (No-rest option)
+1004,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,14.0,4.0,4.0,22.0,2025-02-19 11:18:33,nan,nan,9,nan,March 22 2025 (No-rest option)
+1005,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-19 14:25:42,nan,nan,11,nan,April 26 2025 (No-rest option)
+1006,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-19 15:50:35,nan,nan,9,nan,April 26 2025 (No-rest option)
+1007,30.0,nan,nan,nan,30.0,nan,nan,nan,In Processing,13.0,25.0,24.0,92.0,2025-02-20 20:59:06,nan,nan,9,nan,March 22 2025 (No-rest option)
+1008,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,7v1U,nan,nan,nan,2025-02-21 16:57:15,nan,nan,9,nan,March 22 2025 (No-rest option)
+1009,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-23 17:02:01,nan,nan,10,nan,nan
+1010,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,25.0,16.0,20.0,61.0,2025-02-23 17:56:02,nan,nan,11,nan,March 22 2025 (No-rest option)
+1011,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-24 15:22:00,nan,nan,10,nan,April 26 2025 (No-rest option)
+1012,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-25 20:04:23,nan,nan,11,nan,April 26 2025 (No-rest option)
+1013,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,6.0,10.0,17.0,2025-02-26 05:27:19,nan,nan,9,nan,March 22 2025 (No-rest option)
+1014,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-26 11:00:17,nan,nan,11,nan,April 26 2025 (No-rest option)
+1015,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-14 14:22:37,nan,nan,11,nan,April 26 2025 (No-rest option)
+1016,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,17.0,14.0,16.0,47.0,2025-03-01 12:16:07,nan,nan,9,nan,March 22 2025 (No-rest option)
+1017,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-01 12:24:47,nan,nan,10,nan,March 22 2025 (No-rest option)
+1018,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,30.0,30.0,30.0,120.0,2025-03-03 10:54:08,nan,nan,9,nan,March 22 2025 (No-rest option)
+1019,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-03 16:12:23,nan,nan,9,nan,nan
+1020,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-05 08:47:55,nan,nan,9,nan,nan
+1021,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-06 09:35:00,nan,nan,9,nan,April 26 2025 (No-rest option)
+1022,22.0,nan,nan,nan,22.0,nan,nan,nan,In Processing,27.0,28.0,19.0,96.0,2025-03-06 12:46:26,nan,nan,10,nan,March 22 2025 (No-rest option)
+1023,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-08 17:18:49,nan,nan,10,nan,nan
+1024,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-09 08:38:41,nan,nan,10,T4o4,nan
+1025,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-10 09:09:13,nan,nan,10,nan,nan
+1026,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,20.0,3.0,13.0,36.0,2025-03-10 21:01:51,nan,nan,10,nan,March 22 2025 (No-rest option)
+1027,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-11 11:25:14,nan,nan,10,nan,April 26 2025 (No-rest option)
+1028,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-11 12:40:09,nan,nan,10,nan,nan
+1029,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2025-03-12 02:34:12,nan,nan,10,nan,April 26 2025 (No-rest option)
+1030,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-12 13:30:45,nan,nan,9,nan,April 26 2025 (No-rest option)
+1031,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,7.0,1.0,16.0,24.0,2025-03-13 20:14:23,nan,nan,10,nan,April 26 2025 (No-rest option)
+1032,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-13 08:37:23,nan,nan,10,nan,April 26 2025 (No-rest option)
+1033,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,11.0,1.0,13.0,25.0,2025-03-13 10:29:14,nan,nan,10,nan,March 22 2025 (No-rest option)
+1034,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-13 14:39:37,nan,nan,11,nan,nan
+1035,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-14 09:57:03,nan,nan,11,nan,April 26 2025 (No-rest option)
+1036,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-14 16:25:12,nan,nan,10,nan,nan
+1037,nan,nan,nan,nan,0.0,nan,nan,Rl0q,In Processing,nan,nan,nan,nan,2025-03-14 20:29:38,nan,nan,11,nan,April 26 2025 (No-rest option)
+1038,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-14 23:32:14,nan,nan,9,nan,April 26 2025 (No-rest option)
+1039,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-15 15:27:20,nan,nan,9,nan,April 26 2025 (No-rest option)
+1040,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-16 08:32:15,nan,nan,10,nan,April 26 2025 (No-rest option)
+1041,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-16 10:45:48,nan,nan,9,nan,cTaJ
+1042,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-17 10:32:20,nan,nan,10,nan,April 26 2025 (No-rest option)
+1043,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-17 13:01:26,nan,nan,9,nan,nan
+1044,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-18 09:24:34,nan,nan,11,nan,April 26 2025 (No-rest option)
+1045,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-19 10:43:50,nan,nan,11,nan,nan
+1046,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-19 12:49:33,nan,nan,10,nan,April 26 2025 (No-rest option)
+1047,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-20 09:47:59,nan,nan,9,nan,April 26 2025 (No-rest option)
+1048,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-22 18:17:13,nan,nan,9,nan,April 26 2025 (No-rest option)
+1049,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-24 09:52:22,nan,nan,9,nan,April 26 2025 (No-rest option)
+1050,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-24 10:21:14,nan,nan,9,nan,April 26 2025 (No-rest option)
+1051,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-24 17:06:47,nan,nan,10,nan,April 26 2025 (No-rest option)
+1052,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-25 09:46:47,nan,nan,9,nan,April 26 2025 (No-rest option)
+1053,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-25 10:49:37,nan,nan,11,nan,April 26 2025 (No-rest option)
+1054,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-25 12:58:18,nan,nan,9,nan,April 26 2025 (No-rest option)
+1055,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-25 13:29:19,nan,nan,10,nan,April 26 2025 (No-rest option)
+1056,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-26 09:19:42,nan,nan,11,nan,April 26 2025 (No-rest option)
+1057,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-26 11:01:53,nan,nan,9,nan,April 26 2025 (No-rest option)
+1058,nan,nan,nan,nan,k24x,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-27 14:30:22,nan,nan,9,nan,April 26 2025 (No-rest option)
+1059,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-27 20:34:04,nan,nan,11,nan,nan
+1060,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-28 18:12:51,nan,nan,9,nan,nan
+1061,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-28 20:22:03,nan,nan,11,nan,April 26 2025 (No-rest option)
+1062,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-28 22:32:15,nan,nan,9,nan,April 26 2025 (No-rest option)
+1063,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-28 22:40:43,nan,nan,10,nan,nan
+1064,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-29 06:05:01,nan,nan,10,nan,April 26 2025 (No-rest option)
+1065,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-29 17:11:14,nan,nan,11,nan,nan
+1066,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-31 09:49:34,nan,nan,9,nan,April 26 2025 (No-rest option)
+1067,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-01 22:16:29,nan,nan,10,nan,April 26 2025 (No-rest option)
+1068,nan,nan,nan,nan,0.0,nan,nan,nan,XwBc,nan,nan,nan,nan,2025-04-02 09:26:43,nan,nan,10,nan,May 24 2025 (Final Test Date)
+1069,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-02 10:52:50,nan,nan,9,nan,April 26 2025 (No-rest option)
+1070,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,PUcC,nan,nan,nan,2025-04-02 18:20:53,nan,nan,10,nan,April 26 2025 (No-rest option)
+1071,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-03 12:16:31,nan,nan,9,nan,nan
+1072,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-04 13:45:16,nan,nan,9,nan,April 26 2025 (No-rest option)
+1073,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-05 10:56:28,nan,nan,9,nan,nan
+1074,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-08 13:55:26,nan,nan,9,nan,nan
+1075,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-08 16:35:55,nan,nan,9,nan,May 24 2025 (Final Test Date)
+1076,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-09 13:42:06,nan,nan,10,nan,nan
+1077,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-09 14:22:33,nan,nan,9,nan,nan
