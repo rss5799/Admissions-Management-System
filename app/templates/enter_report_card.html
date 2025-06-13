@@ -17,13 +17,13 @@
     </select>
 
 <!-- Content will be loaded here -->
-<div id="Report_card_dynamic_content">
+<div id="Report_card_dynamic_content"></div>
 <div id="eng"></div>
 <div id="math"></div>
 <div id="sci"></div>
 <div id="soc"></div>
 <div id="WL"></div>
-</div>
+
 
 
 <script>
@@ -45,177 +45,91 @@
     const selectedValue = this.value;
     if (studentGrade == 9 && selectedValue != 'quarters') {
       contentArea.innerHTML = '<h2>Semester/Trimester APPLYING FOR 9TH applicants</h2>';
-      const STEng8 = document.createElement('input');
-          STEng8.id = "8SemTriEng";
-          STEng8.placeholder = "RC 1 English";
-          STEng8.type = 'text';
-      contentArea.appendChild(STEng8)
+      engArea.innerHTML = '<input id = "8SemTriEng", placeholder = "RC 1 English", type = text></input>'
+      mathArea.innerHTML = '<input id = "8SemTriMath", placeholder = "RC 1 Math", type = text></input>'
+      sciArea.innerHTML = '<input id = "8SemTriSci", placeholder = "RC 1 Sci", type = text></input>'
+      socArea.innerHTML = '<input id = "8SemTriSoc", placeholder = "RC 1 Soc", type = text></input>'
 
-      const STMath8 = document.createElement('input');
-          STMath8.id = "8SemTriMath";
-          STMath8.placeholder = "RC 1 Math";
-          STMath8.type = 'text';
-      contentArea.appendChild(STMath8)
 
-      const STSci8 = document.createElement('input');
-          STSci8.id = "8SemTriSci";
-          STSci8.placeholder = "RC 1 Sci";
-          STSci8.type = 'text';
-      contentArea.appendChild(STSci8)
-
-      const STSoc8 = document.createElement('input');
-          STSoc8.id = "8SemTriSoc";
-          STSoc8.placeholder = "RC 1 Soc";
-          STSoc8.type = 'text';
-      contentArea.appendChild(STSoc8)
     } 
 
     else if (studentGrade == 9 && selectedValue === 'quarters' ) {
       contentArea.innerHTML = '<h2>Quarters APPLYING FOR 9TH applicants</h2>';
-      
-      const Q1Eng8 = document.createElement('input');
-          Q1Eng8.id = "8Q1Eng";
-          Q1Eng8.placeholder = "RC Q1 English";
-          Q1Eng8.type = 'text';
-      contentArea.appendChild(Q1Eng8)
-
+      engArea.innerHTML = '<input id = "8Q1Eng", placeholder = "RC Q1 English", type = text></input>'
       const Q2Eng8 = document.createElement('input');
           Q2Eng8.id = "8Q2Eng";
-          Q2Eng8.placeholder = "RC Q2 Eng";
+          Q2Eng8.placeholder = "RC Q2 English";
           Q2Eng8.type = 'text';
-      contentArea.appendChild(Q2Eng8)
+      engArea.appendChild(Q2Eng8)
 
-      const Q1Math8 = document.createElement('input');
-          Q1Math8.id = "8Q1Math";
-          Q1Math8.placeholder = "RC Q1 Math";
-          Q1Math8.type = 'text';
-      contentArea.appendChild(Q1Math8)
-
+      mathArea.innerHTML = '<input id = "8Q1Math", placeholder = "RC Q1 Math", type = text></input>'
       const Q2Math8 = document.createElement('input');
-          Q2Math8.id = "8Q2Math";
-          Q2Math8.placeholder = "RC Q2 Math";
-          Q2Math8.type = 'text';
-      contentArea.appendChild(Q2Math8)
+            Q2Math8.id = "8Q2Math";
+            Q2Math8.placeholder = "RC Q2 Math";
+            Q2Math8.type = 'text';
+      mathArea.appendChild(Q2Math8)
 
-      const Q1Sci8 = document.createElement('input');
-          Q1Sci8.id = "8Q1Sci";
-          Q1Sci8.placeholder = "RC Q1 Sci";
-          Q1Sci8.type = 'text';
-      contentArea.appendChild(Q1Sci8)
-
+      sciArea.innerHTML = '<input id = "8Q1Sci", placeholder = "RC Q1 Sci", type = text></input>'
       const Q2Sci8 = document.createElement('input');
-          Q2Sci8.id = "8Q2Sci";
-          Q2Sci8.placeholder = "RC Q2 Sci";
-          Q2Sci8.type = 'text';
-      contentArea.appendChild(Q2Sci8)
+            Q2Sci8.id = "8Q2Sci";
+            Q2Sci8.placeholder = "RC Q2 Sci";
+            Q2Sci8.type = 'text';
+      sciArea.appendChild(Q2Sci8)
 
-      const Q1Soc8 = document.createElement('input');
-          Q1Soc8.id = "8Q1Soc";
-          Q1Soc8.placeholder = "RC Q1 Soc";
-          Q1Soc8.type = 'text';
-      contentArea.appendChild(Q1Soc8)
-
+      socArea.innerHTML = '<input id = "8Q1Soc", placeholder = "RC Q1 Soc", type = text></input>'
       const Q2Soc8 = document.createElement('input');
-          Q2Soc8.id = "8Q2Soc";
-          Q2Soc8.placeholder = "RC Q2 Soc";
-          Q2Soc8.type = 'text';
-      contentArea.appendChild(Q2Soc8)
-
+            Q2Soc8.id = "8Q2Soc";
+            Q2Soc8.placeholder = "RC Q2 Soc";
+            Q2Soc8.type = 'text';
+      socArea.appendChild(Q2Soc8)
     }
     else if (studentGrade != 9 && selectedValue != 'quarters' ) {
       contentArea.innerHTML = '<h2>Semester/Trimester APPLYING FOR 10TH/11TH applicants</h2>';
-      const STEng910 = document.createElement('input');
-          STEng910.id = "910SemTriEng";
-          STEng910.placeholder = "RC 1 English";
-          STEng910.type = 'text';
-      contentArea.appendChild(STEng910)
-
-      const STMath910 = document.createElement('input');
-          STMath910.id = "910SemTriMath";
-          STMath910.placeholder = "RC 1 Math";
-          STMath910.type = 'text';
-      contentArea.appendChild(STMath910)
-
-      const STSci910 = document.createElement('input');
-          STSci910.id = "910SemTriSci";
-          STSci910.placeholder = "RC 1 Sci";
-          STSci910.type = 'text';
-      contentArea.appendChild(STSci910)
-
-      const STSoc910 = document.createElement('input');
-          STSoc910.id = "910SemTriSoc";
-          STSoc910.placeholder = "RC 1 Soc";
-          STSoc910.type = 'text';
-      contentArea.appendChild(STSoc910)
-
-      const STWL910 = document.createElement('input');
-          STWL910.id = "910SemTriWL";
-          STWL910.placeholder = "RC 1 WL";
-          STWL910.type = 'text';
-      contentArea.appendChild(STWL910)
+      engArea.innerHTML = '<input id = "910SemTriEng", placeholder = "RC 1 English", type = text></input>'
+      mathArea.innerHTML = '<input id = "910SemTriMath", placeholder = "RC 1 Math", type = text></input>'
+      sciArea.innerHTML = '<input id = 910SemTriSci", placeholder = "RC 1 Sci", type = text></input>'
+      socArea.innerHTML = '<input id = "910SemTriSoc", placeholder = "RC 1 Soc", type = text></input>'
+      WLArea.innerHTML = '<input id = "910SemTriSoc", placeholder = "RC 1 WL", type = text></input>'
+    
     }
     else if (studentGrade != 9 && selectedValue === 'quarters' ) {
       contentArea.innerHTML = '<h2>Quarters APPLYING FOR 10TH/11TH applicants</h2>';
-      
-      const Q1Eng910 = document.createElement('input');
-          Q1Eng910.id = "910Q1Eng";
-          Q1Eng910.placeholder = "RC Q1 English";
-          Q1Eng910.type = 'text';
-      contentArea.appendChild(Q1Eng910)
 
+      engArea.innerHTML = '<input id = "910Q1Eng", placeholder = "RC Q1 English", type = text></input>'
       const Q2Eng910 = document.createElement('input');
           Q2Eng910.id = "910Q2Eng";
-          Q2Eng910.placeholder = "RC Q2 Eng";
+          Q2Eng910.placeholder = "RC Q2 English";
           Q2Eng910.type = 'text';
-      contentArea.appendChild(Q2Eng910)
+      engArea.appendChild(Q2Eng910)
 
-      const Q1Math910 = document.createElement('input');
-          Q1Math910.id = "910Q1Math";
-          Q1Math910.placeholder = "RC Q1 Math";
-          Q1Math910.type = 'text';
-      contentArea.appendChild(Q1Math910)
-
+      mathArea.innerHTML = '<input id = "910Q1Math", placeholder = "RC Q1 Math", type = text></input>'
       const Q2Math910 = document.createElement('input');
-          Q2Math910.id = "910Q2Math";
-          Q2Math910.placeholder = "RC Q2 Math";
-          Q2Math910.type = 'text';
-      contentArea.appendChild(Q2Math910)
+            Q2Math910.id = "910Q2Math";
+            Q2Math910.placeholder = "RC Q2 Math";
+            Q2Math910.type = 'text';
+      mathArea.appendChild(Q2Math910)
 
-      const Q1Sci910 = document.createElement('input');
-          Q1Sci910.id = "910Q1Sci";
-          Q1Sci910.placeholder = "RC Q1 Sci";
-          Q1Sci910.type = 'text';
-      contentArea.appendChild(Q1Sci910)
-
+      sciArea.innerHTML = '<input id = "910Q1Sci", placeholder = "RC Q1 Sci", type = text></input>'
       const Q2Sci910 = document.createElement('input');
-          Q2Sci910.id = "910Q2Sci";
-          Q2Sci910.placeholder = "RC Q2 Sci";
-          Q2Sci910.type = 'text';
-      contentArea.appendChild(Q2Sci910)
+            Q2Sci910.id = "910Q2Sci";
+            Q2Sci910.placeholder = "RC Q2 Sci";
+            Q2Sci910.type = 'text';
+      sciArea.appendChild(Q2Sci910)
 
-      const Q1Soc910 = document.createElement('input');
-          Q1Soc910.id = "910Q1Soc";
-          Q1Soc910.placeholder = "RC Q1 Soc";
-          Q1Soc910.type = 'text';
-      contentArea.appendChild(Q1Soc910)
-
+      socArea.innerHTML = '<input id = "910Q1Soc", placeholder = "RC Q1 Soc", type = text></input>'
       const Q2Soc910 = document.createElement('input');
-          Q2Soc910.id = "910Q2Soc";
-          Q2Soc910.placeholder = "RC Q2 Soc";
-          Q2Soc910.type = 'text';
-      contentArea.appendChild(Q2Soc910)
+            Q2Soc910.id = "910Q2Soc";
+            Q2Soc910.placeholder = "RC Q2 Soc";
+            Q2Soc910.type = 'text';
+      socArea.appendChild(Q2Soc910)
 
-      const Q1WL910 = document.createElement('input');
-          Q1WL910.id = "910Q1WL";
-          Q1WL910.placeholder = "RC Q1 WL";
-          Q1WL910.type = 'text';
-      contentArea.appendChild(Q1WL910)
-
+      WLArea.innerHTML = '<input id = "910Q1WL", placeholder = "RC Q1 WL", type = text></input>'
       const Q2WL910 = document.createElement('input');
-          Q2WL910.id = "910Q2WL";
-          Q2WL910.placeholder = "RC Q2 WL";
-          Q2WL910.type = 'text';
-      contentArea.appendChild(Q2WL910)
+            Q2WL910.id = "910Q2WL";
+            Q2WL910.placeholder = "RC Q2 WL";
+            Q2WL910.type = 'text';
+      WLArea.appendChild(Q2WL910)
+      
     }
   });
 </script>
