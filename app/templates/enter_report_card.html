@@ -17,14 +17,19 @@
     </select>
 
 <!-- Content will be loaded here -->
-<div id="Report_card_dynamic_content"></div>
-<div id="eng"></div>
-<div id="math"></div>
-<div id="sci"></div>
-<div id="soc"></div>
-<div id="WL"></div>
+<form method="POST" action="/calculate_gpa">
+    <input type="text" name="english" placeholder="English Grade" value="{{ grades.english }}" required><br><br>
+    <input type="text" name="math" placeholder="Math Grade" value="{{ grades.math }}" required><br><br>
+    <input type="text" name="science" placeholder="Science Grade" value="{{ grades.science }}" required><br><br>
+    <input type="text" name="social_studies" placeholder="Social Studies Grade" value="{{ grades.social_studies }}" required><br><br>
+    <input type="text" name="language" placeholder="Language Grade" value="{{ grades.language }}"><br><br>
 
+    <button type="submit">Submit</button>
+</form>
 
+{% if gpa is not none %}
+    <h3>Calculated GPA: {{ gpa }}</h3>
+{% endif %}
 
 <script>
   const dropdown = document.getElementById('myDropdown');
