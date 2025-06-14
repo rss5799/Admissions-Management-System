@@ -40,6 +40,31 @@ bp = Blueprint('main', __name__)
 # cred = credentials.Certificate(key_path)
 # firebase_admin.initialize_app(cred)
 
+@bp.route('/calculate_gpa', methods=['GET', 'POST'])
+def calculate_gpa_route():
+    grades = {
+        "english": "",
+        "math": "",
+        "science": "",
+        "social_studies": "",
+        "language": ""
+    }
+    gpa = None
+
+    if request.method == 'POST':
+        grades['english'] = request.form['english']
+        grades['math'] = request.form['math']
+        grades['science'] = request.form['science']
+        grades['social_studies'] = request.form['social_studies']
+        grades['language'] = request.form['language']
+
+        from app.services.matrix_calculator import calculate_gpa
+        gpa = calculate_gpa(grades)
+
+    return render_template('enter_report_card.html', gpa=gpa, grades=grades)
+
+
+
 @bp.route("/")
 def index():
     return render_template("index.html")
@@ -79,9 +104,20 @@ def student_details():
 def enter_report_card():
     current_student_id = session.get('current_student_id')
     current_student_grade = session.get('current_student_grade')
-    #add logic for drowpdown listener
-    return render_template("/enter_report_card.html", current_student_id = current_student_id, current_student_grade = current_student_grade)
 
+    # Provide default empty grades so template doesn't crash
+    grades = {
+        "english": "",
+        "math": "",
+        "science": "",
+        "social_studies": "",
+        "language": ""
+    }
+
+    return render_template("/enter_report_card.html", 
+                            current_student_id=current_student_id, 
+                            current_student_grade=current_student_grade,
+                            grades=grades)
 
 def perform_student_search(query):
        student_df['id'] = student_df['id'].astype(str)
@@ -124,5 +160,7 @@ def turn_na_to_emptystring(student):
             if isinstance(value, float) and np.isnan(value):
                 setattr(student, attr, "")
         return student
+
+
 
 
