@@ -7,36 +7,59 @@
     <h1>Student Details</h1>
     <h2>Student ID: {{ results.id }}</h2>
     <h2>Applying for Grade: {{ results.grade }}</h2>
-    <table style="width:100%">
+    <h2> Current School: {{ results.current_school }}</h2>
+    
+        <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        justify-items: flex-end;
+        width: fit-content;
+        padding: 100dp;
+        }
+        </style>
+
+        <table>
+
+    <tr>
+        <th></th>
+        <th>Raw Input Value</th>
+        <th>Matrix Score</th>
+    </tr>
    
     <tr>
-    <td>Matrix GPA Points</td>
+    <td>GPA Points</td>
+    <td> TODO</td>
     <td>{{ results.matrix_gpa }}</td>
     <td> <a href="/enter_report_card">Edit</a> </td>
     </tr>
 
-    <tr>
-    <td>Admissions Test Total:</td>
-    <td>{{ results.admission_test_score_total }}</td>
-    <td> Edit </td>
-    </tr>
-
         <tr>
     <td>Admissions Language</td>
+    <td> {{ results.language_test_scores }} </td>
     <td>{{ results.matrix_languauge }}</td>
-    <td> Edit </td>
+    <td>Edit</td>
     </tr>
 
         <tr>
     <td>Admissions Math:</td>
+    <td>{{ results.math_test_scores }}</td>
     <td>{{ results.matrix_math }}</td>
     <td> Edit </td>
     </tr>
 
         <tr>
     <td>Admissions Reading</td>
+    <td> {{ results.reading_test_score }}</td>
     <td>{{ results.matrix_reading }}</td>
     <td> Edit </td>
+    </tr>
+
+    <tr>
+    <td>Total</td>
+    <td></td>
+    <td>{{ results.matrix_points_total }}</td>
+    <td></td>
     </tr>
 </table>
 </body>

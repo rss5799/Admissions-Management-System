@@ -4,12 +4,13 @@ import numpy as np
 import random
 import string
 
-student_df = pd.read_csv('DummyDataComplete.csv')
+schoolMint_df = pd.read_csv('DummyDataComplete.csv')
 
 
 class Student:
-    def __init__(self, id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_points,matrix_languauge,matrix_math,matrix_reading, admission_test_score_total,status,matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest, updated_at,guardian1_email,guardian2_email,grade,deliver_test_accomodation_approved,test_date_sign_up):
+    def __init__(self, id, gpa, matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_points,matrix_languauge,matrix_math,matrix_reading, matrix_points_total,status,matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest, updated_at,guardian1_email,guardian2_email,grade,deliver_test_accomodation_approved,test_date_sign_up, current_school):
         self.id = id
+        self.gpa = gpa
         self.matrix_gpa = matrix_gpa
         self.language_test_scores = language_test_scores
         self.reading_test_score = reading_test_score
@@ -18,7 +19,7 @@ class Student:
         self.matrix_languauge = matrix_languauge
         self.matrix_math = matrix_math
         self.matrix_reading = matrix_reading
-        self.admission_test_score_total = admission_test_score_total
+        self.matrix_points_total = matrix_points_total
         self.status = status
         self.matrix_languauge_retest = matrix_languauge_retest
         self.matrix_math_retest = matrix_math_retest
@@ -30,6 +31,7 @@ class Student:
         self.grade = grade
         self.deliver_test_accomodation_approved = deliver_test_accomodation_approved
         self.test_date_sign_up = test_date_sign_up
+        self.current_school = current_school
 
 
 bp = Blueprint('main', __name__)
@@ -120,32 +122,34 @@ def enter_report_card():
                             grades=grades)
 
 def perform_student_search(query):
-       student_df['id'] = student_df['id'].astype(str)
+       schoolMint_df['id'] = schoolMint_df['id'].astype(str)
        studentId = str(query)
-       index = student_df.index[student_df['id']== studentId].tolist()
+       index = schoolMint_df.index[schoolMint_df['id']== studentId].tolist()
        if index:
             currentStudent = Student(
                 id = query,
-                matrix_gpa = student_df['matrix_gpa'].iloc[index[0]],
-                language_test_scores = student_df['language_test_scores'].iloc[index[0]],
-                reading_test_score = student_df['reading_test_score'].iloc[index[0]], 
-                math_test_scores =  student_df['math_test_scores'].iloc[index[0]],
-                total_points = student_df['total_points'].iloc[index[0]],
-                matrix_languauge = student_df['matrix_languauge'].iloc[index[0]], 
-                matrix_math = student_df['matrix_math'].iloc[index[0]],
-                matrix_reading = student_df['matrix_reading'].iloc[index[0]],
-                admission_test_score_total = student_df['matrix_languauge'].iloc[index[0]] + student_df['matrix_math'].iloc[index[0]]+ student_df['matrix_reading'].iloc[index[0]],
-                status = student_df['status'].iloc[index[0]],
-                matrix_languauge_retest = student_df['matrix_languauge_retest'].iloc[index[0]],
-                matrix_math_retest = student_df['matrix_math_retest'].iloc[index[0]],
-                matrix_reading_restest = student_df['matrix_reading_restest'].iloc[index[0]],
-                total_points_retest = student_df['total_points_retest'].iloc[index[0]],
-                updated_at = student_df['updated_at'].iloc[index[0]],
-                guardian1_email = student_df['guardian1_email'].iloc[index[0]],
-                guardian2_email = student_df['guardian2_email'].iloc[index[0]],
-                grade = student_df['grade'].iloc[index[0]],
-                deliver_test_accomodation_approved = student_df['deliver_test_accomodation_approved'].iloc[index[0]],
-                test_date_sign_up = student_df['test_date_sign_up'].iloc[index[0]]
+                gpa = "", #pull from student class after calculated
+                matrix_gpa = schoolMint_df['matrix_gpa'].iloc[index[0]],
+                language_test_scores = schoolMint_df['language_test_scores'].iloc[index[0]],
+                reading_test_score = schoolMint_df['reading_test_score'].iloc[index[0]], 
+                math_test_scores =  schoolMint_df['math_test_scores'].iloc[index[0]],
+                total_points = schoolMint_df['total_points'].iloc[index[0]],
+                matrix_languauge = schoolMint_df['matrix_languauge'].iloc[index[0]], 
+                matrix_math = schoolMint_df['matrix_math'].iloc[index[0]],
+                matrix_reading = schoolMint_df['matrix_reading'].iloc[index[0]],
+                matrix_points_total= schoolMint_df['matrix_languauge'].iloc[index[0]] + schoolMint_df['matrix_math'].iloc[index[0]]+ schoolMint_df['matrix_reading'].iloc[index[0]] + schoolMint_df['matrix_gpa'].iloc[index[0]] ,
+                status = schoolMint_df['status'].iloc[index[0]],
+                matrix_languauge_retest = schoolMint_df['matrix_languauge_retest'].iloc[index[0]],
+                matrix_math_retest = schoolMint_df['matrix_math_retest'].iloc[index[0]],
+                matrix_reading_restest = schoolMint_df['matrix_reading_restest'].iloc[index[0]],
+                total_points_retest = schoolMint_df['total_points_retest'].iloc[index[0]],
+                updated_at = schoolMint_df['updated_at'].iloc[index[0]],
+                guardian1_email = schoolMint_df['guardian1_email'].iloc[index[0]],
+                guardian2_email = schoolMint_df['guardian2_email'].iloc[index[0]],
+                grade = schoolMint_df['grade'].iloc[index[0]],
+                deliver_test_accomodation_approved = schoolMint_df['deliver_test_accomodation_approved'].iloc[index[0]],
+                test_date_sign_up = schoolMint_df['test_date_sign_up'].iloc[index[0]],
+                current_school = schoolMint_df['current_school'].iloc[index[0]]
 
             )
             print(currentStudent.matrix_gpa)
