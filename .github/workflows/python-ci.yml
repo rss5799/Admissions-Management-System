@@ -29,13 +29,14 @@ jobs:
         source venv/bin/activate
         pip install --upgrade pip
         pip install -r requirements.txt
+        pip install pytest pytest-cov
 
     - name: Decode and save Firebase credentials
       run: |
         mkdir -p credentials
         echo "${{ secrets.FIREBASE_CREDENTIALS_B64 }}" | base64 -d > credentials/firebase_key.json
 
-    - name: Run tests with pytest
+    - name: Run tests with pytest and coverage
       run: |
         source venv/bin/activate
-        pytest -v --durations=10
+        pytest --cov=app -v --durations=10
