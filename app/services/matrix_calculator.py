@@ -57,7 +57,6 @@ def calculate_total_matrix(grades, reading, language, math):
 #####################################################################################
 # This is an example case. Uncomment it, update values, and run directly to test.   #
 #####################################################################################
-"""
 if __name__ == "__main__":
     sample_grades = {
         "english": "A",
@@ -67,7 +66,7 @@ if __name__ == "__main__":
         "language": "C"
     }
 
-    result = calculate_total_matrix(sample_grades, reading=98, language=98, math=98)
+    result = calculate_total_matrix(sample_grades, reading=88, language=98, math=98)
 
     print(json.dumps(result, indent=4))
-"""
+
