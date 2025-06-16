@@ -64,7 +64,8 @@ def student_details():
     current_student = perform_student_search(current_id_query_result)
     if current_student:
         current_student = turn_na_to_emptystring(current_student)
-        studentJSONdata = json.dumps(current_student.toJson())
+        current_student = prepare_for_json(current_student)
+        studentJSONdata = json.dumps(current_student)
         #pass JSON data to the other pages
         session['current_student'] = studentJSONdata
         # grade = str(current_student.grade)
@@ -76,11 +77,9 @@ def student_details():
 @bp.route("/enter_report_card/")
 def enter_report_card():
     JSON_current_student= session.get('current_student')
-    current_student = json.loads(JSON_current_student, object_hook=customStudentDecoder)
-    # print("LINE 80 ................................", current_student.id)
-    # print("LINE 81 ................................", current_student.grade)
-    # print("LINE 82 ................................", current_student.current_school)
-    # print("LINE 83 ................................", current_student.matrix_gpa)
+    student_dict = json.loads(JSON_current_student)
+    current_student = student.Student(**student_dict)
+    print("LINE 82..........................", vars(current_student))
 
     # Provide default empty grades so template doesn't crash
     grades = {
@@ -137,10 +136,19 @@ def turn_na_to_emptystring(student):
                 setattr(student, attr, "")
         return student
 
-
-
-def customStudentDecoder(studentDict):
-    return namedtuple('X', studentDict.keys())(*studentDict.values())
+def prepare_for_json(obj):
+    """Prepares a custom object for JSON serialization."""
+    new_dict = {}
+    for key, value in obj.__dict__.items():
+        if isinstance(value, np.ndarray):
+            new_dict[key] = value.tolist()
+        elif isinstance(value, np.integer):
+          new_dict[key] = int(value)
+        elif isinstance(value, np.floating):
+          new_dict[key] = float(value)
+        else:
+            new_dict[key] = value
+    return new_dict
 
 
 
