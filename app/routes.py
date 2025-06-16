@@ -3,44 +3,14 @@ import pandas as pd
 import numpy as np
 from app.models import student
 import json
+from collections import namedtuple
+from json import JSONEncoder
 
 schoolMint_df = pd.read_csv('DummyDataComplete.csv')
 
 
-# class Student:
-#     def __init__(self, id, gpa, matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_points,matrix_languauge,matrix_math,matrix_reading, matrix_points_total,status,matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest, updated_at,guardian1_email,guardian2_email,grade,deliver_test_accomodation_approved,test_date_sign_up, current_school):
-#         self.id = id
-#         self.gpa = gpa
-#         self.matrix_gpa = matrix_gpa
-#         self.language_test_scores = language_test_scores
-#         self.reading_test_score = reading_test_score
-#         self.math_test_scores = math_test_scores
-#         self.total_points=total_points
-#         self.matrix_languauge = matrix_languauge
-#         self.matrix_math = matrix_math
-#         self.matrix_reading = matrix_reading
-#         self.matrix_points_total = matrix_points_total
-#         self.status = status
-#         self.matrix_languauge_retest = matrix_languauge_retest
-#         self.matrix_math_retest = matrix_math_retest
-#         self.matrix_reading_restest = matrix_reading_restest
-#         self.total_points_retest = total_points_retest
-#         self.updated_at = updated_at
-#         self.guardian1_email = guardian1_email
-#         self.guardian2_email = guardian2_email
-#         self.grade = grade
-#         self.deliver_test_accomodation_approved = deliver_test_accomodation_approved
-#         self.test_date_sign_up = test_date_sign_up
-#         self.current_school = current_school
-
 
 bp = Blueprint('main', __name__)
-
-
-# Use the relative path to the credentials file won't need this for new csv import method
-# key_path = os.path.join(os.path.dirname(__file__), "/Users/taracan/Documents/SWENG894/Admissions-Management-System/credentials/firebase_key.json")
-# cred = credentials.Certificate(key_path)
-# firebase_admin.initialize_app(cred)
 
 @bp.route('/calculate_gpa', methods=['GET', 'POST'])
 def calculate_gpa_route():
@@ -95,8 +65,8 @@ def student_details():
     if current_student:
         current_student = turn_na_to_emptystring(current_student)
         studentJSONdata = json.dumps(current_student.toJson())
-        #prepare id and grade to be passed to other pages   
-        # session['current_student'] = studentJSONdata
+        #pass JSON data to the other pages
+        session['current_student'] = studentJSONdata
         # grade = str(current_student.grade)
         # session['current_student_grade'] = grade
         return render_template("student_details.html", results = current_student, query = current_id_query_result)
@@ -105,8 +75,12 @@ def student_details():
     
 @bp.route("/enter_report_card/")
 def enter_report_card():
-    current_student_id = session.get('current_student_id')
-    current_student_grade = session.get('current_student_grade')
+    JSON_current_student= session.get('current_student')
+    current_student = json.loads(JSON_current_student, object_hook=customStudentDecoder)
+    # print("LINE 80 ................................", current_student.id)
+    # print("LINE 81 ................................", current_student.grade)
+    # print("LINE 82 ................................", current_student.current_school)
+    # print("LINE 83 ................................", current_student.matrix_gpa)
 
     # Provide default empty grades so template doesn't crash
     grades = {
@@ -117,10 +91,7 @@ def enter_report_card():
         "language": ""
     }
 
-    return render_template("/enter_report_card.html", 
-                            current_student_id=current_student_id, 
-                            current_student_grade=current_student_grade,
-                            grades=grades)
+    return render_template("enter_report_card.html", results = current_student, grades=grades)
 
 def perform_student_search(query):
        schoolMint_df['id'] = schoolMint_df['id'].astype(str)
@@ -165,6 +136,11 @@ def turn_na_to_emptystring(student):
             if isinstance(value, float) and np.isnan(value):
                 setattr(student, attr, "")
         return student
+
+
+
+def customStudentDecoder(studentDict):
+    return namedtuple('X', studentDict.keys())(*studentDict.values())
 
 
 
