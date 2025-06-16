@@ -3,8 +3,6 @@ import pandas as pd
 import numpy as np
 from app.models import student
 import json
-from collections import namedtuple
-from json import JSONEncoder
 
 schoolMint_df = pd.read_csv('DummyDataComplete.csv')
 
@@ -63,23 +61,25 @@ def student_details():
     current_id_query_result = request.args.get('id_query')
     current_student = perform_student_search(current_id_query_result)
     if current_student:
+        #turn numpy nan to empty string
         current_student = turn_na_to_emptystring(current_student)
+        #turn all attribute values to json serializable values
         current_student = prepare_for_json(current_student)
+        #convert dictuarion to JSON data
         studentJSONdata = json.dumps(current_student)
-        #pass JSON data to the other pages
+        #pass JSON data to the other pages with a unique identifier
         session['current_student'] = studentJSONdata
-        # grade = str(current_student.grade)
-        # session['current_student_grade'] = grade
         return render_template("student_details.html", results = current_student, query = current_id_query_result)
     else:
         return render_template("point_inputs.html", results = "Student Not Found", query = current_id_query_result)
     
 @bp.route("/enter_report_card/")
 def enter_report_card():
+    #get the JSON data for the student you're modifying
     JSON_current_student= session.get('current_student')
     student_dict = json.loads(JSON_current_student)
     current_student = student.Student(**student_dict)
-    print("LINE 82..........................", vars(current_student))
+
 
     # Provide default empty grades so template doesn't crash
     grades = {
@@ -137,7 +137,6 @@ def turn_na_to_emptystring(student):
         return student
 
 def prepare_for_json(obj):
-    """Prepares a custom object for JSON serialization."""
     new_dict = {}
     for key, value in obj.__dict__.items():
         if isinstance(value, np.ndarray):
