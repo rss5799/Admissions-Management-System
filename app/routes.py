@@ -1,37 +1,37 @@
 from flask import Blueprint, render_template, request, session
 import pandas as pd
 import numpy as np
-import random
-import string
+from app.models import student
+import json
 
 schoolMint_df = pd.read_csv('DummyDataComplete.csv')
 
 
-class Student:
-    def __init__(self, id, gpa, matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_points,matrix_languauge,matrix_math,matrix_reading, matrix_points_total,status,matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest, updated_at,guardian1_email,guardian2_email,grade,deliver_test_accomodation_approved,test_date_sign_up, current_school):
-        self.id = id
-        self.gpa = gpa
-        self.matrix_gpa = matrix_gpa
-        self.language_test_scores = language_test_scores
-        self.reading_test_score = reading_test_score
-        self.math_test_scores = math_test_scores
-        self.total_points=total_points
-        self.matrix_languauge = matrix_languauge
-        self.matrix_math = matrix_math
-        self.matrix_reading = matrix_reading
-        self.matrix_points_total = matrix_points_total
-        self.status = status
-        self.matrix_languauge_retest = matrix_languauge_retest
-        self.matrix_math_retest = matrix_math_retest
-        self.matrix_reading_restest = matrix_reading_restest
-        self.total_points_retest = total_points_retest
-        self.updated_at = updated_at
-        self.guardian1_email = guardian1_email
-        self.guardian2_email = guardian2_email
-        self.grade = grade
-        self.deliver_test_accomodation_approved = deliver_test_accomodation_approved
-        self.test_date_sign_up = test_date_sign_up
-        self.current_school = current_school
+# class Student:
+#     def __init__(self, id, gpa, matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_points,matrix_languauge,matrix_math,matrix_reading, matrix_points_total,status,matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest, updated_at,guardian1_email,guardian2_email,grade,deliver_test_accomodation_approved,test_date_sign_up, current_school):
+#         self.id = id
+#         self.gpa = gpa
+#         self.matrix_gpa = matrix_gpa
+#         self.language_test_scores = language_test_scores
+#         self.reading_test_score = reading_test_score
+#         self.math_test_scores = math_test_scores
+#         self.total_points=total_points
+#         self.matrix_languauge = matrix_languauge
+#         self.matrix_math = matrix_math
+#         self.matrix_reading = matrix_reading
+#         self.matrix_points_total = matrix_points_total
+#         self.status = status
+#         self.matrix_languauge_retest = matrix_languauge_retest
+#         self.matrix_math_retest = matrix_math_retest
+#         self.matrix_reading_restest = matrix_reading_restest
+#         self.total_points_retest = total_points_retest
+#         self.updated_at = updated_at
+#         self.guardian1_email = guardian1_email
+#         self.guardian2_email = guardian2_email
+#         self.grade = grade
+#         self.deliver_test_accomodation_approved = deliver_test_accomodation_approved
+#         self.test_date_sign_up = test_date_sign_up
+#         self.current_school = current_school
 
 
 bp = Blueprint('main', __name__)
@@ -94,10 +94,11 @@ def student_details():
     current_student = perform_student_search(current_id_query_result)
     if current_student:
         current_student = turn_na_to_emptystring(current_student)
+        studentJSONdata = json.dumps(current_student.toJson())
         #prepare id and grade to be passed to other pages   
-        session['current_student_id'] = current_id_query_result
-        grade = str(current_student.grade)
-        session['current_student_grade'] = grade
+        # session['current_student'] = studentJSONdata
+        # grade = str(current_student.grade)
+        # session['current_student_grade'] = grade
         return render_template("student_details.html", results = current_student, query = current_id_query_result)
     else:
         return render_template("point_inputs.html", results = "Student Not Found", query = current_id_query_result)
@@ -126,7 +127,7 @@ def perform_student_search(query):
        studentId = str(query)
        index = schoolMint_df.index[schoolMint_df['id']== studentId].tolist()
        if index:
-            currentStudent = Student(
+            currentStudent = student.Student(
                 id = query,
                 gpa = "", #pull from student class after calculated
                 matrix_gpa = schoolMint_df['matrix_gpa'].iloc[index[0]],
