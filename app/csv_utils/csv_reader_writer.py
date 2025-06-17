@@ -39,19 +39,14 @@ def fetch_updated_student_instance(student_id):
 
 def write_gpa_to_csv(student_id, gpa):
     rows = []
-    csv_file = file_path
-    search_column = "id"
-    search_value = student_id
-    update_column = 'gpa'
-    new_value = gpa
-    with open(csv_file, 'r') as file:
+    with open(file_path, 'r') as file:
         reader = csv.DictReader(file)
         for row in reader:
-            if row[search_column] == search_value:
-                row[update_column] = new_value
-                rows.append(row)
+            rows.append(row)
+            if row['id'] == student_id:
+                row['gpa'] = gpa
 
-    with open(csv_file, 'w', newline = '') as file:
+    with open(file_path, 'w', newline = '') as file:
         writer = csv.DictWriter(file, fieldnames = reader.fieldnames)    
         writer.writeheader()
         writer.writerows(rows)    
