@@ -60,11 +60,12 @@ def calculate_gpa_route():
         grades['social_studies'] = request.form['social_studies']
         grades['language'] = request.form['language']
 
-        from app.services.matrix_calculator import calculate_gpa
+        # added extra imports for matrix_gpa
+        from app.services.matrix_calculator import calculate_gpa, lookup_matrix_points, matrix
         gpa = calculate_gpa(grades)
+        matrix_gpa = lookup_matrix_points(gpa, matrix["gpa"]) # gpa->matrix_gpa value in DummyDataComplete.csv
 
-    return render_template('enter_report_card.html', gpa=gpa, grades=grades)
-
+    return render_template('enter_report_card.html', gpa=gpa, grades=grades, matrix_gpa=matrix_gpa)
 
 
 @bp.route("/")
@@ -120,6 +121,7 @@ def enter_report_card():
                             current_student_id=current_student_id, 
                             current_student_grade=current_student_grade,
                             grades=grades)
+
 
 def perform_student_search(query):
        schoolMint_df['id'] = schoolMint_df['id'].astype(str)
