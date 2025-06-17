@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from app.models import student
 import json
+from app.csv_utils.csv_reader import fetch_updated_student_instance
 
 bp = Blueprint('main', __name__)
 
@@ -22,7 +23,7 @@ def student_details():
     current_student = retrieve_current_student()
     if current_student:
         #assign session['current_student'] to current_student
-        assign_student_to_current_student_session(current_student)
+        session['current_id'] = current_student.id
         return render_template("student_details.html", results = current_student)
 
 @bp.route("/enter_report_card/")
@@ -59,18 +60,8 @@ def calculate_gpa_route():
         grades['language'] = request.form['language']
 
         from app.services.matrix_calculator import calculate_gpa
+        gpa = calculate_gpa(grades)
         #update dataframe
-
-        schoolMint_df= pd.read_csv('DummyDataComplete.csv')
-        for index, row in schoolMint_df.iterrows():
-            if str(row['id']) == str(current_student.id):
-                gpa = calculate_gpa(grades)
-                print(gpa)
-                row['gpa'] = calculate_gpa(grades)
-                print(row['id'], row['gpa'])
-        
-        current_student.gpa = gpa
-        assign_student_to_current_student_session(current_student)
     return render_template('student_details.html', results = current_student)
 
 
@@ -78,83 +69,19 @@ def retrieve_current_student():
     #if youre coming from points inputs (student search page)
     if request.args.get('id_query'):
         current_id = request.args.get('id_query')
+        if fetch_updated_student_instance(current_id):
+            current_student = fetch_updated_student_instance(current_id)
+            return(current_student)
+        else:
+            print("ID not found")
+            return(0)
     #if you're coming from report card input page
     else:
-        JSON_current_student= session.get('current_student')
-        student_dict = json.loads(JSON_current_student)
-        temp_current_student = student.Student(**student_dict)
-        current_id = temp_current_student.id
-
-    schoolMint_df = pd.read_csv('DummyDataComplete.csv')
-    schoolMint_df['gpa'] = None
-    schoolMint_df.to_csv('DummyDataComplete.csv', index=False)
-    schoolMint_df['id'] = schoolMint_df['id'].astype(str)
-    studentId = str(current_id)
-    index = schoolMint_df.index[schoolMint_df['id']== studentId].tolist()
-    if index:
-        currentStudent = student.Student(
-            id = current_id,
-            gpa = schoolMint_df['gpa'].iloc[index[0]],
-            matrix_gpa = schoolMint_df['matrix_gpa'].iloc[index[0]],
-            language_test_scores = schoolMint_df['language_test_scores'].iloc[index[0]],
-            reading_test_score = schoolMint_df['reading_test_score'].iloc[index[0]], 
-            math_test_scores =  schoolMint_df['math_test_scores'].iloc[index[0]],
-            total_points = schoolMint_df['total_points'].iloc[index[0]],
-            matrix_languauge = schoolMint_df['matrix_languauge'].iloc[index[0]], 
-            matrix_math = schoolMint_df['matrix_math'].iloc[index[0]],
-            matrix_reading = schoolMint_df['matrix_reading'].iloc[index[0]],
-            matrix_points_total= schoolMint_df['matrix_languauge'].iloc[index[0]] + schoolMint_df['matrix_math'].iloc[index[0]]+ schoolMint_df['matrix_reading'].iloc[index[0]] + schoolMint_df['matrix_gpa'].iloc[index[0]] ,
-            status = schoolMint_df['status'].iloc[index[0]],
-            matrix_languauge_retest = schoolMint_df['matrix_languauge_retest'].iloc[index[0]],
-            matrix_math_retest = schoolMint_df['matrix_math_retest'].iloc[index[0]],
-            matrix_reading_restest = schoolMint_df['matrix_reading_restest'].iloc[index[0]],
-            total_points_retest = schoolMint_df['total_points_retest'].iloc[index[0]],
-            updated_at = schoolMint_df['updated_at'].iloc[index[0]],
-            guardian1_email = schoolMint_df['guardian1_email'].iloc[index[0]],
-            guardian2_email = schoolMint_df['guardian2_email'].iloc[index[0]],
-            grade = schoolMint_df['grade'].iloc[index[0]],
-            deliver_test_accomodation_approved = schoolMint_df['deliver_test_accomodation_approved'].iloc[index[0]],
-            test_date_sign_up = schoolMint_df['test_date_sign_up'].iloc[index[0]],
-            current_school = schoolMint_df['current_school'].iloc[index[0]]
-
-        )
-        return(currentStudent)
-    else:
-        print("ID not found")
-        return(0)
+        current_id= session.get('current_id')
+        current_student = fetch_updated_student_instance(current_id)
+        return(current_student)
     
-
-    
-def assign_student_to_current_student_session(current_student):
-    #prepare dictionary for json
-    #turn numpy nan to empty string
-    current_student = turn_na_to_emptystring(current_student)
-    #turn all attribute values to json serializable values
-    current_student = prepare_for_json(current_student)
-    #convert dictuarion to JSON data
-    studentJSONdata = json.dumps(current_student)
-    #pass JSON data to the other pages with a unique identifier
-    session['current_student'] = studentJSONdata
-    
-def turn_na_to_emptystring(student):
-        #replace all empty values with blank string
-        for attr, value in vars(student).items():
-            if isinstance(value, float) and np.isnan(value):
-                setattr(student, attr, "")
-        return student
-
-def prepare_for_json(obj):
-    new_dict = {}
-    for key, value in obj.__dict__.items():
-        if isinstance(value, np.ndarray):
-            new_dict[key] = value.tolist()
-        elif isinstance(value, np.integer):
-          new_dict[key] = int(value)
-        elif isinstance(value, np.floating):
-          new_dict[key] = float(value)
-        else:
-            new_dict[key] = value
-    return new_dict
+ 
 
 
 
