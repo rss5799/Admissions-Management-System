@@ -1,5 +1,5 @@
 import pytest
-from app.routes import perform_student_search, turn_na_to_emptystring
+from app.routes import retrieve_current_student, turn_na_to_emptystring
 import pandas as pd
 import numpy as np
 import random
@@ -8,14 +8,14 @@ import string
 
 #System Test 1: Search results are returned when valid student ID is entered
 def test_search_for_student():
-    assert perform_student_search(1) != 0
-    assert perform_student_search(1077) != 0
-    assert perform_student_search(1078) == 0
-    assert perform_student_search('$') == 0
-    assert perform_student_search(' 87') == 0
-    assert perform_student_search('99 ') == 0
-    assert perform_student_search(2/2) == 0
-    assert perform_student_search('a') == 0
+    assert retrieve_current_student(1) != 0
+    assert retrieve_current_student(1077) != 0
+    assert retrieve_current_student(1078) == 0
+    assert retrieve_current_student('$') == 0
+    assert retrieve_current_student(' 87') == 0
+    assert retrieve_current_student('99 ') == 0
+    assert retrieve_current_student(2/2) == 0
+    assert retrieve_current_student('a') == 0
 
 test_search_for_student()
 
@@ -36,7 +36,7 @@ def display_empty_values():
         id = student_df.iloc[testing_cells[i][0], 0]
         #this statement is kind of just affirming what i asked it to do when i created the testing_cells
         assert np.isnan(student_df.iloc[testing_cells[i]])
-        testing_student = perform_student_search(id)
+        testing_student = retrieve_current_student(id)
         turn_na_to_emptystring(testing_student)
         attribute_to_test  = str(student_df.columns[testing_cells[i][1]])
         value = str(getattr(testing_student, attribute_to_test))
