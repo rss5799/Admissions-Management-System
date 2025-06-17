@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from app.models import student
 import json
-from app.csv_utils.csv_reader import fetch_updated_student_instance
+from app.csv_utils.csv_reader_writer import fetch_updated_student_instance, write_gpa_to_csv
 
 bp = Blueprint('main', __name__)
 
@@ -62,6 +62,11 @@ def calculate_gpa_route():
         from app.services.matrix_calculator import calculate_gpa
         gpa = calculate_gpa(grades)
         #update dataframe
+        write_gpa_to_csv(current_student.id, gpa)
+        #return updated student
+        current_student = retrieve_current_student()
+        #set session
+        session['current_id'] = current_student.id
     return render_template('student_details.html', results = current_student)
 
 

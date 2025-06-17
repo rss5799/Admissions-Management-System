@@ -1,9 +1,9 @@
 import csv
 from app.models import student
 
+file_path = ('DummyDataComplete.csv')
 
 def fetch_updated_student_instance(student_id):
-    file_path = ('DummyDataComplete.csv')
     with open(file_path, 'r') as file:
         reader = csv.reader(file)
         header = next(reader)
@@ -35,3 +35,25 @@ def fetch_updated_student_instance(student_id):
                     current_school = row[20]
                 )
                 return(current_student)
+            
+
+def write_gpa_to_csv(student_id, gpa):
+    rows = []
+    csv_file = file_path
+    search_column = "id"
+    search_value = student_id
+    update_column = 'gpa'
+    new_value = gpa
+    with open(csv_file, 'r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            if row[search_column] == search_value:
+                row[update_column] = new_value
+                rows.append(row)
+
+    with open(csv_file, 'w', newline = '') as file:
+        writer = csv.DictWriter(file, fieldnames = reader.fieldnames)    
+        writer.writeheader()
+        writer.writerows(rows)    
+
+
