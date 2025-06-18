@@ -29,14 +29,14 @@
    
     <tr>
     <td>GPA Points</td>
-    <td> TODO</td>
-    <td>{{ results.matrix_gpa }}</td>
+    <td>{{ session.get('gpa', results.gpa) }}</td>
+    <td>{{ session.get('matrix_gpa', results.matrix_gpa) }}</td>
     <td> <a href="/enter_report_card">Edit</a> </td>
     </tr>
 
         <tr>
     <td>Admissions Language</td>
-    <td> {{ results.language_test_scores }} </td>
+    <td>{{ results.language_test_scores }} </td>
     <td>{{ results.matrix_languauge }}</td>
     <td>Edit</td>
     </tr>
@@ -62,6 +62,10 @@
     <td></td>
     </tr>
 </table>
+
+<form method="POST" action="{{ url_for('main.save_report_card') }}">
+    <button type="submit">Export to File</button>
+</form>
 
 {% with messages = get_flashed_messages() %}
   {% if messages %}

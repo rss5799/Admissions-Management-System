@@ -100,6 +100,41 @@ def unresponsive_students():
 def student_details():
     current_id_query_result = request.args.get('id_query')
     current_student = perform_student_search(current_id_query_result)
+
+    if current_student:
+        current_student = turn_na_to_emptystring(current_student)
+        session['current_student_id'] = current_id_query_result
+        session['current_student_grade'] = str(current_student.grade)
+
+        # Override GPA and matrix GPA with session values if present
+        gpa = session.get('gpa')
+        matrix_gpa = session.get('matrix_gpa')
+
+        if gpa:
+            current_student.gpa = gpa
+        if matrix_gpa:
+            current_student.matrix_gpa = matrix_gpa
+            # Recalculate total matrix points
+            try:
+                current_student.matrix_points_total = (
+                    float(current_student.matrix_languauge or 0) +
+                    float(current_student.matrix_math or 0) +
+                    float(current_student.matrix_reading or 0) +
+                    float(matrix_gpa)
+                )
+            except:
+                current_student.matrix_points_total = ""
+
+        return render_template("student_details.html", results=current_student, query=current_id_query_result)
+
+    else:
+        return render_template("point_inputs.html", results="Student Not Found", query=current_id_query_result)
+
+'''
+@bp.route("/student_details/", methods=['GET'])
+def student_details():
+    current_id_query_result = request.args.get('id_query')
+    current_student = perform_student_search(current_id_query_result)
     if current_student:
         current_student = turn_na_to_emptystring(current_student)
         #prepare id and grade to be passed to other pages   
@@ -109,7 +144,7 @@ def student_details():
         return render_template("student_details.html", results = current_student, query = current_id_query_result)
     else:
         return render_template("point_inputs.html", results = "Student Not Found", query = current_id_query_result)
-    
+'''    
 @bp.route("/enter_report_card/")
 def enter_report_card():
     current_student_id = session.get('current_student_id')
@@ -129,11 +164,19 @@ def enter_report_card():
                             current_student_grade=current_student_grade,
                             grades=grades)
 
+@bp.route('/save_matrix_gpa_to_profile', methods=['POST'])
+def save_matrix_gpa_to_profile():
+    # update session
+    #session['gpa'] = gpa
+    #session['matrix_gpa'] = matrix_gpa
+
+    flash("Matrix GPA saved to session. Read to export new CSV.")
+    return redirect(url_for('main.student_details') + f"?id_query={session.get('current_student_id')}")
 
 @bp.route("/save_report_card", methods=["POST"])
 def save_report_card():
     current_student_id = str(session.get('current_student_id'))
-    matrix_gpa = session.get('matrix_gpa')
+    matrix_gpa = str(session.get('matrix_gpa'))
 
     # copy df
     schoolMint_df_new = schoolMint_df.copy()
@@ -143,10 +186,12 @@ def save_report_card():
     schoolMint_df_new.loc[schoolMint_df_new["id"] == current_student_id, "matrix_gpa"] = matrix_gpa
     
     # Export df to CSV
-    schoolMint_df_new.to_csv('NewDummyDataComplete.csv', index=False)
+    schoolMint_df_new.to_csv('DummyDataComplete.csv', index=False)
 
     # saved message
-    flash("Report card saved successfully!")
+    #flash("Report card saved to student profile!")
+    flash(f"Matrix GPA ({matrix_gpa}) successfully exported for Student ID {current_student_id}.")
+
 
     return redirect(url_for('main.student_details') + f"?id_query={current_student_id}")
 
