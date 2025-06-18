@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, session
+from flask import Blueprint, render_template, request, session, redirect, url_for, flash, get_flashed_messages
 import pandas as pd
 import numpy as np
 import random
@@ -52,6 +52,7 @@ def calculate_gpa_route():
         "language": ""
     }
     gpa = None
+    matrix_gpa = None
 
     if request.method == 'POST':
         grades['english'] = request.form['english']
@@ -64,6 +65,11 @@ def calculate_gpa_route():
         from app.services.matrix_calculator import calculate_gpa, lookup_matrix_points, matrix
         gpa = calculate_gpa(grades)
         matrix_gpa = lookup_matrix_points(gpa, matrix["gpa"]) # gpa->matrix_gpa value in DummyDataComplete.csv
+
+        session['gpa'] = gpa
+        session['matrix_gpa'] = matrix_gpa
+
+        flash("GPA and Matrix GPA Score successfully calculated.")
 
     return render_template('enter_report_card.html', gpa=gpa, grades=grades, matrix_gpa=matrix_gpa)
 
@@ -121,6 +127,27 @@ def enter_report_card():
                             current_student_id=current_student_id, 
                             current_student_grade=current_student_grade,
                             grades=grades)
+
+
+@bp.route("/save_report_card", methods=["POST"])
+def save_report_card():
+    current_student_id = str(session.get('current_student_id'))
+    matrix_gpa = session.get('matrix_gpa')
+
+    # copy df
+    schoolMint_df_new = schoolMint_df.copy()
+    schoolMint_df_new["id"] = schoolMint_df_new["id"].astype(str)
+
+    # update matrix gpa
+    schoolMint_df_new.loc[schoolMint_df_new["id"] == current_student_id, "matrix_gpa"] = matrix_gpa
+    
+    # Export df to CSV
+    schoolMint_df_new.to_csv('NewDummyDataComplete.csv', index=False)
+
+    # saved message
+    flash("Report card saved successfully!")
+
+    return redirect(url_for('main.student_details') + f"?id_query={current_student_id}")
 
 
 def perform_student_search(query):

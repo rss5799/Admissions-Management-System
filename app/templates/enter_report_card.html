@@ -32,6 +32,11 @@
     <h3>Calculated Matrix GPA: {{ matrix_gpa }}</h3>
 {% endif %}
 
+{% if gpa is not none %}
+<form method="POST" action="{{ url_for('main.save_report_card') }}">
+    <button type="submit">Save to File</button>
+</form>
+{% endif %}
 <script>
   const dropdown = document.getElementById('myDropdown');
   const contentArea = document.getElementById('Report_card_dynamic_content');
