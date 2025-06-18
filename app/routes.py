@@ -66,6 +66,7 @@ def calculate_gpa_route():
         gpa = calculate_gpa(grades)
         matrix_gpa = lookup_matrix_points(gpa, matrix["gpa"]) # gpa->matrix_gpa value in DummyDataComplete.csv
 
+        # update session
         session['gpa'] = gpa
         session['matrix_gpa'] = matrix_gpa
 

@@ -62,5 +62,18 @@
     <td></td>
     </tr>
 </table>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="flash-messages">
+      {% for message in messages %}
+        <div style="background-color: #d1e7dd; color: #0f5132; padding: 10px; border-radius: 4px; margin-bottom: 10px;">
+          {{ message }}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+
 </body>
 </html>

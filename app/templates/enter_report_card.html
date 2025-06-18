@@ -4,6 +4,9 @@
     <title>Flask App</title>
 </head>
 <body>
+      <body>
+<h2>Enter Report Card Info</h2>
+
     <h2>Enter Report Card Info</h2>
     <h3>Student ID: {{ current_student_id }}</h3>
     <h3>Applying for Grade: {{ current_student_grade }}</h3>
@@ -37,6 +40,19 @@
     <button type="submit">Save to File</button>
 </form>
 {% endif %}
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="flash-messages">
+      {% for message in messages %}
+        <div style="background-color: #d1e7dd; color: #0f5132; padding: 10px; border-radius: 4px; margin-bottom: 10px;">
+          {{ message }}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+
 <script>
   const dropdown = document.getElementById('myDropdown');
   const contentArea = document.getElementById('Report_card_dynamic_content');
