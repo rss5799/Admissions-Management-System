@@ -1,10 +1,11 @@
 import csv
 from app.models import student
 
-file_path = ('DummyDataComplete.csv')
+original_schoolmint_data = ('DummyDataComplete.csv')
+updated_schoolmint_data = ('updated_student_data.csv')
 
 def fetch_updated_student_instance(student_id):
-    with open(file_path, 'r') as file:
+    with open(original_schoolmint_data, 'r') as file:
         reader = csv.reader(file)
         header = next(reader)
         for row in reader:
@@ -34,21 +35,21 @@ def fetch_updated_student_instance(student_id):
                     test_date_sign_up = row[19],
                     current_school = row[20]
                 )
-                return(current_student)
+                return current_student
             
 
-def write_gpa_to_csv(student_id, gpa):
+def write_gpa_to_csv(student_id, gpa, matrix_gpa):
     rows = []
-    with open(file_path, 'r') as file:
+    with open(original_schoolmint_data, 'r') as file:
         reader = csv.DictReader(file)
         for row in reader:
             rows.append(row)
             if row['id'] == student_id:
                 row['gpa'] = gpa
+                row['matrix_gpa'] = matrix_gpa
+ 
 
-    with open(file_path, 'w', newline = '') as file:
+    with open(original_schoolmint_data, 'w', newline = '') as file:
         writer = csv.DictWriter(file, fieldnames = reader.fieldnames)    
         writer.writeheader()
-        writer.writerows(rows)    
-
-
+        writer.writerows(rows)

@@ -1,5 +1,5 @@
 id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_points,matrix_languauge,matrix_math,matrix_reading,status,matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest,updated_at,guardian1_email,guardian2_email,grade,deliver_test_accomodation_approved,test_date_sign_up,current_school,gpa
-1,,,,,,,,,In Processing,,,,,2025-01-10 9:36:05,,,9,,January 18 2025,Other,
+1,13,,,,,,,,In Processing,,,,,2025-01-10 9:36:05,,,9,,January 18 2025,Other,4.0
 2,30,99,99,97,119,30,29,30,Eligible,,,,,2024-10-03 9:34:02,,,9,,December 14 2024,Trinity Episcopal School,4
 3,,55,50,31,15,8,1,6,In Processing,3,6,13,22,2024-10-01 10:14:34,,,9,,March 22 2025 (No-rest option),Edward Hynes Lakeview,
 4,30,83,98,72,99,22,17,30,In Processing,,,,,2024-10-05 8:55:30,,,9,,December 14 2024,Edward Hynes Lakeview,3.5
@@ -9,7 +9,7 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 8,,47,86,44,31,4,3,24,In Processing,5,1,16,22,2024-10-01 11:28:56,,,9,,March 22 2025 (No-rest option),International School of Louisiana,
 9,,67,95,60,53,14,11,28,In Processing,,,,,2024-10-12 21:11:31,,,9,,April 26 2025 (No-rest option),Edward Hynes Parkview,
 10,,68,62,50,33,15,6,12,In Processing,,,,,2024-10-17 18:31:11,,,9,,December 14 2024,Trinity Episcopal School,
-11,,33,54,69,24,1,15,8,In Processing,9,20,6,35,2024-10-01 7:35:59,,,9,,February 15 2025 (No-rest option),Foundation Preparatory Charter School,
+11,15,33,54,69,24,1,15,8,In Processing,9,20,6,35,2024-10-01 7:35:59,,,9,,February 15 2025 (No-rest option),Foundation Preparatory Charter School,2.0
 12,30,79,99,97,109,20,29,30,Eligible,,,,,2024-10-03 7:28:18,,,9,,November 16 2024,The Willow School,3.63
 13,30,76,85,97,101,19,29,23,Eligible,,,,,2024-10-02 17:09:05,,,9,,November 16 2024,Audubon Uptown Montessori and French,4
 14,30,95,90,99,114,28,30,26,,,,,,2024-09-23 20:16:35,,,8,,January 18 2025,Trinity Episcopal School,4
@@ -42,7 +42,7 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 41,30,88,71,90,97,25,26,16,Eligible,,,,,2024-10-01 12:59:55,,,9,,January 18 2025,The Willow School,3.88
 42,29,96,74,66,90,29,14,18,Eligible,,,,,2025-04-09 20:18:24,,,9,,April 26 2025 (No-rest option),Lake Castle Private School,3.41
 43,23,76,99,98,102,19,30,30,Eligible,,,,,2024-10-01 6:54:29,,,9,,November 16 2024,Edward Hynes Lakeview,2.88
-44,30,80,96,99,110,21,30,29,Eligible,,,,,2024-10-01 6:20:58,,,9,,December 14 2024,Bricolage Academy,3.8
+44,25,80,96,99,110,21,30,29,Eligible,,,,,2024-10-01 6:20:58,,,9,,December 14 2024,Bricolage Academy,3.0
 45,,35,81,54,30,1,8,21,In Processing,,,,,2024-10-23 14:55:48,,,9,,December 14 2024,Lycee Francais de la Nouvelle Orleans,
 46,30,75,99,83,100,18,22,30,Eligible,,,,,2024-10-01 9:22:39,,,9,,November 16 2024,Edward Hynes Lakeview,3.88
 47,30,92,96,89,111,27,25,29,Eligible,,,,,2024-10-01 0:20:26,,,9,,November 16 2024,Audubon Uptown Montessori and French,4
@@ -53,7 +53,7 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 52,,90,62,52,45,26,7,12,In Processing,,,,,2024-10-01 6:25:58,,,10,,December 14 2024,Other,
 53,30,87,99,96,113,24,29,30,Eligible,,,,,2024-10-01 6:29:16,,,9,,December 14 2024,The Willow School,4
 54,,,,,0,,,,In Processing,,,,,2024-10-01 6:32:02,,,10,,April 26 2025 (No-rest option),St. Augustine High School,
-55,,54,69,71,39,8,16,15,In Processing,15,15,12,42,2024-10-01 6:41:01,,,9,,March 22 2025 (No-rest option),Arthur Ashe Charter School,
+55,5,54,69,71,39,8,16,15,In Processing,15,15,12,42,2024-10-01 6:41:01,,,9,,March 22 2025 (No-rest option),Arthur Ashe Charter School,1.0
 56,25,69,81,92,88,15,27,21,Eligible,,,,,2024-10-01 6:35:48,,,9,,November 16 2024,Edward Hynes Lakeview,3
 57,30,78,99,98,110,20,30,30,Eligible,,,,,2024-10-01 6:43:20,,,9,,November 16 2024,Audubon Uptown Montessori and French,3.75
 58,30,94,94,93,113,28,27,28,Eligible,,,,,2024-10-01 7:19:51,,,9,,November 16 2024,Other,4
@@ -75,7 +75,7 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 74,,61,92,77,57,11,19,27,In Processing,8,15,26,49,2024-10-01 9:44:07,,,9,,February 15 2025 (No-rest option),International School of Louisiana,
 75,,79,78,82,62,20,22,20,In Processing,,,,,2024-10-01 9:49:47,,,11,,March 22 2025 (No-rest option),Other,
 76,30,88,85,69,93,25,15,23,Eligible,,,,,2024-10-01 10:01:21,,,9,,November 16 2024,St. Andrew's Episcopal School,4
-77,,98,94,76,77,30,19,28,In Processing,,,,,2024-10-01 9:59:18,,,10,,April 26 2025 (No-rest option),Other,
+77,30,98,94,76,77,30,19,28,In Processing,,,,,2024-10-01 9:59:18,,,10,,April 26 2025 (No-rest option),Other,4.0
 78,,54,83,71,46,8,16,22,In Processing,14,21,17,52,2024-10-01 10:22:35,,,9,,March 22 2025 (No-rest option),Bricolage Academy,
 79,30,99,99,99,120,30,30,30,Eligible,,,,,2024-10-01 10:29:55,,,9,,November 16 2024,Lake Forest Elementary Charter School,4
 80,30,61,99,78,91,11,20,30,Eligible,,,,,2024-10-01 10:40:04,,,9,,December 14 2024,Audubon Uptown Montessori and French,3.75
@@ -109,7 +109,7 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 108,30,87,99,97,113,24,29,30,Eligible,,,,,2024-10-01 18:01:53,,,9,,December 14 2024,Audubon Uptown Montessori and French,4
 109,30,85,94,83,103,23,22,28,Eligible,,,,,2024-10-01 21:01:54,,,9,,November 16 2024,Ecole Bilingue,4
 110,,85,90,98,79,23,30,26,In Processing,,,,,2024-10-01 18:13:28,,,10,,November 16 2024,Other,
-111,28,70,73,93,88,16,27,17,Eligible,,,,,2024-10-01 18:27:32,,,9,,December 14 2024,Lake Castle Private School,3.38
+111,30,70,73,93,88,16,27,17,Eligible,,,,,2024-10-01 18:27:32,,,9,,December 14 2024,Lake Castle Private School,3.6
 112,,93,97,48,61,27,5,29,In Processing,,,,,2024-10-01 19:08:52,,,10,,April 26 2025 (No-rest option),Other,
 113,,44,57,10,13,3,1,9,In Processing,,,,,2024-10-01 19:23:56,,,9,,April 26 2025 (No-rest option),Other,
 114,30,98,96,86,113,30,24,29,Eligible,,,,,2024-10-01 20:19:29,,,9,,November 16 2024,Audubon Uptown Montessori and French,4
