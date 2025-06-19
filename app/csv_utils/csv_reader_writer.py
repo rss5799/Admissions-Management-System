@@ -36,6 +36,7 @@ def fetch_updated_student_instance(student_id):
                     current_school = row[20]
                 )
                 return current_student
+    return(0)
             
 
 def write_gpa_to_csv(student_id, gpa, matrix_gpa):
