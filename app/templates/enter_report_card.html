@@ -6,8 +6,9 @@
 <body>
       <body>
     <h2>Enter Report Card Info</h2>
-    <h3>Student ID: {{ current_student_id }}</h3>
-    <h3>Applying for Grade: {{ current_student_grade }}</h3>
+    <h3>Student ID: {{ results.id }}</h3>
+    <h3>Applying for Grade: {{ results.grade }}</h3>
+    <h3>Current School: {{ results.current_school }}</h3>
     <p>Choose the Report Card Type</p>
 
     <select id="myDropdown">
@@ -17,6 +18,7 @@
     <option value="quarters">Quarters</option>
     </select>
 
+
 <!-- Content will be loaded here -->
 <form method="POST" action="/calculate_gpa">
     <input type="text" name="english" placeholder="English Grade" value="{{ grades.english }}" required><br><br>
@@ -25,18 +27,13 @@
     <input type="text" name="social_studies" placeholder="Social Studies Grade" value="{{ grades.social_studies }}" required><br><br>
     <input type="text" name="language" placeholder="Language Grade" value="{{ grades.language }}"><br><br>
 
-    <button type="submit">Submit</button>
+    <button type="submit">Calculate GPA</button>
 </form>
+
 
 {% if gpa is not none %}
-    <h3>Calculated GPA: {{ gpa }}</h3>
-    <h3>Calculated Matrix GPA: {{ matrix_gpa }}</h3>
-{% endif %}
-
-{% if matrix_gpa is not none %}
-<form method="POST" action="{{ url_for('main.save_matrix_gpa_to_profile') }}">
-    <button type="submit">Save to Profile</button>
-</form>
+      <h3>Calculated GPA: {{ gpa }}</h3>
+      <h3>Calculated Matrix GPA: {{ matrix_gpa }}</h3>
 {% endif %}
 
 {% with messages = get_flashed_messages() %}
@@ -48,8 +45,10 @@
         </div>
       {% endfor %}
     </div>
+          <button type="submit", onclick="location.href='/student_details/';">Return to Student Scores</button>
   {% endif %}
 {% endwith %}
+
 
 <script>
   const dropdown = document.getElementById('myDropdown');
@@ -64,7 +63,7 @@
   console.log("student grade:", studentGrade)
 
 
-
+    
 
   dropdown.addEventListener('change', function() {
     const selectedValue = this.value;
@@ -158,5 +157,6 @@
     }
   });
 </script>
+
 </body>
 </html>

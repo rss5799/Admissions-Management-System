@@ -1,49 +1,48 @@
-from flask import Blueprint, render_template, request, session, redirect, url_for, flash, get_flashed_messages
+from flask import Blueprint, render_template, request, session
 import pandas as pd
 import numpy as np
 import random
 import string
+from app.csv_utils.csv_reader_writer import fetch_updated_student_instance, write_gpa_to_csv
 
 schoolMint_df = pd.read_csv('DummyDataComplete.csv')
 
-
-class Student:
-    def __init__(self, id, gpa, matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_points,matrix_languauge,matrix_math,matrix_reading, matrix_points_total,status,matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest, updated_at,guardian1_email,guardian2_email,grade,deliver_test_accomodation_approved,test_date_sign_up, current_school):
-        self.id = id
-        self.gpa = gpa
-        self.matrix_gpa = matrix_gpa
-        self.language_test_scores = language_test_scores
-        self.reading_test_score = reading_test_score
-        self.math_test_scores = math_test_scores
-        self.total_points=total_points
-        self.matrix_languauge = matrix_languauge
-        self.matrix_math = matrix_math
-        self.matrix_reading = matrix_reading
-        self.matrix_points_total = matrix_points_total
-        self.status = status
-        self.matrix_languauge_retest = matrix_languauge_retest
-        self.matrix_math_retest = matrix_math_retest
-        self.matrix_reading_restest = matrix_reading_restest
-        self.total_points_retest = total_points_retest
-        self.updated_at = updated_at
-        self.guardian1_email = guardian1_email
-        self.guardian2_email = guardian2_email
-        self.grade = grade
-        self.deliver_test_accomodation_approved = deliver_test_accomodation_approved
-        self.test_date_sign_up = test_date_sign_up
-        self.current_school = current_school
-
-
 bp = Blueprint('main', __name__)
 
+#starting point for the app
+@bp.route("/")
+def index():
+    return render_template("index.html")
 
-# Use the relative path to the credentials file won't need this for new csv import method
-# key_path = os.path.join(os.path.dirname(__file__), "/Users/taracan/Documents/SWENG894/Admissions-Management-System/credentials/firebase_key.json")
-# cred = credentials.Certificate(key_path)
-# firebase_admin.initialize_app(cred)
+@bp.route("/point_inputs/")
+def point_inputs():
+    return render_template("point_inputs.html")
+
+@bp.route("/student_details/", methods = ['GET'])
+def student_details():
+    current_student = retrieve_current_student()
+    if current_student:
+        #assign session['current_student'] to current_student
+        session['current_id'] = current_student.id
+        return render_template("student_details.html", results = current_student)
+
+@bp.route("/enter_report_card/", methods = ['GET', 'POST'])
+def enter_report_card():
+    current_student = retrieve_current_student()
+        # Provide default empty grades so template doesn't crash
+    grades = {
+        "english": "",
+        "math": "",
+        "science": "",
+        "social_studies": "",
+        "language": ""
+    }
+    
+    return render_template("enter_report_card.html", results = current_student, grades=grades)
 
 @bp.route('/calculate_gpa', methods=['GET', 'POST'])
 def calculate_gpa_route():
+    current_student = retrieve_current_student()
     grades = {
         "english": "",
         "math": "",
@@ -61,32 +60,46 @@ def calculate_gpa_route():
         grades['social_studies'] = request.form['social_studies']
         grades['language'] = request.form['language']
 
-        # added extra imports for matrix_gpa
         from app.services.matrix_calculator import calculate_gpa, lookup_matrix_points, matrix
+
         gpa = calculate_gpa(grades)
         matrix_gpa = lookup_matrix_points(gpa, matrix["gpa"]) # gpa->matrix_gpa value in DummyDataComplete.csv
 
-        # update session
-        session['gpa'] = gpa
-        session['matrix_gpa'] = matrix_gpa
-
+        #update csv
+        write_gpa_to_csv(current_student.id, gpa, matrix_gpa)
+        #retrieve updated student data with new report card info
+        current_student = retrieve_current_student()
         flash("GPA and Matrix GPA Score successfully calculated.")
+        #set session
+        session['current_id'] = current_student.id
 
-    return render_template('enter_report_card.html', gpa=gpa, grades=grades, matrix_gpa=matrix_gpa)
+    return render_template('enter_report_card.html', results = current_student, grades = grades, gpa = gpa, matrix_gpa = matrix_gpa)
 
 
-@bp.route("/")
-def index():
-    return render_template("index.html")
+def retrieve_current_student():
+    #if youre coming from student search page
+    if request.args.get('id_query'):
+        current_id = request.args.get('id_query')
+        if fetch_updated_student_instance(current_id):
+            current_student = fetch_updated_student_instance(current_id)
+            if current_student:
+                return(current_student)
+            else:
+                print("ID not found")
+                return(0)
+        else:
+            print("ID not found")
+            return(0)
+    #if you're coming from report card input page
+    else:
+        current_id= session.get('current_id')
+        current_student = fetch_updated_student_instance(current_id)
+        return(current_student)
 
+#placeholder routes to be developed
 @bp.route("/exports/")
 def exports():
     return render_template("exports.html")
-
-@bp.route("/point_inputs/")
-def point_inputs():
-    return render_template("point_inputs.html")
-
 
 @bp.route("/upcoming_tests/")
 def upcoming_tests():
@@ -95,151 +108,3 @@ def upcoming_tests():
 @bp.route("/unresponsive_students/")
 def unresponsive_students():
     return render_template("unresponsive_students.html")
-
-@bp.route("/student_details/", methods=['GET'])
-def student_details():
-    current_id_query_result = request.args.get('id_query')
-    current_student = perform_student_search(current_id_query_result)
-
-    if current_student:
-        current_student = turn_na_to_emptystring(current_student)
-        session['current_student_id'] = current_id_query_result
-        session['current_student_grade'] = str(current_student.grade)
-
-        # Override GPA and matrix GPA with session values if present
-        gpa = session.get('gpa')
-        matrix_gpa = session.get('matrix_gpa')
-
-        if gpa:
-            current_student.gpa = gpa
-        if matrix_gpa:
-            current_student.matrix_gpa = matrix_gpa
-            # Recalculate total matrix points
-            try:
-                current_student.matrix_points_total = (
-                    float(current_student.matrix_languauge or 0) +
-                    float(current_student.matrix_math or 0) +
-                    float(current_student.matrix_reading or 0) +
-                    float(matrix_gpa)
-                )
-            except:
-                current_student.matrix_points_total = ""
-
-        return render_template("student_details.html", results=current_student, query=current_id_query_result)
-
-    else:
-        return render_template("point_inputs.html", results="Student Not Found", query=current_id_query_result)
-
-'''
-@bp.route("/student_details/", methods=['GET'])
-def student_details():
-    current_id_query_result = request.args.get('id_query')
-    current_student = perform_student_search(current_id_query_result)
-    if current_student:
-        current_student = turn_na_to_emptystring(current_student)
-        #prepare id and grade to be passed to other pages   
-        session['current_student_id'] = current_id_query_result
-        grade = str(current_student.grade)
-        session['current_student_grade'] = grade
-        return render_template("student_details.html", results = current_student, query = current_id_query_result)
-    else:
-        return render_template("point_inputs.html", results = "Student Not Found", query = current_id_query_result)
-'''    
-@bp.route("/enter_report_card/")
-def enter_report_card():
-    current_student_id = session.get('current_student_id')
-    current_student_grade = session.get('current_student_grade')
-
-    # Provide default empty grades so template doesn't crash
-    grades = {
-        "english": "",
-        "math": "",
-        "science": "",
-        "social_studies": "",
-        "language": ""
-    }
-
-    return render_template("/enter_report_card.html", 
-                            current_student_id=current_student_id, 
-                            current_student_grade=current_student_grade,
-                            grades=grades)
-
-@bp.route('/save_matrix_gpa_to_profile', methods=['POST'])
-def save_matrix_gpa_to_profile():
-    # update session
-    #session['gpa'] = gpa
-    #session['matrix_gpa'] = matrix_gpa
-
-    flash("Matrix GPA saved to session. Read to export new CSV.")
-    return redirect(url_for('main.student_details') + f"?id_query={session.get('current_student_id')}")
-
-@bp.route("/save_report_card", methods=["POST"])
-def save_report_card():
-    current_student_id = str(session.get('current_student_id'))
-    matrix_gpa = str(session.get('matrix_gpa'))
-
-    # copy df
-    schoolMint_df_new = schoolMint_df.copy()
-    schoolMint_df_new["id"] = schoolMint_df_new["id"].astype(str)
-
-    # update matrix gpa
-    schoolMint_df_new.loc[schoolMint_df_new["id"] == current_student_id, "matrix_gpa"] = matrix_gpa
-    
-    # Export df to CSV
-    schoolMint_df_new.to_csv('DummyDataComplete.csv', index=False)
-
-    # saved message
-    #flash("Report card saved to student profile!")
-    flash(f"Matrix GPA ({matrix_gpa}) successfully exported for Student ID {current_student_id}.")
-
-
-    return redirect(url_for('main.student_details') + f"?id_query={current_student_id}")
-
-
-def perform_student_search(query):
-       schoolMint_df['id'] = schoolMint_df['id'].astype(str)
-       studentId = str(query)
-       index = schoolMint_df.index[schoolMint_df['id']== studentId].tolist()
-       if index:
-            currentStudent = Student(
-                id = query,
-                gpa = "", #pull from student class after calculated
-                matrix_gpa = schoolMint_df['matrix_gpa'].iloc[index[0]],
-                language_test_scores = schoolMint_df['language_test_scores'].iloc[index[0]],
-                reading_test_score = schoolMint_df['reading_test_score'].iloc[index[0]], 
-                math_test_scores =  schoolMint_df['math_test_scores'].iloc[index[0]],
-                total_points = schoolMint_df['total_points'].iloc[index[0]],
-                matrix_languauge = schoolMint_df['matrix_languauge'].iloc[index[0]], 
-                matrix_math = schoolMint_df['matrix_math'].iloc[index[0]],
-                matrix_reading = schoolMint_df['matrix_reading'].iloc[index[0]],
-                matrix_points_total= schoolMint_df['matrix_languauge'].iloc[index[0]] + schoolMint_df['matrix_math'].iloc[index[0]]+ schoolMint_df['matrix_reading'].iloc[index[0]] + schoolMint_df['matrix_gpa'].iloc[index[0]] ,
-                status = schoolMint_df['status'].iloc[index[0]],
-                matrix_languauge_retest = schoolMint_df['matrix_languauge_retest'].iloc[index[0]],
-                matrix_math_retest = schoolMint_df['matrix_math_retest'].iloc[index[0]],
-                matrix_reading_restest = schoolMint_df['matrix_reading_restest'].iloc[index[0]],
-                total_points_retest = schoolMint_df['total_points_retest'].iloc[index[0]],
-                updated_at = schoolMint_df['updated_at'].iloc[index[0]],
-                guardian1_email = schoolMint_df['guardian1_email'].iloc[index[0]],
-                guardian2_email = schoolMint_df['guardian2_email'].iloc[index[0]],
-                grade = schoolMint_df['grade'].iloc[index[0]],
-                deliver_test_accomodation_approved = schoolMint_df['deliver_test_accomodation_approved'].iloc[index[0]],
-                test_date_sign_up = schoolMint_df['test_date_sign_up'].iloc[index[0]],
-                current_school = schoolMint_df['current_school'].iloc[index[0]]
-
-            )
-            print(currentStudent.matrix_gpa)
-            return(currentStudent)
-       else:
-            print("ID not found")
-            return(0)
-
-def turn_na_to_emptystring(student):
-        #replace all empty values with blank string
-        for attr, value in vars(student).items():
-            if isinstance(value, float) and np.isnan(value):
-                setattr(student, attr, "")
-        return student
-
-
-
-
