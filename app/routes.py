@@ -1,5 +1,9 @@
 from flask import Blueprint, render_template, request, session, flash
+import pandas as pd
+import numpy as np
 from app.csv_utils.csv_reader_writer import fetch_updated_student_instance, write_gpa_to_csv
+
+schoolMint_df = pd.read_csv('DummyDataComplete.csv')
 
 bp = Blueprint('main', __name__)
 
@@ -45,6 +49,7 @@ def calculate_gpa_route():
         "language": ""
     }
     gpa = None
+    matrix_gpa = None
 
     if request.method == 'POST':
         grades['english'] = request.form['english']
@@ -88,14 +93,6 @@ def retrieve_current_student():
         current_id= session.get('current_id')
         current_student = fetch_updated_student_instance(current_id)
         return(current_student)
-    
- 
-
-
-
-
-
-
 
 
 
