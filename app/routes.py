@@ -1,8 +1,6 @@
-from flask import Blueprint, render_template, request, session
+from flask import Blueprint, render_template, request, session, flash
 import pandas as pd
 import numpy as np
-import random
-import string
 from app.csv_utils.csv_reader_writer import fetch_updated_student_instance, write_gpa_to_csv
 
 schoolMint_df = pd.read_csv('DummyDataComplete.csv')
@@ -95,6 +93,10 @@ def retrieve_current_student():
         current_id= session.get('current_id')
         current_student = fetch_updated_student_instance(current_id)
         return(current_student)
+
+
+
+
 
 #placeholder routes to be developed
 @bp.route("/exports/")

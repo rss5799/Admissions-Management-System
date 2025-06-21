@@ -60,9 +60,6 @@
     </tr>
 </table>
 
-<form method="POST" action="{{ url_for('main.save_report_card') }}">
-    <button type="submit">Export to File</button>
-</form>
 
 {% with messages = get_flashed_messages() %}
   {% if messages %}
