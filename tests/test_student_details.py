@@ -1,5 +1,6 @@
 import pytest
-from app.routes import retrieve_current_student, turn_na_to_emptystring
+import os
+from app.csv_utils.csv_reader_writer import fetch_updated_student_instance
 import pandas as pd
 import numpy as np
 import random
@@ -13,16 +14,19 @@ def client():
     with app.test_client() as client:
         yield client
 
+
+
+
 #System Test 1: Search results are returned when valid student ID is entered
 def test_search_for_student():
-    assert retrieve_current_student(1) != 0
-    assert retrieve_current_student(1077) != 0
-    assert retrieve_current_student(1078) == 0
-    assert retrieve_current_student('$') == 0
-    assert retrieve_current_student(' 87') == 0
-    assert retrieve_current_student('99 ') == 0
-    assert retrieve_current_student(2/2) == 0
-    assert retrieve_current_student('a') == 0
+    assert fetch_updated_student_instance(1) != 0
+    assert fetch_updated_student_instance(1077) != 0
+    assert fetch_updated_student_instance(1078) == 0
+    assert fetch_updated_student_instance('$') == 0
+    assert fetch_updated_student_instance(' 87') == 0
+    assert fetch_updated_student_instance('99 ') == 0
+    assert fetch_updated_student_instance(2/2) == 0
+    assert fetch_updated_student_instance('a') == 0
 
 test_search_for_student()
 
@@ -43,8 +47,7 @@ def display_empty_values():
         id = student_df.iloc[testing_cells[i][0], 0]
         #this statement is kind of just affirming what i asked it to do when i created the testing_cells
         assert np.isnan(student_df.iloc[testing_cells[i]])
-        testing_student = retrieve_current_student(id)
-        turn_na_to_emptystring(testing_student)
+        testing_student = fetch_updated_student_instance(id)
         attribute_to_test  = str(student_df.columns[testing_cells[i][1]])
         value = str(getattr(testing_student, attribute_to_test))
         assert value == ""
