@@ -13,22 +13,22 @@ def test_unresponsive_students(client):
     assert response.status_code == 200
     assert b"Unresponsive Students" in response.data
 
-# def test_calculate_gpa_post(client):
-#     data = {
-#         'english': '90',
-#         'math': '85',
-#         'science': '95',
-#         'social_studies': '88',
-#         'language': '92'
-#     }
-#     response = client.post("/calculate_gpa", data=data)
-#     assert response.status_code == 200
-#     assert b"GPA" in response.data
+def test_calculate_gpa_post(client):
+    data = {
+        'english': '90',
+        'math': '85',
+        'science': '95',
+        'social_studies': '88',
+        'language': '92'
+    }
+    response = client.post("/calculate_gpa", data=data)
+    assert response.status_code == 200
+    assert b"GPA" in response.data
 
-# def test_student_search(client):
-#     response = client.get("/student_details/?id_query=12345")
-#     assert response.status_code == 200
-#     assert b"student_details" in response.data
+def test_student_search(client):
+    response = client.get("/student_details/?id_query=12345")
+    assert response.status_code == 200
+    assert b"Student Details" in response.data
 
 def test_route_not_found(client):
     response = client.get("/this_route_does_not_exist")

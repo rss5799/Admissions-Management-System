@@ -1,5 +1,5 @@
 import pytest
-from app.routes import retrieve_current_student
+from app.models.student import Student
 from app.csv_utils.csv_reader_writer import fetch_updated_student_instance
 import pandas as pd
 import numpy as np
@@ -7,12 +7,12 @@ import random
 import string
 from app import create_app
 
-# @pytest.fixture
-# def client():
-#     app = create_app()
-#     app.testing = True
-#     with app.test_client() as client:
-#         yield client
+@pytest.fixture
+def client():
+    app = create_app()
+    app.testing = True
+    with app.test_client() as client:
+        yield client
 
 #Unit Test 1: Search results are returned when valid student ID is entered
 def test_search_for_student():
@@ -90,15 +90,15 @@ def display_updates_to_csv():
         for new_result in new_results:
             assert student_df.loc[result[0], result[1]] != student_df_modified.loc[new_result[0], new_result[1]]
 
-# def test_student_search_no_param(client):
-#     response = client.get("/student_details/")
-#     assert response.status_code == 200
-#     assert b"Student Details" in response.data
+def test_student_search_no_param(client):
+    response = client.get("/student_details/")
+    assert response.status_code == 200
+    assert b"Student Details" in response.data
 
-# def test_student_search_invalid_id(client):
-#     response = client.get("/student_details/?id_query=NOT_A_REAL_ID")
-#     assert response.status_code == 200
-#     assert b"Student Details" in response.data
+def test_student_search_invalid_id(client):
+    response = client.get("/student_details/?id_query=NOT_A_REAL_ID")
+    assert response.status_code == 200
+    assert b"Student Details" in response.data
 
 
 

@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 from app.csv_utils.csv_reader_writer import fetch_updated_student_instance, write_gpa_to_csv
 
-schoolMint_df = pd.read_csv('DummyDataComplete.csv')
 
 bp = Blueprint('main', __name__)
 
@@ -23,6 +22,8 @@ def student_details():
         #assign session['current_student'] to current_student
         session['current_id'] = current_student.id
         return render_template("student_details.html", results = current_student)
+    else:
+        return render_template("student_details.html", results = None)
 
 @bp.route("/enter_report_card/", methods = ['GET', 'POST'])
 def enter_report_card():
@@ -41,39 +42,43 @@ def enter_report_card():
 @bp.route('/calculate_gpa', methods=['GET', 'POST'])
 def calculate_gpa_route():
     current_student = retrieve_current_student()
-    grades = {
-        "english": "",
-        "math": "",
-        "science": "",
-        "social_studies": "",
-        "language": ""
-    }
-    gpa = None
-    matrix_gpa = None
+    if current_student != 0:
+        grades = {
+            "english": "",
+            "math": "",
+            "science": "",
+            "social_studies": "",
+            "language": ""
+        }
+        gpa = None
+        matrix_gpa = None
 
-    if request.method == 'POST':
-        grades['english'] = request.form['english']
-        grades['math'] = request.form['math']
-        grades['science'] = request.form['science']
-        grades['social_studies'] = request.form['social_studies']
-        grades['language'] = request.form['language']
+        if request.method == 'POST':
+            grades['english'] = request.form['english']
+            grades['math'] = request.form['math']
+            grades['science'] = request.form['science']
+            grades['social_studies'] = request.form['social_studies']
+            grades['language'] = request.form['language']
 
-        from app.services.matrix_calculator import calculate_gpa, lookup_matrix_points, matrix
+            from app.services.matrix_calculator import calculate_gpa, lookup_matrix_points, matrix
 
-        gpa = calculate_gpa(grades)
-        matrix_gpa = lookup_matrix_points(gpa, matrix["gpa"]) # gpa->matrix_gpa value in DummyDataComplete.csv
+            gpa = calculate_gpa(grades)
+            matrix_gpa = lookup_matrix_points(gpa, matrix["gpa"]) # gpa->matrix_gpa value in DummyDataComplete.csv
 
-        #update csv
-        write_gpa_to_csv(current_student.id, gpa, matrix_gpa)
-        #retrieve updated student data with new report card info
-        current_student = retrieve_current_student()
-        flash("GPA and Matrix GPA Score successfully calculated.")
-        #set session
-        session['current_id'] = current_student.id
-
-    return render_template('enter_report_card.html', results = current_student, grades = grades, gpa = gpa, matrix_gpa = matrix_gpa)
-
-
+            #update csv
+            write_gpa_to_csv(current_student.id, gpa, matrix_gpa)
+            #retrieve updated student data with new report card info
+            current_student = retrieve_current_student()
+            if current_student is not None:
+                flash("GPA and Matrix GPA Score successfully calculated.")
+                #set session
+                session['current_id'] = current_student.id
+                return render_template('enter_report_card.html', results = current_student, grades = grades, gpa = gpa, matrix_gpa = matrix_gpa)
+            else:
+                return render_template('enter_report_card.html', results = None, grades = None, gpa = None, matrix_gpa = None)
+    else:
+        return render_template('enter_report_card.html', results = None, grades = None, gpa = None, matrix_gpa = None)
+    
 def retrieve_current_student():
     #if youre coming from student search page
     if request.args.get('id_query'):
@@ -91,8 +96,12 @@ def retrieve_current_student():
     #if you're coming from report card input page
     else:
         current_id= session.get('current_id')
-        current_student = fetch_updated_student_instance(current_id)
-        return(current_student)
+        if current_id:
+            current_student = fetch_updated_student_instance(current_id)
+            return(current_student)
+        else:
+            print("No student ID Found")
+            return(0)
 
 
 
