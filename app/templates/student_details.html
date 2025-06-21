@@ -29,30 +29,27 @@
    
     <tr>
     <td>GPA Points</td>
-    <td> TODO</td>
+    <td> {{ results.gpa }}</td>
     <td>{{ results.matrix_gpa }}</td>
     <td> <a href="/enter_report_card">Edit</a> </td>
     </tr>
 
         <tr>
     <td>Admissions Language</td>
-    <td> {{ results.language_test_scores }} </td>
+    <td>{{ results.language_test_scores }} </td>
     <td>{{ results.matrix_languauge }}</td>
-    <td>Edit</td>
     </tr>
 
         <tr>
     <td>Admissions Math:</td>
     <td>{{ results.math_test_scores }}</td>
     <td>{{ results.matrix_math }}</td>
-    <td> Edit </td>
     </tr>
 
         <tr>
     <td>Admissions Reading</td>
     <td> {{ results.reading_test_score }}</td>
     <td>{{ results.matrix_reading }}</td>
-    <td> Edit </td>
     </tr>
 
     <tr>
@@ -62,5 +59,19 @@
     <td></td>
     </tr>
 </table>
+
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="flash-messages">
+      {% for message in messages %}
+        <div style="background-color: #d1e7dd; color: #0f5132; padding: 10px; border-radius: 4px; margin-bottom: 10px;">
+          {{ message }}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+
 </body>
 </html>
