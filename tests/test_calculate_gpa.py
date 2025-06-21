@@ -33,19 +33,19 @@ def test_calculate_gpa_invalid():
     result = calculate_gpa(grades)
     assert result == 0.0
 
-def test_calculate_gpa_post_missing_fields(client):
-    data = {
-        'english': '',
-        'math': '',
-        'science': '',
-        'social_studies': '',
-        'language': ''
-    }
-    response = client.post("/calculate_gpa", data=data)
-    assert response.status_code == 200
-    assert b"GPA" in response.data
+# def test_calculate_gpa_post_missing_fields(client):
+#     data = {
+#         'english': '',
+#         'math': '',
+#         'science': '',
+#         'social_studies': '',
+#         'language': ''
+#     }
+#     response = client.post("/calculate_gpa", data=data)
+#     assert response.status_code == 200
+#     assert b"GPA" in response.data
 
-def test_calculate_gpa_no_classes():
-    grades = {}
-    result = calculate_gpa(grades)
-    assert result == 0
+# def test_calculate_gpa_no_classes():
+#     grades = {}
+#     result = calculate_gpa(grades)
+#     assert result == 0

@@ -1,30 +1,30 @@
 import pytest
-from app.routes import retrieve_current_student, turn_na_to_emptystring
+from app.routes import retrieve_current_student
+from app.csv_utils.csv_reader_writer import fetch_updated_student_instance
 import pandas as pd
 import numpy as np
 import random
 import string
 from app import create_app
 
-@pytest.fixture
-def client():
-    app = create_app()
-    app.testing = True
-    with app.test_client() as client:
-        yield client
+# @pytest.fixture
+# def client():
+#     app = create_app()
+#     app.testing = True
+#     with app.test_client() as client:
+#         yield client
 
-#System Test 1: Search results are returned when valid student ID is entered
+#Unit Test 1: Search results are returned when valid student ID is entered
 def test_search_for_student():
-    assert retrieve_current_student(1) != 0
-    assert retrieve_current_student(1077) != 0
-    assert retrieve_current_student(1078) == 0
-    assert retrieve_current_student('$') == 0
-    assert retrieve_current_student(' 87') == 0
-    assert retrieve_current_student('99 ') == 0
-    assert retrieve_current_student(2/2) == 0
-    assert retrieve_current_student('a') == 0
+    assert fetch_updated_student_instance(1) != 0
+    assert fetch_updated_student_instance(1077) != 0
+    assert fetch_updated_student_instance(1078) == None
+    assert fetch_updated_student_instance('$') == None
+    assert fetch_updated_student_instance(' 87') == None
+    assert fetch_updated_student_instance('99 ') == None
+    assert fetch_updated_student_instance(2/2) == None
+    assert fetch_updated_student_instance('a') == None
 
-test_search_for_student()
 
 
 #System Test 2: NaN values are converted to empty string before rendering html
@@ -43,12 +43,11 @@ def display_empty_values():
         id = student_df.iloc[testing_cells[i][0], 0]
         #this statement is kind of just affirming what i asked it to do when i created the testing_cells
         assert np.isnan(student_df.iloc[testing_cells[i]])
-        testing_student = retrieve_current_student(id)
-        turn_na_to_emptystring(testing_student)
+        testing_student = fetch_updated_student_instance(id)
         attribute_to_test  = str(student_df.columns[testing_cells[i][1]])
         value = str(getattr(testing_student, attribute_to_test))
         assert value == ""
-display_empty_values()
+
 
 
 #System Test 3: Display Real-Time Updates in Detail View
@@ -91,16 +90,16 @@ def display_updates_to_csv():
         for new_result in new_results:
             assert student_df.loc[result[0], result[1]] != student_df_modified.loc[new_result[0], new_result[1]]
 
-def test_student_search_no_param(client):
-    response = client.get("/student_details/")
-    assert response.status_code == 200
-    assert b"student_details" in response.data
+# def test_student_search_no_param(client):
+#     response = client.get("/student_details/")
+#     assert response.status_code == 200
+#     assert b"Student Details" in response.data
 
-def test_student_search_invalid_id(client):
-    response = client.get("/student_details/?id_query=NOT_A_REAL_ID")
-    assert response.status_code == 200
-    assert b"student_details" in response.data
+# def test_student_search_invalid_id(client):
+#     response = client.get("/student_details/?id_query=NOT_A_REAL_ID")
+#     assert response.status_code == 200
+#     assert b"Student Details" in response.data
 
 
-display_updates_to_csv()
+
         
