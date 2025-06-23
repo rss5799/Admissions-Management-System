@@ -21,7 +21,6 @@ def fetch_updated_student_instance(student_id):
                     matrix_languauge = row[header.index('matrix_languauge')], 
                     matrix_math = row[header.index('matrix_math')],
                     matrix_reading = row[header.index('matrix_reading')],
-                    matrix_points_total= calculate_total_matrix_points(student_id),
                     status = row[header.index('status')],
                     matrix_languauge_retest = row[header.index('matrix_languauge_retest')],
                     matrix_math_retest = row[header.index('matrix_math_retest')],
@@ -42,7 +41,7 @@ def fetch_updated_student_instance(student_id):
     return(0)
             
 
-def write_gpa_to_csv(student_id, gpa, matrix_gpa):
+def write_gpa_to_csv(student_id, gpa, matrix_gpa, total_points, total_points_retest):
     rows = []
     with open(original_schoolmint_data, 'r') as file:
         reader = csv.DictReader(file)
@@ -51,6 +50,8 @@ def write_gpa_to_csv(student_id, gpa, matrix_gpa):
             if row['id'] == student_id:
                 row['gpa'] = gpa
                 row['matrix_gpa'] = matrix_gpa
+                row['total_points'] = total_points
+                row['total_points_retest'] = total_points_retest
  
 
     with open(original_schoolmint_data, 'w', newline = '') as file:
@@ -59,30 +60,30 @@ def write_gpa_to_csv(student_id, gpa, matrix_gpa):
         writer.writerows(rows)
 
 
-def calculate_total_matrix_points(student_id):
-    with open(original_schoolmint_data, 'r') as file:
-        reader = csv.reader(file)
-        header = next(reader)
-        for row in reader:
-            if str(row[header.index('id')]) == str(student_id):
-                if(row[header.index('matrix_gpa')] == ""):
-                    total_matrix_points = ""
+# def calculate_total_matrix_points_OG(student_id):
+#     with open(original_schoolmint_data, 'r') as file:
+#         reader = csv.reader(file)
+#         header = next(reader)
+#         for row in reader:
+#             if str(row[header.index('id')]) == str(student_id):
+#                 if(row[header.index('matrix_gpa')] == ""):
+#                     total_matrix_points = ""
 
-                elif (row[header.index('total_points_retest')] != ""):
-                    matrix_test_OG = int(row[header.index('matrix_languauge')]) + int(row[header.index('matrix_math')]) + int(row[header.index('matrix_reading')])
-                    matrix_test_retest = int(row[header.index('matrix_math_retest')]) + int(row[header.index('matrix_reading_restest')]) + int(row[header.index('matrix_languauge_retest')])
+#                 elif (row[header.index('total_points_retest')] != ""):
+#                     matrix_test_OG = int(row[header.index('matrix_languauge')]) + int(row[header.index('matrix_math')]) + int(row[header.index('matrix_reading')])
+#                     matrix_test_retest = int(row[header.index('matrix_math_retest')]) + int(row[header.index('matrix_reading_restest')]) + int(row[header.index('matrix_languauge_retest')])
 
-                    if(matrix_test_retest > matrix_test_OG):
-                        total_matrix_points = matrix_test_retest + int(row[header.index('matrix_gpa')])
-                    else:
-                        total_matrix_points = matrix_test_OG + int(row[header.index('matrix_gpa')])
+#                     if(matrix_test_retest > matrix_test_OG):
+#                         total_matrix_points = matrix_test_retest + int(row[header.index('matrix_gpa')])
+#                     else:
+#                         total_matrix_points = matrix_test_OG + int(row[header.index('matrix_gpa')])
  
-                elif (row[header.index('total_points')] != ""):
-                    matrix_test_OG = int(row[header.index('matrix_languauge')]) + int(row[header.index('matrix_math')]) + int(row[header.index('matrix_reading')])
-                    total_matrix_points = matrix_test_OG + int(row[header.index('matrix_gpa')])
+#                 elif (row[header.index('total_points')] != ""):
+#                     matrix_test_OG = int(row[header.index('matrix_languauge')]) + int(row[header.index('matrix_math')]) + int(row[header.index('matrix_reading')])
+#                     total_matrix_points = matrix_test_OG + int(row[header.index('matrix_gpa')])
 
-                else:
-                    total_matrix_points = ""
+#                 else:
+#                     total_matrix_points = ""
                 
-                return(total_matrix_points)
+#                 return(total_matrix_points)
 
