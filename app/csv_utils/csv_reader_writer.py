@@ -21,7 +21,7 @@ def fetch_updated_student_instance(student_id):
                     matrix_languauge = row[6], 
                     matrix_math = row[7],
                     matrix_reading = row[8],
-                    matrix_points_total= row[1] + row[6] + row[7] + row[8],
+                    matrix_points_total= int(row[1]) + +int(row[6]) + int(row[7]) + int(row[8]),
                     status = row[9],
                     matrix_languauge_retest = row[10],
                     matrix_math_retest = row[11],

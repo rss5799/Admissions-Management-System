@@ -2,20 +2,20 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 1,13.0,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-10 9:36:05,nan,nan,9,nan,January 18 2025,Other,4.0
 2,30.0,99.0,99.0,97.0,119.0,30.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 9:34:02,nan,nan,9,nan,December 14 2024,Trinity Episcopal School,4.0
 3,nan,55.0,50.0,31.0,15.0,8.0,1.0,6.0,In Processing,3.0,6.0,13.0,22.0,2024-10-01 10:14:34,nan,nan,9,nan,March 22 2025 (No-rest option),Edward Hynes Lakeview,nan
-4,30.0,83.0,98.0,72.0,99.0,22.0,17.0,30.0,In Processing,nan,nan,nan,nan,2024-10-05 8:55:30,nan,nan,9,nan,December 14 2024,Edward Hynes Lakeview,3.5
+4,30.0,83.0,98.0,72.0,99.0,22.0,17.0,30.0,In Processing,nan,nan,nan,nan,2024-10-05 8:55:30,nan,nan,9,uqKx,December 14 2024,Edward Hynes Lakeview,3.5
 5,30.0,83.0,98.0,72.0,99.0,22.0,17.0,30.0,Eligible,nan,nan,nan,nan,2024-10-05 8:55:30,nan,nan,9,nan,December 14 2024,Edward Hynes Lakeview,3.5
 6,30.0,85.0,99.0,99.0,113.0,23.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 8:22:29,nan,nan,9,nan,November 16 2024,The Willow School,4.0
-7,30.0,79.0,99.0,99.0,110.0,20.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-29 9:31:09,nan,nan,9,nan,December 14 2024,Edward Hynes Lakeview,3.75
+7,30.0,79.0,99.0,99.0,110.0,20.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-29 9:31:09,nan,nan,9,nan,QPQq,Edward Hynes Lakeview,3.75
 8,nan,47.0,86.0,44.0,31.0,4.0,3.0,24.0,In Processing,5.0,1.0,16.0,22.0,2024-10-01 11:28:56,nan,nan,9,nan,March 22 2025 (No-rest option),International School of Louisiana,nan
 9,nan,67.0,95.0,60.0,53.0,14.0,11.0,28.0,In Processing,nan,nan,nan,nan,2024-10-12 21:11:31,nan,nan,9,nan,April 26 2025 (No-rest option),Edward Hynes Parkview,nan
 10,nan,68.0,62.0,50.0,33.0,15.0,6.0,12.0,In Processing,nan,nan,nan,nan,2024-10-17 18:31:11,nan,nan,9,nan,December 14 2024,Trinity Episcopal School,nan
-11,15.0,33.0,54.0,69.0,24.0,1.0,15.0,8.0,In Processing,9.0,20.0,6.0,35.0,2024-10-01 7:35:59,nan,nan,9,nan,February 15 2025 (No-rest option),Foundation Preparatory Charter School,2.0
+11,15.0,33.0,54.0,69.0,24.0,1.0,15.0,8.0,In Processing,9.0,20.0,6.0,35.0,2024-10-01 7:35:59,wfJi,nan,9,nan,February 15 2025 (No-rest option),Foundation Preparatory Charter School,2.0
 12,30.0,79.0,99.0,97.0,109.0,20.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 7:28:18,nan,nan,9,nan,November 16 2024,The Willow School,3.63
 13,30.0,76.0,85.0,97.0,101.0,19.0,29.0,23.0,Eligible,nan,nan,nan,nan,2024-10-02 17:09:05,nan,nan,9,nan,November 16 2024,Audubon Uptown Montessori and French,4.0
 14,30.0,95.0,90.0,99.0,114.0,28.0,30.0,26.0,nan,nan,nan,nan,nan,2024-09-23 20:16:35,nan,nan,8,nan,January 18 2025,Trinity Episcopal School,4.0
 15,30.0,93.0,99.0,99.0,117.0,27.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 9:33:21,nan,nan,9,nan,November 16 2024,Lake Forest Elementary Charter School,4.0
-16,30.0,99.0,99.0,99.0,120.0,30.0,30.0,uX84,Eligible,nan,nan,nan,nan,2024-10-24 20:25:53,nan,nan,9,nan,December 14 2024,The Willow School,4.0
-17,17.0,96.0,82.0,96.0,97.0,29.0,29.0,22.0,Eligible,nan,nan,nan,nan,2024-11-07 21:31:12,nan,nan,9,nan,January 18 2025,St. George's Episcopal School,2.25
+16,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-24 20:25:53,nan,nan,9,nan,December 14 2024,EdsW,4.0
+17,17.0,96.0,82.0,96.0,97.0,29.0,29.0,22.0,Eligible,nan,nan,croM,nan,yCuz,nan,nan,9,nan,January 18 2025,St. George's Episcopal School,2.25
 18,nan,70.0,61.0,76.0,46.0,16.0,19.0,11.0,In Processing,12.0,19.0,3.0,34.0,2024-10-01 10:16:26,nan,nan,9,nan,March 22 2025 (No-rest option),Arthur Ashe Charter School,nan
 19,30.0,82.0,99.0,76.0,101.0,22.0,19.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 2:32:31,nan,nan,9,nan,December 14 2024,Waldorf School of New Orleans,4.0
 20,nan,64.0,67.0,38.0,28.0,13.0,1.0,14.0,In Processing,nan,nan,nan,nan,2024-10-07 12:38:55,nan,nan,9,nan,December 14 2024,Trinity Episcopal School,nan
@@ -24,13 +24,13 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 23,30.0,76.0,83.0,83.0,93.0,19.0,22.0,22.0,Eligible,nan,nan,nan,nan,2024-10-11 19:46:50,nan,nan,9,nan,November 16 2024,International School of Louisiana,4.0
 24,30.0,82.0,80.0,96.0,102.0,22.0,29.0,21.0,Eligible,nan,nan,nan,nan,2024-10-11 9:03:00,nan,nan,9,nan,December 14 2024,Bricolage Academy,3.88
 25,nan,61.0,79.0,46.0,35.0,11.0,4.0,20.0,In Processing,1.0,2.0,7.0,10.0,2024-10-02 13:35:30,nan,nan,10,nan,February 15 2025 (No-rest option),St. Augustine High School,nan
-26,30.0,88.0,86.0,71.0,95.0,25.0,16.0,24.0,Eligible,nan,nan,nan,nan,2024-10-02 13:48:43,nan,nan,9,nan,November 16 2024,Mount Carmel Academy,3.66
+26,30.0,qK5R,86.0,71.0,95.0,25.0,16.0,24.0,Eligible,nan,nan,nan,nan,2024-10-02 13:48:43,nan,nan,9,nan,November 16 2024,Mount Carmel Academy,3.66
 27,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-01 19:04:33,nan,nan,10,nan,January 18 2025,Other,nan
 28,30.0,79.0,77.0,65.0,82.0,20.0,13.0,19.0,Eligible,19.0,18.0,21.0,88.0,2024-10-01 8:35:41,nan,nan,9,nan,March 22 2025 (No-rest option),St. Paul's Episcopal School,3.5
 29,30.0,86.0,99.0,96.0,113.0,24.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 8:28:25,nan,nan,9,nan,November 16 2024,Edward Hynes Lakeview,4.0
 30,30.0,83.0,98.0,96.0,111.0,22.0,29.0,30.0,Eligible,nan,nan,nan,nan,2025-04-09 20:06:47,nan,nan,9,nan,November 16 2024,Audubon Uptown Montessori and French,4.0
 31,30.0,88.0,94.0,85.0,106.0,25.0,23.0,28.0,Eligible,nan,nan,nan,nan,2024-11-05 14:44:47,nan,nan,9,nan,January 18 2025,St. George's Episcopal School,3.75
-32,30.0,76.0,99.0,99.0,109.0,19.0,30.0,C6a5,Eligible,nan,nan,nan,nan,2024-10-06 13:38:01,nan,nan,9,nan,January 18 2025,Lake Forest Elementary Charter School,3.88
+32,30.0,76.0,99.0,99.0,109.0,19.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-06 13:38:01,nan,nan,9,nan,January 18 2025,Lake Forest Elementary Charter School,3.88
 33,nan,54.0,43.0,45.0,13.0,8.0,3.0,2.0,In Processing,nan,nan,nan,nan,2024-10-28 9:35:56,nan,nan,9,nan,December 14 2024,International School of Louisiana,nan
 34,nan,52.0,13.0,30.0,9.0,7.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-28 9:38:12,nan,nan,9,Test Accommodations Approved,December 14 2024,International School of Louisiana,nan
 35,30.0,52.0,98.0,91.0,93.0,7.0,26.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 9:18:45,nan,nan,9,nan,December 14 2024,Edward Hynes Lakeview,3.75
@@ -42,7 +42,7 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 41,30.0,88.0,71.0,90.0,97.0,25.0,26.0,16.0,Eligible,nan,nan,nan,nan,2024-10-01 12:59:55,nan,nan,9,nan,January 18 2025,The Willow School,3.88
 42,29.0,96.0,74.0,66.0,90.0,29.0,14.0,18.0,Eligible,nan,nan,nan,nan,2025-04-09 20:18:24,nan,nan,9,nan,April 26 2025 (No-rest option),Lake Castle Private School,3.41
 43,23.0,76.0,99.0,98.0,102.0,19.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 6:54:29,nan,nan,9,nan,November 16 2024,Edward Hynes Lakeview,2.88
-44,25.0,80.0,96.0,99.0,110.0,21.0,30.0,Qg38,Eligible,nan,nan,nan,nan,2024-10-01 6:20:58,nan,nan,9,nan,December 14 2024,Bricolage Academy,3.0
+44,27.0,80.0,96.0,99.0,110.0,21.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 6:20:58,nan,nan,9,nan,December 14 2024,Bricolage Academy,3.2
 45,nan,35.0,81.0,54.0,30.0,1.0,8.0,21.0,In Processing,nan,nan,nan,nan,2024-10-23 14:55:48,nan,nan,9,nan,December 14 2024,Lycee Francais de la Nouvelle Orleans,nan
 46,30.0,75.0,99.0,83.0,100.0,18.0,22.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 9:22:39,nan,nan,9,nan,November 16 2024,Edward Hynes Lakeview,3.88
 47,30.0,92.0,96.0,89.0,111.0,27.0,25.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 0:20:26,nan,nan,9,nan,November 16 2024,Audubon Uptown Montessori and French,4.0
@@ -53,9 +53,9 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 52,nan,90.0,62.0,52.0,45.0,26.0,7.0,12.0,In Processing,nan,nan,nan,nan,2024-10-01 6:25:58,nan,nan,10,nan,December 14 2024,Other,nan
 53,30.0,87.0,99.0,96.0,113.0,24.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 6:29:16,nan,nan,9,nan,December 14 2024,The Willow School,4.0
 54,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-01 6:32:02,nan,nan,10,nan,April 26 2025 (No-rest option),St. Augustine High School,nan
-55,30.0,54.0,69.0,71.0,39.0,8.0,16.0,15.0,In Processing,15.0,15.0,12.0,42.0,2024-10-01 6:41:01,nan,nan,9,nan,March 22 2025 (No-rest option),Arthur Ashe Charter School,4.0
+55,15.0,54.0,69.0,71.0,39.0,8.0,16.0,15.0,In Processing,15.0,15.0,12.0,42.0,2024-10-01 6:41:01,nan,nan,9,nan,March 22 2025 (No-rest option),Arthur Ashe Charter School,2.0
 56,25.0,69.0,81.0,92.0,88.0,15.0,27.0,21.0,Eligible,nan,nan,nan,nan,2024-10-01 6:35:48,nan,nan,9,nan,November 16 2024,Edward Hynes Lakeview,3.0
-57,30.0,78.0,99.0,98.0,110.0,20.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 6:43:20,nan,nan,9,nan,November 16 2024,Audubon Uptown Montessori and French,3.75
+57,30.0,78.0,99.0,98.0,110.0,20.0,30.0,30.0,Eligible,nan,nan,w0RD,nan,2024-10-01 6:43:20,nan,nan,9,nan,November 16 2024,Audubon Uptown Montessori and French,3.75
 58,30.0,94.0,94.0,93.0,113.0,28.0,27.0,28.0,Eligible,nan,nan,nan,nan,2024-10-01 7:19:51,nan,nan,9,nan,November 16 2024,Other,4.0
 59,nan,44.0,56.0,44.0,15.0,3.0,3.0,9.0,In Processing,2.0,6.0,10.0,18.0,2024-10-01 7:20:50,nan,nan,9,nan,February 15 2025 (No-rest option),Foundation Preparatory Charter,nan
 60,22.0,94.0,95.0,68.0,93.0,28.0,15.0,28.0,Eligible,nan,nan,nan,nan,2024-10-01 8:10:54,nan,nan,9,nan,December 14 2024,Edward Hynes Lakeview,2.75
@@ -64,13 +64,13 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 63,30.0,94.0,99.0,97.0,117.0,28.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 8:33:37,nan,nan,9,nan,November 16 2024,Metairie Park Country Day,4.0
 64,30.0,96.0,89.0,86.0,108.0,29.0,24.0,25.0,Eligible,nan,nan,nan,nan,2024-10-01 8:36:59,nan,nan,9,nan,November 16 2024,St. Paul's Episcopal School,4.0
 65,30.0,88.0,97.0,96.0,113.0,25.0,29.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 8:39:22,nan,nan,9,nan,November 16 2024,Lake Forest Elementary Charter School,3.75
-66,30.0,94.0,95.0,99.0,116.0,28.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-01 8:38:11,nan,nan,9,nan,November 16 2024,Edward Hynes Lakeview,4.0
+66,ev1b,94.0,95.0,99.0,116.0,28.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-01 8:38:11,nan,nan,9,nan,November 16 2024,Edward Hynes Lakeview,3.0
 67,30.0,87.0,94.0,74.0,100.0,24.0,18.0,28.0,Eligible,nan,nan,nan,nan,2024-10-01 8:54:21,nan,nan,9,nan,December 14 2024,Bricolage Academy,4.0
 68,nan,63.0,63.0,57.0,33.0,12.0,9.0,12.0,In Processing,nan,nan,nan,nan,2024-10-01 8:59:43,nan,nan,9,nan,March 22 2025 (No-rest option),Edward Hynes Lakeview,nan
 69,30.0,90.0,98.0,77.0,105.0,26.0,19.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 13:57:58,nan,nan,9,nan,November 16 2024,International School of Louisiana,3.75
 70,30.0,97.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 9:19:24,nan,nan,9,nan,December 14 2024,The Willow School,4.0
 71,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 9:22:53,nan,nan,9,nan,December 14 2024,The Willow School,4.0
-72,nan,58.0,77.0,48.0,34.0,10.0,5.0,19.0,In Processing,nan,nan,nan,nan,2024-10-01 9:31:21,nan,nan,9,nan,April 26 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,nan
+72,nan,58.0,77.0,48.0,34.0,10.0,5.0,19.0,In Processing,nan,nan,nan,nan,2024-10-01 9:31:21,nan,nan,9,nan,April 26 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,gl6d
 73,nan,42.0,49.0,51.0,13.0,2.0,6.0,5.0,In Processing,nan,nan,nan,nan,2024-10-01 9:37:03,nan,nan,9,nan,December 14 2024,Lake Forest Elementary Charter School,nan
 74,nan,61.0,92.0,77.0,57.0,11.0,19.0,27.0,In Processing,8.0,15.0,26.0,49.0,2024-10-01 9:44:07,nan,nan,9,nan,February 15 2025 (No-rest option),International School of Louisiana,nan
 75,nan,79.0,78.0,82.0,62.0,20.0,22.0,20.0,In Processing,nan,nan,nan,nan,2024-10-01 9:49:47,nan,nan,11,nan,March 22 2025 (No-rest option),Other,nan
@@ -83,10 +83,10 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 82,30.0,95.0,96.0,95.0,115.0,28.0,28.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 11:11:01,nan,nan,9,nan,November 16 2024,Lake Forest Elementary Charter School,3.88
 83,27.0,89.0,79.0,85.0,95.0,25.0,23.0,20.0,Eligible,nan,nan,nan,nan,2024-10-01 11:12:09,nan,nan,9,nan,December 14 2024,Trinity Episcopal School,3.25
 84,30.0,94.0,97.0,94.0,115.0,28.0,28.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 11:19:22,nan,nan,11,nan,November 16 2024,Other,3.85
-85,nan,37.0,56.0,38.0,11.0,1.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-10-01 11:39:29,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Gentilly,nan
+85,nan,37.0,56.0,38.0,11.0,1.0,1.0,9.0,cYBI,nan,nan,nan,nan,2024-10-01 11:39:29,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Gentilly,nan
 86,21.0,81.0,99.0,99.0,102.0,21.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 11:45:04,nan,nan,9,nan,November 16 2024,Lake Castle Private School,2.63
 87,28.0,85.0,99.0,97.0,110.0,23.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 21:02:12,nan,nan,9,nan,December 14 2024,Edward Hynes Lakeview,3.38
-88,30.0,75.0,92.0,86.0,99.0,18.0,24.0,27.0,Eligible,nan,nan,nan,nan,2024-10-01 12:19:43,nan,nan,9,nan,November 16 2024,Trinity Episcopal School,3.75
+88,30.0,75.0,92.0,xsmV,99.0,18.0,24.0,27.0,Eligible,nan,nan,nan,nan,2024-10-01 12:19:43,nan,nan,9,nan,November 16 2024,Trinity Episcopal School,3.75
 89,nan,65.0,56.0,81.0,43.0,13.0,21.0,9.0,In Processing,6.0,18.0,1.0,25.0,2024-10-01 12:32:40,nan,nan,9,nan,March 22 2025 (No-rest option),Langston Hughes Academy,nan
 90,nan,61.0,93.0,82.0,60.0,11.0,22.0,27.0,In Processing,19.0,17.0,23.0,59.0,2024-10-01 12:44:29,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
 91,30.0,96.0,95.0,76.0,106.0,29.0,19.0,28.0,Eligible,nan,nan,nan,nan,2025-03-27 9:58:00,nan,nan,10,nan,November 16 2024,The Willow School,3.8
@@ -99,18 +99,18 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 98,nan,74.0,87.0,65.0,55.0,18.0,13.0,24.0,In Processing,13.0,9.0,23.0,45.0,2024-10-01 16:04:25,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
 99,26.0,68.0,89.0,95.0,94.0,15.0,28.0,25.0,Eligible,nan,nan,nan,nan,2024-10-01 15:57:17,nan,nan,9,nan,November 16 2024,Edward Hynes Lakeview,3.13
 100,30.0,76.0,96.0,99.0,108.0,19.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 15:59:33,nan,nan,9,nan,November 16 2024,Lake Forest Elementary Charter School,3.5
-101,nan,56.0,84.0,60.0,43.0,9.0,11.0,23.0,In Processing,7.0,6.0,22.0,35.0,2024-10-01 16:04:51,nan,nan,9,nan,March 22 2025 (No-rest option),Edward Hynes Lakeview,nan
-102,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-01 16:41:13,nan,nan,9,nan,nan,The Willow School,nan
+101,nan,56.0,84.0,60.0,43.0,9.0,11.0,23.0,In Processing,7.0,6.0,22.0,35.0,2024-10-01 16:04:51,nan,nan,9,0cwS,March 22 2025 (No-rest option),Edward Hynes Lakeview,nan
+102,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,hGUd,2024-10-01 16:41:13,nan,nan,9,nan,nan,The Willow School,nan
 103,nan,37.0,71.0,57.0,26.0,1.0,9.0,16.0,In Processing,nan,nan,nan,nan,2024-10-01 16:43:06,nan,nan,9,nan,March 22 2025 (No-rest option),Bricolage Academy,nan
 104,30.0,99.0,99.0,93.0,117.0,30.0,27.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 16:54:12,nan,nan,11,nan,November 16 2024,International School of Louisiana,nan
 105,30.0,89.0,99.0,99.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 17:13:34,nan,nan,9,nan,November 16 2024,Edward Hynes Lakeview,3.63
 106,nan,76.0,67.0,48.0,38.0,19.0,5.0,14.0,In Processing,nan,nan,nan,nan,2024-10-01 17:24:06,nan,nan,10,nan,December 14 2024,Other,nan
 107,nan,76.0,67.0,48.0,38.0,19.0,5.0,14.0,In Processing,nan,nan,nan,nan,2024-10-01 17:24:06,nan,nan,10,nan,December 14 2024,Other,nan
 108,30.0,87.0,99.0,97.0,113.0,24.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 18:01:53,nan,nan,9,nan,December 14 2024,Audubon Uptown Montessori and French,4.0
-109,30.0,85.0,94.0,83.0,103.0,23.0,22.0,28.0,Eligible,nan,nan,nan,nan,2024-10-01 21:01:54,nan,nan,9,nan,November 16 2024,Ecole Bilingue,4.0
+XTNI,30.0,85.0,94.0,83.0,103.0,23.0,22.0,28.0,Eligible,nan,nan,nan,nan,2024-10-01 21:01:54,nan,nan,9,nan,November 16 2024,Ecole Bilingue,4.0
 110,nan,85.0,90.0,98.0,79.0,23.0,30.0,26.0,In Processing,nan,nan,nan,nan,2024-10-01 18:13:28,nan,nan,10,nan,November 16 2024,Other,nan
 111,30.0,70.0,73.0,93.0,88.0,16.0,27.0,17.0,Eligible,nan,nan,nan,nan,2024-10-01 18:27:32,nan,nan,9,nan,December 14 2024,Lake Castle Private School,3.6
-112,nan,93.0,97.0,48.0,61.0,27.0,5.0,29.0,In Processing,nan,nan,nan,nan,2024-10-01 19:08:52,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
+112,nan,93.0,97.0,48.0,61.0,27.0,5.0,29.0,In Processing,nan,nan,nan,nan,2024-10-01 19:08:52,nan,nan,10,nan,tPbt,Other,nan
 113,nan,44.0,57.0,10.0,13.0,3.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-10-01 19:23:56,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
 114,30.0,98.0,96.0,86.0,113.0,30.0,24.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 20:19:29,nan,nan,9,nan,November 16 2024,Audubon Uptown Montessori and French,4.0
 115,30.0,89.0,99.0,97.0,114.0,25.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-01 20:30:40,nan,nan,9,nan,November 16 2024,Audubon Uptown Montessori and French,4.0
@@ -121,20 +121,20 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 120,27.0,61.0,86.0,96.0,91.0,11.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-01 21:18:47,nan,nan,9,nan,November 16 2024,Audubon Uptown Montessori and French,3.25
 121,30.0,80.0,80.0,98.0,102.0,21.0,30.0,21.0,Eligible,nan,nan,nan,nan,2024-10-01 21:21:29,nan,nan,9,nan,November 16 2024,Lake Forest Elementary Charter School,3.88
 122,nan,27.0,44.0,88.0,29.0,1.0,25.0,3.0,In Processing,1.0,21.0,1.0,23.0,2024-10-03 22:06:30,nan,nan,9,nan,March 22 2025 (No-rest option),Phillis Wheatley Community School,nan
-123,30.0,93.0,97.0,85.0,109.0,27.0,23.0,LzIm,Eligible,nan,nan,nan,nan,2024-10-01 21:40:46,nan,nan,9,nan,December 14 2024,Renew Dolores T. Aaron Academy,4.0
-124,nan,17.0,10.0,24.0,3.0,1.0,1.0,1.0,In Processing,1.0,1.0,1.0,3.0,2024-10-01 22:08:28,nan,nan,9,nan,March 22 2025 (No-rest option),Phillis Wheatley Community School,nan
+123,30.0,93.0,97.0,85.0,109.0,27.0,23.0,29.0,Eligible,nan,nan,nan,nan,2024-10-01 21:40:46,nan,nan,9,nan,December 14 2024,Renew Dolores T. Aaron Academy,4.0
+124,nan,17.0,10.0,24.0,3.0,1.0,1.0,1.0,In Processing,1.0,1.0,1.0,3.0,2024-10-01 22:08:28,nan,xxx0,9,nan,March 22 2025 (No-rest option),Phillis Wheatley Community School,nan
 125,30.0,94.0,92.0,99.0,115.0,28.0,30.0,27.0,Eligible,nan,nan,nan,nan,2024-10-01 23:39:50,nan,nan,9,nan,November 16 2024,Edward Hynes Lakeview,3.88
 126,nan,8.0,16.0,44.0,4.0,1.0,2.0,1.0,In Processing,nan,nan,nan,nan,2024-10-01 23:46:55,nan,nan,9,nan,November 16 2024,Homer Plessy Community School,nan
 127,30.0,80.0,98.0,83.0,103.0,21.0,22.0,30.0,Eligible,nan,nan,nan,nan,2024-10-02 0:54:42,nan,nan,9,nan,November 16 2024,Audubon Uptown Montessori and French,4.0
 128,23.0,68.0,95.0,60.0,77.0,15.0,11.0,28.0,In Processing,17.0,20.0,22.0,82.0,2024-10-02 3:03:14,nan,nan,9,nan,February 15 2025 (No-rest option),St. Andrew's Episcopal School,2.88
 129,nan,77.0,90.0,96.0,74.0,19.0,29.0,26.0,In Processing,nan,nan,nan,nan,2024-10-02 4:41:12,nan,nan,9,nan,November 16 2024,Other,nan
-130,nan,89.0,bhqw,95.0,77.0,25.0,28.0,24.0,In Processing,nan,nan,nan,nan,2024-10-02 6:57:03,nan,nan,11,nan,November 16 2024,Other,nan
+130,nan,89.0,87.0,95.0,77.0,25.0,28.0,24.0,In Processing,nan,nan,nan,nan,2024-10-02 6:57:03,nan,nan,11,nan,November 16 2024,Other,nan
 131,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-02 7:00:08,nan,nan,9,nan,November 16 2024,Audubon Uptown Montessori and French,4.0
 132,30.0,89.0,99.0,99.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-02 7:08:53,nan,nan,9,nan,November 16 2024,Bricolage Academy,3.75
 133,30.0,80.0,99.0,86.0,105.0,21.0,24.0,30.0,Eligible,nan,nan,nan,nan,2024-10-02 7:52:44,nan,nan,9,nan,November 16 2024,Bricolage Academy,4.0
 134,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-18 13:09:06,nan,nan,9,nan,November 16 2024,The Willow School,4.0
 135,nan,61.0,88.0,73.0,53.0,11.0,17.0,25.0,In Processing,6.0,20.0,25.0,51.0,2024-10-02 9:57:13,nan,nan,9,nan,February 15 2025 (No-rest option),Edward Hynes Lakeview,nan
-136,28.0,80.0,81.0,30.0,100.0,21.0,30.0,21.0,Eligible,nan,nan,nan,nan,2024-10-02 9:59:11,nan,nan,9,nan,FgAU,Arthur Ashe Charter School,3.38
+136,28.0,80.0,81.0,30.0,100.0,21.0,30.0,21.0,Eligible,nan,nan,nan,nan,2024-10-02 9:59:11,nan,nan,9,nan,November 16 2024,Arthur Ashe Charter School,3.38
 137,nan,65.0,88.0,38.0,39.0,13.0,1.0,25.0,In Processing,1.0,1.0,1.0,3.0,2024-10-02 10:00:32,nan,nan,9,nan,March 22 2025 (No-rest option),Edward Hynes Parkview,nan
 138,30.0,80.0,80.0,99.0,102.0,21.0,30.0,21.0,Eligible,nan,nan,nan,nan,2024-10-02 11:04:34,nan,nan,9,nan,November 16 2024,Edward Hynes Parkview,4.0
 139,nan,52.0,57.0,78.0,36.0,7.0,20.0,9.0,In Processing,nan,nan,nan,nan,2024-10-02 11:09:37,nan,nan,9,Test Accommodations Approved,December 14 2024,Ecole Bilingue,nan
@@ -142,10 +142,10 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 141,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-02 12:00:38,nan,nan,9,nan,nan,Metairie Park Country Day,nan
 142,30.0,61.0,89.0,86.0,90.0,11.0,24.0,25.0,Eligible,nan,nan,nan,nan,2024-10-02 13:11:47,nan,nan,9,nan,December 14 2024,Lake Forest Elementary Charter School,3.63
 143,30.0,74.0,86.0,83.0,94.0,18.0,22.0,24.0,Eligible,nan,nan,nan,nan,2024-10-02 12:37:34,nan,nan,9,nan,November 16 2024,Ecole Bilingue,4.0
-144,nan,44.0,56.0,16.0,13.0,3.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-10-02 14:50:42,nan,nan,9,nan,uHTx,Lycee Francais de la Nouvelle Orleans,nan
-145,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,hCsN,nan,2024-10-02 14:54:52,nan,nan,11,nan,January 18 2025,Other,nan
+144,nan,44.0,56.0,16.0,13.0,3.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-10-02 14:50:42,nan,nan,9,nan,April 26 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,nan
+145,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-02 14:54:52,nan,nan,11,nan,January 18 2025,Other,nan
 146,30.0,89.0,99.0,99.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-02 14:59:18,nan,nan,9,nan,December 14 2024,Louise McGehee,4.0
-147,nan,29.0,73.0,62.0,30.0,FjMS,12.0,17.0,In Processing,nan,nan,nan,nan,2024-10-02 15:17:55,nan,nan,9,nan,December 14 2024,Alice Harte Charter School,nan
+147,nan,29.0,73.0,62.0,30.0,1.0,12.0,17.0,In Processing,nan,nan,nan,nan,2024-10-02 15:17:55,nan,nan,9,nan,December 14 2024,Alice Harte Charter School,nan
 148,nan,53.0,69.0,64.0,35.0,7.0,13.0,15.0,In Processing,nan,nan,nan,nan,2024-10-02 15:48:22,nan,nan,9,nan,April 26 2025 (No-rest option),International School of Louisiana,nan
 149,22.0,81.0,92.0,97.0,99.0,21.0,29.0,27.0,Eligible,nan,nan,nan,nan,2024-10-02 17:39:37,nan,nan,9,nan,November 16 2024,The Willow School,2.75
 150,30.0,92.0,88.0,70.0,98.0,27.0,16.0,25.0,Eligible,nan,nan,nan,nan,2024-10-02 17:56:52,nan,nan,10,nan,January 18 2025,Other,4.0
@@ -154,7 +154,7 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 153,nan,53.0,92.0,45.0,37.0,7.0,3.0,27.0,In Processing,21.0,12.0,16.0,49.0,2024-10-02 19:53:32,nan,nan,9,nan,March 22 2025 (No-rest option),Audubon Uptown Montessori and French,nan
 154,30.0,99.0,92.0,99.0,117.0,30.0,30.0,27.0,Eligible,nan,nan,nan,nan,2024-10-02 20:20:43,nan,nan,9,nan,November 16 2024,Lake Castle Private School,3.88
 155,30.0,76.0,96.0,83.0,100.0,19.0,22.0,29.0,Eligible,nan,nan,nan,nan,2024-10-02 23:27:33,nan,nan,9,nan,November 16 2024,Mary McLeod Bethune Elementary,3.75
-156,nan,70.0,dvuZ,63.0,55.0,16.0,12.0,27.0,In Processing,18.0,7.0,29.0,54.0,2024-10-03 7:05:38,nan,nan,9,nan,February 15 2025 (No-rest option),Morris Jeff Community School,nan
+156,nan,70.0,92.0,63.0,55.0,16.0,12.0,27.0,In Processing,18.0,7.0,29.0,54.0,2024-10-03 7:05:38,nan,nan,9,nan,February 15 2025 (No-rest option),Morris Jeff Community School,nan
 157,30.0,95.0,99.0,99.0,118.0,28.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 8:53:00,nan,nan,9,nan,November 16 2024,Lake Forest Elementary Charter School,3.63
 158,nan,32.0,69.0,53.0,23.0,1.0,7.0,15.0,In Processing,nan,nan,nan,nan,2024-10-03 9:04:16,nan,nan,9,nan,March 22 2025 (No-rest option),Edward Hynes Lakeview,nan
 159,nan,37.0,55.0,57.0,18.0,1.0,9.0,8.0,In Processing,14.0,4.0,15.0,33.0,2024-10-03 9:41:23,nan,nan,9,nan,March 22 2025 (No-rest option),International School of Louisiana,nan
@@ -166,13 +166,13 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 165,nan,60.0,56.0,90.0,46.0,11.0,26.0,9.0,In Processing,10.0,30.0,15.0,55.0,2024-10-03 15:01:30,nan,nan,9,nan,March 22 2025 (No-rest option),Lake Forest Elementary Charter School,nan
 166,30.0,79.0,99.0,94.0,108.0,20.0,28.0,30.0,Eligible,nan,nan,nan,nan,2024-11-21 15:20:47,nan,nan,9,nan,December 14 2024,Bricolage Academy,3.88
 167,30.0,93.0,98.0,91.0,113.0,27.0,26.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 17:20:49,nan,nan,9,nan,December 14 2024,Audubon Uptown Montessori and French,3.75
-168,nan,64.0,89.0,75.0,56.0,13.0,18.0,25.0,In Processing,nan,nan,nan,nan,2024-10-03 18:07:04,nan,nan,9,nan,November 16 2024,Ecole Bilingue,nan
+168,nan,64.0,89.0,75.0,56.0,13.0,18.0,25.0,In Processing,nan,nan,nan,nan,2024-10-03 18:07:04,nan,nan,9,nan,November 16 2024,9f4B,nan
 169,30.0,98.0,88.0,99.0,115.0,30.0,30.0,25.0,Eligible,nan,nan,nan,nan,2024-10-03 18:10:29,nan,nan,9,nan,November 16 2024,Lake Castle Private School,3.75
 170,30.0,86.0,99.0,99.0,114.0,24.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 18:32:16,nan,nan,9,nan,November 16 2024,The Willow School,3.88
-171,Ck5B,55.0,73.0,97.0,54.0,8.0,29.0,17.0,In Processing,nan,nan,nan,nan,2024-10-03 18:20:31,nan,nan,9,nan,April 26 2025 (No-rest option),Ecole Bilingue,nan
+171,nan,55.0,73.0,97.0,54.0,8.0,29.0,17.0,In Processing,nan,nan,nan,nan,2024-10-03 18:20:31,nan,nan,9,nan,April 26 2025 (No-rest option),Ecole Bilingue,nan
 172,nan,70.0,74.0,71.0,50.0,16.0,16.0,18.0,In Processing,19.0,7.0,15.0,41.0,2024-10-03 19:18:55,nan,nan,9,nan,February 15 2025 (No-rest option),Lake Forest Elementary Charter School,nan
 173,30.0,88.0,95.0,90.0,109.0,25.0,26.0,28.0,Eligible,nan,nan,nan,nan,2024-10-03 19:41:11,nan,nan,9,nan,December 14 2024,Bricolage Academy,3.88
-174,nan,mEAu,38.0,70.0,18.0,1.0,16.0,1.0,In Processing,nan,nan,nan,nan,2024-10-03 20:42:41,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
+174,nan,32.0,38.0,70.0,18.0,1.0,16.0,1.0,In Processing,nan,nan,nan,nan,2024-10-03 20:42:41,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 175,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-03 21:11:19,nan,nan,9,nan,November 16 2024,Lake Castle Private School,4.0
 176,nan,22.0,84.0,75.0,46.0,1.0,22.0,23.0,In Processing,15.0,21.0,15.0,51.0,2024-10-04 14:27:16,nan,nan,9,nan,March 22 2025 (No-rest option),Morris Jeff Community School,nan
 177,30.0,77.0,88.0,86.0,98.0,19.0,24.0,25.0,Eligible,nan,nan,nan,nan,2024-10-03 21:49:48,nan,nan,9,nan,December 14 2024,Alice Harte Charter School,3.5
@@ -181,19 +181,19 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 180,30.0,92.0,96.0,76.0,105.0,27.0,19.0,29.0,Eligible,nan,nan,nan,nan,2024-10-04 2:52:13,nan,nan,9,nan,December 14 2024,Trinity Episcopal School,3.75
 181,nan,79.0,79.0,72.0,57.0,20.0,17.0,20.0,In Processing,nan,nan,nan,nan,2024-10-04 9:25:17,nan,nan,9,nan,January 18 2025,Elan Academy,nan
 182,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-04 10:48:45,nan,nan,11,nan,nan,Other,nan
-183,30.0,89.0,99.0,93.0,112.0,25.0,27.0,30.0,rKY1,nan,nan,nan,nan,2024-10-04 12:27:20,nan,nan,9,nan,December 14 2024,Audubon Uptown Montessori and French,4.0
-184,27.0,86.0,97.0,82.0,102.0,24.0,22.0,29.0,Eligible,nan,nan,nan,nan,2024-10-04 17:14:24,tmoq,nan,9,nan,January 18 2025,Lake Forest Elementary Charter School,3.25
+183,30.0,89.0,99.0,93.0,112.0,25.0,27.0,30.0,Eligible,nan,nan,nan,nan,2024-10-04 12:27:20,nan,nan,9,nan,December 14 2024,Audubon Uptown Montessori and French,4.0
+184,27.0,86.0,97.0,82.0,102.0,24.0,22.0,29.0,Eligible,nan,nan,nan,nan,2024-10-04 17:14:24,nan,nan,9,nan,January 18 2025,Lake Forest Elementary Charter School,3.25
 185,25.0,74.0,98.0,85.0,96.0,18.0,23.0,30.0,Eligible,nan,nan,nan,nan,2024-10-08 20:45:35,nan,nan,9,nan,December 14 2024,St. Paul's Episcopal School,3.0
 186,30.0,97.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-04 19:25:21,nan,nan,9,nan,November 16 2024,Edward Hynes Lakeview,3.75
 187,30.0,96.0,85.0,82.0,104.0,29.0,22.0,23.0,Eligible,nan,nan,nan,nan,2024-10-04 20:46:05,nan,nan,10,nan,November 16 2024,The Willow School,3.8
-188,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-04 22:02:32,nan,nan,9,nan,November 16 2024,Lake Forest Elementary Charter School,4.0
+188,30.0,UUgb,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-04 22:02:32,nan,nan,9,nan,November 16 2024,Lake Forest Elementary Charter School,4.0
 189,18.0,84.0,83.0,78.0,83.0,23.0,20.0,22.0,In Processing,26.0,19.0,16.0,79.0,2024-10-05 3:17:14,nan,nan,9,nan,March 22 2025 (No-rest option),Lake Castle Private School,2.38
-190,30.0,94.0,99.0,88.0,113.0,28.0,25.0,30.0,Eligible,nan,nan,nan,nan,2024-10-06 19:51:52,nan,nan,9,nan,November 16 2024,Bricolage Academy,4.0
+lTHe,30.0,94.0,99.0,88.0,113.0,28.0,25.0,30.0,Eligible,nan,nan,nan,nan,2024-10-06 19:51:52,nan,nan,9,nan,November 16 2024,Bricolage Academy,4.0
 191,27.0,63.0,99.0,69.0,84.0,12.0,15.0,30.0,Eligible,18.0,17.0,27.0,89.0,2024-10-05 8:45:44,nan,nan,9,nan,March 22 2025 (No-rest option),Audubon Gentilly,3.25
 192,30.0,82.0,95.0,90.0,106.0,22.0,26.0,28.0,Eligible,nan,nan,nan,nan,2024-10-05 10:05:31,nan,nan,9,nan,January 18 2025,International School of Louisiana,4.0
 193,30.0,53.0,75.0,97.0,84.0,7.0,29.0,18.0,Eligible,20.0,24.0,14.0,88.0,2025-04-02 7:49:30,nan,nan,9,nan,March 22 2025 (No-rest option),St. George's Episcopal School,3.5
 194,30.0,95.0,95.0,86.0,110.0,28.0,24.0,28.0,Eligible,nan,nan,nan,nan,2024-10-11 11:39:21,nan,nan,9,nan,November 16 2024,Audubon Uptown Montessori and French,4.0
-195,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-05 11:53:51,nan,nan,9,nan,December 14 2024,Edward Hynes Lakeview,nan
+195,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,6saL,nan,nan,9,nan,December 14 2024,Edward Hynes Lakeview,nan
 196,30.0,75.0,95.0,99.0,106.0,18.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-05 12:10:33,nan,nan,9,nan,January 18 2025,Bricolage Academy,3.88
 197,30.0,98.0,96.0,93.0,116.0,30.0,27.0,29.0,Eligible,nan,nan,nan,nan,2024-10-05 12:37:26,nan,nan,11,nan,January 18 2025,Metairie Park Country Day,3.77
 198,30.0,82.0,98.0,81.0,103.0,22.0,21.0,30.0,Eligible,nan,nan,nan,nan,2024-10-05 14:50:42,nan,nan,9,nan,November 16 2024,Audubon Gentilly,3.75
@@ -204,15 +204,15 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 203,30.0,89.0,99.0,99.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-06 9:02:20,nan,nan,9,nan,November 16 2024,Bricolage Academy,3.88
 204,27.0,84.0,92.0,90.0,103.0,23.0,26.0,27.0,Eligible,nan,nan,nan,nan,2024-10-06 12:09:57,nan,nan,9,nan,January 18 2025,Audubon Gentilly,3.25
 205,nan,31.0,77.0,88.0,45.0,1.0,25.0,19.0,In Processing,nan,nan,nan,nan,2024-10-06 12:42:06,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
-206,h6rg,nan,nan,nan,25.0,nan,nan,nan,In Processing,17.0,15.0,27.0,84.0,2024-10-06 12:58:28,nan,nan,9,nan,nan,International School of Louisiana,3.0
+206,25.0,nan,nan,nan,25.0,nan,nan,nan,In Processing,17.0,15.0,27.0,84.0,2024-10-06 12:58:28,nan,nan,9,nan,nan,International School of Louisiana,3.0
 207,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,In Processing,nan,nan,nan,nan,2024-10-06 14:30:45,nan,nan,9,nan,January 18 2025,Other,4.0
 208,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-06 14:30:45,nan,nan,9,nan,January 18 2025,Other,4.0
 209,30.0,92.0,97.0,98.0,116.0,27.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-06 16:28:11,nan,nan,9,nan,December 14 2024,Morris Jeff Community School,4.0
 210,30.0,91.0,99.0,93.0,113.0,26.0,27.0,30.0,Eligible,nan,nan,nan,nan,2024-10-06 17:00:45,nan,nan,9,nan,November 16 2024,Lycee Francais de la Nouvelle Orleans,4.0
-211,nan,86.0,69.0,28.0,40.0,24.0,1.0,15.0,In Processing,25.0,HA7q,7.0,41.0,2024-10-06 17:45:12,nan,nan,9,nan,February 15 2025 (No-rest option),Other,nan
+211,nan,86.0,69.0,28.0,40.0,24.0,1.0,15.0,In Processing,25.0,9.0,7.0,41.0,2024-10-06 17:45:12,nan,nan,9,nan,February 15 2025 (No-rest option),Other,nan
 212,30.0,78.0,94.0,79.0,98.0,20.0,20.0,28.0,Eligible,nan,nan,nan,nan,2024-10-06 19:16:27,nan,nan,9,nan,November 16 2024,Ecole Bilingue,4.0
 213,30.0,72.0,84.0,99.0,100.0,17.0,30.0,23.0,Eligible,nan,nan,nan,nan,2024-10-06 20:14:51,nan,nan,9,nan,November 16 2024,Lake Forest Elementary Charter School,4.0
-214,nan,43.0,anZM,51.0,32.0,2.0,6.0,24.0,In Processing,4.0,15.0,22.0,41.0,2024-10-06 20:27:30,nan,nan,9,nan,February 15 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,nan
+214,nan,43.0,86.0,51.0,32.0,2.0,6.0,24.0,In Processing,4.0,15.0,22.0,41.0,2024-10-06 20:27:30,nan,nan,9,nan,February 15 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,nan
 215,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-06 20:50:44,nan,nan,9,nan,January 18 2025,Mary McLeod Bethune Elementary,nan
 216,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-06 21:34:26,nan,nan,9,nan,January 18 2025,KIPP East,nan
 217,30.0,79.0,85.0,99.0,103.0,20.0,30.0,23.0,Eligible,nan,nan,nan,nan,2024-10-06 21:39:45,nan,nan,9,nan,November 16 2024,Lake Forest Elementary Charter School,3.88
@@ -220,14 +220,14 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 219,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-08 12:16:22,nan,nan,9,Test Accommodations Approved,January 18 2025,Other,4.0
 220,nan,52.0,56.0,51.0,22.0,7.0,6.0,9.0,In Processing,nan,nan,nan,nan,2024-10-07 4:14:00,nan,nan,9,nan,April 26 2025 (No-rest option),Edward Hynes Parkview,nan
 221,30.0,97.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-07 7:47:08,nan,nan,10,nan,December 14 2024,Other,4.0
-222,28.0,91.0,99.0,99.0,114.0,26.0,30.0,30.0,Eligible,nan,nan,4BZ8,nan,2024-10-07 8:24:14,nan,nan,9,nan,November 16 2024,Edward Hynes Lakeview,3.38
+222,28.0,91.0,99.0,99.0,114.0,26.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-07 8:24:14,nan,nan,9,nan,November 16 2024,Edward Hynes Lakeview,3.38
 223,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-07 8:58:36,nan,nan,9,nan,March 22 2025 (No-rest option),The Willow School,nan
 224,30.0,67.0,88.0,91.0,95.0,14.0,26.0,25.0,Eligible,nan,nan,nan,nan,2024-10-07 9:53:53,nan,nan,9,nan,December 14 2024,Audubon Uptown Montessori and French,4.0
-225,28.0,99.0,96.0,88.0,112.0,30.0,25.0,29.0,Eligible,nan,l71z,nan,nan,2024-10-07 9:51:25,nan,nan,9,nan,December 14 2024,Lake Castle Private School,3.38
+225,28.0,99.0,96.0,88.0,112.0,30.0,25.0,29.0,Eligible,nan,nan,nan,nan,2024-10-07 9:51:25,nan,nan,9,nan,December 14 2024,Lake Castle Private School,3.38
 226,nan,64.0,48.0,64.0,31.0,13.0,13.0,5.0,In Processing,nan,nan,nan,nan,2024-10-07 10:45:57,nan,nan,9,nan,April 26 2025 (No-rest option),Edward Hynes Lakeview,nan
 227,30.0,94.0,99.0,88.0,113.0,28.0,25.0,30.0,Eligible,nan,nan,nan,nan,2024-10-07 12:13:45,nan,nan,9,nan,December 14 2024,Ecole Bilingue,4.0
 228,30.0,89.0,99.0,99.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-07 12:41:13,nan,nan,9,nan,November 16 2024,Metairie Park Country Day,3.75
-229,30.0,93.0,99.0,63.0,99.0,27.0,12.0,30.0,Eligible,nan,nan,nan,nan,2024-10-07 13:26:29,nan,nan,9,nan,November 16 2024,Trinity Episcopal School,4.0
+229,30.0,93.0,99.0,63.0,pu1K,27.0,12.0,30.0,Eligible,nan,nan,nan,nan,2024-10-07 13:26:29,nan,nan,9,nan,November 16 2024,Trinity Episcopal School,4.0
 230,nan,61.0,84.0,57.0,43.0,11.0,9.0,23.0,In Processing,nan,nan,nan,nan,2024-10-07 15:06:06,nan,nan,9,nan,April 26 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,nan
 231,30.0,89.0,99.0,98.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-07 15:15:32,nan,nan,9,nan,November 16 2024,Bricolage Academy,4.0
 232,27.0,99.0,95.0,99.0,115.0,30.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-07 17:32:44,nan,nan,9,nan,November 16 2024,Lake Castle Private School,3.25
@@ -243,18 +243,18 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 242,nan,47.0,73.0,73.0,38.0,4.0,17.0,17.0,In Processing,nan,nan,nan,nan,2024-10-08 9:30:42,nan,nan,9,nan,April 26 2025 (No-rest option),Lake Forest Elementary Charter School,nan
 243,30.0,82.0,98.0,99.0,112.0,22.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-08 10:17:37,nan,nan,9,nan,November 16 2024,Edward Hynes Lakeview,4.0
 244,nan,53.0,65.0,95.0,48.0,7.0,28.0,13.0,In Processing,nan,nan,nan,nan,2024-10-08 10:27:45,nan,nan,9,nan,November 16 2024,Lake Forest Elementary Charter School,nan
-245,nan,82.0,99.0,8HcK,55.0,22.0,3.0,30.0,In Processing,emta,nan,nan,nan,2024-10-08 11:58:11,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,nan
+245,nan,82.0,99.0,45.0,55.0,22.0,3.0,30.0,In Processing,nan,nan,nan,nan,2024-10-08 11:58:11,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,nan
 246,nan,54.0,69.0,63.0,35.0,8.0,12.0,15.0,In Processing,nan,nan,nan,nan,2024-10-08 13:05:47,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
 247,nan,65.0,73.0,70.0,46.0,13.0,16.0,17.0,In Processing,nan,nan,nan,nan,2024-10-08 13:37:54,nan,nan,9,nan,April 26 2025 (No-rest option),Ecole Bilingue,nan
 248,nan,64.0,77.0,65.0,45.0,13.0,13.0,19.0,In Processing,13.0,10.0,8.0,31.0,2024-10-08 16:59:29,nan,nan,9,nan,March 22 2025 (No-rest option),Lake Castle Private School,nan
 249,nan,9.0,67.0,13.0,16.0,1.0,1.0,14.0,In Processing,nan,nan,nan,nan,2024-10-08 17:39:08,nan,nan,9,nan,December 14 2024,Audubon Gentilly,nan
 250,30.0,97.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-08 19:57:09,nan,nan,9,nan,November 16 2024,Edward Hynes Lakeview,4.0
-251,nan,95.0,88.0,59.0,63.0,28.0,10.0,25.0,In Processing,nan,nan,nan,nan,2024-10-08 17:57:58,nan,nan,10,nan,April 26 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,nan
+251,nan,95.0,88.0,59.0,63.0,28.0,10.0,25.0,In Processing,nan,nan,XVk0,nan,2024-10-08 17:57:58,nan,nan,10,nan,April 26 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,nan
 252,nan,63.0,43.0,60.0,25.0,12.0,11.0,2.0,In Processing,nan,nan,nan,nan,2024-10-08 18:13:30,nan,nan,9,nan,April 26 2025 (No-rest option),Lake Castle Private School,nan
 253,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-08 18:31:34,nan,nan,9,nan,nan,Other,nan
 254,30.0,96.0,97.0,99.0,118.0,29.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-08 19:01:58,nan,nan,9,nan,November 16 2024,Audubon Uptown Montessori and French,4.0
 255,30.0,69.0,89.0,86.0,94.0,15.0,24.0,25.0,Eligible,nan,nan,nan,nan,2024-10-08 20:17:32,nan,nan,9,nan,November 16 2024,Audubon Uptown Montessori and French,3.5
-256,nan,56.0,70.0,71.0,41.0,9.0,16.0,16.0,In Processing,12.0,7.0,10.0,29.0,2024-10-09 20:55:56,nan,nan,9,nan,xBoo,Belle Chasse Academy,nan
+256,nan,56.0,70.0,71.0,41.0,9.0,16.0,16.0,In Processing,12.0,7.0,10.0,29.0,2024-10-09 20:55:56,nan,nan,9,nan,March 22 2025 (No-rest option),Belle Chasse Academy,nan
 257,nan,51.0,65.0,43.0,21.0,6.0,2.0,13.0,In Processing,nan,nan,nan,nan,2024-10-09 9:45:04,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,nan
 258,30.0,75.0,98.0,71.0,94.0,18.0,16.0,30.0,Eligible,nan,nan,nan,nan,2024-10-09 15:25:13,nan,nan,9,nan,November 16 2024,Trinity Episcopal School,4.0
 259,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-09 17:12:54,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
@@ -265,7 +265,7 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 264,30.0,91.0,99.0,99.0,116.0,26.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-09 23:40:35,nan,nan,9,nan,December 14 2024,Lycee Francais de la Nouvelle Orleans,4.0
 265,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-10 2:07:52,nan,nan,9,nan,nan,Other,nan
 266,nan,28.0,48.0,28.0,7.0,1.0,1.0,5.0,In Processing,nan,nan,nan,nan,2024-10-10 6:01:33,nan,nan,9,nan,November 16 2024,Morris Jeff Community School,nan
-267,nan,58.0,56.0,65.0,32.0,10.0,13.0,9.0,In Processing,nan,nan,nan,nan,2024-10-10 7:44:19,9BtN,nan,9,nan,tQ7J,Benjamin Franklin Elementary,nan
+267,nan,58.0,56.0,65.0,32.0,10.0,13.0,9.0,In Processing,nan,nan,nan,nan,2024-10-10 7:44:19,nan,nan,9,nan,April 26 2025 (No-rest option),Benjamin Franklin Elementary,nan
 268,nan,83.0,92.0,69.0,64.0,22.0,15.0,27.0,In Processing,nan,nan,nan,nan,2024-10-10 9:13:35,nan,nan,10,nan,November 16 2024,Other,nan
 269,30.0,88.0,99.0,93.0,112.0,25.0,27.0,30.0,In Processing,nan,nan,nan,nan,2024-10-10 9:16:47,nan,nan,11,nan,November 16 2024,Other,3.83
 270,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-10 9:37:11,nan,nan,10,nan,January 18 2025,Other,nan
@@ -273,17 +273,17 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 272,30.0,95.0,97.0,99.0,117.0,28.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-10 11:00:08,nan,nan,9,nan,December 14 2024,Edward Hynes Lakeview,3.88
 273,30.0,98.0,99.0,98.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2025-01-30 14:39:29,nan,nan,9,nan,December 14 2024,Louise McGehee,4.0
 274,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-10 11:41:01,nan,nan,9,nan,November 16 2024,Lake Castle Private School,4.0
-275,nan,nan,yHgI,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-10 17:26:54,nan,nan,9,nan,nan,Bricolage Academy,nan
-276,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-10 18:00:47,nan,nan,9,nan,nan,Other,nan
+275,nan,nan,nan,nan,nan,o34z,nan,nan,In Processing,nan,nan,nan,nan,2024-10-10 17:26:54,nan,nan,9,nan,nan,Bricolage Academy,nan
+276,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,ILKC,nan,2024-10-10 18:00:47,nan,nan,9,nan,nan,Other,nan
 277,nan,87.0,67.0,88.0,63.0,24.0,25.0,14.0,In Processing,nan,nan,nan,0.0,2024-10-10 18:07:32,nan,nan,9,nan,April 26 2025 (No-rest option),Lake Forest Elementary Charter School,2.88
-278,nan,26.0,32.0,19.0,3.0,1.0,1.0,1.0,In Processing,1.0,4.0,1.0,6.0,2024-10-10 18:22:21,nan,nan,9,nan,March 22 2025 (No-rest option),Other,nan
+278,nan,26.0,32.0,19.0,3.0,1.0,1.0,64jU,In Processing,1.0,4.0,1.0,6.0,2024-10-10 18:22:21,nan,nan,9,nan,March 22 2025 (No-rest option),Other,nan
 279,nan,27.0,86.0,63.0,37.0,1.0,12.0,24.0,In Processing,9.0,6.0,18.0,33.0,2024-10-10 19:07:15,nan,nan,9,nan,February 15 2025 (No-rest option),Edward Hynes Lakeview,nan
 280,nan,60.0,90.0,48.0,42.0,11.0,5.0,26.0,In Processing,nan,nan,nan,nan,2024-10-10 20:11:58,nan,nan,9,nan,April 26 2025 (No-rest option),Homer Plessy Community School,nan
 281,nan,46.0,87.0,79.0,48.0,4.0,20.0,24.0,In Processing,8.0,26.0,23.0,57.0,2024-10-10 20:16:46,nan,nan,9,nan,February 15 2025 (No-rest option),Lake Forest Elementary Charter School,nan
 282,nan,22.0,45.0,30.0,5.0,1.0,1.0,3.0,In Processing,nan,nan,nan,nan,2024-12-06 10:12:54,nan,nan,9,nan,November 16 2024,Mary McLeod Bethune Elementary,nan
 283,30.0,68.0,91.0,88.0,96.0,15.0,25.0,26.0,Eligible,nan,nan,nan,nan,2024-10-10 20:48:18,nan,nan,9,nan,November 16 2024,Arthur Ashe Charter School,3.75
 284,30.0,80.0,96.0,99.0,110.0,21.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-10 20:39:06,nan,nan,9,nan,December 14 2024,Lake Castle Private School,4.0
-285,30.0,66.0,95.0,90.0,98.0,14.0,26.0,28.0,Eligible,nan,nan,nan,nan,2024-10-10 20:54:15,nan,nan,9,nan,November 16 2024,Success at Thurgood Marshall,4.0
+285,30.0,66.0,95.0,90.0,NQTH,14.0,26.0,28.0,Eligible,nan,nan,nan,nan,2024-10-10 20:54:15,nan,nan,9,nan,November 16 2024,Success at Thurgood Marshall,4.0
 286,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-10 21:10:03,nan,nan,9,nan,nan,Lake Castle Private School,nan
 287,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-10 21:48:04,nan,nan,9,nan,November 16 2024,The Willow School,4.0
 288,nan,35.0,40.0,71.0,18.0,1.0,16.0,1.0,In Processing,nan,nan,nan,nan,2024-10-10 23:23:53,nan,nan,9,nan,November 16 2024,KIPP East,nan
@@ -295,24 +295,24 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 294,nan,90.0,83.0,74.0,66.0,26.0,18.0,22.0,In Processing,nan,nan,nan,nan,2024-10-11 13:58:33,nan,nan,11,nan,November 16 2024,Jesuit High School,nan
 295,nan,21.0,57.0,29.0,11.0,1.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-10-11 15:22:30,nan,nan,9,nan,December 14 2024,Edward Hynes Parkview,nan
 296,nan,71.0,89.0,53.0,48.0,16.0,7.0,25.0,In Processing,18.0,6.0,25.0,49.0,2024-10-11 15:38:46,nan,nan,9,nan,March 22 2025 (No-rest option),Esperanza Charter School,nan
-297,30.0,62.0,99.0,95.0,100.0,12.0,28.0,30.0,Eligible,nan,nan,nan,nan,2024-10-11 16:39:16,nan,nan,9,nan,November 16 2024,St. Andrew's Episcopal School,3.75
+297,30.0,62.0,99.0,95.0,100.0,12.0,28.0,30.0,Eligible,nan,nan,nan,nan,2024-10-11 16:39:16,YpJ0,nan,9,nan,November 16 2024,St. Andrew's Episcopal School,3.75
 298,nan,36.0,69.0,22.0,17.0,1.0,1.0,15.0,In Processing,nan,nan,nan,nan,2024-10-11 17:13:28,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Gentilly,nan
 299,30.0,72.0,86.0,69.0,86.0,17.0,15.0,24.0,Eligible,26.0,19.0,24.0,99.0,2024-10-11 17:25:13,nan,nan,9,nan,March 22 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,4.0
 300,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-11 19:26:24,nan,nan,10,nan,January 18 2025,Other,nan
 301,nan,48.0,65.0,51.0,24.0,5.0,6.0,13.0,In Processing,nan,nan,nan,nan,2024-10-11 19:31:54,nan,nan,9,nan,April 26 2025 (No-rest option),Success at Thurgood Marshall,nan
-302,nan,49.0,6oIw,41.0,23.0,5.0,1.0,17.0,In Processing,10.0,20.0,8.0,38.0,2024-10-11 19:38:29,nan,nan,9,nan,March 22 2025 (No-rest option),Homer Plessy Community School,nan
+302,nan,49.0,73.0,41.0,23.0,5.0,1.0,17.0,In Processing,10.0,20.0,8.0,38.0,2024-10-11 19:38:29,nan,nan,9,nan,March 22 2025 (No-rest option),Homer Plessy Community School,nan
 303,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-11 23:16:46,nan,nan,9,nan,November 16 2024,Lake Castle Private School,3.5
 304,30.0,89.0,99.0,99.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-12 9:39:27,nan,nan,9,nan,November 16 2024,Renew Dolores T. Aaron Academy,4.0
-305,30.0,99.0,94.0,99.0,118.0,30.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-12 14:53:05,nan,nan,9,nan,December 14 2024,Lycee Francais de la Nouvelle Orleans,4.0
+Wz9B,30.0,99.0,94.0,99.0,118.0,30.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-12 14:53:05,nan,nan,9,nan,lNto,Lycee Francais de la Nouvelle Orleans,4.0
 306,20.0,57.0,89.0,88.0,79.0,9.0,25.0,25.0,In Processing,nan,nan,nan,nan,2024-10-12 15:28:11,nan,nan,9,Test Accommodations Approved,April 26 2025 (No-rest option),Homer Plessy Community School,2.5
-307,nan,93.0,92.0,46.0,58.0,27.0,4.0,27.0,In Processing,nan,nan,nan,nan,2024-10-12 16:47:23,nan,nan,10,nan,February 15 2025 (No-rest option),Other,nan
+307,nan,93.0,92.0,P1Ic,58.0,27.0,4.0,27.0,In Processing,nan,nan,nan,nan,2024-10-12 16:47:23,nan,nan,10,nan,February 15 2025 (No-rest option),Other,nan
 308,nan,40.0,84.0,88.0,49.0,1.0,25.0,23.0,In Processing,6.0,12.0,16.0,34.0,2024-10-12 17:22:45,nan,nan,9,nan,February 15 2025 (No-rest option),The Willow School,nan
 309,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-12 19:02:59,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
 310,30.0,87.0,94.0,99.0,112.0,24.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-13 10:31:16,nan,nan,10,nan,January 18 2025,Jesuit High School,3.8
 311,28.0,78.0,92.0,53.0,82.0,20.0,7.0,27.0,Eligible,21.0,20.0,26.0,95.0,2024-10-13 10:56:19,nan,nan,9,nan,March 22 2025 (No-rest option),Ursuline Academy,3.33
 312,23.0,96.0,85.0,53.0,82.0,29.0,7.0,23.0,In Processing,nan,nan,nan,nan,2024-10-13 11:28:00,nan,nan,9,nan,April 26 2025 (No-rest option),Lake Castle Private School,2.89
 313,nan,50.0,63.0,14.0,19.0,6.0,1.0,12.0,In Processing,15.0,2.0,10.0,27.0,2024-10-13 11:51:16,nan,nan,9,nan,February 15 2025 (No-rest option),Audubon Uptown Montessori and French,nan
-314,twWf,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-15 13:09:13,nan,nan,9,nan,March 22 2025 (No-rest option),Other,nan
+314,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-15 13:09:13,nan,nan,9,nan,March 22 2025 (No-rest option),Other,nan
 315,30.0,84.0,98.0,99.0,113.0,23.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-13 15:00:55,nan,nan,9,nan,November 16 2024,The Willow School,4.0
 316,30.0,97.0,97.0,99.0,118.0,29.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-13 17:56:48,nan,nan,9,nan,December 14 2024,Lake Forest Elementary Charter School,3.88
 317,nan,52.0,63.0,46.0,23.0,7.0,4.0,12.0,In Processing,nan,nan,nan,nan,2024-10-13 18:08:45,nan,nan,9,nan,November 16 2024,Lake Forest Elementary Charter School,nan
@@ -320,7 +320,7 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 319,30.0,87.0,99.0,88.0,109.0,24.0,25.0,30.0,Eligible,nan,nan,nan,nan,2024-10-13 21:07:01,nan,nan,9,nan,December 14 2024,St. Andrew's Episcopal School,4.0
 320,nan,86.0,79.0,43.0,46.0,24.0,2.0,20.0,In Processing,nan,nan,nan,nan,2024-10-13 21:15:09,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 321,30.0,94.0,99.0,99.0,118.0,28.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-13 22:34:20,nan,nan,9,nan,January 18 2025,The Willow School,nan
-322,22.0,90.0,97.0,60.0,3hQG,26.0,11.0,29.0,Eligible,nan,nan,nan,nan,2024-10-14 9:31:22,nan,nan,9,nan,November 16 2024,Audubon Gentilly,2.75
+322,22.0,90.0,97.0,60.0,88.0,26.0,11.0,29.0,Eligible,nan,nan,nan,nan,2024-10-14 9:31:22,nan,nan,9,nan,November 16 2024,Audubon Gentilly,2.75
 323,nan,38.0,61.0,54.0,20.0,1.0,8.0,11.0,In Processing,nan,nan,nan,nan,2024-10-14 10:03:48,nan,nan,9,nan,December 14 2024,Belle Chasse Academy,nan
 324,nan,73.0,77.0,69.0,51.0,17.0,15.0,19.0,In Processing,nan,nan,nan,nan,2024-10-14 11:17:28,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,nan
 325,30.0,72.0,84.0,82.0,92.0,17.0,22.0,23.0,Eligible,nan,nan,nan,nan,2024-11-08 13:27:47,nan,nan,9,nan,December 14 2024,Bricolage Academy,3.88
@@ -330,13 +330,13 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 329,nan,15.0,45.0,16.0,5.0,1.0,1.0,3.0,In Processing,nan,nan,nan,nan,2024-12-05 13:31:23,nan,nan,9,nan,December 14 2024,Bricolage Academy,nan
 330,30.0,64.0,99.0,93.0,100.0,13.0,27.0,30.0,Eligible,nan,nan,nan,nan,2024-10-14 16:42:01,nan,nan,9,nan,December 14 2024,Edward Hynes Lakeview,3.88
 331,nan,91.0,94.0,65.0,67.0,26.0,13.0,28.0,In Processing,25.0,20.0,29.0,74.0,2024-10-14 18:58:52,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
-332,30.0,96.0,g9Qy,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-14 19:33:18,nan,nan,9,nan,November 16 2024,The Willow School,4.0
+332,30.0,96.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-14 19:33:18,nan,nan,9,nan,November 16 2024,The Willow School,4.0
 333,nan,33.0,75.0,76.0,38.0,1.0,19.0,18.0,In Processing,nan,nan,nan,nan,2024-10-14 20:29:21,nan,nan,9,nan,April 26 2025 (No-rest option),Lake Forest Elementary Charter School,nan
 334,nan,27.0,43.0,60.0,14.0,1.0,11.0,2.0,In Processing,nan,nan,nan,nan,2024-12-12 10:03:13,nan,nan,9,nan,April 26 2025 (No-rest option),Lake Forest Elementary Charter School,nan
 335,30.0,78.0,98.0,96.0,109.0,20.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-14 21:58:02,nan,nan,9,nan,January 18 2025,Trinity Episcopal School,4.0
 336,nan,71.0,85.0,1.0,40.0,16.0,1.0,23.0,In Processing,13.0,7.0,22.0,42.0,2024-10-14 22:26:32,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
 337,30.0,85.0,97.0,99.0,112.0,23.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-10-15 7:42:34,nan,nan,9,nan,December 14 2024,Lake Forest Elementary Charter School,4.0
-338,30.0,86.0,75.0,93.0,99.0,24.0,27.0,18.0,Eligible,bk88,nan,nan,nan,2024-10-15 14:35:55,nan,nan,9,nan,January 18 2025,Bricolage Academy,3.63
+338,30.0,86.0,75.0,93.0,99.0,24.0,27.0,18.0,Eligible,nan,nan,nan,nan,2024-10-15 14:35:55,nan,nan,9,nan,January 18 2025,Bricolage Academy,3.63
 339,30.0,89.0,95.0,99.0,113.0,25.0,30.0,28.0,Eligible,nan,nan,nan,nan,2025-03-13 10:20:42,nan,nan,9,nan,November 16 2024,Lake Forest Elementary Charter School,4.0
 340,30.0,90.0,91.0,82.0,104.0,26.0,22.0,26.0,Eligible,nan,nan,nan,nan,2024-10-15 16:44:32,nan,nan,10,nan,December 14 2024,Lycee Francais de la Nouvelle Orleans,3.77
 341,30.0,62.0,92.0,88.0,94.0,12.0,25.0,27.0,Eligible,nan,nan,nan,nan,2024-10-15 16:55:53,nan,nan,9,nan,January 18 2025,Other,4.0
@@ -358,11 +358,11 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 357,30.0,80.0,94.0,79.0,99.0,21.0,20.0,28.0,In Processing,nan,nan,nan,nan,2024-11-07 12:42:01,nan,nan,9,nan,November 16 2024,Foundation Preparatory Charter,4.0
 358,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-18 10:04:44,nan,nan,9,nan,March 22 2025 (No-rest option),Audubon Gentilly,nan
 359,30.0,86.0,99.0,88.0,109.0,24.0,25.0,30.0,Eligible,nan,nan,nan,nan,2024-10-18 17:44:33,nan,nan,9,nan,November 16 2024,The Willow School,4.0
-uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-19 11:18:17,nan,nan,9,nan,December 14 2024,Louise McGehee,4.0
+360,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-19 11:18:17,nan,nan,9,nan,December 14 2024,Louise McGehee,4.0
 361,nan,23.0,32.0,8.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-19 12:29:15,nan,nan,9,nan,November 16 2024,Mary McLeod Bethune Elementary,nan
 362,nan,94.0,63.0,48.0,45.0,28.0,5.0,12.0,In Processing,nan,nan,nan,nan,2024-10-19 16:14:38,nan,nan,9,nan,April 26 2025 (No-rest option),Harriet Tubman Charter School,nan
 363,22.0,93.0,97.0,97.0,107.0,27.0,29.0,29.0,Eligible,nan,nan,nan,nan,2024-10-19 17:59:08,nan,nan,9,nan,January 18 2025,Isidore Newman,2.75
-364,nan,79.0,77.0,46.0,43.0,20.0,4.0,19.0,In Processing,16.0,23.0,18.0,57.0,2024-10-19 19:49:25,F04D,nan,9,nan,February 15 2025 (No-rest option),Benjamin Franklin Elementary,nan
+364,nan,79.0,77.0,46.0,43.0,20.0,4.0,19.0,In Processing,16.0,23.0,18.0,57.0,2024-10-19 19:49:25,nan,nan,9,nan,February 15 2025 (No-rest option),Benjamin Franklin Elementary,nan
 365,27.0,96.0,84.0,63.0,91.0,29.0,12.0,23.0,Eligible,nan,nan,nan,nan,2024-10-19 20:46:10,nan,nan,9,nan,November 16 2024,Audubon Gentilly,3.25
 366,30.0,99.0,99.0,63.0,102.0,30.0,12.0,30.0,Eligible,nan,nan,nan,nan,2024-10-20 8:22:11,nan,nan,9,nan,November 16 2024,Metairie Park Country Day,4.0
 367,30.0,91.0,97.0,86.0,109.0,26.0,24.0,29.0,In Processing,nan,nan,nan,nan,2024-10-20 12:41:38,nan,nan,9,nan,December 14 2024,Other,3.75
@@ -370,12 +370,12 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 369,25.0,81.0,95.0,97.0,103.0,21.0,29.0,28.0,Eligible,nan,nan,nan,nan,2024-10-20 15:48:48,nan,nan,9,nan,November 16 2024,St. Augustine High School,nan
 370,30.0,81.0,73.0,91.0,94.0,21.0,26.0,17.0,In Processing,nan,nan,nan,nan,2024-10-20 16:46:08,nan,nan,9,nan,December 14 2024,Phillis Wheatley Community School,3.75
 371,30.0,81.0,73.0,91.0,94.0,21.0,26.0,17.0,Eligible,nan,nan,nan,nan,2024-10-20 16:46:08,nan,nan,9,nan,December 14 2024,Phillis Wheatley Community School,3.75
-372,AXKM,77.0,90.0,90.0,93.0,19.0,26.0,26.0,Eligible,nan,seCn,nan,nan,2024-10-20 19:45:10,nan,nan,9,Test Accommodations Approved,December 14 2024,Audubon Uptown Montessori and French,KLjc
+372,22.0,77.0,90.0,90.0,93.0,19.0,26.0,26.0,Eligible,nan,nan,nan,nan,2024-10-20 19:45:10,nan,nan,9,Test Accommodations Approved,December 14 2024,Audubon Uptown Montessori and French,2.75
 373,30.0,86.0,99.0,51.0,90.0,24.0,6.0,30.0,In Processing,nan,nan,nan,nan,2024-10-20 19:58:11,nan,nan,9,nan,January 18 2025,Waldorf School of New Orleans,4.0
 374,30.0,71.0,99.0,99.0,106.0,16.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-20 21:08:13,nan,nan,9,nan,November 16 2024,Homer Plessy Community School,4.0
-375,nan,58.0,55.0,54.0,26.0,10.0,8.0,8.0,OZT1,nan,nan,nan,nan,2024-10-21 10:05:29,nan,nan,9,nan,April 26 2025 (No-rest option),Alice Harte Charter School,nan
+375,nan,58.0,55.0,54.0,26.0,10.0,8.0,8.0,In Processing,nan,nan,nan,nan,2024-10-21 10:05:29,nan,nan,9,nan,April 26 2025 (No-rest option),Alice Harte Charter School,nan
 376,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-21 12:12:53,nan,nan,11,nan,January 18 2025,Other,nan
-377,nan,26.0,82.0,51.0,54.0,26.0,6.0,22.0,In Processing,1.0,11.0,12.0,24.0,2024-10-21 13:39:15,nan,nan,9,nan,March 22 2025 (No-rest option),Other,nan
+377,nan,26.0,82.0,51.0,54.0,26.0,6.0,22.0,In Processing,1.0,11.0,12.0,24.0,2024-10-21 13:39:15,nan,nan,9,nan,March 22 2025 (No-rest option),Other,qxcw
 378,nan,57.0,71.0,22.0,26.0,9.0,1.0,16.0,In Processing,nan,nan,nan,nan,2024-10-22 13:54:18,nan,nan,9,nan,January 18 2025,Waldorf School of New Orleans,nan
 379,nan,59.0,80.0,72.0,48.0,10.0,17.0,21.0,In Processing,nan,nan,nan,nan,2024-10-21 16:15:36,nan,nan,9,nan,April 26 2025 (No-rest option),Homer Plessy Community School,nan
 380,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-23 12:59:11,nan,nan,9,nan,January 18 2025,Trinity Episcopal School,nan
@@ -383,18 +383,18 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 382,30.0,92.0,99.0,99.0,117.0,27.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-22 6:42:56,nan,nan,9,nan,December 14 2024,The Willow School,4.0
 383,nan,73.0,69.0,86.0,56.0,17.0,24.0,15.0,In Processing,13.0,16.0,16.0,45.0,2024-10-22 9:19:25,nan,nan,9,nan,March 22 2025 (No-rest option),Lake Forest Elementary Charter School,nan
 384,30.0,84.0,99.0,99.0,113.0,23.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-22 12:10:56,nan,nan,9,nan,December 14 2024,Bricolage Academy,4.0
-385,22.0,87.0,95.0,85.0,97.0,24.0,23.0,28.0,Eligible,nan,nan,nan,nan,2024-10-22 12:26:32,nan,nan,9,nan,December 14 2024,vpGm,2.75
+385,22.0,87.0,95.0,85.0,97.0,24.0,23.0,oJ81,Eligible,nan,nan,nan,nan,2024-10-22 12:26:32,nan,nan,9,nan,December 14 2024,Audubon Uptown Montessori and French,2.75
 386,nan,40.0,24.0,16.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-22 19:54:23,nan,nan,9,nan,December 14 2024,Audubon Gentilly,nan
 387,nan,88.0,94.0,52.0,60.0,25.0,7.0,28.0,In Processing,26.0,20.0,20.0,66.0,2024-10-22 16:36:39,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
 388,30.0,72.0,95.0,51.0,81.0,17.0,6.0,28.0,Eligible,18.0,13.0,27.0,88.0,2024-10-22 18:47:41,nan,nan,9,nan,March 22 2025 (No-rest option),Audubon Gentilly,3.75
-389,nan,55.0,60.0,41.0,20.0,8.0,1.0,11.0,In Processing,1.0,18.0,1.0,20.0,2024-10-22 19:21:55,YHZ8,nan,9,nan,March 22 2025 (No-rest option),Bricolage Academy,nan
-390,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-24 22:20:22,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
-391,nan,yCzo,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-24 22:20:22,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
+389,nan,55.0,60.0,41.0,20.0,8.0,1.0,11.0,In Processing,1.0,18.0,1.0,20.0,2024-10-22 19:21:55,nan,nan,9,nan,March 22 2025 (No-rest option),Bricolage Academy,nan
+390,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-24 22:20:22,0ZbD,nan,10,nan,April 26 2025 (No-rest option),Other,nan
+391,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-24 22:20:22,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 392,30.0,92.0,95.0,99.0,115.0,27.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-10-22 23:01:07,nan,nan,9,nan,December 14 2024,The Willow School,4.0
 393,30.0,80.0,99.0,99.0,111.0,21.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-23 10:08:03,nan,nan,9,nan,December 14 2024,Lake Forest Elementary Charter School,3.88
 394,nan,58.0,41.0,16.0,12.0,10.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-23 11:08:33,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,nan
-395,nan,42.0,84.0,62.0,37.0,2.0,12.0,23.0,In Processing,cYFM,nan,nan,nan,2024-10-23 11:53:52,nan,nan,9,nan,December 14 2024,Audubon Gentilly,nan
-0Rrx,nan,28.0,39.0,20.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-23 12:50:32,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Gentilly,nan
+395,nan,42.0,84.0,62.0,37.0,2.0,12.0,23.0,In Processing,nan,nan,nan,nan,2024-10-23 11:53:52,nan,nan,9,nan,December 14 2024,Audubon Gentilly,nan
+396,nan,28.0,39.0,20.0,BOxB,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-23 12:50:32,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Gentilly,nan
 397,nan,57.0,63.0,91.0,47.0,9.0,26.0,12.0,In Processing,nan,nan,nan,nan,2024-10-23 14:14:53,nan,nan,9,nan,April 26 2025 (No-rest option),Alice Harte Charter School,nan
 398,nan,52.0,50.0,88.0,38.0,7.0,25.0,6.0,In Processing,nan,nan,nan,nan,2024-10-23 14:12:12,nan,nan,9,nan,April 26 2025 (No-rest option),Alice Harte Charter School,nan
 399,nan,54.0,99.0,60.0,49.0,8.0,11.0,30.0,In Processing,nan,nan,nan,nan,2024-10-23 17:33:36,nan,nan,9,nan,April 26 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,nan
@@ -413,7 +413,7 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 412,nan,62.0,82.0,60.0,45.0,12.0,11.0,22.0,In Processing,6.0,18.0,21.0,45.0,2024-10-25 11:53:19,nan,nan,9,nan,March 22 2025 (No-rest option),Edward Hynes Lakeview,nan
 413,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-25 15:34:11,nan,nan,9,nan,nan,Morris Jeff Community School,nan
 414,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-25 16:38:22,nan,nan,9,nan,nan,Harriet Tubman Charter School,nan
-415,30.0,91.0,82.0,99.0,108.0,26.0,30.0,22.0,Eligible,nan,nan,nan,nan,2024-10-25 19:21:25,nan,nan,dwCc,nan,December 14 2024,Lake Forest Elementary Charter School,3.75
+415,30.0,91.0,82.0,99.0,108.0,26.0,30.0,22.0,Eligible,nan,nan,nan,nan,2024-10-25 19:21:25,nan,nan,9,nan,December 14 2024,Lake Forest Elementary Charter School,3.75
 416,30.0,74.0,91.0,41.0,75.0,18.0,1.0,26.0,Eligible,27.0,9.0,25.0,91.0,2024-10-26 11:45:51,nan,nan,9,nan,March 22 2025 (No-rest option),Renew Dolores T. Aaron Academy,3.88
 417,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-27 15:34:28,nan,nan,10,nan,January 18 2025,Other,nan
 418,30.0,72.0,98.0,91.0,103.0,17.0,26.0,30.0,Eligible,nan,nan,nan,nan,2024-10-27 17:49:20,nan,nan,9,nan,December 14 2024,Bricolage Academy,4.0
@@ -431,7 +431,7 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 430,nan,88.0,64.0,33.0,39.0,25.0,1.0,13.0,In Processing,29.0,9.0,20.0,58.0,2024-10-28 12:02:47,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
 431,30.0,76.0,93.0,87.0,100.0,19.0,24.0,27.0,Eligible,nan,nan,nan,nan,2024-10-28 13:13:38,nan,nan,10,nan,December 14 2024,Other,3.8
 432,nan,87.0,79.0,57.0,53.0,24.0,9.0,20.0,In Processing,nan,nan,nan,nan,2024-10-28 16:58:35,nan,nan,9,nan,December 14 2024,International School of Louisiana,nan
-433,28.0,72.0,99.0,96.0,104.0,17.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-28 17:06:18,nan,nan,9,nan,December 14 2024,Belle Chasse Academy,3.37
+433,28.0,72.0,99.0,96.0,104.0,17.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-28 17:06:18,nan,nan,9,nan,ffcs,Belle Chasse Academy,3.37
 434,nan,39.0,82.0,85.0,46.0,1.0,23.0,22.0,In Processing,nan,nan,nan,nan,2024-10-28 21:53:03,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
 435,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,18.0,19.0,16.0,53.0,2025-01-12 21:00:46,nan,nan,10,nan,February 15 2025 (No-rest option),Other,nan
 436,28.0,99.0,99.0,99.0,118.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2025-03-18 21:14:13,nan,nan,9,nan,December 14 2024,St. Paul's Episcopal School,3.38
@@ -441,18 +441,18 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 440,nan,54.0,39.0,51.0,15.0,8.0,6.0,1.0,In Processing,nan,nan,nan,nan,2024-10-29 15:40:38,nan,nan,9,nan,December 14 2024,Lake Castle Private School,nan
 441,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-29 19:04:38,nan,nan,10,nan,nan,Other,nan
 442,30.0,99.0,98.0,97.0,119.0,30.0,29.0,30.0,Eligible,nan,nan,nan,nan,2024-10-29 19:05:49,nan,nan,9,nan,December 14 2024,Bricolage Academy,4.0
-443,30.0,74.0,97.0,72.0,94.0,18.0,17.0,29.0,Eligible,nan,nan,nan,nan,2024-10-29 22:07:09,nan,nan,9,nan,December 14 2024,Lycee Francais de la Nouvelle Orleans,3.88
+443,30.0,74.0,97.0,72.0,94.0,Dy2R,17.0,29.0,Eligible,nan,nan,nan,nan,2024-10-29 22:07:09,nan,nan,9,nan,December 14 2024,Lycee Francais de la Nouvelle Orleans,3.88
 444,nan,88.0,85.0,66.0,62.0,25.0,14.0,23.0,In Processing,24.0,12.0,22.0,58.0,2024-10-29 22:32:14,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
 445,nan,37.0,36.0,28.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-10-30 9:04:22,nan,nan,9,nan,December 14 2024,Audubon Uptown Montessori and French,nan
-446,nan,85.0,90.0,98.0,5o70,23.0,30.0,26.0,In Processing,nan,nan,nan,nan,2024-10-30 10:05:13,nan,nan,9,nan,January 18 2025,Other,nan
+446,nan,85.0,90.0,98.0,79.0,23.0,30.0,26.0,In Processing,nan,nan,nan,nan,2024-10-30 10:05:13,nan,nan,9,nan,January 18 2025,Other,nan
 447,nan,96.0,88.0,70.0,70.0,29.0,16.0,25.0,In Processing,nan,nan,nan,nan,2024-11-08 12:44:44,nan,nan,10,nan,January 18 2025,Other,nan
-448,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-30 10:44:32,nan,nan,10,nan,nan,Other,nan
+448,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-30 10:44:32,nan,nan,QDqu,nan,nan,Other,nan
 449,nan,68.0,81.0,48.0,41.0,15.0,5.0,21.0,In Processing,nan,nan,nan,nan,2024-10-30 11:26:10,nan,nan,9,nan,April 26 2025 (No-rest option),Homer Plessy Community School,nan
-450,nan,58.0,46.0,31.0,15.0,10.0,1.0,4.0,8tFY,nan,nan,nan,nan,2024-10-30 20:36:48,nan,nan,9,nan,December 14 2024,Mary McLeod Bethune Elementary,nan
-451,27.0,97.0,99.0,99.0,116.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-31 9:04:19,nan,nan,9,nan,January 18 2025,Isidore Newman,3.25
+450,nan,58.0,46.0,31.0,15.0,10.0,1.0,4.0,In Processing,nan,nan,nan,nan,2024-10-30 20:36:48,nan,nan,9,nan,December 14 2024,Mary McLeod Bethune Elementary,nan
+451,27.0,97.0,99.0,99.0,116.0,Ag7a,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-31 9:04:19,nan,nan,9,nan,January 18 2025,Isidore Newman,3.25
 452,nan,48.0,66.0,80.0,40.0,5.0,21.0,14.0,In Processing,nan,nan,nan,nan,2024-10-31 12:15:28,nan,nan,9,nan,March 22 2025 (No-rest option),Arthur Ashe Charter School,nan
 453,30.0,65.0,99.0,99.0,103.0,13.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-10-31 15:05:48,nan,nan,9,nan,January 18 2025,The Willow School,3.63
-454,26.0,84.0,97.0,51.0,84.0,23.0,6.0,29.0,In Processing,nan,nan,nan,nan,2024-10-31 16:32:50,nan,nan,9,nan,April 26 2025 (No-rest option),Mary McLeod Bethune Elementary,3.13
+Lj4z,26.0,84.0,97.0,51.0,84.0,23.0,6.0,29.0,In Processing,nan,nan,nan,nan,2024-10-31 16:32:50,nan,nan,9,nan,April 26 2025 (No-rest option),Mary McLeod Bethune Elementary,3.13
 455,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-31 19:13:09,nan,nan,9,nan,nan,Mary McLeod Bethune Elementary,nan
 456,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-22 12:42:42,nan,nan,9,nan,April 26 2025 (No-rest option),Mary McLeod Bethune Elementary,nan
 457,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-22 12:42:42,nan,nan,9,nan,April 26 2025 (No-rest option),Mary McLeod Bethune Elementary,nan
@@ -460,7 +460,7 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 459,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-22 12:42:42,nan,nan,9,nan,April 26 2025 (No-rest option),Mary McLeod Bethune Elementary,nan
 460,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-22 12:42:42,nan,nan,9,nan,April 26 2025 (No-rest option),Mary McLeod Bethune Elementary,nan
 461,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-10-31 19:55:56,nan,nan,9,nan,nan,Other,nan
-462,nan,64.0,53.0,38.0,21.0,13.0,1.0,7.0,In Processing,nan,nan,nan,nan,2024-11-01 6:20:08,nan,nan,9,nan,April 26 2025 (No-rest option),9p16,nan
+462,nan,64.0,53.0,38.0,21.0,13.0,1.0,7.0,In Processing,nan,nan,nan,nan,2024-11-01 6:20:08,nan,nan,9,nan,vHF0,Mary McLeod Bethune Elementary,nan
 463,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-01 9:33:02,nan,nan,9,nan,January 18 2025,Other,nan
 464,30.0,94.0,92.0,98.0,115.0,28.0,30.0,27.0,Eligible,nan,nan,nan,nan,2024-11-01 10:24:38,nan,nan,9,nan,January 18 2025,The Willow School,4.0
 465,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-01 12:19:44,nan,nan,9,nan,January 18 2025,Other,nan
@@ -473,15 +473,15 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 472,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-02 16:33:17,nan,nan,9,nan,nan,Langston Hughes Academy,nan
 473,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-02 20:17:14,nan,nan,9,nan,nan,Lake Castle Private School,nan
 474,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-03 6:05:47,nan,nan,9,nan,January 18 2025,YACS at Lawrence D. Crocker,nan
-475,25.0,89.0,97.0,99.0,c4fg,25.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-11-03 10:57:29,nan,nan,9,nan,December 14 2024,St. Paul's Episcopal School,3.0
+475,25.0,89.0,97.0,99.0,109.0,25.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-11-03 10:57:29,nan,nan,9,nan,December 14 2024,St. Paul's Episcopal School,3.0
 476,30.0,90.0,89.0,88.0,106.0,26.0,25.0,25.0,Eligible,nan,nan,nan,nan,2024-11-03 15:04:57,nan,nan,9,nan,January 18 2025,The Willow School,3.75
 477,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-03 17:21:02,nan,nan,9,nan,January 18 2025,Phillis Wheatley Community School,nan
 478,nan,72.0,85.0,38.0,41.0,17.0,1.0,23.0,In Processing,nan,nan,nan,nan,2024-11-03 18:30:32,nan,nan,9,nan,April 26 2025 (No-rest option),Mary McLeod Bethune Elementary,nan
 479,nan,46.0,55.0,10.0,22.0,4.0,10.0,8.0,In Processing,5.0,12.0,6.0,23.0,2024-11-03 18:37:02,nan,nan,9,nan,March 22 2025 (No-rest option),Andrew H. Wilson Charter School,nan
 480,nan,37.0,95.0,35.0,30.0,1.0,1.0,28.0,In Processing,nan,nan,nan,nan,2025-01-08 16:05:08,nan,nan,9,nan,April 26 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,nan
-481,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,GyEB,nan,nan,2024-11-03 21:07:39,nan,nan,9,nan,December 14 2024,The Willow School,4.0
-482,27.0,82.0,97.0,57.0,87.0,22.0,9.0,29.0,In Processing,nan,nan,nan,nan,p1i7,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,3.25
-483,nan,27.0,54.0,33.0,10.0,1.0,1.0,8.0,In Processing,nan,nan,nan,nan,2024-11-04 6:59:43,nan,GIrm,9,nan,December 14 2024,Mary McLeod Bethune Elementary,nan
+481,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-03 21:07:39,nan,nan,9,nan,December 14 2024,The Willow School,4.0
+482,27.0,82.0,97.0,57.0,87.0,22.0,9.0,29.0,In Processing,nan,6peb,nan,nan,2024-11-03 23:35:57,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,3.25
+483,nan,27.0,54.0,33.0,10.0,1.0,1.0,8.0,In Processing,nan,nan,nan,nan,2024-11-04 6:59:43,nan,nan,9,nan,December 14 2024,Mary McLeod Bethune Elementary,nan
 484,30.0,82.0,97.0,99.0,111.0,22.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-11-04 8:08:42,nan,nan,9,nan,December 14 2024,Lake Forest Elementary Charter School,3.62
 485,nan,76.0,73.0,87.0,60.0,19.0,24.0,17.0,In Processing,10.0,27.0,12.0,49.0,2024-11-04 10:48:23,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
 486,nan,39.0,39.0,33.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-07 21:44:38,nan,nan,9,nan,December 14 2024,Dorothy Height Charter School,nan
@@ -489,38 +489,38 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 488,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 12:41:19,nan,nan,9,nan,nan,Phillis Wheatley Community School,nan
 489,nan,40.0,83.0,66.0,37.0,1.0,14.0,22.0,In Processing,nan,nan,nan,nan,2024-11-04 12:45:37,nan,nan,9,nan,April 26 2025 (No-rest option),Edward Hynes Lakeview,nan
 490,nan,92.0,98.0,85.0,80.0,27.0,23.0,30.0,In Processing,nan,nan,nan,nan,2024-11-04 12:51:54,nan,nan,9,nan,December 14 2024,Homer Plessy Community School,nan
-491,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 13:04:26,nan,nan,9,nan,nan,Renew Robert Russa Moton: Lakefront:,nan
+491,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,U7QG,nan,2024-11-04 13:04:26,nan,nan,9,nan,nan,Renew Robert Russa Moton: Lakefront:,nan
 492,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 13:28:24,nan,nan,9,nan,nan,International School of Louisiana,nan
 493,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 13:40:22,nan,nan,9,nan,January 18 2025,KIPP Leadership,nan
 494,nan,65.0,69.0,41.0,29.0,13.0,1.0,15.0,In Processing,nan,nan,nan,nan,2024-11-04 14:08:19,nan,nan,9,nan,January 18 2025,Benjamin Franklin Elementary,nan
-495,nan,43.0,Bnu3,48.0,8.0,2.0,5.0,1.0,In Processing,4.0,1.0,1.0,6.0,2024-11-04 14:13:21,nan,nan,10,nan,March 22 2025 (No-rest option),International School of Louisiana,nan
+495,nan,43.0,39.0,48.0,8.0,2.0,5.0,1.0,In Processing,4.0,1.0,1.0,6.0,2024-11-04 14:13:21,nan,nan,10,nan,March 22 2025 (No-rest option),International School of Louisiana,nan
 496,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 14:29:47,nan,nan,11,nan,nan,Other,nan
 497,nan,75.0,87.0,51.0,48.0,18.0,6.0,24.0,In Processing,nan,nan,nan,nan,2025-01-09 18:30:48,nan,nan,9,nan,January 18 2025,International School of Louisiana,nan
 498,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 15:16:42,nan,nan,9,nan,nan,Edward Hynes Lakeview,nan
 499,nan,28.0,53.0,29.0,9.0,1.0,1.0,7.0,In Processing,nan,nan,nan,nan,2024-11-04 15:34:13,nan,nan,9,nan,December 14 2024,Success at Thurgood Marshall,nan
-500,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,9.0,22.0,11.0,42.0,2024-11-04 15:36:28,nan,nan,9,nan,February 15 2025 (No-rest option),Phillis Wheatley Community School,nan
+500,nan,Hy1g,nan,nan,0.0,nan,nan,nan,In Processing,9.0,22.0,11.0,42.0,2024-11-04 15:36:28,nan,nan,9,nan,February 15 2025 (No-rest option),Phillis Wheatley Community School,nan
 501,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 15:54:09,nan,nan,10,nan,January 18 2025,Other,nan
-502,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 17:34:48,nan,nan,9,nan,nan,Edward Hynes Parkview,nan
+502,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-04 17:34:48,FE0K,nan,9,nan,nan,Edward Hynes Parkview,nan
 503,nan,44.0,65.0,41.0,17.0,3.0,1.0,13.0,In Processing,nan,nan,nan,nan,2024-11-04 17:50:56,nan,nan,9,nan,December 14 2024,Audubon Gentilly,nan
 504,nan,27.0,46.0,66.0,19.0,1.0,14.0,4.0,In Processing,nan,nan,nan,nan,2024-11-04 18:48:45,nan,nan,9,nan,January 18 2025,Mary McLeod Bethune Elementary,nan
-505,nan,37.0,66.0,38.0,16.0,1.0,1.0,14.0,In Processing,nan,nan,nan,nan,2024-11-04 20:02:26,nan,nan,9,nan,December 14 2024,Audubon Gentilly,nan
+505,nan,37.0,66.0,38.0,16.0,1.0,1.0,14.0,In Processing,nan,nan,nan,nan,2024-11-04 20:02:26,nan,2yxd,9,nan,December 14 2024,Audubon Gentilly,nan
 506,nan,39.0,39.0,37.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-04 20:23:26,nan,nan,9,nan,April 26 2025 (No-rest option),Edward Hynes Lakeview,nan
 507,nan,39.0,37.0,9.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-04 23:17:16,nan,nan,9,nan,January 18 2025,KIPP East,nan
 508,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2024-11-05 6:45:38,nan,nan,9,nan,March 22 2025 (No-rest option),Other,nan
 509,30.0,82.0,95.0,93.0,107.0,22.0,27.0,28.0,Eligible,nan,nan,nan,nan,2024-11-05 12:51:47,nan,nan,9,nan,January 18 2025,Lake Forest Elementary Charter School,3.5
 510,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-05 14:00:53,nan,nan,9,nan,nan,Ecole Bilingue,nan
-511,nan,71.0,83.0,80.0,59.0,16.0,21.0,22.0,In Processing,nan,nan,nan,nan,2024-11-05 14:22:17,nan,nan,11,nan,January 18 2025,International School of Louisiana,nan
+511,nan,71.0,83.0,80.0,59.0,16.0,21.0,22.0,SUtV,nan,nan,nan,nan,2024-11-05 14:22:17,nan,nan,11,nan,January 18 2025,International School of Louisiana,nan
 512,nan,36.0,55.0,51.0,15.0,1.0,6.0,8.0,In Processing,nan,nan,nan,nan,2024-11-05 14:33:26,nan,nan,9,nan,December 14 2024,Dorothy Height Charter School,nan
 513,nan,56.0,33.0,24.0,11.0,9.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-05 14:33:44,nan,nan,9,nan,December 14 2024,Dorothy Height Charter School,nan
-514,nan,36.0,34.0,70.0,18.0,1.0,16.0,1.0,In Processing,nan,nan,nan,nan,2024-11-05 15:22:45,nan,nan,9,nan,January 18 2025,Mary McLeod Bethune Elementary,nan
-515,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-05 15:29:30,nan,nan,9,nan,nan,Benjamin Franklin Elementary,nan
-516,30.0,86.0,90.0,91.0,106.0,24.0,26.0,eIKz,Eligible,nan,nan,nan,pZl5,2024-11-05 19:24:13,nan,nan,9,nan,December 14 2024,Morris Jeff Community School,3.88
+514,nan,36.0,34.0,70.0,18.0,1.0,16.0,1.0,In Processing,nan,nan,nan,nan,2024-11-05 15:22:45,nan,nan,9,nan,January 18 2025,Mary McLeod Bethune Elementary,fUO7
+515,nan,nan,nan,nan,nan,nan,56MP,nan,In Processing,nan,nan,nan,nan,2024-11-05 15:29:30,nan,nan,9,nan,nan,Benjamin Franklin Elementary,nan
+516,30.0,86.0,90.0,91.0,106.0,24.0,26.0,26.0,Eligible,nan,nan,nan,nan,2024-11-05 19:24:13,nan,nan,9,nan,December 14 2024,Morris Jeff Community School,3.88
 517,25.0,92.0,88.0,96.0,106.0,27.0,29.0,25.0,Eligible,nan,nan,nan,nan,2024-11-05 20:05:50,nan,nan,9,nan,January 18 2025,Isidore Newman,3.0
 518,nan,19.0,37.0,16.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-05 20:40:52,nan,nan,9,nan,December 14 2024,Other,nan
 519,nan,58.0,36.0,23.0,12.0,10.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-05 21:34:53,nan,nan,11,nan,March 22 2025 (No-rest option),International School of Louisiana,nan
 520,30.0,97.0,97.0,99.0,118.0,29.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-11-06 8:40:58,nan,nan,9,nan,December 14 2024,The Willow School,4.0
 521,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-06 9:01:34,nan,nan,9,nan,nan,KIPP Morial,nan
-522,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-06 9:07:18,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
+522,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,wU2X,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 523,30.0,96.0,97.0,90.0,114.0,29.0,26.0,29.0,Eligible,nan,nan,nan,nan,2024-11-06 9:58:40,nan,nan,9,nan,December 14 2024,Audubon Uptown Montessori and French,4.0
 524,nan,38.0,35.0,86.0,26.0,1.0,24.0,1.0,In Processing,nan,nan,nan,nan,2024-11-14 13:29:44,nan,nan,9,nan,March 22 2025 (No-rest option),Morris Jeff Community School,nan
 525,nan,6.0,33.0,1.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-06 11:20:42,nan,nan,9,nan,April 26 2025 (No-rest option),Elan Academy,nan
@@ -539,29 +539,29 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 538,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-07 13:45:15,nan,nan,9,nan,January 18 2025,Benjamin Franklin Elementary,nan
 539,nan,25.0,57.0,16.0,11.0,1.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-11-10 21:17:56,nan,nan,9,nan,December 14 2024,Cabrini High School,nan
 540,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-07 18:28:15,nan,nan,9,nan,December 14 2024,Renew Dolores T. Aaron Academy,nan
-541,nan,40.0,63.0,85.0,36.0,1.0,23.0,12.0,In Processing,nan,nan,nan,nan,2024-11-07 19:53:07,nan,nan,9,nan,December 14 2024,Phillis Wheatley Community School,nan
-542,27.0,84.0,97.0,66.0,93.0,23.0,14.0,29.0,1eHd,nan,nan,nan,nan,2024-11-07 20:33:05,nan,nan,9,nan,December 14 2024,Benjamin Franklin Elementary,3.25
+541,nan,40.0,63.0,85.0,36.0,1.0,23.0,12.0,In Processing,ZFoN,nan,nan,nan,2024-11-07 19:53:07,nan,nan,9,nan,December 14 2024,Phillis Wheatley Community School,Fjjd
+542,27.0,84.0,97.0,66.0,93.0,23.0,14.0,29.0,Eligible,nan,nan,nan,nan,2024-11-07 20:33:05,nan,nan,9,nan,December 14 2024,Benjamin Franklin Elementary,3.25
 543,nan,66.0,88.0,74.0,57.0,14.0,18.0,25.0,In Processing,nan,nan,nan,nan,2024-11-07 21:03:28,nan,nan,9,nan,January 18 2025,Homer Plessy Community School,nan
 544,nan,77.0,85.0,54.0,50.0,19.0,8.0,23.0,In Processing,nan,nan,nan,nan,2024-11-08 0:13:08,nan,nan,9,nan,December 14 2024,Harriet Tubman Charter School,nan
-545,30.0,87.0,96.0,94.0,112.0,24.0,29.0,29.0,Eligible,nan,nan,nan,nan,2024-11-08 6:08:55,nan,nan,9,nan,December 14 2024,The Willow School,3.88
+545,30.0,87.0,I4r8,94.0,112.0,24.0,29.0,29.0,Eligible,nan,nan,nan,nan,2024-11-08 6:08:55,nan,nan,9,nan,December 14 2024,The Willow School,3.88
 546,nan,46.0,63.0,80.0,37.0,4.0,21.0,12.0,In Processing,nan,nan,nan,nan,2024-11-08 9:37:44,nan,nan,9,nan,December 14 2024,Bricolage Academy,nan
 547,nan,81.0,82.0,95.0,71.0,21.0,28.0,22.0,In Processing,nan,nan,nan,nan,2024-11-08 16:33:05,nan,nan,11,nan,April 26 2025 (No-rest option),The Willow School,nan
 548,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-08 10:08:30,nan,nan,9,nan,nan,Morris Jeff Community School,nan
-549,nan,79.0,46.0,87.0,48.0,20.0,24.0,4.0,In Processing,nan,nan,nan,nan,2024-11-08 10:42:11,nan,nan,9,2g7z,December 14 2024,Bricolage Academy,nan
+549,nan,79.0,46.0,87.0,48.0,20.0,24.0,4.0,In Processing,nan,nan,nan,nan,2024-11-08 10:42:11,nan,nan,9,Test Accommodations Approved,December 14 2024,Bricolage Academy,nan
 550,nan,36.0,57.0,51.0,16.0,1.0,6.0,9.0,In Processing,nan,nan,nan,nan,2024-11-08 10:58:29,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,nan
-551,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-08 10:58:46,nan,nan,9,nan,nan,Bricolage Academy,nan
+551,nan,JZ2k,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-08 10:58:46,nan,nan,9,nan,nan,Bricolage Academy,nan
 552,nan,22.0,28.0,12.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-08 21:55:52,nan,nan,9,nan,December 14 2024,Einstein Middle School,nan
 553,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-08 22:44:23,nan,nan,11,nan,January 18 2025,Other,nan
 554,nan,61.0,80.0,72.0,49.0,11.0,17.0,21.0,In Processing,nan,nan,nan,nan,2024-11-09 8:53:51,nan,nan,9,nan,April 26 2025 (No-rest option),Homer Plessy Community School,nan
 555,nan,52.0,81.0,62.0,40.0,7.0,12.0,21.0,In Processing,nan,nan,nan,nan,2024-11-09 10:19:31,nan,nan,9,nan,nan,Audubon Uptown Montessori and French,nan
 556,nan,68.0,76.0,77.0,53.0,15.0,19.0,19.0,In Processing,nan,nan,nan,nan,2024-11-09 14:39:01,nan,nan,11,nan,January 18 2025,Other,nan
-557,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-09 18:39:25,nan,nan,9,nan,nan,Benjamin Franklin Elementary,nan
+557,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-09 18:39:25,nan,nan,9,nan,KhUD,Benjamin Franklin Elementary,nan
 558,30.0,84.0,96.0,99.0,112.0,23.0,30.0,29.0,Eligible,nan,nan,nan,nan,2024-11-10 10:45:42,nan,nan,9,nan,December 14 2024,Other,3.75
 559,nan,57.0,55.0,48.0,22.0,9.0,5.0,8.0,In Processing,nan,nan,nan,nan,2024-11-10 14:37:55,nan,nan,9,nan,January 18 2025,Edward Hynes Lakeview,nan
 560,nan,42.0,65.0,48.0,20.0,2.0,5.0,13.0,In Processing,nan,nan,nan,nan,2024-11-10 19:27:34,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,nan
 561,nan,81.0,74.0,61.0,50.0,21.0,11.0,18.0,In Processing,nan,nan,nan,nan,2025-01-30 13:28:35,nan,nan,11,nan,March 22 2025 (No-rest option),Arden Cahill Academy,nan
-562,nan,8XRF,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-11 8:52:36,nan,nan,10,nan,April 26 2025 (No-rest option),2wFs,nan
-563,nan,46.0,70.0,64.0,33.0,4.0,13.0,16.0,In Processing,10.0,20.0,16.0,46.0,2024-11-11 11:32:02,nan,nan,9,nan,March 22 2025 (No-rest option),Mary McLeod Bethune Elementary,nan
+562,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-11 8:52:36,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
+563,nan,46.0,70.0,64.0,33.0,4.0,13.0,16.0,In Processing,10.0,20.0,16.0,46.0,RVms,nan,nan,9,nan,March 22 2025 (No-rest option),Mary McLeod Bethune Elementary,nan
 564,nan,18.0,49.0,29.0,7.0,1.0,1.0,5.0,In Processing,nan,nan,nan,nan,2024-11-11 11:56:02,nan,nan,9,nan,January 18 2025,Edward Hynes Lakeview,nan
 565,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,15.0,24.0,19.0,88.0,2024-11-11 13:47:47,nan,nan,9,nan,February 15 2025 (No-rest option),Renew Laurel Elementary,4.0
 566,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,15.0,11.0,27.0,2024-11-11 13:51:42,nan,nan,9,nan,February 15 2025 (No-rest option),Mary McLeod Bethune Elementary,nan
@@ -569,27 +569,27 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 568,30.0,94.0,99.0,41.0,89.0,28.0,1.0,30.0,Eligible,nan,nan,nan,nan,2024-11-11 19:59:33,nan,nan,9,nan,December 14 2024,International School of Louisiana,4.0
 569,30.0,72.0,95.0,90.0,101.0,17.0,26.0,28.0,Eligible,nan,nan,nan,nan,2024-11-11 20:22:03,nan,nan,9,nan,December 14 2024,Esperanza Charter School,3.88
 570,nan,50.0,69.0,57.0,30.0,6.0,9.0,15.0,In Processing,nan,nan,nan,nan,2024-11-11 20:52:04,nan,nan,9,nan,January 18 2025,Fannie C. Williams Charter School,nan
-571,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-11 21:38:48,nan,nan,9,nan,nan,Lake Forest Elementary Charter School,nan
+571,nan,nan,fd7f,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-11 21:38:48,nan,nan,9,nan,nan,Lake Forest Elementary Charter School,nan
 572,nan,40.0,59.0,48.0,16.0,1.0,5.0,10.0,In Processing,nan,nan,nan,nan,2024-11-12 6:23:57,nan,nan,9,nan,April 26 2025 (No-rest option),Belle Chasse Academy,nan
 573,nan,60.0,61.0,60.0,33.0,11.0,11.0,11.0,In Processing,nan,nan,nan,nan,2024-11-12 12:12:23,nan,nan,9,nan,April 26 2025 (No-rest option),International School of Louisiana,nan
 574,nan,50.0,85.0,41.0,35.0,6.0,6.0,23.0,In Processing,nan,nan,nan,nan,2024-11-12 11:02:59,nan,nan,9,nan,December 14 2024,Lake Forest Elementary Charter School,nan
 575,nan,31.0,55.0,37.0,10.0,1.0,1.0,8.0,In Processing,7.0,1.0,11.0,19.0,2024-11-12 11:45:31,nan,nan,9,nan,March 22 2025 (No-rest option),Phillis Wheatley Community School,nan
 576,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-12 11:57:14,nan,nan,9,nan,nan,Bricolage Academy,nan
-577,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-12 12:45:54,nan,nan,9,nan,December 14 2024,Other,nan
+577,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,nBSU,nan,nan,9,nan,December 14 2024,Other,nan
 578,30.0,85.0,99.0,98.0,113.0,23.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-12 13:27:05,nan,nan,9,nan,December 14 2024,Edward Hynes Lakeview,3.5
 579,28.0,85.0,77.0,95.0,98.0,23.0,28.0,19.0,Eligible,23.0,28.0,19.0,70.0,2024-11-12 14:47:48,nan,nan,9,nan,February 15 2025 (No-rest option),The Willow School,3.38
 580,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-12 14:58:36,nan,nan,11,nan,nan,Other,nan
 581,nan,44.0,70.0,72.0,36.0,3.0,17.0,16.0,In Processing,nan,nan,nan,nan,2024-11-18 17:45:31,nan,nan,9,nan,March 22 2025 (No-rest option),Other,nan
-582,nan,40.0,43.0,57.0,12.0,1.0,9.0,2.0,In Processing,nan,nan,nan,nan,2024-11-12 18:07:43,nan,nan,9,nan,December 14 2024,Renew Dolores T. Aaron Academy,nan
+582,nan,40.0,43.0,57.0,12.0,JupA,9.0,2.0,In Processing,nan,nan,nan,nan,2024-11-12 18:07:43,nan,nan,9,nan,December 14 2024,Renew Dolores T. Aaron Academy,nan
 583,nan,69.0,88.0,72.0,57.0,15.0,17.0,25.0,In Processing,nan,nan,nan,nan,2024-11-12 19:01:37,nan,nan,9,nan,December 14 2024,Dorothy Height Charter School,nan
 584,30.0,50.0,77.0,76.0,74.0,6.0,19.0,19.0,Eligible,19.0,23.0,17.0,89.0,2024-11-12 21:36:57,nan,nan,9,nan,March 22 2025 (No-rest option),Renew Dolores T. Aaron Academy,3.88
-585,nan,58.0,95.0,78.0,58.0,10.0,20.0,28.0,In Processing,nan,nan,nan,nan,2024-11-13 7:34:04,nan,nan,9,nan,January 18 2025,The Willow School,nan
+585,nan,58.0,95.0,78.0,58.0,10.0,20.0,28.0,In Processing,nan,nan,nan,OHlg,2024-11-13 7:34:04,nan,nan,9,nan,January 18 2025,The Willow School,nan
 586,30.0,87.0,99.0,99.0,114.0,24.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-13 8:22:28,nan,nan,9,nan,December 14 2024,Homer Plessy Community School,3.75
 587,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-13 9:52:03,nan,nan,9,nan,nan,Einstein Middle School,nan
 588,30.0,81.0,96.0,93.0,107.0,21.0,27.0,29.0,Eligible,nan,nan,nan,nan,2024-11-13 9:40:57,nan,nan,9,nan,December 14 2024,The Willow School,4.0
 589,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-13 11:41:04,nan,nan,10,nan,February 15 2025 (No-rest option),Other,nan
 590,nan,80.0,85.0,10.0,54.0,21.0,10.0,23.0,In Processing,nan,nan,nan,nan,2024-11-19 9:44:27,nan,nan,9,nan,December 14 2024,Bricolage Academy,nan
-591,nan,nan,nan,nan,J0p3,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-13 11:48:20,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
+591,nan,nan,nan,nan,Y0Ny,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-13 11:48:20,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
 592,25.0,58.0,96.0,96.0,93.0,10.0,29.0,29.0,Eligible,nan,nan,nan,nan,2024-11-13 14:11:30,nan,nan,9,Test Accommodations Approved,January 18 2025,Audubon Uptown Montessori and French,3.0
 593,30.0,80.0,99.0,85.0,104.0,21.0,23.0,30.0,Eligible,nan,nan,nan,nan,2024-11-13 14:45:05,nan,nan,9,nan,December 14 2024,Homer Plessy Community School,3.63
 594,nan,27.0,73.0,37.0,19.0,1.0,1.0,17.0,In Processing,1.0,9.0,23.0,33.0,2024-11-13 17:38:43,nan,nan,9,nan,March 22 2025 (No-rest option),Benjamin Franklin Elementary,nan
@@ -608,41 +608,41 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 607,nan,77.0,92.0,74.0,64.0,19.0,18.0,27.0,In Processing,nan,nan,nan,nan,2024-11-14 18:31:33,nan,nan,9,nan,December 14 2024,Renew Dolores T. Aaron Academy,nan
 608,nan,88.0,83.0,73.0,64.0,25.0,17.0,22.0,In Processing,nan,nan,nan,nan,2024-11-14 20:01:43,nan,nan,10,nan,December 14 2024,Other,nan
 609,nan,27.0,56.0,35.0,37.0,27.0,1.0,9.0,In Processing,nan,nan,nan,nan,2024-11-14 20:36:33,nan,nan,9,nan,April 26 2025 (No-rest option),Renew Dolores T. Aaron Academy,nan
-610,nan,40.0,64.0,33.0,15.0,1.0,1.0,OTfP,In Processing,nan,nan,nan,nan,2024-12-02 22:18:01,nan,nan,10,nan,January 18 2025,Other,nan
+610,nan,40.0,64.0,33.0,15.0,1.0,1.0,13.0,In Processing,nan,nan,nan,nan,2024-12-02 22:18:01,nan,nan,10,nan,January 18 2025,Other,nan
 611,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-15 2:43:46,nan,nan,9,nan,nan,Fannie C. Williams Charter School,nan
 612,nan,88.0,80.0,55.0,54.0,25.0,8.0,21.0,In Processing,nan,nan,nan,nan,2024-11-15 9:14:05,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
 613,nan,65.0,92.0,98.0,70.0,13.0,30.0,27.0,In Processing,nan,nan,nan,nan,2024-11-15 21:04:17,nan,nan,9,nan,December 14 2024,Edward Hynes Lakeview,nan
 614,nan,41.0,37.0,57.0,11.0,1.0,9.0,1.0,In Processing,nan,nan,nan,nan,2024-11-18 17:11:40,nan,nan,9,nan,April 26 2025 (No-rest option),Renew Dolores T. Aaron Academy,nan
-615,nan,53.0,31.0,51.0,14.0,7.0,6.0,1.0,In Processing,12.0,12.0,1.0,25.0,2024-11-16 10:05:54,nan,nan,9,nan,March 22 2025 (No-rest option),Renew Dolores T. Aaron Academy,nan
+615,nan,53.0,31.0,51.0,14.0,7.0,82nR,1.0,In Processing,12.0,12.0,1.0,25.0,2024-11-16 10:05:54,nan,nan,9,nan,March 22 2025 (No-rest option),Renew Dolores T. Aaron Academy,nan
 616,nan,59.0,89.0,80.0,56.0,10.0,21.0,25.0,In Processing,nan,nan,nan,nan,2024-11-16 15:44:13,nan,nan,9,nan,December 14 2024,Edward Hynes Lakeview,nan
 617,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-16 20:20:16,nan,nan,9,nan,nan,Edward Hynes Lakeview,nan
-618,30.0,97.0,99.0,99.0,119.0,29.0,30.0,30.0,uDF0,nan,nan,nan,nan,2024-11-17 4:08:51,nan,nan,9,nan,January 18 2025,Audubon Uptown Montessori and French,4.0
-619,nan,wwOA,77.0,38.0,21.0,1.0,1.0,19.0,In Processing,nan,nan,nan,nan,2024-11-17 17:09:17,nan,nan,9,nan,December 14 2024,Edward Hynes Parkview,nan
+618,30.0,97.0,99.0,99.0,119.0,29.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-17 4:08:51,nan,nan,9,nan,January 18 2025,Audubon Uptown Montessori and French,4.0
+619,nan,38.0,77.0,38.0,21.0,1.0,1.0,19.0,In Processing,nan,nan,nan,nan,2024-11-17 17:09:17,nan,nan,9,nan,December 14 2024,Edward Hynes Parkview,nan
 620,nan,9.0,33.0,31.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-17 21:15:47,nan,nan,9,nan,December 14 2024,St. Paul's Episcopal School,nan
 621,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,9.0,10.0,20.0,39.0,2024-11-17 21:20:56,nan,nan,9,nan,February 15 2025 (No-rest option),Alice Harte Charter School,nan
 622,nan,53.0,48.0,24.0,13.0,7.0,1.0,5.0,In Processing,nan,nan,nan,nan,2024-11-17 22:12:26,nan,nan,10,nan,January 18 2025,Other,nan
 623,nan,62.0,58.0,62.0,34.0,12.0,12.0,10.0,In Processing,nan,nan,nan,nan,2024-11-17 23:41:46,nan,nan,9,nan,December 14 2024,Renew Dolores T. Aaron Academy,nan
-624,nan,62.0,58.0,62.0,34.0,12.0,12.0,10.0,In Processing,nan,nan,nan,nan,2024-11-17 23:41:46,nan,nan,9,nan,December 14 2024,Renew Dolores T. Aaron Academy,nan
+624,nan,62.0,58.0,62.0,34.0,12.0,12.0,10.0,In Processing,cHa5,nan,nan,nan,2024-11-17 23:41:46,nan,nan,9,nan,December 14 2024,Renew Dolores T. Aaron Academy,nan
 625,nan,39.0,49.0,28.0,7.0,1.0,1.0,5.0,In Processing,nan,nan,nan,nan,2024-11-18 4:30:37,nan,nan,9,nan,April 26 2025 (No-rest option),Renew Dolores T. Aaron Academy,nan
-626,30.0,92.0,93.0,76.0,103.0,27.0,19.0,27.0,Eligible,nan,nan,nan,nan,2024-11-18 9:33:26,Xt9c,nan,10,Test Accommodations Approved,December 14 2024,Other,4.0
-627,nan,48.0,84.0,76.0,47.0,5.0,19.0,23.0,In Processing,nan,nan,nan,nan,2024-11-18 12:23:44,nan,hrzY,9,nan,January 18 2025,Lycee Francais de la Nouvelle Orleans,nan
+626,30.0,92.0,93.0,76.0,103.0,27.0,19.0,27.0,Eligible,nan,nan,nan,nan,2024-11-18 9:33:26,nan,nan,10,Test Accommodations Approved,December 14 2024,Other,4.0
+627,nan,48.0,84.0,76.0,47.0,5.0,19.0,23.0,In Processing,nan,nan,nan,nan,2024-11-18 12:23:44,nan,nan,9,nan,January 18 2025,Lycee Francais de la Nouvelle Orleans,nan
 628,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-21 9:56:31,nan,nan,10,nan,January 18 2025,International School of Louisiana,nan
-629,30.0,63.0,92.0,90.0,95.0,12.0,26.0,27.0,Eligible,nan,nan,nan,nan,2024-11-18 13:38:11,nan,nan,9,nan,December 14 2024,Renew Dolores T. Aaron Academy,3.88
-630,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 13:51:57,nan,nan,9,nan,nan,Arthur Ashe Charter School,nan
+629,30.0,63.0,92.0,syBt,95.0,12.0,26.0,27.0,Eligible,nan,nan,nan,nan,2024-11-18 13:38:11,nan,nan,9,nan,December 14 2024,Renew Dolores T. Aaron Academy,3.88
+630,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,pfCy,2024-11-18 13:51:57,nan,nan,9,nan,nan,Arthur Ashe Charter School,nan
 631,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-11 21:37:58,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
 632,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 14:11:44,nan,nan,9,nan,nan,Other,nan
 633,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 14:15:00,nan,nan,10,nan,January 18 2025,Other,nan
-634,nan,nan,nan,nan,az9l,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 14:23:08,nan,nan,9,nan,April 26 2025 (No-rest option),Edward Hynes Lakeview,nan
+634,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 14:23:08,nan,nan,9,nan,April 26 2025 (No-rest option),Edward Hynes Lakeview,nan
 635,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 15:08:20,nan,nan,9,nan,nan,Dorothy Height Charter School,nan
-636,nan,46.0,55.0,48.0,17.0,4.0,5.0,8.0,In Processing,nan,nan,nan,nan,2024-11-18 18:49:11,nan,nan,9,nan,December 14 2024,KIPP East,nan
-637,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 15:53:12,nan,nan,11,nan,January 18 2025,The Willow School,nan
+636,nan,46.0,55.0,48.0,mpd2,4.0,5.0,8.0,In Processing,nan,nan,nan,nan,2024-11-18 18:49:11,nan,nan,9,nan,December 14 2024,KIPP East,nan
+637,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,e51p,nan,2024-11-18 15:53:12,nan,nan,11,nan,January 18 2025,The Willow School,nan
 638,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 15:55:41,nan,nan,9,nan,December 14 2024,Renew Dolores T. Aaron Academy,nan
 639,nan,51.0,68.0,50.0,27.0,6.0,6.0,15.0,In Processing,10.0,6.0,11.0,27.0,2024-11-18 16:03:54,nan,nan,9,nan,March 22 2025 (No-rest option),Benjamin Franklin Elementary,nan
 640,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 16:54:02,nan,nan,9,nan,nan,KIPP Morial,nan
 641,30.0,81.0,97.0,99.0,110.0,21.0,30.0,29.0,In Processing,nan,nan,nan,nan,2024-11-18 19:07:45,nan,nan,10,nan,December 14 2024,Other,4.0
 642,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-18 20:05:29,nan,nan,9,nan,nan,Other,nan
 643,nan,21.0,43.0,26.0,4.0,1.0,1.0,2.0,In Processing,nan,nan,nan,nan,2024-12-13 12:09:58,nan,nan,9,Test Accommodations Approved,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,nan
-644,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-19 8:55:45,nan,nan,9,nan,January 18 2025,Audubon Gentilly,nan
+644,nan,Eb4r,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-19 8:55:45,nan,nan,9,nan,January 18 2025,Audubon Gentilly,nan
 645,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-19 10:13:07,nan,nan,9,nan,nan,Alice Harte Charter School,nan
 646,nan,69.0,61.0,62.0,38.0,15.0,12.0,11.0,In Processing,nan,nan,nan,nan,2024-11-19 10:18:31,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
 647,nan,86.0,95.0,55.0,60.0,24.0,8.0,28.0,In Processing,24.0,12.0,20.0,56.0,2024-11-19 10:26:07,nan,nan,10,nan,March 22 2025 (No-rest option),International School of Louisiana,nan
@@ -650,9 +650,9 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 649,30.0,91.0,98.0,43.0,88.0,26.0,2.0,30.0,Eligible,nan,nan,nan,nan,2024-11-19 13:04:46,nan,nan,9,nan,December 14 2024,International School of Louisiana,4.0
 650,30.0,90.0,86.0,97.0,109.0,26.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-11-19 13:11:58,nan,nan,10,nan,December 14 2024,Other,3.6
 651,30.0,80.0,94.0,80.0,100.0,21.0,21.0,28.0,Eligible,nan,nan,nan,nan,2024-12-02 19:54:39,nan,nan,9,nan,January 18 2025,The Willow School,3.63
-652,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-19 16:07:55,nan,nan,9,nan,nan,Alice Harte Charter School,nan
+652,nan,nan,nan,nan,nan,nan,nan,kcof,In Processing,nan,nan,nan,nan,2024-11-19 16:07:55,nan,nan,9,nan,nan,Alice Harte Charter School,nan
 653,nan,41.0,59.0,38.0,12.0,1.0,1.0,10.0,In Processing,nan,nan,nan,nan,2024-12-27 14:34:20,nan,nan,9,nan,January 18 2025,Audubon Uptown Montessori and French,nan
-654,30.0,99.0,98.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-21 10:46:34,nan,nan,9,nan,December 14 2024,Arthur Ashe Charter School,4.0
+654,30.0,99.0,98.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-21 10:46:34,FRGO,nan,9,nan,December 14 2024,Arthur Ashe Charter School,4.0
 655,nan,80.0,0.0,90.0,48.0,21.0,26.0,1.0,In Processing,nan,nan,nan,nan,2024-11-19 19:45:59,nan,nan,9,Test Accommodations Approved,December 14 2024,KIPP Morial,nan
 656,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,3.0,3.0,7.0,2024-11-19 21:08:11,nan,nan,9,nan,February 15 2025 (No-rest option),Other,nan
 657,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-19 21:33:26,nan,nan,11,nan,April 26 2025 (No-rest option),Cabrini High School,nan
@@ -663,7 +663,7 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 662,nan,58.0,81.0,91.0,57.0,10.0,26.0,21.0,In Processing,nan,nan,nan,nan,2024-11-20 12:57:49,nan,nan,9,nan,April 26 2025 (No-rest option),The Willow School,nan
 663,30.0,98.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-11-20 13:24:53,nan,nan,9,nan,December 14 2024,Audubon Uptown Montessori and French,4.0
 664,nan,52.0,76.0,54.0,34.0,7.0,8.0,19.0,In Processing,nan,nan,nan,nan,2025-01-07 15:57:58,nan,nan,9,nan,January 18 2025,Audubon Uptown Montessori and French,nan
-665,nan,31.0,41.0,28.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-20 18:48:27,nan,nan,9,jcID,January 18 2025,Success at Thurgood Marshall,nan
+665,nan,31.0,41.0,28.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-11-20 18:48:27,nan,nan,9,nan,January 18 2025,Success at Thurgood Marshall,nan
 666,30.0,96.0,91.0,84.0,108.0,29.0,23.0,26.0,Eligible,nan,nan,nan,nan,2024-11-20 19:43:02,nan,nan,10,nan,December 14 2024,Cabrini High School,4.0
 667,nan,12.0,35.0,35.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2025-01-06 15:57:56,nan,nan,9,nan,January 18 2025,Esperanza Charter School,nan
 668,nan,12.0,35.0,35.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2025-01-06 15:57:56,nan,nan,9,nan,January 18 2025,Esperanza Charter School,nan
@@ -674,7 +674,7 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 673,nan,64.0,84.0,74.0,54.0,13.0,18.0,23.0,In Processing,nan,nan,nan,nan,2024-11-21 14:38:45,nan,nan,9,nan,January 18 2025,Homer Plessy Community School,nan
 674,30.0,76.0,99.0,93.0,106.0,19.0,27.0,30.0,Eligible,nan,nan,nan,nan,2024-11-21 15:06:58,nan,nan,9,Test Accommodations Approved,December 14 2024,Martin Behrman Charter School,3.5
 675,30.0,72.0,87.0,72.0,88.0,17.0,17.0,24.0,Eligible,nan,nan,nan,nan,2024-11-21 17:21:04,nan,nan,9,nan,December 14 2024,International School of Louisiana,4.0
-676,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-21 18:02:47,nan,nan,9,nan,nan,Mary McLeod Bethune Elementary,nan
+676,nan,nan,nan,nan,nan,nan,nan,nan,6QnO,nan,nan,nan,nan,2024-11-21 18:02:47,nan,nan,9,nan,nan,Mary McLeod Bethune Elementary,nan
 677,18.0,79.0,82.0,80.0,81.0,20.0,21.0,22.0,In Processing,1.0,1.0,4.0,24.0,2024-12-04 14:13:16,nan,nan,9,nan,March 22 2025 (No-rest option),Edward Hynes Lakeview,2.38
 678,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-11-22 11:55:10,nan,nan,9,nan,March 22 2025 (No-rest option),Other,nan
 679,nan,54.0,48.0,43.0,15.0,8.0,2.0,5.0,In Processing,nan,nan,nan,nan,2024-11-22 13:35:31,nan,nan,9,nan,December 14 2024,International School of Louisiana,nan
@@ -707,19 +707,19 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 706,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,3.0,26.0,27.0,56.0,2024-12-02 14:47:31,nan,nan,9,nan,February 15 2025 (No-rest option),Dorothy Height Charter School,nan
 707,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-02 15:45:40,nan,nan,9,nan,nan,Andrew H. Wilson Charter School,nan
 708,nan,35.0,61.0,86.0,36.0,1.0,24.0,11.0,In Processing,nan,nan,nan,nan,2024-12-02 17:27:52,nan,nan,9,nan,January 18 2025,Lake Forest Elementary Charter School,nan
-709,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-02 17:47:53,nan,nan,9,nan,nan,Audubon Gentilly,nan
+709,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,o9Fh,nan,nan,nan,2024-12-02 17:47:53,nan,nan,9,nan,nan,Audubon Gentilly,nan
 710,nan,38.0,61.0,41.0,13.0,1.0,1.0,11.0,In Processing,nan,nan,nan,nan,2024-12-02 20:05:19,nan,nan,9,nan,April 26 2025 (No-rest option),Edward Hynes Lakeview,nan
 711,25.0,81.0,82.0,74.0,86.0,21.0,18.0,22.0,In Processing,nan,nan,nan,nan,2024-12-02 20:36:56,nan,nan,9,Test Accommodations Approved,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,3.0
 712,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-02 21:42:48,nan,nan,9,nan,January 18 2025,International School of Louisiana,nan
 713,nan,81.0,71.0,55.0,45.0,21.0,8.0,16.0,In Processing,nan,nan,nan,nan,2024-12-02 22:48:22,nan,nan,10,nan,January 18 2025,Other,nan
 714,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 5:20:32,nan,nan,9,nan,nan,Bricolage Academy,nan
-715,nan,72.0,70.0,37.0,34.0,17.0,1.0,16.0,In Processing,nan,nan,nan,nan,2024-12-03 6:45:30,9TNg,nan,9,nan,April 26 2025 (No-rest option),Morris Jeff Community School,nan
+715,nan,72.0,70.0,37.0,34.0,17.0,1.0,16.0,In Processing,nan,nan,qOLc,nan,2024-12-03 6:45:30,nan,nan,9,nan,April 26 2025 (No-rest option),Morris Jeff Community School,nan
 716,30.0,99.0,96.0,99.0,119.0,30.0,30.0,29.0,In Processing,nan,nan,nan,nan,2024-12-03 6:53:18,nan,nan,10,nan,January 18 2025,Other,3.75
 717,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 7:50:16,nan,nan,9,nan,February 15 2025 (No-rest option),Bricolage Academy,nan
 718,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 9:19:53,nan,nan,9,nan,nan,Benjamin Franklin Elementary,nan
 719,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 11:48:12,nan,nan,10,nan,nan,Other,nan
 720,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 11:41:18,nan,nan,9,nan,January 18 2025,International School of Louisiana,nan
-721,nan,7qRw,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 12:27:55,nan,nan,9,nan,nan,Audubon Uptown Montessori and French,nan
+721,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-03 12:27:55,nan,nan,9,nan,nan,Audubon Uptown Montessori and French,nan
 722,nan,66.0,78.0,24.0,35.0,14.0,1.0,20.0,In Processing,nan,nan,nan,nan,2025-01-07 9:08:17,nan,nan,10,nan,April 26 2025 (No-rest option),Cabrini High School,nan
 723,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,11.0,19.0,11.0,41.0,2024-12-03 14:12:25,nan,nan,9,nan,March 22 2025 (No-rest option),Bricolage Academy,nan
 724,nan,37.0,50.0,28.0,8.0,1.0,1.0,6.0,In Processing,nan,nan,nan,nan,2024-12-03 14:50:04,nan,nan,9,nan,January 18 2025,Edward Hynes Parkview,nan
@@ -742,7 +742,7 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 741,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-04 18:37:55,nan,nan,9,nan,January 18 2025,Jesuit High School,nan
 742,nan,68.0,69.0,7.0,31.0,15.0,1.0,15.0,In Processing,nan,nan,nan,nan,2024-12-05 23:18:27,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 743,nan,97.0,99.0,99.0,89.0,29.0,30.0,30.0,In Processing,nan,nan,nan,nan,2024-12-05 8:36:13,nan,nan,9,nan,January 18 2025,Bricolage Academy,nan
-744,22.0,4hGB,80.0,78.0,80.0,17.0,20.0,21.0,In Processing,nan,nan,nan,nan,2025-02-06 14:51:27,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,2.75
+744,22.0,73.0,80.0,78.0,80.0,17.0,20.0,21.0,In Processing,nan,nan,nan,nan,2025-02-06 14:51:27,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,2.75
 745,nan,44.0,53.0,43.0,12.0,3.0,2.0,7.0,In Processing,nan,nan,nan,nan,2024-12-05 10:33:15,nan,nan,9,nan,January 18 2025,Audubon Uptown Montessori and French,nan
 746,nan,75.0,61.0,78.0,49.0,18.0,20.0,11.0,In Processing,nan,nan,nan,nan,2024-12-05 11:20:42,nan,nan,9,nan,January 18 2025,Mary McLeod Bethune Elementary,nan
 747,nan,43.0,84.0,20.0,26.0,2.0,1.0,23.0,In Processing,nan,nan,nan,nan,2024-12-05 12:44:01,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
@@ -762,19 +762,19 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 761,nan,97.0,88.0,77.0,73.0,29.0,19.0,25.0,In Processing,nan,nan,nan,nan,2024-12-08 21:10:12,nan,nan,11,nan,April 26 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,nan
 762,nan,23.0,60.0,45.0,15.0,1.0,3.0,11.0,In Processing,nan,nan,nan,nan,2024-12-09 9:13:56,nan,nan,9,nan,January 18 2025,Kipp Believe,nan
 763,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-09 9:43:53,nan,nan,9,nan,January 18 2025,Audubon Uptown Montessori and French,nan
-764,23.0,89.0,84.0,92.0,98.0,25.0,27.0,23.0,I8nU,nan,nan,nan,nan,2024-12-09 10:10:08,nan,nan,10,nan,January 18 2025,Other,2.85
-765,nan,43.0,28.0,14.0,4.0,2.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-12-09 11:39:39,nan,nan,10,nan,May 24 2025 (Final Test Date),Other,nan
-766,nan,18.0,29.0,22.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-12-09 11:11:07,nan,nan,9,nan,January 18 2025,Einstein Middle School,nan
+764,23.0,89.0,84.0,92.0,98.0,25.0,27.0,23.0,Eligible,nan,nan,nan,nan,2024-12-09 10:10:08,nan,nan,10,nan,January 18 2025,Other,2.85
+765,nan,43.0,28.0,14.0,4.0,2.0,1.0,1.0,In Processing,nan,nan,nan,smc7,2024-12-09 11:39:39,nan,nan,10,nan,May 24 2025 (Final Test Date),Other,nan
+766,nan,18.0,29.0,22.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-12-09 11:11:07,nan,u5Z8,9,nan,January 18 2025,Einstein Middle School,nan
 767,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2024-12-09 11:15:12,nan,nan,9,nan,nan,Phillis Wheatley Community School,nan
 768,nan,62.0,89.0,50.0,43.0,12.0,6.0,25.0,In Processing,nan,nan,nan,nan,2024-12-09 11:35:07,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,nan
-769,nan,nan,DsgU,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-09 11:38:34,nan,nan,9,nan,nan,Other,nan
-770,nan,17.0,53.0,39.0,9.0,1.0,1.0,7.0,In Processing,nan,nan,nan,nan,2024-12-09 12:43:57,nan,nan,9,nan,April 26 2025 (No-rest option),Homer Plessy Community School,nan
+769,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-09 11:38:34,nan,nan,9,nan,6Jmb,Other,nan
+770,nan,17.0,53.0,39.0,9.0,1.0,1.0,7.0,In Processing,nan,nan,nan,nan,2024-12-09 12:43:57,nan,nan,9,nan,April 26 2025 (No-rest option),Homer Plessy Community School,Wm36
 771,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-09 14:58:01,nan,nan,11,nan,nan,Louise McGehee,nan
 772,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,18.0,1.0,20.0,2024-12-09 16:38:40,nan,nan,9,nan,February 15 2025 (No-rest option),Audubon Uptown Montessori and French,nan
 773,nan,60.0,59.0,62.0,33.0,11.0,12.0,10.0,In Processing,nan,nan,nan,nan,2024-12-09 16:57:59,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
 774,nan,99.0,74.0,64.0,61.0,30.0,13.0,18.0,In Processing,nan,nan,nan,nan,2024-12-09 17:27:20,nan,nan,11,nan,April 26 2025 (No-rest option),Other,nan
-775,nan,nan,nan,nan,0.0,nan,nan,nan,meHm,nan,nan,nan,nan,2025-01-06 23:32:37,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
-776,30.0,64.0,97.0,72.0,89.0,13.0,17.0,29.0,Eligible,nan,nan,nan,nan,2024-12-09 20:49:59,nan,nan,9,nan,January 18 2025,Morris Jeff Community School,4.0
+775,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-06 23:32:37,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
+776,30.0,64.0,97.0,72.0,89.0,13.0,17.0,29.0,Eligible,nan,nan,nan,nan,Q5Vh,nan,nan,9,nan,January 18 2025,Morris Jeff Community School,4.0
 777,nan,75.0,73.0,18.0,36.0,18.0,1.0,17.0,In Processing,nan,nan,nan,nan,2024-12-10 11:44:47,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,nan
 778,nan,93.0,93.0,62.0,66.0,27.0,12.0,27.0,In Processing,nan,nan,nan,nan,2025-01-07 20:50:23,nan,nan,10,nan,April 26 2025 (No-rest option),Ursuline Academy,nan
 779,nan,79.0,83.0,66.0,56.0,20.0,14.0,22.0,In Processing,nan,nan,nan,nan,2024-12-10 17:58:30,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
@@ -788,16 +788,16 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 787,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-13 12:42:06,nan,nan,9,nan,nan,Renew Laurel Elementary,nan
 788,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,4.0,13.0,18.0,2024-12-13 14:29:04,nan,nan,9,nan,February 15 2025 (No-rest option),Edward Hynes Lakeview,nan
 789,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,12.0,12.0,16.0,40.0,2024-12-14 11:00:26,nan,nan,10,nan,nan,International School of Louisiana,nan
-790,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-14 14:32:43,nan,nan,9,nan,2bXX,Benjamin Franklin Elementary,nan
+790,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-14 14:32:43,nan,nan,9,nan,nan,Benjamin Franklin Elementary,nan
 791,30.0,82.0,85.0,97.0,104.0,22.0,29.0,23.0,Eligible,nan,nan,nan,nan,2024-12-14 14:36:10,nan,nan,9,nan,January 18 2025,Mildred Osborne Charter School,4.0
-792,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,19.0,17.0,37.0,2024-12-14 16:39:42,nan,nan,9,nan,March 22 2025 (No-rest option),Lake Forest Elementary Charter School,nan
+792,nan,nan,nan,nan,0.0,nan,cl8I,nan,In Processing,1.0,19.0,17.0,37.0,2024-12-14 16:39:42,nan,nan,9,nan,March 22 2025 (No-rest option),Lake Forest Elementary Charter School,nan
 793,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,19.0,17.0,37.0,2024-12-14 16:39:42,nan,nan,9,nan,March 22 2025 (No-rest option),Lake Forest Elementary Charter School,nan
-794,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,7.0,5.0,13.0,2025-03-15 18:47:26,nan,jubJ,9,nan,March 22 2025 (No-rest option),Phillis Wheatley Community School,nan
+794,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,7.0,5.0,13.0,2025-03-15 18:47:26,nan,nan,9,nan,March 22 2025 (No-rest option),Phillis Wheatley Community School,nan
 795,30.0,89.0,98.0,99.0,115.0,25.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-12-15 10:15:52,nan,nan,9,nan,January 18 2025,The Willow School,4.0
 796,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-15 12:28:15,nan,nan,10,nan,nan,Other,nan
 797,nan,26.0,59.0,43.0,13.0,1.0,2.0,10.0,In Processing,nan,nan,nan,nan,2024-12-15 12:41:55,nan,nan,9,nan,January 18 2025,Homer Plessy Community School,nan
 798,26.0,85.0,99.0,99.0,109.0,23.0,30.0,30.0,Eligible,nan,nan,nan,nan,2024-12-16 10:27:02,nan,nan,9,nan,January 18 2025,Ursuline Academy,3.16
-799,nan,nan,JzzM,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-16 17:18:09,nan,nan,9,nan,nan,Langston Hughes Academy,nan
+799,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-16 17:18:09,nan,nan,9,nan,nan,Langston Hughes Academy,nan
 800,nan,34.0,21.0,16.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2024-12-16 18:07:20,nan,nan,9,nan,April 26 2025 (No-rest option),Arthur Ashe Charter School,nan
 801,nan,39.0,67.0,51.0,21.0,1.0,6.0,14.0,In Processing,nan,nan,nan,nan,2024-12-20 9:29:08,nan,nan,9,nan,January 18 2025,Audubon Uptown Montessori and French,nan
 802,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-17 9:25:15,nan,nan,10,nan,February 15 2025 (No-rest option),Other,nan
@@ -809,10 +809,10 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 808,nan,82.0,61.0,74.0,51.0,22.0,18.0,11.0,In Processing,nan,nan,nan,nan,2024-12-17 15:50:49,nan,nan,9,nan,April 26 2025 (No-rest option),Edward Hynes Lakeview,nan
 809,30.0,41.0,97.0,97.0,89.0,1.0,29.0,29.0,Eligible,nan,nan,nan,nan,2024-12-17 23:51:35,nan,nan,9,nan,April 26 2025 (No-rest option),Mildred Osborne Charter School,4.0
 810,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-27 13:13:04,nan,nan,11,nan,nan,Lycee Francais de la Nouvelle Orleans,nan
-811,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,rPcg,nan,2024-12-18 10:21:01,nan,nan,10,3Xxl,April 26 2025 (No-rest option),Other,nan
+811,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-18 10:21:01,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 812,30.0,75.0,95.0,99.0,106.0,18.0,30.0,28.0,Eligible,nan,nan,nan,nan,2024-12-19 8:02:52,nan,nan,9,nan,January 18 2025,Homer Plessy Community School,4.0
-813,nan,79.0,68.0,24.0,36.0,20.0,1.0,15.0,In Processing,nan,nan,nan,nan,2024-12-19 10:01:47,nan,nan,10,nan,January 18 2025,Other,nan
-814,nan,84.0,90.0,68.0,64.0,23.0,15.0,26.0,In Processing,nan,nan,nan,nan,2024-12-19 12:47:49,nan,nan,11,nan,April 26 2025 (No-rest option),Isidore Newman,nan
+813,nan,79.0,68.0,24.0,36.0,20.0,1.0,15.0,In Processing,nan,nan,nan,nan,2024-12-19 10:01:47,nan,nan,10,nan,January 18 2025,mzHw,nan
+814,nan,84.0,90.0,68.0,TXLj,23.0,15.0,26.0,In Processing,nan,nan,nan,nan,2024-12-19 12:47:49,nan,nan,11,nan,April 26 2025 (No-rest option),Isidore Newman,nan
 815,21.0,69.0,94.0,86.0,88.0,15.0,24.0,28.0,Eligible,nan,nan,nan,nan,2024-12-19 13:42:44,nan,nan,9,nan,January 18 2025,Lycee Francais de la Nouvelle Orleans,2.66
 816,nan,52.0,73.0,80.0,45.0,7.0,21.0,17.0,In Processing,nan,nan,nan,nan,2024-12-19 17:21:22,nan,nan,9,nan,January 18 2025,International School of Louisiana,nan
 817,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-08 11:17:17,nan,nan,10,nan,January 18 2025,Other,nan
@@ -824,19 +824,19 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 823,nan,9.0,47.0,20.0,6.0,1.0,1.0,4.0,In Processing,nan,nan,nan,nan,2024-12-22 20:51:16,nan,nan,9,nan,April 26 2025 (No-rest option),Samuel J. Green Charter School,nan
 824,nan,79.0,66.0,54.0,42.0,20.0,8.0,14.0,In Processing,nan,nan,nan,nan,2024-12-25 12:07:07,nan,nan,9,nan,April 26 2025 (No-rest option),Mary McLeod Bethune Elementary,nan
 825,nan,30.0,65.0,94.0,42.0,1.0,28.0,13.0,In Processing,nan,nan,nan,nan,2024-12-26 20:38:54,nan,nan,9,nan,April 26 2025 (No-rest option),Morris Jeff Community School,nan
-826,nan,nan,UeZW,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-26 22:18:50,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
+826,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-26 22:18:50,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
 827,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-26 23:17:07,nan,nan,11,nan,April 26 2025 (No-rest option),Other,nan
 828,nan,29.0,73.0,31.0,19.0,1.0,1.0,17.0,In Processing,nan,nan,nan,nan,2024-12-28 23:57:29,nan,nan,9,nan,April 26 2025 (No-rest option),Arthur Ashe Charter School,nan
 829,nan,29.0,73.0,31.0,19.0,1.0,1.0,17.0,In Processing,nan,nan,nan,nan,2024-12-28 23:57:29,nan,nan,9,nan,April 26 2025 (No-rest option),Arthur Ashe Charter School,nan
 830,nan,96.0,90.0,43.0,57.0,29.0,2.0,26.0,In Processing,nan,nan,nan,nan,2024-12-29 12:25:24,nan,nan,9,nan,April 26 2025 (No-rest option),Edward Hynes Lakeview,nan
-831,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-30 9:48:26,nan,nan,10,nan,January 18 2025,Other,nan
+831,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,Tbra,nan,nan,nan,2024-12-30 9:48:26,nan,nan,10,nan,January 18 2025,Other,nan
 832,nan,59.0,87.0,62.0,46.0,10.0,12.0,24.0,In Processing,nan,nan,nan,nan,2024-12-30 13:24:27,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Gentilly,nan
 833,nan,77.0,84.0,24.0,43.0,19.0,1.0,23.0,In Processing,nan,nan,nan,nan,2024-12-30 13:32:55,nan,nan,9,nan,January 18 2025,Bricolage Academy,nan
 834,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-30 14:22:33,nan,nan,9,nan,January 18 2025,International School of Louisiana,nan
 835,nan,77.0,97.0,64.0,61.0,19.0,13.0,29.0,In Processing,nan,nan,nan,nan,2024-12-30 17:48:24,nan,nan,9,Test Accommodations Approved,January 18 2025,Other,nan
 836,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-31 0:12:32,nan,nan,9,nan,January 18 2025,Dwight D. Eisenhower Charter School,nan
 837,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2024-12-31 19:33:38,nan,nan,9,nan,nan,Edward Hynes Lakeview,nan
-838,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-01 11:19:04,nan,nan,11,nan,March 22 2025 (No-rest option),The Willow School,nan
+838,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,au0u,2025-01-01 11:19:04,nan,nan,11,nan,March 22 2025 (No-rest option),The Willow School,nan
 839,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-01 11:19:04,nan,nan,11,nan,March 22 2025 (No-rest option),The Willow School,nan
 840,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-01 11:21:10,nan,nan,10,nan,March 22 2025 (No-rest option),The Willow School,nan
 841,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-01 13:50:27,nan,nan,9,nan,January 18 2025,Renew Schaumburg Elementary,nan
@@ -845,9 +845,9 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 844,30.0,nan,nan,nan,30.0,nan,nan,nan,In Processing,26.0,30.0,30.0,116.0,2025-01-03 16:08:14,nan,nan,9,nan,March 22 2025 (No-rest option),Other,4.0
 845,nan,32.0,67.0,60.0,26.0,1.0,11.0,14.0,In Processing,nan,nan,nan,nan,2025-01-04 13:01:37,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,nan
 846,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-04 18:33:53,nan,nan,10,nan,January 18 2025,Other,nan
-847,nan,92.0,96.0,55.0,64.0,27.0,8.0,29.0,In Processing,nan,nan,nan,nan,2025-01-05 17:46:23,nan,nan,10,nan,April 26 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,nan
+847,nan,92.0,96.0,55.0,64.0,27.0,8.0,29.0,In Processing,TaPq,nan,nan,nan,2025-01-05 17:46:23,nan,nan,10,nan,April 26 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,nan
 848,nan,92.0,91.0,57.0,62.0,27.0,9.0,26.0,In Processing,nan,nan,nan,nan,2025-01-06 10:18:58,nan,nan,11,nan,January 18 2025,Other,nan
-849,nan,67.0,66.0,45.0,31.0,14.0,3.0,14.0,In Processing,nan,nan,nan,nan,2025-01-06 10:53:45,nan,nan,9,nan,January 18 2025,Homer Plessy Community School,nan
+849,nan,67.0,66.0,45.0,31.0,14.0,3.0,14.0,In Processing,nan,cAPR,nan,nan,2025-01-06 10:53:45,nan,nan,9,nan,January 18 2025,Homer Plessy Community School,nan
 850,25.0,nan,nan,nan,25.0,nan,nan,nan,Eligible,24.0,30.0,28.0,107.0,2025-01-06 10:55:59,nan,nan,9,nan,February 15 2025 (No-rest option),Benjamin Franklin Elementary,3.0
 851,30.0,93.0,80.0,82.0,100.0,27.0,22.0,21.0,Eligible,nan,nan,nan,nan,2025-01-06 12:12:23,nan,nan,10,nan,January 18 2025,Other,4.0
 852,nan,37.0,67.0,14.0,16.0,1.0,1.0,14.0,In Processing,nan,nan,nan,nan,2025-01-06 12:34:09,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
@@ -868,29 +868,29 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 867,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-07 21:47:21,nan,nan,11,nan,April 26 2025 (No-rest option),Other,nan
 868,nan,77.0,85.0,99.0,72.0,19.0,30.0,23.0,In Processing,nan,nan,nan,nan,2025-01-08 10:56:45,nan,nan,9,nan,January 18 2025,The Willow School,nan
 869,23.0,86.0,99.0,91.0,103.0,24.0,26.0,30.0,Eligible,nan,nan,nan,nan,2025-01-08 10:38:16,nan,nan,9,nan,January 18 2025,Other,2.88
-870,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-08 11:29:43,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
+870,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,JhTJ,nan,2025-01-08 11:29:43,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
 871,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-08 11:33:10,nan,nan,9,nan,nan,Fannie C. Williams Charter School,nan
 872,nan,61.0,78.0,37.0,32.0,11.0,1.0,20.0,In Processing,nan,nan,nan,nan,2025-01-08 11:43:01,nan,nan,9,nan,January 18 2025,Mary McLeod Bethune Elementary,nan
 873,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-08 22:21:05,nan,nan,9,nan,nan,Esperanza Charter School,nan
 874,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-08 22:23:32,nan,nan,9,nan,January 18 2025,Esperanza Charter School,nan
 875,nan,86.0,81.0,73.0,62.0,24.0,17.0,21.0,In Processing,nan,nan,nan,nan,2025-01-08 23:39:57,nan,nan,10,nan,January 18 2025,Lycee Francais de la Nouvelle Orleans,nan
-876,nan,66.0,73.0,90.0,57.0,14.0,26.0,17.0,In Processing,nan,nan,nan,nan,2025-01-09 6:48:10,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
+876,scll,66.0,73.0,90.0,57.0,14.0,26.0,17.0,In Processing,nan,nan,nan,nan,2025-01-09 6:48:10,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
 877,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-09 10:07:13,nan,nan,11,nan,April 26 2025 (No-rest option),Isidore Newman,nan
-878,nan,37.0,57.0,29.0,11.0,1.0,2SVC,9.0,In Processing,nan,nan,nan,nan,2025-01-09 12:10:07,nan,nan,9,nan,January 18 2025,Harriet Tubman Charter School,nan
+878,nan,37.0,57.0,29.0,11.0,1.0,1.0,9.0,In Processing,nan,nan,nan,nan,2025-01-09 12:10:07,nan,nan,9,nan,January 18 2025,Harriet Tubman Charter School,nan
 879,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,22.0,30.0,28.0,110.0,2025-01-09 13:06:22,nan,nan,10,Test Accommodations Approved,March 22 2025 (No-rest option),The Willow School,3.7
-880,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,gBPs,nan,nan,nan,2025-01-09 13:55:01,nan,nan,9,nan,nan,Other,nan
+880,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-09 13:55:01,nan,nan,9,nan,nan,Other,nan
 881,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,10.0,18.0,24.0,52.0,2025-01-09 14:12:21,nan,nan,11,nan,February 15 2025 (No-rest option),Other,nan
 882,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-09 14:28:08,nan,nan,9,nan,nan,Morris Jeff Community School,nan
 883,nan,88.0,78.0,66.0,59.0,25.0,14.0,20.0,In Processing,nan,nan,nan,nan,2025-01-14 17:43:54,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
-884,nan,60.0,76.0,37.0,31.0,11.0,1.0,19.0,In Processing,nan,nan,nan,nan,2025-01-09 16:25:45,nan,nan,9,nan,January 18 2025,Other,nan
+884,nan,60.0,76.0,37.0,31.0,11.0,1.0,19.0,In Processing,nan,nan,nan,CWe3,2025-01-09 16:25:45,nan,nan,9,nan,January 18 2025,Other,nan
 885,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-09 16:21:37,nan,nan,9,nan,nan,Elan Academy,nan
 886,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,2.0,4.0,2025-01-09 20:59:51,nan,nan,9,nan,March 22 2025 (No-rest option),Other,nan
 887,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,13.0,9.0,22.0,44.0,2025-01-09 17:58:10,nan,nan,9,nan,February 15 2025 (No-rest option),Kipp Believe,nan
 888,nan,23.0,39.0,33.0,3.0,1.0,1.0,1.0,In Processing,nan,nan,nan,nan,2025-01-09 21:25:47,nan,nan,9,nan,April 26 2025 (No-rest option),St. Augustine High School,nan
 889,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2025-01-10 8:26:15,nan,nan,11,nan,February 15 2025 (No-rest option),Morris Jeff Community School,nan
 890,27.0,nan,nan,nan,27.0,nan,nan,nan,Eligible,22.0,27.0,30.0,106.0,2025-01-10 8:33:49,nan,nan,9,nan,February 15 2025 (No-rest option),The Willow School,3.25
-891,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-10 9:24:32,nan,nan,10,nan,nan,Other,qMOH
-892,nan,nan,nan,nan,0.0,nan,nan,nan,Eligible,nan,nan,nan,nan,2025-01-10 9:37:49,nan,nan,10,nan,nan,Academy of the Sacred Heart,nan
+891,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-10 9:24:32,nan,nan,10,nan,nan,Other,nan
+892,nan,nan,nan,ApLM,0.0,nan,nan,nan,Eligible,nan,nan,nan,nan,2025-01-10 9:37:49,nan,nan,10,nan,nan,Academy of the Sacred Heart,nan
 893,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,14.0,10.0,27.0,51.0,2025-01-10 12:08:59,nan,nan,9,nan,February 15 2025 (No-rest option),Other,nan
 894,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-10 12:04:47,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 895,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,12.0,9.0,26.0,47.0,2025-01-10 15:47:21,nan,nan,9,nan,February 15 2025 (No-rest option),Other,nan
@@ -908,10 +908,10 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 907,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-16 15:14:11,nan,nan,11,nan,February 15 2025 (No-rest option),International School of Louisiana,nan
 908,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,9.0,4.0,20.0,33.0,2025-01-13 14:35:25,nan,nan,9,nan,March 22 2025 (No-rest option),Other,nan
 909,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,12.0,1.0,2.0,15.0,2025-01-13 18:40:54,nan,nan,9,nan,February 15 2025 (No-rest option),Kipp Believe,nan
-910,nan,nan,nan,nan,nan,nan,nan,7zWb,In Processing,nan,nan,nan,nan,2025-01-13 22:41:07,nan,nan,9,nan,nan,Phillis Wheatley Community School,nan
+910,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-13 22:41:07,nan,nan,9,nan,nan,Phillis Wheatley Community School,nan
 911,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-13 23:03:54,nan,nan,9,nan,nan,Bricolage Academy,nan
 912,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-14 9:43:02,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
-913,ElLW,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-14 17:04:17,nan,nan,10,nan,nan,KIPP Morial,nan
+913,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-14 17:04:17,nan,nan,10,nan,nan,KIPP Morial,nan
 914,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-14 21:50:58,nan,nan,9,nan,nan,Renew Robert Russa Moton: Lakefront:,nan
 915,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,24.0,17.0,27.0,98.0,2025-01-14 22:31:51,nan,nan,9,nan,February 15 2025 (No-rest option),International School of Louisiana,3.75
 916,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,27.0,23.0,30.0,110.0,2025-01-15 11:37:54,nan,nan,10,nan,March 22 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,4.0
@@ -934,7 +934,7 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 933,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,9.0,6.0,18.0,33.0,2025-01-22 11:09:54,nan,nan,9,nan,February 15 2025 (No-rest option),Other,nan
 934,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,20.0,9.0,22.0,51.0,2025-01-22 12:53:20,nan,nan,9,nan,March 22 2025 (No-rest option),Audubon Uptown Montessori and French,nan
 935,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,10.0,7.0,22.0,39.0,2025-01-22 17:55:52,nan,nan,10,nan,February 15 2025 (No-rest option),Cabrini High School,nan
-936,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-22 16:45:47,nan,nan,10,nan,February 15 2025 (No-rest option),Einstein Middle School,nan
+936,nan,nan,nan,nan,0.0,ox4o,nan,nan,In Processing,nan,nan,nan,nan,2025-01-22 16:45:47,nan,nan,10,nan,February 15 2025 (No-rest option),Einstein Middle School,nan
 937,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,20.0,12.0,15.0,47.0,2025-01-22 17:20:46,nan,nan,10,nan,February 15 2025 (No-rest option),Other,nan
 938,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,15.0,15.0,16.0,46.0,2025-01-23 15:02:46,nan,nan,9,nan,February 15 2025 (No-rest option),Mount Carmel Academy,nan
 939,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,20.0,28.0,24.0,102.0,2025-01-23 16:38:41,nan,nan,9,nan,February 15 2025 (No-rest option),International School of Louisiana,3.5
@@ -943,9 +943,9 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 942,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-24 12:56:24,nan,nan,9,nan,nan,Elan Academy,nan
 943,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-30 10:39:33,nan,nan,9,nan,April 26 2025 (No-rest option),International School of Louisiana,nan
 944,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-25 8:05:04,nan,nan,10,nan,April 26 2025 (No-rest option),Lycee Francais de la Nouvelle Orleans,nan
-945,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-25 13:21:40,nan,nan,9,nan,March 22 2025 (No-rest option),KIPP Leadership,nan
+945,nan,nan,nan,LL8r,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-25 13:21:40,nan,nan,9,nan,March 22 2025 (No-rest option),KIPP Leadership,nan
 946,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,18.0,5.0,11.0,34.0,2025-01-26 9:32:19,nan,nan,11,nan,February 15 2025 (No-rest option),Other,nan
-947,nan,nan,nan,nan,0.0,nan,nan,nan,IH74,3.0,1.0,2.0,6.0,2025-01-26 20:37:51,nan,nan,9,nan,February 15 2025 (No-rest option),Other,nan
+947,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,3.0,1.0,2.0,6.0,2025-01-26 20:37:51,nan,nan,9,nan,February 15 2025 (No-rest option),Other,nan
 948,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-27 10:43:41,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
 949,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-27 12:44:08,nan,nan,11,nan,nan,Other,nan
 950,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-27 20:51:06,nan,nan,9,nan,nan,Kipp Believe,nan
@@ -962,11 +962,11 @@ uupu,30.0,89.0,87.0,96.0,108.0,25.0,29.0,24.0,Eligible,nan,nan,nan,nan,2024-10-1
 961,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-29 20:30:14,nan,nan,10,nan,nan,Other,nan
 962,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-29 20:26:01,nan,nan,9,nan,February 15 2025 (No-rest option),Esperanza Charter School,nan
 963,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-30 11:12:36,nan,nan,9,nan,nan,Other,nan
-964,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-30 14:39:20,nan,nan,9,nan,March 22 2025 (No-rest option),Other,nan
+964,nan,nan,uUzg,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-30 14:39:20,nan,nan,9,nan,March 22 2025 (No-rest option),Other,nan
 965,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-30 15:20:53,nan,nan,9,nan,nan,Success at Thurgood Marshall,nan
 966,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-30 16:15:45,nan,nan,10,nan,nan,Other,nan
-b3eG,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2025-01-30 20:32:24,nan,nan,9,nan,February 15 2025 (No-rest option),Capdau S.T.E.A.M. School,nan
-968,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,NEnY,2025-01-30 17:46:19,nan,nan,9,nan,nan,HQKE,nan
+967,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2025-01-30 20:32:24,nan,nan,9,nan,February 15 2025 (No-rest option),Capdau S.T.E.A.M. School,nan
+968,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-30 17:46:19,nan,nan,9,nan,nan,Bricolage Academy,nan
 969,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,6.0,1.0,8.0,2025-01-30 18:46:37,nan,nan,9,nan,February 15 2025 (No-rest option),Capdau S.T.E.A.M. School,nan
 970,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2025-01-30 18:41:30,nan,nan,9,nan,February 15 2025 (No-rest option),Morris Jeff Community School,nan
 971,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-01-31 16:46:16,nan,nan,9,nan,nan,Dwight D. Eisenhower Charter School,nan
@@ -977,11 +977,11 @@ b3eG,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2025-01-30 20
 976,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-02 22:24:57,nan,nan,9,nan,nan,Alice Harte Charter School,nan
 977,nan,17.0,71.0,49.0,22.0,1.0,5.0,16.0,In Processing,nan,nan,nan,nan,2025-02-04 16:37:36,nan,nan,9,nan,nan,Capdau S.T.E.A.M. School,nan
 978,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-18 11:05:14,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
-979,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-03 15:32:23,nan,nan,9,nan,ZY4f,Arthur Ashe Charter School,nan
+979,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-03 15:32:23,nan,nan,9,nan,nan,Arthur Ashe Charter School,nan
 980,28.0,nan,nan,nan,28.0,nan,nan,nan,Eligible,26.0,30.0,20.0,104.0,2025-02-06 10:40:19,nan,nan,10,nan,February 15 2025 (No-rest option),Other,3.33
 981,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,4.0,18.0,12.0,34.0,2025-02-04 15:15:55,nan,nan,9,nan,March 22 2025 (No-rest option),Morris Jeff Community School,nan
 982,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,5.0,1.0,9.0,15.0,2025-02-04 17:42:18,nan,nan,9,nan,March 22 2025 (No-rest option),Bricolage Academy,nan
-983,nan,nan,nan,nan,0.0,nan,nan,nan,Eligible,24.0,30.0,26.0,80.0,2025-02-04 20:49:03,nan,nan,9,nan,February 15 2025 (No-rest option),The Willow School,nan
+983,E9Sh,nan,nan,nan,0.0,nan,nan,nan,Eligible,24.0,30.0,26.0,80.0,2025-02-04 20:49:03,nan,nan,9,nan,February 15 2025 (No-rest option),The Willow School,nan
 984,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-05 20:48:55,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
 985,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,6.0,8.0,2025-02-05 0:36:31,nan,nan,9,nan,March 22 2025 (No-rest option),Kipp Believe,nan
 986,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-06 10:11:36,nan,nan,10,nan,nan,Ursuline Academy,nan
@@ -989,13 +989,13 @@ b3eG,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,1.0,3.0,2025-01-30 20
 988,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-08 12:51:12,nan,nan,9,nan,nan,Capdau S.T.E.A.M. School,nan
 989,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-10 17:28:38,nan,nan,9,nan,nan,Renew Laurel Elementary,nan
 990,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-10 20:50:44,nan,nan,9,nan,March 22 2025 (No-rest option),KIPP Morial,nan
-991,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,38L0,nan,2025-02-11 3:24:18,nan,nan,10,nan,April 26 2025 (No-rest option),Morris Jeff Community School,nan
+991,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-11 3:24:18,nan,nan,10,nan,April 26 2025 (No-rest option),Morris Jeff Community School,nan
 992,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,25.0,23.0,49.0,2025-02-11 8:24:13,nan,nan,9,nan,March 22 2025 (No-rest option),KIPP Morial,nan
 993,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,7.0,1.0,14.0,22.0,2025-02-11 12:08:49,nan,nan,9,nan,March 22 2025 (No-rest option),KIPP Leadership,nan
 994,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-13 10:37:15,nan,nan,11,nan,April 26 2025 (No-rest option),The Willow School,nan
 995,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,1.0,1.0,3.0,5.0,2025-02-13 16:21:16,nan,nan,9,nan,March 22 2025 (No-rest option),Other,nan
 996,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-14 6:39:59,nan,nan,11,nan,nan,Morris Jeff Community School,nan
-DDcQ,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-14 10:58:51,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
+997,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-14 10:58:51,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 998,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,25.0,26.0,23.0,104.0,2025-02-15 11:02:56,nan,nan,9,nan,March 22 2025 (No-rest option),The Willow School,4.0
 999,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-17 12:10:20,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 1000,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-25 18:23:07,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
@@ -1017,41 +1017,41 @@ DDcQ,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-02-14 10
 1016,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,17.0,14.0,16.0,47.0,2025-03-01 12:16:07,nan,nan,9,nan,March 22 2025 (No-rest option),Other,nan
 1017,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-01 12:24:47,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
 1018,30.0,nan,nan,nan,30.0,nan,nan,nan,Eligible,30.0,30.0,30.0,120.0,2025-03-03 10:54:08,nan,nan,9,nan,March 22 2025 (No-rest option),Isidore Newman,3.75
-1019,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-03 16:12:23,nan,nan,9,nan,nan,Other,nan
-1020,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-05 8:47:55,nan,nan,9,nan,nan,Other,nan
+1019,nan,nan,nan,nan,nan,nan,IVIl,nan,In Processing,nan,nan,nan,nan,2025-03-03 16:12:23,nan,nan,9,nan,nan,Other,nan
+1020,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-05 8:47:55,nan,nan,9,nan,nan,V2Dq,nan
 1021,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-06 9:35:00,nan,nan,9,nan,April 26 2025 (No-rest option),Isidore Newman,nan
 1022,22.0,nan,nan,nan,22.0,nan,nan,nan,In Processing,27.0,28.0,19.0,96.0,2025-03-06 12:46:26,nan,nan,10,nan,March 22 2025 (No-rest option),St. Mary's Dominican High School,2.75
-zLC3,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-08 17:18:49,nan,nan,10,nan,nan,Other,nan
+1023,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-08 17:18:49,nan,nan,10,nan,nan,Other,nan
 1024,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-09 8:38:41,nan,nan,10,nan,nan,Other,nan
 1025,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-10 9:09:13,nan,nan,10,nan,nan,Other,nan
 1026,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,20.0,3.0,13.0,36.0,2025-03-10 21:01:51,nan,nan,10,nan,March 22 2025 (No-rest option),Ursuline Academy,nan
 1027,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-11 11:25:14,nan,nan,10,nan,April 26 2025 (No-rest option),Jesuit High School,nan
 1028,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-11 12:40:09,nan,nan,10,nan,nan,Other,nan
-1029,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,KVTh,nan,nan,nan,nan,2025-03-12 2:34:12,nan,nan,10,nan,April 26 2025 (No-rest option),The Willow School,3.7
-1030,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-12 13:30:45,nan,nan,9,nan,April 26 2025 (No-rest option),Isidore Newman,nan
+1029,30.0,99.0,99.0,99.0,120.0,30.0,30.0,30.0,Eligible,nan,nan,nan,nan,2025-03-12 2:34:12,nan,nan,10,nan,April 26 2025 (No-rest option),The Willow School,3.7
+1030,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,C4L0,nan,nan,9,nan,April 26 2025 (No-rest option),Isidore Newman,nan
 1031,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,7.0,1.0,16.0,24.0,2025-03-13 20:14:23,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 1032,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-13 8:37:23,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 1033,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,11.0,1.0,13.0,25.0,2025-03-13 10:29:14,nan,nan,10,nan,March 22 2025 (No-rest option),Other,nan
 1034,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-13 14:39:37,nan,nan,11,nan,nan,Other,nan
-1035,QpYY,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-14 9:57:03,nan,nan,11,nan,April 26 2025 (No-rest option),Other,nan
+1035,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-14 9:57:03,nan,nan,11,nan,April 26 2025 (No-rest option),Other,nan
 1036,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-14 16:25:12,nan,nan,10,nan,nan,Ursuline Academy,nan
-1037,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-14 20:29:38,nan,nan,11,nan,April 26 2025 (No-rest option),Other,nan
-1038,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-14 23:32:14,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
-1039,nan,nykc,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-15 15:27:20,nan,nan,9,nan,April 26 2025 (No-rest option),Louise McGehee,nan
+1037,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-14 20:29:38,nan,nan,11,lz8l,April 26 2025 (No-rest option),Other,nan
+1038,nan,nan,nan,nan,nan,nan,nan,nan,GuRG,nan,nan,nan,nan,2025-03-14 23:32:14,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
+1039,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-15 15:27:20,nan,nan,9,nan,April 26 2025 (No-rest option),Louise McGehee,nan
 1040,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-16 8:32:15,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
-1041,nan,nan,nan,nan,nan,nan,nan,nan,FiL4,nan,nan,nan,nan,2025-03-16 10:45:48,nan,nan,9,nan,April 26 2025 (No-rest option),Bricolage Academy,nan
+1041,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-16 10:45:48,nan,nan,9,nan,April 26 2025 (No-rest option),Bricolage Academy,nan
 1042,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-17 10:32:20,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 1043,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-17 13:01:26,nan,nan,9,nan,nan,Other,nan
 1044,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-18 9:24:34,nan,nan,11,nan,April 26 2025 (No-rest option),Other,nan
-1045,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-19 10:43:50,nan,nan,11,nan,nan,Other,nan
+1045,nan,nan,nan,nan,nan,nan,o6Uh,nan,In Processing,nan,nan,nan,nan,2025-03-19 10:43:50,nan,nan,11,nan,nan,Other,nan
 1046,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-19 12:49:33,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
-EvIz,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-20 9:47:59,nan,nan,9,nan,April 26 2025 (No-rest option),The Willow School,nan
-1048,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-22 18:17:13,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
-1049,nan,nan,nan,nan,0.0,nan,nan,WR3X,In Processing,nan,nan,nan,nan,2025-03-24 9:52:22,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,nan
+1047,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-20 9:47:59,nan,nan,9,nan,April 26 2025 (No-rest option),The Willow School,nan
+1048,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-22 18:17:13,nan,nan,9,dc7T,April 26 2025 (No-rest option),Other,nan
+1049,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-24 9:52:22,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,nan
 1050,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-24 10:21:14,nan,nan,9,nan,April 26 2025 (No-rest option),Audubon Uptown Montessori and French,nan
 1051,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-24 17:06:47,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 1052,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-25 9:46:47,nan,nan,9,nan,April 26 2025 (No-rest option),Edward Hynes Lakeview,nan
-1053,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,W8k4,nan,2025-03-25 10:49:37,nan,nan,11,nan,April 26 2025 (No-rest option),Academy of the Sacred Heart,nan
+1053,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-25 10:49:37,nan,nan,11,nan,April 26 2025 (No-rest option),Academy of the Sacred Heart,nan
 1054,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-25 12:58:18,nan,nan,9,nan,April 26 2025 (No-rest option),Langston Hughes Academy,nan
 1055,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-25 13:29:19,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 1056,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-26 9:19:42,nan,nan,11,nan,April 26 2025 (No-rest option),Other,nan
@@ -1068,11 +1068,11 @@ EvIz,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-03-20 9:
 1067,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-01 22:16:29,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 1068,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-02 9:26:43,nan,nan,10,nan,May 24 2025 (Final Test Date),Other,nan
 1069,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-02 10:52:50,nan,nan,9,nan,April 26 2025 (No-rest option),Esperanza Charter School,nan
-PWdT,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-02 18:20:53,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
+1070,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-02 18:20:53,nan,nan,10,nan,April 26 2025 (No-rest option),Other,nan
 1071,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-03 12:16:31,nan,nan,9,nan,nan,Renew Schaumburg Elementary,nan
-1072,nan,nan,nan,ut0J,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-04 13:45:16,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
-YS7k,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-05 10:56:28,nan,nan,9,nan,nan,Samuel J. Green Charter School,nan
+1072,nan,nan,nan,nan,0.0,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-04 13:45:16,nan,nan,9,nan,April 26 2025 (No-rest option),Other,nan
+1073,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-05 10:56:28,nan,nan,9,nan,nan,Samuel J. Green Charter School,nan
 1074,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-08 13:55:26,nan,nan,9,nan,nan,Einstein Middle School,nan
-1075,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,vtB5,nan,nan,nan,2025-04-08 16:35:55,nan,nan,9,nan,May 24 2025 (Final Test Date),Other,nan
+1075,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-08 16:35:55,nan,nan,9,nan,May 24 2025 (Final Test Date),Other,nan
 1076,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-09 13:42:06,nan,nan,10,nan,nan,Lycee Francais de la Nouvelle Orleans,nan
 1077,nan,nan,nan,nan,nan,nan,nan,nan,In Processing,nan,nan,nan,nan,2025-04-09 14:22:33,nan,nan,9,nan,nan,Other,nan
