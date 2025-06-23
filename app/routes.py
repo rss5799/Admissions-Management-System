@@ -71,7 +71,7 @@ def calculate_gpa_route():
                 current_student.matrix_math = 0
             if(current_student.matrix_reading == ""):
                 current_student.matrix_reading = 0
-            total_points = current_student.matrix_languauge + current_student.matrix_math + current_student.matrix_reading + matrix_gpa
+            total_points = int(current_student.matrix_languauge) + int(current_student.matrix_math) + int(current_student.matrix_reading) + matrix_gpa
         else:
             total_points = matrix_gpa
         
@@ -82,7 +82,7 @@ def calculate_gpa_route():
                 current_student.matrix_math_retest = 0
             if(current_student.matrix_reading_restest == ""):
                 current_student.matrix_reading_restest = 0
-            total_points_retest = current_student.matrix_languauge_retest + current_student.matrix_math_retest + current_student.matrix_reading_restest + matrix_gpa
+            total_points_retest = int(current_student.matrix_languauge_retest) + int(current_student.matrix_math_retest) + int(current_student.matrix_reading_restest) + matrix_gpa
         else:
             total_points_retest = matrix_gpa
         #update csv
