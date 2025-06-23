@@ -71,3 +71,5 @@ def fetch_riverside_data(student_id):
                     admissions_scores_dict['reading'] = row[header.index('READING TOTAL - NPR')]
                     admissions_scores_dict['lanaguage'] = row[header.index('LANGUAGE TOTAL - NPR')]
                     admissions_scores_dict['math'] = row[header.index('MATH TOTAL - NPR')]
+                    print(admissions_scores_dict)
+                    return(admissions_scores_dict)
