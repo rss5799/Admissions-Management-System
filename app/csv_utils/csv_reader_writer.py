@@ -2,7 +2,7 @@ import csv
 from app.models import student
 
 original_schoolmint_data = ('DummyDataComplete.csv')
-updated_schoolmint_data = ('updated_student_data.csv')
+oritinal_riverside_data = ('DummyRiversideData.csv')
 
 def fetch_updated_student_instance(student_id):
     with open(original_schoolmint_data, 'r') as file:
@@ -37,6 +37,7 @@ def fetch_updated_student_instance(student_id):
                     reading_test_score2 = 	row[header.index('reading_test_score2')],
                     math_test_scores2 = row[header.index('math_test_scores2')]
                 )
+                fetch_riverside_data(student_id)
                 return current_student
     return(0)
             
@@ -59,31 +60,14 @@ def write_gpa_to_csv(student_id, gpa, matrix_gpa, total_points, total_points_ret
         writer.writeheader()
         writer.writerows(rows)
 
-
-# def calculate_total_matrix_points_OG(student_id):
-#     with open(original_schoolmint_data, 'r') as file:
-#         reader = csv.reader(file)
-#         header = next(reader)
-#         for row in reader:
-#             if str(row[header.index('id')]) == str(student_id):
-#                 if(row[header.index('matrix_gpa')] == ""):
-#                     total_matrix_points = ""
-
-#                 elif (row[header.index('total_points_retest')] != ""):
-#                     matrix_test_OG = int(row[header.index('matrix_languauge')]) + int(row[header.index('matrix_math')]) + int(row[header.index('matrix_reading')])
-#                     matrix_test_retest = int(row[header.index('matrix_math_retest')]) + int(row[header.index('matrix_reading_restest')]) + int(row[header.index('matrix_languauge_retest')])
-
-#                     if(matrix_test_retest > matrix_test_OG):
-#                         total_matrix_points = matrix_test_retest + int(row[header.index('matrix_gpa')])
-#                     else:
-#                         total_matrix_points = matrix_test_OG + int(row[header.index('matrix_gpa')])
- 
-#                 elif (row[header.index('total_points')] != ""):
-#                     matrix_test_OG = int(row[header.index('matrix_languauge')]) + int(row[header.index('matrix_math')]) + int(row[header.index('matrix_reading')])
-#                     total_matrix_points = matrix_test_OG + int(row[header.index('matrix_gpa')])
-
-#                 else:
-#                     total_matrix_points = ""
-                
-#                 return(total_matrix_points)
-
+def fetch_riverside_data(student_id):
+        admissions_scores_dict = {}
+        with open(oritinal_riverside_data, 'r') as file:
+            reader = csv.reader(file)
+            header = next(reader)
+            for row in reader:
+                if str(row[header.index('STUDENT ID 1')]) == str(student_id):
+                    admissions_scores_dict['id'] = student_id
+                    admissions_scores_dict['reading'] = row[header.index('READING TOTAL - NPR')]
+                    admissions_scores_dict['lanaguage'] = row[header.index('LANGUAGE TOTAL - NPR')]
+                    admissions_scores_dict['math'] = row[header.index('MATH TOTAL - NPR')]
