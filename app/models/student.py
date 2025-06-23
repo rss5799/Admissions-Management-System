@@ -1,5 +1,5 @@
 class Student:
-    def __init__(self, id, gpa, matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_points,matrix_languauge,matrix_math,matrix_reading, matrix_points_total,status,matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest, updated_at,guardian1_email,guardian2_email,grade,deliver_test_accomodation_approved,test_date_sign_up, current_school):
+    def __init__(self, id, gpa, matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_points,matrix_languauge,matrix_math,matrix_reading, matrix_points_total,status,matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest, updated_at,guardian1_email,guardian2_email,grade,deliver_test_accomodation_approved,test_date_sign_up, current_school,language_test_scores2, reading_test_score2, math_test_scores2):
         self.id = id
         self.gpa = gpa
         self.matrix_gpa = matrix_gpa
@@ -23,4 +23,7 @@ class Student:
         self.deliver_test_accomodation_approved = deliver_test_accomodation_approved
         self.test_date_sign_up = test_date_sign_up
         self.current_school = current_school
+        self.language_test_scores2 = language_test_scores2
+        self.reading_test_score2 = 	reading_test_score2
+        self.math_test_scores2 = math_test_scores2
     
