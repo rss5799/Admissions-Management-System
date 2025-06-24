@@ -64,9 +64,31 @@ def calculate_gpa_route():
 
             gpa = calculate_gpa(grades)
             matrix_gpa = lookup_matrix_points(gpa, matrix["gpa"]) # gpa->matrix_gpa value in DummyDataComplete.csv
-
+        total_points = current_student.total_points
+        total_points_retest = current_student.total_points_retest
+        if(total_points != ""):
+            if(current_student.matrix_languauge == ""):
+                current_student.matrix_languauge = 0
+            if(current_student.matrix_math == ""):
+                current_student.matrix_math = 0
+            if(current_student.matrix_reading == ""):
+                current_student.matrix_reading = 0
+            total_points = int(current_student.matrix_languauge) + int(current_student.matrix_math) + int(current_student.matrix_reading) + matrix_gpa
+        else:
+            total_points = matrix_gpa
+        
+        if(current_student.total_points_retest != ""):
+            if(current_student.matrix_languauge_retest == ""):
+                current_student.matrix_languauge_retest = 0
+            if(current_student.matrix_math_retest == ""):
+                current_student.matrix_math_retest = 0
+            if(current_student.matrix_reading_restest == ""):
+                current_student.matrix_reading_restest = 0
+            total_points_retest = int(current_student.matrix_languauge_retest) + int(current_student.matrix_math_retest) + int(current_student.matrix_reading_restest) + matrix_gpa
+        else:
+            total_points_retest = matrix_gpa
             #update csv
-            write_gpa_to_csv(current_student.id, gpa, matrix_gpa)
+            write_gpa_to_csv(current_student.id, gpa, matrix_gpa, total_points, total_points_retest)
             #retrieve updated student data with new report card info
             current_student = retrieve_current_student()
             if current_student is not None:

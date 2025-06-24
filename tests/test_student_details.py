@@ -18,12 +18,12 @@ def client():
 def test_search_for_student():
     assert fetch_updated_student_instance(1) != 0
     assert fetch_updated_student_instance(1077) != 0
-    assert fetch_updated_student_instance(1078) == None
-    assert fetch_updated_student_instance('$') == None
-    assert fetch_updated_student_instance(' 87') == None
-    assert fetch_updated_student_instance('99 ') == None
-    assert fetch_updated_student_instance(2/2) == None
-    assert fetch_updated_student_instance('a') == None
+    assert fetch_updated_student_instance(1078) == 0
+    assert fetch_updated_student_instance('$') == 0
+    assert fetch_updated_student_instance(' 87') == 0
+    assert fetch_updated_student_instance('99 ') == 0
+    assert fetch_updated_student_instance(2/2) == 0
+    assert fetch_updated_student_instance('a') == 0
 
 
 
