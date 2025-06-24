@@ -16,6 +16,7 @@
         justify-items: flex-end;
         width: fit-content;
         padding: 100dp;
+        text-align: center;
         }
         </style>
 
@@ -23,40 +24,57 @@
 
     <tr>
         <th></th>
+        <th colspan="2">Original</th>
+        <th colspan="2">Retest</th>
+    </tr>
+
+    <tr>
+        <th></th>
+        <th>Raw Input Value</th>
+        <th>Matrix Score</th>
         <th>Raw Input Value</th>
         <th>Matrix Score</th>
     </tr>
    
-    <tr>
-    <td>GPA Points</td>
-    <td> {{ results.gpa }}</td>
-    <td>{{ results.matrix_gpa }}</td>
-    <td> <a href="/enter_report_card">Edit</a> </td>
-    </tr>
 
         <tr>
     <td>Admissions Language</td>
     <td>{{ results.language_test_scores }} </td>
     <td>{{ results.matrix_languauge }}</td>
+    <td>{{ results.language_test_scores2 }} </td>
+    <td>{{ results.matrix_languauge_retest }}</td>
     </tr>
+
+
 
         <tr>
     <td>Admissions Math:</td>
     <td>{{ results.math_test_scores }}</td>
     <td>{{ results.matrix_math }}</td>
+        <td>{{ results.math_test_scores2 }}</td>
+    <td>{{ results.matrix_math_retest }}</td>
     </tr>
 
         <tr>
     <td>Admissions Reading</td>
     <td> {{ results.reading_test_score }}</td>
     <td>{{ results.matrix_reading }}</td>
+        <td> {{ results.reading_test_score2 }}</td>
+    <td>{{ results.matrix_reading_restest }}</td>
     </tr>
 
     <tr>
-    <td>Total</td>
-    <td></td>
-    <td>{{ results.matrix_points_total }}</td>
-    <td></td>
+    <td>GPA Points <a href="/enter_report_card">Edit</a></td>
+    <td> {{ results.gpa }}</td>
+    <td>{{ results.matrix_gpa }}</td>
+    <td> {{ results.gpa }}</td>
+    <td>{{ results.matrix_gpa }}</td>
+    </tr>
+
+    <tr>
+    <td>Total Matrix Points:</td>
+    <td colspan="2">{{ results.total_points }}</td>
+    <td colspan="2">{{ results.total_points_retest }}</td>
     </tr>
 </table>
 
