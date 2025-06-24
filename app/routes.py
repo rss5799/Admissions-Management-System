@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, session, flash
+from flask import Blueprint, render_template, request, session, flash, redirect
 import pandas as pd
 import numpy as np
 from app.csv_utils.csv_reader_writer import fetch_updated_student_instance, write_gpa_to_csv
@@ -119,3 +119,30 @@ def upcoming_tests():
 @bp.route("/unresponsive_students/")
 def unresponsive_students():
     return render_template("unresponsive_students.html")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@bp.route("/export_csv")
+def export_csv():
+        
+
+
+
+        return redirect("/exports")
