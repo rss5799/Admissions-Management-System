@@ -37,6 +37,7 @@ def fetch_updated_student_instance(student_id):
                     reading_test_score2 = 	row[header.index('reading_test_score2')],
                     math_test_scores2 = row[header.index('math_test_scores2')]
                 )
+                fetch_riverside_data(student_id)
                 return current_student
     return(0)
             
