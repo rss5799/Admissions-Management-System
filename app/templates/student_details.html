@@ -78,6 +78,11 @@
     </tr>
 </table>
 
+<form action="/export_csv" method="GET">
+    <button type="submit" class="btn btn-secondary" style="margin-top: 1em;">
+        Export CSV
+    </button>
+</form>
 
 {% with messages = get_flashed_messages() %}
   {% if messages %}
