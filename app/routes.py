@@ -42,7 +42,7 @@ def enter_report_card():
 @bp.route('/calculate_gpa', methods=['GET', 'POST'])
 def calculate_gpa_route():
     current_student = retrieve_current_student()
-    if current_student != None:
+    if current_student != 0:
         grades = {
             "english": "",
             "math": "",
