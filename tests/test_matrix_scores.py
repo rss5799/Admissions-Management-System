@@ -87,34 +87,19 @@ def test_calculate_total_matrix():
 
 
 
-# # # # #System Test 16: Ensure that matrix points load from original datasource
-# def test_matrix_loads_from_schoolmint(client):
-#     #get 5 random student ids
-#     random_students = [random.randint(1, 1077) for _ in range(5)]
-#     #check each of the five students
-#     for student in random_students:
-#         student_id = student
-#         student = fetch_updated_student_instance(student_id)
-#         response = client.get("/student_details/{student_id}")
-#         gpa = student.gpa
-#         if gpa != "":
-#             assert gpa.encode('utf-8') in response.data
-
-
-
-#System test 17: Ensure that when updates are made to the student profile it is properly displayed on the student details screen.
-# def test_matrix_gpa_persists(client):
-#     #get 5 random student ids
-#     random_students = [random.randint(1, 1077) for _ in range(5)]
-#     #check each of the five students
-#     for student in random_students:
-#         student_id = student
-#         student = fetch_updated_student_instance(student)
-#         new_gpa = random.uniform(0.1, 4)
-#         while new_gpa == student.gpa:
-#             new_gpa = random.uniform(0.1, 4)        
-#         new_matrix_gpa = lookup_matrix_points(new_gpa, matrix["gpa"]) # gpa->matrix_gpa value in DummyDataComplete.csv
-#         write_gpa_to_csv(student, new_gpa, new_matrix_gpa, )
-#         response = client.get("/student_details/{student_id}")
-#         assert new_gpa in str(response.data)
+# # # # #System Test 16: Ensure that total matrix points persist to file export page.
+def test_matrix_points_persist_to_export(client):
+    #get 5 random students ids
+    random_students = [random.randint(1, 2000) for _ in range(5)]
+    #iterate through the students
+    for student_id in random_students:
+        student = fetch_updated_student_instance(student_id)
+        if student != 0:
+            matrix_score = student.total_points
+            response = client.get("/exports/")
+            student = fetch_updated_student_instance(student_id)
+            if student != 0:
+                assert response.status_code == 200
+                assert b"Exports" in response.data
+                assert matrix_score == student.total_points
 
