@@ -64,6 +64,7 @@ def calculate_gpa_route():
 
             gpa = calculate_gpa(grades)
             matrix_gpa = lookup_matrix_points(gpa, matrix["gpa"]) # gpa->matrix_gpa value in DummyDataComplete.csv
+        
         total_points = current_student.total_points
         total_points_retest = current_student.total_points_retest
         if(total_points != ""):
@@ -95,9 +96,16 @@ def calculate_gpa_route():
                 flash("GPA and Matrix GPA Score successfully calculated.")
                 #set session
                 session['current_id'] = current_student.id
+                write_gpa_to_csv(current_student.id, gpa, matrix_gpa, total_points, total_points_retest)
                 return render_template('enter_report_card.html', results = current_student, grades = grades, gpa = gpa, matrix_gpa = matrix_gpa)
             else:
+                write_gpa_to_csv(current_student.id, gpa, matrix_gpa, total_points, total_points_retest)
                 return render_template('enter_report_card.html', results = None, grades = None, gpa = None, matrix_gpa = None)
+        flash("GPA and Matrix GPA Score successfully calculated.")
+        #set session
+        session['current_id'] = current_student.id
+        write_gpa_to_csv(current_student.id, gpa, matrix_gpa, total_points, total_points_retest)
+        return render_template('enter_report_card.html', results = current_student, grades = grades, gpa = gpa, matrix_gpa = matrix_gpa)
     else:
         return render_template('enter_report_card.html', results = None, grades = None, gpa = None, matrix_gpa = None)
     
