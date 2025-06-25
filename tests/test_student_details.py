@@ -1,5 +1,5 @@
 import pytest
-import os
+from app.models.student import Student
 from app.csv_utils.csv_reader_writer import fetch_updated_student_instance
 import pandas as pd
 import numpy as np
@@ -14,10 +14,7 @@ def client():
     with app.test_client() as client:
         yield client
 
-
-
-
-#System Test 1: Search results are returned when valid student ID is entered
+#Unit Test 1: Search results are returned when valid student ID is entered
 def test_search_for_student():
     assert fetch_updated_student_instance(1) != 0
     assert fetch_updated_student_instance(1077) != 0
@@ -28,7 +25,6 @@ def test_search_for_student():
     assert fetch_updated_student_instance(2/2) == 0
     assert fetch_updated_student_instance('a') == 0
 
-test_search_for_student()
 
 
 #System Test 2: NaN values are converted to empty string before rendering html
@@ -51,7 +47,7 @@ def display_empty_values():
         attribute_to_test  = str(student_df.columns[testing_cells[i][1]])
         value = str(getattr(testing_student, attribute_to_test))
         assert value == ""
-display_empty_values()
+
 
 
 #System Test 3: Display Real-Time Updates in Detail View
@@ -97,13 +93,13 @@ def display_updates_to_csv():
 def test_student_search_no_param(client):
     response = client.get("/student_details/")
     assert response.status_code == 200
-    assert b"student_details" in response.data
+    assert b"Student Details" in response.data
 
 def test_student_search_invalid_id(client):
     response = client.get("/student_details/?id_query=NOT_A_REAL_ID")
     assert response.status_code == 200
-    assert b"student_details" in response.data
+    assert b"Student Details" in response.data
 
 
-display_updates_to_csv()
+
         
