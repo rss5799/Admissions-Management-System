@@ -1,162 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flask App</title>
+    <title>Enter Report Card Info</title>
+    <style>
+        .error-message {
+            color: #dc3545;
+            background-color: #f8d7da;
+            padding: 6px;
+            border-radius: 4px;
+            margin-top: 4px;
+            font-size: 0.9em;
+        }
+
+        .success-message {
+            background-color: #d1e7dd;
+            color: #0f5132;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-      <body>
     <h2>Enter Report Card Info</h2>
     <h3>Student ID: {{ results.id }}</h3>
     <h3>Applying for Grade: {{ results.grade }}</h3>
     <h3>Current School: {{ results.current_school }}</h3>
-    <p>Choose the Report Card Type</p>
 
-    <select id="myDropdown">
-    <option value="" disabled selected>Select one</option>
-    <option value="semester">Semester</option>
-    <option value="trimester">Trimester</option>
-    <option value="quarters">Quarters</option>
-    </select>
+    <form method="POST" action="/enter_report_card/">
+        {{ form.hidden_tag() }}
 
+        {% for field in [form.english, form.math, form.science, form.social_studies, form.language] %}
+            {{ field.label }}<br>
+            {{ field(class="form-control", required=field.name != 'language', pattern="^[A-Da-d][+-]?$|^F$", title="Enter A, B, C, D (with optional + or -), or F") }}<br>
+            {% for error in field.errors %}
+                <div class="error-message">{{ error }}</div>
+            {% endfor %}
+            <br>
+        {% endfor %}
 
-<!-- Content will be loaded here -->
-<form method="POST" action="/calculate_gpa">
-    <input type="text" name="english" placeholder="English Grade" value="{{ grades.english }}" required><br><br>
-    <input type="text" name="math" placeholder="Math Grade" value="{{ grades.math }}" required><br><br>
-    <input type="text" name="science" placeholder="Science Grade" value="{{ grades.science }}" required><br><br>
-    <input type="text" name="social_studies" placeholder="Social Studies Grade" value="{{ grades.social_studies }}" required><br><br>
-    <input type="text" name="language" placeholder="Language Grade" value="{{ grades.language }}"><br><br>
+        <button type="submit">Calculate GPA</button>
+        <button type="button" onclick="location.href='/student_details/';">Return to Student Scores</button>
+    </form>
 
-    <button type="submit">Calculate GPA</button>
-</form>
+    {% if gpa %}
+        <h3>Calculated GPA: {{ gpa }}</h3>
+        <h3>Calculated Matrix GPA: {{ matrix_gpa }}</h3>
+    {% endif %}
 
-
-{% if gpa is not none %}
-      <h3>Calculated GPA: {{ gpa }}</h3>
-      <h3>Calculated Matrix GPA: {{ matrix_gpa }}</h3>
-{% endif %}
-
-{% with messages = get_flashed_messages() %}
-  {% if messages %}
-    <div class="flash-messages">
-      {% for message in messages %}
-        <div style="background-color: #d1e7dd; color: #0f5132; padding: 10px; border-radius: 4px; margin-bottom: 10px;">
-          {{ message }}
-        </div>
-      {% endfor %}
-    </div>
-          <button type="submit", onclick="location.href='/student_details/';">Return to Student Scores</button>
-  {% endif %}
-{% endwith %}
-
-
-<script>
-  const dropdown = document.getElementById('myDropdown');
-  const contentArea = document.getElementById('Report_card_dynamic_content');
-  const engArea = document.getElementById('eng');
-  const mathArea = document.getElementById('math');
-  const sciArea = document.getElementById('sci');
-  const socArea = document.getElementById('soc');
-  const WLArea = document.getElementById('WL');
-  //unclear why this is giving an error that it's missing a declaration statement but it's running and logging
-  const studentGrade = {{ current_student_grade }};
-  console.log("student grade:", studentGrade)
-
-
-    
-
-  dropdown.addEventListener('change', function() {
-    const selectedValue = this.value;
-    if (studentGrade == 9 && selectedValue != 'quarters') {
-      contentArea.innerHTML = '<h2>Semester/Trimester APPLYING FOR 9TH applicants</h2>';
-      engArea.innerHTML = '<input id = "8SemTriEng", placeholder = "RC 1 English", type = text></input>'
-      mathArea.innerHTML = '<input id = "8SemTriMath", placeholder = "RC 1 Math", type = text></input>'
-      sciArea.innerHTML = '<input id = "8SemTriSci", placeholder = "RC 1 Sci", type = text></input>'
-      socArea.innerHTML = '<input id = "8SemTriSoc", placeholder = "RC 1 Soc", type = text></input>'
-
-
-    } 
-
-    else if (studentGrade == 9 && selectedValue === 'quarters' ) {
-      contentArea.innerHTML = '<h2>Quarters APPLYING FOR 9TH applicants</h2>';
-      engArea.innerHTML = '<input id = "8Q1Eng", placeholder = "RC Q1 English", type = text></input>'
-      const Q2Eng8 = document.createElement('input');
-          Q2Eng8.id = "8Q2Eng";
-          Q2Eng8.placeholder = "RC Q2 English";
-          Q2Eng8.type = 'text';
-      engArea.appendChild(Q2Eng8)
-
-      mathArea.innerHTML = '<input id = "8Q1Math", placeholder = "RC Q1 Math", type = text></input>'
-      const Q2Math8 = document.createElement('input');
-            Q2Math8.id = "8Q2Math";
-            Q2Math8.placeholder = "RC Q2 Math";
-            Q2Math8.type = 'text';
-      mathArea.appendChild(Q2Math8)
-
-      sciArea.innerHTML = '<input id = "8Q1Sci", placeholder = "RC Q1 Sci", type = text></input>'
-      const Q2Sci8 = document.createElement('input');
-            Q2Sci8.id = "8Q2Sci";
-            Q2Sci8.placeholder = "RC Q2 Sci";
-            Q2Sci8.type = 'text';
-      sciArea.appendChild(Q2Sci8)
-
-      socArea.innerHTML = '<input id = "8Q1Soc", placeholder = "RC Q1 Soc", type = text></input>'
-      const Q2Soc8 = document.createElement('input');
-            Q2Soc8.id = "8Q2Soc";
-            Q2Soc8.placeholder = "RC Q2 Soc";
-            Q2Soc8.type = 'text';
-      socArea.appendChild(Q2Soc8)
-    }
-    else if (studentGrade != 9 && selectedValue != 'quarters' ) {
-      contentArea.innerHTML = '<h2>Semester/Trimester APPLYING FOR 10TH/11TH applicants</h2>';
-      engArea.innerHTML = '<input id = "910SemTriEng", placeholder = "RC 1 English", type = text></input>'
-      mathArea.innerHTML = '<input id = "910SemTriMath", placeholder = "RC 1 Math", type = text></input>'
-      sciArea.innerHTML = '<input id = 910SemTriSci", placeholder = "RC 1 Sci", type = text></input>'
-      socArea.innerHTML = '<input id = "910SemTriSoc", placeholder = "RC 1 Soc", type = text></input>'
-      WLArea.innerHTML = '<input id = "910SemTriSoc", placeholder = "RC 1 WL", type = text></input>'
-    
-    }
-    else if (studentGrade != 9 && selectedValue === 'quarters' ) {
-      contentArea.innerHTML = '<h2>Quarters APPLYING FOR 10TH/11TH applicants</h2>';
-
-      engArea.innerHTML = '<input id = "910Q1Eng", placeholder = "RC Q1 English", type = text></input>'
-      const Q2Eng910 = document.createElement('input');
-          Q2Eng910.id = "910Q2Eng";
-          Q2Eng910.placeholder = "RC Q2 English";
-          Q2Eng910.type = 'text';
-      engArea.appendChild(Q2Eng910)
-
-      mathArea.innerHTML = '<input id = "910Q1Math", placeholder = "RC Q1 Math", type = text></input>'
-      const Q2Math910 = document.createElement('input');
-            Q2Math910.id = "910Q2Math";
-            Q2Math910.placeholder = "RC Q2 Math";
-            Q2Math910.type = 'text';
-      mathArea.appendChild(Q2Math910)
-
-      sciArea.innerHTML = '<input id = "910Q1Sci", placeholder = "RC Q1 Sci", type = text></input>'
-      const Q2Sci910 = document.createElement('input');
-            Q2Sci910.id = "910Q2Sci";
-            Q2Sci910.placeholder = "RC Q2 Sci";
-            Q2Sci910.type = 'text';
-      sciArea.appendChild(Q2Sci910)
-
-      socArea.innerHTML = '<input id = "910Q1Soc", placeholder = "RC Q1 Soc", type = text></input>'
-      const Q2Soc910 = document.createElement('input');
-            Q2Soc910.id = "910Q2Soc";
-            Q2Soc910.placeholder = "RC Q2 Soc";
-            Q2Soc910.type = 'text';
-      socArea.appendChild(Q2Soc910)
-
-      WLArea.innerHTML = '<input id = "910Q1WL", placeholder = "RC Q1 WL", type = text></input>'
-      const Q2WL910 = document.createElement('input');
-            Q2WL910.id = "910Q2WL";
-            Q2WL910.placeholder = "RC Q2 WL";
-            Q2WL910.type = 'text';
-      WLArea.appendChild(Q2WL910)
-      
-    }
-  });
-</script>
-
+    {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="{{ 'success-message' if category == 'success' else 'error-message' }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
 </body>
 </html>

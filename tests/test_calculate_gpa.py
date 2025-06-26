@@ -41,7 +41,7 @@ def test_calculate_gpa_post_missing_fields(client):
         'social_studies': '',
         'language': ''
     }
-    response = client.post("/calculate_gpa", data=data)
+    response = client.post("/enter_report_card/", data=data)
     assert response.status_code == 200
     assert b"GPA" in response.data
 
