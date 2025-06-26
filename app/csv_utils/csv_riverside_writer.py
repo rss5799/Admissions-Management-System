@@ -16,21 +16,22 @@ with open(MATRIX_FILE, "r") as f:
 
 
 def place_riverside_into_schoolmint():
+
+    #pull the schoolmint file that's dropped into the system
     original_schoolmint_data_no_tests = ('SchoolMintNoTests.csv')
+
+    #pull the riverside data that's dropped into the system
     original_riverside_data = ('DummyRiversideData.csv')
+
+    #convert both to dataframes
     school_mint_df = pd.read_csv(original_schoolmint_data_no_tests)
     riverside_df = pd.read_csv(original_riverside_data)
-    merged_results = pd.merge(school_mint_df, riverside_df, left_on='id', right_on='STUDENT ID 1')
-    
-    pd.set_option('display.max_rows', None)
-    pd.set_option('display.max_columns', None)
-    pd.set_option('display.width', 1000) # Adjust width for better readability of wide DataFrames
-    pd.set_option('display.max_colwidth', None) # Display full content of wide columns
 
-    
-    
+    #join and drop nan values
+    merged_results = pd.merge(school_mint_df, riverside_df, left_on='id', right_on='STUDENT ID 1')    
     merged_results = merged_results.fillna("")
-    
+
+    #print statements to test    
     print("ID:", merged_results.iloc[105]['id'])
     print("matrix gpa initial:", merged_results.iloc[105]['matrix_gpa'])
     print("math initial:", merged_results.iloc[105]['math_test_scores'], "matrix math initial:", merged_results.iloc[105]['matrix_math'])
@@ -47,14 +48,19 @@ def place_riverside_into_schoolmint():
 
     print("#################################################################")
     
+
+    #iterate down each row in the dataframe
     for index, row in merged_results.iterrows():
+        #initial values
+        matrix_gpa = 0
+        reading_matrix = 0
+        language_matrix = 0
+        math_matrix = 0
+        if(row['matrix_gpa']):
+            matrix_gpa = row['matrix_gpa']
+
+        #update values and move to columns (first columns if it's the first test...)
         if(row['reading_test_score'] == "" and row['language_test_scores'] == "" and row['math_test_scores'] == ""):
-            matrix_gpa = 0
-            reading_matrix = 0
-            language_matrix = 0
-            math_matrix = 0
-            if(row['matrix_gpa']):
-                matrix_gpa = row['matrix_gpa']
             if(row['READING TOTAL - NPR']):
                 reading_matrix = lookup_matrix_points(row['READING TOTAL - NPR'], matrix["test_scores"])
                 merged_results.loc[index, 'reading_test_score'] = row['READING TOTAL - NPR']
@@ -70,14 +76,8 @@ def place_riverside_into_schoolmint():
             
             merged_results.loc[index, 'total_points'] = matrix_gpa + reading_matrix + language_matrix + math_matrix
 
+        #update values and move to columns (second columns if it's the retest...)
         elif(row['reading_test_score2'] == "" and row['language_test_scores2'] == "" and row['math_test_scores2'] == ""):
-            matrix_gpa = 0
-            matrix_gpa = 0
-            reading_matrix = 0
-            language_matrix = 0
-            math_matrix = 0
-            if(row['matrix_gpa']):
-                matrix_gpa = row['matrix_gpa']
             if(row['READING TOTAL - NPR']):
                 reading_matrix = lookup_matrix_points(row['READING TOTAL - NPR'], matrix["test_scores"])
                 merged_results.loc[index, 'reading_test_score2'] = row['READING TOTAL - NPR']
@@ -113,70 +113,3 @@ def place_riverside_into_schoolmint():
     print("#################################################################")
 
 place_riverside_into_schoolmint()
-
-
-
-# def update_schoolmint_with_riverside_scores():
-#      #fetch riverside data
-#     with open(original_riverside_data, 'r') as file:
-#         reader = csv.reader(file)
-#         header = next(reader)
-#         for row in reader:
-#             student_id = str(row[header.index('id')])
-#             #find the row in schoolmint
-#                 #if language_test_scores,reading_test_score,math_test_scores are not empty:
-#                     #if language_test_scores2,reading_test_score2,math_test_scores2 are not empty:
-#                         #return
-#                     #else:
-#                         #get the matrix_score conversion
-#                         #popualate language_test_scores2,reading_test_score2,math_test_scores2, matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest with riverside reading, language math
-#                         #write to schoolminte datafile
-#                 #else:
-#                     #get the matrix_score conversions
-#                     #populate language_test_scores,reading_test_score,math_test_scores, matrix_languauge,matrix_math,matrix_reading, total_matrix with riverside reading,language, math
-#                     #write to schoolmint datafile
-
-# def fetch_riverside_data(student_id):
-#         admissions_scores_dict = {}
-#         with open(original_riverside_data, 'r') as file:
-#             reader = csv.reader(file)
-#             header = next(reader)
-#             for row in reader:
-#                 if str(row[header.index('STUDENT ID 1')]) == str(student_id):
-#                     admissions_scores_dict['id'] = student_id
-#                     admissions_scores_dict['reading'] = row[header.index('READING TOTAL - NPR')]
-#                     admissions_scores_dict['lanaguage'] = row[header.index('LANGUAGE TOTAL - NPR')]
-#                     admissions_scores_dict['math'] = row[header.index('MATH TOTAL - NPR')]
-#                     print(admissions_scores_dict)
-#                     return(admissions_scores_dict)
-                
-
-# def write_riverside_scores_to_csv(student_id, language, language_matrix, reading, reading_matrix, math , math_matrix, total_points):
-#     rows = []
-#     with open(original_riverside_data, 'r') as file:
-#         reader = csv.DictReader(file)
-#         for row in reader:
-#             rows.append(row)
-#             if row['id'] == student_id:
-#                 if row['language_test_scores'] == '':
-#                     row['language_test_scores'] = language
-#                     row['math_test_scores'] = math
-#                     row['reading_test_score'] = reading
-#                     row['matrix_languauge'] = language_matrix
-#                     row['matrix_reading'] = reading_matrix
-#                     row['matrix_math'] = math_matrix
-#                     row['total_points'] = total_points
-#                 else:
-#                     row['language_test_scores2'] = language
-#                     row['reading_test_score2'] = reading
-#                     row['math_test_scores2'] = math
-#                     row['matrix_languauge_retest'] = language_matrix
-#                     row['matrix_math_retest'] = math_matrix
-#                     row['matrix_reading_restest'] = reading_matrix
-#                     row['total_points_retest'] = total_points
-    
-    
-#     with open(original_schoolmint_data, 'w', newline = '') as file:
-#         writer = csv.DictWriter(file, fieldnames = reader.fieldnames)    
-#         writer.writeheader()
-#         writer.writerows(rows)
