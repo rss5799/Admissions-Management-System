@@ -4,7 +4,18 @@ import numpy as np
 from app.csv_utils.csv_reader_writer import fetch_updated_student_instance, write_gpa_to_csv
 from app.forms.report_card import ReportCardForm
 from app.services.report_card_service import ReportCardService
+import os
+from flask import send_file, url_for
 
+UPLOAD_FOLDER = os.path.join(os.getcwd(), 'data')
+UPDATED_FILE = os.path.join(UPLOAD_FOLDER, 'updated_student_data.csv')
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
+
+schoolMint_df = os.path.join(UPLOAD_FOLDER, 'DummyDataComplete.csv')
+updated_df = os.path.join(UPLOAD_FOLDER, 'updated_student_data.csv')
+CSV_DIR = "csv_files"
+os.makedirs(CSV_DIR, exist_ok=True)
 
 bp = Blueprint('main', __name__)
 
@@ -78,8 +89,39 @@ def enter_report_card():
 
 #placeholder routes to be developed
 @bp.route("/exports/")
-def exports():
+def exports_page():
     return render_template("exports.html")
+
+@bp.route("/export_csv")
+def export_csv():
+    if os.path.exists(UPDATED_FILE):
+        return send_file(UPDATED_FILE, as_attachment=True)
+    else:
+        flash("CSV file not found.")
+        return redirect(url_for('main.exports_page'))
+
+@bp.route("/upload_csv", methods=["POST"])
+def upload_csv():
+    if 'file' not in request.files:
+        flash("No file part")
+        return redirect(url_for('main.exports_page'))
+
+    file = request.files['file']
+
+    if file.filename == '':
+        flash("No selected file")
+        return redirect(url_for('main.exports_page'))
+
+    if file and file.filename.endswith('.csv'):
+        file.save(UPDATED_FILE)  
+        flash("CSV uploaded and overwritten successfully.")
+    else:
+        flash("Invalid file type. Please upload a CSV.")
+
+    return redirect(url_for('main.exports_page'))
+
+#placeholder routes to be developed
+
 
 @bp.route("/upcoming_tests/")
 def upcoming_tests():
@@ -88,30 +130,3 @@ def upcoming_tests():
 @bp.route("/unresponsive_students/")
 def unresponsive_students():
     return render_template("unresponsive_students.html")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@bp.route("/export_csv")
-def export_csv():
-        
-
-
-
-        return redirect("/exports")

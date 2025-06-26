@@ -5,6 +5,20 @@
 </head>
 <body>
     <h2>Exports</h2>
-    <p>Here is where we'll have links all the exports users generate regularly.</p>
+    <form action="{{ url_for('main.upload_csv') }}" method="POST" enctype="multipart/form-data">
+        <label for="file">Upload CSV:</label>
+        <input type="file" name="file" accept=".csv" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <br>
+
+    <form action="{{ url_for('main.export_csv') }}" method="GET">
+        <button type="submit">Download Updated CSV</button>
+    </form>
+
+    <br>
+    <a href="{{ url_for('main.index') }}"><button type="button">Back to Home</button></a>
+    
 </body>
 </html>
