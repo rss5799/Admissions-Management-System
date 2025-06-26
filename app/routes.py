@@ -2,6 +2,8 @@ from flask import Blueprint, render_template, request, session, flash, redirect
 import pandas as pd
 import numpy as np
 from app.csv_utils.csv_reader_writer import fetch_updated_student_instance, write_gpa_to_csv
+from app.forms.report_card import ReportCardForm
+from app.services.report_card_service import ReportCardService
 import os
 from flask import send_file, url_for
 
@@ -17,109 +19,6 @@ os.makedirs(CSV_DIR, exist_ok=True)
 
 bp = Blueprint('main', __name__)
 
-#starting point for the app
-@bp.route("/")
-def index():
-    return render_template("index.html")
-
-@bp.route("/point_inputs/")
-def point_inputs():
-    return render_template("point_inputs.html")
-
-@bp.route("/student_details/", methods = ['GET'])
-def student_details():
-    current_student = retrieve_current_student()
-    if current_student:
-        #assign session['current_student'] to current_student
-        session['current_id'] = current_student.id
-        return render_template("student_details.html", results = current_student)
-    else:
-        return render_template("student_details.html", results = None)
-
-@bp.route("/enter_report_card/", methods = ['GET', 'POST'])
-def enter_report_card():
-    current_student = retrieve_current_student()
-        # Provide default empty grades so template doesn't crash
-    grades = {
-        "english": "",
-        "math": "",
-        "science": "",
-        "social_studies": "",
-        "language": ""
-    }
-    
-    return render_template("enter_report_card.html", results = current_student, grades=grades)
-
-@bp.route('/calculate_gpa', methods=['GET', 'POST'])
-def calculate_gpa_route():
-    current_student = retrieve_current_student()
-    if current_student != 0:
-        grades = {
-            "english": "",
-            "math": "",
-            "science": "",
-            "social_studies": "",
-            "language": ""
-        }
-        gpa = None
-        matrix_gpa = None
-
-        if request.method == 'POST':
-            grades['english'] = request.form['english']
-            grades['math'] = request.form['math']
-            grades['science'] = request.form['science']
-            grades['social_studies'] = request.form['social_studies']
-            grades['language'] = request.form['language']
-
-            from app.services.matrix_calculator import calculate_gpa, lookup_matrix_points, matrix
-
-            gpa = calculate_gpa(grades)
-            matrix_gpa = lookup_matrix_points(gpa, matrix["gpa"]) # gpa->matrix_gpa value in DummyDataComplete.csv
-        
-        total_points = current_student.total_points
-        total_points_retest = current_student.total_points_retest
-        if(total_points != ""):
-            if(current_student.matrix_languauge == ""):
-                current_student.matrix_languauge = 0
-            if(current_student.matrix_math == ""):
-                current_student.matrix_math = 0
-            if(current_student.matrix_reading == ""):
-                current_student.matrix_reading = 0
-            total_points = int(current_student.matrix_languauge) + int(current_student.matrix_math) + int(current_student.matrix_reading) + matrix_gpa
-        else:
-            total_points = matrix_gpa
-        
-        if(current_student.total_points_retest != ""):
-            if(current_student.matrix_languauge_retest == ""):
-                current_student.matrix_languauge_retest = 0
-            if(current_student.matrix_math_retest == ""):
-                current_student.matrix_math_retest = 0
-            if(current_student.matrix_reading_restest == ""):
-                current_student.matrix_reading_restest = 0
-            total_points_retest = int(current_student.matrix_languauge_retest) + int(current_student.matrix_math_retest) + int(current_student.matrix_reading_restest) + matrix_gpa
-        else:
-            total_points_retest = matrix_gpa
-            #update csv
-            write_gpa_to_csv(current_student.id, gpa, matrix_gpa, total_points, total_points_retest)
-            #retrieve updated student data with new report card info
-            current_student = retrieve_current_student()
-            if current_student is not None:
-                flash("GPA and Matrix GPA Score successfully calculated.")
-                #set session
-                session['current_id'] = current_student.id
-                write_gpa_to_csv(current_student.id, gpa, matrix_gpa, total_points, total_points_retest)
-                return render_template('enter_report_card.html', results = current_student, grades = grades, gpa = gpa, matrix_gpa = matrix_gpa)
-            else:
-                write_gpa_to_csv(current_student.id, gpa, matrix_gpa, total_points, total_points_retest)
-                return render_template('enter_report_card.html', results = None, grades = None, gpa = None, matrix_gpa = None)
-        flash("GPA and Matrix GPA Score successfully calculated.")
-        #set session
-        session['current_id'] = current_student.id
-        write_gpa_to_csv(current_student.id, gpa, matrix_gpa, total_points, total_points_retest)
-        return render_template('enter_report_card.html', results = current_student, grades = grades, gpa = gpa, matrix_gpa = matrix_gpa)
-    else:
-        return render_template('enter_report_card.html', results = None, grades = None, gpa = None, matrix_gpa = None)
-    
 def retrieve_current_student():
     #if youre coming from student search page
     if request.args.get('id_query'):
@@ -144,11 +43,51 @@ def retrieve_current_student():
             print("No student ID Found")
             return(0)
 
-@bp.route("/select_csv", methods=["POST"])
-def select_csv():
-    selected = request.form.get("selected_file")
-    return f"You selected: {selected}"
 
+#starting point for the app
+@bp.route("/")
+def index():
+    return render_template("index.html")
+
+@bp.route("/point_inputs/")
+def point_inputs():
+    return render_template("point_inputs.html")
+
+@bp.route("/student_details/", methods = ['GET'])
+def student_details():
+    current_student = retrieve_current_student()
+
+    if current_student:
+        session['current_id'] = current_student.id
+        return render_template("student_details.html", results = current_student)
+    else:
+        return render_template("student_details.html", results = None)
+
+@bp.route("/enter_report_card/", methods = ['GET', 'POST'])
+def enter_report_card():
+    current_student = retrieve_current_student()
+    form = ReportCardForm()
+
+    if form.validate_on_submit():
+        service = ReportCardService(form, current_student)
+        result = service.process()
+
+        session["current_id"] = current_student.id
+
+        return render_template(
+            "enter_report_card.html",
+            form=form,
+            results=current_student,
+            gpa=result["gpa"],
+            matrix_gpa=result["matrix_gpa"]
+        )
+    return render_template(
+        "enter_report_card.html",
+        form=form,
+        results=current_student
+    )
+
+#placeholder routes to be developed
 @bp.route("/exports/")
 def exports_page():
     return render_template("exports.html")

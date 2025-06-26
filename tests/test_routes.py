@@ -21,7 +21,7 @@ def test_calculate_gpa_post(client):
         'social_studies': '88',
         'language': '92'
     }
-    response = client.post("/calculate_gpa", data=data)
+    response = client.post("/enter_report_card/", data=data)
     assert response.status_code == 200
     assert b"GPA" in response.data
 
