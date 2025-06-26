@@ -19,7 +19,11 @@ def place_riverside_into_schoolmint():
 
     #pull the schoolmint file that's dropped into the system
     original_schoolmint_data_no_tests = ('SchoolMintNoTests.csv')
-
+    with open(original_schoolmint_data_no_tests, 'r', newline='') as csv_file:
+        csv_reader = csv.reader(csv_file)
+        header = next(csv_reader)  # Reads the first row, which is the header
+        print(header)
+    print(original_schoolmint_data_no_tests[0])
     #pull the riverside data that's dropped into the system
     original_riverside_data = ('DummyRiversideData.csv')
 
@@ -31,22 +35,22 @@ def place_riverside_into_schoolmint():
     merged_results = pd.merge(school_mint_df, riverside_df, left_on='id', right_on='STUDENT ID 1')    
     merged_results = merged_results.fillna("")
 
-    #print statements to test    
-    print("ID:", merged_results.iloc[105]['id'])
-    print("matrix gpa initial:", merged_results.iloc[105]['matrix_gpa'])
-    print("math initial:", merged_results.iloc[105]['math_test_scores'], "matrix math initial:", merged_results.iloc[105]['matrix_math'])
-    print("language initial:", merged_results.iloc[105]['language_test_scores'], "matrix language initial:", merged_results.iloc[105]['matrix_languauge'])
-    print("reading initial:", merged_results.iloc[105]['reading_test_score'], "matrix reading initial:", merged_results.iloc[105]['matrix_reading'])
-    print("total points initial:", merged_results.iloc[105]['total_points'])
+    # #print statements to test    
+    # print("ID:", merged_results.iloc[105]['id'])
+    # print("matrix gpa initial:", merged_results.iloc[105]['matrix_gpa'])
+    # print("math initial:", merged_results.iloc[105]['math_test_scores'], "matrix math initial:", merged_results.iloc[105]['matrix_math'])
+    # print("language initial:", merged_results.iloc[105]['language_test_scores'], "matrix language initial:", merged_results.iloc[105]['matrix_languauge'])
+    # print("reading initial:", merged_results.iloc[105]['reading_test_score'], "matrix reading initial:", merged_results.iloc[105]['matrix_reading'])
+    # print("total points initial:", merged_results.iloc[105]['total_points'])
 
-    print("#################################################################")
+    # print("#################################################################")
 
-    print("math2 initial:", merged_results.iloc[105]['math_test_scores2'], "matrix math2 initial:", merged_results.iloc[105]['matrix_math_retest'])
-    print("language2 initial:", merged_results.iloc[105]['language_test_scores2'], "matrix language2 initial:", merged_results.iloc[105]['matrix_languauge_retest'])
-    print("reading2 initial:", merged_results.iloc[105]['reading_test_score2'], "matrix reading2 initial:", merged_results.iloc[105]['matrix_reading_restest'])
-    print("total points2 initial:", merged_results.iloc[105]['total_points_retest'])
+    # print("math2 initial:", merged_results.iloc[105]['math_test_scores2'], "matrix math2 initial:", merged_results.iloc[105]['matrix_math_retest'])
+    # print("language2 initial:", merged_results.iloc[105]['language_test_scores2'], "matrix language2 initial:", merged_results.iloc[105]['matrix_languauge_retest'])
+    # print("reading2 initial:", merged_results.iloc[105]['reading_test_score2'], "matrix reading2 initial:", merged_results.iloc[105]['matrix_reading_restest'])
+    # print("total points2 initial:", merged_results.iloc[105]['total_points_retest'])
 
-    print("#################################################################")
+    # print("#################################################################")
     
 
     #iterate down each row in the dataframe
@@ -96,20 +100,23 @@ def place_riverside_into_schoolmint():
 
     
     
-    print("ID:", merged_results.iloc[105]['id'])
-    print("matrix gpa final:", merged_results.iloc[105]['matrix_gpa'])
-    print("math final:", merged_results.iloc[105]['math_test_scores'], "matrix math final:", merged_results.iloc[105]['matrix_math'])
-    print("language final:", merged_results.iloc[105]['language_test_scores'], "matrix language final:", merged_results.iloc[105]['matrix_languauge'])
-    print("reading final:", merged_results.iloc[105]['reading_test_score'], "matrix reading final:", merged_results.iloc[105]['matrix_reading'])
-    print("total points final:", merged_results.iloc[105]['total_points'])
+    # print("ID:", merged_results.iloc[105]['id'])
+    # print("matrix gpa final:", merged_results.iloc[105]['matrix_gpa'])
+    # print("math final:", merged_results.iloc[105]['math_test_scores'], "matrix math final:", merged_results.iloc[105]['matrix_math'])
+    # print("language final:", merged_results.iloc[105]['language_test_scores'], "matrix language final:", merged_results.iloc[105]['matrix_languauge'])
+    # print("reading final:", merged_results.iloc[105]['reading_test_score'], "matrix reading final:", merged_results.iloc[105]['matrix_reading'])
+    # print("total points final:", merged_results.iloc[105]['total_points'])
 
-    print("#################################################################")
+    # print("#################################################################")
 
-    print("math2 final:", merged_results.iloc[105]['math_test_scores2'], "matrix math2 final:", merged_results.iloc[105]['matrix_math_retest'])
-    print("language2 final:", merged_results.iloc[105]['language_test_scores2'], "matrix language2 final:", merged_results.iloc[105]['matrix_languauge_retest'])
-    print("reading2 final:", merged_results.iloc[105]['reading_test_score2'], "matrix reading2 final:", merged_results.iloc[105]['matrix_reading_restest'])
-    print("total points2 final:", merged_results.iloc[105]['total_points_retest'])
+    # print("math2 final:", merged_results.iloc[105]['math_test_scores2'], "matrix math2 final:", merged_results.iloc[105]['matrix_math_retest'])
+    # print("language2 final:", merged_results.iloc[105]['language_test_scores2'], "matrix language2 final:", merged_results.iloc[105]['matrix_languauge_retest'])
+    # print("reading2 final:", merged_results.iloc[105]['reading_test_score2'], "matrix reading2 final:", merged_results.iloc[105]['matrix_reading_restest'])
+    # print("total points2 final:", merged_results.iloc[105]['total_points_retest'])
 
-    print("#################################################################")
+    # print("#################################################################")
+
+    headers = ['id', 'matrix_gpa', 'language_test_scores', 'reading_test_score', 'math_test_scores', 'total_points', 'matrix_languauge', 'matrix_math', 'matrix_reading', 'status', 'matrix_languauge_retest', 'matrix_math_retest', 'matrix_reading_restest', 'total_points_retest', 'updated_at', 'guardian1_email', 'guardian2_email', 'grade', 'deliver_test_accomodation_approved', 'test_date_sign_up', 'current_school', 'gpa', 'language_test_scores2', 'reading_test_score2', 'math_test_scores2']
+    merged_results.to_csv('riversideAddedToSchoolmint.csv', columns = headers)
 
 place_riverside_into_schoolmint()
