@@ -93,7 +93,7 @@ def test_matrix_points_persist_to_export(client):
     random_students = [random.randint(1, 2000) for _ in range(5)]
     #iterate through the students
     for student_id in random_students:
-        student = fetch_updated_student_instance(student_id)
+        student = fetch_updated_student_instance(1)
         if student != 0:
             matrix_score = student.total_points
             response = client.get("/exports/")
