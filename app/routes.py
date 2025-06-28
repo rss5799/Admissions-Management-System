@@ -47,7 +47,11 @@ def retrieve_current_student():
 #starting point for the app
 @bp.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("landing.html")
+
+@bp.route("/menu")
+def menu():
+    return render_template("menu.html")
 
 @bp.route("/point_inputs/")
 def point_inputs():
