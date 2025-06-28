@@ -108,7 +108,7 @@ def test_matrix_points_persist_to_export(client):
 
 #System Test 17: Ensure riverside scores are being transfered and calculated correctly
 
-def testing_riverside_data_transfer():
+def test_riverside_data_transfer():
     #open original schoolmint for pytests
     original_schoolmint = ('tests/schoolmintForPytest.csv')
     #make a copy of schoolmint for pytests
