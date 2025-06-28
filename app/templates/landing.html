@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1 style="text-align: center;">Admissions Management System</h1>
+<h4 style="text-align: center;">Developed for Benjamin Franklin High School</h4>
+<div style="text-align: center;">
+    <img src="{{ url_for('static', filename='/images/ams_logo.png') }}" width="300" height="200">
+    <br>
+    <a href="/menu">Proceed with Dummy Data (for development)</a>
+</div>
+<br>
+
+
+<br>
+<br>
+<br>
+<h3>SchoolMint Data Upload</h3>
+<form action="{{ url_for('main.upload_csv') }}" method="POST" enctype="multipart/form-data">
+    <label for="file">Upload CSV:</label>
+    <input type="file" name="file" accept=".csv" required>
+    <button type="submit">Upload</button>
+</form>
+
+
+
+<form action="/menu" method="GET">
+    <button type="submit" class="btn" style="margin-top: 1em;">
+        Proceed with SchoolMint Data Only
+    </button>
+</form>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3>Riverside Data Upload</h3>
+<form action="{{ url_for('main.upload_csv') }}" method="POST" enctype="multipart/form-data">
+    <label for="file">Upload CSV:</label>
+    <input type="file" name="file" accept=".csv" required>
+    <button type="submit">Upload</button>
+</form>
+
+<form action="/menu" method="GET">
+    <button type="submit" class="btn" style="margin-top: 1em;">
+        Proceed after Merging Riverside into SchoolMint
+    </button>
+</form>
+
+<br>
+<br>
+<br>
+
+
+</body>
+</html>
