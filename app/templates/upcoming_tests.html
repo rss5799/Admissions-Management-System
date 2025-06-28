@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flask App</title>
+    <title>Admissions Management System</title>
 </head>
 <body>
     <h2>Upcoming Tests</h2>
-    <p>Here is where we'll have details about upcoming tests</p>
+
+            <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        justify-items: flex-end;
+        width: fit-content;
+        padding: 100dp;
+        text-align: center;
+        }
+        </style>
+
+    <form method="POST">
+        <label for="upcoming_tests_dropdown">Choose a test date</label>
+        <select name="upcoming_tests_dropdown" id="upcoming_tests_dropdown">
+            {% for date in dates %}
+                <option value="{{ date }}">{{ date }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+
+        <table>
+
+    <tr>
+        <th></th>
+        <th>Standard Time</th>
+        <th>Extended Time</th>
+    </tr>
+
+    <tr>
+        <td>First Test</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Retesting</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+
+    <tr>
+        <td>Ninth Graders</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Tenth Graders</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Total:</td>
+        <td></td>
+        <td></td>
+
+    </tr>
+
+
+</table>
 </body>
 </html>

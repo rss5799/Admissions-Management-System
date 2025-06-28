@@ -129,7 +129,20 @@ def upload_csv():
 
 @bp.route("/upcoming_tests/")
 def upcoming_tests():
-    return render_template("upcoming_tests.html")
+    upcoming_test_dates = ['test1', 'test2', 'test3', 'test4']
+    selected_test = None
+
+    number_testers = [0, 0]
+    number_retesters = [0, 0]
+    number_ninth = [0, 0]
+    number_tenth = [0, 0]
+
+    if request.method == 'POST':
+        number_testers = [0, 0]
+        number_retesters = [0, 0]
+        number_ninth = [0, 0]
+        number_tenth = [0, 0]
+    return render_template("upcoming_tests.html", dates = upcoming_test_dates, testers = number_testers, retesters = number_retesters, ninth = number_ninth, tenth = number_tenth)
 
 @bp.route("/unresponsive_students/")
 def unresponsive_students():
