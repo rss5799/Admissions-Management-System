@@ -2,7 +2,7 @@ import csv
 from app.models import student
 
 original_schoolmint_data = ('DummyDataComplete.csv')
-original_riverside_data = ('DummyRiversideData.csv')
+
 
 def fetch_updated_student_instance(student_id):
     with open(original_schoolmint_data, 'r') as file:
@@ -37,7 +37,6 @@ def fetch_updated_student_instance(student_id):
                     reading_test_score2 = 	row[header.index('reading_test_score2')],
                     math_test_scores2 = row[header.index('math_test_scores2')]
                 )
-                fetch_riverside_data(student_id)
                 return current_student
     return(0)
             

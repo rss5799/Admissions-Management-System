@@ -84,7 +84,7 @@ def display_updates_to_csv():
     for row, col, new_val in new_results:
         student_df_modified.loc[row, col] = new_val
     #save the silly dataframe
-    student_df_modified.to_csv('new_data_file.csv', index=False)
+    student_df_modified.to_csv('testing_scores_temp_file.csv', index=False)
     #iterate through the results from the OG dataframe and assert they're different than the silly dataframe
     for result in results:
         for new_result in new_results:
