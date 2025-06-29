@@ -19,12 +19,12 @@
 
     <form method="POST">
         <label for="upcoming_tests_dropdown">Choose a test date</label>
-        <select name="upcoming_tests_dropdown" id="upcoming_tests_dropdown">
+        <select name = "upcoming_tests_dropdown" id="upcoming_tests_dropdown">
             {% for date in dates %}
                 <option value="{{ date }}">{{ date }}</option>
             {% endfor %}
         </select>
-        <button type="submit">Submit</button>
+        <input type="submit" value="Submit">
     </form>
     <br>
     <br>
@@ -41,33 +41,33 @@
 
     <tr>
         <td>First Test</td>
-        <td></td>
-        <td></td>
+        <td>{{ testers[0] }}</td>
+        <td>{{ testers[1] }}</td>
     </tr>
 
     <tr>
         <td>Retesting</td>
-        <td></td>
-        <td></td>
+        <td>{{ retesters[0] }}</td>
+        <td> {{retesters[1] }}</td>
     </tr>
 
 
     <tr>
         <td>Ninth Graders</td>
-        <td></td>
-        <td></td>
+        <td>{{ ninth[0] }}</td>
+        <td> {{ ninth[1] }}</td>
     </tr>
 
     <tr>
         <td>Tenth Graders</td>
-        <td></td>
-        <td></td>
+        <td>{{ tenth[0] }}</td>
+        <td>{{ tenth[1] }}</td>
     </tr>
 
     <tr>
         <td>Total:</td>
-        <td></td>
-        <td></td>
+        <td>{{ total[0] }}</td>
+        <td>{{ total[1] }}</td>
 
     </tr>
 
