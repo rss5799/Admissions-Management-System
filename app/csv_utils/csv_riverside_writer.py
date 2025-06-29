@@ -11,27 +11,44 @@ MATRIX_FILE = 'app/services/admissions_matrix.json'
 with open(MATRIX_FILE, "r") as f:
     matrix = json.load(f)
 
+# Use this to preview a DataFrame or CSV file
+# It prints a concise summary including shape, columns, and missing values.
+def preview_as_df(data, name="DATAFRAME"):
+    """
+    Print a concise summary of a DataFrame or CSV file.
+    """
+    if isinstance(data, pd.DataFrame):
+        df = data
+    else:
+        df = pd.read_csv(data)
 
-#this function should be called when users press the button requesting that riverside data be merged with the most recent schoolmint csv
-def place_riverside_into_schoolmint():
+    print(f"\n=== {name} ===")
+    print(f"Shape: {df.shape}")
+    print(f"Columns ({len(df.columns)}): {list(df.columns)}\n")
 
-    #pull the schoolmint file that's dropped into the system
-    original_schoolmint_data_no_tests = ('SchoolMintNoTests.csv')
-    with open(original_schoolmint_data_no_tests, 'r', newline='') as csv_file:
-        csv_reader = csv.reader(csv_file)
-        header = next(csv_reader)  # Reads the first row, which is the header
-        print(header)
-    print(original_schoolmint_data_no_tests[0])
-    #pull the riverside data that's dropped into the system
-    original_riverside_data = ('DummyRiversideData.csv')
+    missing = df.isnull().sum()
+    missing_cols = missing[missing > 0]
+    if not missing_cols.empty:
+        print("\nMissing values per column:")
+        print(missing_cols)
+    else:
+        print("\nNo missing values.")
 
-    #convert both to dataframes
-    school_mint_df = pd.read_csv(original_schoolmint_data_no_tests)
-    riverside_df = pd.read_csv(original_riverside_data)
+    return df
+
+#this function combines two CSV files, processes the data, and saves the results to a new CSV file.
+def combine_data(first_file_path: str, second_file_path: str):
+
+
+    df_first_file = pd.read_csv(first_file_path)
+    preview_as_df(df_first_file, "First File Data")
+    df_second_file = pd.read_csv(second_file_path)
+    preview_as_df(df_second_file, "Second File Data")
 
     #join and drop nan values
-    merged_results = pd.merge(school_mint_df, riverside_df, left_on='id', right_on='STUDENT ID 1')    
+    merged_results = pd.merge(df_first_file, df_second_file, left_on='id', right_on='STUDENT ID 1')    
     merged_results = merged_results.fillna("")
+    preview_as_df(merged_results, "Merged Results")
 
     #iterate down each row in the dataframe
     for index, row in merged_results.iterrows():
