@@ -2,7 +2,7 @@ import csv
 from app.models import student
 
 original_schoolmint_data = ('DummyDataComplete.csv')
-original_riverside_data = ('DummyRiversideData.csv')
+
 
 def fetch_updated_student_instance(student_id):
     with open(original_schoolmint_data, 'r') as file:
@@ -37,7 +37,6 @@ def fetch_updated_student_instance(student_id):
                     reading_test_score2 = 	row[header.index('reading_test_score2')],
                     math_test_scores2 = row[header.index('math_test_scores2')]
                 )
-                fetch_riverside_data(student_id)
                 return current_student
     return(0)
             
@@ -61,18 +60,18 @@ def write_gpa_to_csv(student_id, gpa, matrix_gpa, total_points, total_points_ret
         writer.writerows(rows)
 
 
-def fetch_riverside_data(student_id):
-        admissions_scores_dict = {}
-        with open(original_riverside_data, 'r') as file:
-            reader = csv.reader(file)
-            header = next(reader)
-            for row in reader:
-                if str(row[header.index('STUDENT ID 1')]) == str(student_id):
-                    admissions_scores_dict['id'] = student_id
-                    admissions_scores_dict['reading'] = row[header.index('READING TOTAL - NPR')]
-                    admissions_scores_dict['lanaguage'] = row[header.index('LANGUAGE TOTAL - NPR')]
-                    admissions_scores_dict['math'] = row[header.index('MATH TOTAL - NPR')]
-                    print(admissions_scores_dict)
-                    return(admissions_scores_dict)
+# def fetch_riverside_data(student_id):
+#         admissions_scores_dict = {}
+#         with open(original_riverside_data, 'r') as file:
+#             reader = csv.reader(file)
+#             header = next(reader)
+#             for row in reader:
+#                 if str(row[header.index('STUDENT ID 1')]) == str(student_id):
+#                     admissions_scores_dict['id'] = student_id
+#                     admissions_scores_dict['reading'] = row[header.index('READING TOTAL - NPR')]
+#                     admissions_scores_dict['lanaguage'] = row[header.index('LANGUAGE TOTAL - NPR')]
+#                     admissions_scores_dict['math'] = row[header.index('MATH TOTAL - NPR')]
+#                     print(admissions_scores_dict)
+#                     return(admissions_scores_dict)
                 
 
