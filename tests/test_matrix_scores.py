@@ -124,6 +124,7 @@ def test_riverside_data_transfer():
     #pass them into def place_riverside_into_schoolmint(schoolmintData, riversideResults)
     place_riverside_into_schoolmint(copy_for_testing, riverside_dummy_for_pytest)
     counter = combine_data(copy_for_testing, riverside_dummy_for_pytest)
+    assert counter == 7
     with open(copy_for_testing, 'r', newline='') as csvfile:
         reader = csv.reader(csvfile)
         data = list(reader)
