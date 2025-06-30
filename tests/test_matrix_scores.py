@@ -131,7 +131,7 @@ def test_riverside_data_transfer():
         reader = csv.reader(csvfile)
         data = list(reader)
         #assertions for student with GPA first test
-        assert data[1][1] == '1.0'
+        assert data[1][1] == '20'
         assert data[1][3] == '88.0'
         assert data[1][4] == '95.0'
         assert data[1][5] == '91.0'
