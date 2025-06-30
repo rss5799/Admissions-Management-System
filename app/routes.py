@@ -6,7 +6,7 @@ from app.forms.report_card import ReportCardForm
 from app.services.report_card_service import ReportCardService
 import os
 from flask import send_file, url_for
-from app.services.test_day_details import retrieve_unique_test_dates, retrieve_test_day_counts
+from app.services.details_of_test_days import retrieve_unique_test_dates, retrieve_test_day_counts
 
 
 schoolMint_csv = ('DummyDataComplete.csv')
