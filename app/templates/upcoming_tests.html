@@ -20,6 +20,7 @@
     <form method="POST">
         <label for="upcoming_tests_dropdown">Choose a test date</label>
         <select name = "upcoming_tests_dropdown" id="upcoming_tests_dropdown">
+            <option selected value="" disabled>Select a Test Date</option>
             {% for date in dates %}
                 <option value="{{ date }}">{{ date }}</option>
             {% endfor %}
@@ -31,45 +32,63 @@
     <br>
     <br>
 
-        <table>
+    <h2>Showing Details for: {{selected_test_date}}</h2>
+
+    
+    
+    <table>
+    <tr>
+        <th></th>
+        <th colspan="3"> First Test</th>
+        <th colspan="3"> Retesters</th>
+        <th colspan="2"></th>
+    </tr>
 
     <tr>
         <th></th>
-        <th>Standard Time</th>
-        <th>Extended Time</th>
+        <th> 8th</th>
+        <th> 9th</th>
+        <th>10th</th>
+        <th> 8th</th>
+        <th> 9th</th>
+        <th>10th</th>
+        <th>Total</th>
+        <th> Rec # of Rooms</th>
     </tr>
 
     <tr>
-        <td>First Test</td>
-        <td>{{ testers[0] }}</td>
-        <td>{{ testers[1] }}</td>
+        <td>Standard Time</td>
+        <td>{{standard_time[0]}}</td>
+        <td>{{standard_time[1]}}</td>
+        <td>{{standard_time[2]}}</td>
+        <td>{{standard_time[3]}}</td>
+        <td>{{standard_time[4]}}</td>
+        <td>{{standard_time[5]}}</td>
+        <td>{{standard_time[6]}}</td>
+        <td>{{standard_time[7]}}</td>
     </tr>
 
     <tr>
-        <td>Retesting</td>
-        <td>{{ retesters[0] }}</td>
-        <td> {{retesters[1] }}</td>
-    </tr>
-
-
-    <tr>
-        <td>Ninth Graders</td>
-        <td>{{ ninth[0] }}</td>
-        <td> {{ ninth[1] }}</td>
-    </tr>
-
-    <tr>
-        <td>Tenth Graders</td>
-        <td>{{ tenth[0] }}</td>
-        <td>{{ tenth[1] }}</td>
+        <td>Eligible for Accommodations</td>
+        <td>{{accomms_eligible[0]}}</td>
+        <td>{{accomms_eligible[1]}}</td>
+        <td>{{accomms_eligible[2]}}</td>
+        <td>{{accomms_eligible[3]}}</td>
+        <td>{{accomms_eligible[4]}}</td>
+        <td>{{accomms_eligible[5]}}</td>
+        <td>{{accomms_eligible[6]}}</td>
+        <td>{{accomms_eligible[7]}}</td>
     </tr>
 
     <tr>
-        <td>Total:</td>
-        <td>{{ total[0] }}</td>
-        <td>{{ total[1] }}</td>
-
+        <td>Totals</td>
+        <td colspan="3">Total First Test: {{totals[0]}}</td>
+        <td colspan="3">Total Retest: {{totals[1]}}</td>
+        <td>Total Testers: {{totals[2]}}</td>
+        <td>Total Rooms: {{totals[3]}}</td>
     </tr>
+
+    
 
 
 </table>
