@@ -75,7 +75,7 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 74,,61,92,77,57,11,19,27,In Processing,8,15,26,49,2024-10-01 9:44:07,,,9,,February 15 2025 (No-rest option),International School of Louisiana,,54,90,68
 75,,79,78,82,62,20,22,20,In Processing,,,,,2024-10-01 9:49:47,,,11,,March 22 2025 (No-rest option),Other,,,,
 76,30,88,85,69,93,25,15,23,Eligible,,,,,2024-10-01 10:01:21,,,9,,November 16 2024,St. Andrew's Episcopal School,4,,,
-77,,98,94,76,77,30,19,28,In Processing,,,,,2024-10-01 9:59:18,,,10,,April 26 2025 (No-rest option),Other,,,,
+77,20,98,94,76,97,30,19,28,In Processing,,,,20,2024-10-01 9:59:18,,,10,,April 26 2025 (No-rest option),Other,2.5,,,
 78,,54,83,71,46,8,16,22,In Processing,14,21,17,52,2024-10-01 10:22:35,,,9,,March 22 2025 (No-rest option),Bricolage Academy,,66,72,80
 79,30,99,99,99,120,30,30,30,Eligible,,,,,2024-10-01 10:29:55,,,9,,November 16 2024,Lake Forest Elementary Charter School,4,,,
 80,30,61,99,78,91,11,20,30,Eligible,,,,,2024-10-01 10:40:04,,,9,,December 14 2024,Audubon Uptown Montessori and French,3.75,,,
