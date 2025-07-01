@@ -11,14 +11,14 @@ def client():
 
 #Unit test 18
 def test_retrieve_unique_test_dates():
-    unique_tests = retrieve_unique_test_dates('tests/schoolmintForPytest.csv')
+    unique_tests = retrieve_unique_test_dates('tests/SampleCsvsForTesting/schoolmintForPytest.csv')
     assert len(unique_tests) == 2
     assert unique_tests[0] == 'January 18 2025'
     assert unique_tests[1] == 'March 5 2025'
 
 #Unit test 19
 def test_retrieve_test_day_counts():
-    checking_test = retrieve_test_day_counts('tests/schoolmintForPytest.csv', 'January 18 2025')
+    checking_test = retrieve_test_day_counts('tests/SampleCsvsForTesting/schoolmintForPytest.csv', 'January 18 2025')
     assert checking_test.date == 'January 18 2025'
     assert checking_test.firststandard8 == 0
     assert checking_test.firststandard9 == 1
@@ -41,7 +41,7 @@ def test_retrieve_test_day_counts():
     assert checking_test.totalstudents == 7
     assert checking_test.totalrooms == 2
 
-    checking_test = retrieve_test_day_counts('tests/schoolmintForPytest.csv', 'March 5 2025')
+    checking_test = retrieve_test_day_counts('tests/SampleCsvsForTesting/schoolmintForPytest.csv', 'March 5 2025')
     assert checking_test.date == 'March 5 2025'
     assert checking_test.firststandard8 == 0
     assert checking_test.firststandard9 == 0

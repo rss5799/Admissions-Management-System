@@ -1,7 +1,6 @@
 import pytest
 import firebase_admin
 from firebase_admin import credentials, firestore
-import os
 
 # Loads the credentials if they don't already exist
 @pytest.fixture(scope="module")
