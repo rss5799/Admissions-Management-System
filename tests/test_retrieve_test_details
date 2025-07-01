@@ -66,10 +66,14 @@ def test_retrieve_test_day_counts():
 
 #System test 23
 
-def test_details_page_post(client):
-    response = client.post("/upcoming_tests/")
+def test_calculate_gpa_post(client):
+    data = {
+        'english': '90',
+        'math': '85',
+        'science': '95',
+        'social_studies': '88',
+        'language': '92'
+    }
+    response = client.post("/enter_report_card/", data=data)
     assert response.status_code == 200
-    assert b"Choose a test date" in response.data
-    response = client.get("/upcoming_tests/")
-    assert response.status_code == 200
-    assert b"Choose a test date" in response.data
+    assert b"GPA" in response.data
