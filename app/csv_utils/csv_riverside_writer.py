@@ -8,6 +8,7 @@ import app
 
 
 #this function should be called when users press the button requesting that riverside data be merged with the most recent schoolmint csv
+#this cannot be a standalone function or it breaks the testing file
 def place_riverside_into_schoolmint(schoolmintData, riversideResults):
     
     MATRIX_FILE = 'app/services/admissions_matrix.json'
@@ -39,7 +40,7 @@ def place_riverside_into_schoolmint(schoolmintData, riversideResults):
 
 #     return df
 
-#this function combines two CSV files, processes the data, and saves the results to a new CSV file.
+#this function combines two CSV files, processes the data, and saves the results to a new CSV file.  should be called when user presses button requesting that riverside data be merged with the most recent schoolmint csv
 def combine_data(first_file_path: str, second_file_path: str):
     MATRIX_FILE = 'app/services/admissions_matrix.json'
     with open(MATRIX_FILE, "r") as f:
