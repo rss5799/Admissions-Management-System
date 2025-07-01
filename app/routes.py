@@ -47,7 +47,11 @@ def retrieve_current_student():
 #starting point for the app
 @bp.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("landing.html")
+
+@bp.route("/menu")
+def menu():
+    return render_template("menu.html")
 
 @bp.route("/point_inputs/")
 def point_inputs():
@@ -123,9 +127,25 @@ def upload_csv():
 #placeholder routes to be developed
 
 
-@bp.route("/upcoming_tests/")
+@bp.route("/upcoming_tests/", methods=['GET','POST'])
 def upcoming_tests():
-    return render_template("upcoming_tests.html")
+    upcoming_test_dates = ['test1', 'test2', 'test3', 'test4']
+
+    number_testers = ["", ""]
+    number_retesters = ["", ""]
+    number_ninth = ["", ""]
+    number_tenth = ["", ""]
+    total_testers = ["", ""]
+
+    if request.method == 'POST':        
+        selected_test_date = request.form.get('upcoming_tests_dropdown')
+        print(type(selected_test_date))
+        number_testers = [selected_test_date, selected_test_date]
+        number_retesters = [selected_test_date, selected_test_date]
+        number_ninth = [selected_test_date, selected_test_date]
+        number_tenth = [selected_test_date, selected_test_date]
+        total_testers = [selected_test_date, selected_test_date]
+    return render_template("upcoming_tests.html", dates = upcoming_test_dates, testers = number_testers, retesters = number_retesters, ninth = number_ninth, tenth = number_tenth, total = total_testers)
 
 @bp.route("/unresponsive_students/")
 def unresponsive_students():

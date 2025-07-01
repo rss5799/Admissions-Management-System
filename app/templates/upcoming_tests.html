@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flask App</title>
+    <title>Admissions Management System</title>
 </head>
 <body>
     <h2>Upcoming Tests</h2>
-    <p>Here is where we'll have details about upcoming tests</p>
+
+            <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        justify-items: flex-end;
+        width: fit-content;
+        padding: 100dp;
+        text-align: center;
+        }
+        </style>
+
+    <form method="POST">
+        <label for="upcoming_tests_dropdown">Choose a test date</label>
+        <select name = "upcoming_tests_dropdown" id="upcoming_tests_dropdown">
+            {% for date in dates %}
+                <option value="{{ date }}">{{ date }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+
+        <table>
+
+    <tr>
+        <th></th>
+        <th>Standard Time</th>
+        <th>Extended Time</th>
+    </tr>
+
+    <tr>
+        <td>First Test</td>
+        <td>{{ testers[0] }}</td>
+        <td>{{ testers[1] }}</td>
+    </tr>
+
+    <tr>
+        <td>Retesting</td>
+        <td>{{ retesters[0] }}</td>
+        <td> {{retesters[1] }}</td>
+    </tr>
+
+
+    <tr>
+        <td>Ninth Graders</td>
+        <td>{{ ninth[0] }}</td>
+        <td> {{ ninth[1] }}</td>
+    </tr>
+
+    <tr>
+        <td>Tenth Graders</td>
+        <td>{{ tenth[0] }}</td>
+        <td>{{ tenth[1] }}</td>
+    </tr>
+
+    <tr>
+        <td>Total:</td>
+        <td>{{ total[0] }}</td>
+        <td>{{ total[1] }}</td>
+
+    </tr>
+
+
+</table>
 </body>
 </html>

@@ -7,48 +7,56 @@ import json
 import app
 
 
-MATRIX_FILE = 'app/services/admissions_matrix.json'
-with open(MATRIX_FILE, "r") as f:
-    matrix = json.load(f)
+#this function should be called when users press the button requesting that riverside data be merged with the most recent schoolmint csv
+def place_riverside_into_schoolmint(schoolmintData, riversideResults):
+    
+    MATRIX_FILE = 'app/services/admissions_matrix.json'
+    with open(MATRIX_FILE, "r") as f:
+        matrix = json.load(f)
 
 # Use this to preview a DataFrame or CSV file
 # It prints a concise summary including shape, columns, and missing values.
-def preview_as_df(data, name="DATAFRAME"):
-    """
-    Print a concise summary of a DataFrame or CSV file.
-    """
-    if isinstance(data, pd.DataFrame):
-        df = data
-    else:
-        df = pd.read_csv(data)
+# def preview_as_df(data, name="DATAFRAME"):
+#     """
+#     Print a concise summary of a DataFrame or CSV file.
+#     """
+#     if isinstance(data, pd.DataFrame):
+#         df = data
+#     else:
+#         df = pd.read_csv(data)
 
-    print(f"\n=== {name} ===")
-    print(f"Shape: {df.shape}")
-    print(f"Columns ({len(df.columns)}): {list(df.columns)}\n")
+#     print(f"\n=== {name} ===")
+#     print(f"Shape: {df.shape}")
+#     print(f"Columns ({len(df.columns)}): {list(df.columns)}\n")
 
-    missing = df.isnull().sum()
-    missing_cols = missing[missing > 0]
-    if not missing_cols.empty:
-        print("\nMissing values per column:")
-        print(missing_cols)
-    else:
-        print("\nNo missing values.")
+#     missing = df.isnull().sum()
+#     missing_cols = missing[missing > 0]
+#     if not missing_cols.empty:
+#         print("\nMissing values per column:")
+#         print(missing_cols)
+#     else:
+#         print("\nNo missing values.")
 
-    return df
+#     return df
 
 #this function combines two CSV files, processes the data, and saves the results to a new CSV file.
 def combine_data(first_file_path: str, second_file_path: str):
+    MATRIX_FILE = 'app/services/admissions_matrix.json'
+    with open(MATRIX_FILE, "r") as f:
+        matrix = json.load(f)
 
 
     df_first_file = pd.read_csv(first_file_path)
-    preview_as_df(df_first_file, "First File Data")
+    #preview_as_df(df_first_file, "First File Data")
     df_second_file = pd.read_csv(second_file_path)
-    preview_as_df(df_second_file, "Second File Data")
+    # preview_as_df(df_second_file, "Second File Data")
 
     #join and drop nan values
-    merged_results = pd.merge(df_first_file, df_second_file, left_on='id', right_on='STUDENT ID 1')    
+    merged_results = pd.merge(df_first_file, df_second_file, left_on='id', right_on='STUDENT ID 1', how='outer')    
     merged_results = merged_results.fillna("")
-    preview_as_df(merged_results, "Merged Results")
+    #preview_as_df(merged_results, "Merged Results")
+    counter = 0
+    row_data = []
 
     #iterate down each row in the dataframe
     for index, row in merged_results.iterrows():
@@ -75,6 +83,7 @@ def combine_data(first_file_path: str, second_file_path: str):
                 merged_results.loc[index, 'math_test_scores'] = row['MATH TOTAL - NPR']
                 merged_results.loc[index, 'matrix_math'] = math_matrix
             
+            counter += 1
             merged_results.loc[index, 'total_points'] = matrix_gpa + reading_matrix + language_matrix + math_matrix
 
         #update values and move to columns (second columns if it's the retest...)
@@ -92,11 +101,14 @@ def combine_data(first_file_path: str, second_file_path: str):
                 merged_results.loc[index, 'math_test_scores2'] = row['MATH TOTAL - NPR']
                 merged_results.loc[index, 'matrix_math_retest'] = math_matrix
 
-            
+            counter += 1
             merged_results.loc[index, 'total_points_retest'] = matrix_gpa + reading_matrix + language_matrix + math_matrix
 
     headers = ['id', 'matrix_gpa', 'language_test_scores', 'reading_test_score', 'math_test_scores', 'total_points', 'matrix_languauge', 'matrix_math', 'matrix_reading', 'status', 'matrix_languauge_retest', 'matrix_math_retest', 'matrix_reading_restest', 'total_points_retest', 'updated_at', 'guardian1_email', 'guardian2_email', 'grade', 'deliver_test_accomodation_approved', 'test_date_sign_up', 'current_school', 'gpa', 'language_test_scores2', 'reading_test_score2', 'math_test_scores2']
-    merged_results.to_csv('SchoolMintNoTests.csv', columns = headers)
+    merged_results.to_csv(first_file_path, columns = headers)
+
+    return counter
+
 
 
 
