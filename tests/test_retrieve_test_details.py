@@ -1,8 +1,5 @@
 import pytest
-from app.services import details_of_test_days
-from app.models import testday
-from app import routes
-from flask import request
+from app.services.details_of_test_days import retrieve_unique_test_dates, retrieve_test_day_counts
 from app import create_app
 
 @pytest.fixture
@@ -14,14 +11,14 @@ def client():
 
 #Unit test 18
 def test_retrieve_unique_test_dates():
-    unique_tests = details_of_test_days.retrieve_unique_test_dates('tests/schoolmintForPytest.csv')
+    unique_tests = retrieve_unique_test_dates('tests/schoolmintForPytest.csv')
     assert len(unique_tests) == 2
     assert unique_tests[0] == 'January 18 2025'
     assert unique_tests[1] == 'March 5 2025'
 
 #Unit test 19
 def test_retrieve_test_day_counts():
-    checking_test = details_of_test_days.retrieve_test_day_counts('tests/schoolmintForPytest.csv', 'January 18 2025')
+    checking_test = retrieve_test_day_counts('tests/schoolmintForPytest.csv', 'January 18 2025')
     assert checking_test.date == 'January 18 2025'
     assert checking_test.firststandard8 == 0
     assert checking_test.firststandard9 == 1
@@ -44,7 +41,7 @@ def test_retrieve_test_day_counts():
     assert checking_test.totalstudents == 7
     assert checking_test.totalrooms == 2
 
-    checking_test = details_of_test_days.retrieve_test_day_counts('tests/schoolmintForPytest.csv', 'March 5 2025')
+    checking_test = retrieve_test_day_counts('tests/schoolmintForPytest.csv', 'March 5 2025')
     assert checking_test.date == 'March 5 2025'
     assert checking_test.firststandard8 == 0
     assert checking_test.firststandard9 == 0
@@ -67,4 +64,12 @@ def test_retrieve_test_day_counts():
     assert checking_test.totalstudents == 1
     assert checking_test.totalrooms == 1
 
-#TODO system test 23
+#System test 23
+
+def test_calculate_gpa_post(client):
+    response = client.post("/upcoming_tests/")
+    assert response.status_code == 200
+    assert b"Choose a test date" in response.data
+    response = client.get("/upcoming_tests/")
+    assert response.status_code == 200
+    assert b"Choose a test date" in response.data
