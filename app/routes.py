@@ -1,12 +1,12 @@
 from flask import Blueprint, render_template, request, session, flash, redirect
 import pandas as pd
 import numpy as np
-from app.csv_utils.csv_reader_writer import fetch_updated_student_instance, write_gpa_to_csv
+from app.csv_utils.csv_reader_writer import fetch_updated_student_instance
 from app.forms.report_card import ReportCardForm
 from app.services.report_card_service import ReportCardService
 import os
 from flask import send_file, url_for
-from app.services.test_day_details import retrieve_unique_test_dates
+from app.services.details_of_test_days import retrieve_unique_test_dates, retrieve_test_day_counts
 
 
 schoolMint_csv = ('DummyDataComplete.csv')
@@ -134,37 +134,14 @@ def upload_csv():
 @bp.route("/upcoming_tests/", methods=['GET','POST'])
 def upcoming_tests():
     upcoming_test_dates = retrieve_unique_test_dates(schoolMint_csv)
-
-    #list pattern (standard and accomms)
-    #[0] = number first test 8th graders
-    #[1] = number first test 9th graders
-    #[2] = number first test 10th graders
-    #[3] = number retest 8th graders
-    #[4] = number retest 9th graders
-    #[5] = number retest 10th graders
-    #[6] = total (either standard or accomms)
-    #[7] = total / 25
-
-    standard_time= ["", "", "", "", "", "", "", ""]
-    accomms_eligible= ["", "", "", "", "", "", "", ""]
+    test_day_numbers = None
     selected_test_date = ""
-    
-    #list pattern (totals)
-    #[0] = total first test
-    #[1] = total retest
-    #[2] = total total
-    #[3] = total rooms
-    totals = ["", "", "", ""]
-
 
     if request.method == 'POST':        
         selected_test_date = request.form.get('upcoming_tests_dropdown')
-        print(type(selected_test_date))
-        standard_time = ["", "", "", "1", "", "", ""]
-        accomms_eligible = ["", "", "", "1", "", "", ""]
-        totals = ["", "", ""]
+        test_day_numbers = retrieve_test_day_counts(schoolMint_csv, selected_test_date)
     
-    return render_template("upcoming_tests.html", dates = upcoming_test_dates, selected_test_date = selected_test_date, standard_time = standard_time, accomms_eligible = accomms_eligible, totals = totals)
+    return render_template("upcoming_tests.html", dates = upcoming_test_dates, selected_test_date = selected_test_date, test_day_numbers = test_day_numbers)
 
 @bp.route("/unresponsive_students/")
 def unresponsive_students():
