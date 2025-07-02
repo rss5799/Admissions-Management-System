@@ -1,11 +1,9 @@
 import pytest
-from flask import render_template
 import random
-from app.csv_utils.csv_reader_writer import fetch_updated_student_instance, write_gpa_to_csv
+from app.csv_utils.csv_reader_writer import fetch_updated_student_instance
 from app import create_app
-from app.services.matrix_calculator import lookup_matrix_points, matrix, calculate_gpa, calculate_total_matrix
-from app.csv_utils.csv_riverside_writer import combine_data, place_riverside_into_schoolmint
-import json
+from app.services.matrix_calculator import matrix, calculate_gpa, calculate_total_matrix
+from app.csv_utils.csv_riverside_writer import combine_data
 import csv
 
 @pytest.fixture
@@ -110,9 +108,9 @@ def test_matrix_points_persist_to_export(client):
 
 def test_riverside_data_transfer():
     #open original schoolmint for pytests
-    original_schoolmint = str('tests/schoolmintForPytest.csv')
+    original_schoolmint = str('tests/SampleCsvsForTesting/schoolmintForPytest.csv')
     #make a copy of schoolmint for pytests
-    copy_for_testing = str('tests/copyOfDataForTesting.csv')
+    copy_for_testing = str('tests/SampleCsvsForTesting/copyOfDataForTesting.csv')
     with open(original_schoolmint, 'r', newline='') as infile:
         reader = csv.reader(infile)
         with open(copy_for_testing, 'w', newline='') as outfile:
@@ -120,9 +118,14 @@ def test_riverside_data_transfer():
             for row in reader:
                 writer.writerow(row)
     #open riverside for pytests
-    riverside_dummy_for_pytest = ('tests/riversideForPytest.csv')
+    riverside_dummy_for_pytest = ('tests/SampleCsvsForTesting/riversideForPytest.csv')
+    with open(original_schoolmint, 'r', newline='') as infile:
+        reader = csv.reader(infile)
+        with open(copy_for_testing, 'w', newline='') as outfile:
+            writer = csv.writer(outfile)
+            for row in reader:
+                writer.writerow(row)
     #pass them into def place_riverside_into_schoolmint(schoolmintData, riversideResults)
-    place_riverside_into_schoolmint(copy_for_testing, riverside_dummy_for_pytest)
     counter = combine_data(copy_for_testing, riverside_dummy_for_pytest)
     assert counter == 7
     with open(copy_for_testing, 'r', newline='') as csvfile:
