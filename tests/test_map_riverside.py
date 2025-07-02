@@ -1,7 +1,7 @@
 import pytest
 import csv
 import pandas
-from app.csv_utils.csv_riverside_writer import combine_data
+from app.utils.csv_riverside_writer import combine_data
 
 
 #Unit test 17: Ensure that all IDs are preserved when transfering Riverside test scores into SchoolMint

@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+from app.utils.helpers import filter_dict
 
 current_dir = Path(__file__).parent
 MATRIX_FILE = current_dir / "admissions_matrix.json"
@@ -17,10 +18,11 @@ GRADE_TO_POINTS = {
 }
 
 def calculate_gpa(grades):
+    filtered_grades = filter_dict(grades)
     total_points = 0
     num_classes = 0
 
-    for subject, letter_grade in grades.items():
+    for subject, letter_grade in filtered_grades.items():
         points = GRADE_TO_POINTS.get(letter_grade.upper(), 0)
         total_points += points
         num_classes += 1

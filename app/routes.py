@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, session, flash, redirect
 import pandas as pd
 import numpy as np
-from app.csv_utils.csv_reader_writer import fetch_updated_student_instance
+from app.utils.csv_reader_writer import fetch_updated_student_instance
 from app.forms.report_card import ReportCardForm
 from app.services.report_card_service import ReportCardService
 import os
