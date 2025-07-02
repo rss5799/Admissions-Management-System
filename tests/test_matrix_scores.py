@@ -1,9 +1,9 @@
 import pytest
 import random
-from app.csv_utils.csv_reader_writer import fetch_updated_student_instance
+from app.utils.csv_reader_writer import fetch_updated_student_instance
 from app import create_app
 from app.services.matrix_calculator import matrix, calculate_gpa, calculate_total_matrix
-from app.csv_utils.csv_riverside_writer import combine_data
+from app.utils.csv_riverside_writer import combine_data
 import csv
 
 @pytest.fixture

@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 from app.services.matrix_calculator import calculate_gpa, lookup_matrix_points
-from app.csv_utils.csv_reader_writer import write_gpa_to_csv
+from app.utils.csv_reader_writer import write_gpa_to_csv
 
 class ReportCardService:
     def __init__(self, form, student):

@@ -1,6 +1,6 @@
 import pytest
 from app.models.student import Student
-from app.csv_utils.csv_reader_writer import fetch_updated_student_instance
+from app.utils.csv_reader_writer import fetch_updated_student_instance
 import pandas as pd
 import numpy as np
 import random
