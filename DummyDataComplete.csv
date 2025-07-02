@@ -53,7 +53,7 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 52,,90,62,52,45,26,7,12,In Processing,,,,,2024-10-01 6:25:58,,,10,,December 14 2024,Other,,,,
 53,30,87,99,96,113,24,29,30,Eligible,,,,,2024-10-01 6:29:16,,,9,,December 14 2024,The Willow School,4,,,
 54,,,,,0,,,,In Processing,,,,,2024-10-01 6:32:02,,,10,,April 26 2025 (No-rest option),St. Augustine High School,,,,
-55,28,54,69,71,67,8,16,15,In Processing,15,15,12,70,2024-10-01 6:41:01,,,9,,March 22 2025 (No-rest option),Arthur Ashe Charter School,3.33,68,63,69
+55,25,54,69,71,64,8,16,15,In Processing,15,15,12,67,2024-10-01 6:41:01,,,9,,March 22 2025 (No-rest option),Arthur Ashe Charter School,3.0,68,63,69
 56,25,69,81,92,88,15,27,21,Eligible,,,,,2024-10-01 6:35:48,,,9,,November 16 2024,Edward Hynes Lakeview,3,,,
 57,30,78,99,98,110,20,30,30,Eligible,,,,,2024-10-01 6:43:20,,,9,,November 16 2024,Audubon Uptown Montessori and French,3.75,,,
 58,30,94,94,93,113,28,27,28,Eligible,,,,,2024-10-01 7:19:51,,,9,,November 16 2024,Other,4,,,
@@ -64,7 +64,7 @@ id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_poi
 63,30,94,99,97,117,28,29,30,Eligible,,,,,2024-10-01 8:33:37,,,9,,November 16 2024,Metairie Park Country Day,4,,,
 64,30,96,89,86,108,29,24,25,Eligible,,,,,2024-10-01 8:36:59,,,9,,November 16 2024,St. Paul's Episcopal School,4,,,
 65,30,88,97,96,113,25,29,29,Eligible,,,,,2024-10-01 8:39:22,,,9,,November 16 2024,Lake Forest Elementary Charter School,3.75,,,
-66,30,94,95,99,116,28,30,28,Eligible,,,,,2024-10-01 8:38:11,,,9,,November 16 2024,Edward Hynes Lakeview,4,,,
+66,15,94,95,99,101,28,30,28,Eligible,,,,15,2024-10-01 8:38:11,,,9,,November 16 2024,Edward Hynes Lakeview,2.0,,,
 67,30,87,94,74,100,24,18,28,Eligible,,,,,2024-10-01 8:54:21,,,9,,December 14 2024,Bricolage Academy,4,,,
 68,,63,63,57,33,12,9,12,In Processing,,,,,2024-10-01 8:59:43,,,9,,March 22 2025 (No-rest option),Edward Hynes Lakeview,,,,
 69,30,90,98,77,105,26,19,30,Eligible,,,,,2024-10-01 13:57:58,,,9,,November 16 2024,International School of Louisiana,3.75,,,
