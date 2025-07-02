@@ -72,59 +72,34 @@ def combine_data(first_file_path: str, second_file_path: str):
         #update values and move to columns (first columns if it's the first test...)
         if(row['reading_test_score'] == "" and row['language_test_scores'] == "" and row['math_test_scores'] == ""):
             if(row['READING TOTAL - NPR']):
-                if(int(row['READING TOTAL - NPR'])>=0):
-                    reading_matrix = lookup_matrix_points(row['READING TOTAL - NPR'], matrix["test_scores"])
-                    merged_results.loc[index, 'reading_test_score'] = row['READING TOTAL - NPR']
-                    merged_results.loc[index, 'matrix_reading'] = reading_matrix
-                else:
-                    merged_results.loc[index, 'reading_test_score'] = 0
-                    merged_results.loc[index, 'matrix_reading'] = 0
+                reading_matrix = lookup_matrix_points(row['READING TOTAL - NPR'], matrix["test_scores"])
+                merged_results.loc[index, 'reading_test_score'] = row['READING TOTAL - NPR']
+                merged_results.loc[index, 'matrix_reading'] = reading_matrix
             if(row['LANGUAGE TOTAL - NPR']):
-                if(int(row['LANGUAGE TOTAL - NPR'])>=0 ):
-                    language_matrix = lookup_matrix_points(row['LANGUAGE TOTAL - NPR'], matrix["test_scores"])
-                    merged_results.loc[index, 'language_test_scores'] = row['LANGUAGE TOTAL - NPR']
-                    merged_results.loc[index, 'matrix_languauge'] = language_matrix
-                else:
-                    merged_results.loc[index, 'language_test_scores'] = 0
-                    merged_results.loc[index, 'matrix_languauge'] = 0
+                language_matrix = lookup_matrix_points(row['LANGUAGE TOTAL - NPR'], matrix["test_scores"])
+                merged_results.loc[index, 'language_test_scores'] = row['LANGUAGE TOTAL - NPR']
+                merged_results.loc[index, 'matrix_languauge'] = language_matrix
             if(row['MATH TOTAL - NPR']):
-                if(int(row['MATH TOTAL - NPR'])>= 0):
-                    math_matrix = lookup_matrix_points(row['MATH TOTAL - NPR'], matrix["test_scores"])
-                    merged_results.loc[index, 'math_test_scores'] = row['MATH TOTAL - NPR']
-                    merged_results.loc[index, 'matrix_math'] = math_matrix
-                else:
-                    merged_results.loc[index, 'math_test_scores'] = 0
-                    merged_results.loc[index, 'matrix_math'] = 0
-            
+                math_matrix = lookup_matrix_points(row['MATH TOTAL - NPR'], matrix["test_scores"])
+                merged_results.loc[index, 'math_test_scores'] = row['MATH TOTAL - NPR']
+                merged_results.loc[index, 'matrix_math'] = math_matrix            
             counter += 1
             merged_results.loc[index, 'total_points'] = matrix_gpa + reading_matrix + language_matrix + math_matrix
 
         #update values and move to columns (second columns if it's the retest...)
         elif(row['reading_test_score2'] == "" and row['language_test_scores2'] == "" and row['math_test_scores2'] == ""):
             if(row['READING TOTAL - NPR']):
-                if(int(row['READING TOTAL - NPR'])>=0):
-                    reading_matrix = lookup_matrix_points(row['READING TOTAL - NPR'], matrix["test_scores"])
-                    merged_results.loc[index, 'reading_test_score2'] = row['READING TOTAL - NPR']
-                    merged_results.loc[index, 'matrix_reading_restest'] = reading_matrix
-                else:
-                    merged_results.loc[index, 'reading_test_score2'] = 0
-                    merged_results.loc[index, 'matrix_reading_restest'] = 0
+                reading_matrix = lookup_matrix_points(row['READING TOTAL - NPR'], matrix["test_scores"])
+                merged_results.loc[index, 'reading_test_score2'] = row['READING TOTAL - NPR']
+                merged_results.loc[index, 'matrix_reading_restest'] = reading_matrix
             if(row['LANGUAGE TOTAL - NPR']):
-                if(int(row['LANGUAGE TOTAL - NPR'])>=0):
-                    language_matrix = lookup_matrix_points(row['LANGUAGE TOTAL - NPR'], matrix["test_scores"])
-                    merged_results.loc[index, 'language_test_scores2'] = row['LANGUAGE TOTAL - NPR']
-                    merged_results.loc[index, 'matrix_languauge_retest'] = language_matrix
-                else:
-                    merged_results.loc[index, 'language_test_scores2'] = 0
-                    merged_results.loc[index, 'matrix_languauge_retest'] = 0
+                language_matrix = lookup_matrix_points(row['LANGUAGE TOTAL - NPR'], matrix["test_scores"])
+                merged_results.loc[index, 'language_test_scores2'] = row['LANGUAGE TOTAL - NPR']
+                merged_results.loc[index, 'matrix_languauge_retest'] = language_matrix
             if(row['MATH TOTAL - NPR']):
-                if(int(row['MATH TOTAL - NPR'])>= 0):
-                    math_matrix = lookup_matrix_points(row['MATH TOTAL - NPR'], matrix["test_scores"])
-                    merged_results.loc[index, 'math_test_scores2'] = row['MATH TOTAL - NPR']
-                    merged_results.loc[index, 'matrix_math_retest'] = math_matrix
-                else:
-                    merged_results.loc[index, 'math_test_scores2'] = 0
-                    merged_results.loc[index, 'matrix_math_retest'] = 0
+                math_matrix = lookup_matrix_points(row['MATH TOTAL - NPR'], matrix["test_scores"])
+                merged_results.loc[index, 'math_test_scores2'] = row['MATH TOTAL - NPR']
+                merged_results.loc[index, 'matrix_math_retest'] = math_matrix
 
             counter += 1
             merged_results.loc[index, 'total_points_retest'] = matrix_gpa + reading_matrix + language_matrix + math_matrix
