@@ -6,8 +6,7 @@ import os
 from flask import send_file, url_for
 from app.services.details_of_test_days import retrieve_unique_test_dates, retrieve_test_day_counts
 import pyrebase
-
-schoolMint_csv = ('DummyDataComplete.csv')
+import csv
 
 config = {
     'apiKey': "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg",
@@ -20,14 +19,17 @@ config = {
 }
 
 UPLOAD_FOLDER = os.path.join(os.getcwd(), 'data')
-UPDATED_FILE = os.path.join(UPLOAD_FOLDER, 'updated_student_data.csv')
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
+TEMP_ORIGINAL_SM_DATA = os.path.join(UPLOAD_FOLDER, 'original_schoolmint.csv')
+schoolMint_csv = ('data/updated_schoolmint.csv')
 
-schoolMint_df = os.path.join(UPLOAD_FOLDER, 'DummyDataComplete.csv')
-updated_df = os.path.join(UPLOAD_FOLDER, 'updated_student_data.csv')
-CSV_DIR = "csv_files"
-os.makedirs(CSV_DIR, exist_ok=True)
+
+
+# schoolMint_original_csv = os.path.join(UPLOAD_FOLDER, 'DummyDataComplete.csv')
+# updated_df = os.path.join(UPLOAD_FOLDER, 'updated_student_data.csv')
+# CSV_DIR = "csv_files"
+# os.makedirs(CSV_DIR, exist_ok=True)
 
 bp = Blueprint('main', __name__)
 
@@ -147,8 +149,8 @@ def exports_page():
 
 @bp.route("/export_csv")
 def export_csv():
-    if os.path.exists(UPDATED_FILE):
-        return send_file(UPDATED_FILE, as_attachment=True)
+    if os.path.exists(schoolMint_csv):
+        return send_file(schoolMint_csv, as_attachment=True)
     else:
         flash("CSV file not found.")
         return redirect(url_for('main.exports_page'))
@@ -166,12 +168,18 @@ def upload_csv():
         return redirect(url_for('main.exports_page'))
 
     if file and file.filename.endswith('.csv'):
-        file.save(UPDATED_FILE)  
+        file.save('data/original_schoolmint.csv')
+        with open('data/original_schoolmint.csv', 'r', newline='') as infile:
+            reader = csv.reader(infile)
+            with open(schoolMint_csv, 'w', newline='') as outfile:
+                writer = csv.writer(outfile)
+                for row in reader:
+                    writer.writerow(row)
         flash("CSV uploaded and overwritten successfully.")
     else:
         flash("Invalid file type. Please upload a CSV.")
 
-    return redirect(url_for('main.exports_page'))
+    return redirect(url_for('main.menu'))
 
 
 

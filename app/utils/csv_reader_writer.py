@@ -1,7 +1,7 @@
 import csv
 from app.models import student
 
-original_schoolmint_data = ('DummyDataComplete.csv')
+original_schoolmint_data = ('data/updated_schoolmint.csv')
 
 
 def fetch_updated_student_instance(student_id):
