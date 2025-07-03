@@ -7,6 +7,7 @@ from flask import send_file, url_for
 from app.services.details_of_test_days import retrieve_unique_test_dates, retrieve_test_day_counts
 import pyrebase
 import csv
+from app.utils.csv_riverside_writer import combine_data
 
 config = {
     'apiKey': "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg",
@@ -61,17 +62,18 @@ def retrieve_current_student():
 #starting point for the app
 @bp.route('/', methods={'GET', 'POST'})
 def index():
-    firebase = pyrebase.initialize_app(config)
-    auth = firebase.auth()
     if request.method == 'POST':
-      email = request.form.get('email')
-      password = request.form.get('password')
-      try:
-          user = auth.sign_in_with_email_and_password(email, password)
-          session['user'] = email
-          return render_template("landing.html")
-      except:
-          return render_template("home.html", results = "Invalid Login, please try again")
+        firebase = pyrebase.initialize_app(config)
+        auth = firebase.auth()
+        email = request.form.get('email')
+        password = request.form.get('password')
+        try:
+            user = auth.sign_in_with_email_and_password(email, password)
+            session['user'] = email
+            return render_template("landing.html")
+        except:
+            return render_template("home.html", results = "Invalid Login, please try again")
+    
     return render_template("home.html")
 
 #logout page
@@ -103,7 +105,7 @@ def student_details():
         session['current_id'] = current_student.id
         return render_template("student_details.html", results = current_student)
     else:
-        return render_template("student_details.html", results = None)
+        return render_template("point_inputs.html", results = "No records for student")
 
 #enter/update report card grades
 @bp.route("/enter_report_card/", methods = ['GET', 'POST'])
@@ -156,31 +158,32 @@ def export_csv():
         return redirect(url_for('main.exports_page'))
 
 @bp.route("/upload_csv", methods=["POST"])
-def upload_csv():
-    if 'file' not in request.files:
+def upload_schoolmint_csv():
+    if 'schoolmintfile' not in request.files:
         flash("No file part")
-        return redirect(url_for('main.exports_page'))
+        return render_template("landing.html", schoolMintresults = "Schoolmint Data File must be uploaded to continue")
 
-    file = request.files['file']
+    schoolmintfile = request.files['schoolmintfile']
 
-    if file.filename == '':
+    if schoolmintfile.filename == '':
         flash("No selected file")
-        return redirect(url_for('main.exports_page'))
+        return render_template("landing.html", schoolMintresults = "Schoolmint Data File must be uploaded to continue")
 
-    if file and file.filename.endswith('.csv'):
-        file.save('data/original_schoolmint.csv')
+    if schoolmintfile and schoolmintfile.filename.endswith('.csv'):
+        schoolmintfile.save('data/original_schoolmint.csv')
         with open('data/original_schoolmint.csv', 'r', newline='') as infile:
             reader = csv.reader(infile)
             with open(schoolMint_csv, 'w', newline='') as outfile:
                 writer = csv.writer(outfile)
                 for row in reader:
                     writer.writerow(row)
-        flash("CSV uploaded and overwritten successfully.")
+        riversidefile = request.files['riversidefile']
+        if riversidefile and riversidefile.filename.endswith('.csv'):
+            request.files['riversidefile'].save('data/riverside.csv')
+            combine_data(schoolMint_csv, 'data/riverside.csv')
+        return render_template("menu.html")
     else:
-        flash("Invalid file type. Please upload a CSV.")
-
-    return redirect(url_for('main.menu'))
-
+        return render_template("landing.html", schoolMintresults = "Invalid file type please upload a csv")
 
 
 

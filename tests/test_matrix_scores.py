@@ -273,22 +273,22 @@ def test_riverside_data_transfer():
         assert float(data[9][7]) == 25
         assert float(data[9][8]) == 25
         assert float(data[9][9]) == 27
-        assert float(data[9][11]) == 0
-        assert float(data[9][12]) == 0
-        assert float(data[9][13]) == 0
+        assert data[9][11] == ''
+        assert data[9][12] == ''
+        assert data[9][13] == ''
         assert float(data[9][14]) == 0
-        assert float(data[9][23]) == 0
-        assert float(data[9][24]) == 0
-        assert float(data[9][25]) == 0
+        assert data[9][23] == ''
+        assert data[9][24] == ''
+        assert data[9][25] == ''
     # #assertions for student who had invalid data in riverside file
         assert float(data[10][1]) == 10
         assert float(data[10][3]) == 65
-        assert float(data[10][4]) == 0
+        assert data[10][4] == ''
         assert float(data[10][5]) == 80
         assert float(data[10][6]) == 34
         assert float(data[10][7]) == 13
         assert float(data[10][8]) == 21
-        assert float(data[10][9]) == 0
+        assert data[10][9] == ''
         assert data[10][11] == ''
         assert data[10][12] == ''
         assert data[10][13] == ''
@@ -305,21 +305,21 @@ def test_riverside_data_transfer():
         assert float(data[11][7]) == 16
         assert float(data[11][8]) == 18
         assert float(data[11][9]) == 13
-        assert float(data[11][11]) == 0
+        assert data[11][11] == ''
         assert float(data[11][12]) == 21
         assert float(data[11][13]) == 15
         assert float(data[11][14]) == 56
-        assert float(data[11][23]) == 0
+        assert data[11][23] == ''
         assert float(data[11][24]) == 69
         assert float(data[11][25]) == 81
 # #assertions for student who had partial test scores returned for retest
         assert float(data[12][1]) == 12
         assert float(data[12][3]) == 88
         assert float(data[12][4]) == 87
-        assert float(data[12][5]) == 0
+        assert data[12][5] == ''
         assert float(data[12][6]) == 49
         assert float(data[12][7]) == 25
-        assert float(data[12][8]) == 0
+        assert data[12][8] == ''
         assert float(data[12][9]) == 24
         assert data[12][11] == ''
         assert data[12][12] == ''
@@ -337,22 +337,22 @@ def test_riverside_data_transfer():
         assert float(data[14][7]) == 19
         assert float(data[14][8]) == 22
         assert float(data[14][9]) == 25
-        assert float(data[14][11]) == 0
+        assert data[14][11] == ''
         assert float(data[14][12]) == 23
-        assert float(data[14][13]) == 0
+        assert data[14][13] == ''
         assert float(data[14][14]) == 23
-        assert float(data[14][23]) == 0
-        assert float(data[14][24]) == 0
+        assert data[14][23] == ''
+        assert data[14][24] == ''
         assert float(data[14][25]) == 85
         # #assertions for student who had partial test scores returned for first test
         assert float(data[15][1]) == 15
         assert float(data[15][3]) == 65
-        assert float(data[15][4]) == 0
-        assert float(data[15][5]) == 0
+        assert data[15][4] == ''
+        assert data[15][5] == ''
         assert float(data[15][6]) == 13
         assert float(data[15][7]) == 13
-        assert float(data[15][8]) == 0
-        assert float(data[15][9]) == 0
+        assert data[15][8] == ''
+        assert data[15][9] == ''
         assert data[15][11] == ''
         assert data[15][12] == ''
         assert data[15][13] == ''
@@ -362,12 +362,12 @@ def test_riverside_data_transfer():
         assert data[15][25] == ''
     # #assertions for student who had partial test scores returned for first test
         assert float(data[16][1]) == 16
-        assert float(data[16][3]) == 0
+        assert data[16][3] == ''
         assert float(data[16][4]) == 88
-        assert float(data[16][5]) == 0
+        assert data[16][5] == ''
         assert float(data[16][6]) == 25
-        assert float(data[16][7]) == 0
-        assert float(data[16][8]) == 0
+        assert data[16][7] == ''
+        assert data[16][8] == ''
         assert float(data[16][9]) == 25
         assert data[16][11] == ''
         assert data[16][12] == ''
@@ -385,21 +385,21 @@ def test_riverside_data_transfer():
         assert float(data[17][7]) == 23
         assert float(data[17][8]) == 22
         assert float(data[17][9]) == 21
-        assert float(data[17][11]) == 0
-        assert float(data[17][12]) == 0
-        assert float(data[17][13]) == 0
+        assert data[17][11] == ''
+        assert data[17][12] == ''
+        assert data[17][13] == ''
         assert float(data[17][14]) == 21
-        assert float(data[17][23]) == 0
-        assert float(data[17][24]) == 0
-        assert float(data[17][25]) == 0
+        assert data[17][23] == ''
+        assert data[17][24] == ''
+        assert data[17][25] == ''
 # #assertions for student who had partial test scores returned for first test
         assert float(data[18][1]) == 18
         assert float(data[18][3]) == 90
         assert float(data[18][4]) == 90
-        assert float(data[18][5]) == 0
+        assert data[18][5] == ''
         assert float(data[18][6]) == 52
         assert float(data[18][7]) == 26
-        assert float(data[18][8]) == 0
+        assert data[18][8] == ''
         assert float(data[18][9]) == 26
         assert data[18][11] == ''
         assert data[18][12] == ''
@@ -411,12 +411,12 @@ def test_riverside_data_transfer():
 # #assertions for student who had partial test scores returned for first test
         assert float(data[19][1]) == 19
         assert float(data[19][3]) == 90
-        assert float(data[19][4]) == 0
+        assert data[19][4] == ''
         assert float(data[19][5]) == 87
         assert float(data[19][6]) == 50
         assert float(data[19][7]) == 26
         assert float(data[19][8]) == 24
-        assert float(data[19][9]) == 0
+        assert data[19][9] == ''
         assert data[19][11] == ''
         assert data[19][12] == ''
         assert data[19][13] == ''
@@ -433,11 +433,11 @@ def test_riverside_data_transfer():
         assert float(data[20][7]) == 20
         assert float(data[20][8]) == 20
         assert float(data[20][9]) == 20
-        assert float(data[20][11]) == 0
+        assert data[20][11] == ''
         assert float(data[20][12]) == 24
         assert float(data[20][13]) == 19
         assert float(data[20][14]) == 65
-        assert float(data[20][23]) == 0
+        assert data[20][23] == ''
         assert float(data[20][24]) == 77
         assert float(data[20][25]) == 87
 
