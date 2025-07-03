@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LogIn</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Admissions Management System</h1>
+<h4 style="text-align: center;">Developed for Benjamin Franklin High School</h4>
+<div style="text-align: center;">
+    <img src="{{ url_for('static', filename='/images/ams_logo.png') }}" width="300" height="200">
+    <br>
+</div>
+<br>
+    <form action = '/' method = "POST">
+        Email: <input type = 'text', name = 'email'><br><br>
+        Password: <input type = 'passsord' name = 'password'><br><br>
+        <input type = 'submit'>
+    </form>
+        <p>{{ results }}</p>
+</body>
+</html>
