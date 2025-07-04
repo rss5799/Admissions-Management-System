@@ -1,15 +1,23 @@
 from flask import Blueprint, render_template, request, session, flash, redirect
-import pandas as pd
-import numpy as np
 from app.utils.csv_reader_writer import fetch_updated_student_instance
 from app.forms.report_card import ReportCardForm
 from app.services.report_card_service import ReportCardService
 import os
 from flask import send_file, url_for
 from app.services.details_of_test_days import retrieve_unique_test_dates, retrieve_test_day_counts
-
+import pyrebase
 
 schoolMint_csv = ('DummyDataComplete.csv')
+
+config = {
+    'apiKey': "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg",
+    'authDomain': "admissionsmanagementsystem.firebaseapp.com",
+    'projectId': "admissionsmanagementsystem",
+    'storageBucket': "admissionsmanagementsystem.firebasestorage.app",
+    'messagingSenderId': "178704031743",
+    'appId': "1:178704031743:web:f0773e4dfa6702049711ca",
+    'databaseURL' : '' 
+}
 
 UPLOAD_FOLDER = os.path.join(os.getcwd(), 'data')
 UPDATED_FILE = os.path.join(UPLOAD_FOLDER, 'updated_student_data.csv')
@@ -49,18 +57,42 @@ def retrieve_current_student():
 
 
 #starting point for the app
-@bp.route("/")
+@bp.route('/', methods={'GET', 'POST'})
 def index():
+    firebase = pyrebase.initialize_app(config)
+    auth = firebase.auth()
+    if request.method == 'POST':
+      email = request.form.get('email')
+      password = request.form.get('password')
+      try:
+          user = auth.sign_in_with_email_and_password(email, password)
+          session['user'] = email
+          return render_template("landing.html")
+      except:
+          return render_template("home.html", results = "Invalid Login, please try again")
+    return render_template("home.html")
+
+#logout page
+@bp.route('/logout')
+def logout():
+    pass
+
+#first page for all users
+@bp.route("/landing")
+def landing():
     return render_template("landing.html")
 
+#navigation scren to all functionality
 @bp.route("/menu")
 def menu():
     return render_template("menu.html")
 
+#search for a student here
 @bp.route("/point_inputs/")
 def point_inputs():
     return render_template("point_inputs.html")
 
+#see individual student deatils after search
 @bp.route("/student_details/", methods = ['GET'])
 def student_details():
     current_student = retrieve_current_student()
@@ -71,6 +103,7 @@ def student_details():
     else:
         return render_template("student_details.html", results = None)
 
+#enter/update report card grades
 @bp.route("/enter_report_card/", methods = ['GET', 'POST'])
 def enter_report_card():
     current_student = retrieve_current_student()
@@ -94,6 +127,18 @@ def enter_report_card():
         form=form,
         results=current_student
     )
+
+@bp.route("/upcoming_tests/", methods=['GET','POST'])
+def upcoming_tests():
+    upcoming_test_dates = retrieve_unique_test_dates(schoolMint_csv)
+    test_day_numbers = None
+    selected_test_date = ""
+
+    if request.method == 'POST':        
+        selected_test_date = request.form.get('upcoming_tests_dropdown')
+        test_day_numbers = retrieve_test_day_counts(schoolMint_csv, selected_test_date)
+    
+    return render_template("upcoming_tests.html", dates = upcoming_test_dates, selected_test_date = selected_test_date, test_day_numbers = test_day_numbers)
 
 #placeholder routes to be developed
 @bp.route("/exports/")
@@ -128,20 +173,8 @@ def upload_csv():
 
     return redirect(url_for('main.exports_page'))
 
-#placeholder routes to be developed
 
 
-@bp.route("/upcoming_tests/", methods=['GET','POST'])
-def upcoming_tests():
-    upcoming_test_dates = retrieve_unique_test_dates(schoolMint_csv)
-    test_day_numbers = None
-    selected_test_date = ""
-
-    if request.method == 'POST':        
-        selected_test_date = request.form.get('upcoming_tests_dropdown')
-        test_day_numbers = retrieve_test_day_counts(schoolMint_csv, selected_test_date)
-    
-    return render_template("upcoming_tests.html", dates = upcoming_test_dates, selected_test_date = selected_test_date, test_day_numbers = test_day_numbers)
 
 @bp.route("/unresponsive_students/")
 def unresponsive_students():

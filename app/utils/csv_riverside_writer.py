@@ -9,11 +9,11 @@ import app
 
 #this function should be called when users press the button requesting that riverside data be merged with the most recent schoolmint csv
 #this cannot be a standalone function or it breaks the testing file
-def place_riverside_into_schoolmint(schoolmintData, riversideResults):
+# def place_riverside_into_schoolmint(schoolmintData, riversideResults):
     
-    MATRIX_FILE = 'app/services/admissions_matrix.json'
-    with open(MATRIX_FILE, "r") as f:
-        matrix = json.load(f)
+#     MATRIX_FILE = 'app/services/admissions_matrix.json'
+#     with open(MATRIX_FILE, "r") as f:
+#         matrix = json.load(f)
 
 # Use this to preview a DataFrame or CSV file
 # It prints a concise summary including shape, columns, and missing values.
