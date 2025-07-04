@@ -1,6 +1,7 @@
 import csv
 from app.models import student
 import pandas as pd
+import numpy as np
 from app.services.matrix_calculator import lookup_matrix_points
 from pathlib import Path
 import json
@@ -53,11 +54,9 @@ def combine_data(first_file_path: str, second_file_path: str):
     # preview_as_df(df_second_file, "Second File Data")
 
     #join and drop nan values
-    merged_results = pd.merge(df_first_file, df_second_file, left_on='id', right_on='STUDENT ID 1', how='outer')    
-    merged_results = merged_results.fillna("")
-    #preview_as_df(merged_results, "Merged Results")
+    merged_results = pd.merge(df_first_file, df_second_file, left_on='id', right_on='STUDENT ID 1', how='outer')
+    merged_results = merged_results.fillna('')
     counter = 0
-    row_data = []
 
     #iterate down each row in the dataframe
     for index, row in merged_results.iterrows():
@@ -77,24 +76,24 @@ def combine_data(first_file_path: str, second_file_path: str):
                 merged_results.loc[index, 'reading_test_score'] = row['READING TOTAL - NPR']
                 merged_results.loc[index, 'matrix_reading'] = reading_matrix
             except:
-                merged_results.loc[index, 'reading_test_score'] = 0
-                merged_results.loc[index, 'matrix_reading'] = 0
+                merged_results.loc[index, 'reading_test_score'] = ''
+                merged_results.loc[index, 'matrix_reading'] = ''
             try:
                 int(row['LANGUAGE TOTAL - NPR'])
                 language_matrix = lookup_matrix_points(int(row['LANGUAGE TOTAL - NPR']), matrix["test_scores"])
                 merged_results.loc[index, 'language_test_scores'] = row['LANGUAGE TOTAL - NPR']
                 merged_results.loc[index, 'matrix_languauge'] = language_matrix
             except:
-                merged_results.loc[index, 'language_test_scores'] = 0
-                merged_results.loc[index, 'matrix_languauge'] = 0
+                merged_results.loc[index, 'language_test_scores'] = ''
+                merged_results.loc[index, 'matrix_languauge'] = ''
             try:
                 int(row['MATH TOTAL - NPR'])
                 math_matrix = lookup_matrix_points(int(row['MATH TOTAL - NPR']), matrix["test_scores"])
                 merged_results.loc[index, 'math_test_scores'] = row['MATH TOTAL - NPR']
                 merged_results.loc[index, 'matrix_math'] = math_matrix
             except:       
-                merged_results.loc[index, 'math_test_scores'] = 0
-                merged_results.loc[index, 'matrix_math'] = 0   
+                merged_results.loc[index, 'math_test_scores'] = ''
+                merged_results.loc[index, 'matrix_math'] = ''   
             counter += 1
             merged_results.loc[index, 'total_points'] = matrix_gpa + int(reading_matrix) + int(language_matrix) + int(math_matrix)
 
@@ -106,31 +105,40 @@ def combine_data(first_file_path: str, second_file_path: str):
                 merged_results.loc[index, 'reading_test_score2'] = row['READING TOTAL - NPR']
                 merged_results.loc[index, 'matrix_reading_restest'] = reading_matrix
             except:
-                merged_results.loc[index, 'reading_test_score2'] = 0
-                merged_results.loc[index, 'matrix_reading_restest'] = 0
+                merged_results.loc[index, 'reading_test_score2'] = ''
+                merged_results.loc[index, 'matrix_reading_restest'] = ''
             try:
                 int(row['LANGUAGE TOTAL - NPR'])
                 language_matrix = lookup_matrix_points(int(row['LANGUAGE TOTAL - NPR']), matrix["test_scores"])
                 merged_results.loc[index, 'language_test_scores2'] = row['LANGUAGE TOTAL - NPR']
                 merged_results.loc[index, 'matrix_languauge_retest'] = language_matrix
             except:
-                merged_results.loc[index, 'language_test_scores2'] = 0
-                merged_results.loc[index, 'matrix_languauge_retest'] = 0
+                merged_results.loc[index, 'language_test_scores2'] = ''
+                merged_results.loc[index, 'matrix_languauge_retest'] = ''
             try:
                 int(row['MATH TOTAL - NPR'])
                 math_matrix = lookup_matrix_points(int(row['MATH TOTAL - NPR']), matrix["test_scores"])
                 merged_results.loc[index, 'math_test_scores2'] = row['MATH TOTAL - NPR']
                 merged_results.loc[index, 'matrix_math_retest'] = math_matrix
             except:
-                merged_results.loc[index, 'math_test_scores2'] = 0
-                merged_results.loc[index, 'matrix_math_retest'] = 0
+                merged_results.loc[index, 'math_test_scores2'] = ''
+                merged_results.loc[index, 'matrix_math_retest'] = ''
             counter += 1
             merged_results.loc[index, 'total_points_retest'] = matrix_gpa + reading_matrix + language_matrix + math_matrix
 
-    headers = ['id', 'matrix_gpa', 'language_test_scores', 'reading_test_score', 'math_test_scores', 'total_points', 'matrix_languauge', 'matrix_math', 'matrix_reading', 'status', 'matrix_languauge_retest', 'matrix_math_retest', 'matrix_reading_restest', 'total_points_retest', 'updated_at', 'guardian1_email', 'guardian2_email', 'grade', 'deliver_test_accomodation_approved', 'test_date_sign_up', 'current_school', 'gpa', 'language_test_scores2', 'reading_test_score2', 'math_test_scores2']
+    headers = ['fname','lname','id','dob','grade','matrix_gpa','language_test_scores','reading_test_score','math_test_scores','total_points','matrix_languauge','matrix_math','matrix_reading','status','matrix_languauge_retest','matrix_math_retest','matrix_reading_restest','total_points_retest','updated_at','guardian1_email','guardian2_email','deliver_test_accomodation_approved','test_date_sign_up','current_school','gpa','language_test_scores2','reading_test_score2','math_test_scores2']
+    merged_results = merged_results[headers]
+
+    for index, row in merged_results.iterrows():
+        for col_name, value in row.items():
+            if(isinstance(value, float)):
+                value = int(value)
+                merged_results.loc[index, col_name] = value
     merged_results.to_csv(first_file_path, columns = headers)
 
     return counter
+
+
 
 
 

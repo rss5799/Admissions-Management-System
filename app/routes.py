@@ -1,13 +1,12 @@
-from flask import Blueprint, render_template, request, session, flash, redirect
+from flask import Blueprint, render_template, request, session, flash, redirect, send_file, url_for
 from app.utils.csv_reader_writer import fetch_updated_student_instance
 from app.forms.report_card import ReportCardForm
 from app.services.report_card_service import ReportCardService
 import os
-from flask import send_file, url_for
 from app.services.details_of_test_days import retrieve_unique_test_dates, retrieve_test_day_counts
 import pyrebase
-
-schoolMint_csv = ('DummyDataComplete.csv')
+import csv
+from app.utils.csv_riverside_writer import combine_data
 
 config = {
     'apiKey': "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg",
@@ -20,14 +19,17 @@ config = {
 }
 
 UPLOAD_FOLDER = os.path.join(os.getcwd(), 'data')
-UPDATED_FILE = os.path.join(UPLOAD_FOLDER, 'updated_student_data.csv')
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
+TEMP_ORIGINAL_SM_DATA = os.path.join(UPLOAD_FOLDER, 'original_schoolmint.csv')
+schoolMint_csv = ('data/updated_schoolmint.csv')
 
-schoolMint_df = os.path.join(UPLOAD_FOLDER, 'DummyDataComplete.csv')
-updated_df = os.path.join(UPLOAD_FOLDER, 'updated_student_data.csv')
-CSV_DIR = "csv_files"
-os.makedirs(CSV_DIR, exist_ok=True)
+
+
+# schoolMint_original_csv = os.path.join(UPLOAD_FOLDER, 'DummyDataComplete.csv')
+# updated_df = os.path.join(UPLOAD_FOLDER, 'updated_student_data.csv')
+# CSV_DIR = "csv_files"
+# os.makedirs(CSV_DIR, exist_ok=True)
 
 bp = Blueprint('main', __name__)
 
@@ -59,17 +61,18 @@ def retrieve_current_student():
 #starting point for the app
 @bp.route('/', methods={'GET', 'POST'})
 def index():
-    firebase = pyrebase.initialize_app(config)
-    auth = firebase.auth()
     if request.method == 'POST':
-      email = request.form.get('email')
-      password = request.form.get('password')
-      try:
-          user = auth.sign_in_with_email_and_password(email, password)
-          session['user'] = email
-          return render_template("landing.html")
-      except:
-          return render_template("home.html", results = "Invalid Login, please try again")
+        firebase = pyrebase.initialize_app(config)
+        auth = firebase.auth()
+        email = request.form.get('email')
+        password = request.form.get('password')
+        try:
+            user = auth.sign_in_with_email_and_password(email, password)
+            session['user'] = email
+            return render_template("landing.html")
+        except:
+            return render_template("home.html", results = "Invalid Login, please try again")
+    
     return render_template("home.html")
 
 #logout page
@@ -101,7 +104,7 @@ def student_details():
         session['current_id'] = current_student.id
         return render_template("student_details.html", results = current_student)
     else:
-        return render_template("student_details.html", results = None)
+        return render_template("point_inputs.html", results = "No records for student")
 
 #enter/update report card grades
 @bp.route("/enter_report_card/", methods = ['GET', 'POST'])
@@ -140,40 +143,64 @@ def upcoming_tests():
     
     return render_template("upcoming_tests.html", dates = upcoming_test_dates, selected_test_date = selected_test_date, test_day_numbers = test_day_numbers)
 
+@bp.route("/merge_riverside", methods=['GET','POST'])
+def merge_riverside():
+    if request.method == 'GET':
+        return render_template("merge_riverside.html")
+    if request.method == 'POST':
+        if 'riversidefile' not in request.files:
+            flash("No file part")
+            return render_template("merge_riversdie.html", uploadresults = "Riverside Data File must be uploaded to proceed with merge.")
+
+        riversidefile = request.files['riversidefile']
+
+        if riversidefile.filename == '':
+            flash("No selected file")
+            return render_template("merge_riversdie.html", uploadtresults = "Riverside Data File must be uploaded to proceed with merge.")
+
+        if riversidefile and riversidefile.filename.endswith('.csv'):
+                request.files['riversidefile'].save('data/riverside.csv')
+                combine_data(schoolMint_csv, 'data/riverside.csv')
+                return render_template("menu.html")
+        else:
+            return render_template("merge_riversdie.html", uploadtresults = "Riverside Data File must be uploaded to proceed with merge.")
+
 #placeholder routes to be developed
-@bp.route("/exports/")
+@bp.route("/exports/", methods = ["GET", "POST"])
 def exports_page():
     return render_template("exports.html")
 
-@bp.route("/export_csv")
+@bp.route("/export_csv", methods = ['POST'])
 def export_csv():
-    if os.path.exists(UPDATED_FILE):
-        return send_file(UPDATED_FILE, as_attachment=True)
-    else:
-        flash("CSV file not found.")
-        return redirect(url_for('main.exports_page'))
+    if request.method == "POST":
+        schoolMintcsv = (f'{UPLOAD_FOLDER}/updated_schoolmint.csv')
+        return send_file(schoolMintcsv, as_attachment=True)
+    return render_template("menu.html")
+
 
 @bp.route("/upload_csv", methods=["POST"])
-def upload_csv():
-    if 'file' not in request.files:
+def upload_schoolmint_csv():
+    if 'schoolmintfile' not in request.files:
         flash("No file part")
-        return redirect(url_for('main.exports_page'))
+        return render_template("landing.html", schoolMintresults = "Schoolmint Data File must be uploaded to continue")
 
-    file = request.files['file']
+    schoolmintfile = request.files['schoolmintfile']
 
-    if file.filename == '':
+    if schoolmintfile.filename == '':
         flash("No selected file")
-        return redirect(url_for('main.exports_page'))
+        return render_template("landing.html", uploadresults = "Schoolmint Data File must be uploaded to continue")
 
-    if file and file.filename.endswith('.csv'):
-        file.save(UPDATED_FILE)  
-        flash("CSV uploaded and overwritten successfully.")
+    if schoolmintfile and schoolmintfile.filename.endswith('.csv'):
+        schoolmintfile.save('data/original_schoolmint.csv')
+        with open('data/original_schoolmint.csv', 'r', newline='') as infile:
+            reader = csv.reader(infile)
+            with open(schoolMint_csv, 'w', newline='') as outfile:
+                writer = csv.writer(outfile)
+                for row in reader:
+                    writer.writerow(row)
+        return render_template("menu.html")
     else:
-        flash("Invalid file type. Please upload a CSV.")
-
-    return redirect(url_for('main.exports_page'))
-
-
+        return render_template("landing.html", uploadresults = "Invalid file type please upload a csv")
 
 
 @bp.route("/unresponsive_students/")
