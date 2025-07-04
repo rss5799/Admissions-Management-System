@@ -1,10 +1,9 @@
 import csv
 from app.models import student
 
-original_schoolmint_data = ('data/updated_schoolmint.csv')
-
 
 def fetch_updated_student_instance(student_id):
+    original_schoolmint_data = ('data/updated_schoolmint.csv')
     with open(original_schoolmint_data, 'r') as file:
         reader = csv.reader(file)
         header = next(reader)
@@ -40,6 +39,8 @@ def fetch_updated_student_instance(student_id):
                 return current_student
     return(0)
             
+
+
 
 def write_gpa_to_csv(student_id, gpa, matrix_gpa, total_points, total_points_retest):
     rows = []
