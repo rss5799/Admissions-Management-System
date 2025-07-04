@@ -23,13 +23,13 @@ def test_search_for_student():
             for row in reader:
                 id = row[header.index('id')]
                 ids.append(id)
-    random_value = random.choice(ids)
-    assert fetch_updated_student_instance(random_value) != 0
-    assert fetch_updated_student_instance('$') == 0
-    assert fetch_updated_student_instance(' 87') == 0
-    assert fetch_updated_student_instance(' ') == 0
-    assert fetch_updated_student_instance('2/2') == 0
-    assert fetch_updated_student_instance('a') == 0
+        random_value = random.choice(ids)
+        assert fetch_updated_student_instance(random_value) != 0
+        assert fetch_updated_student_instance('$') == 0
+        assert fetch_updated_student_instance(' 87') == 0
+        assert fetch_updated_student_instance(' ') == 0
+        assert fetch_updated_student_instance('2/2') == 0
+        assert fetch_updated_student_instance('a') == 0
 
 
 def test_student_search_no_param(client):
@@ -39,9 +39,25 @@ def test_student_search_no_param(client):
 
 def test_student_search_invalid_id(client):
     response = client.get("/student_details/?id_query=NOT_A_REAL_ID")
-    print(response)
     assert response.status_code == 200
     assert b"No records for student" in response.data
+
+def test_student_search_valid_id(client):
+    testing_csv = ('data/updated_schoolmint.csv')
+    ids = []
+
+    if(testing_csv):
+        with open(testing_csv, 'r') as file:
+            reader = csv.reader(file)
+            header = next(reader)
+            for row in reader:
+                id = row[header.index('id')]
+                ids.append(id)
+        random_value = random.choice(ids)
+        id_to_test = random_value
+        response = client.get(f"/student_details/?id_query={id_to_test}")
+        assert b"Student Details" in response.data
+
 
 
 

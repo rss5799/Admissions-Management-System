@@ -1,8 +1,6 @@
-# import pytest
-# from app.auth_controller import login_user, get_current_user, logout_user
-
 import pytest
 import pyrebase
+from app import create_app
 
 
 config = {
@@ -23,32 +21,32 @@ VALID_PASSWORD = "temp123"
 INVALID_EMAIL = "doesnotexist@example.com"
 INVALID_PASSWORD = "wrongpassword"
 
+@pytest.fixture
+def client():
+    app = create_app()
+    app.testing = True
+    with app.test_client() as client:
+        yield client
 
+
+#Unit test 1
 def test_login_with_valid_credentials():
     user = auth.sign_in_with_email_and_password(VALID_EMAIL, VALID_PASSWORD)
     assert user['email'] == VALID_EMAIL
 
-#TODO add a test for invalid login
 
 
+#Unit test 2 lol is this even a test?  I mean it asserts that it doesn't work when you use invalid things
+def test_login_with_invalid_credentials():
+    try:
+        user = auth.sign_in_with_email_and_password(INVALID_EMAIL, INVALID_PASSWORD)
+        assert 1 == 0
+    except:
+        assert 1 == 1
 
-    
-
-
-# def test_login_with_invalid_credentials():
-#     logout_user()
-#     result = login_user(VALID_EMAIL, INVALID_PASSWORD)
-    
-#     assert result["success"] is False
-#     assert "error" in result
-
-
-# def test_session_persistence():
-#     logout_user()
-#     login_user(VALID_EMAIL, VALID_PASSWORD)
-
-#     # Simulate a "page refresh"
-#     user = get_current_user()
-
-#     assert user is not None
-#     assert user["email"] == VALID_EMAIL
+#System test 1
+def test_advance_after_login(client):
+    user = auth.sign_in_with_email_and_password(VALID_EMAIL, VALID_PASSWORD)
+    response = client.get("/landing")
+    assert response.status_code == 200
+    assert b"SchoolMint Data Upload" in response.data

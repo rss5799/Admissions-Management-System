@@ -88,7 +88,7 @@ def test_calculate_total_matrix():
 
 
 
-# # # # #System Test 16: Ensure that total matrix points persist to file export page.
+#System Test 16: Ensure that total matrix points persist to file export page.
 def test_matrix_points_persist_to_export(client):
     #get 5 random students ids
     random_students = [random.randint(1, 2000) for _ in range(5)]

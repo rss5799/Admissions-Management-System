@@ -10,7 +10,6 @@
 <div style="text-align: center;">
     <img src="{{ url_for('static', filename='/images/ams_logo.png') }}" width="300" height="200">
     <br>
-    <a href="/menu">Proceed with Dummy Data (for development)</a>
 </div>
 <br>
 
@@ -18,13 +17,11 @@
 <br>
 <br>
 <br>
-<h3>SchoolMint Data Upload</h3>
-<form action="{{ url_for('main.upload_schoolmint_csv') }}" method="POST" enctype="multipart/form-data">
-    <label for="file">Upload SchoolMint CSV:</label>
-    <input type="file" name="schoolmintfile" accept=".csv" required>
-    <br>
-    <br>
-    <button type="submit">Proceed to Main Menu</button>
+<h3>Riverside Data File Upload</h3>
+<form action="{{ url_for('main.merge_riverside') }}" method="POST" enctype="multipart/form-data">
+    <label for="file">Upload Riverside CSV (optional):</label>
+    <input type="file" name="riversidefile" accept=".csv">
+    <button type="submit">Merge Scores to Schoolmint File</button>
 </form>
 
         <p>{{ uploadresults }}</p>

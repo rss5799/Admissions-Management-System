@@ -144,6 +144,28 @@ def upcoming_tests():
     
     return render_template("upcoming_tests.html", dates = upcoming_test_dates, selected_test_date = selected_test_date, test_day_numbers = test_day_numbers)
 
+@bp.route("/merge_riverside", methods=['GET','POST'])
+def merge_riverside():
+    if request.method == 'GET':
+        return render_template("merge_riverside.html")
+    if request.method == 'POST':
+        if 'riversidefile' not in request.files:
+            flash("No file part")
+            return render_template("merge_riversdie.html", uploadresults = "Riverside Data File must be uploaded to proceed with merge.")
+
+        riversidefile = request.files['riversidefile']
+
+        if riversidefile.filename == '':
+            flash("No selected file")
+            return render_template("merge_riversdie.html", uploadtresults = "Riverside Data File must be uploaded to proceed with merge.")
+
+        if riversidefile and riversidefile.filename.endswith('.csv'):
+                request.files['riversidefile'].save('data/riverside.csv')
+                combine_data(schoolMint_csv, 'data/riverside.csv')
+                return render_template("menu.html")
+        else:
+            return render_template("merge_riversdie.html", uploadtresults = "Riverside Data File must be uploaded to proceed with merge.")
+
 #placeholder routes to be developed
 @bp.route("/exports/")
 def exports_page():
@@ -167,7 +189,7 @@ def upload_schoolmint_csv():
 
     if schoolmintfile.filename == '':
         flash("No selected file")
-        return render_template("landing.html", schoolMintresults = "Schoolmint Data File must be uploaded to continue")
+        return render_template("landing.html", uploadresults = "Schoolmint Data File must be uploaded to continue")
 
     if schoolmintfile and schoolmintfile.filename.endswith('.csv'):
         schoolmintfile.save('data/original_schoolmint.csv')
@@ -177,14 +199,9 @@ def upload_schoolmint_csv():
                 writer = csv.writer(outfile)
                 for row in reader:
                     writer.writerow(row)
-        riversidefile = request.files['riversidefile']
-        if riversidefile and riversidefile.filename.endswith('.csv'):
-            request.files['riversidefile'].save('data/riverside.csv')
-            combine_data(schoolMint_csv, 'data/riverside.csv')
         return render_template("menu.html")
     else:
-        return render_template("landing.html", schoolMintresults = "Invalid file type please upload a csv")
-
+        return render_template("landing.html", uploadresults = "Invalid file type please upload a csv")
 
 
 @bp.route("/unresponsive_students/")
