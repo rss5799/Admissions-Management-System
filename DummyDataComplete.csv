@@ -53,7 +53,7 @@ fname,lname,id,dob,grade,matrix_gpa,language_test_scores,reading_test_score,math
 ,,52,2010-01-21,10,,90,62,52,45,26,7,12,In Processing,,,,,2024-10-01 6:25:58,,,,December 14 2024,Other,,,,
 ,,53,2011-04-28,9,30,87,99,96,113,24,29,30,Eligible,,,,,2024-10-01 6:29:16,,,,December 14 2024,The Willow School,4,,,
 ,,54,2010-01-20,10,,,,,0,,,,In Processing,,,,,2024-10-01 6:32:02,,,,April 26 2025 (No-rest option),St. Augustine High School,,,,
-,,55,2011-06-21,9,,54,69,71,39,8,16,15,In Processing,15,15,12,42,2024-10-01 6:41:01,,,,March 22 2025 (No-rest option),Arthur Ashe Charter School,,68,63,69
+,,55,2011-06-21,9,25,54,69,71,64,8,16,15,In Processing,15,15,12,67,2024-10-01 6:41:01,,,,March 22 2025 (No-rest option),Arthur Ashe Charter School,3.0,68,63,69
 ,,56,2011-09-07,9,25,69,81,92,88,15,27,21,Eligible,,,,,2024-10-01 6:35:48,,,,November 16 2024,Edward Hynes Lakeview,3,,,
 ,,57,2011-02-28,9,30,78,99,98,110,20,30,30,Eligible,,,,,2024-10-01 6:43:20,,,,November 16 2024,Audubon Uptown Montessori and French,3.75,,,
 ,,58,2011-03-02,9,30,94,94,93,113,28,27,28,Eligible,,,,,2024-10-01 7:19:51,,,,November 16 2024,Other,4,,,
