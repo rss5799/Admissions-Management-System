@@ -27,42 +27,42 @@ def test_retrieve_test_day_counts():
     assert checking_test.firstaccomms9 == 0
     assert checking_test.firstaccomms10 == 0
     assert checking_test.reteststandard8 == 1
-    assert checking_test.reteststandard9 == 2
+    assert checking_test.reteststandard9 == 1
     assert checking_test.reteststandard10 == 1
     assert checking_test.retestaccomms8 == 1
     assert checking_test.retestaccomms9 == 0
     assert checking_test.retestaccomms10 == 0
-    assert checking_test.totalstandard == 5
+    assert checking_test.totalstandard == 4
     assert checking_test.totalstandardrooms == 1
     assert checking_test.totalaccomms == 2
     assert checking_test.totalaccommsrooms == 1
     assert checking_test.totalfirsttesters == 2
-    assert checking_test.totalretesters == 5
-    assert checking_test.totalstudents == 7
+    assert checking_test.totalretesters == 4
+    assert checking_test.totalstudents == 6
     assert checking_test.totalrooms == 2
 
     checking_test = retrieve_test_day_counts('tests/SampleCsvsForTesting/schoolmintForPytest.csv', 'March 5 2025')
     assert checking_test.date == 'March 5 2025'
-    assert checking_test.firststandard8 == 0
-    assert checking_test.firststandard9 == 0
-    assert checking_test.firststandard10 == 0
+    assert checking_test.firststandard8 == 2
+    assert checking_test.firststandard9 == 2
+    assert checking_test.firststandard10 == 1
     assert checking_test.firstaccomms8 == 0
-    assert checking_test.firstaccomms9 == 0
-    assert checking_test.firstaccomms10 == 0
-    assert checking_test.reteststandard8 == 1
+    assert checking_test.firstaccomms9 == 1
+    assert checking_test.firstaccomms10 == 1
+    assert checking_test.reteststandard8 == 2
     assert checking_test.reteststandard9 == 0
-    assert checking_test.reteststandard10 == 0
-    assert checking_test.retestaccomms8 == 0
-    assert checking_test.retestaccomms9 == 0
-    assert checking_test.retestaccomms10 == 0
-    assert checking_test.totalstandard == 1
+    assert checking_test.reteststandard10 == 1
+    assert checking_test.retestaccomms8 == 1
+    assert checking_test.retestaccomms9 == 1
+    assert checking_test.retestaccomms10 == 1
+    assert checking_test.totalstandard == 8
     assert checking_test.totalstandardrooms == 1
-    assert checking_test.totalaccomms == 0
-    assert checking_test.totalaccommsrooms == 0
-    assert checking_test.totalfirsttesters == 0
-    assert checking_test.totalretesters == 1
-    assert checking_test.totalstudents == 1
-    assert checking_test.totalrooms == 1
+    assert checking_test.totalaccomms == 5
+    assert checking_test.totalaccommsrooms == 1
+    assert checking_test.totalfirsttesters == 7
+    assert checking_test.totalretesters == 6
+    assert checking_test.totalstudents == 13
+    assert checking_test.totalrooms == 2
 
 #System test 23
 

@@ -23,9 +23,11 @@ def calculate_gpa(grades):
     num_classes = 0
 
     for subject, letter_grade in filtered_grades.items():
-        points = GRADE_TO_POINTS.get(letter_grade.upper(), 0)
-        total_points += points
-        num_classes += 1
+        points = GRADE_TO_POINTS.get(letter_grade.upper())
+        #add check so empty values and non A-F do not influence total points or number of classes
+        if(type(points) == int):
+            total_points += points
+            num_classes += 1
 
     if num_classes == 0:
         return 0
@@ -33,10 +35,17 @@ def calculate_gpa(grades):
     return round(total_points / num_classes, 2)
 
 def lookup_matrix_points(value, table):
-    for row in table:
-        if row["min"] <= value <= row["max"]:
-            return row["points"]
-    return 0
+        #add try/catch to validate incoming riverside scores
+        try:
+            int(value)
+            for row in table:
+                if row["min"] <= value <= row["max"]:
+                    return row["points"]
+            return 0
+        except:
+            return 0
+
+
 
 def calculate_total_matrix(grades, reading, language, math):
     gpa = calculate_gpa(grades)
@@ -62,13 +71,13 @@ def calculate_total_matrix(grades, reading, language, math):
 # if __name__ == "__main__":
 #     sample_grades = {
 #         "english": "A",
-#         "math": "B",
+#         "math": "A",
 #         "science": "A",
-#         "social_studies": "B",
-#         "language": "C"
+#         "social_studies": "A",
+#         "language": "A"
 #     }
 
-#     result = calculate_total_matrix(sample_grades, reading=88, language=98, math=98)
+#     result = calculate_total_matrix(sample_grades, reading=35, language=99, math=99)
 
 #     print(json.dumps(result, indent=4))
 
