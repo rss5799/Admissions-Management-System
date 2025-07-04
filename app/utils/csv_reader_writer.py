@@ -43,6 +43,7 @@ def fetch_updated_student_instance(student_id):
 
 
 def write_gpa_to_csv(student_id, gpa, matrix_gpa, total_points, total_points_retest):
+    original_schoolmint_data = ('data/updated_schoolmint.csv')
     rows = []
     with open(original_schoolmint_data, 'r') as file:
         reader = csv.DictReader(file)

@@ -128,18 +128,16 @@ def combine_data(first_file_path: str, second_file_path: str):
 
     headers = ['fname','lname','id','dob','grade','matrix_gpa','language_test_scores','reading_test_score','math_test_scores','total_points','matrix_languauge','matrix_math','matrix_reading','status','matrix_languauge_retest','matrix_math_retest','matrix_reading_restest','total_points_retest','updated_at','guardian1_email','guardian2_email','deliver_test_accomodation_approved','test_date_sign_up','current_school','gpa','language_test_scores2','reading_test_score2','math_test_scores2']
     merged_results = merged_results[headers]
-    def change_floats_to_ints(value):
-        if(isinstance(value, float)):
-            return int(value)
-        else:
-            return value
-    merged_results = merged_results.apply(change_floats_to_ints)
 
-
-    
+    for index, row in merged_results.iterrows():
+        for col_name, value in row.items():
+            if(isinstance(value, float)):
+                value = int(value)
+                merged_results.loc[index, col_name] = value
     merged_results.to_csv(first_file_path, columns = headers)
 
     return counter
+
 
 
 
