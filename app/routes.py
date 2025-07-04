@@ -1,9 +1,8 @@
-from flask import Blueprint, render_template, request, session, flash, redirect
+from flask import Blueprint, render_template, request, session, flash, redirect, send_file, url_for
 from app.utils.csv_reader_writer import fetch_updated_student_instance
 from app.forms.report_card import ReportCardForm
 from app.services.report_card_service import ReportCardService
 import os
-from flask import send_file, url_for
 from app.services.details_of_test_days import retrieve_unique_test_dates, retrieve_test_day_counts
 import pyrebase
 import csv
@@ -167,17 +166,17 @@ def merge_riverside():
             return render_template("merge_riversdie.html", uploadtresults = "Riverside Data File must be uploaded to proceed with merge.")
 
 #placeholder routes to be developed
-@bp.route("/exports/")
+@bp.route("/exports/", methods = ["GET", "POST"])
 def exports_page():
     return render_template("exports.html")
 
-@bp.route("/export_csv")
+@bp.route("/export_csv", methods = ['POST'])
 def export_csv():
-    if os.path.exists(schoolMint_csv):
-        return send_file(schoolMint_csv, as_attachment=True)
-    else:
-        flash("CSV file not found.")
-        return redirect(url_for('main.exports_page'))
+    if request.method == "POST":
+        schoolMintcsv = (f'{UPLOAD_FOLDER}/updated_schoolmint.csv')
+        return send_file(schoolMintcsv, as_attachment=True)
+    return render_template("menu.html")
+
 
 @bp.route("/upload_csv", methods=["POST"])
 def upload_schoolmint_csv():
