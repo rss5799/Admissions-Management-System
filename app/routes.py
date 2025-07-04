@@ -69,11 +69,10 @@ def index():
         try:
             user = auth.sign_in_with_email_and_password(email, password)
             session['user'] = email
-            return render_template("landing.html")
+            return render_template("landing.html", breadcrumbs=[{"title": "Landing", "url": url_for('main.landing')}])
         except:
-            return render_template("home.html", results = "Invalid Login, please try again")
-    
-    return render_template("home.html")
+            return render_template("home.html", results = "Invalid Login, please try again", breadcrumbs=[{"title": "Home", "url": url_for('main.index')}])
+    return render_template("home.html", breadcrumbs=[{"title": "Home", "url": url_for('main.index')}])
 
 #logout page
 @bp.route('/logout')
@@ -83,34 +82,50 @@ def logout():
 #first page for all users
 @bp.route("/landing")
 def landing():
-    return render_template("landing.html")
+    return render_template("landing.html", breadcrumbs=[{"title": "Landing", "url": url_for('main.landing')}])
 
 #navigation scren to all functionality
 @bp.route("/menu")
 def menu():
-    return render_template("menu.html")
+    return render_template("menu.html", breadcrumbs=[{"title": "Main Menu", "url": url_for('main.menu')}])
 
 #search for a student here
 @bp.route("/point_inputs/")
 def point_inputs():
-    return render_template("point_inputs.html")
+    breadcrumbs = [
+        {"title": "Main Menu", "url": url_for('main.menu')},
+        {"title": "Search Students", "url": url_for('main.point_inputs')}
+    ]
+    return render_template("point_inputs.html", breadcrumbs=breadcrumbs)
 
 #see individual student deatils after search
 @bp.route("/student_details/", methods = ['GET'])
 def student_details():
     current_student = retrieve_current_student()
+    breadcrumbs = [
+        {"title": "Main Menu", "url": url_for('main.menu')},
+        {"title": "Search Students", "url": url_for('main.point_inputs')},
+        {"title": f"Student {current_student.id}" if current_student else "Student Details", "url": url_for('main.student_details')}
+    ]
 
     if current_student:
         session['current_id'] = current_student.id
-        return render_template("student_details.html", results = current_student)
+        return render_template("student_details.html", results = current_student, breadcrumbs=breadcrumbs)
     else:
-        return render_template("point_inputs.html", results = "No records for student")
+        return render_template("point_inputs.html", results = "No records for student", breadcrumbs=breadcrumbs)
 
 #enter/update report card grades
 @bp.route("/enter_report_card/", methods = ['GET', 'POST'])
 def enter_report_card():
     current_student = retrieve_current_student()
     form = ReportCardForm()
+
+    breadcrumbs = [
+        {"title": "Main Menu", "url": url_for('main.menu')},
+        {"title": "Search Students", "url": url_for('main.point_inputs')},
+        {"title": "Student Details", "url": url_for('main.student_details')},
+        {"title": "Enter Report Card", "url": url_for('main.enter_report_card')}
+    ]
 
     if form.validate_on_submit():
         service = ReportCardService(form, current_student)
@@ -123,12 +138,14 @@ def enter_report_card():
             form=form,
             results=current_student,
             gpa=result["gpa"],
-            matrix_gpa=result["matrix_gpa"]
+            matrix_gpa=result["matrix_gpa"],
+            breadcrumbs=breadcrumbs
         )
     return render_template(
         "enter_report_card.html",
         form=form,
-        results=current_student
+        results=current_student,
+        breadcrumbs=breadcrumbs
     )
 
 @bp.route("/upcoming_tests/", methods=['GET','POST'])
@@ -137,58 +154,70 @@ def upcoming_tests():
     test_day_numbers = None
     selected_test_date = ""
 
+    breadcrumbs = [
+        {"title": "Main Menu", "url": url_for('main.menu')},
+        {"title": "Upcoming Tests", "url": url_for('main.upcoming_tests')}
+    ]
+
     if request.method == 'POST':        
         selected_test_date = request.form.get('upcoming_tests_dropdown')
         test_day_numbers = retrieve_test_day_counts(schoolMint_csv, selected_test_date)
     
-    return render_template("upcoming_tests.html", dates = upcoming_test_dates, selected_test_date = selected_test_date, test_day_numbers = test_day_numbers)
+    return render_template("upcoming_tests.html", dates = upcoming_test_dates, selected_test_date = selected_test_date, test_day_numbers = test_day_numbers, breadcrumbs=breadcrumbs)
 
 @bp.route("/merge_riverside", methods=['GET','POST'])
 def merge_riverside():
+    breadcrumbs = [
+        {"title": "Main Menu", "url": url_for('main.menu')},
+        {"title": "Merge Riverside File", "url": url_for('main.merge_riverside')}
+    ]
+
     if request.method == 'GET':
-        return render_template("merge_riverside.html")
+        return render_template("merge_riverside.html", breadcrumbs=breadcrumbs)
     if request.method == 'POST':
         if 'riversidefile' not in request.files:
             flash("No file part")
-            return render_template("merge_riversdie.html", uploadresults = "Riverside Data File must be uploaded to proceed with merge.")
+            return render_template("merge_riverside.html", uploadresults = "Riverside Data File must be uploaded to proceed with merge.", breadcrumbs=breadcrumbs)
 
         riversidefile = request.files['riversidefile']
 
         if riversidefile.filename == '':
             flash("No selected file")
-            return render_template("merge_riversdie.html", uploadtresults = "Riverside Data File must be uploaded to proceed with merge.")
+            return render_template("merge_riverside.html", uploadresults = "Riverside Data File must be uploaded to proceed with merge.", breadcrumbs=breadcrumbs)
 
         if riversidefile and riversidefile.filename.endswith('.csv'):
-                request.files['riversidefile'].save('data/riverside.csv')
-                combine_data(schoolMint_csv, 'data/riverside.csv')
-                return render_template("menu.html")
+            request.files['riversidefile'].save('data/riverside.csv')
+            combine_data(schoolMint_csv, 'data/riverside.csv')
+            return render_template("menu.html", breadcrumbs=[{"title": "Main Menu", "url": url_for('main.menu')}])
         else:
-            return render_template("merge_riversdie.html", uploadtresults = "Riverside Data File must be uploaded to proceed with merge.")
+            return render_template("merge_riverside.html", uploadresults = "Riverside Data File must be uploaded to proceed with merge.", breadcrumbs=breadcrumbs)
 
-#placeholder routes to be developed
 @bp.route("/exports/", methods = ["GET", "POST"])
 def exports_page():
-    return render_template("exports.html")
+    breadcrumbs = [
+        {"title": "Main Menu", "url": url_for('main.menu')},
+        {"title": "Exports", "url": url_for('main.exports_page')}
+    ]
+    return render_template("exports.html", breadcrumbs=breadcrumbs)
 
 @bp.route("/export_csv", methods = ['POST'])
 def export_csv():
     if request.method == "POST":
         schoolMintcsv = (f'{UPLOAD_FOLDER}/updated_schoolmint.csv')
         return send_file(schoolMintcsv, as_attachment=True)
-    return render_template("menu.html")
-
+    return render_template("menu.html", breadcrumbs=[{"title": "Main Menu", "url": url_for('main.menu')}])
 
 @bp.route("/upload_csv", methods=["POST"])
 def upload_schoolmint_csv():
     if 'schoolmintfile' not in request.files:
         flash("No file part")
-        return render_template("landing.html", schoolMintresults = "Schoolmint Data File must be uploaded to continue")
+        return render_template("landing.html", schoolMintresults = "Schoolmint Data File must be uploaded to continue", breadcrumbs=[{"title": "Landing", "url": url_for('main.landing')}])
 
     schoolmintfile = request.files['schoolmintfile']
 
     if schoolmintfile.filename == '':
         flash("No selected file")
-        return render_template("landing.html", uploadresults = "Schoolmint Data File must be uploaded to continue")
+        return render_template("landing.html", uploadresults = "Schoolmint Data File must be uploaded to continue", breadcrumbs=[{"title": "Landing", "url": url_for('main.landing')}])
 
     if schoolmintfile and schoolmintfile.filename.endswith('.csv'):
         schoolmintfile.save('data/original_schoolmint.csv')
@@ -198,11 +227,14 @@ def upload_schoolmint_csv():
                 writer = csv.writer(outfile)
                 for row in reader:
                     writer.writerow(row)
-        return render_template("menu.html")
+        return render_template("menu.html", breadcrumbs=[{"title": "Main Menu", "url": url_for('main.menu')}])
     else:
-        return render_template("landing.html", uploadresults = "Invalid file type please upload a csv")
-
+        return render_template("landing.html", uploadresults = "Invalid file type please upload a csv", breadcrumbs=[{"title": "Landing", "url": url_for('main.landing')}])
 
 @bp.route("/unresponsive_students/")
 def unresponsive_students():
-    return render_template("unresponsive_students.html")
+    breadcrumbs = [
+        {"title": "Main Menu", "url": url_for('main.menu')},
+        {"title": "Unresponsive Students", "url": url_for('main.unresponsive_students')}
+    ]
+    return render_template("unresponsive_students.html", breadcrumbs=breadcrumbs)
