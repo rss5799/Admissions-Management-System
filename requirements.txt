@@ -1,4 +1,5 @@
 altgraph==0.17.4
+beautifulsoup4==4.13.4
 blinker==1.9.0
 CacheControl==0.14.3
 cachetools==5.5.2
@@ -63,6 +64,7 @@ requests-toolbelt==0.10.1
 rsa==4.9.1
 setuptools==66.1.1
 six==1.17.0
+soupsieve==2.7
 typing_extensions==4.14.0
 tzdata==2025.2
 uritemplate==4.1.1

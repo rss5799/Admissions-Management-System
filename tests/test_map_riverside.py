@@ -5,7 +5,7 @@ from app.utils.csv_riverside_writer import combine_data
 import os
 
 
-#Unit test 17: Ensure that all IDs are preserved when transfering Riverside test scores into SchoolMint
+#Unit test 17:  Ensure taht all IDs transfer from riverside to schoolmint
 def test_ids_align():
      #open original schoolmint for pytests
     original_schoolmint = str('tests/SampleCsvsForTesting/schoolmintForPytest.csv')
