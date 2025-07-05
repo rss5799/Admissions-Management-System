@@ -77,7 +77,8 @@ def index():
 #logout page
 @bp.route('/logout')
 def logout():
-    pass
+    session.pop('user')
+    return redirect('/')
 
 #first page for all users
 @bp.route("/landing")
@@ -162,7 +163,7 @@ def upcoming_tests():
     if request.method == 'POST':        
         selected_test_date = request.form.get('upcoming_tests_dropdown')
         test_day_numbers = retrieve_test_day_counts(schoolMint_csv, selected_test_date)
-    
+
     return render_template("upcoming_tests.html", dates = upcoming_test_dates, selected_test_date = selected_test_date, test_day_numbers = test_day_numbers, breadcrumbs=breadcrumbs)
 
 @bp.route("/merge_riverside", methods=['GET','POST'])
@@ -171,7 +172,7 @@ def merge_riverside():
         {"title": "Main Menu", "url": url_for('main.menu')},
         {"title": "Merge Riverside File", "url": url_for('main.merge_riverside')}
     ]
-
+    
     if request.method == 'GET':
         return render_template("merge_riverside.html", breadcrumbs=breadcrumbs)
     if request.method == 'POST':
