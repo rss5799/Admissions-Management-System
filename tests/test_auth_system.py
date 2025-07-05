@@ -29,7 +29,7 @@ def client():
         yield client
 
 
-#Unit test 1
+#Unit test 1:  Test that valid login proceeds without error
 def test_login_with_valid_credentials():
     user = auth.sign_in_with_email_and_password(VALID_EMAIL, VALID_PASSWORD)
     assert user['email'] == VALID_EMAIL
@@ -44,7 +44,7 @@ def test_login_with_invalid_credentials():
     except:
         assert 1 == 1
 
-#System test 1
+#System test 1:  Test that pages advance after successful login
 def test_advance_after_login(client):
     user = auth.sign_in_with_email_and_password(VALID_EMAIL, VALID_PASSWORD)
     response = client.get("/landing")

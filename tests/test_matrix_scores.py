@@ -15,7 +15,7 @@ def client():
         yield client
 
 
-#Unit Test 11: Ensure that calculate gpa function turns out the correct value
+#Unit test 11:  Test calculate GPA with a variety of valid and invalid inputs
 def test_calculate_gpa():
     grades = {
         "english": "",
@@ -48,8 +48,7 @@ def test_calculate_gpa():
 
 
 
-
-#Unit Test 12:  Ensure total matrix value is accurately returned
+#Unit test 12:  Check total matrix points are calculated correctly with a variety of valid and invalid inputs
 def test_calculate_total_matrix():
     grades = {
         "english": "",
@@ -88,7 +87,7 @@ def test_calculate_total_matrix():
 
 
 
-#System Test 16: Ensure that total matrix points persist to file export page.
+#System test 16:  Ensure that Matrix Score persists to exports page
 def test_matrix_points_persist_to_export(client):
     #get 5 random students ids
     random_students = [random.randint(1, 2000) for _ in range(5)]
@@ -105,8 +104,8 @@ def test_matrix_points_persist_to_export(client):
                 assert matrix_score == student.total_points
 
 
-#System Test 17: Ensure riverside scores are being transfered and calculated correctly
 
+#System test 17: Ensure all data is transfered from riverside to schoolmint and matrix is calculated correctly
 def test_riverside_data_transfer():
     #open original schoolmint for pytests
     original_schoolmint = ('tests/SampleCsvsForTesting/schoolmintForPytest.csv')

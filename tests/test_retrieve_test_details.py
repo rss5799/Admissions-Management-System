@@ -9,14 +9,15 @@ def client():
     with app.test_client() as client:
         yield client
 
-#Unit test 18
+#Unit test 18:  Test that all unique test dates are returned to list
 def test_retrieve_unique_test_dates():
     unique_tests = retrieve_unique_test_dates('tests/SampleCsvsForTesting/schoolmintForPytest.csv')
     assert len(unique_tests) == 2
     assert unique_tests[0] == 'January 18 2025'
     assert unique_tests[1] == 'March 5 2025'
 
-#Unit test 19
+
+#Unit test 19:  Test that test day counts are accurate
 def test_retrieve_test_day_counts():
     checking_test = retrieve_test_day_counts('tests/SampleCsvsForTesting/schoolmintForPytest.csv', 'January 18 2025')
     assert checking_test.date == 'January 18 2025'
@@ -64,8 +65,8 @@ def test_retrieve_test_day_counts():
     assert checking_test.totalstudents == 13
     assert checking_test.totalrooms == 2
 
-#System test 23
 
+#System test 23:  Assert testing details page is found on post and get calls
 def test_details_page_post(client):
     response = client.post("/upcoming_tests/")
     assert response.status_code == 200

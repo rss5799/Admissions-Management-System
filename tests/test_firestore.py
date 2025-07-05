@@ -4,6 +4,8 @@ from firebase_admin import credentials, firestore
 
 # Loads the credentials if they don't already exist
 @pytest.fixture(scope="module")
+
+#System test 31:  Test firestore client
 def firestore_client():
     if not firebase_admin._apps:
         cred = credentials.Certificate("credentials/firebase_key.json")

@@ -11,7 +11,8 @@ def client():
     with app.test_client() as client:
         yield client
 
-# #Unit Test 1: Search results are returned when valid student ID is entered
+
+#Unit Test 6:  Ensure updated student instance is fetched when input is valud
 def test_search_for_student():
     testing_csv = ('data/updated_schoolmint.csv')
     ids = []
@@ -32,16 +33,20 @@ def test_search_for_student():
         assert fetch_updated_student_instance('a') == 0
 
 
+#Unit test 3: Assert empty input returns a "no records" result
 def test_student_search_no_param(client):
     response = client.get("/student_details/")
     assert response.status_code == 200
     assert b"No records for student" in response.data
 
+#Unit test 4:  Assert invalid input returns a "no records" result
 def test_student_search_invalid_id(client):
     response = client.get("/student_details/?id_query=NOT_A_REAL_ID")
     assert response.status_code == 200
     assert b"No records for student" in response.data
 
+
+#System test 2: Ensure student details load when valid ID is queried
 def test_student_search_valid_id(client):
     testing_csv = ('data/updated_schoolmint.csv')
     ids = []
