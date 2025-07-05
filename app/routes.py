@@ -77,10 +77,6 @@ def index():
 #logout page
 @bp.route('/logout')
 def logout():
-    os.remove('data/original_schoolmint.csv')
-    os.remove('data/updated_schoolmint.csv')
-    if(os.path.exists('data/riverside.csv')):
-        os.remove('data/riverside.csv')
     session.pop('user')
     return redirect('/')
 
