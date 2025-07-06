@@ -26,7 +26,7 @@ class ReportCardService:
         matrix_gpa = lookup_matrix_points(gpa, self.matrix["gpa"])
 
         total_points = sum([
-            self._safe_int(self.student.matrix_languauge),
+            self._safe_int(self.student.matrix_language),
             self._safe_int(self.student.matrix_math),
             self._safe_int(self.student.matrix_reading),
             matrix_gpa

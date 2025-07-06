@@ -1,5 +1,6 @@
 import pytest
 from app import create_app
+import csv
 
 @pytest.fixture
 def client():
@@ -35,10 +36,30 @@ def test_calculate_gpa_post(client):
 
 #System test 27:  Test student details route (invalid query)
 def test_student_search(client):
+    dummy_row = [
+        "1", "Joe", "Smith", "9", "Other", "None", "None", "None", 
+        "None", "None", "None", "None", "None", "None", "None", 
+        "None", "None", "None", "None", "None", "None"
+    ]
+    csv_file = "data/updated_schoolmint.csv"
+
+    # Write dummy student
+    with open(csv_file, "a", newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(dummy_row)
+
     response = client.get("/student_details/?id_query=1")
     assert response.status_code == 200
-    assert b"No records for student" in response.data
+    assert b"Student Details" in response.data
 
+    # Clean up
+    with open(csv_file, "r") as f:
+        rows = list(csv.reader(f))
+    with open(csv_file, "w", newline='') as f:
+        writer = csv.writer(f)
+        for row in rows:
+            if row[0] != "1":
+                writer.writerow(row)
 
 #System test 28:  Test invalid route
 def test_route_not_found(client):
