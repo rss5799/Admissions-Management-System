@@ -1,6 +1,7 @@
 import pytest
 from app import create_app
 import csv
+import app.utils.helpers as h
 
 @pytest.fixture
 def client():
@@ -16,18 +17,20 @@ def test_unresponsive_students(client):
     assert response.status_code == 200
     assert b"Unresponsive Students" in response.data
 
-
 #System test 26:  Test enter report card route
 def test_calculate_gpa_post(client):
+    # Ensure dummy data is in place
+    h.write_dummy_schoolmint_csv()
+
     with client.session_transaction() as sess:
         sess["current_id"] = "1"
 
     data = {
-        'english': '90',
-        'math': '85',
-        'science': '95',
-        'social_studies': '88',
-        'language': '92'
+        'english': 'A',
+        'math': 'B',
+        'science': 'A',
+        'social_studies': 'B',
+        'language': 'A'
     }
     response = client.post("/enter_report_card/", data=data)
     assert response.status_code == 200
