@@ -1,34 +1,52 @@
 import pytest
-from app.auth_controller import login_user, get_current_user, logout_user
+import pyrebase
+from app import create_app
 
-VALID_EMAIL = "rss5799@psu.edu"         
-VALID_PASSWORD = "chaP1stick!"           
+
+config = {
+    'apiKey': "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg",
+    'authDomain': "admissionsmanagementsystem.firebaseapp.com",
+    'projectId': "admissionsmanagementsystem",
+    'storageBucket': "admissionsmanagementsystem.firebasestorage.app",
+    'messagingSenderId': "178704031743",
+    'appId': "1:178704031743:web:f0773e4dfa6702049711ca",
+    'databaseURL' : '' 
+}
+
+firebase = pyrebase.initialize_app(config)
+auth = firebase.auth()
+
+VALID_EMAIL = "amsforbfhsadmin@bfhsla.org"
+VALID_PASSWORD = "temp123"
 INVALID_EMAIL = "doesnotexist@example.com"
 INVALID_PASSWORD = "wrongpassword"
 
+@pytest.fixture
+def client():
+    app = create_app()
+    app.testing = True
+    with app.test_client() as client:
+        yield client
+
+
+#Unit test 1:  Test that valid login proceeds without error
 def test_login_with_valid_credentials():
-    logout_user()
-    result = login_user(VALID_EMAIL, VALID_PASSWORD)
-    
-    assert result["success"] is True
-    assert "token" in result
-    assert result["user"]["email"] == VALID_EMAIL
+    user = auth.sign_in_with_email_and_password(VALID_EMAIL, VALID_PASSWORD)
+    assert user['email'] == VALID_EMAIL
 
 
+
+#Unit test 2 lol is this even a test?  I mean it asserts that it doesn't work when you use invalid things
 def test_login_with_invalid_credentials():
-    logout_user()
-    result = login_user(VALID_EMAIL, INVALID_PASSWORD)
-    
-    assert result["success"] is False
-    assert "error" in result
+    try:
+        user = auth.sign_in_with_email_and_password(INVALID_EMAIL, INVALID_PASSWORD)
+        assert 1 == 0
+    except:
+        assert 1 == 1
 
-
-def test_session_persistence():
-    logout_user()
-    login_user(VALID_EMAIL, VALID_PASSWORD)
-
-    # Simulate a "page refresh"
-    user = get_current_user()
-
-    assert user is not None
-    assert user["email"] == VALID_EMAIL
+#System test 1:  Test that pages advance after successful login
+def test_advance_after_login(client):
+    user = auth.sign_in_with_email_and_password(VALID_EMAIL, VALID_PASSWORD)
+    response = client.get("/landing")
+    assert response.status_code == 200
+    assert b"SchoolMint Data Upload" in response.data

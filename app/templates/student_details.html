@@ -4,6 +4,7 @@
     <title>Flask App</title>
 </head>
 <body>
+    {% include '_breadcrumbs.html' %}
     <h1>Student Details</h1>
     <h2>Student ID: {{ results.id }}</h2>
     <h2>Applying for Grade: {{ results.grade }}</h2>
@@ -78,11 +79,6 @@
     </tr>
 </table>
 
-<form action="/export_csv" method="GET">
-    <button type="submit" class="btn btn-secondary" style="margin-top: 1em;">
-        Export CSV
-    </button>
-</form>
 
 {% with messages = get_flashed_messages() %}
   {% if messages %}

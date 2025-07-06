@@ -2,9 +2,10 @@ import pytest
 import csv
 import pandas
 from app.utils.csv_riverside_writer import combine_data
+import os
 
 
-#Unit test 17: Ensure that all IDs are preserved when transfering Riverside test scores into SchoolMint
+#Unit test 17:  Ensure taht all IDs transfer from riverside to schoolmint
 def test_ids_align():
      #open original schoolmint for pytests
     original_schoolmint = str('tests/SampleCsvsForTesting/schoolmintForPytest.csv')
@@ -18,6 +19,10 @@ def test_ids_align():
             ids_in_OG_schoolmint.append(float(row['id']))
 
     #make a copy of schoolmint for pytests    
+    if os.path.exists('tests/SampleCsvsForTesting/copyOfDataForIDTesting.csv'):
+        os.remove('tests/SampleCsvsForTesting/copyOfDataForIDTesting.csv')
+    
+    assert not os.path.exists('tests/SampleCsvsForTesting/copyOfDataForIDTesting.csv')
     copy_for_testing = str('tests/SampleCsvsForTesting/copyOfDataForIDTesting.csv')
     
     with open(original_schoolmint, 'r', newline='') as infile:

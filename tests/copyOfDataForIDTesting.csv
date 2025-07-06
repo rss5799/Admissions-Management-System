@@ -1,9 +1,0 @@
-id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_points,matrix_languauge,matrix_math,matrix_reading,status,matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest,updated_at,guardian1_email,guardian2_email,grade,deliver_test_accomodation_approved,test_date_sign_up,current_school,gpa,language_test_scores2,reading_test_score2,math_test_scores2
-1,20,,,,20,,,,In Processing,,,,20,2025-01-10 9:36:05,,,9,Test Accommodations Approved,January 18 2025,Other,2.5,,,
-2,,,,,,,,,In Processing,,,,,2025-01-10 9:36:05,,,10,,January 18 2025,Other,,,,
-3,26,76,85,76,87,19,19,23,In Processing,,,,26,2025-01-10 9:36:05,,,11,,January 18 2025,Other,3.1,,,
-4,,79,90,65,59,20,13,26,In Processing,,,,,2025-01-10 9:36:05,,,10,,January 18 2025,Other,,,,
-5,30,83,,,52,22,,,In Processing,,,,52,2025-01-10 9:36:05,,,9,Test Accommodations Approved,January 18 2025,Other,3.5,,,
-6,22,70,75,77,75,16,19,18,In Processing,26,25,26,99,2025-01-10 9:36:05,,,9,,January 18 2025,Other,2.75,91,91,88
-7,,66,72,62,43,14,12,17,In Processing,22,23,22,67,2025-01-10 9:36:05,,,9,,March 5 2025,Other,,82,83,84
-9,,89,93,88,77,25,25,27,In Processing,,,,,,,,10,,January 18 2025,,,,,
