@@ -18,6 +18,9 @@ def test_unresponsive_students(client):
 
 #System test 26:  Test enter report card route
 def test_calculate_gpa_post(client):
+    with client.session_transaction() as sess:
+        sess["current_id"] = "12345"
+
     data = {
         'english': '90',
         'math': '85',
