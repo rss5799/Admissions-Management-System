@@ -1,24 +1,17 @@
-import pyrebase
+#import pyrebase
+#I don't think we need anything here anymore but I didn't want to delete it in case we had to come back to it later for some reason
+# config = {
+#     'apiKey': "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg",
+#     'authDomain': "admissionsmanagementsystem.firebaseapp.com",
+#     'projectId': "admissionsmanagementsystem",
+#     'storageBucket': "admissionsmanagementsystem.firebasestorage.app",
+#     'messagingSenderId': "178704031743",
+#     'appId': "1:178704031743:web:f0773e4dfa6702049711ca",
+#     'databaseURL' : '' 
+# }
 
-config = {
-    'apiKey': "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg",
-    'authDomain': "admissionsmanagementsystem.firebaseapp.com",
-    'projectId': "admissionsmanagementsystem",
-    'storageBucket': "admissionsmanagementsystem.firebasestorage.app",
-    'messagingSenderId': "178704031743",
-    'appId': "1:178704031743:web:f0773e4dfa6702049711ca",
-    'databaseURL' : '' 
-}
-
-firebase = pyrebase.initialize_app(config)
-auth = firebase.auth()
-
-email = 'developAMS@gmail.com'
-password = 'qwerty'
-
-auth.send_password_reset_email(email)
-
-
+# firebase = pyrebase.initialize_app(config)
+# auth = firebase.auth()
 
 # FIREBASE_API_KEY = os.getenv("FIREBASE_API_KEY", "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg")  
 
