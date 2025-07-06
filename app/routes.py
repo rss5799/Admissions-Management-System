@@ -71,28 +71,54 @@ def student_details():
     else:
         return render_template("student_details.html", results = None)
 
-@bp.route("/enter_report_card/", methods = ['GET', 'POST'])
+@bp.route("/enter_report_card/", methods=["GET", "POST"])
 def enter_report_card():
     current_student = retrieve_current_student()
-    form = ReportCardForm()
 
-    if form.validate_on_submit():
-        service = ReportCardService(form, current_student)
+    breadcrumbs = [
+        {"title": "Main Menu", "url": url_for('main.menu')},
+        {"title": "Search Students", "url": url_for('main.point_inputs')},
+        {"title": "Student Details", "url": url_for('main.student_details')},
+        {"title": "Enter Report Card", "url": url_for('main.enter_report_card')}
+    ]
+
+    if request.method == "POST":
+        # Pull dynamic grades from the submitted form
+        grades = {
+            key: value
+            for key, value in request.form.items()
+            if key.startswith(("english", "math", "science", "social_studies", "language"))
+        }
+
+        # Correct FakeForm class
+        class FakeForm:
+            def __init__(self, form_data):
+                self._fields = {}
+                for key, value in form_data.items():
+                    field_obj = type("Field", (), {"data": value})
+                    setattr(self, key, field_obj)
+                    self._fields[key] = field_obj
+
+        fake_form = FakeForm(grades)
+
+        # Run original service logic
+        from app.services.report_card_service import ReportCardService
+        service = ReportCardService(fake_form, current_student)
         result = service.process()
 
         session["current_id"] = current_student.id
 
         return render_template(
             "enter_report_card.html",
-            form=form,
             results=current_student,
             gpa=result["gpa"],
-            matrix_gpa=result["matrix_gpa"]
+            matrix_gpa=result["matrix_gpa"],
+            breadcrumbs=breadcrumbs
         )
     return render_template(
         "enter_report_card.html",
-        form=form,
-        results=current_student
+        results=current_student,
+        breadcrumbs=breadcrumbs
     )
 
 #placeholder routes to be developed

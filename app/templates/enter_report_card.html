@@ -3,7 +3,7 @@
 
 <head>
     <title>Enter Report Card Info</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='static/styles/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
 </head>
 
 <body>
@@ -22,8 +22,6 @@
     </select>
 
     <form method="POST" action="/enter_report_card/">
-        {{ form.hidden_tag() }}
-
         <div id="grade-inputs"></div>
 
         <button type="submit">Calculate GPA</button>
@@ -51,7 +49,7 @@ document.getElementById("schedule_option").addEventListener("change", updateGrad
 function updateGradeInputs() {
     const option = document.getElementById("schedule_option").value;
     const container = document.getElementById("grade-inputs");
-    container.innerHTML = ""; // clear previous fields
+    container.innerHTML = "";
 
     if (!option) {
         return;
