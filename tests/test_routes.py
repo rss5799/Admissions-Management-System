@@ -19,7 +19,7 @@ def test_unresponsive_students(client):
 #System test 26:  Test enter report card route
 def test_calculate_gpa_post(client):
     with client.session_transaction() as sess:
-        sess["current_id"] = "12345"
+        sess["current_id"] = "1"
 
     data = {
         'english': '90',
@@ -35,7 +35,7 @@ def test_calculate_gpa_post(client):
 
 #System test 27:  Test student details route (invalid query)
 def test_student_search(client):
-    response = client.get("/student_details/?id_query=12345")
+    response = client.get("/student_details/?id_query=1")
     assert response.status_code == 200
     assert b"No records for student" in response.data
 
