@@ -157,9 +157,7 @@ def enter_report_card():
             results=current_student,
             gpa=result["gpa"],
             matrix_gpa=result["matrix_gpa"],
-            breadcrumbs=breadcrumbs
-            matrix_gpa=result["matrix_gpa"],
-            breadcrumbs=breadcrumbs
+            breadcrumbs=breadcrumbs,
         )
     return render_template(
         "enter_report_card.html",
@@ -246,7 +244,7 @@ def merge_riverside():
             return render_template("menu.html", breadcrumbs=[{"title": "Main Menu", "url": url_for('main.menu')}])
         else:
             return render_template("merge_riverside.html", uploadresults = "Riverside Data File must be uploaded to proceed with merge.", breadcrumbs=breadcrumbs)
-
+"""
 @bp.route("/exports/", methods = ["GET", "POST"])
 def exports_page():
     breadcrumbs = [
@@ -261,7 +259,7 @@ def export_csv():
         schoolMintcsv = (f'{UPLOAD_FOLDER}/updated_schoolmint.csv')
         return send_file(schoolMintcsv, as_attachment=True)
     return render_template("menu.html", breadcrumbs=[{"title": "Main Menu", "url": url_for('main.menu')}])
-
+"""
 @bp.route("/upload_csv", methods=["POST"])
 def upload_schoolmint_csv():
     if 'schoolmintfile' not in request.files:
