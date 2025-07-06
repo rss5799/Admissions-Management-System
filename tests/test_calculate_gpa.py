@@ -37,6 +37,9 @@ def test_calculate_gpa_invalid():
 
 #System test 5: test empty data set advances to GPA page
 def test_calculate_gpa_post_missing_fields(client):
+    with client.session_transaction() as sess:
+        sess["current_id"] = "12345"
+
     data = {
         'english': '',
         'math': '',
