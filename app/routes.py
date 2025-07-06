@@ -102,18 +102,26 @@ def point_inputs():
 #see individual student deatils after search
 @bp.route("/student_details/", methods = ['GET'])
 def student_details():
-    current_student = retrieve_current_student()
-    breadcrumbs = [
-        {"title": "Main Menu", "url": url_for('main.menu')},
-        {"title": "Search Students", "url": url_for('main.point_inputs')},
-        {"title": f"Student {current_student.id}" if current_student else "Student Details", "url": url_for('main.student_details')}
-    ]
-
-    if current_student:
-        session['current_id'] = current_student.id
-        return render_template("student_details.html", results = current_student, breadcrumbs=breadcrumbs)
+    if os.path.exists('data/updated_schoolmint.csv'):
+        current_student = retrieve_current_student()
+        breadcrumbs = [
+            {"title": "Main Menu", "url": url_for('main.menu')},
+            {"title": "Search Students", "url": url_for('main.point_inputs')},
+            {"title": f"Student {current_student.id}" if current_student else "Student Details", "url": url_for('main.student_details')}
+        ]
+        if current_student:
+            session['current_id'] = current_student.id
+            return render_template("student_details.html", results = current_student, breadcrumbs=breadcrumbs)
+        else:
+            return render_template("point_inputs.html", results = "No records for student", breadcrumbs=breadcrumbs)
     else:
-        return render_template("point_inputs.html", results = "No records for student", breadcrumbs=breadcrumbs)
+        breadcrumbs = [
+            {"title": "Main Menu", "url": url_for('main.menu')},
+            {"title": "Search Students", "url": url_for('main.point_inputs')},
+            {"title": f"Student Details", "url": url_for('main.student_details')}
+        ]
+        return render_template("point_inputs.html", results = "Please upload a SchoolMint Data File", breadcrumbs=breadcrumbs)
+
 
 #enter/update report card grades
 @bp.route("/enter_report_card/", methods = ['GET', 'POST'])
