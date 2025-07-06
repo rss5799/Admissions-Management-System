@@ -54,3 +54,19 @@ def test_profile_route(client):
     response = client.get("/profile/12345")
     assert response.status_code == 404
 
+
+#System test 31: Test home route
+def test_home_route(client):
+    response = client.post("/")
+    assert response.status_code == 200
+
+
+#System test 32:  Test enter report card route
+def test_enter_report_card_route(client):
+    response = client.get("/enter_report_card/")
+    assert response.status_code == 200
+
+    response = client.post("enter_report_card/")
+    response_data = response.get_data(as_text=True)
+    assert f"Return to Student Scores" in response_data
+
