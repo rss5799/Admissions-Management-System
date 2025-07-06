@@ -1,0 +1,46 @@
+.error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+    padding: 6px;
+    border-radius: 4px;
+    margin-top: 4px;
+    font-size: 0.9em;
+}
+
+.success-message {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.grade-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.subject-column {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, min-content);
+    gap: 10px;
+    min-width: 160px;
+}
+
+.subject-column label {
+    font-weight: bold;
+    white-space: nowrap;
+    margin-bottom: 2px;
+}
+
+.subject-column input {
+    width: 100px;
+    padding: 4px;
+    box-sizing: border-box;
+}
