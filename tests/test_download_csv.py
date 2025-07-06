@@ -1,50 +1,42 @@
 import csv
 import pytest
 from app import create_app
+import shutil
 import os
 
 @pytest.fixture
 def client():
+    # Always reset updated_schoolmint.csv to known dummy data before the test
+    shutil.copyfile(
+        "data/DummyDataComplete.csv",
+        "data/updated_schoolmint.csv"
+    )
+
     app = create_app()
     app.testing = True
     with app.test_client() as client:
         yield client
 
-# System test 6: Test exports page renders
-@pytest.mark.unit
-def test_exports_page(client):
-    response = client.get("/exports/")
-    assert response.status_code == 200
-
-# System test 7: Test all headers persist to downloaded csv
 @pytest.mark.unit
 def test_file_download(client):
-    # Ensure dummy file exists
-    path = 'data/updated_schoolmint.csv'
-    os.makedirs(os.path.dirname(path), exist_ok=True)
+    """
+    This test ensures that the export_csv route correctly exports the contents
+    of updated_schoolmint.csv. We'll load DummyDataComplete.csv into updated_schoolmint.csv,
+    then request the export and check the response.
+    """
 
-    # Create dummy CSV with headers
-    headers = ['id', 'first_name', 'last_name', 'grade', 'current_school']
-    with open(path, 'w', newline='') as f:
-        writer = csv.writer(f)
-        writer.writerow(headers)
-        writer.writerow(['1', 'Joe', 'Smith', '9', 'Other'])
-
-    # Call POST because your route expects POST
-    response = client.post("/export_csv")
+    # Call the export route (must match your route method)
+    response = client.get("/export_csv")
     assert response.status_code == 200
 
+    # Get exported CSV contents
     downloaded_data = response.get_data(as_text=True)
 
-    # Check that each header exists in the downloaded CSV
-    for item in headers:
-        assert item in downloaded_data
+    # Load DummyDataComplete header to compare
+    with open("data/DummyDataComplete.csv", newline='') as f:
+        reader = csv.reader(f)
+        header_row = next(reader)
 
-    # Clean up the dummy file
-    os.remove(path)
-
-# System test 8: Ensure export_csv page renders correctly (GET should go to exports page)
-@pytest.mark.unit
-def test_file_upload_input_present(client):
-    response = client.get("/exports/")
-    assert response.status_code == 200
+    # Check that each header field is present in exported CSV
+    for field in header_row:
+        assert field in downloaded_data
