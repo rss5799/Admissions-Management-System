@@ -1,5 +1,6 @@
 import pytest
 from app import create_app
+import csv
 
 @pytest.fixture
 def client():
@@ -18,6 +19,24 @@ def test_unresponsive_students(client):
 
 #System test 26:  Test enter report card route
 def test_calculate_gpa_post(client):
+    csv_file = "data/updated_schoolmint.csv"
+
+    # Write dummy student row
+    dummy_row = [
+        "1", "Joe", "Smith", "9", "Other", 
+        "0", "0", "0", "0", "0", "0", "0",
+        "0", "0", "0", "0", "0", "0", "0", 
+        "0", "0", "0"
+    ]
+
+    with open(csv_file, "a", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(dummy_row)
+
+    # Set session to point to the student you just wrote
+    with client.session_transaction() as sess:
+        sess["current_id"] = "1"
+
     data = {
         'english': '90',
         'math': '85',
