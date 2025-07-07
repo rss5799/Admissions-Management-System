@@ -1,6 +1,8 @@
 import pytest
 from app import create_app
 import csv
+from unittest.mock import patch
+from app.models.student import Student
 
 @pytest.fixture
 def client():
@@ -82,10 +84,35 @@ def test_home_route(client):
 
 #System test 32:  Test enter report card route
 def test_enter_report_card_route(client):
-    response = client.get("/enter_report_card/")
-    assert response.status_code == 200
+    dummy_student = Student(
+        id="1",
+        first_name="Joe",
+        last_name="Smith",
+        grade="9",
+        current_school="Other",
+        matrix_languauge="0",
+        matrix_math="0",
+        matrix_reading="0",
+        matrix_languauge_retest="0",
+        matrix_math_retest="0",
+        matrix_reading_restest="0"
+    )
 
-    response = client.post("enter_report_card/")
-    response_data = response.get_data(as_text=True)
-    assert f"Return to Student Scores" in response_data
+    with patch("app.routes.fetch_updated_student_instance", return_value=dummy_student):
+        with client.session_transaction() as sess:
+            sess["current_id"] = "1"
 
+        response = client.get("/enter_report_card/")
+        assert response.status_code == 200
+
+        # Provide dummy form data for the POST:
+        data = {
+            "english": "A",
+            "math": "B",
+            "science": "A",
+            "social_studies": "B",
+            "language": "A"
+        }
+        response = client.post("/enter_report_card/", data=data)
+        response_data = response.get_data(as_text=True)
+        assert "Return to Student Scores" in response_data
