@@ -128,8 +128,10 @@ def enter_report_card():
         {"title": "Enter Report Card", "url": url_for('main.enter_report_card')}
     ]
 
-    if form.validate_on_submit():
-        service = ReportCardService(form, current_student)
+    if request.method == "POST":
+        form_data = request.form.to_dict()
+        print(form_data)
+        service = ReportCardService(form_data, current_student)
         result = service.process()
 
         session["current_id"] = current_student.id
