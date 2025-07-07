@@ -2,61 +2,110 @@
 <html>
 <head>
     <title>Enter Report Card Info</title>
-    <style>
-        .error-message {
-            color: #dc3545;
-            background-color: #f8d7da;
-            padding: 6px;
-            border-radius: 4px;
-            margin-top: 4px;
-            font-size: 0.9em;
-        }
-
-        .success-message {
-            background-color: #d1e7dd;
-            color: #0f5132;
-            padding: 10px;
-            border-radius: 4px;
-            margin-bottom: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
 </head>
+
 <body>
-    {% include '_breadcrumbs.html' %}
     <h2>Enter Report Card Info</h2>
     <h3>Student ID: {{ results.id }}</h3>
     <h3>Applying for Grade: {{ results.grade }}</h3>
     <h3>Current School: {{ results.current_school }}</h3>
 
     <form method="POST" action="/enter_report_card/">
-        {{ form.hidden_tag() }}
-
-        {% for field in [form.english, form.math, form.science, form.social_studies, form.language] %}
-            {{ field.label }}<br>
-            {{ field(class="form-control", required=field.name != 'language', pattern="^[A-Da-d][+-]?$|^F$", title="Enter A, B, C, D (with optional + or -), or F") }}<br>
-            {% for error in field.errors %}
-                <div class="error-message">{{ error }}</div>
-            {% endfor %}
-            <br>
-        {% endfor %}
+        <label for="schedule_option">Select Schedule Option:</label>
+        <select id="schedule_option" name="schedule_option" required>
+            <option value="">--Select Option--</option>
+            <option value="8_semester">8th grade semester/trimester</option>
+            <option value="8_quarter">8th grade quarters</option>
+            <option value="older_semester">Older than 8th grade semester/trimester</option>
+            <option value="older_quarter">Older than 8th grade quarters</option>
+        </select>
+        <div id="grade-inputs"></div>
 
         <button type="submit">Calculate GPA</button>
         <button type="button" onclick="location.href='/student_details/';">Return to Student Scores</button>
     </form>
 
     {% if gpa %}
-        <h3>Calculated GPA: {{ gpa }}</h3>
-        <h3>Calculated Matrix GPA: {{ matrix_gpa }}</h3>
+    <h3>Calculated GPA: {{ gpa }}</h3>
+    <h3>Calculated Matrix GPA: {{ matrix_gpa }}</h3>
     {% endif %}
 
     {% with messages = get_flashed_messages(with_categories=True) %}
-        {% if messages %}
-            {% for category, message in messages %}
-                <div class="{{ 'success-message' if category == 'success' else 'error-message' }}">
-                    {{ message }}
-                </div>
-            {% endfor %}
-        {% endif %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div class="{{ 'success-message' if category == 'success' else 'error-message' }}">
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
     {% endwith %}
+
+    <script>
+        document.getElementById("schedule_option").addEventListener("change", updateGradeInputs);
+
+        function updateGradeInputs() {
+            const option = document.getElementById("schedule_option").value;
+            const container = document.getElementById("grade-inputs");
+            container.innerHTML = "";
+
+            if (!option) {
+                return;
+            }
+
+            let subjects = ["english", "math", "science", "social_studies"];
+            let gradesPerSubject = 1;
+
+            if (option.startsWith("older")) {
+                subjects.push("language");
+            }
+
+            if (option.endsWith("quarter")) {
+                gradesPerSubject = 2;
+            }
+
+            // Create a table
+            const table = document.createElement("table");
+            table.className = "grade-table";
+
+            // Header Row
+            const headerRow = document.createElement("tr");
+            const emptyHeader = document.createElement("th");
+            headerRow.appendChild(emptyHeader);
+            for (let i = 1; i <= gradesPerSubject; i++) {
+                const th = document.createElement("th");
+                th.textContent = `Grade ${i}`;
+                headerRow.appendChild(th);
+            }
+            table.appendChild(headerRow);
+
+            // Data Rows
+            for (let subject of subjects) {
+                const row = document.createElement("tr");
+
+                const subjectCell = document.createElement("td");
+                subjectCell.textContent = subject.replace("_", " ").toUpperCase();
+                row.appendChild(subjectCell);
+
+                for (let i = 1; i <= gradesPerSubject; i++) {
+                    const cell = document.createElement("td");
+
+                    const input = document.createElement("input");
+                    input.type = "text";
+                    input.name = subject + (gradesPerSubject > 1 ? `_q${i}` : "");
+                    input.required = true;
+                    input.pattern = "^[A-Da-d][+-]?$|^F$";
+                    input.title = "Enter A, B, C, D (with optional + or -), or F";
+
+                    cell.appendChild(input);
+                    row.appendChild(cell);
+                }
+                table.appendChild(row);
+            }
+
+            container.appendChild(table);
+        }
+    </script>
+
 </body>
 </html>

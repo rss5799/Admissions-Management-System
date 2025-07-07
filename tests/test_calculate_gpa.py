@@ -1,6 +1,7 @@
 import pytest
 from app import create_app
 from app.services.matrix_calculator import calculate_gpa
+import csv
 
 expected_value = 3.2
 
@@ -37,6 +38,24 @@ def test_calculate_gpa_invalid():
 
 #System test 5: test empty data set advances to GPA page
 def test_calculate_gpa_post_missing_fields(client):
+    csv_file = "data/updated_schoolmint.csv"
+
+    # Write dummy student row
+    dummy_row = [
+        "1", "Joe", "Smith", "9", "Other",
+        "0", "0", "0", "0", "0", "0", "0",
+        "0", "0", "0", "0", "0", "0", "0",
+        "0", "0", "0"
+    ]
+
+    with open(csv_file, "a", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(dummy_row)
+
+    # Set session
+    with client.session_transaction() as sess:
+        sess["current_id"] = "1"
+
     data = {
         'english': '',
         'math': '',
@@ -44,6 +63,7 @@ def test_calculate_gpa_post_missing_fields(client):
         'social_studies': '',
         'language': ''
     }
+
     response = client.post("/enter_report_card/", data=data)
     assert response.status_code == 200
     assert b"GPA" in response.data

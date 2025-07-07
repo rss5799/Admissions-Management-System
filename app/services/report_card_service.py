@@ -4,8 +4,8 @@ from app.services.matrix_calculator import calculate_gpa, lookup_matrix_points
 from app.utils.csv_reader_writer import write_gpa_to_csv
 
 class ReportCardService:
-    def __init__(self, form, student):
-        self.form = form
+    def __init__(self, form_data, student):
+        self.form_data = form_data
         self.student = student
         self.matrix = self._load_matrix()
 
@@ -21,7 +21,11 @@ class ReportCardService:
         return int(val) if val not in ["", None] else 0
 
     def process(self):
-        grades = {f: getattr(self.form, f).data.upper() for f in self.form._fields}
+        grades = {
+            k: v.upper()
+            for k, v in self.form_data.items()
+            if v is not None and v.strip() != ""
+        }
         gpa = calculate_gpa(grades)
         matrix_gpa = lookup_matrix_points(gpa, self.matrix["gpa"])
 
