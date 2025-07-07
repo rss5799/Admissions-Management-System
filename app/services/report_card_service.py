@@ -21,7 +21,11 @@ class ReportCardService:
         return int(val) if val not in ["", None] else 0
 
     def process(self):
-        grades = {k: v.upper() for k, v in self.form_data.items()}
+        grades = {
+            k: v.upper()
+            for k, v in self.form_data.items()
+            if v is not None and v.strip() != ""
+        }
         gpa = calculate_gpa(grades)
         matrix_gpa = lookup_matrix_points(gpa, self.matrix["gpa"])
 
