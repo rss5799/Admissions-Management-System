@@ -25,12 +25,35 @@ def test_calculate_gpa_post(client):
 
     # Write dummy student row
     dummy_row = [
-        "1", "Joe", "Smith", "9", "Other", 
-        "0", "0", "0", "0", "0", "0", "0",
-        "0", "0", "0", "0", "0", "0", "0", 
-        "0", "0", "0"
-    ]
-
+    "Joe",              # fname
+    "Smith",            # lname
+    "1",                # id
+    "2005-01-01",       # dob
+    "9",                # grade
+    "0",                # gpa
+    "0",                # matrix_gpa
+    "0",                # language_test_scores
+    "0",                # reading_test_score
+    "0",                # math_test_scores
+    "0",                # total_points
+    "0",                # matrix_languauge
+    "0",                # matrix_math
+    "0",                # matrix_reading
+    "",                 # status
+    "0",                # matrix_languauge_retest
+    "0",                # matrix_math_retest
+    "0",                # matrix_reading_restest
+    "0",                # total_points_retest
+    "",                 # updated_at
+    "",                 # guardian1_email
+    "",                 # guardian2_email
+    "0",                # deliver_test_accomodation_approved
+    "",                 # test_date_sign_up
+    "Other",            # current_school
+    "0",                # language_test_scores2
+    "0",                # reading_test_score2
+    "0"                 # math_test_scores2
+]
     with open(csv_file, "a", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(dummy_row)
@@ -86,19 +109,33 @@ def test_home_route(client):
 def test_enter_report_card_route(client):
     dummy_student = Student(
         id="1",
-        first_name="Joe",
-        last_name="Smith",
-        grade="9",
-        current_school="Other",
+        gpa="0",
+        matrix_gpa="0",
+        language_test_scores="0",
+        reading_test_score="0",
+        math_test_scores="0",
+        total_points="0",
         matrix_languauge="0",
         matrix_math="0",
         matrix_reading="0",
+        status="",
         matrix_languauge_retest="0",
         matrix_math_retest="0",
-        matrix_reading_restest="0"
+        matrix_reading_restest="0",
+        total_points_retest="0",
+        updated_at="",
+        guardian1_email="",
+        guardian2_email="",
+        grade="9",
+        deliver_test_accomodation_approved="",
+        test_date_sign_up="",
+        current_school="Other",
+        language_test_scores2="0",
+        reading_test_score2="0",
+        math_test_scores2="0"
     )
 
-    with patch("app.routes.fetch_updated_student_instance", return_value=dummy_student):
+    with patch("app.routes.retrieve_current_student", return_value=dummy_student):
         with client.session_transaction() as sess:
             sess["current_id"] = "1"
 
