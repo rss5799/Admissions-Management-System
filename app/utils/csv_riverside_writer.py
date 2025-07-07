@@ -131,15 +131,9 @@ def combine_data(first_file_path: str, second_file_path: str):
 
     for index, row in merged_results.iterrows():
         for col_name, value in row.items():
-            if(isinstance(value, float)):
+            if(col_name != 'gpa' and isinstance(value, float)):
                 value = int(value)
                 merged_results.loc[index, col_name] = value
     merged_results.to_csv(first_file_path, columns = headers)
 
     return counter
-
-
-
-
-
-
