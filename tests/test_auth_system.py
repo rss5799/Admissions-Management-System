@@ -36,7 +36,7 @@ def test_login_with_valid_credentials():
 
 
 
-#Unit test 2 lol is this even a test?  I mean it asserts that it doesn't work when you use invalid things
+#Unit test 2 Test invalid login
 def test_login_with_invalid_credentials():
     try:
         user = auth.sign_in_with_email_and_password(INVALID_EMAIL, INVALID_PASSWORD)
