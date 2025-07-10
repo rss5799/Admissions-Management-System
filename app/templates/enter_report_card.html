@@ -15,10 +15,12 @@
         <label for="schedule_option">Select Schedule Option:</label>
         <select id="schedule_option" name="schedule_option" required>
             <option value="">--Select Option--</option>
-            <option value="8_semester">8th grade semester/trimester</option>
-            <option value="8_quarter">8th grade quarters</option>
-            <option value="older_semester">Older than 8th grade semester/trimester</option>
-            <option value="older_quarter">Older than 8th grade quarters</option>
+            <option value="9_S">9th grade semester/trimester</option>
+            <option value="9_Q">9th grade quarters</option>
+            <option value="10_S">10th grade semester/trimester</option>
+            <option value="10_Q">10th grade quarters</option>
+            <option value="11_S">11th grade semester/trimester</option>
+            <option value="11_Q">11th grade quarters</option>
         </select>
         <div id="grade-inputs"></div>
 
@@ -56,12 +58,35 @@
             let subjects = ["english", "math", "science", "social_studies"];
             let gradesPerSubject = 1;
 
-            if (option.startsWith("older")) {
-                subjects.push("language");
-            }
-
-            if (option.endsWith("quarter")) {
-                gradesPerSubject = 2;
+            switch (option) {
+                case "9_S":
+                    gradesPerSubject = 1;
+                    headerLabels = ["8th 1st semester"];
+                    break;
+                case "10_S":
+                    gradesPerSubject = 1;
+                    headerLabels = ["9th 1st semester"];
+                    break;
+                case "11_S":
+                    gradesPerSubject = 3;
+                    headerLabels = ["9th 1st semester", "9th 2nd semester", "10th 1st semester"];
+                    break;
+                case "9_Q":
+                    gradesPerSubject = 2;
+                    headerLabels = ["8th 1st quarter", "8th 2nd quarter"];
+                    break;
+                case "10_Q":
+                    gradesPerSubject = 2;
+                    subjects.push("language");
+                    headerLabels = ["9th 1st quarter", "9th 2nd quarter"];
+                    break;
+                case "11_Q":
+                    gradesPerSubject = 6;
+                    subjects.push("language");
+                    headerLabels = ["9th 1st quarter", "9th 2nd quarter", "9th 3rd quarter", "9th 4th quarter", "10th 1st quarter", "10th 2nd quarter"];
+                    break;
+                default:
+                    alert("Please select a valid schedule option.");
             }
 
             // Create a table
@@ -72,9 +97,9 @@
             const headerRow = document.createElement("tr");
             const emptyHeader = document.createElement("th");
             headerRow.appendChild(emptyHeader);
-            for (let i = 1; i <= gradesPerSubject; i++) {
+            for (let label of headerLabels) {
                 const th = document.createElement("th");
-                th.textContent = `Grade ${i}`;
+                th.textContent = label;
                 headerRow.appendChild(th);
             }
             table.appendChild(headerRow);
