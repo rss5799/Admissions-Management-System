@@ -93,11 +93,18 @@ def menu():
 #search for a student here
 @bp.route("/point_inputs/")
 def point_inputs():
+    results = []
     breadcrumbs = [
         {"title": "Main Menu", "url": url_for('main.menu')},
         {"title": "Search Students", "url": url_for('main.point_inputs')}
     ]
-    return render_template("point_inputs.html", breadcrumbs=breadcrumbs)
+    schoolmint_data = ('data/updated_schoolmint.csv')
+    with open(schoolmint_data, 'r') as file:
+        reader = csv.reader(file)
+        for row in reader:
+            results.append((row))
+    print(results)
+    return render_template("point_inputs.html", breadcrumbs=breadcrumbs, results = results)
 
 #see individual student deatils after search
 @bp.route("/student_details/", methods = ['GET'])
