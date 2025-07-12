@@ -1,10 +1,11 @@
 import csv
 from app.models import student
+from app.utils.helpers import resource_path
 
 
 def fetch_updated_student_instance(student_id):
-    original_schoolmint_data = ('data/updated_schoolmint.csv')
-    with open(original_schoolmint_data, 'r') as file:
+    original_schoolmint_data = resource_path('data/updated_schoolmint.csv')
+    with open(original_schoolmint_data, 'r', newline='', encoding='utf-8') as file:
         reader = csv.reader(file)
         header = next(reader)
         for row in reader:
@@ -42,9 +43,9 @@ def fetch_updated_student_instance(student_id):
 
 
 def write_gpa_to_csv(student_id, gpa, matrix_gpa, total_points, total_points_retest):
-    original_schoolmint_data = ('data/updated_schoolmint.csv')
+    original_schoolmint_data = resource_path('data/updated_schoolmint.csv')
     rows = []
-    with open(original_schoolmint_data, 'r') as file:
+    with open(original_schoolmint_data, 'r', newline='', encoding='utf-8') as file:
         reader = csv.DictReader(file)
         for row in reader:
             rows.append(row)
@@ -55,8 +56,8 @@ def write_gpa_to_csv(student_id, gpa, matrix_gpa, total_points, total_points_ret
                 row['total_points_retest'] = total_points_retest
  
 
-    with open(original_schoolmint_data, 'w', newline = '') as file:
-        writer = csv.DictWriter(file, fieldnames = reader.fieldnames)    
+    with open(original_schoolmint_data, 'w', newline='', encoding='utf-8') as file:
+        writer = csv.DictWriter(file, fieldnames=reader.fieldnames)
         writer.writeheader()
         writer.writerows(rows)
                 
