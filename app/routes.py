@@ -103,7 +103,6 @@ def point_inputs():
         reader = csv.reader(file)
         for row in reader:
             results.append((row))
-    print(results)
     return render_template("point_inputs.html", breadcrumbs=breadcrumbs, results = results)
 
 #see individual student deatils after search
@@ -120,7 +119,9 @@ def student_details():
             session['current_id'] = current_student.id
             return render_template("student_details.html", results = current_student, breadcrumbs=breadcrumbs)
         else:
-            return render_template("point_inputs.html", results = "No records for student", breadcrumbs=breadcrumbs)
+            flash("ID not found", 'noStudent')
+            return redirect(url_for('main.point_inputs'))
+
     else:
         breadcrumbs = [
             {"title": "Main Menu", "url": url_for('main.menu')},

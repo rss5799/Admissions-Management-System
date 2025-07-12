@@ -36,14 +36,13 @@ def test_search_for_student():
 #Unit test 3: Assert empty input returns a "no records" result
 def test_student_search_no_param(client):
     response = client.get("/student_details/")
-    assert response.status_code == 200
-    assert b"No records for student" in response.data
+    assert response.status_code == 302
+
 
 #Unit test 4:  Assert invalid input returns a "no records" result
 def test_student_search_invalid_id(client):
     response = client.get("/student_details/?id_query=NOT_A_REAL_ID")
-    assert response.status_code == 200
-    assert b"No records for student" in response.data
+    assert response.status_code == 302
 
 
 #System test 2: Ensure student details load when valid ID is queried

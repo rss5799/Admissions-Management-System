@@ -35,6 +35,21 @@
     <button>Search</button>
     </form>
 
+    <div class="flash-message">
+        <div class="msg-wrapper">
+            {% with messages=get_flashed_messages(with_categories=true) %} 
+                {% if messages %} 
+                    {% for category,message in messages %}
+                    <p class="{{category}} message">{{message}}</p>
+                    {% endfor %} 
+                {% endif %} 
+            {% endwith %}
+        </div>
+    </div>
+
+
+
+
     <h1>Student Data</h1>
     <div class = "scrollable-table-container">
         <table>
