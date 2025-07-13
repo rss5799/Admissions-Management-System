@@ -53,6 +53,7 @@ def test_calculate_gpa_post(client):
     "0",                # language_test_scores2
     "0",                # reading_test_score2
     "0"                 # math_test_scores2
+    #id,matrix_gpa,language_test_scores,reading_test_score,math_test_scores,total_points,matrix_languauge,matrix_math,matrix_reading,status,matrix_languauge_retest,matrix_math_retest,matrix_reading_restest,total_points_retest,updated_at,guardian1_email,guardian2_email,grade,deliver_test_accomodation_approved,test_date_sign_up,current_school,gpa,language_test_scores2,reading_test_score2,math_test_scores2
 ]
     with open(csv_file, "a", newline="") as f:
         writer = csv.writer(f)
@@ -77,8 +78,9 @@ def test_calculate_gpa_post(client):
 #System test 27:  Test student details route (invalid query)
 def test_student_search(client):
     response = client.get("/student_details/?id_query=12345")
-    assert response.status_code == 200
-    assert b"No records for student" in response.data
+    
+    assert response.status_code == 302
+
 
 
 #System test 28:  Test invalid route

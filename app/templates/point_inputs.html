@@ -1,7 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Flask App</title>
+    <style>
+        .scrollable-table-container{
+            max-height:400px;
+            overflow-y: scroll;
+            border:1px solid #ccc;
+        }
+        table{
+            width:100%;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            position: sticky;
+            top:0;
+        }
+    </style>
 </head>
 <body>
     {% include '_breadcrumbs.html' %}
@@ -11,8 +33,43 @@
     <form action="/student_details", method = "GET">
     <input type="search" id="site-search" name="id_query", placeholder = "Enter Student ID" />
     <button>Search</button>
-    <p>{{ results }}</p>
     </form>
 
+    <div class="flash-message">
+        <div class="msg-wrapper">
+            {% with messages=get_flashed_messages(with_categories=true) %} 
+                {% if messages %} 
+                    {% for category,message in messages %}
+                    <p class="{{category}} message">{{message}}</p>
+                    {% endfor %} 
+                {% endif %} 
+            {% endwith %}
+        </div>
+    </div>
+
+
+
+
+    <h1>Student Data</h1>
+    <div class = "scrollable-table-container">
+        <table>
+            <thead>
+                <tr>
+                    {% for header in results[0] %}
+                        <th>{{ header }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in results[1:] %}
+                    <tr>
+                        {% for cell in row %}
+                            <td>{{ cell }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
