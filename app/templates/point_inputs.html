@@ -66,7 +66,9 @@
                         {% if header == 'id' %}
                             <td><a href ="{{ url_for('main.student_details', id_query = record[header])}}">{{ record[header] }}</a></td>
                         {% else %}
-                            <td>{{ record[header] }}</td>
+                            {% if record[header] != 'nan' %}
+                                <td>{{ record[header] }}</td>
+                            {% endif %}
                         {% endif %}
                     {% endfor %}
                 </tr>

@@ -99,6 +99,12 @@ def point_inputs():
         {"title": "Search Students", "url": url_for('main.point_inputs')}
     ]
     schoolmint_data = pd.read_csv('data/updated_schoolmint.csv')
+    schoolmint_data = schoolmint_data.fillna('')
+    for index, row in schoolmint_data.iterrows():
+        for col_name, value in row.items():
+            if(col_name != 'gpa' and isinstance(value, float)):
+                value = int(value)
+                schoolmint_data.loc[index, col_name] = value
     records = schoolmint_data.to_dict(orient='records')
     return render_template("point_inputs.html", breadcrumbs=breadcrumbs, headers = schoolmint_data.columns, records = records)
 
