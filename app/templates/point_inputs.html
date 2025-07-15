@@ -49,24 +49,27 @@
 
 
 
-
-    <h1>Student Data</h1>
+<h1>Student Data</h1>
     <div class = "scrollable-table-container">
-        <table>
+        <table id = table>
             <thead>
                 <tr>
-                    {% for header in results[0] %}
+                    {% for header in headers %}
                         <th>{{ header }}</th>
                     {% endfor %}
                 </tr>
             </thead>
             <tbody>
-                {% for row in results[1:] %}
-                    <tr>
-                        {% for cell in row %}
-                            <td>{{ cell }}</td>
-                        {% endfor %}
-                    </tr>
+                {% for record in records %}
+                <tr>                 
+                    {% for header in headers %}
+                        {% if header == 'id' %}
+                            <td><a href ="{{ url_for('main.student_details', id_query = record[header])}}">{{ record[header] }}</a></td>
+                        {% else %}
+                            <td>{{ record[header] }}</td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
                 {% endfor %}
             </tbody>
         </table>

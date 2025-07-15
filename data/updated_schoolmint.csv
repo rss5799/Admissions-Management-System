@@ -27,7 +27,7 @@ fname,lname,id,dob,grade,matrix_gpa,language_test_scores,reading_test_score,math
 ,,26,2011-01-18,9,30,88,86,71,95,25,16,24,Eligible,,,,,2024-10-02 13:48:43,,,,November 16 2024,Mount Carmel Academy,3.66,,,
 ,,27,2009-07-14,10,,,,,,,,,In Processing,,,,,2024-10-01 19:04:33,,,,January 18 2025,Other,,,,
 ,,28,2010-11-12,9,30,79,77,65,82,20,13,19,Eligible,19,18,21,88,2024-10-01 8:35:41,,,,March 22 2025 (No-rest option),St. Paul's Episcopal School,3.5,77,81,74
-,,29,2011-02-04,9,30,86,99,96,113,24,29,30,Eligible,,,,,2024-10-01 8:28:25,,,,November 16 2024,Edward Hynes Lakeview,4,,,
+,,29,2011-02-04,9,27,86,99,96,110,24,29,30,Eligible,,,,27,2024-10-01 8:28:25,,,,November 16 2024,Edward Hynes Lakeview,3.25,,,
 ,,30,2011-03-29,9,30,83,98,96,111,22,29,30,Eligible,,,,,2025-04-09 20:06:47,,,,November 16 2024,Audubon Uptown Montessori and French,4,,,
 ,,31,2010-10-05,9,30,88,94,85,106,25,23,28,Eligible,,,,,2024-11-05 14:44:47,,,,January 18 2025,St. George's Episcopal School,3.75,,,
 ,,32,2011-03-18,9,30,76,99,99,109,19,30,30,Eligible,,,,,2024-10-06 13:38:01,,,,January 18 2025,Lake Forest Elementary Charter School,3.88,,,
@@ -75,7 +75,7 @@ fname,lname,id,dob,grade,matrix_gpa,language_test_scores,reading_test_score,math
 ,,74,2010-10-22,9,,61,92,77,57,11,19,27,In Processing,8,15,26,49,2024-10-01 9:44:07,,,,February 15 2025 (No-rest option),International School of Louisiana,,54,90,68
 ,,75,2009-09-12,11,,79,78,82,62,20,22,20,In Processing,,,,,2024-10-01 9:49:47,,,,March 22 2025 (No-rest option),Other,,,,
 ,,76,2011-06-22,9,30,88,85,69,93,25,15,23,Eligible,,,,,2024-10-01 10:01:21,,,,November 16 2024,St. Andrew's Episcopal School,4,,,
-,,77,2011-08-22,10,,98,94,76,77,30,19,28,In Processing,,,,,2024-10-01 9:59:18,,,,April 26 2025 (No-rest option),Other,,,,
+,,77,2011-08-22,10,25,98,94,76,102,30,19,28,In Processing,,,,25,2024-10-01 9:59:18,,,,April 26 2025 (No-rest option),Other,3.0,,,
 ,,78,2011-07-08,9,,54,83,71,46,8,16,22,In Processing,14,21,17,52,2024-10-01 10:22:35,,,,March 22 2025 (No-rest option),Bricolage Academy,,66,72,80
 ,,79,2010-12-09,9,30,99,99,99,120,30,30,30,Eligible,,,,,2024-10-01 10:29:55,,,,November 16 2024,Lake Forest Elementary Charter School,4,,,
 ,,80,2010-12-07,9,30,61,99,78,91,11,20,30,Eligible,,,,,2024-10-01 10:40:04,,,,December 14 2024,Audubon Uptown Montessori and French,3.75,,,
