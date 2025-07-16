@@ -89,8 +89,8 @@ def test_insert_and_read_student():
 
         dummy_row = ["" for _ in header]
         dummy_row[header.index("id")] = TEST_ID
-        dummy_row[header.index("first")] = TEST_FIRST
-        dummy_row[header.index("last")] = TEST_LAST
+        dummy_row[header.index("fname")] = TEST_FIRST
+        dummy_row[header.index("lname")] = TEST_LAST
 
         with open(csv_file, "a", newline="") as f:
             writer = csv.writer(f)
@@ -99,10 +99,10 @@ def test_insert_and_read_student():
     student = fetch_updated_student_instance(TEST_ID)
     print("FETCHED STUDENT:", student)
     assert student != 0
-    assert hasattr(student, "first")
-    assert hasattr(student, "last")
-    assert student.first == TEST_FIRST
-    assert student.last == TEST_LAST
+    assert hasattr(student, "fname")
+    assert hasattr(student, "lname")
+    assert student.fname == TEST_FIRST
+    assert student.lname == TEST_LAST
 
 
 
