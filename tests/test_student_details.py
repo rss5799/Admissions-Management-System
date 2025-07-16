@@ -4,6 +4,10 @@ from app.utils.csv_reader_writer import fetch_updated_student_instance
 import random
 from app import create_app
 
+TEST_ID = "999999"
+TEST_FIRST = "Testy"
+TEST_LAST = "McTestface"
+
 @pytest.fixture
 def client():
     app = create_app()
@@ -63,6 +67,51 @@ def test_student_search_valid_id(client):
         id_to_test = random_value
         response = client.get(f"/student_details/?id_query={id_to_test}")
         assert b"Student Details" in response.data
+
+@pytest.fixture
+def insert_test_student():
+    csv_file = "data/updated_schoolmint.csv"
+    dummy_row = [
+        TEST_ID, TEST_FIRST, TEST_LAST, "9", "Other",
+        "0", "0", "0", "0", "0", "0", "0",
+        "0", "0", "0", "0", "0", "0", "0",
+        "0", "0", "0"
+    ]
+
+    exists = False
+    with open(csv_file, newline="") as f:
+        reader = csv.reader(f)
+        header = next(reader)
+        for row in reader:
+            if row[0] == TEST_ID:
+                exists = True
+                break
+
+    if not exists:
+        with open(csv_file, "a", newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow(dummy_row)
+
+def test_student_details_page_loads(client, insert_test_student):
+    response = client.get(f"/student_details?id_query={TEST_ID}")
+    assert response.status_code == 200
+    assert b"Student Data" in response.data
+
+def test_student_details_table_headers(client, insert_test_student):
+    response = client.get(f"/student_details?id_query={TEST_ID}")
+    assert response.status_code == 200
+    for header in [b"id", b"first_name", b"last_name"]:
+        assert header in response.data
+
+def test_student_details_shows_data(client, insert_test_student):
+    response = client.get(f"/student_details?id_query={TEST_ID}")
+    assert response.status_code == 200
+    assert TEST_ID.encode() in response.data
+    assert TEST_FIRST.encode() in response.data
+    assert TEST_LAST.encode() in response.data
+    assert b'<a href=' in response.data
+
+
 
 
 
