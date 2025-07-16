@@ -93,18 +93,18 @@ def insert_test_student():
             writer.writerow(dummy_row)
 
 def test_student_details_page_loads(client, insert_test_student):
-    response = client.get(f"/student_details?id_query={TEST_ID}")
+    response = client.get(f"/student_details/?id_query={TEST_ID}")
     assert response.status_code == 200
     assert b"Student Data" in response.data
 
 def test_student_details_table_headers(client, insert_test_student):
-    response = client.get(f"/student_details?id_query={TEST_ID}")
+    response = client.get(f"/student_details/?id_query={TEST_ID}")
     assert response.status_code == 200
     for header in [b"id", b"first_name", b"last_name"]:
         assert header in response.data
 
 def test_student_details_shows_data(client, insert_test_student):
-    response = client.get(f"/student_details?id_query={TEST_ID}")
+    response = client.get(f"/student_details/?id_query={TEST_ID}")
     assert response.status_code == 200
     assert TEST_ID.encode() in response.data
     assert TEST_FIRST.encode() in response.data
