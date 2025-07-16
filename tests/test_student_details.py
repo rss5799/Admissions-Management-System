@@ -71,7 +71,7 @@ def get_first_student():
     """
     Fetches first student from CSV file to use in tests.
     """
-    csv_file = "data/DummyDataComplete.csv"
+    csv_file = "../data/DummyDataComplete.csv"
     with open(csv_file, newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
