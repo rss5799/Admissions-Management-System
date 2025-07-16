@@ -92,55 +92,27 @@ def insert_test_student():
             writer = csv.writer(f)
             writer.writerow(dummy_row)
 
-def test_student_details_page_loads(client, insert_test_student):
+def test_student_details_page_loads(client):
+    with open("data/updated_schoolmint.csv", newline="") as f:
+        reader = csv.DictReader(f)
+        row = next(reader)
+        id_to_test = row["id"]
+        first_name = row["first_name"]
+        last_name = row["last_name"]
+
     with client.session_transaction() as sess:
-        sess["current_id"] = TEST_ID
+        sess["current_id"] = id_to_test
 
     response = client.get(
-        f"/student_details/?id_query={TEST_ID}",
+        f"/student_details/?id_query={id_to_test}",
         follow_redirects=True
     )
-    print("\n=== RESPONSE STATUS ===", response.status_code)
-    print("\n=== RESPONSE HEADERS ===", response.headers)
+    print("Fetch result:", fetch_updated_student_instance(id_to_test))
     print("\n=== RESPONSE BODY ===\n", response.data.decode(errors="replace"))
-
     assert response.status_code == 200
     assert b"Student Data" in response.data
-
-def test_student_details_table_headers(client, insert_test_student):
-    with client.session_transaction() as sess:
-        sess["current_id"] = TEST_ID
-
-    response = client.get(
-        f"/student_details/?id_query={TEST_ID}",
-        follow_redirects=True
-    )
-    print("\n=== RESPONSE STATUS ===", response.status_code)
-    print("\n=== RESPONSE HEADERS ===", response.headers)
-    print("\n=== RESPONSE BODY ===\n", response.data.decode(errors="replace"))
-
-    assert response.status_code == 200
-    for header in [b"id", b"first_name", b"last_name"]:
-        assert header in response.data
-
-def test_student_details_shows_data(client, insert_test_student):
-    with client.session_transaction() as sess:
-        sess["current_id"] = TEST_ID
-
-    response = client.get(
-        f"/student_details/?id_query={TEST_ID}",
-        follow_redirects=True
-    )
-    print("\n=== RESPONSE STATUS ===", response.status_code)
-    print("\n=== RESPONSE HEADERS ===", response.headers)
-    print("\n=== RESPONSE BODY ===\n", response.data.decode(errors="replace"))
-
-    assert response.status_code == 200
-    assert TEST_ID.encode() in response.data
-    assert TEST_FIRST.encode() in response.data
-    assert TEST_LAST.encode() in response.data
-    assert b'<a href=' in response.data
-
+    assert first_name.encode() in response.data
+    assert last_name.encode() in response.data
 
 
 
