@@ -6,6 +6,7 @@ import os
 from app.services.details_of_test_days import retrieve_unique_test_dates, retrieve_test_day_counts
 import pyrebase
 import csv
+import pandas as pd
 from app.utils.csv_riverside_writer import combine_data
 
 config = {
@@ -93,17 +94,19 @@ def menu():
 #search for a student here
 @bp.route("/point_inputs/")
 def point_inputs():
-    results = []
     breadcrumbs = [
         {"title": "Main Menu", "url": url_for('main.menu')},
         {"title": "Search Students", "url": url_for('main.point_inputs')}
     ]
-    schoolmint_data = ('data/updated_schoolmint.csv')
-    with open(schoolmint_data, 'r') as file:
-        reader = csv.reader(file)
-        for row in reader:
-            results.append((row))
-    return render_template("point_inputs.html", breadcrumbs=breadcrumbs, results = results)
+    schoolmint_data = pd.read_csv('data/updated_schoolmint.csv')
+    schoolmint_data = schoolmint_data.fillna('')
+    for index, row in schoolmint_data.iterrows():
+        for col_name, value in row.items():
+            if(col_name != 'gpa' and isinstance(value, float)):
+                value = int(value)
+                schoolmint_data.loc[index, col_name] = value
+    records = schoolmint_data.to_dict(orient='records')
+    return render_template("point_inputs.html", breadcrumbs=breadcrumbs, headers = schoolmint_data.columns, records = records)
 
 #see individual student deatils after search
 @bp.route("/student_details/", methods = ['GET'])
