@@ -36,7 +36,6 @@ def test_search_for_student():
         assert fetch_updated_student_instance('2/2') == 0
         assert fetch_updated_student_instance('a') == 0
 
-
 #Unit test 3: Assert empty input returns a "no records" result
 def test_student_search_no_param(client):
     response = client.get("/student_details/")
@@ -68,51 +67,64 @@ def test_student_search_valid_id(client):
         response = client.get(f"/student_details/?id_query={id_to_test}")
         assert b"Student Details" in response.data
 
-@pytest.fixture
-def insert_test_student():
-    csv_file = "data/updated_schoolmint.csv"
-    dummy_row = [
-        TEST_ID, TEST_FIRST, TEST_LAST, "9", "Other",
-        "0", "0", "0", "0", "0", "0", "0",
-        "0", "0", "0", "0", "0", "0", "0",
-        "0", "0", "0"
-    ]
-
-    exists = False
+def get_first_student():
+    """
+    Fetches first student from CSV file to use in tests.
+    """
+    csv_file = "data/DummyDataComplete.csv"
     with open(csv_file, newline="") as f:
-        reader = csv.reader(f)
-        header = next(reader)
+        reader = csv.DictReader(f)
         for row in reader:
-            if row[0] == TEST_ID:
-                exists = True
-                break
-
-    if not exists:
-        with open(csv_file, "a", newline="") as f:
-            writer = csv.writer(f)
-            writer.writerow(dummy_row)
+            if row["id"]:
+                return row["id"], row["first"], row["last"]
+    raise ValueError("No student found in test CSV!")
 
 def test_student_details_page_loads(client):
-    with open("data/updated_schoolmint.csv", newline="") as f:
-        reader = csv.DictReader(f)
-        row = next(reader)
-        id_to_test = row["id"]
-        first_name = row["first_name"]
-        last_name = row["last_name"]
+    student_id, first, last = get_first_student()
 
     with client.session_transaction() as sess:
-        sess["current_id"] = id_to_test
+        sess["current_id"] = student_id
 
     response = client.get(
-        f"/student_details/?id_query={id_to_test}",
+        f"/student_details/?id_query={student_id}",
         follow_redirects=True
     )
-    print("Fetch result:", fetch_updated_student_instance(id_to_test))
-    print("\n=== RESPONSE BODY ===\n", response.data.decode(errors="replace"))
+
     assert response.status_code == 200
     assert b"Student Data" in response.data
-    assert first_name.encode() in response.data
-    assert last_name.encode() in response.data
+
+def test_student_details_table_headers(client):
+    student_id, first, last = get_first_student()
+
+    with client.session_transaction() as sess:
+        sess["current_id"] = student_id
+
+    response = client.get(
+        f"/student_details/?id_query={student_id}",
+        follow_redirects=True
+    )
+
+    assert response.status_code == 200
+    for header in [b"id", b"first", b"last"]:
+        assert header in response.data
+
+def test_student_details_shows_data(client):
+    student_id, first, last = get_first_student()
+
+    with client.session_transaction() as sess:
+        sess["current_id"] = student_id
+
+    response = client.get(
+        f"/student_details/?id_query={student_id}",
+        follow_redirects=True
+    )
+
+    assert response.status_code == 200
+    assert student_id.encode() in response.data
+    assert first.encode() in response.data
+    assert last.encode() in response.data
+    assert b'<a href=' in response.data
+
 
 
 
