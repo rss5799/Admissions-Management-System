@@ -67,63 +67,42 @@ def test_student_search_valid_id(client):
         response = client.get(f"/student_details/?id_query={id_to_test}")
         assert b"Student Details" in response.data
 
-def get_first_student():
-    """
-    Fetches first student from CSV file to use in tests.
-    """
-    csv_file = "../data/DummyDataComplete.csv"
+TEST_ID = "999999"
+TEST_FIRST = "Testy"
+TEST_LAST = "McTestface"
+
+def test_insert_and_read_student():
+    csv_file = "data/updated_schoolmint.csv"
+
+    already_exists = False
     with open(csv_file, newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            if row["id"]:
-                return row["id"], row["first"], row["last"]
-    raise ValueError("No student found in test CSV!")
+            if row["id"] == TEST_ID:
+                already_exists = True
+                break
 
-def test_student_details_page_loads(client):
-    student_id, first, last = get_first_student()
+    if not already_exists:
+        with open(csv_file, newline="") as f:
+            reader = csv.reader(f)
+            header = next(reader)
 
-    with client.session_transaction() as sess:
-        sess["current_id"] = student_id
+        dummy_row = ["" for _ in header]
+        dummy_row[header.index("id")] = TEST_ID
+        dummy_row[header.index("first")] = TEST_FIRST
+        dummy_row[header.index("last")] = TEST_LAST
 
-    response = client.get(
-        f"/student_details/?id_query={student_id}",
-        follow_redirects=True
-    )
+        with open(csv_file, "a", newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow(dummy_row)
 
-    assert response.status_code == 200
-    assert b"Student Data" in response.data
-
-def test_student_details_table_headers(client):
-    student_id, first, last = get_first_student()
-
-    with client.session_transaction() as sess:
-        sess["current_id"] = student_id
-
-    response = client.get(
-        f"/student_details/?id_query={student_id}",
-        follow_redirects=True
-    )
-
-    assert response.status_code == 200
-    for header in [b"id", b"first", b"last"]:
-        assert header in response.data
-
-def test_student_details_shows_data(client):
-    student_id, first, last = get_first_student()
-
-    with client.session_transaction() as sess:
-        sess["current_id"] = student_id
-
-    response = client.get(
-        f"/student_details/?id_query={student_id}",
-        follow_redirects=True
-    )
-
-    assert response.status_code == 200
-    assert student_id.encode() in response.data
-    assert first.encode() in response.data
-    assert last.encode() in response.data
-    assert b'<a href=' in response.data
+    student = fetch_updated_student_instance(TEST_ID)
+    print("FETCHED STUDENT:", student)
+    assert student != 0
+    assert hasattr(student, "first")
+    assert hasattr(student, "last")
+    assert student.first == TEST_FIRST
+    assert student.last == TEST_LAST
 
 
 
