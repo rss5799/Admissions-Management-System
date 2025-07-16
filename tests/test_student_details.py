@@ -93,23 +93,54 @@ def insert_test_student():
             writer.writerow(dummy_row)
 
 def test_student_details_page_loads(client, insert_test_student):
-    response = client.get(f"/student_details/?id_query={TEST_ID}")
+    with client.session_transaction() as sess:
+        sess["current_id"] = TEST_ID
+
+    response = client.get(
+        f"/student_details/?id_query={TEST_ID}",
+        follow_redirects=True
+    )
+    print("\n=== RESPONSE STATUS ===", response.status_code)
+    print("\n=== RESPONSE HEADERS ===", response.headers)
+    print("\n=== RESPONSE BODY ===\n", response.data.decode(errors="replace"))
+
     assert response.status_code == 200
     assert b"Student Data" in response.data
 
 def test_student_details_table_headers(client, insert_test_student):
-    response = client.get(f"/student_details/?id_query={TEST_ID}")
+    with client.session_transaction() as sess:
+        sess["current_id"] = TEST_ID
+
+    response = client.get(
+        f"/student_details/?id_query={TEST_ID}",
+        follow_redirects=True
+    )
+    print("\n=== RESPONSE STATUS ===", response.status_code)
+    print("\n=== RESPONSE HEADERS ===", response.headers)
+    print("\n=== RESPONSE BODY ===\n", response.data.decode(errors="replace"))
+
     assert response.status_code == 200
     for header in [b"id", b"first_name", b"last_name"]:
         assert header in response.data
 
 def test_student_details_shows_data(client, insert_test_student):
-    response = client.get(f"/student_details/?id_query={TEST_ID}")
+    with client.session_transaction() as sess:
+        sess["current_id"] = TEST_ID
+
+    response = client.get(
+        f"/student_details/?id_query={TEST_ID}",
+        follow_redirects=True
+    )
+    print("\n=== RESPONSE STATUS ===", response.status_code)
+    print("\n=== RESPONSE HEADERS ===", response.headers)
+    print("\n=== RESPONSE BODY ===\n", response.data.decode(errors="replace"))
+
     assert response.status_code == 200
     assert TEST_ID.encode() in response.data
     assert TEST_FIRST.encode() in response.data
     assert TEST_LAST.encode() in response.data
     assert b'<a href=' in response.data
+
 
 
 
