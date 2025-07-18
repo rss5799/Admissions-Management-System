@@ -1,31 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Flask App</title>
-    <style>
-        .scrollable-table-container{
-            max-height:400px;
-            overflow-y: scroll;
-            border:1px solid #ccc;
-        }
-        table{
-            width:100%;
-            border-collapse: collapse;
-        }
-        th, td{
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-            position: sticky;
-            top:0;
-        }
-    </style>
-</head>
-<body>
     {% include '_breadcrumbs.html' %}
     <h2>Search Students</h2>    
     <label for="site-search">Search for Student by ID:</label>
@@ -47,34 +19,39 @@
         </div>
     </div>
 
+{% extends "base.html" %}   
 
+{% block content %}
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        {% for header in headers %}
+            <th>{{ header }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
 
-<h1>Student Data</h1>
-    <div class = "scrollable-table-container">
-        <table id = table>
-            <thead>
-                <tr>
-                    {% for header in headers %}
-                        <th>{{ header }}</th>
-                    {% endfor %}
-                </tr>
-            </thead>
-            <tbody>
-                {% for record in records %}
-                <tr>                 
-                    {% for header in headers %}
-                        {% if header == 'id' %}
-                            <td><a href ="{{ url_for('main.student_details', id_query = record[header])}}">{{ record[header] }}</a></td>
-                        {% else %}
-                            {% if record[header] != 'nan' %}
-                                <td>{{ record[header] }}</td>
-                            {% endif %}
-                        {% endif %}
-                    {% endfor %}
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
-</body>
-</html>
+    <tbody>
+        {% for record in records %}
+        <tr>                 
+            {% for header in headers %}
+                {% if header == 'id' %}
+                    <td><a href ="{{ url_for('main.student_details', id_query = record[header])}}">{{ record[header] }}</a></td>
+                {% else %}
+                    {% if record[header] != 'nan' %}
+                        <td>{{ record[header] }}</td>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+{% block scripts %}
+  <script>
+    $(document).ready(function () {
+      $('#data').DataTable();
+    });
+  </script>
+{% endblock %}
