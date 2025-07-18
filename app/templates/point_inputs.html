@@ -1,4 +1,72 @@
-<!DOCTYPE html>
+
+{% extends "base.html" %}    
+
+    <h2>Search Students</h2>    
+    <label for="site-search">Search for Student by ID:</label>
+
+    <form action="/student_details", method = "GET">
+    <input type="search" id="site-search" name="id_query", placeholder = "Enter Student ID" />
+    <button>Search</button>
+    </form>
+
+    <div class="flash-message">
+        <div class="msg-wrapper">
+            {% with messages=get_flashed_messages(with_categories=true) %} 
+                {% if messages %} 
+                    {% for category,message in messages %}
+                    <p class="{{category}} message">{{message}}</p>
+                    {% endfor %} 
+                {% endif %} 
+            {% endwith %}
+        </div>
+    </div>
+
+{% block content %}
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        {% for header in headers %}
+            <th>{{ header }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+
+    <tbody>
+        {% for record in records %}
+        <tr>                 
+            {% for header in headers %}
+                {% if header == 'id' %}
+                    <td><a href ="{{ url_for('main.student_details', id_query = record[header])}}">{{ record[header] }}</a></td>
+                {% else %}
+                    {% if record[header] != 'nan' %}
+                        <td>{{ record[header] }}</td>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+{% block scripts %}
+  <script>
+    $(document).ready(function () {
+      $('#data').DataTable();
+    });
+  </script>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -51,11 +119,11 @@
 
 <h1>Student Data</h1>
     <div class = "scrollable-table-container">
-        <table id = table>
+    <table id="data" class="table table-striped">
             <thead>
                 <tr>
                     {% for header in headers %}
-                        <th>{{ header }}</th>
+                         <th onclick="sortTable(this, '{{ header }}')">{{ header }}</th>
                     {% endfor %}
                 </tr>
             </thead>
@@ -76,5 +144,39 @@
             </tbody>
         </table>
     </div>
+    <script>
+
+        function sortTable(headerElement, columnName){
+            const table = document.getElementById('table');
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.rows);
+            const columnIndex = Array.from(headerElement.parentNode.children).indexOf(headerElement);
+
+            const isAscending = headerElement.classList.contains("asc");
+
+            rows.sort((a,b) =>{
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                if(!isNan(aText) && !isNaN(bText) && aText != '' && bText != ''){
+                    return isAscending ? parseFloat(aText) = parseFloat(bText) : parsFloat(bText) - parseFloat(aText);
+                } else {
+                    return isAscending? aText.localeCompare(bText) : bText.localeCompare(aText);
+                }
+            });
+
+            while (tbody.firstChild){
+                tbody.removeChild(tbody.firstChild);
+            }
+            rows.forEach(row => tbody.appendChild(row));
+
+            document.querySelectorAll("#table th").forEach(th => th.classList.remove("asc", "desc"));
+            if(isAscending){
+                headerElement.classList.add("desc");
+            } else{
+                headerElement.classList.add("asc");
+            }
+        }
+    </script>
 </body>
-</html>
+</html> -->
