@@ -46,6 +46,30 @@
     <script>
         document.getElementById("schedule_option").addEventListener("change", updateGradeInputs);
 
+        // Form validation so Tara stops yelling at me
+        document.querySelector("form").addEventListener("submit", function(event) {
+            const inputs = document.querySelectorAll("#grade-inputs input[type='text']");
+            let valid = true;
+            const gradePattern = /^[A-Da-d][+-]?$|^F$/;
+
+            inputs.forEach(input => {
+                input.setCustomValidity(""); // Reset previous messages
+                if (!input.value) {
+                    input.setCustomValidity("This field is required.");
+                    valid = false;
+                } else if (!gradePattern.test(input.value)) {
+                    input.setCustomValidity("Enter A, B, C, D, or F");
+                    valid = false;
+                }
+            });
+
+            if (!valid) {
+                event.preventDefault();
+                const firstInvalid = Array.from(inputs).find(input => !input.checkValidity());
+                if (firstInvalid) firstInvalid.reportValidity();
+            }
+        });
+
         function updateGradeInputs() {
             const option = document.getElementById("schedule_option").value;
             const container = document.getElementById("grade-inputs");
@@ -57,6 +81,7 @@
 
             let subjects = ["english", "math", "science", "social_studies"];
             let gradesPerSubject = 1;
+            let headerLabels = [];
 
             switch (option) {
                 case "9_S":
@@ -121,6 +146,17 @@
                     input.required = true;
                     input.pattern = "^[A-Da-d][+-]?$|^F$";
                     input.title = "Enter A, B, C, D (with optional + or -), or F";
+
+
+                    input.addEventListener("input", function() {
+                        if (!input.value) {
+                            input.setCustomValidity("This field is required.");
+                        } else if (!/^[A-Da-d][+-]?$|^F$/.test(input.value)) {
+                            input.setCustomValidity("Enter A, B, C, D, or F");
+                        } else {
+                            input.setCustomValidity("");
+                        }
+                    });
 
                     cell.appendChild(input);
                     row.appendChild(cell);
