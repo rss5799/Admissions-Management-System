@@ -7,6 +7,44 @@
     <button>Search</button>
     </form>
 
+    <!-- Filtering Form -->
+    <form method="get" action="{{ url_for('main.point_inputs') }}">
+      <div class="row mb-3">
+        <!-- Filter Field Dropdown -->
+        <div class="col-md-4">
+          <label for="filter_field">Filter by:</label>
+          <select class="form-control" name="filter_field" id="filter_field" onchange="this.form.submit()">
+            <option disabled {% if not filter_field %}selected{% endif %}>Select Filter</option>
+            <option value="grade" {% if filter_field == 'grade' %}selected{% endif %}>Grade</option>
+            <option value="status" {% if filter_field == 'status' %}selected{% endif %}>Status</option>
+            <option value="test_date_sign_up" {% if filter_field == 'test_date_sign_up' %}selected{% endif %}>Test Day</option>
+          </select>
+        </div>
+
+        <!-- Filter Value Dropdown (conditionally appears) -->
+        {% if filter_values %}
+        <div class="col-md-4">
+          <label for="filter_value">Select Value:</label>
+          <select class="form-control" name="filter_value" id="filter_value" onchange="this.form.submit()">
+            <option disabled>Select Value</option>
+            {% for v in filter_values %} 
+              <option value="{{ v }}" {% if request.args.get('filter_value', '').lower() == v.lower() %}selected{% endif %}>{{ v }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        {% endif %}
+        
+    <!-- Clear Filter Button -->
+      <div class="col-md-4 align-self-end">
+        <a href="{{ url_for('main.point_inputs') }}" class="btn btn-secondary">Clear Filters</a>
+      </div>
+    </form>
+
+    <!-- Show current filter -->
+    {% if filter_field and request.args.get('filter_value') %}
+      <p class="text-muted">Filtering by <strong>{{ filter_field|title }}</strong>: "{{ request.args.get('filter_value') }}"</p>
+    {% endif %}
+
     <div class="flash-message">
         <div class="msg-wrapper">
             {% with messages=get_flashed_messages(with_categories=true) %} 
