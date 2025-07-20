@@ -11,11 +11,10 @@ class DataFilter:
             return self.df, None
         if value is None:
             return self.df, self._get_unique_values(field)
-        
-        df_filtered = self.df[self.df[field] == value]
+        df_filtered = self.df[self.df[field].astype(str).str.title() == value.title()]
         return df_filtered, self._get_unique_values(field)
 
     def _get_unique_values(self, field):
         if field not in self.df.columns:
             return []
-        return sorted(self.df[field].dropna().astype(str).unique().tolist())
+        return sorted(self.df[field].dropna().astype(str).str.title().unique().tolist())
