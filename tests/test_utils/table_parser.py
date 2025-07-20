@@ -41,7 +41,7 @@ class AdvancedTableParser:
     def get_table_as_df(self):
         # Convert HTML table to pandas df
         df = self.get_all_data
-        return pd.
+        return df
         
     def get_headers(self):
         # Return cached headers if already computed
