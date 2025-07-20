@@ -8,6 +8,8 @@ import pyrebase
 import csv
 import pandas as pd
 from app.utils.csv_riverside_writer import combine_data
+from app.services.filtering import DataFilter
+from app.services.sorting import apply_sorting
 
 config = {
     'apiKey': "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg",
@@ -91,7 +93,50 @@ def landing():
 def menu():
     return render_template("menu.html", breadcrumbs=[{"title": "Main Menu", "url": url_for('main.menu')}])
 
-#search for a student here
+#search for student here (new points_inputs)
+@bp.route("/point_inputs/")
+def point_inputs():
+    breadcrumbs = [
+        {"title": "Main Menu", "url": url_for('main.menu')},
+        {"title": "Search Students", "url": url_for('main.point_inputs')}
+    ]
+
+    # New single line load csv and fill empties
+    schoolmint_data = pd.read_csv('data/updated_schoolmint.csv').fillna('')
+
+    # Handle filtering
+    filter_field = request.args.get("filter_field")
+    filter_value = request.args.get("filter_value")
+
+    # Normalize filter_field to df cols
+    if filter_field:
+        match = [col for col in schoolmint_data.columns if col.lower() == filter_field.lower()]
+        filter_field = match[0] if match else None
+
+    # Apply filtering
+    schoolmint_data, filter_values = DataFilter(schoolmint_data).apply(filter_field, filter_value)
+   
+    # Apply new reusable Sorting logic
+    schoolmint_data = apply_sorting(schoolmint_data)
+
+    # float -> int, except gpa
+    for index, row in schoolmint_data.iterrows():
+        for col_name, value in row.items():
+            if(col_name != 'gpa' and isinstance(value, float)):
+                value = int(value)
+                schoolmint_data.loc[index, col_name] = value
+    
+    records = schoolmint_data.to_dict(orient='records')
+    return render_template("point_inputs.html", 
+                           breadcrumbs=breadcrumbs, 
+                           headers = schoolmint_data.columns, 
+                           records = records, 
+                           filter_field=filter_field,
+                           filter_values=filter_values
+                           )
+
+#search for a student here (old point_inputs)
+'''
 @bp.route("/point_inputs/")
 def point_inputs():
     breadcrumbs = [
@@ -115,6 +160,7 @@ def point_inputs():
     
     records = schoolmint_data.to_dict(orient='records')
     return render_template("point_inputs.html", breadcrumbs=breadcrumbs, headers = schoolmint_data.columns, records = records)
+'''
 
 #see individual student deatils after search
 @bp.route("/student_details/", methods = ['GET'])
