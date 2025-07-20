@@ -8,8 +8,8 @@ import pyrebase
 import csv
 import pandas as pd
 from app.utils.csv_riverside_writer import combine_data
-from services.filtering import DataFilter
-from services.sorting import apply_sorting
+from app.services.filtering import DataFilter
+from app.services.sorting import apply_sorting
 
 config = {
     'apiKey': "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg",
