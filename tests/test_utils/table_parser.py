@@ -1,6 +1,7 @@
 import pandas as pd
 from bs4 import BeautifulSoup
 
+# Helper classes to assist in testing front-end html rendered table functionality on point_inputs.html page. 
 class TableParser:
     def __init__(self, html):
         self.soup = BeautifulSoup(html, "html.parser")
