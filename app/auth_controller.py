@@ -1,4 +1,3 @@
-#import pyrebase
 #I don't think we need anything here anymore but I didn't want to delete it in case we had to come back to it later for some reason
 # config = {
 #     'apiKey': "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg",
@@ -10,8 +9,6 @@
 #     'databaseURL' : '' 
 # }
 
-# firebase = pyrebase.initialize_app(config)
-# auth = firebase.auth()
 
 # FIREBASE_API_KEY = os.getenv("FIREBASE_API_KEY", "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg")  
 

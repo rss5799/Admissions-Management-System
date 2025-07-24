@@ -4,22 +4,12 @@ from app.forms.report_card import ReportCardForm
 from app.services.report_card_service import ReportCardService
 import os
 from app.services.details_of_test_days import retrieve_unique_test_dates, retrieve_test_day_counts
-import pyrebase
 import csv
 import pandas as pd
 from app.utils.csv_riverside_writer import combine_data
 from app.services.filtering import DataFilter
 from app.services.sorting import apply_sorting
 
-config = {
-    'apiKey': "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg",
-    'authDomain': "admissionsmanagementsystem.firebaseapp.com",
-    'projectId': "admissionsmanagementsystem",
-    'storageBucket': "admissionsmanagementsystem.firebasestorage.app",
-    'messagingSenderId': "178704031743",
-    'appId': "1:178704031743:web:f0773e4dfa6702049711ca",
-    'databaseURL' : '' 
-}
 
 UPLOAD_FOLDER = os.path.join(os.getcwd(), 'data')
 if not os.path.exists(UPLOAD_FOLDER):
@@ -27,12 +17,6 @@ if not os.path.exists(UPLOAD_FOLDER):
 TEMP_ORIGINAL_SM_DATA = os.path.join(UPLOAD_FOLDER, 'original_schoolmint.csv')
 schoolMint_csv = ('data/updated_schoolmint.csv')
 
-
-
-# schoolMint_original_csv = os.path.join(UPLOAD_FOLDER, 'DummyDataComplete.csv')
-# updated_df = os.path.join(UPLOAD_FOLDER, 'updated_student_data.csv')
-# CSV_DIR = "csv_files"
-# os.makedirs(CSV_DIR, exist_ok=True)
 
 bp = Blueprint('main', __name__)
 
@@ -65,16 +49,8 @@ def retrieve_current_student():
 @bp.route('/', methods={'GET', 'POST'})
 def index():
     if request.method == 'POST':
-        firebase = pyrebase.initialize_app(config)
-        auth = firebase.auth()
-        email = request.form.get('email')
-        password = request.form.get('password')
-        try:
-            user = auth.sign_in_with_email_and_password(email, password)
-            session['user'] = email
-            return render_template("landing.html", breadcrumbs=[{"title": "Landing", "url": url_for('main.landing')}])
-        except:
-            return render_template("home.html", results = "Invalid Login, please try again", breadcrumbs=[{"title": "Home", "url": url_for('main.index')}])
+        #TODO add logic to authenticate
+        return render_template("landing.html", breadcrumbs=[{"title": "Landing", "url": url_for('main.landing')}])
     return render_template("home.html", breadcrumbs=[{"title": "Home", "url": url_for('main.index')}])
 
 #logout page
