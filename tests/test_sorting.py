@@ -32,8 +32,6 @@ def test_sort_id_descending(client):
     assert response.status_code == 200
 
 def test_sort_school_ascending(client):
-    subprocess.Popen([sys.executable, 'app.py'])
-    time.sleep(2)
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(options=options)
     driver.get("http://127.0.0.1:5000/point_inputs/")
@@ -43,8 +41,6 @@ def test_sort_school_ascending(client):
     assert response.status_code == 200
 
 def test_sort_school_descending(client):
-    subprocess.Popen([sys.executable, 'app.py'])
-    time.sleep(2)
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(options=options)
     driver.get("http://127.0.0.1:5000/point_inputs/")
