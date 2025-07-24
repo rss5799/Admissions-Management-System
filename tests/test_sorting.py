@@ -2,6 +2,10 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service as ChromeService
+import subprocess
+import time
+import sys
 
 from app import create_app
 
@@ -15,11 +19,10 @@ def client():
     with app.test_client() as client:
         yield client
 
-def test_sort_id_descending(client): 
-    app = create_app()
-    app.testing = True
-    with app.test_client() as client:
-        yield client
+
+def test_sort_id_descending(client):
+    subprocess.Popen([sys.executable, 'app.py'])
+    time.sleep(2)
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(options=options)
     driver.get("http://127.0.0.1:5000/point_inputs/")
@@ -29,10 +32,8 @@ def test_sort_id_descending(client):
     assert response.status_code == 200
 
 def test_sort_school_ascending(client):
-    app = create_app()
-    app.testing = True
-    with app.test_client() as client:
-        yield client
+    subprocess.Popen([sys.executable, 'app.py'])
+    time.sleep(2)
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(options=options)
     driver.get("http://127.0.0.1:5000/point_inputs/")
@@ -42,10 +43,8 @@ def test_sort_school_ascending(client):
     assert response.status_code == 200
 
 def test_sort_school_descending(client):
-    app = create_app()
-    app.testing = True
-    with app.test_client() as client:
-        yield client
+    subprocess.Popen([sys.executable, 'app.py'])
+    time.sleep(2)
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(options=options)
     driver.get("http://127.0.0.1:5000/point_inputs/")
