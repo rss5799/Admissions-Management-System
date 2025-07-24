@@ -20,6 +20,9 @@ def client():
         yield client
 
 def test_sort_id_descending(client):
+    subprocess.Popen([sys.executable, 'app.py'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    time.sleep(5) 
+
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(options=options)
     driver.get("http://127.0.0.1:5000/point_inputs/")
