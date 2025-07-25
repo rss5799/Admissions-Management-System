@@ -11,7 +11,7 @@ from app.services.filtering import DataFilter
 from app.services.sorting import apply_sorting
 from app.models.User import User
 from app import db
-from flask_login import login_required, current_user
+from flask_login import login_required, logout_user
 
 
 
@@ -91,8 +91,10 @@ def signup():
 
 #logout page
 @bp.route('/logout')
+@login_required
 def logout():
-    return redirect('/')
+    logout_user()
+    return redirect(url_for('main.index'))
 
 #first page for all users
 @bp.route("/landing")
