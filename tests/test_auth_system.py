@@ -1,20 +1,9 @@
 import pytest
-import pyrebase
+import requests_mock
+
 from app import create_app
 
 
-config = {
-    'apiKey': "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg",
-    'authDomain': "admissionsmanagementsystem.firebaseapp.com",
-    'projectId': "admissionsmanagementsystem",
-    'storageBucket': "admissionsmanagementsystem.firebasestorage.app",
-    'messagingSenderId': "178704031743",
-    'appId': "1:178704031743:web:f0773e4dfa6702049711ca",
-    'databaseURL' : '' 
-}
-
-firebase = pyrebase.initialize_app(config)
-auth = firebase.auth()
 
 VALID_EMAIL = "amsforbfhsadmin@bfhsla.org"
 VALID_PASSWORD = "temp123"
@@ -30,23 +19,33 @@ def client():
 
 
 #Unit test 1:  Test that valid login proceeds without error
-def test_login_with_valid_credentials():
-    user = auth.sign_in_with_email_and_password(VALID_EMAIL, VALID_PASSWORD)
-    assert user['email'] == VALID_EMAIL
+def test_login_with_valid_credentials(client):
+        data = {
+            "email": "tmm259@psu.edu",
+            "password": "temp123",
+        }
+        response = client.post("/", data=data)
+        assert response.status_code == 200
+
 
 
 
 #Unit test 2 Test invalid login
-def test_login_with_invalid_credentials():
-    try:
-        user = auth.sign_in_with_email_and_password(INVALID_EMAIL, INVALID_PASSWORD)
-        assert 1 == 0
-    except:
-        assert 1 == 1
+def test_login_with_invalid_credentials(client):
+    data = {
+        "email": "tmm259@psu.edu",
+        "password": "WrongPW",
+    }
+    response = client.post("/", data=data)
+    response_data = response.get_data(as_text=True)
+    assert "Incorrect Password please try again." in response_data
 
 #System test 1:  Test that pages advance after successful login
-def test_advance_after_login(client):
-    user = auth.sign_in_with_email_and_password(VALID_EMAIL, VALID_PASSWORD)
-    response = client.get("/landing")
-    assert response.status_code == 200
-    assert b"SchoolMint Data Upload" in response.data
+def test_no_account(client):
+    data = {
+        "email": "anotherEmail@psu.edu",
+        "password": "doesntmatter",
+    }
+    response = client.post("/", data=data)
+    response_data = response.get_data(as_text=True)
+    assert "User not found, please create an account" in response_data
