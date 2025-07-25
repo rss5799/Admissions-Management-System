@@ -56,9 +56,7 @@ def index():
     if request.method == 'POST':
         email = request.form.get('email')
 
-
         user = User.query.filter_by(email=email).first()
-
         if not user:
             return render_template("home.html", breadcrumbs=[{"title": "Home", "url": url_for('main.index')}], results = "User not found, please create an account")
 

@@ -15,9 +15,13 @@
     <form action = '/' method = "POST">
         Email: <input type = 'text', name = 'email'><br><br>
         Password: <input type = 'passsord' name = 'password'><br><br>
-        <input type = 'submit'>
+        <button type="submit" name="login_btn" value = "Login">Login</button>
     </form>
+        <p>Don't have an account?  Create one!</p>
+        <br>
         <a href="/signup" style = "text-align:center"><button type="button">Create an Account</button></a>
+        <br>
+        <br>
         <p>{{ results }}</p>
 </body>
 </html>
