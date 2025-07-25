@@ -1078,3 +1078,5 @@ id,lname,fname,dob,grade,current_school,status,test_date_sign_up,deliver_test_ac
 1077,,,2011-06-11,9,Other,In Processing,,,,,,,,,,,,,,,,,,,2025-04-09 14:22:33,,
 1,Joe,Smith,9,Other,0,0,0,0,30,3.6,30,0,0,0,0,0,0,30,0,0,0,,,,,,
 Joe,Smith,1,2005-01-01,9,0,0,0,0,0,0,0,0,0,,0,0,0,0,,,,0,,Other,0,0,0
+Joe,Smith,1,2005-01-01,9,0,0,0,0,0,0,0,0,0,,0,0,0,0,,,,0,,Other,0,0,0
+Joe,Smith,1,2005-01-01,9,0,0,0,0,0,0,0,0,0,,0,0,0,0,,,,0,,Other,0,0,0

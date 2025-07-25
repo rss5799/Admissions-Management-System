@@ -101,11 +101,6 @@ def test_profile_route(client):
     assert response.status_code == 404
 
 
-# #System test 31: Test home route
-# def test_home_route(client):
-#     response = client.post("/")
-#     assert response.status_code == 200
-
 
 #System test 32:  Test enter report card route
 def test_enter_report_card_route(client):
