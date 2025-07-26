@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>LogIn</title>
+    <title>Create Your Account</title>
 </head>
 <body>
-    {% include '_breadcrumbs.html' %}
     <h1 style="text-align: center;">Admissions Management System</h1>
 <h4 style="text-align: center;">Developed for Benjamin Franklin High School</h4>
 <div style="text-align: center;">
@@ -12,16 +11,12 @@
     <br>
 </div>
 <br>
-    <form action = '/' method = "POST">
+    <form action = '/signup' method = "POST">
         Email: <input type = 'text', name = 'email'><br><br>
         Password: <input type = 'passsord' name = 'password'><br><br>
-        <button type="submit" name="login_btn" value = "Login">Login</button>
+        <input type = 'submit'>
     </form>
-        <p>Don't have an account?  Create one!</p>
-        <br>
-        <a href="/signup" style = "text-align:center"><button type="button">Create an Account</button></a>
-        <br>
-        <br>
         <p>{{ results }}</p>
+                <a href="/" style = "text-align:center"><button type="button">Take me to the Login Page</button></a>
 </body>
 </html>

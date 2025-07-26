@@ -9,6 +9,11 @@ import pandas as pd
 from app.utils.csv_riverside_writer import combine_data
 from app.services.filtering import DataFilter
 from app.services.sorting import apply_sorting
+from app.models.User import User
+from app import db
+from flask_login import login_required, logout_user
+
+
 
 
 UPLOAD_FOLDER = os.path.join(os.getcwd(), 'data')
@@ -49,15 +54,45 @@ def retrieve_current_student():
 @bp.route('/', methods={'GET', 'POST'})
 def index():
     if request.method == 'POST':
-        #TODO add logic to authenticate
-        return render_template("landing.html", breadcrumbs=[{"title": "Landing", "url": url_for('main.landing')}])
+        email = request.form.get('email')
+
+        user = User.query.filter_by(email=email).first()
+        if not user:
+            return render_template("home.html", breadcrumbs=[{"title": "Home", "url": url_for('main.index')}], results = "User not found, please create an account")
+
+        else:
+            password = request.form.get('password')
+            if user.password == password:
+                return render_template("landing.html", breadcrumbs=[{"title": "Landing", "url": url_for('main.landing')}])
+            else:
+                return render_template("home.html", breadcrumbs=[{"title": "Home", "url": url_for('main.index')}], results = "Incorrect Password please try again.")
+
     return render_template("home.html", breadcrumbs=[{"title": "Home", "url": url_for('main.index')}])
+
+@bp.route('/signup', methods = ['GET', 'POST'])
+def signup():
+    if request.method == 'GET':
+        return (render_template("signup.html"))
+    else:
+        email = request.form.get('email')
+        password = request.form.get('password')
+
+        user = User.query.filter_by(email=email).first()
+
+        if user:
+            return (render_template("signup.html", results = "Account already exists please return to the login page."))
+
+        new_user = User(email = email, password = password)
+        db.session.add(new_user)
+        db.session.commit()
+        return(render_template("home.html"))
 
 #logout page
 @bp.route('/logout')
+@login_required
 def logout():
-    session.pop('user')
-    return redirect('/')
+    logout_user()
+    return redirect(url_for('main.index'))
 
 #first page for all users
 @bp.route("/landing")
