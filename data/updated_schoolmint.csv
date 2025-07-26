@@ -53,7 +53,7 @@ id,lname,fname,dob,grade,current_school,status,test_date_sign_up,deliver_test_ac
 52,,,2010-01-21,10,Other,In Processing,December 14 2024,,45,,,90,26,52,7,62,12,,,,,,,,2024-10-01 06:25:58,,
 53,,,2011-04-28,9,The Willow School,Eligible,December 14 2024,,113,4.00,30,87,24,96,29,99,30,,,,,,,,2024-10-01 06:29:16,,
 54,,,2010-01-20,10,St. Augustine High School,In Processing,April 26 2025 (No-rest option),,0,,,,,,,,,,,,,,,,2024-10-01 06:32:02,,
-55,,,2011-06-21,9,Arthur Ashe Charter School,In Processing,March 22 2025 (No-rest option),,69,3.5,30,54,8,71,16,69,15,72,68,15,63,12,69,15,2024-10-01 06:41:01,,
+55,,,2011-06-21,9,Arthur Ashe Charter School,In Processing,March 22 2025 (No-rest option),,39,,,54,8,71,16,69,15,42,68,15,63,12,69,15,2024-10-01 06:41:01,,
 56,,,2011-09-07,9,Edward Hynes Lakeview,Eligible,November 16 2024,,88,3.00,25,69,15,92,27,81,21,,,,,,,,2024-10-01 06:35:48,,
 57,,,2011-02-28,9,Audubon Uptown Montessori and French,Eligible,November 16 2024,,110,3.75,30,78,20,98,30,99,30,,,,,,,,2024-10-01 06:43:20,,
 58,,,2011-03-02,9,Other,Eligible,November 16 2024,,113,4.00,30,94,28,93,27,94,28,,,,,,,,2024-10-01 07:19:51,,
