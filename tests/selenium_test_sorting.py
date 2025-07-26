@@ -3,10 +3,6 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service as ChromeService
-import subprocess
-import time
-import sys
-
 from app import create_app
 
 
@@ -19,10 +15,9 @@ def client():
     with app.test_client() as client:
         yield client
 
-def test_sort_id_descending(client):
-    subprocess.Popen([sys.executable, 'app.py'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    time.sleep(5) 
 
+
+def test_sort_id_descending(client):
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(options=options)
     driver.get("http://127.0.0.1:5000/point_inputs/")
