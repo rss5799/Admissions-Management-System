@@ -214,7 +214,6 @@ def enter_report_card():
 
     if request.method == "POST":
         form_data = request.form.to_dict()
-        print(form_data)
         service = ReportCardService(form_data, current_student)
         result = service.process()
 
