@@ -1,5 +1,5 @@
 id,lname,fname,dob,grade,current_school,status,test_date_sign_up,deliver_test_accomodation_approved,total_points,gpa,matrix_gpa,language_test_scores,matrix_languauge,math_test_scores,matrix_math,reading_test_score,matrix_reading,total_points_retest,language_test_scores2,matrix_languauge_retest,reading_test_score2,matrix_reading_restest,math_test_scores2,matrix_math_retest,updated_at,guardian1_email,guardian2_email
-1,,,2011-01-05,9,Other,In Processing,January 18 2025,,30,3.6,30,,,,,,,30,,,,,,,2025-01-10 09:36:05,,
+1,,,2011-01-05,9,Other,In Processing,January 18 2025,,,,,,,,,,,,,,,,,,2025-01-10 09:36:05,,
 2,,,2011-03-19,9,Trinity Episcopal School,Eligible,December 14 2024,,119,4.00,30,99,30,97,29,99,30,,,,,,,,2024-10-03 09:34:02,,
 3,,,2011-07-01,9,Edward Hynes Lakeview,In Processing,March 22 2025 (No-rest option),,15,,,55,8,31,1,50,6,22,44,3,64,13,50,6,2024-10-01 10:14:34,,
 4,,,2011-06-10,9,Edward Hynes Lakeview,In Processing,December 14 2024,,99,3.50,30,83,22,72,17,98,30,,,,,,,,2024-10-05 08:55:30,,
@@ -1076,7 +1076,3 @@ id,lname,fname,dob,grade,current_school,status,test_date_sign_up,deliver_test_ac
 1075,,,2011-01-24,9,Other,In Processing,May 24 2025 (Final Test Date),,,,,,,,,,,,,,,,,,2025-04-08 16:35:55,,
 1076,,,2010-08-16,10,Lycee Francais de la Nouvelle Orleans,In Processing,,,,,,,,,,,,,,,,,,,2025-04-09 13:42:06,,
 1077,,,2011-06-11,9,Other,In Processing,,,,,,,,,,,,,,,,,,,2025-04-09 14:22:33,,
-1,Joe,Smith,9,Other,0,0,0,0,30,3.6,30,0,0,0,0,0,0,30,0,0,0,,,,,,
-Joe,Smith,1,2005-01-01,9,0,0,0,0,0,0,0,0,0,,0,0,0,0,,,,0,,Other,0,0,0
-Joe,Smith,1,2005-01-01,9,0,0,0,0,0,0,0,0,0,,0,0,0,0,,,,0,,Other,0,0,0
-Joe,Smith,1,2005-01-01,9,0,0,0,0,0,0,0,0,0,,0,0,0,0,,,,0,,Other,0,0,0
