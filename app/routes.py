@@ -4,22 +4,17 @@ from app.forms.report_card import ReportCardForm
 from app.services.report_card_service import ReportCardService
 import os
 from app.services.details_of_test_days import retrieve_unique_test_dates, retrieve_test_day_counts
-import pyrebase
 import csv
 import pandas as pd
 from app.utils.csv_riverside_writer import combine_data
 from app.services.filtering import DataFilter
 from app.services.sorting import apply_sorting
+from app.models.User import User
+from app import db
+from flask_login import login_required, logout_user
 
-config = {
-    'apiKey': "AIzaSyDObAkxu03wa769hSlSaYkGb27Z1SJ95Fg",
-    'authDomain': "admissionsmanagementsystem.firebaseapp.com",
-    'projectId': "admissionsmanagementsystem",
-    'storageBucket': "admissionsmanagementsystem.firebasestorage.app",
-    'messagingSenderId': "178704031743",
-    'appId': "1:178704031743:web:f0773e4dfa6702049711ca",
-    'databaseURL' : '' 
-}
+
+
 
 UPLOAD_FOLDER = os.path.join(os.getcwd(), 'data')
 if not os.path.exists(UPLOAD_FOLDER):
@@ -27,12 +22,6 @@ if not os.path.exists(UPLOAD_FOLDER):
 TEMP_ORIGINAL_SM_DATA = os.path.join(UPLOAD_FOLDER, 'original_schoolmint.csv')
 schoolMint_csv = ('data/updated_schoolmint.csv')
 
-
-
-# schoolMint_original_csv = os.path.join(UPLOAD_FOLDER, 'DummyDataComplete.csv')
-# updated_df = os.path.join(UPLOAD_FOLDER, 'updated_student_data.csv')
-# CSV_DIR = "csv_files"
-# os.makedirs(CSV_DIR, exist_ok=True)
 
 bp = Blueprint('main', __name__)
 
@@ -65,23 +54,45 @@ def retrieve_current_student():
 @bp.route('/', methods={'GET', 'POST'})
 def index():
     if request.method == 'POST':
-        firebase = pyrebase.initialize_app(config)
-        auth = firebase.auth()
+        email = request.form.get('email')
+
+        user = User.query.filter_by(email=email).first()
+        if not user:
+            return render_template("home.html", breadcrumbs=[{"title": "Home", "url": url_for('main.index')}], results = "User not found, please create an account")
+
+        else:
+            password = request.form.get('password')
+            if user.password == password:
+                return render_template("landing.html", breadcrumbs=[{"title": "Landing", "url": url_for('main.landing')}])
+            else:
+                return render_template("home.html", breadcrumbs=[{"title": "Home", "url": url_for('main.index')}], results = "Incorrect Password please try again.")
+
+    return render_template("home.html", breadcrumbs=[{"title": "Home", "url": url_for('main.index')}])
+
+@bp.route('/signup', methods = ['GET', 'POST'])
+def signup():
+    if request.method == 'GET':
+        return (render_template("signup.html"))
+    else:
         email = request.form.get('email')
         password = request.form.get('password')
-        try:
-            user = auth.sign_in_with_email_and_password(email, password)
-            session['user'] = email
-            return render_template("landing.html", breadcrumbs=[{"title": "Landing", "url": url_for('main.landing')}])
-        except:
-            return render_template("home.html", results = "Invalid Login, please try again", breadcrumbs=[{"title": "Home", "url": url_for('main.index')}])
-    return render_template("home.html", breadcrumbs=[{"title": "Home", "url": url_for('main.index')}])
+
+        user = User.query.filter_by(email=email).first()
+
+        if user:
+            return (render_template("signup.html", results = "Account already exists please return to the login page."))
+
+        new_user = User(email = email, password = password)
+        db.session.add(new_user)
+        db.session.commit()
+        return(render_template("home.html"))
 
 #logout page
 @bp.route('/logout')
+@login_required
 def logout():
-    session.pop('user')
-    return redirect('/')
+    logout_user()
+    return redirect(url_for('main.index'))
 
 #first page for all users
 @bp.route("/landing")
