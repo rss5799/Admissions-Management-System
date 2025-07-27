@@ -11,7 +11,6 @@ def client():
     with app.test_client() as client:
         yield client
 
-
 #Unit Test 6:  Ensure updated student instance is fetched when input is valud
 def test_search_for_student():
     testing_csv = ('data/updated_schoolmint.csv')
@@ -64,6 +63,13 @@ def test_student_search_valid_id(client):
         response = client.get(f"/student_details/?id_query={id_to_test}")
         assert b"Student Details" in response.data
 
+def test_point_inputs_page_loads():
+    app = create_app()
+    app.testing = True
+    client = app.test_client()
+    response = client.get('/point_inputs/')
+    assert response.status_code == 200
+    assert b"Search Students" in response.data
 
 
 

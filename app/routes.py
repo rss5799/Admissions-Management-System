@@ -157,12 +157,6 @@ def point_inputs():
     schoolmint_data = pd.read_csv('data/updated_schoolmint.csv')
     schoolmint_data = schoolmint_data.fillna('')
 
-    sort_column = request.args.get('sort_by')
-    sort_order = request.args.get('order', 'asc')
-
-    if sort_column and sort_column in schoolmint_data.columns:
-        schoolmint_data = schoolmint_data.sort_values(by=sort_column, ascending=(sort_order=='asc'))
-
     for index, row in schoolmint_data.iterrows():
         for col_name, value in row.items():
             if(col_name != 'gpa' and isinstance(value, float)):
