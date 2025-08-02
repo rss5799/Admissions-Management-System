@@ -68,7 +68,7 @@ def test_calculate_gpa_post_missing_fields(client):
     assert response.status_code == 200
     assert b"GPA" in response.data
 
-#Unit test 10:  test no classes results in a gpa of 0
+#Unit test 5:  test no classes results in a gpa of 0
 def test_calculate_gpa_no_classes():
     grades = {}
     result = calculate_gpa(grades)

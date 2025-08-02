@@ -16,7 +16,7 @@ def client():
         yield client
 
 
-
+#Unit Test 23
 def test_sort_id_descending(client):
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(options=options)
@@ -26,6 +26,7 @@ def test_sort_id_descending(client):
     response = client.get("/point_inputs/")
     assert response.status_code == 200
 
+#Unit test 26
 def test_sort_school_ascending(client):
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(options=options)
@@ -35,6 +36,8 @@ def test_sort_school_ascending(client):
     response = client.get("/point_inputs/")
     assert response.status_code == 200
 
+
+#Unit test 27
 def test_sort_school_descending(client):
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(options=options)

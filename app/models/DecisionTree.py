@@ -10,8 +10,7 @@ class Node():
         self.threshold = threshold
         self.left = left
         self.right = right
-        self.var_red = var_red
-        
+        self.var_red = var_red        
         # for leaf node
         self.value = value
 

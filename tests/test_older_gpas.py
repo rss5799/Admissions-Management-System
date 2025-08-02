@@ -10,7 +10,7 @@ def client():
     with app.test_client() as client:
         yield client
 
-
+#Unit test 24
 def test_older_semester(client):
         response = client.get("/enter_report_card/")
         assert response.status_code == 200
