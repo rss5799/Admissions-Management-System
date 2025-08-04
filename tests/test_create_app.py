@@ -1,4 +1,4 @@
-#System test 24:  Assert app is created
+#System test:  Assert app is created
 def test_creating_app():
     from app import create_app
     app = create_app()

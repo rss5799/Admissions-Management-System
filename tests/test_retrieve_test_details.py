@@ -17,7 +17,7 @@ def test_retrieve_unique_test_dates():
     assert unique_tests[1] == 'March 5 2025'
 
 
-#Unit test 19:  Test that test day counts are accurate
+#Unit test 10:  Test that test day counts are accurate
 def test_retrieve_test_day_counts():
     checking_test = retrieve_test_day_counts('tests/SampleCsvsForTesting/schoolmintForPytest.csv', 'January 18 2025')
     assert checking_test.date == 'January 18 2025'

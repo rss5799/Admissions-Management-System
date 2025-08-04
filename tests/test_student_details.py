@@ -44,7 +44,7 @@ def test_student_search_invalid_id(client):
     assert response.status_code == 302
 
 
-#System test 2: Ensure student details load when valid ID is queried
+#System test 4: Ensure student details load when valid ID is queried
 def test_student_search_valid_id(client):
     testing_csv = ('data/updated_schoolmint.csv')
     ids = []
