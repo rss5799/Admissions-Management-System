@@ -34,7 +34,8 @@ def fetch_updated_student_instance(student_id):
                     current_school = row[header.index('current_school')],
                     language_test_scores2 = row[header.index('language_test_scores2')],
                     reading_test_score2 = 	row[header.index('reading_test_score2')],
-                    math_test_scores2 = row[header.index('math_test_scores2')]
+                    math_test_scores2 = row[header.index('math_test_scores2')],
+                    pred_gpa = row[header.index('Predicted Unweighted GPA')]
                 )
                 return current_student
     return(0)

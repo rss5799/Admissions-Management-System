@@ -29,6 +29,9 @@ def update_csv_with_prediction_scores(student_data_csv):
     #convert csv to dataframe
     data_frame_for_pred = pd.read_csv(student_data_csv).fillna('')
 
+    data_frame_for_pred = data_frame_for_pred[data_frame_for_pred['status'] == 'Eligible']
+
+
     data_frame_for_pred["ad_lang"] = ""
     data_frame_for_pred["ad_math"] = ""
     data_frame_for_pred["ad_reading"] = ""
