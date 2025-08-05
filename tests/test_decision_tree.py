@@ -18,13 +18,13 @@ def client():
         yield client
 
 
-#Unit test 28
+#Unit test 32
 def test_tree_instantiates():
     regressor = DecisionTreeRegressor()
     assert regressor is not None
 
 
-#Unit test 29
+#Unit test 33
 def test_tree_mse_success_criteria():
     data = pd.read_csv('data/LongitudinalData.csv')
     data = data.fillna('')
@@ -45,7 +45,7 @@ def test_tree_mse_success_criteria():
     assert np.sqrt(mean_squared_error(Y_test, Y_pred)) is not None
     assert np.sqrt(mean_squared_error(Y_test, Y_pred)) < 0.75
 
-#Unit test 30
+#Unit test 34
 def test_tree_nodes_populate():
     data = pd.read_csv('data/LongitudinalData.csv')
     data = data.fillna('')
@@ -68,7 +68,7 @@ def test_tree_nodes_populate():
     assert data is not ''
 
 
-#Unit test 31
+#Unit test 35
 def test_predicted_gpa_calculated():
     #make a copy of schoolmint for testing
     original_schoolmint = ('tests/SampleCsvsForTesting/schoolmintForPytest.csv')
@@ -96,12 +96,12 @@ def test_predicted_gpa_calculated():
             assert df.loc[index, "Predicted Unweighted GPA"] == " "
 
 
-#System test 27
+#System test 29
 def test_pred_gpa_displayed_on_hlsv(client):
     response = client.get("/point_inputs/")
     assert b"Predicted Unweighted GPA" in response.data
 
-#System test 28
+#System test 30
 def test_pred_gpa_displayed_on_student_profile(client):
     df = pd.read_csv('data/updated_schoolmint.csv').fillna('')
     random_ids = df['id'].sample(n=5)
