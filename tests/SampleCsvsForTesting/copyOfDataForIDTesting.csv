@@ -1,21 +1,21 @@
-,id,lname,fname,dob,grade,current_school,status,test_date_sign_up,deliver_test_accomodation_approved,total_points,gpa,matrix_gpa,language_test_scores,matrix_languauge,math_test_scores,matrix_math,reading_test_score,matrix_reading,total_points_retest,language_test_scores2,matrix_languauge_retest,reading_test_score2,matrix_reading_restest,math_test_scores2,matrix_math_retest,updated_at,guardian1_email,guardian2_email
-0,1,,,,9,Other,In Processing,January 18 2025,Test Accommodations Approved,99,2.5,20,88,25,91,26,95,28,20,,,,,,,2025-01-10 9:36:05,,
-1,2,,,,10,Other,In Processing,January 18 2025,,62,,,75,18,91,26,75,18,,,,,,,,2025-01-10 9:36:05,,
-2,3,,,,11,Other,In Processing,January 18 2025,,87,3.1,26,76,19,76,19,85,23,93,91,26,83,22,76,19,2025-01-10 9:36:05,,
-3,4,,,,10,Other,In Processing,January 18 2025,,59,,,79,20,65,13,90,26,78,92,27,90,26,89,25,2025-01-10 9:36:05,,
-4,5,,,,9,Other,In Processing,January 18 2025,Test Accommodations Approved,52,3.5,30,83,22,,,,,82,63,12,72,17,85,23,2025-01-10 9:36:05,,
-5,6,,,,9,Other,In Processing,January 18 2025,,75,2.75,22,70,16,77,19,75,18,99,91,26,91,26,88,25,2025-01-10 9:36:05,,
-6,7,,,,9,Other,In Processing,March 5 2025,,43,,,66,14,62,12,72,17,67,82,22,83,22,84,23,2025-01-10 9:36:05,,
-7,,,,,,,,,,77,,,89,25,88,25,93,27,,,,,,,,,,
-8,9,,,,9,,In Processing,March 5 2025,,77,,,89,25,88,25,93,27,0,,,,,,,2025-01-10 9:36:05,,
-9,10,,,,10,,In Processing,March 5 2025,Test Accommodations Approved,34,,,65,13,80,21,,,,,,,,,,2025-01-10 9:36:05,,
-10,11,,,,10,,In Processing,March 5 2025,Test Accommodations Approved,67,2.55,20,70,16,75,18,65,13,56,,,69,15,81,21,2025-01-10 9:36:05,,
-11,12,,,,11,,In Processing,March 5 2025,,49,,,88,25,,,87,24,,,,,,,,2025-01-10 9:36:05,,
-12,13,,,,11,,In Processing,March 5 2025,Test Accommodations Approved,100,2.7,22,92,27,88,25,90,26,,,,,,,,2025-01-10 9:36:05,,
-13,14,,,,11,,In Processing,March 5 2025,Test Accommodations Approved,66,,,76,19,82,22,88,25,23,,,,,85,23,2025-01-10 9:36:05,,
-14,15,,,,9,,In Processing,March 5 2025,,13,,,65,13,,,,,,,,,,,,2025-01-10 9:36:05,,
-15,16,,,,10,,In Processing,March 5 2025,,25,,,,,,,88,25,,,,,,,,2025-01-10 9:36:05,,
-16,17,,,,11,,In Processing,March 5 2025,,87,2.6,21,85,23,82,22,80,21,21,,,,,,,2025-01-10 9:36:05,,
-17,18,,,,9,,In Processing,March 5 2025,,52,,,90,26,,,90,26,,,,,,,,2025-01-10 9:36:05,,
-18,19,,,,10,,In Processing,March 5 2025,,50,,,90,26,87,24,,,,,,,,,,2025-01-10 9:36:05,,
-19,20,,,,9,,In Processing,March 5 2025,Test Accommodations Approved,82,2.7,22,78,20,78,20,78,20,65,,,77,19,87,24,2025-01-10 9:36:05,,
+Unnamed: 0,id,lname,fname,dob,grade,current_school,status,test_date_sign_up,deliver_test_accomodation_approved,total_points,gpa,matrix_gpa,language_test_scores,matrix_languauge,math_test_scores,matrix_math,reading_test_score,matrix_reading,total_points_retest,language_test_scores2,matrix_languauge_retest,reading_test_score2,matrix_reading_restest,math_test_scores2,matrix_math_retest,updated_at,guardian1_email,guardian2_email,Predicted Unweighted GPA
+0,1,,,,9,Other,Eligible,January 18 2025,Test Accommodations Approved,99,2.5,20,88,25,91,26,95,28,20,,,,,,,2025-01-10 9:36:05,,,3.5958
+1,2,,,,10,Other,Eligible,January 18 2025,,62,,,75,18,91,26,75,18,,,,,,,,2025-01-10 9:36:05,,,3.3567
+2,3,,,,11,Other,Eligible,January 18 2025,,87,3.1,26,76,19,76,19,85,23,93,91,26,83,22,76,19,2025-01-10 9:36:05,,,3.3567
+3,4,,,,10,Other,Eligible,January 18 2025,,59,,,79,20,65,13,90,26,78,92,27,90,26,89,25,2025-01-10 9:36:05,,,3.3567
+4,5,,,,9,Other,Eligible,January 18 2025,Test Accommodations Approved,52,3.5,30,83,22,,,,,82,63,12,72,17,85,23,2025-01-10 9:36:05,,,2.8393
+5,6,,,,9,Other,Eligible,January 18 2025,,75,2.75,22,70,16,77,19,75,18,99,91,26,91,26,88,25,2025-01-10 9:36:05,,,3.3567
+6,7,,,,9,Other,Eligible,March 5 2025,,43,,,66,14,62,12,72,17,67,82,22,83,22,84,23,2025-01-10 9:36:05,,,3.3567
+7,,,,,,,,,,77,,,89,25,88,25,93,27,,,,,,,,,,,
+8,9,,,,9,,Eligible,March 5 2025,,77,,,89,25,88,25,93,27,0,,,,,,,2025-01-10 9:36:05,,,3.3567
+9,10,,,,10,,Eligible,March 5 2025,Test Accommodations Approved,34,,,65,13,80,21,,,,,,,,,,2025-01-10 9:36:05,,,
+10,11,,,,10,,Eligible,March 5 2025,Test Accommodations Approved,67,2.55,20,70,16,75,18,65,13,56,,,69,15,81,21,2025-01-10 9:36:05,,,3.3567
+11,12,,,,11,,Eligible,March 5 2025,,49,,,88,25,,,87,24,,,,,,,,2025-01-10 9:36:05,,,
+12,13,,,,11,,Eligible,March 5 2025,Test Accommodations Approved,100,2.7,22,92,27,88,25,90,26,,,,,,,,2025-01-10 9:36:05,,,3.3567
+13,14,,,,11,,Eligible,March 5 2025,Test Accommodations Approved,66,,,76,19,82,22,88,25,23,,,,,85,23,2025-01-10 9:36:05,,,3.3567
+14,15,,,,9,,Eligible,March 5 2025,,13,,,65,13,,,,,,,,,,,,2025-01-10 9:36:05,,,
+15,16,,,,10,,Eligible,March 5 2025,,25,,,,,,,88,25,,,,,,,,2025-01-10 9:36:05,,,
+16,17,,,,11,,Eligible,March 5 2025,,87,2.6,21,85,23,82,22,80,21,21,,,,,,,2025-01-10 9:36:05,,,3.3567
+17,18,,,,9,,Eligible,March 5 2025,,52,,,90,26,,,90,26,,,,,,,,2025-01-10 9:36:05,,,
+18,19,,,,10,,Eligible,March 5 2025,,50,,,90,26,87,24,,,,,,,,,,2025-01-10 9:36:05,,,
+19,20,,,,9,,Eligible,March 5 2025,Test Accommodations Approved,82,2.7,22,78,20,78,20,78,20,65,,,77,19,87,24,2025-01-10 9:36:05,,,3.3567

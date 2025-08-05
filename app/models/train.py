@@ -81,7 +81,7 @@ def update_csv_with_prediction_scores(student_data_csv):
                 value = float(value)
                 rounded_float = round(value, 4)
                 schoolmint_df.loc[index, col_name] = rounded_float
-    schoolmint_df.to_csv('data/updated_schoolmint.csv', index=False)
+    schoolmint_df.to_csv(student_data_csv, index=False)
 
 
 ############################################################
