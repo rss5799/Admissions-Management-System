@@ -32,34 +32,33 @@ def update_csv_with_prediction_scores(student_data_csv):
     data_frame_for_pred["ad_lang"] = ""
     data_frame_for_pred["ad_math"] = ""
     data_frame_for_pred["ad_reading"] = ""
-    
 
+    data_frame_for_pred["Predicted Unweighted GPA"] = ''
     
     for index, row in data_frame_for_pred.iterrows():
         testOne = 0
         retest = 0
         if(data_frame_for_pred.loc[index, "language_test_scores"] != '' and data_frame_for_pred.loc[index, "math_test_scores"] != '' and data_frame_for_pred.loc[index, "reading_test_score"] != ''):
             testOne = data_frame_for_pred.loc[index, "language_test_scores"] + data_frame_for_pred.loc[index, "math_test_scores"] + data_frame_for_pred.loc[index, "reading_test_score"]
-        if(data_frame_for_pred.loc[index, "matrix_languauge_retest"] != '' and data_frame_for_pred.loc[index, "matrix_math_retest"] != '' and data_frame_for_pred.loc[index, "matrix_reading_restest"] != ''):
-            retest = data_frame_for_pred.loc[index, "matrix_languauge_retest"] + data_frame_for_pred.loc[index, "matrix_math_retest"] + data_frame_for_pred.loc[index, "matrix_reading_restest"]
+        if(data_frame_for_pred.loc[index, "language_test_scores2"] != '' and data_frame_for_pred.loc[index, "math_test_scores2"] != '' and data_frame_for_pred.loc[index, "reading_test_score2"] != ''):
+            retest = data_frame_for_pred.loc[index, "language_test_scores2"] + data_frame_for_pred.loc[index, "math_test_scores2"] + data_frame_for_pred.loc[index, "reading_test_score2"]
         if(retest > 0):
             if(retest > testOne):
-                data_frame_for_pred.loc[index, "ad_lang"] = data_frame_for_pred.loc[index, "matrix_languauge_retest"]
-                data_frame_for_pred.loc[index, "ad_math"] = data_frame_for_pred.loc[index, "matrix_math_retest"]
-                data_frame_for_pred.loc[index, "ad_reading"] = data_frame_for_pred.loc[index, "matrix_reading_restest"]
+                data_frame_for_pred.loc[index, "ad_lang"] = data_frame_for_pred.loc[index, "language_test_scores2"]
+                data_frame_for_pred.loc[index, "ad_math"] = data_frame_for_pred.loc[index, "math_test_scores2"]
+                data_frame_for_pred.loc[index, "ad_reading"] = data_frame_for_pred.loc[index, "reading_test_score2"]
             else:
                 data_frame_for_pred.loc[index, "ad_lang"] = data_frame_for_pred.loc[index, "language_test_scores"]
                 data_frame_for_pred.loc[index, "ad_math"] = data_frame_for_pred.loc[index, "math_test_scores"]
                 data_frame_for_pred.loc[index, "ad_reading"] = data_frame_for_pred.loc[index, "reading_test_score"]
-        if(testOne > 0):
+        else:
             data_frame_for_pred.loc[index, "ad_lang"] = data_frame_for_pred.loc[index, "language_test_scores"]
             data_frame_for_pred.loc[index, "ad_math"] = data_frame_for_pred.loc[index, "math_test_scores"]
             data_frame_for_pred.loc[index, "ad_reading"] = data_frame_for_pred.loc[index, "reading_test_score"]
 
-
     required_columns = ['id', 'ad_lang', 'ad_math', 'ad_reading']
     data_frame_for_pred = data_frame_for_pred[data_frame_for_pred[required_columns].ne('').all(axis=1)]
-    data_frame_for_pred["Predicted Unweighted GPA"] = ""
+
 
     X = data_frame_for_pred.loc[:, feature_cols] .values
     Y = data_frame_for_pred['Predicted Unweighted GPA'].values.reshape(-1, 1)
