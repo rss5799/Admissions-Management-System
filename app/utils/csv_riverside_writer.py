@@ -6,6 +6,7 @@ from app.services.matrix_calculator import lookup_matrix_points
 from pathlib import Path
 import json
 import app
+from app.models.train import update_csv_with_prediction_scores
 
 
 #this function should be called when users press the button requesting that riverside data be merged with the most recent schoolmint csv
@@ -126,14 +127,18 @@ def combine_data(first_file_path: str, second_file_path: str):
             counter += 1
             merged_results.loc[index, 'total_points_retest'] = matrix_gpa + reading_matrix + language_matrix + math_matrix
 
-    headers = ['fname','lname','id','dob','grade','matrix_gpa','language_test_scores','reading_test_score','math_test_scores','total_points','matrix_languauge','matrix_math','matrix_reading','status','matrix_languauge_retest','matrix_math_retest','matrix_reading_restest','total_points_retest','updated_at','guardian1_email','guardian2_email','deliver_test_accomodation_approved','test_date_sign_up','current_school','gpa','language_test_scores2','reading_test_score2','math_test_scores2']
+    headers = ['id','lname','fname','dob','grade','current_school','status','test_date_sign_up','deliver_test_accomodation_approved','total_points','gpa','matrix_gpa','language_test_scores','matrix_languauge','math_test_scores','matrix_math','reading_test_score','matrix_reading','total_points_retest','language_test_scores2', 'matrix_languauge_retest','reading_test_score2','matrix_reading_restest','math_test_scores2','matrix_math_retest','updated_at','guardian1_email','guardian2_email']
     merged_results = merged_results[headers]
 
     for index, row in merged_results.iterrows():
         for col_name, value in row.items():
-            if(col_name != 'gpa' and isinstance(value, float)):
+            if(col_name != 'gpa' and col_name != "Predicted Unweighted GPA" and isinstance(value, float)):
                 value = int(value)
                 merged_results.loc[index, col_name] = value
     merged_results.to_csv(first_file_path, columns = headers)
+
+    update_csv_with_prediction_scores(first_file_path)
+
+
 
     return counter

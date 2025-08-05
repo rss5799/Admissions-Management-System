@@ -12,6 +12,7 @@ from app.services.sorting import apply_sorting
 from app.models.User import User
 from app import db
 from flask_login import login_required, logout_user
+from app.models.train import update_csv_with_prediction_scores
 
 
 
@@ -133,7 +134,7 @@ def point_inputs():
     # float -> int, except gpa
     for index, row in schoolmint_data.iterrows():
         for col_name, value in row.items():
-            if(col_name != 'gpa' and isinstance(value, float)):
+            if(col_name != 'gpa' and col_name != 'Predicted Unweighted GPA' and isinstance(value, float)):
                 value = int(value)
                 schoolmint_data.loc[index, col_name] = value
     
@@ -307,6 +308,10 @@ def upload_schoolmint_csv():
                 writer = csv.writer(outfile)
                 for row in reader:
                     writer.writerow(row)
+
+        update_csv_with_prediction_scores(schoolMint_csv)
+
+
         return render_template("menu.html", breadcrumbs=[{"title": "Main Menu", "url": url_for('main.menu')}])
     else:
         return render_template("landing.html", uploadresults = "Invalid file type please upload a csv", breadcrumbs=[{"title": "Landing", "url": url_for('main.landing')}])
