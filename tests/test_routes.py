@@ -129,7 +129,8 @@ def test_enter_report_card_route(client):
         current_school="Other",
         language_test_scores2="0",
         reading_test_score2="0",
-        math_test_scores2="0"
+        math_test_scores2="0",
+        pred_gpa = "0"
     )
 
     with patch("app.routes.retrieve_current_student", return_value=dummy_student):
