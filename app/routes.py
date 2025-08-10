@@ -25,7 +25,6 @@ if not os.path.exists(UPLOAD_FOLDER):
 TEMP_ORIGINAL_SM_DATA = os.path.join(UPLOAD_FOLDER, 'original_schoolmint.csv')
 schoolMint_csv = ('data/updated_schoolmint.csv')
 
-
 bp = Blueprint('main', __name__)
 
 def retrieve_current_student():
@@ -107,25 +106,35 @@ def landing():
 def menu():
     return render_template("menu.html", breadcrumbs=[{"title": "Main Menu", "url": url_for('main.menu')}])
 
-# Compare rows in csv line by line
+# Compare rows in csv 
 @bp.route("/grab_updated_fields/")
 def grab_updated_fields():
-    original_csv = "data/original_schoolmint.csv"
-    original_df = pd.read_csv(original_csv)
-    original_df.to_csv(original_csv, index=False)
-
     try:
         diff = compare(
-        load_csv(open(original_csv), key="id"),
-        load_csv(open(schoolMint_csv), key="id")
-    )
-        updated_fields = diff['changed']
+            load_csv(open('data/original_schoolmint.csv'), key="id"),
+            load_csv(open(schoolMint_csv), key="id")
+        )
+
+        updated_fields = []
+        for field in diff['changed']:
+            changes = field['changes']
+            
+            if 'gpa' in changes:
+                try:
+                    if float(changes['gpa'][0]) == float(changes['gpa'][1]):
+                        del changes['gpa']
+                except ValueError:
+                    pass  
+            if changes:  
+                updated_fields.append(field)
+
         if updated_fields:
             print("Updated fields found:")
             for field in updated_fields:
                 print(f" - {field}")
         else:
             print("No updated fields found.")
+
     except FileNotFoundError:
         print("CSV files not found. Please ensure 'updated_schoolmint.csv' and 'original_schoolmint.csv' exist in the data directory.")
 
