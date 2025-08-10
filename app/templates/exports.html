@@ -7,12 +7,11 @@
     {% include '_breadcrumbs.html' %}
     <h2>Exports</h2>
 
-    <form action="{{ url_for('main.export_csv') }}", method="POST">
+    <form action="{{ url_for('main.export_csv') }}", method = "POST">
         <button type="submit">Download csv with Updated Student Data</button>
     </form>
 
-    <!-- Insert the changes table here -->
-    {% if changes %}
+    {% if changes and changes|length > 0 %}
       <h3>Changed Fields</h3>
       <table id="changes" class="table table-striped">
         <thead>
@@ -36,9 +35,12 @@
           {% endfor %}
         </tbody>
       </table>
+    {% else %}
+      <p style="color: #888; font-style: italic; margin-top: 20px;">No changes or updates found.</p>
     {% endif %}
 
     <br>
     <a href="{{ url_for('main.menu') }}"><button type="button">Back to Main Menu</button></a>
+    
 </body>
 </html>
