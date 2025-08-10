@@ -128,15 +128,11 @@ def grab_updated_fields():
             if changes:  
                 updated_fields.append(field)
 
-        if updated_fields:
-            print("Updated fields found:")
-            for field in updated_fields:
-                print(f" - {field}")
-        else:
-            print("No updated fields found.")
+        return updated_fields
 
     except FileNotFoundError:
         print("CSV files not found. Please ensure 'updated_schoolmint.csv' and 'original_schoolmint.csv' exist in the data directory.")
+        return []
 
 
 #search for student here (new points_inputs)
@@ -313,8 +309,8 @@ def exports_page():
         {"title": "Main Menu", "url": url_for('main.menu')},
         {"title": "Exports", "url": url_for('main.exports_page')}
     ]
-    grab_updated_fields()
-    return render_template("exports.html", breadcrumbs=breadcrumbs)
+    changes = grab_updated_fields()
+    return render_template("exports.html", breadcrumbs=breadcrumbs, changes=changes)
 
 @bp.route("/export_csv", methods = ['POST'])
 def export_csv():
