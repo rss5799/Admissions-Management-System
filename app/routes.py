@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, request, session, flash, redirect, send_file, url_for
+from scipy.fftpack import diff
 from app.utils.csv_reader_writer import fetch_updated_student_instance
 from app.forms.report_card import ReportCardForm
 from app.services.report_card_service import ReportCardService
@@ -13,6 +14,7 @@ from app.models.User import User
 from app import db
 from flask_login import login_required, logout_user
 from app.models.train import update_csv_with_prediction_scores
+from csv_diff import load_csv, compare
 
 
 
@@ -22,7 +24,6 @@ if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 TEMP_ORIGINAL_SM_DATA = os.path.join(UPLOAD_FOLDER, 'original_schoolmint.csv')
 schoolMint_csv = ('data/updated_schoolmint.csv')
-
 
 bp = Blueprint('main', __name__)
 
@@ -104,6 +105,35 @@ def landing():
 @bp.route("/menu")
 def menu():
     return render_template("menu.html", breadcrumbs=[{"title": "Main Menu", "url": url_for('main.menu')}])
+
+# Compare rows in csv 
+@bp.route("/grab_updated_fields/")
+def grab_updated_fields():
+    try:
+        diff = compare(
+            load_csv(open('data/original_schoolmint.csv'), key="id"),
+            load_csv(open(schoolMint_csv), key="id")
+        )
+
+        updated_fields = []
+        for field in diff['changed']:
+            changes = field['changes']
+            
+            if 'gpa' in changes:
+                try:
+                    if float(changes['gpa'][0]) == float(changes['gpa'][1]):
+                        del changes['gpa']
+                except ValueError:
+                    pass  
+            if changes:  
+                updated_fields.append(field)
+
+        return updated_fields
+
+    except FileNotFoundError:
+        print("CSV files not found. Please ensure 'updated_schoolmint.csv' and 'original_schoolmint.csv' exist in the data directory.")
+        return []
+
 
 #search for student here (new points_inputs)
 @bp.route("/point_inputs/")
@@ -279,7 +309,8 @@ def exports_page():
         {"title": "Main Menu", "url": url_for('main.menu')},
         {"title": "Exports", "url": url_for('main.exports_page')}
     ]
-    return render_template("exports.html", breadcrumbs=breadcrumbs)
+    changes = grab_updated_fields()
+    return render_template("exports.html", breadcrumbs=breadcrumbs, changes=changes)
 
 @bp.route("/export_csv", methods = ['POST'])
 def export_csv():

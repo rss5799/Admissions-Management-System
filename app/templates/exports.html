@@ -7,13 +7,38 @@
     {% include '_breadcrumbs.html' %}
     <h2>Exports</h2>
 
-    <form action="{{ url_for('main.export_csv') }}", method = "POST">
+    <form action="{{ url_for('main.export_csv') }}", method="POST">
         <button type="submit">Download csv with Updated Student Data</button>
     </form>
 
+    <!-- Insert the changes table here -->
+    {% if changes %}
+      <h3>Changed Fields</h3>
+      <table id="changes" class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Field</th>
+            <th>Old Value</th>
+            <th>New Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for change in changes %}
+            {% for field, values in change.changes.items() %}
+              <tr>
+                <td>{{ change.key }}</td>
+                <td>{{ field }}</td>
+                <td>{{ values[0] }}</td>
+                <td>{{ values[1] }}</td>
+              </tr>
+            {% endfor %}
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
 
     <br>
     <a href="{{ url_for('main.menu') }}"><button type="button">Back to Main Menu</button></a>
-    
 </body>
 </html>
