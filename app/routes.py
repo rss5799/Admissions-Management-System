@@ -128,6 +128,16 @@ def grab_updated_fields():
             if changes:  
                 updated_fields.append(field)
 
+        # Save updated_fields to a CSV
+        output_path = os.path.join(UPLOAD_FOLDER, 'updated_fields.csv')
+        with open(output_path, 'w', newline='', encoding='utf-8') as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow(['ID', 'Field', 'Old Value', 'New Value'])
+            for field in updated_fields:
+                key = field['key']
+                for change_field, values in field['changes'].items():
+                    writer.writerow([key, change_field, values[0], values[1]])
+
         return updated_fields
 
     except FileNotFoundError:
@@ -315,8 +325,27 @@ def exports_page():
 @bp.route("/export_csv", methods = ['POST'])
 def export_csv():
     if request.method == "POST":
-        schoolMintcsv = (f'{UPLOAD_FOLDER}/updated_schoolmint.csv')
-        return send_file(schoolMintcsv, as_attachment=True)
+        # Read updated_fields.csv to get the set of changed IDs
+        updated_ids = set()
+        updated_fields_csv = os.path.join(UPLOAD_FOLDER, 'updated_fields.csv')
+        if os.path.exists(updated_fields_csv):
+            with open(updated_fields_csv, newline='', encoding='utf-8') as csvfile:
+                reader = csv.DictReader(csvfile)
+                for row in reader:
+                    updated_ids.add(row['ID'])
+
+            # Read schoolMint_csv and filter rows
+            df = pd.read_csv(schoolMint_csv, dtype=str)
+            filtered_df = df[df['id'].astype(str).isin(updated_ids)]
+
+            # Save filtered rows to a new CSV
+            filtered_path = os.path.join(UPLOAD_FOLDER, 'ams_export.csv')
+            filtered_df.to_csv(filtered_path, index=False)
+
+            return send_file(filtered_path, as_attachment=True)
+        else:
+            flash("No updated fields to export.")
+            return render_template("menu.html", breadcrumbs=[{"title": "Main Menu", "url": url_for('main.menu')}])
     return render_template("menu.html", breadcrumbs=[{"title": "Main Menu", "url": url_for('main.menu')}])
 
 @bp.route("/upload_csv", methods=["POST"])
