@@ -1,34 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.vertical-menu {
-  margin: auto;
-  width: 20%;
-  border: 3px solid #73AD21;
-  padding: 5px;
-}
+{% extends "base.html" %}
+{% block content %}
 
-.vertical-menu a {
-  background-color: #eee;
-  color: black;
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-}
-
-.vertical-menu a:hover {
-  background-color: #ccc;
-}
-
-.vertical-menu a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-</style>
-</head>
-<body>
 {% include '_breadcrumbs.html' %}
 
 <h1 style="text-align: center;">Admissions Management System</h1>
@@ -44,5 +16,4 @@
 
 <a href="/logout" style = "text-align:center"><button type="button">Logout</button></a>
 
-</body>
-</html>
+{% endblock %}

@@ -13,7 +13,7 @@
 
     <form method="POST" action="/enter_report_card/">
         <label for="schedule_option">Select Schedule Option:</label>
-        <select id="schedule_option" name="schedule_option" required>
+        <select id="schedule_option" name="schedule_option" class="form-select" required>
             <option value="">--Select Option--</option>
             <option value="9_S">9th grade semester/trimester</option>
             <option value="9_Q">9th grade quarters</option>
@@ -24,9 +24,8 @@
         </select>
         <div id="grade-inputs"></div>
 
-        <button type="submit">Calculate GPA</button>
-        <button type="button" onclick="location.href='/student_details/';">Return to Student Scores</button>
-    </form>
+        <button type="submit" class="btn btn-primary">Calculate GPA</button>
+        <a href="/student_details/" class="btn btn-secondary">Return to Student Scores</a>    </form>
 
     {% if gpa %}
     <h3>Calculated GPA: {{ gpa }}</h3>

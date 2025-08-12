@@ -22,7 +22,7 @@
 <form action="{{ url_for('main.merge_riverside') }}" method="POST" enctype="multipart/form-data">
     <label for="file">Upload Riverside CSV (optional):</label>
     <input type="file" name="riversidefile" accept=".csv">
-    <button type="submit">Merge Scores to Schoolmint File</button>
+    <button type="submit" class="btn btn-primary">Merge Scores to Schoolmint File</button>
 </form>
 
         <p>{{ uploadresults }}</p>

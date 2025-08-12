@@ -71,24 +71,27 @@
         <div class="summary__spacer"></div>
         <div class="controls">
           <div class="filters">
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" class="form-control" disabled/>
             <span class="failed">0 Failed,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" class="form-control"  />
             <span class="passed">35 Passed,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" class="form-control" disabled/>
             <span class="skipped">0 Skipped,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" class="form-control" disabled/>
             <span class="xfailed">0 Expected failures,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" class="form-control" disabled/>
             <span class="xpassed">0 Unexpected passes,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" class="form-control" disabled/>
             <span class="error">0 Errors,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" class="form-control" disabled/>
             <span class="rerun">0 Reruns</span>
           </div>
           <div class="collapse">
-            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
-          </div>
+        <div class="btn-group" role="group" aria-label="Details toggles">
+  <button id="show_all_details" type="button" class="btn btn-outline-secondary">Show all details</button>
+  <button id="hide_all_details" type="button" class="btn btn-outline-secondary">Hide all details</button>
+        </div>
+        </div>
         </div>
       </div>
       <div class="additional-summary summary">

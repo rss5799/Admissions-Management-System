@@ -13,13 +13,13 @@
 </div>
 <br>
     <form action = '/' method = "POST">
-        Email: <input type = 'text', name = 'email'><br><br>
-        Password: <input type = 'passsord' name = 'password'><br><br>
-        <button type="submit" name="login_btn" value = "Login">Login</button>
+        Email: <input type = 'text', name = 'email' class="form-control"><br><br>
+        Password: <input type = 'passsord' name = 'password' class="form-control"><br><br>
+    <button type="submit" name="login_btn" value="Login" class="btn btn-primary">Login</button>
     </form>
         <p>Don't have an account?  Create one!</p>
         <br>
-        <a href="/signup" style = "text-align:center"><button type="button">Create an Account</button></a>
+        <a href="/signup" class="btn btn-outline-secondary">Create an Account</a>
         <br>
         <br>
         <p>{{ results }}</p>

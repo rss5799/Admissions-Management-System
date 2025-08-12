@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Flask App</title>
-</head>
-<body>
+    {% extends "base.html" %}
+{% block content %}
+  
+
     {% include '_breadcrumbs.html' %}
     <h1>Student Details</h1>
     <h2>Student ID: {{ results.id }}</h2>
@@ -92,6 +90,4 @@
     </div>
   {% endif %}
 {% endwith %}
-
-</body>
-</html>
+{% endblock %}
