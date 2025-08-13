@@ -1,0 +1,19 @@
+{# templates/preview_wow.html #}
+{% extends "coreui_base_wow.html" %}
+{% block title %}Preview – Wow Base{% endblock %}
+{% block content %}
+  {% include "_preview_content.html" %}
+{% endblock %}
+{% block scripts %}
+  {{ super() }}
+  <script>
+    // Wow base usually has DataTables + Buttons; initialize if present
+    if (window.jQuery && typeof $.fn.DataTable === 'function') {
+      $('#previewTable').DataTable({
+        pageLength: 5,
+        dom: 'Bfrtip',
+        buttons: ['csv']
+      });
+    }
+  </script>
+{% endblock %}

@@ -1,95 +1,103 @@
-    {% include '_breadcrumbs.html' %}
-    <h2>Search Students</h2>    
-    <label for="site-search">Search for Student by ID:</label>
-
-    <form action="/student_details", method = "GET">
-    <input type="search" id="site-search" name="id_query", placeholder = "Enter Student ID" />
-    <button>Search</button>
-    </form>
-
-    <!-- Filtering Form -->
-    <form method="get" action="{{ url_for('main.point_inputs') }}">
-      <div class="row mb-3">
-        <!-- Filter Field Dropdown -->
-        <div class="col-md-4">
-          <label for="filter_field">Filter by:</label>
-          <select class="form-control" name="filter_field" id="filter_field" class="form-select" onchange="this.form.submit()">
-            <option disabled {% if not filter_field %}selected{% endif %}>Select Filter</option>
-            <option value="grade" {% if filter_field == 'grade' %}selected{% endif %}>Grade</option>
-            <option value="status" {% if filter_field == 'status' %}selected{% endif %}>Status</option>
-            <option value="test_date_sign_up" {% if filter_field == 'test_date_sign_up' %}selected{% endif %}>Test Day</option>
-          </select>
-        </div>
-
-        <!-- Filter Value Dropdown (conditionally appears) -->
-        {% if filter_values %}
-        <div class="col-md-4">
-          <label for="filter_value">Select Value:</label>
-          <select class="form-control" name="filter_value" id="filter_value" class="form-select" onchange="this.form.submit()">
-            <option disabled>Select Value</option>
-            {% for v in filter_values %} 
-              <option value="{{ v }}" {% if request.args.get('filter_value', '').lower() == v.lower() %}selected{% endif %}>{{ v }}</option>
-            {% endfor %}
-          </select>
-        </div>
-        {% endif %}
-        
-    <!-- Clear Filter Button -->
-      <div class="col-md-4 align-self-end">
-        <a href="{{ url_for('main.point_inputs') }}" class="btn btn-secondary">Clear Filters</a>
-      </div>
-    </form>
-
-    <!-- Show current filter -->
-    {% if filter_field and request.args.get('filter_value') %}
-      <p class="text-muted">Filtering by <strong>{{ filter_field|title }}</strong>: "{{ request.args.get('filter_value') }}"</p>
-    {% endif %}
-
-    <div class="flash-message">
-        <div class="msg-wrapper">
-            {% with messages=get_flashed_messages(with_categories=true) %} 
-                {% if messages %} 
-                    {% for category,message in messages %}
-                    <p class="{{category}} message">{{message}}</p>
-                    {% endfor %} 
-                {% endif %} 
-            {% endwith %}
-        </div>
-    </div>
-
-{% extends "base.html" %}   
+{% extends "coreui_base_wow.html" %}
 
 {% block content %}
-  <table id="data" class="table table-striped align-middle display">
-    <thead>
-      <tr>
-        {% for header in headers %}
-            <th>{{ header }}</th>
-        {% endfor %}
-      </tr>
-    </thead>
 
-    <tbody>
+{% include '_breadcrumbs.html' %}
+
+<h2>Search Students</h2>
+<label for="site-search">Search for Student by ID:</label>
+<form action="{{ url_for('main.student_details') }}" method="GET" class="mb-4 d-flex">
+  <input type="search" id="site-search" name="id_query" placeholder="Enter Student ID"
+         class="form-control me-2" />
+  <button class="btn btn-primary" type="submit">Search</button>
+</form>
+
+<!-- Filtering Form -->
+<form method="get" action="{{ url_for('main.point_inputs') }}" class="row g-3 mb-4">
+  <!-- Filter Field Dropdown -->
+  <div class="col-md-4">
+    <label for="filter_field" class="form-label">Filter by:</label>
+    <select name="filter_field" id="filter_field" class="form-select" onchange="this.form.submit()">
+      <option disabled {% if not filter_field %}selected{% endif %}>Select Filter</option>
+      <option value="grade" {% if filter_field == 'grade' %}selected{% endif %}>Grade</option>
+      <option value="status" {% if filter_field == 'status' %}selected{% endif %}>Status</option>
+      <option value="test_date_sign_up" {% if filter_field == 'test_date_sign_up' %}selected{% endif %}>Test Day</option>
+    </select>
+  </div>
+
+  <!-- Filter Value Dropdown -->
+  {% if filter_values %}
+  <div class="col-md-4">
+    <label for="filter_value" class="form-label">Select Value:</label>
+    <select name="filter_value" id="filter_value" class="form-select" onchange="this.form.submit()">
+      <option disabled>Select Value</option>
+      {% for v in filter_values %}
+        <option value="{{ v }}" {% if request.args.get('filter_value', '').lower() == v.lower() %}selected{% endif %}>{{ v }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  {% endif %}
+
+  <!-- Clear Filter Button -->
+  <div class="col-md-4 align-self-end">
+    <a href="{{ url_for('main.point_inputs') }}" class="btn btn-secondary">Clear Filters</a>
+  </div>
+</form>
+
+<!-- Show current filter -->
+{% if filter_field and request.args.get('filter_value') %}
+  <p class="text-muted">Filtering by <strong>{{ filter_field|title }}</strong>: "{{ request.args.get('filter_value') }}"</p>
+{% endif %}
+
+<!-- Flash messages -->
+<div class="flash-message">
+  <div class="msg-wrapper">
+    {% with messages=get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category,message in messages %}
+          <div class="alert alert-{{ category }} mt-3">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+  </div>
+</div>
+
+<!-- Table -->
+<div class="card mt-4">
+  <div class="card-body">
+    <table id="data" class="table table-striped align-middle">
+      <thead>
+        <tr>
+          {% for header in headers %}
+            <th>{{ header }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
         {% for record in records %}
-        <tr>                 
-            {% for header in headers %}
-                {% if header == 'id' %}
-                    <td><a href ="{{ url_for('main.student_details', id_query = record[header])}}">{{ record[header] }}</a></td>
-                {% else %}
-                    {% if record[header] != 'nan' %}
-                        <td>{{ record[header] }}</td>
-                    {% endif %}
-                {% endif %}
-            {% endfor %}
+        <tr>
+          {% for header in headers %}
+            {% if header == 'id' %}
+              <td><a href="{{ url_for('main.student_details', id_query=record[header]) }}">{{ record[header] }}</a></td>
+            {% else %}
+              {% if record[header] != 'nan' %}
+                <td>{{ record[header] }}</td>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
         </tr>
         {% endfor %}
-    </tbody>
-  </table>
+      </tbody>
+    </table>
+  </div>
+</div>
+
 {% endblock %}
+
 {% block scripts %}
-  <script>
-    $(document).ready(function () {
-      $('#data').DataTable();
-    });
-  </script>
+<script>
+  $(document).ready(function () {
+    $('#data').DataTable();
+  });
+</script>
 {% endblock %}

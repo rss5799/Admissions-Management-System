@@ -1,6 +1,7 @@
-{% extends "base.html" %}
+{% extends "coreui_base_wow.html" %}
 {% block content %}
     {% include '_breadcrumbs.html' %}
+    
     <h2>Exports</h2>
 
     <form action="{{ url_for('main.export_csv') }}", method = "POST">

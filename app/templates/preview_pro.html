@@ -1,0 +1,15 @@
+{# templates/preview_pro.html #}
+{% extends "coreui_base.html" %}
+{% block title %}Preview – Pro Base{% endblock %}
+{% block content %}
+  {% include "_preview_content.html" %}
+{% endblock %}
+{% block scripts %}
+  {{ super() }}
+  <script>
+    // Optional: turn the table into a DataTable if your pro base loads the JS
+    if (window.jQuery && typeof $.fn.DataTable === 'function') {
+      $('#previewTable').DataTable({ pageLength: 5 });
+    }
+  </script>
+{% endblock %}
