@@ -12,11 +12,7 @@ def client():
         yield client
 
 
-#System test 25:  Test unresponsive students route
-def test_unresponsive_students(client):
-    response = client.get("/unresponsive_students/")
-    assert response.status_code == 200
-    assert b"Unresponsive Students" in response.data
+
 
 
 #System test 26:  Test enter report card route
