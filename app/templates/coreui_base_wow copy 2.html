@@ -145,36 +145,42 @@
         <span class="fs-5 fw-bold px-3">AMS</span>
       </div>
 
-<ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
-  {% block sidebar %}
-  {# Helper to mark active by endpoint prefix #}
-  {% set ep = request.endpoint or '' %}
-  {% macro nav_item(icon, label, endpoint) -%}
-    {%- set is_active = 'active' if ep and ep.startswith(endpoint) else '' -%}
-    <li class="nav-item">
-      <a class="nav-link {{ is_active }}" href="{{ url_for(endpoint) }}">
-        <i class="nav-icon {{ icon }}"></i> {{ label }}
-      </a>
-    </li>
-  {%- endmacro %}
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+        {% block sidebar %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('main.menu') }}">
+            <i class="nav-icon cil-speedometer"></i> Dashboard
+          </a>
+        </li>
+          <li class="nav-title">Students</li>
+          <li class="nav-group">
+            <a class="nav-link nav-group-toggle" href="#">
+              <i class="nav-icon cil-people"></i> Manage
+            </a>
+            <ul class="nav-group-items">
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('main.point_inputs') }}">All Students</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('main.point_inputs') }}">Search</a>
+              </li>
+            </ul>
+          </li>
 
-  <li class="nav-item">
-    <a class="nav-link {{ 'active' if ep=='main.menu' else '' }}" href="{{ url_for('main.menu') }}">
-      <i class="nav-icon cil-speedometer"></i> Dashboard
-    </a>
-  </li>
+          <li class="nav-title">Data</li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('main.exports_page') }}">
+              <i class="nav-icon cil-cloud-download"></i> Export / Download CSV
+            </a>
+          </li>
 
-  <li class="nav-title">Students</li>
-  {{ nav_item('cil-list-rich', 'Update Student Scores', 'main.point_inputs') }}
-
-  <li class="nav-title">Data</li>
-  {{ nav_item('cil-merge', 'Merge Riverside File', 'main.merge_riverside') }}
-  {{ nav_item('cil-calendar', 'Upcoming Tests Info', 'main.upcoming_tests') }}
-  {{ nav_item('cil-people-x', 'Unresponsive Students', 'main.unresponsive_students') }}
-  {{ nav_item('cil-cloud-download', 'Prepare CSV for Export', 'main.exports_page') }}
-
-  {% endblock %}
-</ul>
+          <li class="nav-title">Utilities</li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('main.unresponsive_students') }}">
+              <i class="nav-icon cil-check-alt"></i> Unresponsive students
+            </a>
+          </li>
+        {% endblock %}
       </ul>
         <!--<button class="sidebar-toggler" id="sidebarBottomToggle" type="button" aria-label="Collapse/expand sidebar"></button> -->
         <button class="sidebar-toggler" id="sidebarBottomToggle" type="button" aria-label="Collapse/expand sidebar"></button>
@@ -201,20 +207,16 @@
 
           <ul class="header-nav ms-auto">
             {% block header_actions %}
-
-            <li class="nav-item">
-              <a class="nav-link" href="http://127.0.0.1:5000/" title="Home">
-                <i class="cil-home"></i>
-              </a>
-            </li>
-
-
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('main.menu') }}" title="Home">
+                  <i class="cil-home"></i>
+                </a>
+              </li>
               <li class="nav-item">
                 <button class="btn btn-sm btn-outline-secondary" id="themeToggle" type="button" title="Toggle theme">
                   <i class="cil-contrast"></i>
                 </button>
               </li>
-
             {% endblock %}
           </ul>
         </div>
