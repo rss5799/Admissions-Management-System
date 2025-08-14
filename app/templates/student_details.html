@@ -1,97 +1,107 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Flask App</title>
-</head>
-<body>
-    {% include '_breadcrumbs.html' %}
-    <h1>Student Details</h1>
-    <h2>Student ID: {{ results.id }}</h2>
-    <h2>Applying for Grade: {{ results.grade }}</h2>
-    <h2> Current School: {{ results.current_school }}</h2>
-    <h2> Predicted GPA: {{ results.pred_gpa }}</h2>
-    
-        <style>
-        table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        justify-items: flex-end;
-        width: fit-content;
-        padding: 100dp;
-        text-align: center;
-        }
-        </style>
+{% extends "coreui_base_wow.html" %}
 
-        <table>
+{% block title %}Student Details – {{ results.id }}{% endblock %}
 
-    <tr>
-        <th></th>
-        <th colspan="2">Original</th>
-        <th colspan="2">Retest</th>
-    </tr>
+{% block content %}
+  {% include '_breadcrumbs.html' %}
 
-    <tr>
-        <th></th>
-        <th>Raw Input Value</th>
-        <th>Matrix Score</th>
-        <th>Raw Input Value</th>
-        <th>Matrix Score</th>
-    </tr>
-   
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h4 mb-0">Student Details</h1>
+    <a href="{{ url_for('main.enter_report_card') }}" class="btn btn-primary btn-sm">Edit GPA</a>
+  </div>
 
-        <tr>
-    <td>Admissions Language</td>
-    <td>{{ results.language_test_scores }} </td>
-    <td>{{ results.matrix_languauge }}</td>
-    <td>{{ results.language_test_scores2 }} </td>
-    <td>{{ results.matrix_languauge_retest }}</td>
-    </tr>
+  <!-- Summary -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <dl class="row mb-0">
+        <dt class="col-sm-3">Student ID</dt>
+        <dd class="col-sm-9">{{ results.id }}</dd>
 
+        <dt class="col-sm-3">Applying Grade</dt>
+        <dd class="col-sm-9">{{ results.grade }}</dd>
 
+        <dt class="col-sm-3">Current School</dt>
+        <dd class="col-sm-9">{{ results.current_school }}</dd>
 
-        <tr>
-    <td>Admissions Math:</td>
-    <td>{{ results.math_test_scores }}</td>
-    <td>{{ results.matrix_math }}</td>
-        <td>{{ results.math_test_scores2 }}</td>
-    <td>{{ results.matrix_math_retest }}</td>
-    </tr>
-
-        <tr>
-    <td>Admissions Reading</td>
-    <td> {{ results.reading_test_score }}</td>
-    <td>{{ results.matrix_reading }}</td>
-        <td> {{ results.reading_test_score2 }}</td>
-    <td>{{ results.matrix_reading_restest }}</td>
-    </tr>
-
-    <tr>
-    <td>GPA Points <a href="/enter_report_card">Edit</a></td>
-    <td> {{ results.gpa }}</td>
-    <td>{{ results.matrix_gpa }}</td>
-    <td> {{ results.gpa }}</td>
-    <td>{{ results.matrix_gpa }}</td>
-    </tr>
-
-    <tr>
-    <td>Total Matrix Points:</td>
-    <td colspan="2">{{ results.total_points }}</td>
-    <td colspan="2">{{ results.total_points_retest }}</td>
-    </tr>
-</table>
-
-
-{% with messages = get_flashed_messages() %}
-  {% if messages %}
-    <div class="flash-messages">
-      {% for message in messages %}
-        <div style="background-color: #d1e7dd; color: #0f5132; padding: 10px; border-radius: 4px; margin-bottom: 10px;">
-          {{ message }}
-        </div>
-      {% endfor %}
+        <dt class="col-sm-3">Predicted GPA</dt>
+        <dd class="col-sm-9">
+          {% if results.pred_gpa is not none %}{{ results.pred_gpa }}{% else %}<span class="text-body-secondary">—</span>{% endif %}
+        </dd>
+      </dl>
     </div>
-  {% endif %}
-{% endwith %}
+  </div>
 
-</body>
-</html>
+  <!-- Admissions Scores -->
+  <div class="card">
+    <div class="card-header">Admissions Scores</div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle w-auto">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col" colspan="2">Original</th>
+              <th scope="col" colspan="2">Retest</th>
+            </tr>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Raw Input Value</th>
+              <th scope="col">Matrix Score</th>
+              <th scope="col">Raw Input Value</th>
+              <th scope="col">Matrix Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Admissions Language</th>
+              <td>{{ results.language_test_scores }}</td>
+              <td>{{ results.matrix_languauge }}</td> {# keep existing key spelling #}
+              <td>{{ results.language_test_scores2 }}</td>
+              <td>{{ results.matrix_languauge_retest }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Admissions Math</th>
+              <td>{{ results.math_test_scores }}</td>
+              <td>{{ results.matrix_math }}</td>
+              <td>{{ results.math_test_scores2 }}</td>
+              <td>{{ results.matrix_math_retest }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Admissions Reading</th>
+              <td>{{ results.reading_test_score }}</td>
+              <td>{{ results.matrix_reading }}</td>
+              <td>{{ results.reading_test_score2 }}</td>
+              <td>{{ results.matrix_reading_restest }}</td> {# keep existing key spelling #}
+            </tr>
+            <tr>
+              <th scope="row">
+                GPA Points
+                <a href="{{ url_for('main.enter_report_card') }}" class="btn btn-link btn-sm p-0 align-baseline">Edit</a>
+              </th>
+              <td>{{ results.gpa }}</td>
+              <td>{{ results.matrix_gpa }}</td>
+              <td>{{ results.gpa }}</td>
+              <td>{{ results.matrix_gpa }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Total Matrix Points</th>
+              <td colspan="2">{{ results.total_points }}</td>
+              <td colspan="2">{{ results.total_points_retest }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flash messages -->
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <div class="mt-3">
+        {% for message in messages %}
+          <div class="alert alert-success mb-2">{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+{% endblock %}

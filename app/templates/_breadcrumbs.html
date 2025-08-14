@@ -1,17 +1,24 @@
-<nav style="margin-bottom: 20px;">
-    {% if breadcrumbs %}
-        <ul style="list-style: none; display: flex; gap: 10px; padding: 0;">
-            {% for crumb in breadcrumbs %}
-                <li>
-                    {% if not loop.last %}
-                        <a href="{{ crumb.url }}">{{ crumb.title }}</a> &gt;
-                    {% else %}
-                        <span>{{ crumb.title }}</span>
-                    {% endif %}
-                </li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <a href="{{ url_for('main.menu') }}">Back to Main Menu</a>
-    {% endif %}
-</nav>
+{# defines a macro named "items" that renders <li> elements only #}
+
+
+  {% macro items(list, fallback_title) -%}
+  {% if list and list|length %}
+    {% for b in list %}
+      <li class="breadcrumb-item {% if loop.last %}active{% endif %}"
+          {% if loop.last %}aria-current="page"{% endif %}>
+        {% if not loop.last and b.url %}
+          <a href="{{ b.url }}" class="text-decoration-none">{{ b.title }}</a>
+        {% else %}
+          <span>{{ b.title }}</span>
+        {% endif %}
+      </li>
+    {% endfor %}
+  {% else %}
+    <li class="breadcrumb-item">
+      <a class="text-decoration-none" href="{{ url_for('main.menu') }}">Home</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">
+      {{ fallback_title or 'Page' }}
+    </li>
+  {% endif %}
+{%- endmacro %}

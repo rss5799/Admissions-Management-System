@@ -1,31 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-{% include '_breadcrumbs.html' %}
+{% extends "coreui_base_wow.html" %}
 
-<h1 style="text-align: center;">Admissions Management System</h1>
-<h4 style="text-align: center;">Developed for Benjamin Franklin High School</h4>
-<div style="text-align: center;">
-    <img src="{{ url_for('static', filename='/images/ams_logo.png') }}" width="300" height="200">
-    <br>
-</div>
-<br>
+{% block title %}Merge Riverside File{% endblock %}
 
+{% block content %}
+  {% include '_breadcrumbs.html' %}
 
-<br>
-<br>
-<br>
-<h3>Riverside Data File Upload</h3>
-<form action="{{ url_for('main.merge_riverside') }}" method="POST" enctype="multipart/form-data">
-    <label for="file">Upload Riverside CSV (optional):</label>
-    <input type="file" name="riversidefile" accept=".csv">
-    <button type="submit">Merge Scores to Schoolmint File</button>
-</form>
+  <div class="container-lg">
+    <div class="text-center mb-4">
+      <img
+        src="{{ url_for('static', filename='images/ams_logo.png') }}"
+        alt="AMS Logo"
+        class="img-fluid"
+        style="max-height: 120px;"
+      >
+      <h1 class="h3 mt-3 mb-1">Admissions Management System</h1>
+      <h2 class="h6 text-body-secondary">Developed for Benjamin Franklin High School</h2>
+    </div>
 
-        <p>{{ uploadresults }}</p>
+    {% if uploadresults %}
+      <div class="alert alert-info">{{ uploadresults }}</div>
+    {% endif %}
 
-</body>
-</html>
+    <div class="card">
+      <div class="card-header">Riverside Data File Upload</div>
+      <div class="card-body">
+        <form action="{{ url_for('main.merge_riverside') }}" method="POST" enctype="multipart/form-data" class="row g-3">
+          <div class="col-12">
+            <label for="riversidefile" class="form-label">Upload Riverside CSV (optional)</label>
+            <input class="form-control" type="file" id="riversidefile" name="riversidefile" accept=".csv">
+            <div class="form-text">Only .csv files are supported.</div>
+          </div>
+          <div class="col-12 d-flex justify-content-between">
+            <a href="{{ url_for('main.menu') }}" class="btn btn-outline-secondary">Back to Menu</a>
+            <button type="submit" class="btn btn-primary">Merge Scores to Schoolmint File</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

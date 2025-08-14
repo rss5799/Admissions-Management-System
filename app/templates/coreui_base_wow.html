@@ -1,0 +1,375 @@
+<!-- this extends to all other pages, replacing base.html -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>{% block title %}{{ title or "AMS – Dashboard" }}{% endblock %}</title>
+
+    <!-- coreUI 5 css + icons -->
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.0.0/dist/css/coreui.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/icons@3.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- dt 2 + b5 skin -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.bootstrap5.min.css">
+    <!-- b 3 + b5 skins -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.2/css/buttons.bootstrap5.min.css">
+    <!-- res 3 + b5 skin -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.2/css/responsive.bootstrap5.min.css">
+
+    {% block vendor_css_extra %}{% endblock %}
+
+    {% block styles %}
+    <style>
+      .c-main { padding: 1.25rem; }
+      .kpi-card .card-body { display:flex; align-items:center; gap:.75rem; }
+      .kpi-icon { font-size:1.75rem; opacity:.8; }
+      .header .nav-link { display:flex; align-items:center; gap:.25rem; }
+      .sidebar-nav .nav-group-toggle::after { margin-left:auto; }
+      .dt-buttons .btn { margin-right:.25rem; }
+      .toast-container { z-index: 1080; }
+
+      :root{
+        --cui-sidebar-width: 16rem;
+        --cui-sidebar-narrow-width: 4.5rem;
+      }
+
+      .sidebar.sidebar-fixed ~ .wrapper{
+        margin-left: var(--cui-sidebar-width);
+        transition: margin-left .2s ease;
+      }
+      body.sidebar-narrow .sidebar.sidebar-fixed ~ .wrapper{
+        margin-left: var(--cui-sidebar-narrow-width);
+      }
+
+      :root{
+        --ams-primary-700: #1B5E20; 
+        --ams-primary-600: #2E7D32;
+        --ams-primary-500: #388E3C;
+        --ams-primary:     var(--ams-primary-600);
+
+        --ams-accent-700:  #E65100; 
+        --ams-accent-600:  #F57C00;
+        --ams-accent-500:  #FB8C00;
+        --ams-accent:      var(--ams-accent-600);
+
+        
+        --ams-bg:      #FFFFFF;  
+        --ams-surface: #F7F9FB;  
+        --ams-text:    #212529;  
+
+        
+        --ams-radius: .75rem;
+        --ams-shadow: 0 .25rem .75rem rgba(0,0,0,.08);
+      }
+
+      
+      :root{
+        --cui-primary:             var(--ams-primary);
+        --cui-primary-rgb:         46,125,50;   /* 2E7D32 */
+        --cui-warning:             var(--ams-accent);
+        --cui-warning-rgb:         245,124,0;   /* F57C00 */
+        --cui-link-color:          var(--ams-primary-600);
+        --cui-link-hover-color:    var(--ams-primary-700);
+        --cui-body-bg:             var(--ams-bg);
+        --cui-body-color:          var(--ams-text);
+      }
+
+      :root{
+        
+        --bs-primary:      var(--ams-primary);
+        --bs-warning:      var(--ams-accent);
+        --bs-body-bg:      var(--ams-bg);
+        --bs-body-color:   var(--ams-text);
+        --bs-link-color:         var(--ams-primary-600);
+        --bs-link-hover-color:   var(--ams-primary-700);
+      }
+
+      
+      .btn-primary{
+        --bs-btn-bg:              var(--ams-primary);
+        --bs-btn-border-color:    var(--ams-primary);
+        --bs-btn-hover-bg:        var(--ams-primary-700);
+        --bs-btn-hover-border-color: var(--ams-primary-700);
+        --bs-btn-active-bg:       var(--ams-primary-700);
+        --bs-btn-active-border-color: var(--ams-primary-700);
+      }
+      .btn-warning{
+        --bs-btn-bg:           var(--ams-accent);
+        --bs-btn-border-color: var(--ams-accent);
+      }
+
+      
+      .sidebar.sidebar-dark .nav-title,
+      .sidebar.sidebar-dark .nav-link{ color:#fff; }
+      .sidebar.sidebar-dark .nav-link:hover{
+        background: rgba(245,124,0,.18); 
+      }
+
+
+      
+      body{ background:var(--ams-bg); color:var(--ams-text); }
+      .card{ border-radius:var(--ams-radius); box-shadow:var(--ams-shadow); background:var(--ams-surface); }
+
+      
+      .btn-primary{
+        --cui-btn-bg: var(--ams-primary);
+        --cui-btn-border-color: var(--ams-primary);
+        --cui-btn-hover-bg: var(--ams-primary-700);
+        --cui-btn-hover-border-color: var(--ams-primary-700);
+        --cui-btn-active-bg: var(--ams-primary-700);
+        --cui-btn-active-border-color: var(--ams-primary-700);
+      }
+      .btn-warning{
+        --cui-btn-bg: var(--ams-accent);
+        --cui-btn-border-color: var(--ams-accent);
+      }
+
+      /* focus/action states*/
+      .btn:focus-visible, .nav-link:focus-visible, .form-control:focus-visible{
+        outline: 2px solid var(--ams-accent-600);
+        outline-offset: 2px;
+      }
+      a:hover, .nav-link:hover{ filter: brightness(0.96); }
+
+      /* sidebar thme */
+      .sidebar.sidebar-dark{ background: #0F2A15; }              
+      .sidebar .nav-link.active{ 
+        background: rgba(46,125,50,.15); color: var(--ams-primary-700);
+        border-left: 3px solid var(--ams-primary-700);
+      }
+      .header{ border-bottom: 1px solid rgba(46,125,50,.2); }
+
+      .badge-eligible{ background: var(--ams-primary-600); }
+      .badge-pending{  background: var(--ams-accent-600); }
+
+      .table-striped > tbody > tr:nth-of-type(odd) > *{
+        background-color: color-mix(in srgb, var(--ams-primary-600) 3%, white);
+      }
+
+      /* layout scroll guard */
+      .wrapper{ overflow-x: hidden; }
+      @media (min-width: 1200px){ .container-lg{ max-width: 1140px; } }
+      @media (min-width: 1400px){ .container-lg{ max-width: 1320px; } }
+      @media (min-width: 1920px){ .container-lg{ max-width: 1600px; } }
+
+      
+
+
+    </style>
+
+    {% endblock %}
+    {% block head_extra %}{% endblock %}
+  </head>
+
+  <body data-coreui-theme="light">
+
+    <!-- Sidebar -->
+     <div class="sidebar sidebar-fixed sidebar-dark" id="sidebar">
+      <div class="sidebar-brand d-none d-md-flex">
+        
+        <span class="fs-5 fw-bold px-3">AMS</span>
+      </div>
+
+<ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+  {% block sidebar %}
+  {# Helper to mark active by endpoint prefix #}
+  {% set ep = request.endpoint or '' %}
+  {% macro nav_item(icon, label, endpoint) -%}
+    {%- set is_active = 'active' if ep and ep.startswith(endpoint) else '' -%}
+    <li class="nav-item">
+      <a class="nav-link {{ is_active }}" href="{{ url_for(endpoint) }}">
+        <i class="nav-icon {{ icon }}"></i> {{ label }}
+      </a>
+    </li>
+  {%- endmacro %}
+
+  <li class="nav-item">
+    <a class="nav-link {{ 'active' if ep=='main.menu' else '' }}" href="{{ url_for('main.menu') }}">
+      <i class="nav-icon cil-speedometer"></i> Dashboard
+    </a>
+  </li>
+
+  <li class="nav-title">Students</li>
+  {{ nav_item('cil-list-rich', 'Update Student Scores', 'main.point_inputs') }}
+
+  <li class="nav-title">Data</li>
+  {{ nav_item('cil-library', 'Merge Riverside File', 'main.merge_riverside') }}
+  {{ nav_item('cil-calendar', 'Upcoming Tests Info', 'main.upcoming_tests') }}
+  {{ nav_item('cil-bullhorn', 'Unresponsive Students', 'main.unresponsive_students') }}
+  {{ nav_item('cil-cloud-download', 'Prepare CSV for Export', 'main.exports_page') }}
+
+  {% endblock %}
+</ul>
+      </ul>
+        <!--<button class="sidebar-toggler" id="sidebarBottomToggle" type="button" aria-label="Collapse/expand sidebar"></button> -->
+        <button class="sidebar-toggler" id="sidebarBottomToggle" type="button" aria-label="Collapse/expand sidebar"></button>
+    </div>
+
+    <!-- Page Wrapper -->
+     <div class="wrapper d-flex flex-column min-vh-100">
+
+      <!-- notifications -->
+<div id="toastArea" class="toast-container position-fixed bottom-0 end-0 p-3"
+     aria-live="polite" aria-atomic="true"></div>
+
+
+      <!-- header -->
+      <header class="header header-sticky mb-4">
+        <div class="container-fluid">
+
+          <button class="header-toggler px-md-0 me-md-3" id="sidebarToggle" type="button" aria-label="Toggle sidebar">
+            <i class="cil-menu"></i>
+          </button>
+
+
+          <a class="header-brand d-md-none" href="{{ url_for('main.menu') }}">AMS</a>
+
+          <ul class="header-nav ms-auto">
+            {% block header_actions %}
+
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5000/" title="Home">
+                <i class="cil-home"></i>
+              </a>
+            </li>
+
+
+              <li class="nav-item">
+                <button class="btn btn-sm btn-outline-secondary" id="themeToggle" type="button" title="Toggle theme">
+                  <i class="cil-contrast"></i>
+                </button>
+              </li>
+
+            {% endblock %}
+          </ul>
+        </div>
+
+        <div class="header-divider"></div>
+
+        <div class="container-fluid">
+
+          {% from "_breadcrumbs.html" import items as breadcrumb_items %}
+          <nav aria-label="breadcrumb">
+          <ol class="breadcrumb my-0">
+              {% block breadcrumbs %}
+                {{ breadcrumb_items(breadcrumbs, title) }}
+              {% endblock %}
+            </ol>
+            </nav>
+            </div>
+      </header>
+
+      <!-- cont -->
+      <div class="body flex-grow-1 px-3">
+        <div class="container-lg">
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+
+      <!-- foot -->
+      <footer class="footer">
+        <div class="container-fluid">
+          <span>&copy; {{ 2025 }} AMS</span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- CoreUI, etc scripts -->
+
+    <!-- CoreUI + vendors JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.0.0/dist/js/coreui.bundle.min.js"></script>
+
+    <!-- dt 2 + b5 int -->
+<script src="https://cdn.datatables.net/2.0.7/js/dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/2.0.7/js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- bt 3 + b5 int -->
+<script src="https://cdn.datatables.net/buttons/3.0.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.bootstrap5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.print.min.js"></script>
+
+    <!-- res int -->
+<script src="https://cdn.datatables.net/responsive/3.0.2/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/3.0.2/js/responsive.bootstrap5.min.js"></script>
+
+<!-- theme toggle, hok-->
+<script>
+  (function () {
+
+    const btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        const root = document.body;
+        const current = root.getAttribute('data-coreui-theme') || 'light';
+        root.setAttribute('data-coreui-theme', current === 'light' ? 'dark' : 'light');
+      });
+    }
+
+    // dt auto init for dt
+    window.initDatatables = function(selector = 'table.datatable') {
+      document.querySelectorAll(selector).forEach((el) => {
+        if (!el.dataset.dtBound) {
+          const dt = new DataTable(el, {
+            responsive: true,
+            layout: { topStart: 'buttons', topEnd: null },
+            buttons: ['copy', 'csv', 'print']
+          });
+          el.dataset.dtBound = '1';
+          el._dt = dt;
+        }
+      });
+    };
+  })();
+</script>
+
+    {% block scripts %}{% endblock %}
+
+    <script>
+  (function () {
+    const KEY = 'ams.sidebar.narrow';
+
+    function toggleWidth() {
+      document.body.classList.toggle('sidebar-narrow');
+      localStorage.setItem(KEY, document.body.classList.contains('sidebar-narrow') ? '1' : '0');
+    }
+
+    document.getElementById('sidebarToggle')?.addEventListener('click', toggleWidth);
+    document.getElementById('sidebarBottomToggle')?.addEventListener('click', toggleWidth); 
+  })();
+</script>
+
+<script>
+
+  // Toast helper 
+  window.amsToast = function ({title="Notice", body="", color="primary", autohide=true, delay=3000} = {}) {
+    const el = document.createElement('div');
+    el.className = `toast align-items-center text-bg-${color} border-0 show`;
+    el.role = "status";
+    el.innerHTML = `
+      <div class="d-flex">
+        <div class="toast-body">
+          ${title ? `<strong class="me-2">${title}</strong>` : ""}${body}
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-coreui-dismiss="toast"></button>
+      </div>`;
+    document.getElementById('toastArea').appendChild(el);
+    const t = new coreui.Toast(el, { autohide, delay });
+    t.show();
+    el.addEventListener('hidden.coreui.toast', () => el.remove());
+  };
+</script>
+
+<script>
+
+  // init tooltips, popovers
+  document.querySelectorAll('[data-coreui-toggle="tooltip"]').forEach(el => new coreui.Tooltip(el));
+  document.querySelectorAll('[data-coreui-toggle="popover"]').forEach(el => new coreui.Popover(el));
+</script>
+  </body>
+</html>

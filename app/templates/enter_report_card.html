@@ -1,19 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Enter Report Card Info</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
-</head>
+{% extends "coreui_base_wow.html" %}
 
-<body>
-    <h2>Enter Report Card Info</h2>
-    <h3>Student ID: {{ results.id }}</h3>
-    <h3>Applying for Grade: {{ results.grade }}</h3>
-    <h3>Current School: {{ results.current_school }}</h3>
+{% block title %}Enter Report Card Info{% endblock %}
 
-    <form method="POST" action="/enter_report_card/">
-        <label for="schedule_option">Select Schedule Option:</label>
-        <select id="schedule_option" name="schedule_option" required>
+{% block content %}
+  {% include '_breadcrumbs.html' %}
+
+  <h1 class="h4 mb-3">Enter Report Card Info</h1>
+
+  <!-- Student summary -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <dl class="row mb-0">
+        <dt class="col-sm-3">Student ID</dt>
+        <dd class="col-sm-9">{{ results.id }}</dd>
+
+        <dt class="col-sm-3">Applying for Grade</dt>
+        <dd class="col-sm-9">{{ results.grade }}</dd>
+
+        <dt class="col-sm-3">Current School</dt>
+        <dd class="col-sm-9">{{ results.current_school }}</dd>
+      </dl>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div class="card">
+    <div class="card-header">Grades Input</div>
+    <div class="card-body">
+      <form id="report-card-form" method="POST" action="{{ url_for('main.enter_report_card') }}" class="row g-3">
+        <div class="col-sm-6 col-md-4">
+          <label for="schedule_option" class="form-label">Select Schedule Option</label>
+          <select id="schedule_option" name="schedule_option" class="form-select" required>
             <option value="">--Select Option--</option>
             <option value="9_S">9th grade semester/trimester</option>
             <option value="9_Q">9th grade quarters</option>
@@ -21,152 +38,149 @@
             <option value="10_Q">10th grade quarters</option>
             <option value="11_S">11th grade semester/trimester</option>
             <option value="11_Q">11th grade quarters</option>
-        </select>
-        <div id="grade-inputs"></div>
+          </select>
+        </div>
 
-        <button type="submit">Calculate GPA</button>
-        <button type="button" onclick="location.href='/student_details/';">Return to Student Scores</button>
-    </form>
+        <!-- Dynamic grade inputs -->
+        <div class="col-12">
+          <div id="grade-inputs" class="table-responsive"></div>
+        </div>
 
-    {% if gpa %}
-    <h3>Calculated GPA: {{ gpa }}</h3>
-    <h3>Calculated Matrix GPA: {{ matrix_gpa }}</h3>
-    {% endif %}
-
-    {% with messages = get_flashed_messages(with_categories=True) %}
-    {% if messages %}
-    {% for category, message in messages %}
-    <div class="{{ 'success-message' if category == 'success' else 'error-message' }}">
-        {{ message }}
+        <div class="col-12 d-flex justify-content-between">
+          <a href="{{ url_for('main.student_details') }}" class="btn btn-outline-secondary">Return to Student Scores</a>
+          <button type="submit" class="btn btn-primary">Calculate GPA</button>
+        </div>
+      </form>
     </div>
-    {% endfor %}
+  </div>
+
+  <!-- Calculated results -->
+  {% if gpa %}
+  <div class="alert alert-success mt-3">
+    <div><strong>Calculated GPA:</strong> {{ gpa }}</div>
+    <div><strong>Calculated Matrix GPA:</strong> {{ matrix_gpa }}</div>
+  </div>
+  {% endif %}
+
+  <!-- Flash messages -->
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div class="mt-3">
+        {% for category, message in messages %}
+          <div class="alert {{ 'alert-success' if category == 'success' else 'alert-danger' }} mb-2">{{ message }}</div>
+        {% endfor %}
+      </div>
     {% endif %}
-    {% endwith %}
+  {% endwith %}
+{% endblock %}
 
-    <script>
-        document.getElementById("schedule_option").addEventListener("change", updateGradeInputs);
+{% block scripts %}
+{{ super() }}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('report-card-form');
+    const select = document.getElementById('schedule_option');
+    const container = document.getElementById('grade-inputs');
 
-        // Form validation so Tara stops yelling at me
-        document.querySelector("form").addEventListener("submit", function(event) {
-            const inputs = document.querySelectorAll("#grade-inputs input[type='text']");
-            let valid = true;
-            const gradePattern = /^[A-Da-d][+-]?$|^F$/;
+    if (select) select.addEventListener('change', updateGradeInputs);
+    if (form) form.addEventListener('submit', validateGrades);
 
-            inputs.forEach(input => {
-                input.setCustomValidity(""); // Reset previous messages
-                if (!input.value) {
-                    input.setCustomValidity("This field is required.");
-                    valid = false;
-                } else if (!gradePattern.test(input.value)) {
-                    input.setCustomValidity("Enter A, B, C, D, or F");
-                    valid = false;
-                }
-            });
+    function validateGrades(event) {
+      const inputs = container.querySelectorAll("input[type='text']");
+      let valid = true;
+      const gradePattern = /^[A-Da-d][+-]?$|^F$/;
 
-            if (!valid) {
-                event.preventDefault();
-                const firstInvalid = Array.from(inputs).find(input => !input.checkValidity());
-                if (firstInvalid) firstInvalid.reportValidity();
-            }
-        });
-
-        function updateGradeInputs() {
-            const option = document.getElementById("schedule_option").value;
-            const container = document.getElementById("grade-inputs");
-            container.innerHTML = "";
-
-            if (!option) {
-                return;
-            }
-
-            let subjects = ["english", "math", "science", "social_studies"];
-            let gradesPerSubject = 1;
-            let headerLabels = [];
-
-            switch (option) {
-                case "9_S":
-                    gradesPerSubject = 1;
-                    headerLabels = ["8th 1st semester"];
-                    break;
-                case "10_S":
-                    gradesPerSubject = 1;
-                    headerLabels = ["9th 1st semester"];
-                    break;
-                case "11_S":
-                    gradesPerSubject = 3;
-                    headerLabels = ["9th 1st semester", "9th 2nd semester", "10th 1st semester"];
-                    break;
-                case "9_Q":
-                    gradesPerSubject = 2;
-                    headerLabels = ["8th 1st quarter", "8th 2nd quarter"];
-                    break;
-                case "10_Q":
-                    gradesPerSubject = 2;
-                    subjects.push("language");
-                    headerLabels = ["9th 1st quarter", "9th 2nd quarter"];
-                    break;
-                case "11_Q":
-                    gradesPerSubject = 6;
-                    subjects.push("language");
-                    headerLabels = ["9th 1st quarter", "9th 2nd quarter", "9th 3rd quarter", "9th 4th quarter", "10th 1st quarter", "10th 2nd quarter"];
-                    break;
-                default:
-                    alert("Please select a valid schedule option.");
-            }
-
-            // Create a table
-            const table = document.createElement("table");
-            table.className = "grade-table";
-
-            // Header Row
-            const headerRow = document.createElement("tr");
-            const emptyHeader = document.createElement("th");
-            headerRow.appendChild(emptyHeader);
-            for (let label of headerLabels) {
-                const th = document.createElement("th");
-                th.textContent = label;
-                headerRow.appendChild(th);
-            }
-            table.appendChild(headerRow);
-
-            // Data Rows
-            for (let subject of subjects) {
-                const row = document.createElement("tr");
-
-                const subjectCell = document.createElement("td");
-                subjectCell.textContent = subject.replace("_", " ").toUpperCase();
-                row.appendChild(subjectCell);
-
-                for (let i = 1; i <= gradesPerSubject; i++) {
-                    const cell = document.createElement("td");
-
-                    const input = document.createElement("input");
-                    input.type = "text";
-                    input.name = subject + (gradesPerSubject > 1 ? `_q${i}` : "");
-                    input.required = true;
-                    input.pattern = "^[A-Da-d][+-]?$|^F$";
-                    input.title = "Enter A, B, C, D (with optional + or -), or F";
-
-
-                    input.addEventListener("input", function() {
-                        if (!input.value) {
-                            input.setCustomValidity("This field is required.");
-                        } else if (!/^[A-Da-d][+-]?$|^F$/.test(input.value)) {
-                            input.setCustomValidity("Enter A, B, C, D, or F");
-                        } else {
-                            input.setCustomValidity("");
-                        }
-                    });
-
-                    cell.appendChild(input);
-                    row.appendChild(cell);
-                }
-                table.appendChild(row);
-            }
-
-            container.appendChild(table);
+      inputs.forEach(input => {
+        input.setCustomValidity("");
+        if (!input.value) {
+          input.setCustomValidity("This field is required.");
+          valid = false;
+        } else if (!gradePattern.test(input.value)) {
+          input.setCustomValidity("Enter A, B, C, D (optional +/−) or F");
+          valid = false;
         }
-    </script>
+      });
 
-</body>
-</html>
+      if (!valid) {
+        event.preventDefault();
+        const firstInvalid = Array.from(inputs).find(i => !i.checkValidity());
+        if (firstInvalid) firstInvalid.reportValidity();
+      }
+    }
+
+    function updateGradeInputs() {
+      const option = select.value;
+      container.innerHTML = "";
+      if (!option) return;
+
+      let subjects = ["english", "math", "science", "social_studies"];
+      let gradesPerSubject = 1;
+      let headerLabels = [];
+
+      switch (option) {
+        case "9_S":  gradesPerSubject = 1; headerLabels = ["8th 1st semester"]; break;
+        case "10_S": gradesPerSubject = 1; headerLabels = ["9th 1st semester"]; break;
+        case "11_S": gradesPerSubject = 3; headerLabels = ["9th 1st semester","9th 2nd semester","10th 1st semester"]; break;
+        case "9_Q":  gradesPerSubject = 2; headerLabels = ["8th 1st quarter","8th 2nd quarter"]; break;
+        case "10_Q": gradesPerSubject = 2; subjects.push("language"); headerLabels = ["9th 1st quarter","9th 2nd quarter"]; break;
+        case "11_Q": gradesPerSubject = 6; subjects.push("language"); headerLabels = ["9th 1st quarter","9th 2nd quarter","9th 3rd quarter","9th 4th quarter","10th 1st quarter","10th 2nd quarter"]; break;
+        default: alert("Please select a valid schedule option."); return;
+      }
+
+      const table = document.createElement("table");
+      table.className = "table table-bordered table-sm align-middle w-auto grade-table";
+
+      const thead = document.createElement("thead");
+      const headRow1 = document.createElement("tr");
+      const emptyTh = document.createElement("th");
+      headRow1.appendChild(emptyTh);
+      headerLabels.forEach(label => {
+        const th = document.createElement("th");
+        th.textContent = label;
+        th.className = "text-center";
+        headRow1.appendChild(th);
+      });
+      thead.appendChild(headRow1);
+
+      const tbody = document.createElement("tbody");
+
+      subjects.forEach(subject => {
+        const row = document.createElement("tr");
+        const subjectCell = document.createElement("th");
+        subjectCell.scope = "row";
+        subjectCell.textContent = subject.replace("_", " ").toUpperCase();
+        row.appendChild(subjectCell);
+
+        for (let i = 1; i <= gradesPerSubject; i++) {
+          const cell = document.createElement("td");
+          const input = document.createElement("input");
+          input.type = "text";
+          input.name = subject + (gradesPerSubject > 1 ? `_q${i}` : "");
+          input.required = true;
+          input.pattern = "^[A-Da-d][+-]?$|^F$";
+          input.title = "Enter A, B, C, D (optional +/−) or F";
+          input.className = "form-control";
+
+          input.addEventListener("input", function () {
+            if (!input.value) {
+              input.setCustomValidity("This field is required.");
+            } else if (!/^[A-Da-d][+-]?$|^F$/.test(input.value)) {
+              input.setCustomValidity("Enter A, B, C, D (optional +/−) or F");
+            } else {
+              input.setCustomValidity("");
+            }
+          });
+
+          cell.appendChild(input);
+          row.appendChild(cell);
+        }
+        tbody.appendChild(row);
+      });
+
+      table.appendChild(thead);
+      table.appendChild(tbody);
+      container.appendChild(table);
+    }
+  });
+</script>
+{% endblock %}

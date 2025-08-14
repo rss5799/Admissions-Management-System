@@ -1,98 +1,103 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Admissions Management System</title>
-</head>
-<body>
-    {% include '_breadcrumbs.html' %}
+{% extends "coreui_base_wow.html" %}
 
-    <h2>Upcoming Tests</h2>
+{% block title %}Upcoming Tests{% endblock %}
 
-            <style>
-        table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        justify-items: flex-end;
-        width: fit-content;
-        padding: 100dp;
-        text-align: center;
-        }
-        </style>
+{% block content %}
+  {% include '_breadcrumbs.html' %}
 
-    <form method="POST">
-        <label for="upcoming_tests_dropdown">Choose a test date</label>
-        <select name = "upcoming_tests_dropdown" id="upcoming_tests_dropdown">
-            <option selected value="" disabled>Select a Test Date</option>
+  <h1 class="h4 mb-3">Upcoming Tests</h1>
+
+  <!-- Date picker -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <form method="POST" action="{{ url_for('main.upcoming_tests') }}" class="row g-3 align-items-end">
+        <div class="col-sm-6 col-md-4">
+          <label for="upcoming_tests_dropdown" class="form-label">Choose a test date</label>
+          <select name="upcoming_tests_dropdown" id="upcoming_tests_dropdown" class="form-select" required>
+            <option value="" disabled {% if not selected_test_date %}selected{% endif %}>Select a Test Date</option>
             {% for date in dates %}
-                <option value="{{ date }}">{{ date }}</option>
+              <option value="{{ date }}" {% if selected_test_date == date %}selected{% endif %}>{{ date }}</option>
             {% endfor %}
-        </select>
-        <input type="submit" value="Submit">
-    </form>
-    <br>
-    <br>
-    <br>
-    <br>
+          </select>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-12">
+          {% if selected_test_date %}
+            <p class="mb-0 text-muted">Showing details for: <strong>{{ selected_test_date }}</strong></p>
+          {% endif %}
+        </div>
+      </form>
+    </div>
+  </div>
 
-    <h2>Showing Details for: {{selected_test_date}}</h2>
-
-    
-    
-    <table>
-    <tr>
-        <th></th>
-        <th colspan="3"> First Test</th>
-        <th colspan="3"> Retesters</th>
-        <th colspan="2"></th>
-    </tr>
-
-    <tr>
-        <th></th>
-        <th> 8th</th>
-        <th> 9th</th>
-        <th>10th</th>
-        <th> 8th</th>
-        <th> 9th</th>
-        <th>10th</th>
-        <th>Total</th>
-        <th> Rec # of Rooms</th>
-    </tr>
-
-    <tr>
-        <td>Standard Time</td>
-        <td>{{test_day_numbers.firststandard8}}</td>
-        <td>{{test_day_numbers.firststandard9}}</td>
-        <td>{{test_day_numbers.firststandard10}}</td>
-        <td>{{test_day_numbers.reteststandard8}}</td>
-        <td>{{test_day_numbers.reteststandard9}}</td>
-        <td>{{test_day_numbers.reteststandard10}}</td>
-        <td>{{test_day_numbers.totalstandard}}</td>
-        <td>{{test_day_numbers.totalstandardrooms}}</td>
-    </tr>
-
-    <tr>
-        <td>Eligible for Accommodations</td>
-        <td>{{test_day_numbers.firstaccomms8}}</td>
-        <td>{{test_day_numbers.firstaccomms9}}</td>
-        <td>{{test_day_numbers.firstaccomms10}}</td>
-        <td>{{test_day_numbers.retestaccomms8}}</td>
-        <td>{{test_day_numbers.retestaccomms9}}</td>
-        <td>{{test_day_numbers.retestaccomms10}}</td>
-        <td>{{test_day_numbers.totalaccomms}}</td>
-        <td>{{test_day_numbers.totalaccommsrooms}}</td>
-    </tr>
-
-    <tr>
-        <td>Totals</td>
-        <td colspan="3">Total First Test: {{test_day_numbers.totalfirsttesters}}</td>
-        <td colspan="3">Total Retest: {{test_day_numbers.totalretesters}}</td>
-        <td>Total Testers: {{test_day_numbers.totalstudents}}</td>
-        <td>Total Rooms: {{test_day_numbers.totalrooms}}</td>
-    </tr>
-
-    
-
-
-</table>
-</body>
-</html>
+  <!-- Results -->
+  {% if test_day_numbers %}
+  <div class="card">
+    <div class="card-header">Test Day Breakdown</div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle w-auto">
+          <thead>
+            <tr>
+              <th></th>
+              <th colspan="3" class="text-center">First Test</th>
+              <th colspan="3" class="text-center">Retesters</th>
+              <th colspan="2" class="text-center"></th>
+            </tr>
+            <tr>
+              <th></th>
+              <th class="text-center">8th</th>
+              <th class="text-center">9th</th>
+              <th class="text-center">10th</th>
+              <th class="text-center">8th</th>
+              <th class="text-center">9th</th>
+              <th class="text-center">10th</th>
+              <th class="text-center">Total</th>
+              <th class="text-center">Rec # of Rooms</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Standard Time</th>
+              <td class="text-center">{{ test_day_numbers.firststandard8 }}</td>
+              <td class="text-center">{{ test_day_numbers.firststandard9 }}</td>
+              <td class="text-center">{{ test_day_numbers.firststandard10 }}</td>
+              <td class="text-center">{{ test_day_numbers.reteststandard8 }}</td>
+              <td class="text-center">{{ test_day_numbers.reteststandard9 }}</td>
+              <td class="text-center">{{ test_day_numbers.reteststandard10 }}</td>
+              <td class="text-center">{{ test_day_numbers.totalstandard }}</td>
+              <td class="text-center">{{ test_day_numbers.totalstandardrooms }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Eligible for Accommodations</th>
+              <td class="text-center">{{ test_day_numbers.firstaccomms8 }}</td>
+              <td class="text-center">{{ test_day_numbers.firstaccomms9 }}</td>
+              <td class="text-center">{{ test_day_numbers.firstaccomms10 }}</td>
+              <td class="text-center">{{ test_day_numbers.retestaccomms8 }}</td>
+              <td class="text-center">{{ test_day_numbers.retestaccomms9 }}</td>
+              <td class="text-center">{{ test_day_numbers.retestaccomms10 }}</td>
+              <td class="text-center">{{ test_day_numbers.totalaccomms }}</td>
+              <td class="text-center">{{ test_day_numbers.totalaccommsrooms }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Totals</th>
+              <td colspan="3">Total First Test: <strong>{{ test_day_numbers.totalfirsttesters }}</strong></td>
+              <td colspan="3">Total Retest: <strong>{{ test_day_numbers.totalretesters }}</strong></td>
+              <td>Total Testers: <strong>{{ test_day_numbers.totalstudents }}</strong></td>
+              <td>Total Rooms: <strong>{{ test_day_numbers.totalrooms }}</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  {% else %}
+    {% if selected_test_date %}
+      <div class="alert alert-warning">No data found for the selected test date.</div>
+    {% else %}
+      <div class="alert alert-info">Select a test date and click <strong>Submit</strong> to view details.</div>
+    {% endif %}
+  {% endif %}
+{% endblock %}

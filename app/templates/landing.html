@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
+{% extends "coreui_base_wow.html" %}
+{% block content %}
+
 {% include '_breadcrumbs.html' %}
-
-
-
 <h1 style="text-align: center;">Admissions Management System</h1>
 <h4 style="text-align: center;">Developed for Benjamin Franklin High School</h4>
 <div style="text-align: center;">
@@ -24,10 +18,9 @@
     <input type="file" name="schoolmintfile" accept=".csv" required>
     <br>
     <br>
-    <button type="submit">Upload</button>
+    <button type="submit" class="btn btn-primary">Upload</button>
+
 </form>
 
         <p>{{ uploadresults }}</p>
-
-</body>
-</html>
+{% endblock %}

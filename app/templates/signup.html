@@ -1,22 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Create Your Account</title>
-</head>
-<body>
-    <h1 style="text-align: center;">Admissions Management System</h1>
-<h4 style="text-align: center;">Developed for Benjamin Franklin High School</h4>
-<div style="text-align: center;">
-    <img src="{{ url_for('static', filename='/images/ams_logo.png') }}" width="300" height="200">
-    <br>
+{% extends "coreui_base_wow.html" %}
+
+{% block title %}Create Your Account{% endblock %}
+
+{% block content %}
+<div class="container-lg">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+
+      <div class="text-center mb-4">
+        <img src="{{ url_for('static', filename='images/ams_logo.png') }}"
+             alt="AMS Logo" class="img-fluid" style="max-height: 120px;">
+        <h1 class="h3 mt-3 mb-1">Admissions Management System</h1>
+        <h2 class="h6 text-body-secondary">Developed for Benjamin Franklin High School</h2>
+      </div>
+
+      {% if results %}
+        <div class="alert alert-info">{{ results }}</div>
+      {% endif %}
+
+      <div class="card">
+        <div class="card-header">Create Your Account</div>
+        <div class="card-body">
+          <form action="{{ url_for('main.signup') }}" method="POST" class="row g-3">
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" type="email" class="form-control" required>
+            </div>
+            <div class="col-12">
+              <label for="password" class="form-label">Password</label>
+              <input id="password" name="password" type="password" class="form-control" required>
+            </div>
+            <div class="col-12 d-flex justify-content-between">
+              <a href="{{ url_for('main.index') }}" class="btn btn-outline-secondary">Back to Login</a>
+              <button type="submit" class="btn btn-primary">Create Account</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
-<br>
-    <form action = '/signup' method = "POST">
-        Email: <input type = 'text', name = 'email'><br><br>
-        Password: <input type = 'passsord' name = 'password'><br><br>
-        <input type = 'submit'>
-    </form>
-        <p>{{ results }}</p>
-                <a href="/" style = "text-align:center"><button type="button">Take me to the Login Page</button></a>
-</body>
-</html>
+{% endblock %}

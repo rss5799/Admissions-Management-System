@@ -383,3 +383,32 @@ def unresponsive_students():
         {"title": "Unresponsive Students", "url": url_for('main.unresponsive_students')}
     ]
     return render_template("unresponsive_students.html", breadcrumbs=breadcrumbs)
+
+@bp.route('/ui/preview/pro')
+def preview_pro():
+    return render_template('preview_pro.html', title='Preview – Pro')
+
+@bp.route('/ui/preview/wow')
+def preview_wow():
+    return render_template('preview_wow.html', title='Preview – Wow')
+
+# routes.py
+@bp.route('/ui/wow/dashboard')
+def wow_dashboard():
+    # demo data; replace with real later
+    students = [
+        {"id": "1001", "name": "Ada Lovelace", "grade": "9", "status": "Eligible", "pred_gpa": 3.82},
+        {"id": "1002", "name": "Alan Turing",  "grade": "10", "status": "Pending",  "pred_gpa": 3.45},
+        {"id": "1003", "name": "Grace Hopper", "grade": "9", "status": "Ineligible","pred_gpa": 2.10},
+    ]
+    return render_template(
+        "_dashboard_wow.html",
+        title="AMS – Dashboard",
+        students=students,
+        total_students=len(students),
+        eligible_count=sum(1 for s in students if s["status"]=="Eligible"),
+        pending_count=sum(1 for s in students if s["status"]=="Pending"),
+        avg_pred_gpa=round(sum(s["pred_gpa"] for s in students)/len(students), 2),
+        eligibility_breakdown={"Eligible":1, "Pending":1, "Ineligible":1},
+        gpa_histogram={"1.0":1,"2.0":1,"3.0":1,"4.0":0}
+    )
