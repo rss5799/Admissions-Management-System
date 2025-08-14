@@ -1,4 +1,5 @@
 {% extends "coreui_base_wow.html" %}
+
 {% block title %}Enter Report Card Info{% endblock %}
 
 {% block content %}
@@ -40,7 +41,7 @@
           </select>
         </div>
 
-        <!-- Dynamic grade inputs render here -->
+        <!-- Dynamic grade inputs -->
         <div class="col-12">
           <div id="grade-inputs" class="table-responsive"></div>
         </div>
@@ -126,7 +127,6 @@
         default: alert("Please select a valid schedule option."); return;
       }
 
-      // Build a CoreUI/Bootstrap-styled table
       const table = document.createElement("table");
       table.className = "table table-bordered table-sm align-middle w-auto grade-table";
 

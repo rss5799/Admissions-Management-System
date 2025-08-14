@@ -1,4 +1,5 @@
 {% extends "coreui_base_wow.html" %}
+
 {% block content %}
 
 {% include '_breadcrumbs.html' %}
@@ -9,7 +10,8 @@
 </div>
 
 <div class="row g-4">
-  <!-- View / Update Student Scores -->
+
+  <!-- update SS -->
   <div class="col-12 col-sm-6 col-lg-4">
     <div class="card h-100 shadow-sm">
       <div class="card-body text-center">
@@ -21,11 +23,11 @@
     </div>
   </div>
 
-  <!-- Merge Riverside File -->
+  <!-- merge River-->
   <div class="col-12 col-sm-6 col-lg-4">
     <div class="card h-100 shadow-sm">
       <div class="card-body text-center">
-        <i class="cil-merge kpi-icon mb-2" style="font-size:2rem;"></i>
+        <i class="cil-library kpi-icon mb-2" style="font-size:2rem;"></i>
         <h5 class="card-title mb-1">Merge Riverside File</h5>
         <p class="text-body-secondary small mb-2">Upload Riverside CSV and merge into SchoolMint.</p>
         <a href="{{ url_for('main.merge_riverside') }}" class="stretched-link"></a>
@@ -33,7 +35,7 @@
     </div>
   </div>
 
-  <!-- Upcoming Tests Info -->
+  <!-- up Test info -->
   <div class="col-12 col-sm-6 col-lg-4">
     <div class="card h-100 shadow-sm">
       <div class="card-body text-center">
@@ -45,11 +47,11 @@
     </div>
   </div>
 
-  <!-- Unresponsive Students -->
+  <!-- unres Students-->
   <div class="col-12 col-sm-6 col-lg-4">
     <div class="card h-100 shadow-sm">
       <div class="card-body text-center">
-        <i class="cil-people-x kpi-icon mb-2" style="font-size:2rem;"></i>
+        <i class="cil-bullhorn kpi-icon mb-2" style="font-size:2rem;"></i>
         <h5 class="card-title mb-1">Unresponsive Students</h5>
         <p class="text-body-secondary small mb-2">See students who haven’t replied or scheduled.</p>
         <a href="{{ url_for('main.unresponsive_students') }}" class="stretched-link"></a>
@@ -57,7 +59,7 @@
     </div>
   </div>
 
-  <!-- Prepare CSV for Export -->
+  <!-- CSV Export -->
   <div class="col-12 col-sm-6 col-lg-4">
     <div class="card h-100 shadow-sm">
       <div class="card-body text-center">

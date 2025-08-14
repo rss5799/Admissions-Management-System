@@ -1,5 +1,6 @@
-{# templates/dashboard_wow.html #}
-{% extends "coreui_base_wow_origin.html" %}
+
+{% extends "coreui_base_wow.html" %}
+
 <!-- DEMO: run flask, then go to: http://127.0.0.1:5000/ui/wow/dashboard -->
 
 {% block title %}AMS – Dashboard{% endblock %}
@@ -150,27 +151,24 @@
 {% block scripts %}
 {{ super() }}
 
-<!-- Chart.js (needed for the two demo charts) -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    // ----- DataTables v2 init (no jQuery) -----
+
     const tableEl = document.getElementById('studentsTable');
     if (tableEl && typeof DataTable !== 'undefined') {
       const dt = new DataTable(tableEl, {
         responsive: true,
         layout: { topStart: 'buttons' },
-        buttons: ['csv']  // keep it light; no excel/pdf
+        buttons: ['csv']  
       });
 
-      // Quick search
       const qs = document.getElementById('quickSearch');
       if (qs) qs.addEventListener('input', (e) => {
         dt.search(e.target.value).draw();
       });
 
-      // Toolbar export button triggers the DT CSV button
       const btnExport = document.getElementById('btnExportCSV');
       if (btnExport) btnExport.addEventListener('click', () => {
         const csvBtn = document.querySelector('.dt-buttons .buttons-csv');
@@ -178,7 +176,6 @@
       });
     }
 
-    // ----- Charts (needs Chart.js) -----
     const elig = {{ eligibility_breakdown|tojson if eligibility_breakdown is defined else '{"Eligible":55,"Pending":30,"Ineligible":15}' }};
     const gpaBins = {{ gpa_histogram|tojson if gpa_histogram is defined else '{"1.0":5,"2.0":18,"3.0":34,"4.0":21}' }};
 
