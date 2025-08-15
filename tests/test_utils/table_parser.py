@@ -11,7 +11,7 @@ class TableParser:
     def get_headers(self):
         """Returns a list of header names in the table."""
         if self._header_cache is None:
-            header_elements = self.soup.select("table#data thead th")
+            header_elements = self.soup.select("table#data thead th, table#studentsTable thead th")
             self._header_cache = [h.get_text(strip=True) for h in header_elements]
         return self._header_cache
 
@@ -23,7 +23,7 @@ class TableParser:
             raise ValueError(f"Column '{column_name}' not found in table headers: {headers}")
         
         idx = headers.index(column_name)
-        rows = self.soup.select("table#data tbody tr")
+        rows = self.soup.select("table#data tbody tr, table#studentsTable tbody tr")
         return [
             row.find_all("td")[idx].get_text(strip=True)
             for row in rows if len(row.find_all("td")) > idx
@@ -49,7 +49,7 @@ class AdvancedTableParser:
             return self._header_cache
 
         # Find all header elements in the table header row
-        header_elements = self.soup.select("table#data thead th")
+        header_elements = self.soup.select("table#data thead th, table#studentsTable thead th")
 
         # Extract text and strip whitespace from each header element
         self._header_cache = [h.get_text(strip=True) for h in header_elements]
@@ -60,7 +60,7 @@ class AdvancedTableParser:
         # Extract a full row of data by index
         headers = self.get_headers()
 
-        rows = self.soup.select("table#data tbody tr")
+        rows = self.soup.select("table#data tbody tr, , table#studentsTable tbody tr")
         
         if index >= len(rows):
             raise IndexError("Row index out of range.")
@@ -72,7 +72,7 @@ class AdvancedTableParser:
         # Convert entire table into a list of row dictionaries
         headers = self.get_headers()
 
-        rows = self.soup.select("table#data tbody tr")
+        rows = self.soup.select("table#data tbody tr, table#studentsTable tbody tr")
 
         return [
             {headers[i]: cell.get_text(strip=True) for i, cell in enumerate(row.find_all("td"))}
@@ -104,7 +104,7 @@ class AdvancedTableParser:
         idx = headers.index(column_name)
         
         # Extract rows
-        rows = self.soup.select("table#data tbody tr")
+        rows = self.soup.select("table#data tbody tr, table#studentsTable tbody tr")
 
         # Safely extract the column text values
         values = [
