@@ -179,9 +179,13 @@ def point_inputs():
                 schoolmint_data.loc[index, col_name] = value
     
     records = schoolmint_data.to_dict(orient='records')
+
+    headers = schoolmint_data.columns
+    headers = (['id', 'lname', 'fname', 'grade', 'current_school', 'status',
+       'test_date_sign_up','Predicted Unweighted GPA'])
     return render_template("point_inputs.html", 
                            breadcrumbs=breadcrumbs, 
-                           headers = schoolmint_data.columns, 
+                           headers = headers, 
                            records = records, 
                            filter_field=filter_field,
                            filter_values=filter_values
@@ -375,14 +379,6 @@ def upload_schoolmint_csv():
         return render_template("menu.html", breadcrumbs=[{"title": "Main Menu", "url": url_for('main.menu')}])
     else:
         return render_template("landing.html", uploadresults = "Invalid file type please upload a csv", breadcrumbs=[{"title": "Landing", "url": url_for('main.landing')}])
-
-@bp.route("/unresponsive_students/")
-def unresponsive_students():
-    breadcrumbs = [
-        {"title": "Main Menu", "url": url_for('main.menu')},
-        {"title": "Unresponsive Students", "url": url_for('main.unresponsive_students')}
-    ]
-    return render_template("unresponsive_students.html", breadcrumbs=breadcrumbs)
 
 @bp.route('/ui/preview/pro')
 def preview_pro():

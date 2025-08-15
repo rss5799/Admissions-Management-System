@@ -6,7 +6,7 @@ from pathlib import Path
 from flask.testing import FlaskClient
 from app.services.filtering import DataFilter
 from app.services.sorting import apply_sorting
-from tests.test_utils.table_parser import TableParser
+from tests.test_utils.test_table_parser import TableParser
 
 # fixtures (could be put in conftest.py for global)
 @pytest.fixture
