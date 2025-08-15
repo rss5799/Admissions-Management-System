@@ -376,14 +376,6 @@ def upload_schoolmint_csv():
     else:
         return render_template("landing.html", uploadresults = "Invalid file type please upload a csv", breadcrumbs=[{"title": "Landing", "url": url_for('main.landing')}])
 
-@bp.route("/unresponsive_students/")
-def unresponsive_students():
-    breadcrumbs = [
-        {"title": "Main Menu", "url": url_for('main.menu')},
-        {"title": "Unresponsive Students", "url": url_for('main.unresponsive_students')}
-    ]
-    return render_template("unresponsive_students.html", breadcrumbs=breadcrumbs)
-
 @bp.route('/ui/preview/pro')
 def preview_pro():
     return render_template('preview_pro.html', title='Preview – Pro')

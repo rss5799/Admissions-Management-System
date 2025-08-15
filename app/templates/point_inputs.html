@@ -76,13 +76,19 @@
           </tr>
         </thead>
         <tbody>
-          {% for r in records %}
-            <tr>
-              {% for h in headers %}
-                <td>{{ r[h] }}</td>
-              {% endfor %}
-            </tr>
+        {% for record in records %}
+        <tr>
+          {% for header in headers %}
+            {% if header == 'id' %}
+              <td><a href="{{ url_for('main.student_details', id_query=record[header]) }}">{{ record[header] }}</a></td>
+            {% else %}
+              {% if record[header] != 'nan' %}
+                <td>{{ record[header] }}</td>
+              {% endif %}
+            {% endif %}
           {% endfor %}
+        </tr>
+        {% endfor %}
         </tbody>
       </table>
     </div>
