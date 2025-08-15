@@ -15,13 +15,8 @@ def test_high_level_student_view_visibility(client):
     csv_path = 'data/updated_schoolmint.csv'
     ids = []
     expected_headers = [
-    "fname", "lname", "id", "dob", "grade", "matrix_gpa", "language_test_scores",
-    "reading_test_score", "math_test_scores", "total_points", "matrix_languauge",
-    "matrix_math", "matrix_reading", "status", "matrix_languauge_retest",
-    "matrix_math_retest", "matrix_reading_restest", "total_points_retest",
-    "updated_at", "guardian1_email", "guardian2_email", "deliver_test_accomodation_approved",
-    "test_date_sign_up", "current_school", "gpa", "language_test_scores2",
-    "reading_test_score2", "math_test_scores2"
+    'id', 'lname', 'fname', 'grade', 'current_school', 'status',
+       'test_date_sign_up','Predicted Unweighted GPA'
     ]
     
     with open(csv_path, 'r') as file:
