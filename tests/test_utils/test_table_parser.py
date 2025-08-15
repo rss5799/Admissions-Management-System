@@ -113,6 +113,8 @@ class AdvancedTableParser:
             if (cells := row.find_all("td")) and len(cells) > idx
         ]
 
+        return values
+
     def is_column_sorted(self, column_name, reverse=False):
         # Check whether the column values are sorted
         values = self.get_column_values(column_name)
