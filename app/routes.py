@@ -179,9 +179,13 @@ def point_inputs():
                 schoolmint_data.loc[index, col_name] = value
     
     records = schoolmint_data.to_dict(orient='records')
+
+    headers = schoolmint_data.columns
+    headers = (['id', 'lname', 'fname', 'grade', 'current_school', 'status',
+       'test_date_sign_up','Predicted Unweighted GPA'])
     return render_template("point_inputs.html", 
                            breadcrumbs=breadcrumbs, 
-                           headers = schoolmint_data.columns, 
+                           headers = headers, 
                            records = records, 
                            filter_field=filter_field,
                            filter_values=filter_values
