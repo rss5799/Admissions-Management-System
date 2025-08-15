@@ -3,6 +3,8 @@ from app import create_app
 import csv
 from unittest.mock import patch
 from app.models.student import Student
+from app.utils.csv_reader_writer import fetch_updated_student_instance
+
 
 @pytest.fixture
 def client():
@@ -147,3 +149,41 @@ def test_enter_report_card_route(client):
         response = client.post("/enter_report_card/", data=data)
         response_data = response.get_data(as_text=True)
         assert "Return to Student Scores" in response_data
+
+def test_user_signup_route(client):
+        response = client.get("/signup")
+        assert response.status_code == 200
+        data = {
+            "username" : "tmm259@psu.edu",
+            "password" : "temp123"
+        }
+        response = client.post("/signup", data = data)
+        response_data = response.get_data(as_text=True)
+        assert "Account already exists" in response_data
+        data = {
+            "username" : "tmm@psu.edu",
+            "password" : "temp123"
+        }
+        response_data = response.get_data(as_text=True)
+        response = client.post("/signup", data = data)
+        assert "Login" in response_data
+
+        data = {
+            "username" : "tmm@psu.edu",
+            "password" : "temp123"
+        }
+        response_data = response.get_data(as_text=True)
+        response = client.post("/signup", data = data)
+        assert "Login" in response_data
+
+def test_logout(client):
+    response = client.get("/logout")
+    assert response.status_code == 302
+
+
+def test_schoolmint_file_uploaded(client):
+        data = {
+            "schoolmintfile": "schoolmintfile"
+        }
+        response = client.post("/upload_csv", data = data)
+        assert response.status_code == 200

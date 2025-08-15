@@ -7,13 +7,13 @@ from app import create_app
 
 
 
-
 @pytest.fixture
 def client():
     app = create_app()
     app.testing = True
     with app.test_client() as client:
         yield client
+
 
 
 #Unit Test 23
@@ -47,3 +47,5 @@ def test_sort_school_descending(client):
     sort_feature.send_keys(Keys.RETURN)
     response = client.get("/point_inputs/")
     assert response.status_code == 200
+
+

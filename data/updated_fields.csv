@@ -1,6 +1,12 @@
 ID,Field,Old Value,New Value
 1,total_points,,0
-2,total_points_retest,,119
+1,gpa,,0
+1,matrix_gpa,,0
+1,total_points_retest,,0
+2,total_points,119,112
+2,gpa,4.00,2.8
+2,matrix_gpa,30,23
+2,total_points_retest,,112
 2,language_test_scores2,,99
 2,matrix_languauge_retest,,30
 2,reading_test_score2,,99

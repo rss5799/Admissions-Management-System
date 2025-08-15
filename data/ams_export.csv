@@ -1,6 +1,6 @@
 Unnamed: 0,id,lname,fname,dob,grade,current_school,status,test_date_sign_up,deliver_test_accomodation_approved,total_points,gpa,matrix_gpa,language_test_scores,matrix_languauge,math_test_scores,matrix_math,reading_test_score,matrix_reading,total_points_retest,language_test_scores2,matrix_languauge_retest,reading_test_score2,matrix_reading_restest,math_test_scores2,matrix_math_retest,updated_at,guardian1_email,guardian2_email,Predicted Unweighted GPA
-0,1,,,2011-01-05,9,Other,In Processing,January 18 2025,,0,,,,,,,,,,,,,,,,2025-01-10 09:36:05,,,
-1,2,,,2011-03-19,9,Trinity Episcopal School,Eligible,December 14 2024,,119,4.0,30,99,30,97,29,99,30,119,99,30,99,30,97,29,2024-10-03 09:34:02,,,3.7876
+0,1,,,2011-01-05,9,Other,In Processing,January 18 2025,,0,0,0,,,,,,,0,,,,,,,2025-01-10 09:36:05,,,
+1,2,,,2011-03-19,9,Trinity Episcopal School,Eligible,December 14 2024,,112,2.8,23,99,30,97,29,99,30,112,99,30,99,30,97,29,2024-10-03 09:34:02,,,3.7876
 3,4,,,2011-06-10,9,Edward Hynes Lakeview,In Processing,December 14 2024,,99,3.5,30,83,22,72,17,98,30,99,83,22,98,30,72,17,2024-10-05 08:55:30,,,
 4,5,,,2011-06-10,9,Edward Hynes Lakeview,Eligible,December 14 2024,,99,3.5,30,83,22,72,17,98,30,99,83,22,98,30,72,17,2024-10-05 08:55:30,,,3.4979
 5,6,,,2010-10-22,9,The Willow School,Eligible,November 16 2024,,113,4.0,30,85,23,99,30,99,30,113,85,23,99,30,99,30,2024-10-01 08:22:29,,,3.5957
