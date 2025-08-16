@@ -112,6 +112,8 @@ class AdvancedTableParser:
             for row in rows
             if (cells := row.find_all("td")) and len(cells) > idx
         ]
+        if values == None:
+            return False
 
         return values
 
