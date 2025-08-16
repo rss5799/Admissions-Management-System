@@ -14,6 +14,8 @@
     <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.0.0/dist/css/coreui.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@coreui/icons@3.0.0/css/all.min.css" rel="stylesheet">
 
+    <!-- DataTables 2 core CSS ordering -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.dataTables.min.css">
     <!-- dt 2 + b5 skin -->
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.bootstrap5.min.css">
     <!-- b 3 + b5 skins -->
@@ -25,6 +27,12 @@
 
     {% block styles %}
     <style>
+
+      .table-responsive {
+      overflow-y: auto;
+      max-height: calc(100vh - 250px);
+      }
+
       .c-main { padding: 1.25rem; }
       .kpi-card .card-body { display:flex; align-items:center; gap:.75rem; }
       .kpi-icon { font-size:1.75rem; opacity:.8; }
@@ -157,7 +165,6 @@
       @media (min-width: 1400px){ .container-lg{ max-width: 1320px; } }
       @media (min-width: 1920px){ .container-lg{ max-width: 1600px; } }
 
-      
 
 
     </style>
@@ -265,7 +272,7 @@
 
       <!-- cont -->
       <div class="body flex-grow-1 px-3">
-        <div class="container-lg">
+        <div class="container-lg pb-5">
           {% block content %}{% endblock %}
         </div>
       </div>
@@ -278,14 +285,12 @@
       </footer>
     </div>
 
-    <!-- 1. jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
-    <!-- CoreUI, etc scripts -->
+    <!-- jq -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- CoreUI + vendors JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.0.0/dist/js/coreui.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.0.0/dist/js/coreui.bundle.min.js"></script>
 
     <!-- dt 2 + b5 int -->
 <script src="https://cdn.datatables.net/2.0.7/js/dataTables.min.js"></script>
