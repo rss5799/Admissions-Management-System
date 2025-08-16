@@ -14,6 +14,30 @@ def client():
         yield client
 
 
+def test_csv_uploads(client):
+    response = client.get("/merge_riverside")
+    assert response.get_data() is not None
+    assert response.status_code == 200
+
+    data = {
+          "files" : "riversidefile"
+    }
+
+    response = client.post("/merge_riverside", data = data)
+
+
+    assert response.status_code == 200
+
+    data = {
+          "files" : "schoolmintfile"
+     }
+
+    response = client.post("/upload_csv", data = data)
+
+    assert response.status_code == 200
+
+
+
 
 
 
