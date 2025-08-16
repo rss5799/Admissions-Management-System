@@ -43,3 +43,5 @@ def test_sort_by_id_descending(client):
         school = school.encode('utf-8')
         assert school in response.data
 
+
+
